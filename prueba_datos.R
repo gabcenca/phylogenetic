@@ -20,3 +20,6 @@ library(sf) # A package for spatial data
 phylo <- BIEN_phylogeny_conservative()
 plot.phylo(x = phylo, show.tip.label =  FALSE)
 phylo_species <- phylo$tip.label
+
+
+#Quercus_rugosa <- BIEN_occurrence_species(species = "Quercus rugosa")
