@@ -16,11 +16,10 @@ library(magrittr)
 
 # --- Load functions ---
 
-write_data_sp <- function(name){
-  BIEN_occurrence_species(cultivated = F, observation.type = T, species = name) %>% 
+write_data_genus <- function(name){
+  BIEN_occurrence_genus(cultivated = F, new.world = T, observation.type = T,political.boundaries = T, genus = name) %>% 
     write.csv(file = "quercusBienData.csv", row.names = F)
 }
 
 ## Script
-
-write_data_sp(name = "Quercus brandegeei")
+write_data_genus(name = "Quercus")
