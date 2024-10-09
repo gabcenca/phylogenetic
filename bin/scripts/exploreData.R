@@ -19,9 +19,11 @@ library(sf)
 library(BIEN)
 
 
+
 # --- Load data ---
 
 quercus_BienData <- read.csv("data/in/BIENdata_csv/quercusBienData.csv")
+quercus_BienData <- read.csv("data/in/quercusBienData.csv")
 
 
 # --- Class, dimension and head of data ---
@@ -35,6 +37,7 @@ names(quercus_BienData)
 
 # --- Filter registres from Mexico ---
 records_BIEN_mex <- quercus_BienData %>%
+reg_mex_quercus <- quercus_BienData %>%
   filter(country=="Mexico")
 
 head(reg_mex_quercus)
@@ -47,6 +50,8 @@ write.csv(records_BIEN_mex, "data/in/dataBIENmex_csv/dataBIENmex.csv", row.names
 
 # --- Number of species ---
 num_species <- records_BIEN_mex %>% 
+# --- Number of species ---
+num_species <- reg_mex_quercus %>% 
   summarise(total_species = n_distinct(scrubbed_species_binomial))
 
 print(num_species)
@@ -57,6 +62,10 @@ register_per_especie <- records_BIEN_mex %>%
   group_by(scrubbed_species_binomial) %>% 
   summarise(num_registros = n()) %>%
   arrange(num_registros)
+register_per_especie <- reg_mex_quercus %>% 
+  group_by(scrubbed_species_binomial) %>% 
+  summarise(num_registros = n()) %>%
+  arrange(desc(num_registros))
 
 print(register_per_especie)
 
@@ -67,6 +76,7 @@ less_records <- register_per_especie %>%
   filter(num_registros < 5)
 
 print(less_records)
+
 
 
 
@@ -125,7 +135,10 @@ plot(Quercus_castanea_range[1], col="forest green", add = TRUE)
 map("world", regions = "Mexico", fill = TRUE, col = "grey")
 plot(Quercus_castanea_range[1], col="forest green", add = TRUE)
 
+
 # -- ggplot/sf -- buscar como hacerlo, geomap
+
+# -- ggplot/sf -- buscar como hacerlo
 
 
 # BIEN_ranges_sf(sf, directory = NULL, species.names.only = FALSE, 
@@ -140,3 +153,4 @@ plot(Quercus_castanea_range[1], col="forest green", add = TRUE)
 reg_mex_quercus$date_collected
 reg_mex_quercus$datasource
 
+# Funcion: Download range maps that intersect a user-supplied sf object.

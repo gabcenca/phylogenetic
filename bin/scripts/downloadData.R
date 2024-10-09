@@ -13,6 +13,7 @@
 
 library(BIEN)
 library(magrittr)
+
 library(rgbif)
 library("usethis")
 #usethis::edit_r_environ()  #setting gbif account
@@ -22,6 +23,7 @@ library(readr)
 
 write_data_genus <- function(name){
   BIEN_occurrence_genus(cultivated = F, new.world = T, observation.type = T,political.boundaries = T, genus = name, native.status = T) %>% 
+  BIEN_occurrence_genus(cultivated = F, new.world = T, observation.type = T,political.boundaries = T, genus = name) %>% 
     write.csv(file = "quercusBienData.csv", row.names = F)
 }
 
@@ -62,3 +64,4 @@ occ_download_wait(gbif_quercus)
 records_gbif <- occ_download_get(gbif_quercus) %>%
   occ_download_import()
 names(records_gbif)
+
