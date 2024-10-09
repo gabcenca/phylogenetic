@@ -58,8 +58,9 @@ herbGbif <- herbGbif %>%
          "habitat", "stateProvince","county", "municipality","locality",
          "decimalLatitude", "decimalLongitude","minimumElevationInMeters",
          "maximumElevationInMeters","valueID","basisOfRecord",
-         "individualCount") %>%
+         "individualCount","verbatimScientificNameAuthorship") %>%
   mutate("elevation_m"="NA","datasource"="NA")  #Agregar esta columna para agregar las elevaciones de BIEN
+
 
 #Seleccionar los registros de BIEN de interes y reenombrarlos para que coincidan con gbif/herbario
 recordsBien <- recordsBIEN %>%
@@ -73,7 +74,7 @@ recordsBien <- recordsBIEN %>%
          "decimalLongitude"="longitude")
 
 
-names(recordsBien)
+names(recordsBIEN)
 
 #Juntar df de gbif/herbario con Bien
 herbGbifBien <- bind_rows(herbGbif,recordsBien)
