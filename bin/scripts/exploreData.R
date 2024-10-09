@@ -139,3 +139,4 @@ plot(Quercus_castanea_range[1], col="forest green", add = TRUE)
 
 reg_mex_quercus$date_collected
 reg_mex_quercus$datasource
+
