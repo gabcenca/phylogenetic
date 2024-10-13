@@ -21,13 +21,14 @@ names(splist)
 #Extract name species, author and rank in order for the package to work
 splist <- splist %>%
   select("species","verbatimScientificNameAuthorship",
-         "gbifID","family") %>%
-  rename("NAME"="species",
+         "gbifID","family","genus") %>%
+  rename("Name"="species",
          "ID"="gbifID",
-         "AUTHOR"="verbatimScientificNameAuthorship",
-         "FAMILY"="family") %>%
+         "Author"="verbatimScientificNameAuthorship",
+         "FAMILY"="family",
+         "Genus"="genus") %>%
   mutate("ACCEPTED_ID" = 0) %>%
-  select("ID", "NAME", "AUTHOR", "ACCEPTED_ID", "FAMILY")
+  select("ID", "Name", "Author","Genus", "ACCEPTED_ID", "FAMILY")
 
 #Extract the df to excel format 
 write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
