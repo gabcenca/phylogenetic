@@ -22,13 +22,13 @@ names(splist)
 splist <- splist %>%
   select("species","verbatimScientificNameAuthorship",
          "gbifID","family","genus") %>%
-  rename("Name"="species",
+  rename("NAME"="species",
          "ID"="gbifID",
-         "Author"="verbatimScientificNameAuthorship",
+         "AUTHOR"="verbatimScientificNameAuthorship",
          "FAMILY"="family",
-         "Genus"="genus") %>%
+         "GENUS"="genus") %>%
   mutate("ACCEPTED_ID" = 0) %>%
-  select("ID", "Name", "Author","Genus", "ACCEPTED_ID", "FAMILY")
+  select("ID", "NAME", "AUTHOR","GENUS", "ACCEPTED_ID", "FAMILY")
 
 #Extract the df to excel format 
 write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
@@ -37,9 +37,9 @@ write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 names(records_df)
 records_df <- records_df %>%
   rename("Sorter"="valueID",
-         "Name"="scientificName",
-         "Author" = "verbatimScientificNameAuthorship") %>%
-  select("Sorter","Name","Author")
+         "NAME"="scientificName",
+         "AUTHOR" = "verbatimScientificNameAuthorship") %>%
+  select("Sorter","NAME","AUTHOR")
 
 names(records_df)
 
@@ -56,7 +56,8 @@ splist <- readxl::read_xlsx("data/temp/taxonomicNames_UTaxonStand/accepted_speci
 str(splist)
 # run the main function of name matching
 
-res <- nameMatch(spList=splist, spSource=database, author=FALSE, max.distance=1, Append=TRUE)
+res <- nameMatch(spList=splist, spSource=database, author=TRUE, max.distance=1)
 
 # save the result in an xlsx file
 write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
+
