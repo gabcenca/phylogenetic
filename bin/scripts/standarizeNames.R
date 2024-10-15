@@ -7,9 +7,10 @@ library(U.Taxonstand) #devtools::install_github("ecoinfor/U.Taxonstand")
 library(dplyr)
 library(writexl)#install.packages("writexl")
 library(openxlsx) #install.packages("openxlsx")
+library(stringr)
 
 #Upload data frame 
-records_df <- read_csv("data/temp/herbaGbifBIEN_df/herbGbifBien.csv")
+records_df <- read_csv("data/temp/herbaGbifBIEN_df/herbGbifBien.csv")[,-1]
 
 
 #Upload the species list
@@ -27,8 +28,11 @@ splist <- splist %>%
          "AUTHOR"="verbatimScientificNameAuthorship",
          "FAMILY"="family",
          "GENUS"="genus") %>%
-  mutate("ACCEPTED_ID" = 0) %>%
-  select("ID", "NAME", "AUTHOR","GENUS", "ACCEPTED_ID", "FAMILY")
+  mutate("ACCEPTED_ID" = "",
+         "RANK" = "") %>%
+  select("ID", "NAME", "AUTHOR","GENUS", "RANK", "ACCEPTED_ID", "FAMILY") 
+
+names(splist) <- str_to_title(names(splist))
 
 #Extract the df to excel format 
 write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
@@ -36,12 +40,15 @@ write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 #Change the df of records to match with the package and select the columns of interest
 names(records_df)
 records_df <- records_df %>%
-  rename("Sorter"="valueID",
+  rename("SORTER"="valueID",
          "NAME"="scientificName",
          "AUTHOR" = "verbatimScientificNameAuthorship") %>%
-  select("Sorter","NAME","AUTHOR")
+  mutate(RANK = "") %>% 
+  select("SORTER","NAME","AUTHOR", "RANK")
 
 names(records_df)
+
+names(records_df) <- str_to_title(names(records_df))
 
 #Write an excel sheet for this df
 write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
@@ -49,14 +56,15 @@ write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
 # ---- UTaxonStand ---
 
 # load the database
-database<- read.xlsx("data/temp/records_UTaxonStand/records_dfUts.xlsx")
-str(database)
+records<- read.xlsx("data/temp/records_UTaxonStand/records_dfUts.xlsx")
+str(records)
+
 # load the species list to match with
 splist <- readxl::read_xlsx("data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 str(splist)
-# run the main function of name matching
 
-res <- nameMatch(spList=splist, spSource=database, author=TRUE, max.distance=1)
+# run the main function of name matching
+res <- nameMatch(spList=records, spSource=splist, author=TRUE, max.distance=1)
 
 # save the result in an xlsx file
 write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
