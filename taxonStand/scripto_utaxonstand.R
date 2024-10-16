@@ -3,14 +3,14 @@ library(openxlsx)
 library(dplyr)
 
 
-splist <- read.xlsx("spExample.xlsx")
-databaseExample <- read.xlsx("databaseExample.xlsx")
+splist <- read.xlsx("taxonstand/spExample.xlsx")
+databaseExample <- read.xlsx("taxonstand/databaseExample.xlsx")
 #splist<- rename(splist, "SORTER"="X1")
 
 # The input as a dataframe with the columns "SPECIES", "AUTHOR" and/or "RANK"
 
 res <- nameMatch(spList=splist, spSource=databaseExample, author = TRUE, max.distance= 1)
-
+??nameMatch
 
 head(res)
 
