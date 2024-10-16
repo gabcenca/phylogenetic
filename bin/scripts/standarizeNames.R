@@ -33,6 +33,16 @@ splist <- splist_raw %>%
   select("ID", "NAME", "AUTHOR","GENUS", "RANK", "ACCEPTED_ID", "FAMILY")
 
 head(splist)
+         "gbifID","family","genus", "speciesKey", "taxonKey") %>%
+  rename("NAME"="scientificName",
+         "ID"="taxonKey",
+         "AUTHOR"="verbatimScientificNameAuthorship",
+         #"FAMILY"="family",
+         #"GENUS"="genus",
+         "ACCEPTED_ID" = "speciesKey") %>%
+  mutate("RANK" = "") %>%
+  mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>%
+  select("ID", "NAME", "AUTHOR", "RANK", "ACCEPTED_ID") 
 
 names(splist) <- str_to_title(names(splist))
 
@@ -49,6 +59,8 @@ records_df <- records_df_raw %>%
   select("SORTER","NAME","AUTHOR", "RANK") %>%
   mutate(NAME = str_extract(NAME,"Quercus [a-zA-Z]]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>%
   filter(., !is.na(NAME) & NAME != "Quercus L.") 
+  mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>% 
+  filter(., !is.na(NAME) & !NAME %in% c("Quercus L.", "Quercus L")) 
 
 names(records_df) <- str_to_title(names(records_df)) #Set the first upper case to each name
 
@@ -61,15 +73,22 @@ write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
 records<- read.xlsx("data/temp/records_UTaxonStand/records_dfUts.xlsx")
 str(records)
 names(records)[1] <- NA
+names(records)[1] <- "id_interno"
 
 # load the species list to match with
 splist <- readxl::read_xlsx("data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 str(splist)
 
+test <- records[c(sample(1:nrow(records),10),26322),]
+
 # run the main function of name matching
 res <- nameMatch(spList=records[sample(1:nrow(records),10),], spSource=splist, author=TRUE, max.distance=1)
+res <- nameMatch(spList=test$Name, spSource=splist, author=FALSE, max.distance=1, matchFirst = FALSE)
+
+res$id_interno <- test$id_interno
 
 
 # save the result in an xlsx file# save the result in an xlsx fileTRUE
 write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
+
 
