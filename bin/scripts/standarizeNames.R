@@ -15,24 +15,13 @@ records_df_raw <- read_csv("data/temp/herbaGbifBIEN_df/herbGbifBien.csv")[,-1]
 
 #Upload the species list
 splist_raw <- read_delim("data/in/CatalogoAutoridadTaxomicaQuercus_csv/0010521-240906103802322.csv", 
-                     delim = "\t", escape_double = FALSE, 
-                     trim_ws = TRUE)
+                         delim = "\t", escape_double = FALSE, 
+                         trim_ws = TRUE)
 names(splist_raw)
 
 #Extract name species, author and rank in order for the package to work
 splist <- splist_raw %>%
   select("scientificName","verbatimScientificNameAuthorship",
-         "family","genus","taxonKey","speciesKey") %>%
-  rename("NAME"="scientificName",
-         "ID"="taxonKey",
-         "AUTHOR"="verbatimScientificNameAuthorship",
-         "FAMILY"="family",
-         "GENUS"="genus",
-          "ACCEPTED_ID"= "speciesKey") %>%
-  mutate("RANK" = "") %>%
-  select("ID", "NAME", "AUTHOR","GENUS", "RANK", "ACCEPTED_ID", "FAMILY")
-
-head(splist)
          "gbifID","family","genus", "speciesKey", "taxonKey") %>%
   rename("NAME"="scientificName",
          "ID"="taxonKey",
@@ -57,12 +46,12 @@ records_df <- records_df_raw %>%
          "AUTHOR" = "verbatimScientificNameAuthorship") %>%
   mutate(RANK = "") %>% 
   select("SORTER","NAME","AUTHOR", "RANK") %>%
-  mutate(NAME = str_extract(NAME,"Quercus [a-zA-Z]]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>%
-  filter(., !is.na(NAME) & NAME != "Quercus L.") 
   mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>% 
   filter(., !is.na(NAME) & !NAME %in% c("Quercus L.", "Quercus L")) 
 
-names(records_df) <- str_to_title(names(records_df)) #Set the first upper case to each name
+names(records_df)
+
+names(records_df) <- str_to_title(names(records_df))
 
 #Write an excel sheet for this df
 write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
@@ -72,7 +61,6 @@ write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
 # load the database
 records<- read.xlsx("data/temp/records_UTaxonStand/records_dfUts.xlsx")
 str(records)
-names(records)[1] <- NA
 names(records)[1] <- "id_interno"
 
 # load the species list to match with
@@ -82,13 +70,9 @@ str(splist)
 test <- records[c(sample(1:nrow(records),10),26322),]
 
 # run the main function of name matching
-res <- nameMatch(spList=records[sample(1:nrow(records),10),], spSource=splist, author=TRUE, max.distance=1)
 res <- nameMatch(spList=test$Name, spSource=splist, author=FALSE, max.distance=1, matchFirst = FALSE)
 
 res$id_interno <- test$id_interno
 
-
-# save the result in an xlsx file# save the result in an xlsx fileTRUE
+# save the result in an xlsx file
 write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
-
-
