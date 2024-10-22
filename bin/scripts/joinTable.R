@@ -33,11 +33,17 @@ lapply(seq_along(list_recordsGbif_raw), function(x){write.csv(list_recordsGbif_r
 
 recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
 
+recordsGbif_raw <- read_delim("data/in/gbif_csv/gbif.csv", 
+                          delim = "\t", escape_double = FALSE, 
+                          trim_ws = TRUE)
+
+recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
+
 recordsBIEN_raw <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
 
 
 # --- Add a unique id to each value --- 
-recordsGbif <- recordsGbif_raw %>%  
+recordsGbif <- recordsGbif_raw %>%
   mutate(id_interno = paste0("GBIF_", row_number()))
 
 recordsHerbario <- recordsHerbario_raw %>%
