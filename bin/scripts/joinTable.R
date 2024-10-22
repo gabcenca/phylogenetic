@@ -13,11 +13,23 @@
 library(dplyr)
 library(readr)
 
+##Dividir dwc en 3 para guardarlo en github
 
 # --- Load tables ---
-recordsGbif_raw <- read_delim("data/in/gbif_csv/gbif.csv", 
+recordsGbif_raw <- read_delim("data/in/gbif_dwc/occurrence.txt", 
                           delim = "\t", escape_double = FALSE, 
                           trim_ws = TRUE)
+
+tercio <- round(nrow(recordsGbif_raw)/3)
+
+list_recordsGbif_raw <- list(recordsGbif_raw[1:tercio,],
+                             recordsGbif_raw[(tercio+1):(2*tercio),],
+                             recordsGbif_raw[(2*tercio+1):nrow(recordsGbif_raw),])
+
+lapply(list_recordsGbif_raw, dim)
+
+lapply(seq_along(list_recordsGbif_raw), function(x){write.csv(list_recordsGbif_raw[[x]],
+      file = paste0("data/in/gbif_dwc/division_occurrence/occurrence_",x,".csv"), row.names=F)})
 
 recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
 
@@ -25,7 +37,7 @@ recordsBIEN_raw <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
 
 
 # --- Add a unique id to each value --- 
-recordsGbif <- recordsGbif_raw %>%
+recordsGbif <- recordsGbif_raw %>%  
   mutate(id_interno = paste0("GBIF_", row_number()))
 
 recordsHerbario <- recordsHerbario_raw %>%
