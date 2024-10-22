@@ -76,3 +76,20 @@ res$id_interno <- test$id_interno
 
 # save the result in an xlsx file
 write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
+
+names(splist_raw)
+
+
+#For records_df_raw values not in splist_raw
+antijoin <- records_df_raw %>%
+  anti_join(splist_raw, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+
+
+#For splist_raw values not in records_df_raw
+antijoin2 <- splist_raw %>%
+  anti_join(records_df_raw, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+
