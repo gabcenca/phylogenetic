@@ -15,24 +15,24 @@ library(readr)
 
 
 # --- Load tables ---
-recordsGbif <- read_delim("data/in/gbif_csv/gbif.csv", 
+recordsGbif_raw <- read_delim("data/in/gbif_csv/gbif.csv", 
                           delim = "\t", escape_double = FALSE, 
                           trim_ws = TRUE)
 
-recordsHerbario <- read_csv("data/in/herbariomex_dw/occurrences.csv")
+recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
 
-recordsBIEN <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
+recordsBIEN_raw <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
 
 
 # --- Add a unique id to each value --- 
-recordsGbif <- recordsGbif %>%
-  mutate(valueID = paste0("GBIF_", row_number()))
+recordsGbif <- recordsGbif_raw %>%
+  mutate(id_interno = paste0("GBIF_", row_number()))
 
-recordsHerbario <- recordsHerbario %>%
-  mutate(valueID = paste0("Herb_", row_number()))
+recordsHerbario <- recordsHerbario_raw %>%
+  mutate(id_interno = paste0("Herb_", row_number()))
 
-recordsBIEN <- recordsBIEN %>%
-  mutate(valueID = paste0("BIEN_", row_number()))
+recordsBIEN <- recordsBIEN_raw %>%
+  mutate(id_interno = paste0("BIEN_", row_number()))
 
 
 # Convertir todas las columnas de recordsGbif a character
@@ -48,11 +48,19 @@ recordsBIEN <- recordsBIEN %>%
   mutate_all(as.character)
 
 #Juntar df de gbif y herbario 
-herbGbif <- bind_rows(recordsHerbario,recordsGbif)
-names(herbGbif)
+herbGbif_raw <- bind_rows(recordsHerbario,recordsGbif)
+names(herbGbif_raw)
+
+
+#For columns in herbario not in gbif columns
+antijoin_herbgbif <- recordsHerbario %>%
+  anti_join(recordsGbif, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+unique(antijoin2$scientificName)
 
 #Seleccionar las columnas de interes 
-herbGbif <- herbGbif %>%
+herbGbif <- herbGbif_raw %>%
   select("scientificName", "eventDate","year", 
          "month","day","occurrenceRemarks",
          "habitat", "stateProvince","county", "municipality","locality",
