@@ -19,6 +19,8 @@ splist_raw <- read_delim("data/in/CatalogoAutoridadTaxomicaQuercus_csv/0010521-2
                          trim_ws = TRUE)
 names(splist_raw)
 
+
+
 #Extract name species, author and rank in order for the package to work
 splist <- splist_raw %>%
   select("scientificName","verbatimScientificNameAuthorship",
@@ -80,11 +82,18 @@ write.xlsx(res,"Result_from_U.Taxonstand.xlsx", overwrite=TRUE)
 names(splist_raw)
 
 
+#Go to joinTable.R script and then select the columns of interest of herbGbif_raw
+names(herbGbif_raw)
+herbGbif_raw <- select(herbGbif_raw,
+                       id_interno,)
+
+
 #For records_df_raw values not in splist_raw
 antijoin <- records_df_raw %>%
   anti_join(splist_raw, 
             # Define equivalence in column names in both df
             by = "scientificName")
+unique(antijoin$scientificName)
 
 
 #For splist_raw values not in records_df_raw
@@ -92,4 +101,21 @@ antijoin2 <- splist_raw %>%
   anti_join(records_df_raw, 
             # Define equivalence in column names in both df
             by = "scientificName")
+unique(antijoin2$scientificName)
 
+
+#For records_df_raw values in splist_raw
+join <- records_df_raw %>%
+          join(splist_raw, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+
+unique(join$scientificName)
+
+#For splist_raw values in records_df_raw
+join2 <- splist_raw %>%
+          join(records_df_raw, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+
+unique(join2$scientificName)
