@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="12c99f46-685a-4e09-8917-e43e0c1fd63a"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/fghtek</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-Q050</alternateIdentifier>
+        <alternateIdentifier>http://ipttest.conabio.gob.mx/iptconabiotest/resource?r=SNIB-Q050</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-Q050</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-Q050-Q050908F-ND</alternateIdentifier>
+        <alternateIdentifier>12c99f46-685a-4e09-8917-e43e0c1fd63a</alternateIdentifier>
+        <title>Status, distribución, ecología y conservación de las cotorras serranas (Rhynchopsitta pachyrhyncha y R. terrisi) en el norte de México: 3a fase</title>
+        <creator>
+            <individualName>
+                <givenName>Ernesto Christian</givenName>
+                <surName>Enkerlin Hoeflich</surName>
+            </individualName>
+            <organizationName>Instituto Tecnológico y de Estudios Superiores de MonterreyCentro de Calidad Ambiental</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <deliveryPoint>Av Eugenio Garza Sada # 2501 Sur</deliveryPoint>
+                <city>Monterrey</city>
+                <administrativeArea>Nuevo León</administrativeArea>
+                <postalCode>64849</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>Tel 01 (8)328 4033, 01 (8)328 4032  Fax 01 (8)359 6280</phone>
+            <electronicMailAddress>enkerlin@campus.mty.itesm.mx</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2024-04-11
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>La presente propuesta delinea la 3a fase de un programa de investigación, entrenamiento y conservación enfocado a dos especies estrechamente relacionadas de psitácidos del género Rhynchopsitta. Los estudios pilotos comenzaron en 1993-94, convirtiéndose en un proyecto de mayor envergadura a partir de 1994-95. Los análisis iniciales de los datos biológicos para ambas especies se iniciaron en 1996. Como parte de las actividades del proyecto y como resultado de las colaboraciones institucionales, para el caso de R. terrisi en 1995 se logró la creación de una reserva en un predio que fue adquirido por el Fondo para la Biodiversidad y que incluye el sitio de anidación más importante hasta ahora conocido para la especie (con cerca del 25% de las parejas anidantes totales de la especie). Para el caso de R. pachyrhyncha, en 1996 se firmó un acuerdo de colaboración con la Universidad Autónoma de Chihuahua con el fin de elaborar planes de manejo del paisaje usando a las aves como especies indicadoras. Se planea un taller de trabajo y reuniones del comité de trabajo para la temporada 1998. Hemos logrado presencia e influencia para poder conservar dos de los últimos parches de bosque maduro extensos (mayor que3,000 ha cada uno) en toda la Sierra Madre Occidental: las Bufas y Cebadillas. Tres estudiantes-investigadores se encuentran actualmente estudiando un posgrado y realizando su tesis como parte del proyecto, dos de ellos adscritos al programa de Maestría en Ciencias Ambientales en el ITESM y uno de ellos en el programa doctoral de Manejo de Vida Silvestre y Pesquerías en Louisiana State University. En esta propuesta se solicitan fondos para continuar con esta tercera fase de estudios y simultáneamente entrenar a los estudiantes en las técnicas y teorías para capacitarse como biólogos/conservacionistas en lo que podría considerarse uno de los primeros estudios integrados en el norte de México. El apoyo de la CONABIO nos resulta indispensable pues el éxito con otras fuentes de financiamiento ha sido parcial ya que tiene la limitante que no están dispuestos a apoyar los estudios ecológicos, solamente educación, creación de infraestructura y planes y actividades de manejo. Actividades todas que dependen necesariamente de la información biológica básica. El proyecto propuesto representa el cuarto año de trabajo de campo y ha contado con el apoyo de CONABIO en 1995 y 1996, mediante los proyectos B116 y K016, respectivamente.</para>
+<para>Reino: 2
+Filo: 2
+Clase: 2
+Orden: 4
+Familia: 4
+Género: 6
+Subgénero: 2
+Especie: 8</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keyword>Aves</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=Q&amp;Numero=50</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-Q050</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: MEXICO (CHIHUAHUA, COAHUILA DE ZARAGOZA, DURANGO, NUEVO LEON)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-108.65</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-100.085</eastBoundingCoordinate>
+                    <northBoundingCoordinate>30.562</northBoundingCoordinate>
+                    <southBoundingCoordinate>24.855</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1995-07-07
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                1998-11-13
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Animalia, Plantae
+Filo: Chordata, Tracheophyta
+Clase: Aves, Equisetopsida
+Orden: Psittaciformes, Malpighiales, Pinales, Fagales
+Familia: Psittacidae, Salicaceae, Pinaceae, Fagaceae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Animalia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Chordata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Aves</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Psittaciformes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Malpighiales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Pinales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Psittacidae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Salicaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Pinaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Rhynchopsitta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Populus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Abies</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pseudotsuga</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchopsitta pachyrhyncha</taxonRankValue>
+                    <commonName>cotorra serrana occidental</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Populus tremuloides</taxonRankValue>
+                    <commonName>alamillo, alamillo temblón, gusa&apos;lo&apos; (Tarahumara), pera, álamo, álamo blanco, álamo temblón</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus strobiformis</taxonRankValue>
+                    <commonName>acahuite, acalocote, acamita, acanita, ayacahuite, huiyoco (Tarahumara), mateyó (Tarahumara), ocote blanco, ocote chino, pinabete, pino, pino acahite, pino ayacahuite, pino blanco, pino chimonque, pino huiyoco, pino nayar, pino real, pino triste, piñón, wiyó (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pseudotsuga menziesii</taxonRankValue>
+                    <commonName>abeto, abeto Douglas, acahuite, cahuite, falso abeto, hayarín, hayarín colorado, oyamel, oyamel colorado, oyamel de barranca, pinabete, romerillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus arizonica</taxonRankValue>
+                    <commonName>albacarrote amarillo, pino, pino amarillo, pino blanco, pino cenizo, pino chino, pino colorado, pino de Arizona, pino real</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) durangensis</taxonRankValue>
+                    <commonName>ocote, pino, pino blanco, pino cenizo, pino colorado, pino coyote, pino de seis hojas, pino duranguensis, pino real, pino real de seis hojas, pino tarasco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) sideroxyla</taxonRankValue>
+                    <commonName>chaparro, encino, encino amarillo, encino blanco, encino colorado, encino laurelillo, encino manzano, encino prieto, encino roble, encino rojo, encino tecomate, palo colorado, palo prieto, palo rojo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchopsitta terrisi</taxonRankValue>
+                    <commonName>cotorra serrana oriental</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-Q050-Q050908F-ND">
+                <title>Status, distribución, ecología y conservación de las cotorras serranas (Rhynchopsitta pachyrhyncha y R. terrisi) en el norte de México: 3a fase</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Ernesto Christian</givenName>
+                    <surName>Enkerlin Hoeflich</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>La presente propuesta delinea la 3a fase de un programa de investigación, entrenamiento y conservación enfocado a dos especies estrechamente relacionadas de psitácidos del género Rhynchopsitta. Los estudios pilotos comenzaron en 1993-94, convirtiéndose en un proyecto de mayor envergadura a partir de 1994-95. Los análisis iniciales de los datos biológicos para ambas especies se iniciaron en 1996. Como parte de las actividades del proyecto y como resultado de las colaboraciones institucionales, para el caso de R. terrisi en 1995 se logró la creación de una reserva en un predio que fue adquirido por el Fondo para la Biodiversidad y que incluye el sitio de anidación más importante hasta ahora conocido para la especie (con cerca del 25% de las parejas anidantes totales de la especie). Para el caso de R. pachyrhyncha, en 1996 se firmó un acuerdo de colaboración con la Universidad Autónoma de Chihuahua con el fin de elaborar planes de manejo del paisaje usando a las aves como especies indicadoras. Se planea un taller de trabajo y reuniones del comité de trabajo para la temporada 1998. Hemos logrado presencia e influencia para poder conservar dos de los últimos parches de bosque maduro extensos (mayor que3,000 ha cada uno) en toda la Sierra Madre Occidental: las Bufas y Cebadillas. Tres estudiantes-investigadores se encuentran actualmente estudiando un posgrado y realizando su tesis como parte del proyecto, dos de ellos adscritos al programa de Maestría en Ciencias Ambientales en el ITESM y uno de ellos en el programa doctoral de Manejo de Vida Silvestre y Pesquerías en Louisiana State University. En esta propuesta se solicitan fondos para continuar con esta tercera fase de estudios y simultáneamente entrenar a los estudiantes en las técnicas y teorías para capacitarse como biólogos/conservacionistas en lo que podría considerarse uno de los primeros estudios integrados en el norte de México. El apoyo de la CONABIO nos resulta indispensable pues el éxito con otras fuentes de financiamiento ha sido parcial ya que tiene la limitante que no están dispuestos a apoyar los estudios ecológicos, solamente educación, creación de infraestructura y planes y actividades de manejo. Actividades todas que dependen necesariamente de la información biológica básica. El proyecto propuesto representa el cuarto año de trabajo de campo y ha contado con el apoyo de CONABIO en 1995 y 1996, mediante los proyectos B116 y K016, respectivamente.</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Aves
+Plantas
+cacatúas, cotorras, loros, pericos
+con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
+con flores como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, linos, mandiocas, maracuyás, nanches, nochebuenas, ricinos, sauces, semillas de linaza
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2024-10-22T20:40:36Z</dateStamp>
+                <citation>Enkerlin Hoeflich E C, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Status, distribución, ecología y conservación de las cotorras serranas (Rhynchopsitta pachyrhyncha y R. terrisi) en el norte de México: 3a fase. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/fghtek accessed via GBIF.org on 2024-10-22.</citation>
+                <physical>
+                    <objectName>SNIB-Q050-Ejemplar-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/Q050/Ejemplar/SNIB-Q050-Ejemplar-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-Q050-Ejemplar-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/Q050/Ejemplar/SNIB-Q050-Ejemplar-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-Q050-Sesion-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/Q050/Sesion/SNIB-Q050-Sesion-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-Q050-Sesion-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/Q050/Sesion/SNIB-Q050-Sesion-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-Q050-Q050908F-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE</collectionName>
+                </collection>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

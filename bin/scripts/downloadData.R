@@ -48,20 +48,20 @@ species_quercus <- read_delim("data/in/TaxonomiaQuercus/0010521-240906103802322.
 name_backbone("Quercus") # get best match in the GBIF backbone
 
 #download all records of quercus
-gbif_quercus <- occ_download(pred("taxonKey", 2877951),format = "SIMPLE_CSV")
+gbif_quercus <- occ_download(pred("taxonKey", 2877951),format = "DWCA")
 
 #download all records from mexico 
-gbif_quercus <- occ_download(
+gbif_quercus_mex <- occ_download(
   pred("hasGeospatialIssue", FALSE),
   pred("hasCoordinate", TRUE),
   pred("taxonKey", 2877951),
   pred("country", "MX"),
-  format = "SIMPLE_CSV"
+  format = "DWCA"
 )
 
-occ_download_wait(gbif_quercus)
+occ_download_wait(gbif_quercus_mex)
 
-records_gbif <- occ_download_get(gbif_quercus) %>%
+records_gbif_dwc <- occ_download_get(gbif_quercus_mex) %>%
   occ_download_import()
 names(records_gbif)
 

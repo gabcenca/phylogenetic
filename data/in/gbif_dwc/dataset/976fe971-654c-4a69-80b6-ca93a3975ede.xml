@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="976fe971-654c-4a69-80b6-ca93a3975ede"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/bck627</alternateIdentifier>
+        <alternateIdentifier>976fe971-654c-4a69-80b6-ca93a3975ede</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=plantbuprestidsinteractionsmx</alternateIdentifier>
+        <title>Dataset of the plant-Buprestidae (Coleoptera) interactions from Mexico</title>
+        <creator>
+            <individualName>
+                <givenName>Cisteil Xinum</givenName>
+                <surName>Pérez Hernández</surName>
+            </individualName>
+            <organizationName>Instituto de Investigaciones en Ecosistemas y Sustentabilidad, UNAM</organizationName>
+            <positionName>Postdoctoral Researcher</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>cxinum@gmail.com</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-6698-2524</userId>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Diana Raquel</givenName>
+                <surName>Hernández-Robles</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el conocimiento y uso de la Biodiversidad, CONABIO</organizationName>
+            <positionName>Subcoordinadora de Catálogos de Autoridades Taxonómicas</positionName>
+            <address>
+                <administrativeArea>Ciudad de México</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>dhernand@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>http://www.conabio.gob.mx</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-3951-4856</userId>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Angélica María</givenName>
+                <surName>Corona-López</surName>
+            </individualName>
+            <organizationName>Centro de Investigación en Biodiversidad y Conservación (CIByC), Universidad Autónoma del Estado de Morelos (UAEM)</organizationName>
+            <positionName>Professor</positionName>
+            <address>
+                <administrativeArea>Morelos</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Victor Manuel</givenName>
+                <surName>Toledo-Hernández</surName>
+            </individualName>
+            <organizationName>Centro de Investigación en Biodiversidad y Conservación (CIByC), Universidad Autónoma del Estado de Morelos (UAEM)</organizationName>
+            <address>
+                <administrativeArea>Morelos</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Ek</givenName>
+                <surName>del Val</surName>
+            </individualName>
+            <organizationName>Instituto de Investigaciones en Ecosistemas y Sustentabilidad, UNAM</organizationName>
+            <positionName>Professor</positionName>
+            <address>
+                <administrativeArea>Michoacán</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>Diana Raquel</givenName>
+                <surName>Hernández Robles</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el conocimiento y uso de la Biodiversidad, CONABIO</organizationName>
+            <positionName>Subcoordinadora de Catálogos de Autoridades Taxonómicas</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>dhernand@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>http://www.conabio.gob.mx</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-3951-4856</userId>
+        </metadataProvider>
+        <metadataProvider>
+            <individualName>
+                <givenName>Cisteil Xinum</givenName>
+                <surName>Pérez Hernández</surName>
+            </individualName>
+            <organizationName>Instituto de Investigaciones en Ecosistemas y Sustentabilidad, UNAM</organizationName>
+            <positionName>Postdoctoral Researcher</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>cxinum@gmail.com</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-6698-2524</userId>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>Cisteil Xinum</givenName>
+                <surName>Pérez Hernández</surName>
+            </individualName>
+            <organizationName>Instituto de Investigaciones en Ecosistemas y Sustentabilidad, UNAM</organizationName>
+            <positionName>Postoctoral Researcher</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>cxinum@gmail.com</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-6698-2524</userId>
+            <role>PRINCIPAL_INVESTIGATOR</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Angélica María</givenName>
+                <surName>Corona-López</surName>
+            </individualName>
+            <organizationName>Centro de Investigación en Biodiversidad y Conservación (CIByC), Universidad Autónoma del Estado de Morelos (UAEM)</organizationName>
+            <positionName>Professor</positionName>
+            <address>
+                <administrativeArea>Cuernavaca, Morelos</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+            <role>CURATOR</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Víctor Hugo</givenName>
+                <surName>Toledo-Hernández</surName>
+            </individualName>
+            <organizationName>Centro de Investigación en Biodiversidad y Conservación (CIByC), Universidad Autónoma del Estado de Morelos (UAEM)</organizationName>
+            <positionName>Professor</positionName>
+            <address>
+                <administrativeArea>Morelos</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+            <role>CURATOR</role>
+        </associatedParty>
+        <pubDate>
+                2021-09-22
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            Presentamos una base de datos de los registros de interacción planta-bupréstidos en México (latitud 14.540833 y 32.718333; longitud -118.456666 y -86.710000), basada en publicaciones científicas y colecciones entomológicas mexicanas, con la intención de facilitar el uso y la difusión de los datos entre taxónomos, ecólogos y otras personas interesadas en el estudio y exploración de la relación planta-Coleoptera. Compilamos un total de 1656 registros de interacciones a partir de 115 artículos –publicados entre 1902 y 2020–, y de la revisión de aproximadamente 7,000 especímenes de colecciones entomológicas. Los registros de interacción compilados pertenecen a 45 géneros, 318 especies y 13 subespecies de bupréstidos mexicanos, asociadas a 202 especies, subespecies y variedades de plantas hospederas, pertenecientes a 159 géneros y 56 familias; los registros fueron obtenidos entre 1895 y 2015. También documentamos el estadio de vida y el recurso vegetal utilizado por cada especie. De acuerdo con esa información, clasificamos cada especie de bupréstido en cinco gremios tróficos y asignamos un tipo de asociación a cada par de especies interactuantes.
+        </abstract>
+        <keywordSet>
+            <keyword>escarabajos joya</keyword>
+            <keyword>escarabajos barrenadores metálicos</keyword>
+            <keyword>plantas hospederas</keyword>
+            <keyword>Occurrence</keyword>
+            <keyword>gremios tróficos</keyword>
+            <keyword>xilófagos</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=plantbuprestidsinteractionsmx</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>National level Mexico</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-117.598</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-86.309</eastBoundingCoordinate>
+                    <northBoundingCoordinate>32.843</northBoundingCoordinate>
+                    <southBoundingCoordinate>15.115</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1895-05-10
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2015-05-07
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Familia Buprestidae en México, se incluyen 45 géneros, 318 especies y 13 subespecies.</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acmaeodera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acmaeoderoides</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acmaeoderopsis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Actenodes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Agaeocera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Agrilaxia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Agrilus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Anambodera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Brachys</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Buprestis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Chalcophora</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Chrysobothris</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Dismorpha</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ditriaena</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Euchroma</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Gyascutus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Hiperantha</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Hippomelas</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Jelinekia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Knowltonia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lampetis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Leiopleura</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mastogenius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Melanophila</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mimicoclytrina</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mixochlorus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Nanularia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Oaxacanthaxia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Omochyseus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pachyschelus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Paragrilus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Paratyndaris</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pelecopselaphus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pelycothorax</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Phaenops</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pilotrulleum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Polycesta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sambomorpha</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Spectralia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sphaerobothris</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Taphrocerus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Tetragonoschema</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Thrincopyge</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Trypantius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Xenorhipis</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <purpose><para>Facilitar el uso y la difusión de los datos de interacción  planta - Buprestidae entre taxónomos, ecólogos y otras personas interesadas en el tema.</para></purpose>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Diana Raquel</givenName>
+                <surName>Hernández Robles</surName>
+            </individualName>
+            <organizationName>CONABIO</organizationName>
+            <positionName>Subcoordinadora de Catálogos de Autoridades Taxonómicas</positionName>
+            <address>
+                <administrativeArea>Ciudad de México</administrativeArea>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>dhernand@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>http://www.conabio.gob.mx</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-3951-4856</userId>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Cisteil Xinum</givenName>
+                <surName>Pérez Hernández</surName>
+            </individualName>
+            <organizationName>Instituto de Investigaciones en Ecosistemas y Sustentabilidad, UNAM</organizationName>
+            <positionName>Postdoctoral Researcher</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+            <electronicMailAddress>cxinum@gmail.com</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-6698-2524</userId>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>A partir de la búsqueda exhaustiva en literatura y de la revisión de ejemplares de tres colecciones entomológicas mexicanas, la selección de registros de la interacción planta-bupréstidos que integran esta base de datos se realizó bajo los siguientes criterios: i) el registro indicaba cualquier tipo de asociación entre plantas y bupréstidos mexicanos; ii) el nivel taxonómico de identificación de los taxones interactuantes fue género o cualquier otro inferior; iii) el registro indicaba que la interacción ocurrió en México. Antes de integrar cada nuevo registro, la información era comparada con los registros ya integrados, con la intención de evitar la repetición de un mismo registro publicado en distintas fuentes (p.ej. ejemplares tipo depositados en las colecciones entomológicas consultadas y que se mencionan en las publicaciones en donde se describieron las especies en cuestión).
+Los registros se clasificaron en dos tipos de asociación (campo relationshipOfResource de la tabla resourceRelationship): i) host, cuando así lo indicaba la fuente o cuando la observación de asociación fue a partir de larvas, pupas o actividades reproductivas, y también se consideró que más de 5 especímenes colectados o más de 5 registros independientes –con o sin registro de la larva– eran suficientes para determinar que la interacción no se debe a efectos del azar –por tanto, se sugiere que es una relación de hospedero– (basada en el índice de confianza de Jendek y Polakova 2014); ii) associated to, cuando las observaciones involucraron menos de 5 especímenes colectados o menos de 5 registros independientes –excepto cuando se hicieron a partir de larvas, pupas u oviposición. En el mismo campo se añadió el nombre de la planta interactuante, usando el nombre original señalado en la fuente consultada.
+La información sobre el tipo de tejido utilizado (campo relationshipRemarks de la tabla resourceRelationship) y el estadio de vida de los Buprestidae (campo lifeStage de la tabla occurrence_buprestids), se utilizó para categorizar a los bupréstidos en cinco gremios tróficos (campo behavior de la tabla occurrence_buprestids): defoliadores (larvas y adultos que utilizan hojas, tallos, brácteas, etc.); florívoros (larvas xilófagas y adultos que utilizan néctar, polen, flores, u otras estructuras florales); minadores (larvas y adultos que consumen tejidos internos de hojas y tallos); rizófagos (consumidores de raíces o tejidos cerca de la raíz); xilófagos (larvas y adultos consumiendo madera viva o muerta). Todas las especies que fueron registradas en más de un gremio trófico (e.g. consumían más de una categoría de tejido vegetal) fueron clasificados según el gremio trófico más frecuentemente registrado.</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>La base de datos incluye registros de la interacción planta-bupréstida de especies distribuidas en México.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Los registros de las interacciones planta-bupréstidas en México fueron obtenidos a partir de publicaciones científicas y de las mayores colecciones entomológicas de Buprestidae en el país. Inició con búsqueda exhaustiva de literatura especializada en bases de datos académicas. Se revisaron 320 publicaciones con fecha entre 1902 a 2020. Se revisaron los siguientes acervos entomológicos: i) Colección Nacional de Insectos del Instituto de Biología, Universidad Nacional Autónoma de México (CNIN, UNAM); ii) Colección de Insectos de la Universidad Autónoma del Estado de Morelos (CIUM, UAEM); y iii) Colección Entomológica de la Estación de Biología Chamela (EBCh, UNAM), en el estado de Jalisco. Solo en el caso de la última, la compilación se realizó a partir de la revisión directa de más de 3,000 ejemplares conservados en alfileres; mientras que, los curadores de la CNIN y la CIUM proveyeron bases de datos internas que sumaron casi 4,000 registros, desde las cuales se seleccionaron los registros de interacción.</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>La validez y las sinonimias de los nombres científicos de las bupréstidas, así como la distribución de los taxones en México fueron verificados principalmente en Bellamy (2008), Nelson et al. (2008), Westcott et al. (2008) MacRae y Bellamy (2013), Hespenheide et al. (2011), entre otras; mientras que, la distribución de las plantas hospederas en México fue verificada en Missouri Botanical Garden (2021) y Villaseñor (2016).
+Los datos que contiene la base de datos siguen el estándar DarwinCore.</para>
+                </description>
+            </qualityControl>
+        </methods>
+
+            <project >
+                <title>Arquitectura de la interacción de planta-Buprestidae (Coleoptera) y su respuesta frente al cambio climático en México</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Cisteil Xinum</givenName>
+                    <surName>Pérez Hernández</surName>
+                    </individualName>
+            <userId directory="https://orcid.org/">0000-0002-6698-2524</userId>
+                    <role>AUTHOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
+                    <givenName>Ek</givenName>
+                    <surName>del Val</surName>
+                    </individualName>
+                    <role>AUTHOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
+                    <givenName>Angélica María</givenName>
+                    <surName>Corona-López</surName>
+                    </individualName>
+                    <role>CURATOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
+                    <givenName>Víctor Manuel</givenName>
+                    <surName>Toledo Hernández</surName>
+                    </individualName>
+                    <role>CURATOR</role>
+                </personnel>
+                <abstract>
+                    <para>Todas las especies de Buprestidae (Coleoptera: Buprestoidea) están asociadas a plantas en algún estadio de su ciclo de vida debido a sus hábitos xilófagos, saproxilófagos, florífagos y polinófagos. La mayoría son especialistas de árboles y son oligófagas -se desarrollan en un solo género de árboles o en varios relacionados entre sí-. Son un componente funcional importante en los ecosistemas por su función como polinizadoras o degradadoras de materia vegetal muerta;</para>
+                </abstract>
+                <funding>
+                    <para>La Dirección General de Asuntos de Personal Académico (DGAPA-UNAM) proveyó la beca posdoctoral de CXPH que permitió este proyecto.</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>La base de datos incluye registros de la interacción planta-bupréstida de especies distribuidas en México.
+Coordenadas: 14.540833 y 32.718333 de latitud; -118.456666 y -86.710000 de longitud.</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+                <designDescription>
+                    <description>
+                        <para>Los registros de las interacciones planta-bupréstidos en México fueron obtenidas a partir de publicaciones científicas y de las mayores colecciones entomológicas de Buprestidae en el país a las que tuvimos acceso. Se realizó una búsqueda exhaustiva de literatura especializada en bases de datos académicas y a través de Bibliography of the World Catalogue of Jewel Beetles (Bellamy 2012). Además, se revisaron las etiquetas de ejemplares depositados en los siguientes acervos entomológicos: i) Colección Nacional de Insectos del Instituto de Biología, Universidad Nacional Autónoma de México (CNIN, UNAM); ii) Colección de Insectos de la Universidad Autónoma del Estado de Morelos (CIUM, UAEM); y iii) Colección Entomológica de la Estación de Biología Chamela (EBCh, UNAM), en el estado de Jalisco.
+La selección de registros de la interacción planta-bupréstidos se realizó usando los siguientes criterios: i) el registro indicaba cualquier tipo de asociación entre plantas y bupréstidas mexicanas; ii) el nivel taxonómico de identificación de los taxones interactuantes fue género o cualquier otro inferior; iii) el registro indicaba que la interacción ocurrió en México. Antes de integrar cada nuevo registro, la información era comparada con los registros ya integrados, con la intención de evitar la repetición de un mismo registro publicado en distintas fuentes (p.ej. ejemplares tipo depositados en las colecciones entomológicas consultadas y que se mencionan en las publicaciones en donde se describieron las especies en cuestión).
+
+La información compilada se presenta en tres tablas distintas: 1) occurrence_buprestids; 2) occurrence_hostplants, 3) resourceRelationship; las cuales contienen información sobre la clasificación taxonómica de las especies de bupréstidos (tabla occurrence_buprestids) y sus plantas hospederas (tabla occurrence_hostplants), la ubicación geográfica de la interacción, datos de colecta u observación y la fuente consultada (tablas occurrence_buprestids y occurrence_hostplants). La tabla resourceRelationship indica la relación entre bupréstidos y plantas hospederas a través de sus respectivos occurrenceID indicados en las tablas antes mencionadas, así como el tipo de relación y el recurso consumido o utilizado (campo relationshipRemarks).</para>
+                    </description>
+                </designDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2024-10-22T20:40:27Z</dateStamp>
+                <citation>Pérez Hernández C X, Hernández-Robles D R, Corona-López A M, Toledo-Hernández V M, del Val E, Hernández Robles D R (2021). Dataset of the plant-Buprestidae (Coleoptera) interactions from Mexico. Version 1.1. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bck627 accessed via GBIF.org on 2024-10-22.</citation>
+                <collection>
+                    
+                    
+                    <collectionName>Colección Nacional de Insectos, Instituto de Biología, UNAM</collectionName>
+                </collection>
+                <collection>
+                    
+                    
+                    <collectionName>Colección de Insectos de la Universidad Autónoma del Estado de Morelos (IUM, UAEM)</collectionName>
+                </collection>
+                <collection>
+                    
+                    
+                    <collectionName>Colección Entomológica de la Estación de Biología Chamela (EBCh, UNAM)</collectionName>
+                </collection>
+                <specimenPreservationMethod>PINNED</specimenPreservationMethod>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>pins</jgtiUnitType>
+                    <jgtiUnits uncertaintyMeasure="100">7,000</jgtiUnits>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>
