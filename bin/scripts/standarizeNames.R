@@ -10,8 +10,16 @@ library(openxlsx) #install.packages("openxlsx")
 library(stringr)
 
 #Upload data frame 
-records_df_raw <- read_csv("data/temp/herbaGbifBIEN_df/herbGbifBien.csv")[,-1]
 
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
+
+recordsBIEN_raw <- fread("data/in/dataBIENmex_csv/dataBIENmex.csv")
+
+files_list<- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=T)
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
 
 #Upload the species list
 splist_raw <- read_delim("data/in/CatalogoAutoridadTaxomicaQuercus_csv/0010521-240906103802322.csv", 
@@ -23,8 +31,13 @@ names(splist_raw)
 
 #Extract name species, author and rank in order for the package to work
 splist <- splist_raw %>%
-  select("scientificName","verbatimScientificNameAuthorship",
-         "gbifID","family","genus", "speciesKey", "taxonKey") %>%
+  select("scientificName", #coincide con el formato de acceptedScientificName
+         "verbatimScientificNameAuthorship", # Para que haga match con el autor
+         "family",
+         "genus", 
+         "speciesKey", #Codigo de la especie a la que corresponde el accepted_name(Ejemplo Q.
+         #jonesii y Q. coccolobifolia tienen el mismo species_key porque son sinonimas)
+         "taxonKey") %>% #codigo de cada taxon (los sinonimos y las variades tienen su propio taxonKey
   rename("NAME"="scientificName",
          "ID"="taxonKey",
          "AUTHOR"="verbatimScientificNameAuthorship",
@@ -32,8 +45,10 @@ splist <- splist_raw %>%
          #"GENUS"="genus",
          "ACCEPTED_ID" = "speciesKey") %>%
   mutate("RANK" = "") %>%
-  mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>%
+ #mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>%
   select("ID", "NAME", "AUTHOR", "RANK", "ACCEPTED_ID") 
+
+head(splist)
 
 names(splist) <- str_to_title(names(splist))
 
@@ -41,14 +56,15 @@ names(splist) <- str_to_title(names(splist))
 write_xlsx(splist,"data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 
 #Change the df of records to match with the package and select the columns of interest
-names(records_df)
-records_df <- records_df_raw %>%
-  rename("SORTER"="valueID",
-         "NAME"="scientificName",
-         "AUTHOR" = "verbatimScientificNameAuthorship") %>%
+
+records_df <- recordsGbif_raw %>%
+  rename("NAME"="acceptedScientificName") %>%
+         #"AUTHOR" = "scientificNameAuthorship") %>%
   mutate(RANK = "") %>% 
-  select("SORTER","NAME","AUTHOR", "RANK") %>%
-  mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>% 
+  select("NAME",
+         #"AUTHOR", 
+         "RANK") %>%
+ # mutate(NAME = str_extract(NAME, "Quercus [a-zA-Z]{1,}|Quercus .{1}\\w{1,}|Quercus .{1} \\w{1,}")) %>% 
   filter(., !is.na(NAME) & !NAME %in% c("Quercus L.", "Quercus L")) 
 
 names(records_df)
@@ -62,17 +78,20 @@ write_xlsx(records_df,"data/temp/records_UTaxonStand/records_dfUts.xlsx")
 
 # load the database
 records<- read.xlsx("data/temp/records_UTaxonStand/records_dfUts.xlsx")
-str(records)
-names(records)[1] <- "id_interno"
+#str(records)
+#names(records)[1] <- "id_interno"
 
 # load the species list to match with
 splist <- readxl::read_xlsx("data/temp/taxonomicNames_UTaxonStand/accepted_species.xlsx")
 str(splist)
+names(splist)
 
-test <- records[c(sample(1:nrow(records),10),26322),]
+test <- records[c(sample(1:nrow(records),10),27042),]
+test2 <- data.frame(Name = "Quercus sapotifolia Liebm.", Author = "Liebm.", Rank=2)
+
 
 # run the main function of name matching
-res <- nameMatch(spList=test$Name, spSource=splist, author=FALSE, max.distance=1, matchFirst = FALSE)
+res <- nameMatch(spList=test, spSource=splist, author=FALSE, max.distance=1, matchFirst = FALSE)
 
 res$id_interno <- test$id_interno
 

@@ -12,6 +12,7 @@
 # --- Load libraries ---
 library(dplyr)
 library(readr)
+library(data.table)
 
 ##Dividir dwc en 3 para guardarlo en github
 
@@ -31,20 +32,24 @@ lapply(list_recordsGbif_raw, dim)
 lapply(seq_along(list_recordsGbif_raw), function(x){write.csv(list_recordsGbif_raw[[x]],
       file = paste0("data/in/gbif_dwc/division_occurrence/occurrence_",x,".csv"), row.names=F)})
 
-recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
+## Upload data frames 
 
-recordsGbif_raw <- read_delim("data/in/gbif_csv/gbif.csv", 
-                          delim = "\t", escape_double = FALSE, 
-                          trim_ws = TRUE)
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
 
-recordsHerbario_raw <- read_csv("data/in/herbariomex_dw/occurrences.csv")
+recordsBIEN_raw <- fread("data/in/dataBIENmex_csv/dataBIENmex.csv")
 
-recordsBIEN_raw <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
+
+# Load tables from gbif 
+files_list<- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=T)
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
 
 
 # --- Add a unique id to each value --- 
 recordsGbif <- recordsGbif_raw %>%
-  mutate(id_interno = paste0("GBIF_", row_number()))
+  mutate(id_interno = paste0("GBIF_", row_number()), taxonID=)
 
 recordsHerbario <- recordsHerbario_raw %>%
   mutate(id_interno = paste0("Herb_", row_number()))
