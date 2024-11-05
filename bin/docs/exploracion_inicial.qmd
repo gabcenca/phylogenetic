@@ -1,0 +1,26 @@
+---
+title: "Exploracion_inicial"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+---
+
+- Unir metadatos con la base de datos con los nombres corregidos
+- Unir la tabla del herbario y el gbif
+- Contar duplicados 
+  - Coordenadas
+  - Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
+  - Replicas del mismo individuo (nombre de los colectores, fecha de colecta y especie)
+  
+- Extraer elevación 
+- Realizar mapa
+ - Uno general para ver errores (como puntos que caen el mar)
+
+- Tabla de registros por especie 
+
+- Histograma de fechas 
+
+- Minímos y maximos de elevación por especie 
+
+- Obtener categoría de especie de la IUCN por especie 
+
+
