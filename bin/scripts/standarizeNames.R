@@ -8,12 +8,13 @@ library(dplyr)
 library(writexl)#install.packages("writexl")
 library(openxlsx) #install.packages("openxlsx")
 library(stringr)
+library(data.table)
 
 #Upload data frame 
 
 recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
 
-recordsBIEN_raw <- fread("data/in/dataBIENmex_csv/dataBIENmex.csv")
+#recordsBIEN_raw <- fread("data/in/dataBIENmex_csv/dataBIENmex.csv")
 
 files_list<- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=T)
 
@@ -138,3 +139,133 @@ join2 <- splist_raw %>%
             by = "scientificName")
 
 unique(join2$scientificName)
+
+# --------------- GBIF BACKBONE -----------------
+
+
+##Seleccionar columnas del herbario
+herbario_revisar <- recordsHerbario_raw %>%
+  mutate(nombre_autor= paste(scientificName, 
+                             scientificNameAuthorship, 
+                              sep = " ")) %>%
+  select(nombre_autor,kingdom,id)
+
+write.csv(herbario_revisar, "data/temp/herbario_checknames/herbario_revisar.csv")
+
+library(rgbif)
+
+
+test_herb <- herbario_revisar[c(sample(1:nrow(herbario_revisar), 10)), ]
+test_herb <- herbario_revisar[c(sample(1:nrow(herbario_revisar), 100)), ]
+
+
+# Crear una lista para almacenar los resultados
+resultados <- apply(test_herb[], 1, function(fila) {
+  name_backbone(
+    name = fila["nombre_autor"],
+    kingdom = fila["kingdom"]
+  )
+})
+
+library(purrr)
+resultados_df <- bind_rows(resultados)
+
+str(test_herb)
+test_herb <- as.data.frame(test_herb)
+herb_final <- cbind(test_herb["id"], resultados_df)
+View(herb_final)
+
+
+##Seleccionar columnas de gbif
+gbif_revisar <- recordsGbif_raw %>%
+  select(acceptedScientificName,kingdom,gbifID)
+
+test_gbif <- gbif_revisar[c(sample(1:nrow(gbif_revisar), 10)), ]
+
+# Crear una lista para almacenar los resultados
+
+resultados_gbif <- apply(test_gbif[], 1, function(fila) {
+  name_backbone(
+    name = fila["acceptedScientificName"],
+    kingdom = fila["kingdom"]
+  )
+})
+
+
+resultados_gbif <- bind_rows(resultados_gbif)
+
+test_gbif <- as.data.frame(test_gbif)
+gbif_final <- cbind(test_gbif["gbifID"], resultados_gbif)
+
+
+#Probar con df de gbif completo, solo con una fila x especie
+
+gbif_unicos<- gbif_revisar %>% distinct(acceptedScientificName, .keep_all = TRUE)
+
+revision_gbif_unicos <- apply(gbif_unicos[], 1, function(fila) {
+  name_backbone(
+    name = fila["acceptedScientificName"],
+    kingdom = fila["kingdom"]
+  )
+})
+
+revision_gbif_unicos_df <- bind_rows(revision_gbif_unicos)
+
+str(gbif_unicos)
+gbif_unicos <- as.data.frame(gbif_unicos)
+gbif_final <- cbind(gbif_unicos["gbifID"], revision_gbif_unicos_df)
+
+
+
+# Contar el número de nombres aceptados y sinónimos
+gbif_final %>% count(status)
+
+# Extraer nombres aceptados
+nombres_aceptados_gbif <- gbif_final %>% filter(status == "ACCEPTED")
+
+# Extraer nombres con duda
+nombres_duda_gbif <- gbif_final %>% filter(status == "DOUBTFUL")
+
+
+
+#Probar con df de herbario completo, solo con una fila x especie
+
+herbario_revisar <- recordsHerbario_raw %>%
+  mutate(nombre_autor= paste(scientificName, 
+                             scientificNameAuthorship, 
+                             sep = " ")) %>%
+  select(nombre_autor,kingdom,id)
+
+herb_unicos<- herbario_revisar %>% distinct(nombre_autor, .keep_all = TRUE)
+
+revision_herb_unicos <- apply(herb_unicos[], 1, function(fila) {
+  name_backbone(
+    name = fila["nombre_autor"],
+    kingdom = fila["kingdom"]
+  )
+})
+
+revision_herb_unicos_df <- bind_rows(revision_herb_unicos)
+
+str(herb_unicos)
+herb_unicos <- as.data.frame(herb_unicos)
+herb_final_unicos <- cbind(herb_unicos["id"], revision_herb_unicos_df)
+
+
+
+# Contar el número de nombres aceptados y sinónimos
+herb_final_unicos %>% count(status)
+
+# Extraer nombres aceptados
+nombres_aceptados_herb <- herb_final_unicos %>% filter(status == "ACCEPTED")
+
+# Extraer nombres con duda
+nombres_duda_herb <- herb_final_unicos %>% filter(status == "DOUBTFUL")
+
+# Extraer nombres sinonimos
+nombres_sin_herb <- herb_final_unicos %>% filter(status == "SYNONYM")
+
+
+
+
+
