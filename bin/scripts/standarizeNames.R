@@ -42,7 +42,7 @@ resultados_herb <- apply(herbario_revisar, 1, function(fila) {
 })
 
 
-resultados_df <- bind_rows(resultados)
+resultados_df <- bind_rows(resultados_herb)
 herbario_revisar <- as.data.frame(herbario_revisar)
 herb_final <- cbind(herbario_revisar["id"], resultados_df)
 
