@@ -4,23 +4,205 @@ author: "Gabriela Centeno y Sofía Zorrilla"
 format: html
 ---
 
-- Unir metadatos con la base de datos con los nombres corregidos
-- Unir la tabla del herbario y el gbif
-- Contar duplicados 
-  - Coordenadas
-  - Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
-  - Replicas del mismo individuo (nombre de los colectores, fecha de colecta y especie)
-  
-- Extraer elevación 
-- Realizar mapa
- - Uno general para ver errores (como puntos que caen el mar)
-
-- Tabla de registros por especie 
-
-- Histograma de fechas 
-
-- Minímos y maximos de elevación por especie 
-
-- Obtener categoría de especie de la IUCN por especie 
+```{r}
+# --- Set wd ---
+setwd("C:/Users/danie/Desktop/phylogenetic")
 
 
+# --- Load libraries ---
+library(dplyr)
+library(readr)
+library(data.table)
+library(ggplot2)
+
+```
+
+- Subir datos crudos 
+
+El siguiente codigo no sirve en qmd:
+# Load tables from gbif 
+files_list <- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE)
+
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
+
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
+
+gbif_nombres_backbone <- fread("data/temp/backbone_gbif/gbif_nombres_backbone.csv")
+
+herb_nombres_backbone <- fread("data/temp/backbone_gbif/herb_final_backbone.csv")
+
+
+
+
+
+-   Unir metadatos con la base de datos con los nombres corregidos
+
+```{r}
+# --- Generar un id interno para cada tabla
+recordsGbif_raw <- recordsGbif_raw %>%
+  mutate(id_interno = paste0("GBIF_", row_number()))
+
+recordsHerbario_raw <- recordsHerbario_raw %>%
+  mutate(id_interno = paste0("Herb_", row_number()))
+
+
+# --- Unir columnas del herbario con el herbario corregido 
+
+herb_corr_raw <- cbind(recordsHerbario_raw, herb_nombres_backbone)
+
+# --- Unir columnas de gbif con gbif corregido 
+
+gbif_corr_raw <- cbind(recordsGbif_raw, gbif_nombres_backbone)
+
+
+```
+
+-   Unir la tabla del herbario y el gbif
+
+```{r}
+#Agregar sufijo para que no haya columnas duplicadas
+names(herb_corr_raw) <- make.names(names(herb_corr_raw), unique = TRUE)
+names(gbif_corr_raw) <- make.names(names(gbif_corr_raw), unique = TRUE)
+
+herb_corr_raw <- herb_corr_raw %>%
+  mutate(across(everything(), as.character))
+
+gbif_corr_raw <- gbif_corr_raw %>%
+  mutate(across(everything(), as.character))
+
+# Unir las filas de los data frames
+gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
+
+
+```
+
+
+-   Seleccionar columnas de interés
+
+```{r}
+gbif_herb <- gbif_herb_raw %>%
+  select(correctname, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+```
+
+
+-   Contar duplicados
+
+    -   Coordenadas
+    
+```{r}
+#Eliminar registros sin coordenadas 
+gbif_herb_coor <- gbif_herb %>%
+  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
+
+# Identificar las filas duplicadas basadas en las coordenadas
+coor_duplicated <- gbif_herb_coor %>%
+  filter(duplicated(cbind(decimalLatitude, decimalLongitude)))
+
+```
+    
+    
+    -   Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
+```{r}
+corr_loc_name_dupli <-  gbif_herb_coor%>%
+  filter(duplicated(cbind(decimalLatitude, decimalLongitude, correctname, municipality) , fromLast = TRUE))
+
+```
+    
+    
+    -   Replicas del mismo individuo (nombre de los colectores, fecha de colecta y especie)
+    
+```{r}
+colectors_date_species_replica <-  gbif_herb_coor%>%
+  filter(duplicated(cbind(recordedBy,eventDate,correctname) , fromLast = TRUE))
+
+```
+
+- Eliminar duplicados 
+```{r}
+# --- Eliminar por coordenadas, nombre de la especie y localidad
+
+hgbif_no_duplicates_loc_name <- gbif_herb_coor %>%
+  distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
+
+# --- Después eliminar duplicados de recolector, fecha de colecta y especie
+hgbif_no_duplicates <- hgbif_no_duplicates_loc_name %>%
+  distinct(recordedBy, eventDate, correctname, .keep_all = TRUE)
+
+```
+
+Guardarlo en un csv
+
+No sirve en qmd 
+
+```{r}
+write.csv(hgbif_no_duplicates, file = "data/out/hgbif_no_duplicates.csv")
+```
+- Ver cuantos NA hay 
+```{r}
+colSums(is.na(hgbif_no_duplicates))
+
+```
+
+    
+-   Extraer elevación
+
+```{r}
+#install.packages("elevatr")
+library(elevatr)
+
+# Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
+hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
+  select(decimalLongitude, decimalLatitude,everything())
+
+# Obtener elevación para cada punto en tu base de datos
+elev_data <- get_elev_point(hgbif_no_duplicates_coor, 
+                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
+                            z = 8)      # Nivel de zoom (determina la precisión)
+
+# Agregar la columna de elevación al data frame original
+encinos_data$elevacion <- elev_data$elevation
+```
+
+
+-   Realizar mapa
+```{r}
+ggplot(hgbif_no_duplicates, aes(x = decimalLongitude, y = decimalLatitude)) +
+  geom_point(aes(color = correctname), alpha = 0.6) +  # Puedes ajustar el color por especie
+  labs(title = "Mapa de Distribución de Especies",
+       x = "Longitud",
+       y = "Latitud") +
+  theme_minimal() +
+  theme(legend.position = "right")
+```
+
+
+-   Uno general para ver errores (como puntos que caen el mar)
+
+-   Tabla de registros por especie
+```{r}
+species_count <- hgbif_no_duplicates %>%
+  count(correctname, name = "total_registros")
+```
+
+
+-   Histograma de fechas
+```{r}
+# Extraer solo el año
+hgbif_no_duplicates$year <- year(hgbif_no_duplicates$eventDate)
+
+# Crear un histograma por año
+ggplot(hgbif_no_duplicates, aes(x = year)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "lightblue", alpha = 0.7) +
+  labs(title = "Histograma de Fechas de Colecta (Por Año)",
+       x = "Año de Colecta",
+       y = "Número de Registros") +
+  theme_minimal()
+```
+
+
+-   Minímos y maximos de elevación por especie
+
+-   Obtener categoría de especie de la IUCN por especie
