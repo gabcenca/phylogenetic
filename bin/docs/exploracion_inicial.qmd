@@ -153,17 +153,32 @@ colSums(is.na(hgbif_no_duplicates))
 #install.packages("elevatr")
 library(elevatr)
 
+
+
 # Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
 hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
-  select(decimalLongitude, decimalLatitude,everything())
+    mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude)  %>%
+  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
+
+
+# Convertir a objeto sf
+
+library(sf)
+
+hgbif_no_duplicates_sf <- st_as_sf(hgbif_no_duplicates_coor,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+
 
 # Obtener elevación para cada punto en tu base de datos
-elev_data <- get_elev_point(hgbif_no_duplicates_coor, 
+elev_data <- get_elev_point(hgbif_no_duplicates_sf, 
                             src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
                             z = 8)      # Nivel de zoom (determina la precisión)
 
-# Agregar la columna de elevación al data frame original
-encinos_data$elevacion <- elev_data$elevation
+# # Agregar la columna de elevación al data frame original
+# encinos_data$elevacion <- elev_data$elevation
 ```
 
 
