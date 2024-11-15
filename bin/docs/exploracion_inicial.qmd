@@ -150,14 +150,17 @@ colSums(is.na(hgbif_no_duplicates))
 -   Extraer elevación
 
 ```{r}
-#install.packages("elevatr")
+
+#Inicia funcion
 library(elevatr)
+library(data.table)
 
-
+#Genera el df de elevacion
 
 # Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
+
 hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
-    mutate(
+  mutate(
     decimalLongitude = as.numeric(decimalLongitude),
     decimalLatitude = as.numeric(decimalLatitude)
   ) %>%
@@ -175,41 +178,70 @@ hgbif_no_duplicates_sf <- st_as_sf(hgbif_no_duplicates_coor,coords = c("decimalL
 # Obtener elevación para cada punto en tu base de datos
 elev_data <- get_elev_point(hgbif_no_duplicates_sf, 
                             src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
-                            z = 8)      # Nivel de zoom (determina la precisión)
+                            z = 4)      # Nivel de zoom (determina la precisión)
 
-# # Agregar la columna de elevación al data frame original
-# encinos_data$elevacion <- elev_data$elevation
+
+#guardar en un csv 
+write.csv(elev_data, "data/temp/elev_data.csv")
+
+#Generar el df con las coordenadas correctas y todas las columnas para agregar la columna de elevacion a cada registro
+hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude,everything())  %>%
+  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
+
+#Agregar columna de elevacion
+hgbif_no_duplicates_coor_completo$elevacion <- elev_data$elevation
+
+#Ver rango de elevacion que hay 
+range(hgbif_no_duplicates_coor_completo$elevacion)
+
+
+# Filtrar los datos para mantener solo las filas donde la elevación sea mayor o igual a cero
+hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates_coor_completo %>%
+  filter(elevacion >= 0)
+
+# Verifica el rango después de eliminar las elevaciones negativas
+range(hgbif_no_duplicates_coor_completo$elevacion)
+
 ```
-
-
--   Realizar mapa
-```{r}
-ggplot(hgbif_no_duplicates, aes(x = decimalLongitude, y = decimalLatitude)) +
-  geom_point(aes(color = correctname), alpha = 0.6) +  # Puedes ajustar el color por especie
-  labs(title = "Mapa de Distribución de Especies",
-       x = "Longitud",
-       y = "Latitud") +
-  theme_minimal() +
-  theme(legend.position = "right")
-```
-
 
 -   Uno general para ver errores (como puntos que caen el mar)
 
+```{r}
+
+```
+
+
 -   Tabla de registros por especie
 ```{r}
-species_count <- hgbif_no_duplicates %>%
-  count(correctname, name = "total_registros")
+species_count <- hgbif_no_duplicates_coor_completo %>%
+  count(correctname, name = "total_registros")%>%
+  filter(total_registros > 10)
+
+
+
+# Now filter the main data frame to only include species with more than 10 records
+hgbif_filtered <- hgbif_no_duplicates_coor_completo %>%
+  semi_join(species_count, by = "correctname")
 ```
 
 
 -   Histograma de fechas
 ```{r}
-# Extraer solo el año
-hgbif_no_duplicates$year <- year(hgbif_no_duplicates$eventDate)
+
+# Load lubridate if not already loaded
+library(lubridate)
+
+# Extract the year from eventDate
+hgbif_filtered <- hgbif_filtered %>%
+  mutate(year = year(ymd(eventDate)))
 
 # Crear un histograma por año
-ggplot(hgbif_no_duplicates, aes(x = year)) +
+ggplot(hgbif_filtered, aes(x = year)) +
   geom_histogram(binwidth = 1, color = "black", fill = "lightblue", alpha = 0.7) +
   labs(title = "Histograma de Fechas de Colecta (Por Año)",
        x = "Año de Colecta",
@@ -220,4 +252,53 @@ ggplot(hgbif_no_duplicates, aes(x = year)) +
 
 -   Minímos y maximos de elevación por especie
 
+
 -   Obtener categoría de especie de la IUCN por especie
+
+```{r}
+#| echo: false
+
+# # Instalar los paquetes necesarios si no los tienes
+# install.packages(c("httr", "jsonlite"))
+
+# Cargar los paquetes
+library(httr)
+library(jsonlite)
+```
+
+```{r}
+# Clave de API de la IUCN (reemplaza "YOUR_IUCN_API_KEY" con tu clave de API)
+iucn_api_key <- "8a2sFdrnhH9eBjj1WKE9p46w3GaneBziqRx3"
+
+# Función para obtener la categoría de conservación de una especie
+get_iucn_status <- function(species_name) {
+  # URL para la consulta
+  url <- paste0("https://apiv3.iucnredlist.org/api/v3/species/", URLencode(species_name), "?token=", iucn_api_key)
+  
+  # Hacer la solicitud a la API
+  response <- GET(url)
+  
+  # Verificar si la solicitud fue exitosa
+  if (status_code(response) == 200) {
+    data <- fromJSON(content(response, "text"), flatten = TRUE)
+    
+    # Extraer la categoría de conservación si está disponible
+    if (length(data$result) > 0) {
+      return(data$result$category)
+    } else {
+      return(NA)  # Si no hay datos para la especie
+    }
+  } else {
+    warning("Error in request: ", status_code(response))
+    return(NA)
+  }
+}
+
+
+# Crear una nueva columna con la categoría de la IUCN
+species_count <- species_count %>%
+  mutate(iucn_category = sapply(correctname, get_iucn_status))
+
+
+```
+
