@@ -2,7 +2,6 @@
 title: "Exploracion_inicial"
 author: "Gabriela Centeno y Sofía Zorrilla"
 format: html
-
 knitr:
   opts_knit:
     root.dir: "../../"
@@ -26,23 +25,25 @@ library(ggplot2)
 
 ```{r} 
 #| eval: false
-files_list <- list.files("../../data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE)
+
+# Load tables from gbif 
+files_list <- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE)
 
 
 files <- lapply(files_list,fread)
 
 recordsGbif_raw <- do.call(rbind,files)
 
-recordsHerbario_raw <- fread("../../data/in/herbariomex_dw/occurrences.csv")
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
 
-gbif_nombres_backbone <- fread("../../data/temp/backbone_gbif/gbif_nombres_backbone.csv")
+gbif_nombres_backbone <- fread("data/temp/backbone_gbif/gbif_nombres_backbone.csv")
 
-herb_nombres_backbone <- fread("../../data/temp/backbone_gbif/herb_final_backbone.csv")
+herb_nombres_backbone <- fread("data/temp/backbone_gbif/herb_final_backbone.csv")
+
 
 
 
 ```
-
 
 
 
@@ -84,12 +85,8 @@ gbif_corr_raw <- gbif_corr_raw %>%
 # Unir las filas de los data frames
 gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 
-```
-```{r}
-write.csv(gbif_herb_raw,"../../data/temp/gbif_herb_raw.csv")
 
 ```
-
 
 
 -Ver nombres que no coincidieron con ningun correctname
@@ -105,7 +102,6 @@ Son 4000 registros en total, pero si se filtran los duplicados, son 14 distintos
 
 Hay que revisar los nombres duplicados, primero borrar las que no tienen coordenadas y borrar Quercus y Quercus L.  
 Guardar en un objeto nuevo las que no tienen coordenadas para poder salvar registros. 
-
 
 
 -   Seleccionar columnas de interés
@@ -153,6 +149,7 @@ colectors_date_species_replica <-  gbif_herb_coor%>%
     Estos son 15137 registros. 
 
 
+
 - Eliminar duplicados 
 ```{r}
 # --- Eliminar por coordenadas, nombre de la especie y localidad
@@ -161,9 +158,11 @@ hgbif_no_duplicates <- gbif_herb_coor %>%
   distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
 
 
+
 ```
 
 Guardarlo en un csv
+
 
 
 ```{r}
@@ -225,6 +224,7 @@ hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
 
 #Agregar columna de elevacion
 elev_data <- read.csv("data/temp/elev_data.csv", header=T)
+
 
 hgbif_no_duplicates_coor_completo$elevacion <- elev_data$elevation
 
@@ -330,8 +330,6 @@ species_count <- hgbif_no_duplicates_coor_completo %>%
   arrange(total_registros)  %>%
   filter(!is.na(correctname)) 
 
-
-
 # Now filter the main data frame to only include species with more than 10 records
 hgbif_filtered <- hgbif_no_duplicates_coor_completo %>%
   semi_join(species_count, by = "correctname")
@@ -362,12 +360,14 @@ hist_conteos <- ggplot(hgbif_filtered, aes(x = year)) +
 Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/hist_conteo_registros.jpg", plot = hist_conteos, type = "cairo", width = 8, height = 6, dpi = 300)
 
 
+
 -   Minímos y maximos de elevación por especie
 
 
 -   Obtener categoría de especie de la IUCN por especie, revisar tabla gbif 
 
 SIGUE SIN FUNCIONAR 
+
 
 ```{r}
 #| echo: false
