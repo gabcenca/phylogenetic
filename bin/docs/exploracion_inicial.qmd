@@ -18,7 +18,7 @@ library(dplyr)
 library(readr)
 library(data.table)
 library(ggplot2)
-
+library(here)
 ```
 
 - Subir datos crudos 
@@ -27,18 +27,18 @@ library(ggplot2)
 #| eval: false
 
 # Load tables from gbif 
-files_list <- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE)
+files_list <- list.files(here::here("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE))
 
 
 files <- lapply(files_list,fread)
 
 recordsGbif_raw <- do.call(rbind,files)
 
-recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
+recordsHerbario_raw <- fread(here::here("data/in/herbariomex_dw/occurrences.csv"))
 
-gbif_nombres_backbone <- fread("data/temp/backbone_gbif/gbif_nombres_backbone.csv")
+gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv"))
 
-herb_nombres_backbone <- fread("data/temp/backbone_gbif/herb_final_backbone.csv")
+herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
 
 
 
