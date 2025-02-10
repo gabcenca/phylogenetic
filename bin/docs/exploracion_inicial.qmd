@@ -10,7 +10,7 @@ knitr:
 
 ```{r}
 # --- Set wd ---
-setwd("C:/Users/danie/Desktop/phylogenetic")
+#setwd("C:/Users/danie/Desktop/phylogenetic")
 
 
 # --- Load libraries ---
@@ -27,7 +27,7 @@ library(here)
 #| eval: false
 
 # Load tables from gbif 
-files_list <- list.files(here::here("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE))
+files_list <- list.files(here::here("data/in/gbif_dwc/division_occurrence"), pattern=".csv", full.names=TRUE)
 
 
 files <- lapply(files_list,fread)
@@ -38,7 +38,7 @@ recordsHerbario_raw <- fread(here::here("data/in/herbariomex_dw/occurrences.csv"
 
 gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv"))
 
-herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
+herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_fiherb_nombres_backbone <- fread(here::here("data/in/backbone/herb_fiherb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
 
 
 
@@ -77,11 +77,19 @@ names(herb_corr_raw) <- make.names(names(herb_corr_raw), unique = TRUE)
 names(gbif_corr_raw) <- make.names(names(gbif_corr_raw), unique = TRUE)
 
 herb_corr_raw <- herb_corr_raw %>%
-  mutate(across(everything(), as.character))
+  mutate(across(everything(), as.character)) %>% 
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
 
 gbif_corr_raw <- gbif_corr_raw %>%
-  mutate(across(everything(), as.character))
+  mutate(across(everything(), as.character)) %>% 
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
 
+
+```
+
+
+
+```{r}
 # Unir las filas de los data frames
 gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 
@@ -104,12 +112,7 @@ Hay que revisar los nombres duplicados, primero borrar las que no tienen coorden
 Guardar en un objeto nuevo las que no tienen coordenadas para poder salvar registros. 
 
 
--   Seleccionar columnas de interés
 
-```{r}
-gbif_herb <- gbif_herb_raw %>%
-  select(correctname, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
-```
 
 
 -   Contar duplicados
