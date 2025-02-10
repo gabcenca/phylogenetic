@@ -97,9 +97,9 @@ gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 ```
 
 
--Ver nombres que no coincidieron con ningun correctname. 
+-Ver nombres que no coincidieron con ningun correctname
 
-#TODO: Al final tenemos que decidir qué hacer con los registros que no existen en el correctname y si son especies. (Por ejemplo Q. tristis, Q. lanceolata)
+#TODO: Al final tenemos que decidir que hacer con los registros que no existen en el correctname y si son especies. (Por ejemplo Q. tristis, Q. lanceolata)
 
 ```{r}
 sin_cn <-  gbif_herb_raw %>%
@@ -108,12 +108,11 @@ sin_cn <-  gbif_herb_raw %>%
 table(sin_cn$scientificName) 
 ```
 
-Filtrar registros a nivel de genero
+Filtrar registros a nivel de genero 
 
 ```{r}
-gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus", "Quercus L."))
+gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quercus L."))
 ```
-
 
 
 -   Contar duplicados
@@ -126,14 +125,16 @@ gbif_herb_coor <- gbif_herb_raw %>%
   filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
 ```
 
-- Coordenadas duplicadas
+```
+    
+    -Coordenadas duplicadas
+    
 ```{r}
 # Identificar las filas duplicadas basadas en las coordenadas
 coor_duplicated <- gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude)))
 ```
-
-    
+  
     
     -   Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
 ```{r}
@@ -141,8 +142,7 @@ corr_loc_name_dupli <-  gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude, correctname, municipality) , fromLast = TRUE))
 ```
     
-    Estos son 18411 registros. 
-    
+    Estos son 18411 registros.
     
     -   Replicas del mismo individuo (coordenada, nombre de los colectores, fecha de colecta y especie)
     
@@ -152,7 +152,7 @@ colectors_date_species_replica <-  gbif_herb_coor%>%
 
 ```
 
-    -   Estos son 14067 registros. 
+    Estos son 14067 registros. 
 
 
 
@@ -173,7 +173,13 @@ Guardarlo en un csv
 write.csv(hgbif_no_duplicates, file = here::here("data/out/hgbif_no_duplicates.csv"))
 ```
 
+Registros sin duplicados: 56,363
 
+Guardarlo en un csv
+
+```{r}
+write.csv(hgbif_no_duplicates, file = here::here("data/out/hgbif_no_duplicates.csv"))
+```
 
 - Ver cuantos NA hay 
 ```{r}
