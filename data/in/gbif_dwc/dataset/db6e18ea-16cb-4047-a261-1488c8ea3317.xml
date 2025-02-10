@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="db6e18ea-16cb-4047-a261-1488c8ea3317"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/6stch2</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-DT005</alternateIdentifier>
+        <alternateIdentifier>http://ipttest.conabio.gob.mx/iptconabiotest/resource?r=SNIB-DT005</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-DT005</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-DT005-Varios+archivos+XLS-ND</alternateIdentifier>
+        <alternateIdentifier>db6e18ea-16cb-4047-a261-1488c8ea3317</alternateIdentifier>
+        <title>Monitoreo de la población de la guacamaya verde en la Reserva de la Biosfera Tehuacán-Cuicatlán</title>
+        <creator>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Bonilla Ruz</surName>
+            </individualName>
+            <organizationName>Instituto Politécnico NacionalCentro Interdisciplinario de Investigación para el Desarrollo Integral Regional-Oaxaca</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <deliveryPoint>Calle Hornos 1003</deliveryPoint>
+                <city>Oaxaca</city>
+                <administrativeArea>Oaxaca</administrativeArea>
+                <postalCode>71230</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>01 (951)517 0610, 517 04 00 y 517 11 99</phone>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2024-04-11
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>Actualmente se conoce muy poco del estado y tamaño de las poblaciones de guacamaya verde (Ara militaris) en el país y en general existen muy pocos estudios referentes a la biología de la especie. El estudio aborda aspectos relacionados al uso que Ara militaris tiene de la Reserva de la Biosfera Tehuacán-Cuicatlán y en las comunidades de Santa María Tecomavaca, Tepelmeme de Morelos, Quiotepec y San José del Chilar. El proyecto aporta información en relación al uso del hábitat de la guacamaya verde, sus variaciones interanuales y la descripción ecológica de la vegetación, que al ser comparadas con estudios previos se puede evaluar los movimientos de la especie, así como los cambios ocurridos a través del tiempo. Se lograron identificar 6 sitios importantes para las diferentes actividades de la guacamaya verde, sus variaciones interanuales y la vegetación predominante, así como también fue posible observar que sólo un sitio era utilizado para la reproducción: &#34;El Sabino&#34;.. Las observaciones de los movimientos poblacionales de la guacamaya permitieron establecer los sitios que visitan a determinada hora para alimentarse o pernoctar y asimismo contar el número de individuos que vuelan, obteniendo 99 individuos en el mes de diciembre en el Cañón de Tomellín y Barrancas de las Guacamayas. De las especies vegetales consumidas, se obtuvieron un total de 21 especies; los resultados obtenidos indican que la guacamaya incluye dentro de su dieta una variedad de especies de plantas, que no son siempre las más abundantes o importantes dentro del estrato arbóreo, por lo que se sugiere que la guacamaya verde es selectiva en su alimentación. Aunque la población aparentemente se encuentra estable, se han detectado amenazas como los desarrollos ecoturi?sticos y la construcción de una línea de transmisión eléctrica, por parte de la Comisión Federal de Electricidad, la cual atraviesa la Peña del Águila en los terrenos de San Juan Coyula, por lo que es importante considerar la afectación que estos podrían tener para la especie.</para>
+<para>Reino: 2
+Filo: 2
+Clase: 3
+Orden: 22
+Familia: 37
+Género: 64
+Subgénero: 1
+Especie: 64</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keyword>Aves</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=DT&amp;Numero=5</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-DT005</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: MEXICO (OAXACA)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-97.063</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-96.924</eastBoundingCoordinate>
+                    <northBoundingCoordinate>17.914</northBoundingCoordinate>
+                    <southBoundingCoordinate>16.958</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                2006-05-26
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2007-05-10
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Plantae, Animalia
+Filo: Tracheophyta, Chordata
+Clase: Equisetopsida, Aves, Polypodiopsida
+Orden: Malpighiales, Fabales, Laurales, Fagales, Caryophyllales, Sapindales, Asterales, Psittaciformes, Brassicales, Malvales, Asparagales, Lamiales, Rosales, Gentianales, Boraginales, Ericales, Solanales, Polypodiales, Garryales, Magnoliales, Santalales, Pinales
+Familia: Euphorbiaceae, Fabaceae, Lauraceae, Fagaceae, Cactaceae, Burseraceae, Malpighiaceae, Asteraceae, Psittacidae, Capparaceae, Malvaceae, Asparagaceae, Verbenaceae, Meliaceae, Rhamnaceae, Apocynaceae, Polygonaceae, Ehretiaceae, Rutaceae, Primulaceae, Ebenaceae, Anacardiaceae, Rubiaceae, Convolvulaceae, Erythroxylaceae, Pentaphylacaceae, Cannabaceae, Aspleniaceae, Moraceae, Garryaceae, Amaranthaceae, Annonaceae, Hernandiaceae, Plocospermataceae, Opiliaceae, Pinaceae, Sapotaceae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Animalia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Chordata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Aves</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Malpighiales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fabales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Laurales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Caryophyllales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Sapindales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Asterales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Psittaciformes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Brassicales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Malvales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Asparagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Lamiales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Rosales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Gentianales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Boraginales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Ericales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Solanales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Polypodiales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Garryales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Magnoliales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Santalales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Pinales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Euphorbiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fabaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Lauraceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Cactaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Burseraceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Malpighiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Asteraceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Psittacidae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Capparaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Malvaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Asparagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Verbenaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Meliaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Rhamnaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Apocynaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Polygonaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Ehretiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Rutaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Primulaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Ebenaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Anacardiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Rubiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Convolvulaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Erythroxylaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Pentaphylacaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Cannabaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Aspleniaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Moraceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Garryaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Amaranthaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Annonaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Hernandiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Plocospermataceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Opiliaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Pinaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Sapotaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Croton</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lysiloma</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Neobuxbaumia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Bursera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mascagnia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Leucaena</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acacia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ara</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pachycereus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Euphorbia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Bernardia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Capparis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Leguminosa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Beaucarnea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lippia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Jatropha</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cedrela</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Karwinskia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Thevetia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ruprechtia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Bourreria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Polyaster</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Rapanea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Diospyros</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cephalocereus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pseudosmodingium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Randia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Plumeria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Erythroxylum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ternstroemia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Celtis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ceiba</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mimosa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Schaffneria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ficus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Colubrina</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Heliocarpus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Manihot</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Zanthoxylum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Caesalpinia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Actinocheita</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Malpigiaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Montanoa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Malpighia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Conzattia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Amphipterygium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cnidoscolus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Garrya</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Stenocereus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Iresine</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cyrtocarpa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Annona</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Gyrocarpus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Plocosperma</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Agonandra</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Senecio</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ipomoea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lantana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Hintonia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pittocaulon</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sideroxylon</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Senna</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Croton alamosanus</taxonRankValue>
+                    <commonName>ocotillo, vara blanca, vara prieta</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) crassifolia</taxonRankValue>
+                    <commonName>bachté (Tsotsil), bochilté (Tsotsil), bochiv (Tsotsil), cantulán (Tsotsil), cucharilla, encino, encino blanco, encino colorado, encino hojasasco, encino pepitillo, encino prieto, encino roble, encino rojo, encino tecomate, encino tesmolillo, encino verde, hoja ancha, hoja de encino, hojarasca, jicarillo, quebracho, roble, roble blanco, yavnal jit&apos;e (Tsotsil)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Neobuxbaumia tetetzo</taxonRankValue>
+                    <commonName>cabeza de viejo, cardón, higos de teteche, higos de tetetzo, tetatzo, tetecha, teteche, tetechetl (Náhuatl), tetecho, tetetza, tetetzo, teteza, uo-she-ka-she (Chontal de Oaxaca)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera cinerea</taxonRankValue>
+                    <commonName>palo mulato, camaroncillo, camarón, copalillo, cuajiote rojo (Náhuatl), mulato, palo mulato</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acacia pringlei</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ara militaris</taxonRankValue>
+                    <commonName>guacamaya verde</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pachycereus grandis</taxonRankValue>
+                    <commonName>candelabro, cardón, cardón grande, tnu dichi iñuya&apos;a (Mixteco), tnu dichi pachón (Mixteco), órgano, órgano cenizo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Euphorbia schlechtendalii</taxonRankValue>
+                    <commonName>cuajiote, box-chakah (Maya), box-chakob (Maya), cigarrillo, cojambomó (Zoque), lecherillo, nilungaña (Oto-mangue), palo de leche, varaleche, zak-chah (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bernardia mexicana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) obtusata</taxonRankValue>
+                    <commonName>bellota, chilillo, encinilla, encino, encino blanco, encino chino, encino negro, encino prieto, encino roble, encino roble amarillo, encino rojo, roble, roble prieto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) castanea</taxonRankValue>
+                    <commonName>aguacatillo, capulincillo, chaparral, encinillo, encino, encino amarillo, encino blanco, encino capulincillo, encino chaparro, encino chino, encino colorado, encino de hasta, encino dorado, encino laurelillo, encino manzano, encino negro, encino prieto, encino roble, encino rojo, encino rosillo, manzanillo, palo chino, palo colorado, roble, tlatic jaucuitl (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Capparis pringlei</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Beaucarnea stricta</taxonRankValue>
+                    <commonName>estrellas, sotol</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera schlechtendalii</taxonRankValue>
+                    <commonName>aceitillo, copal, copal negro, copalillo, mulato rojo, palo de oro, palo mulato, papelillo, sak chakaj (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Jatropha neopauciflora</taxonRankValue>
+                    <commonName>sangre de grado</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cedrela salvadorensis</taxonRankValue>
+                    <commonName>cedrillo, cedro, cedro fino, cedro macho, nogal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Karwinskia humboldtiana</taxonRankValue>
+                    <commonName>buayabito, cacachila, capulincillo, capulincillo cimarrón, capulín, capulín cimarrón, capulín de zorra, cerezo, coyotillo, diente de molino, frutillo, guayabillo, guayabito, himoli (Guarijío), itzil (Huasteco), jimolí (Guarijío), kusí júkame (Tarahumara), l u&apos;um che&apos; (Maya), limoncillo, margarita, montón de indio, negrito, pajarito, palo apestoso, palo negrito, pimientilla, pimientillo, piojillo (Náhuatl), tlalcapolín (Náhuatl), tullidor, tullidora, yagalán (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera morelensis</taxonRankValue>
+                    <commonName>copal, copalillo, cuajiote (Náhuatl), cuajiote chino (Náhuatl), cuajiote colorado (Náhuatl), cuajiote rojo (Náhuatl), palo colorado, palo mulato, xixote</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acacia cochliacantha</taxonRankValue>
+                    <commonName>chi&apos;may (Maya), chicharillo, chimay (Maya), cubata, cucharillo, cucharita, cucharitas, cucharito, cucharo, culantrillo, ejote, encinilla, espino, espino blanco, huizache, palo de cucharitas, quebracho, quiebracha, sínala (Guarijío), vinola (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Thevetia peruviana</taxonRankValue>
+                    <commonName>San Diego, San Nicolás, San Pablo, aak&apos;its (Maya), ah-kits (Maya), ajkits (Maya), akits (Maya), cabalonga (Náhuatl), cabalonga de huasteca, calushnan-quiui (Totonaco), campana, campanilla, campanilla de oro, campanita, campanita de oro, codo de fraile, cojón de gato, flor de San Pedro, flor de campana, fraile, jarilla, k&apos;aan lool (Maya), k&apos;an lool (Maya), narciso amarillo, ojo de águila, palo de San Antonio, palo de víbora, petatillo, rosa amarilla, sauce, solimán, trompetilla, trompetita, tzenantzuch (Huasteco), vainilla, venenillo, veneno, yoyote, yoyotl (Náhuatl), yoyotli (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laurina</taxonRankValue>
+                    <commonName>capulincillo, chilillo, chiquinib (Tsotsil), encinillo, encino, encino amarillo, encino blanco, encino capulincillo, encino chino, encino colorado, encino dorado, encino jarillo, encino laurel, encino laurelillo, encino liso, encino manzanillo, encino nechilahue, encino pepitillo, encino prieto, encino roble, encino rojo, encino xicalahua, escobillo, laurelillo, manzanillo, nanyamai (Zoque), peinecillo, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cephalocereus columna-trajani</taxonRankValue>
+                    <commonName>cactus, cardón, cardón blanco, cardón viejo, soldado, tetetza, viejito, órgano, órgano pachón, órgano viejo cardón blanco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pseudosmodingium multifolium</taxonRankValue>
+                    <commonName>copal espinazo, hincha huevos, tetlate (Náhuatl), yaga-lache (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Randia thurberi</taxonRankValue>
+                    <commonName>coquito, crucecillo, crucetillo, ticuche (Tarasco), tintillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lysiloma microphyllum</taxonRankValue>
+                    <commonName>espina blanca, guaje, guajillo, japalte (Huasteco), jepalcalante (Huasteco), manto, mauuta (Guarijío), mayo, mesquite, mezquite, palo blanco, palo de arco, palo prieto, quebracho, quiebra hacha, quiebracha, quiebrahacha, quitaz prieto, sahi (Guarijío), sají (Guarijío), tepeguaje, tepeguaje negro, tepehuaje</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera aptera</taxonRankValue>
+                    <commonName>copal, copalillo, coxinyotl iztac (Náhuatl), cuachital, cuajiote (Náhuatl), cuajiote amarillo (Náhuatl), cuajiote blanco (Náhuatl), cuajiote verde (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Plumeria rubra</taxonRankValue>
+                    <commonName>cacahuaxóchitl (Náhuatl), cacajoyó (Zoque), cacalaxochitl (Náhuatl), cacalosúchil (Mixe), cacaloxochitl (Náhuatl), cacaloxóchitl (Mixe), campechana, caxtaxanat (Totonaco), chak nikte&apos; (Maya), chak-nicté (Maya), chak-nikté (Maya), chak-sabak-nikté (Maya), chiquinjoyó (Zoque), corpus, cundá (Tarasco), flor blanca, flor de cal, flor de cuervo, flor de mayo, flor de monte, guia-bigoce (Zapoteco), guia-bixi-guii (Zapoteco), guia-chacha (Zapoteco), guiechacha (Zapoteco), guiecha&apos;chi&apos; (Zapoteco), güia-an (Zapoteco), huevo de toro, huiloicxitl (Náhuatl), kakaloxochitl (Náhuatl), kumpaap (Maya), lengua de toro, li-tie (Chinanteco), nicte chom (Maya), nicte choom (Maya), nicté (Maya), nikte&apos; ch&apos;om (Maya), nikté (Maya), nopinjoyo (Zoque), palo blanco, parandechicua (Tarasco), quie-chacha (Zapoteco), rosa blanca, rosal, sabaknikte&apos; (Maya), sabanikté (Maya), sach-nicté (Maya), sak nikte&apos; (Maya), sak-nichte&apos; (Maya), sak-nikté (Maya), sangre de toro, saugrán (Tepehuano del sur), tizalxóchitl (Náhuatl), tlapalticcacaloxochitl (Náhuatl), tlauhquecholxochitl (Náhuatl), uculhuitz (Huasteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Erythroxylum compactum</taxonRankValue>
+                    <commonName>baak soots&apos; (Maya), iik che&apos; (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ceiba aesculifolia</taxonRankValue>
+                    <commonName>Mosmót (Zoque), ahaiyá (Guarijío), algodoncillo, ceiba, ceibo (Maya), ch&apos;oo (Maya), chote, huacapi (Guarijío), k&apos;inim (Maya), kuch (Maya), kuché (Maya), len-o-ma (Chontal de Oaxaca), ma-tzu (Chinanteco), matzu (Chinanteco), mo-dzu (Chinanteco), piim (Maya), piim yaxche (Maya), pochota (Totonaco), pochote, pochotl (Náhuatl), píin (Maya), ya&apos;ax che&apos; (Maya), ya&apos;ax-che (Maya), ya&apos;ax-ek (Maya), ya&apos;axche (Maya), yaga-piogo-xila (Zapoteco), yaga-piogo-xilla (Zapoteco), yaxché (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Mimosa polyantha</taxonRankValue>
+                    <commonName>espino, espino de abuelita, espinoso, garabato, gatuño, huajillo, huizache, palo prieto, sierrilla, t&apos;imbeni (Tarasco), tepehuaje, uña de gato, vara prieta</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Schaffneria stenophylla</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Mimosa luisana</taxonRankValue>
+                    <commonName>uña de gato</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Manihot pauciflora</taxonRankValue>
+                    <commonName>hierba del campo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Zanthoxylum limoncello</taxonRankValue>
+                    <commonName>cilantrillo, tecolote</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera submoniliformis</taxonRankValue>
+                    <commonName>copal, copal chino, copal grueso, copalcahuic (Náhuatl), copalillo, copalillo blanco, tecomaca (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera fagaroides</taxonRankValue>
+                    <commonName>aceitillo, chutama, copal, cuajilote, cuajiote (Náhuatl), cuajiote amarillo (Náhuatl), cuajiote blanco (Náhuatl), cuajiote colorado (Náhuatl), cuajiote verde (Náhuatl), jiote (Náhuatl), ngedri (Otomí), palo cuchara, palo del diablo, palo jiote, palo mulato, papelillo, sazafrás, tecomaca (Náhuatl), torote, torote amarillo, torote blanco, torote papelillo, xixote</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Actinocheita potentillifolia</taxonRankValue>
+                    <commonName>palo tostado, tetlate (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Montanoa tomentosa</taxonRankValue>
+                    <commonName>acahuite, candela, cerbatana, cihuapatli (Náhuatl), gobernadora, gordolobo de terreno, hierba de la parida, homah-ak (Maya), malacate, malacate blanco, malacatillo, margarita, matayaqui, nocuana-titete-xini-ni (Zapoteco), ocotillo, perimo (Purépecha), talacao (Guarijío), tasiste, too (Otomí), vara amargosa, vara prieta, yaga-zeche (Zapoteco), zoapatli (Náhuatl), zopacle (Náhuatl), zopacle cimarrón prieto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Malpighia mexicana</taxonRankValue>
+                    <commonName>guajote de perro, manzanita, manzanita de cerro, manzanito, nance (Maya), nanche, nanche de cerro, nanche de monte, nanche rojo, palo de nanche</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Conzattia multiflora</taxonRankValue>
+                    <commonName>guayacán, guayacán amarillo, palo blanco, palo de totole, palo de zopilote, palo joso, parota, zopilote, árbol de águila</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Amphipterygium adstringens</taxonRankValue>
+                    <commonName>matixerán (Tarasco), palo de rosa, palo santo, volador, yala-guitu (Zapoteco), yuaxalaxlitli (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Garrya laurifolia</taxonRankValue>
+                    <commonName>aguacatillo, azul, azulillo, chichicuáhuitl (Náhuatl), cuernavaca, cuerno de venado, hediondillo, laurel, laurelillo, nuez moscada, palo amargo, palo amargoso, palo azul, palo negro, zapotillo, árbol amargo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera biflora</taxonRankValue>
+                    <commonName>amarillo, copal, copali (Maya), mulatillo amarillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) rugosa</taxonRankValue>
+                    <commonName>asta, avellana, avellano, bellota de encino, chaparro, encinillo, encino, encino asta, encino blanco, encino chino, encino colorado, encino cuero, encino de asta, encino de hasta, encino de miel, encino laurelillo, encino liso, encino manzanillo, encino negro, encino prieto, encino quiebra hacha, encino roble, encino rojo, gu-hó (Chinanteco), hojancha, hojarasca, laurelillo, palo blanco, palo colorado, quiebra hacha, roble, roble blanco, roble prieto, saucillo, t-nuya (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cyrtocarpa procera</taxonRankValue>
+                    <commonName>ciruelillo, coco, coco de cerro, coco de marrano, copal, copaljocote (Náhuatl), copalxócotl (Náhuatl), puei (Cora)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Jatropha oaxacana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) elliptica</taxonRankValue>
+                    <commonName>bellota, encino, encino asta, encino blanco, encino colorado, encino laurel, encino nanche, encino negro, encino roble, encino rojo, encino saucillo, encino tapahuite, kukat (Totonaco), roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) magnoliifolia</taxonRankValue>
+                    <commonName>ahuacocoztli (Náhuatl), bermejo, encino, encino amarillo, encino barcino, encino blanco, encino colorado, encino manzano, encino napis, encino prieto, encino roble, jiote (Náhuatl), roble, roble blanco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Caesalpinia o Senna</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Colubrina elliptica</taxonRankValue>
+                    <commonName>amole, cascarillo, tzecui (Zoque)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) glabrescens</taxonRankValue>
+                    <commonName>encino, encino blanco, encino roble, encino roble amarillo, encino rojo, laurelillo, quebracho, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laeta</taxonRankValue>
+                    <commonName>chaparro, encino, encino algodoncillo, encino blanco, encino chaparro, encino chino, encino colorado, encino prieto, encino rojo, palo blanco, palo chino, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lysiloma divaricatum</taxonRankValue>
+                    <commonName>espina blanca, guaje, guajillo, japalte (Huasteco), jepalcalante (Huasteco), manto, mauuta (Guarijío), mayo, mesquite, mezquite, palo blanco, palo de arco, palo prieto, quebracho, quiebra hacha, quiebracha, quiebrahacha, quitaz prieto, sahi (Guarijío), sají (Guarijío), tepeguaje, tepeguaje negro, tepehuaje</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cephalocereus senilis</taxonRankValue>
+                    <commonName>cabeza de viejo, tlachixketl (Náhuatl), viejitos, viejo, órgano viejo real</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ipomoea arborescens</taxonRankValue>
+                    <commonName>casahuate, casahuate blanco, cazahuate, cazahuate blanco, cuau-zahuatl (Náhuatl), cuauhzáhuatl (Náhuatl), flor de palo blanco, itate (Cuicateco), lipa-ca-tu-ue (Chontal de Oaxaca), néctar, palo blanco, palo bobo, palo cabra, palo de muerto, palo del muerto, palo santo, palo santo amarillo, pájaro bobo, sacamanteca, xegua (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acacia alfa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Agonandra racemosa</taxonRankValue>
+                    <commonName>chicharroncillo, chilillo, limoncillo, margarita, palo de peine, palo del golpe, palo verde, pega hueso, pegahueso, peinecillo, suelda, suelda consuelda</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Capparis incana</taxonRankValue>
+                    <commonName>bokanché (Maya), kanaan che&apos; (Maya), mata gallina, matagallina, palo cenizo, quina, vara blanca, x-koh-ché (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pittocaulon praecox</taxonRankValue>
+                    <commonName>candelerillo, candelero, consuelda, palo bobo, palo hueco, palo loco, tescapatli (Náhuatl), texcapatli (Náhuatl), tezcapatli (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Plocosperma buxifolium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Celtis caudata</taxonRankValue>
+                    <commonName>aguacatillo, capulincillo, garabato, garambullo, granjeno, guayabillo, moral, palo blanco, palo de estribo, pingüica, raspa sombrero</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) glaucescens</taxonRankValue>
+                    <commonName>encino, encino amarillo, encino blanco, encino colorado, encino prieto, encino roble, encino roble amarillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Senna (Caesalpinia sp)</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Mimosa lactiflua</taxonRankValue>
+                    <commonName>sierrecilla negra</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-DT005-Varios archivos XLS-ND">
+                <title>Monitoreo de la población de la guacamaya verde en la Reserva de la Biosfera Tehuacán-Cuicatlán</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Carlos</givenName>
+                    <surName>Bonilla Ruz</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>Actualmente se conoce muy poco del estado y tamaño de las poblaciones de guacamaya verde (Ara militaris) en el país y en general existen muy pocos estudios referentes a la biología de la especie. El estudio aborda aspectos relacionados al uso que Ara militaris tiene de la Reserva de la Biosfera Tehuacán-Cuicatlán y en las comunidades de Santa María Tecomavaca, Tepelmeme de Morelos, Quiotepec y San José del Chilar. El proyecto aporta información en relación al uso del hábitat de la guacamaya verde, sus variaciones interanuales y la descripción ecológica de la vegetación, que al ser comparadas con estudios previos se puede evaluar los movimientos de la especie, así como los cambios ocurridos a través del tiempo. Se lograron identificar 6 sitios importantes para las diferentes actividades de la guacamaya verde, sus variaciones interanuales y la vegetación predominante, así como también fue posible observar que sólo un sitio era utilizado para la reproducción: &quot;El Sabino&quot;.. Las observaciones de los movimientos poblacionales de la guacamaya permitieron establecer los sitios que visitan a determinada hora para alimentarse o pernoctar y asimismo contar el número de individuos que vuelan, obteniendo 99 individuos en el mes de diciembre en el Cañón de Tomellín y Barrancas de las Guacamayas. De las especies vegetales consumidas, se obtuvieron un total de 21 especies; los resultados obtenidos indican que la guacamaya incluye dentro de su dieta una variedad de especies de plantas, que no son siempre las más abundantes o importantes dentro del estrato arbóreo, por lo que se sugiere que la guacamaya verde es selectiva en su alimentación. Aunque la población aparentemente se encuentra estable, se han detectado amenazas como los desarrollos ecoturi?sticos y la construcción de una línea de transmisión eléctrica, por parte de la Comisión Federal de Electricidad, la cual atraviesa la Peña del Águila en los terrenos de San Juan Coyula, por lo que es importante considerar la afectación que estos podrían tener para la especie.</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Aves
+Plantas
+cacatúas, cotorras, loros, pericos
+con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
+con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
+con flores como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
+con flores como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
+con flores como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
+con flores como aguacates, alcanforeros, canelas, laureles
+con flores como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, linos, mandiocas, maracuyás, nanches, nochebuenas, ricinos, sauces, semillas de linaza
+con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
+con flores como alfalfas, aluvias, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, huizaches, jícamas, lentejas, mezquites, tamarindos
+con flores como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, tejocotes, zarzamoras
+con flores como arándanos, árboles del chicle, argán, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, nueces de Brasil, ocotillos, zapotes
+con flores como árboles amargos
+con flores como arúgulas, berros, brócolis, coles, coliflores, kales, mastuerzos, moringas, mostazas, papayas, rábanos
+con flores como berenjenas, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
+con flores como borrajas, heliotropos, nomeolvides, palomillas de tintes
+con flores como café, flores de mayo, gardenias
+con flores como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
+con flores como chirimoyas, guanábanas, magnolias, nuez moscada
+con flores como muérdagos, sándalos
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
+sin flores: helechos y afines</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2024-10-22T20:40:22Z</dateStamp>
+                <citation>Bonilla Ruz C, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Monitoreo de la población de la guacamaya verde en la Reserva de la Biosfera Tehuacán-Cuicatlán. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/6stch2 accessed via GBIF.org on 2024-10-22.</citation>
+                <physical>
+                    <objectName>SNIB-DT005-CARACTERIZACION_DE_VEGETACION-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/DT005/CARACTERIZACION_DE_VEGETACION/SNIB-DT005-CARACTERIZACION_DE_VEGETACION-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-DT005-CARACTERIZACION_DE_VEGETACION-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/DT005/CARACTERIZACION_DE_VEGETACION/SNIB-DT005-CARACTERIZACION_DE_VEGETACION-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-DT005-CONTEO_DE_GUACAMAYAS-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/DT005/CONTEO_DE_GUACAMAYAS/SNIB-DT005-CONTEO_DE_GUACAMAYAS-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-DT005-CONTEO_DE_GUACAMAYAS-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/DT005/CONTEO_DE_GUACAMAYAS/SNIB-DT005-CONTEO_DE_GUACAMAYAS-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-DT005-Varios archivos XLS-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>60</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

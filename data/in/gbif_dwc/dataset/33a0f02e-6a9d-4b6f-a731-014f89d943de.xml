@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="33a0f02e-6a9d-4b6f-a731-014f89d943de"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/zpp4sp</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-JF136</alternateIdentifier>
+        <alternateIdentifier>http://ipttest.conabio.gob.mx/iptconabiotest/resource?r=SNIB-JF136</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-JF136</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-JF136-JF1361403F_corregida-ND</alternateIdentifier>
+        <alternateIdentifier>33a0f02e-6a9d-4b6f-a731-014f89d943de</alternateIdentifier>
+        <title>Base de datos de la familia Fagaceae en el estado de Hidalgo</title>
+        <creator>
+            <individualName>
+                <givenName>Susana</givenName>
+                <surName>Valencia Ávalos</surName>
+            </individualName>
+            <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de CienciasDepartamento de BiologíaHerbario FCME</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Distrito Federal</administrativeArea>
+                <postalCode>04510</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>Tel 5622 4826  Fax 5622 4828</phone>
+            <electronicMailAddress>sva@hp.fciencias.unam.mx</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2024-04-11
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>El estado de Hidalgo está ubicado en la región oriental de México, misma que ha sido considerada como una de las regiones más diversas en cuanto a especies de encinos se trata (Nixon, 1993 y Valencia, 2004). Con 38 especies, el estado de Hidalgo ocupa el quinto lugar en diversidad de especies de la familia Fagaceae en México, lo cual aunado al deterioro de las zonas naturales que avanza a pasos agigantados en la Sierra Madre Oriental y al poco conocimiento preciso que se tiene de la familia y particularmente del género Quercus en la región oriental de México, pone de manifiesto la importancia de estudiar los encinos en el estado de Hidalgo, en el cual se han encontrado hasta el momento dos géneros de la familia Fagaceae: Quercus y Fagus. Colectas previas de estos géneros en Hidalgo permiten tener un acervo de 300 ejemplares depositados en el Herbario de la Facultad de Ciencias que sumado a las colectas que se pretenden realizar con este proyecto, se espera obtener una base de datos en el formato Biótica, de al menos 700 registros de ejemplares de los géneros Quercus y Fagus colectados en el estado de Hidalgo.</para>
+<para>Reino: 1
+Filo: 1
+Clase: 1
+Orden: 1
+Familia: 1
+Género: 2
+Subgénero: 1
+Especie: 44</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=JF&amp;Numero=136</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-JF136</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: MEXICO (HIDALGO, MEXICO, TAMAULIPAS, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-99.743</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-98.069</eastBoundingCoordinate>
+                    <northBoundingCoordinate>22.65</northBoundingCoordinate>
+                    <southBoundingCoordinate>19.828</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1974-06-09
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2013-07-28
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Plantae
+Filo: Tracheophyta
+Clase: Equisetopsida
+Orden: Fagales
+Familia: Fagaceae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Fagus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) affinis</taxonRankValue>
+                    <commonName>encino roble, laurelillo, encino rojo, encino asta, encino, encino chino, encino colorado, encino de hasta, encino laurelillo, encino manzanillo, encino, encino asta, encino blanco, encino chino, encino colorado, encino de hasta, encino duela, encino laurelillo, encino manzanillo, encino negro, encino prieto, encino roble, encino rojo, escobilla, hoja blanca, laurelillo, manzanilla, manzanillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) lancifolia</taxonRankValue>
+                    <commonName>encino, encino blanco, encino rojo, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laurina</taxonRankValue>
+                    <commonName>encino xicalahua, encino amarillo, laurelillo, nanyamai, ahuatle, ahucepitzáhuac, encino rojo, peinecillo, escobillo, chiquinib, encino memelito, encinillo, encino blanco, encino liso, encino, encino ahualpitzáhuatl, encino capulincillo, encino chino, encino colorado, encino dorado, encino jarillo, encino laurelillo, encino manzanillo, encino nechilahue, encino pepitillo, encino roble, capulincillo, chilillo, chiquinib (Tsotsil), encinillo, encino, encino amarillo, encino blanco, encino capulincillo, encino chino, encino colorado, encino dorado, encino jarillo, encino laurel, encino laurelillo, encino liso, encino manzanillo, encino nechilahue, encino pepitillo, encino prieto, encino roble, encino rojo, encino xicalahua, escobillo, laurelillo, manzanillo, nanyamai (Zoque), peinecillo, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) crassifolia</taxonRankValue>
+                    <commonName>jicarillo, encino tesmolillo, encino verde, garabatillo, encino rojo, hojarasca, ahuatle, bachté, bochaya, bochilté, quebracho, bochiv, encino blanco, cantulán, chanal, chicharrón, roble, yavnal jit&apos;e, encino, hoja de encino, encino colorado, encino hojasasco, encino pepitillo, encino prieto, encino roble, bachté (Tsotsil), bochilté (Tsotsil), bochiv (Tsotsil), cantulán (Tsotsil), cucharilla, encino, encino blanco, encino colorado, encino hojasasco, encino pepitillo, encino prieto, encino roble, encino rojo, encino tecomate, encino tesmolillo, encino verde, hoja ancha, hoja de encino, hojarasca, jicarillo, quebracho, roble, roble blanco, yavnal jit&apos;e (Tsotsil)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) castanea</taxonRankValue>
+                    <commonName>encino amarillo, encino rosillo, encino rojo, manzanillo, palo colorado, palo chino, encino blanco, roble, chaparral, encinillo, tiltico, encino, tlatic jaucuitl, encino capulincillo, encino chaparro, encino chino, encino colorado, encino de hasta, encino dorado, capulincillo, encino laurelillo, encino manzano, encino negro, encino prieto, encino roble, aguacatillo, capulincillo, chaparral, encinillo, encino, encino amarillo, encino blanco, encino capulincillo, encino chaparro, encino chino, encino colorado, encino de hasta, encino dorado, encino laurelillo, encino manzano, encino negro, encino prieto, encino roble, encino rojo, encino rosillo, manzanillo, palo chino, palo colorado, roble, tlatic jaucuitl (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) trinitatis</taxonRankValue>
+                    <commonName>chiquinib (Tsotsil), encino capulincillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) delgadoana</taxonRankValue>
+                    <commonName>encino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) polymorpha</taxonRankValue>
+                    <commonName>encino roble, shinil, encinillo, encino, roble, encino colorado, encino blanco, encino negro, encino prieto, encinillo, encino, encino blanco, encino colorado, encino negro, encino prieto, encino roble, naranjillo, roble, shinil (Tojolabal)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) tinkhamii</taxonRankValue>
+                    <commonName>chaparro, encino chaparro, chaparro, encino chaparro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laeta</taxonRankValue>
+                    <commonName>chaparro, encino, encino algodoncillo, encino blanco, encino chaparro, encino chino, encino colorado, encino prieto, encino rojo, palo blanco, palo chino, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) glabrescens</taxonRankValue>
+                    <commonName>tepechicle, encino, encino, encino blanco, encino roble, encino roble amarillo, encino rojo, laurelillo, quebracho, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) sartorii</taxonRankValue>
+                    <commonName>encino blanco, encino, encino blanco, encino colorado, encino manzano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) mexicana</taxonRankValue>
+                    <commonName>encino tesmolillo, encino amarillo, escobillo, chiquinib, cozahuatl, encino, encino colorado, encino laurelillo, encino prieto, cascalote, chiquinib (Tsotsil), encino, encino amarillo, encino blanco, encino cascalote, encino colorado, encino enano, encino laurel, encino laurelillo, encino prieto, encino rojo, encino tesmolillo, escobillo, manzanillo, palo prieto, sipúraca (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) rugosa</taxonRankValue>
+                    <commonName>gu-hó, hojarasca, ahuatl, avellano, palo colorado, quiebra hacha, t-nuya, encino blanco, yagareche, roble, zagareche, encinillo, encino, encino tlalahuacate, bellota de encino, encino chino, encino cuero, encino de asta, encino de miel, encino prieto, encino quiebra hacha, encino roble, asta, avellana, avellano, bellota de encino, chaparro, encinillo, encino, encino asta, encino blanco, encino chino, encino colorado, encino cuero, encino de asta, encino de hasta, encino de miel, encino laurelillo, encino liso, encino manzanillo, encino negro, encino prieto, encino quiebra hacha, encino roble, encino rojo, gu-hó (Chinanteco), hojancha, hojarasca, laurelillo, palo blanco, palo colorado, quiebra hacha, roble, roble blanco, roble prieto, saucillo, t-nuya (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) repanda</taxonRankValue>
+                    <commonName>encino, encino enano, encino tesmolillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) hirtifolia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) frutex</taxonRankValue>
+                    <commonName>encino, encino chaparro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) grisea</taxonRankValue>
+                    <commonName>encino, encino chino, palo chino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) crassipes</taxonRankValue>
+                    <commonName>encino tesmolillo, oreja de ratón, encino blanco, tuchi, encino de la panchingua, encino, encino chino, encino colorado, encino pipitza, capulincillo, chilillo, colorado, encino, encino blanco, encino capulincillo, encino chino, encino colorado, encino laurel, encino laurelillo, encino negro, encino pepitillo, encino pipitza, encino prieto, encino roble, encino saucillo, encino tesmolillo, oreja de ratón, roble, tuchi (Otomí)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) eduardi</taxonRankValue>
+                    <commonName>palo colorado, encino blanco, encino, encino blanco, encino colorado, encino laurel, encino laurelillo, encino manzano, encino negro, encino rojo, laurelillo, manzanillo, palo colorado, palo rojo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) oleoides</taxonRankValue>
+                    <commonName>encino roble, alcornoque, ahuat, encino rojo, yag-psuy, encino barcino, encinillo, tzakaka kukat, tesmol, encino tesmol, tresmoles, encino roble blanco, pop xoj, yagpsuy, encino, cikinib-hite, roble, encino chino, encino blanco, encino nanche, encino prieto, ahuat (Náhuatl), alcornoque, encinillo, encino, encino barcino, encino blanco, encino chino, encino colorado, encino nanche, encino prieto, encino roble, encino roble blanco, encino rojo, roble, roble blanco, tresmoles, tzakaka kukat (Totonaco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) deserticola</taxonRankValue>
+                    <commonName>encino tesmolillo, encino texmole, texmole, encino, encino blanco, chaparro, encino, encino blanco, encino chino, encino colorado, encino prieto, encino roble, encino tesmolillo, encino texmole, palo chino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) sebifera</taxonRankValue>
+                    <commonName>encinillo, encino, encino chaparro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) potosina</taxonRankValue>
+                    <commonName>chaparro, encino, encino blanco, encino chaparro, quebracho</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laxa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) greggii</taxonRankValue>
+                    <commonName>chaparro prieto, encino, encino blanco, encino enano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) ariifolia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) germana</taxonRankValue>
+                    <commonName>encino roble, encino, encino amarillo, encino blanco, encino prieto, encino roble, encino rojo, quiote, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) tuberculata</taxonRankValue>
+                    <commonName>encino roble, toché, encino, roble, encino prieto, encino, encino amarillo, encino prieto, encino roble, roble, toché (Guarijío)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) microphylla</taxonRankValue>
+                    <commonName>ahuacocoztli, encino, encino capulincillo, encino enano, ahuacocoztli (Náhuatl), chamizo, encino, encino blanco, encino capulincillo, encino enano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) corrugata</taxonRankValue>
+                    <commonName>ahuat, chicharro, iztacahuat, encino, encino blanco, encino rey, ahuat (Náhuatl), encino, encino blanco, encino rey, iztacahuat (Náhuatl), palo amarillo, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) furfuracea</taxonRankValue>
+                    <commonName>encino colorado, encino blanco, encino colorado, encino de asta, encino laurelillo, encino rojo, encino saucillo, encino teposcohuite</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) depressa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) pinnativenulosa</taxonRankValue>
+                    <commonName>encino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) xalapensis</taxonRankValue>
+                    <commonName>encino roble, barrilillo, roble de duelas, encino, encino capulahuatl, encino capulincillo, roble, encino de asta, encino negro, encino blanco, barrilillo, capulincillo, encino, encino blanco, encino capulincillo, encino colorado, encino de asta, encino negro, encino roble, encino rojo, escobillo blanco, naranjillo, palo blanco, roble, roble de duelas</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) obtusata</taxonRankValue>
+                    <commonName>encino, bellota, chilillo, encinilla, encino, encino blanco, encino chino, encino negro, encino prieto, encino roble, encino roble amarillo, encino rojo, roble, roble prieto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) acherdophylla</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Fagus grandifolia</taxonRankValue>
+                    <commonName>haya, acailite, beech (Maya), guichín, haya, haya americana, haya mexicana, pepinque</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) rysophylla</taxonRankValue>
+                    <commonName>encino colorado, encino, encino blanco, encino colorado, encino de asta, encino rojo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) sapotifolia</taxonRankValue>
+                    <commonName>encino, encino blanco, encino colorado, encino duela, quebracho, roble, zapotillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) opaca</taxonRankValue>
+                    <commonName>encino chaparro, chaparro, encino chaparro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) candicans</taxonRankValue>
+                    <commonName>jicarillo, encino rosillo, huilocualoni, ahuahuaxtl, papatla, ahuamextli, encino rojo, tepescohuite, tzacui blanco, tzaquioco, encino blanco, ixcahuate, encinillo, chalahuate, encino ancho, encino, roble, canake, encino aguacatillo, encino ahuatl, hoja de encino, tamalahuatl, encino cenizo, encino de asta, encino papatla, encino, encino aguacatillo, encino blanco, encino cenizo, encino colorado, encino de asta, encino papatla, encino rojo, encino rosillo, hoja ancha, jicarillo, roble, álamo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) glaucoides</taxonRankValue>
+                    <commonName>encino prieto, encino, encino blanco, encino chaparro, encino negro, encino prieto, encino roble, encino rojo, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) pringlei</taxonRankValue>
+                    <commonName>chaparro, encino chaparro, chaparro, encino, encino chaparro</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-JF136-JF1361403F_corregida-ND">
+                <title>Base de datos de la familia Fagaceae en el estado de Hidalgo</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Susana</givenName>
+                    <surName>Valencia Ávalos</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>El estado de Hidalgo está ubicado en la región oriental de México, misma que ha sido considerada como una de las regiones más diversas en cuanto a especies de encinos se trata (Nixon, 1993 y Valencia, 2004). Con 38 especies, el estado de Hidalgo ocupa el quinto lugar en diversidad de especies de la familia Fagaceae en México, lo cual aunado al deterioro de las zonas naturales que avanza a pasos agigantados en la Sierra Madre Oriental y al poco conocimiento preciso que se tiene de la familia y particularmente del género Quercus en la región oriental de México, pone de manifiesto la importancia de estudiar los encinos en el estado de Hidalgo, en el cual se han encontrado hasta el momento dos géneros de la familia Fagaceae: Quercus y Fagus. Colectas previas de estos géneros en Hidalgo permiten tener un acervo de 300 ejemplares depositados en el Herbario de la Facultad de Ciencias que sumado a las colectas que se pretenden realizar con este proyecto, se espera obtener una base de datos en el formato Biótica, de al menos 700 registros de ejemplares de los géneros Quercus y Fagus colectados en el estado de Hidalgo.</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Plantas
+con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
+con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2024-10-22T20:40:19Z</dateStamp>
+                <citation>Valencia Ávalos S, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Base de datos de la familia Fagaceae en el estado de Hidalgo. Version 1.16. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/zpp4sp accessed via GBIF.org on 2024-10-22.</citation>
+                <bibliography>
+                <citation>García-Mendoza, A. J. &amp;  J. A. Meave. 2011. Diversidad florística de Oaxaca: de musgos a angiospermas (colecciones y lista de especies). Instituto de Biología, UNAM-CONABIO. 351 pp.</citation>
+                <citation>S. Valencia &amp;  L. Lozada. 24 junio 2003. Quercus nixoniana (Fagaceae), una Nueva Especie de la Sección Lobatae, de la Sierra Madre del Sur, México. Novon. In: Victoria C. Hollowell. 13(2). Missouri Botanical Garden. USA.</citation>
+                <citation>Trel. 1924. Memoirs of the National Academy of Sciences. In: J. Cramer et H. K. Swann. Verlag Von J. Cramer (Government Printing Office). Alemania (Washington, USA).</citation>
+                <citation>Humboldt &amp;  Bonpland. 1809. Plantes Êquinoxiales. In: Tubingue, Chez J. G. Gotta. 2. A Paris, Francia.</citation>
+                <citation>Nixon &amp;  C. H. Mull. 1993. The Quercus hypoxantha complex (Fagaceae) in northeastern Mexico. Brittonia. 45(2). New York Botanical Garden. New York, USA.</citation>
+                <citation>González-Villarreal. 2003. Quercus tuitensis (Fagaceae, Quercus sect. Lobatae) a new deciduous oak from western Jalisco, Mexico. Brittonia. 55(1). New York Botanical Garden. New York, USA.</citation>
+                <citation>González-Villarreal. 2003. Two new species of oak (Fagaceae, Quercus sect. Lobatae) from the Sierra Madre del Sur, Mexico. Brittonia. 55(1). New York Botanical Garden. New York, USA.</citation>
+                <citation>C. H. Mull. &amp;  McVaugh. 1972. The oaks (Quercus) described by Nee (1801), and by Humboldt &amp;  Bonpland (1809), with comments on related species. Contributions from the University of Michigan Herbarium. 9(7). University Herbarium, University of Michigan, Ann Arbor, Michigan. Michigan, USA.</citation>
+                <citation>Née. 1801. Descripciones de varias especies nuevas de encina (Quercus de Linneo). Anales de Ciencias Naturales. 3. Madrid, España.</citation>
+                <citation>Trel. 1924. The American Oaks. Memoirs of the National Academy of Sciences. In: J. Cramer et H. K. Swann. 20. Government Printing Office. Washington, USA.</citation>
+                <citation>C. H. Mull. 1942. Notes on the American Flora, Chiefly Mexican. The American Midland Naturalist. 27(2). The University Press. Washington, USA.</citation>
+                <citation>Trel. 1934. Quercus generis species novae mexicanae. Repertorium Specierum Novarum Regni Vegetabilis. In: Fedde F. 33(99). Berlín, Alemania.</citation>
+                <citation>Sheidw. 1837. L´Horticulteur Belge, Journal des Jardiniers et des Amateurs. Société Encyclographique. Bruselas.</citation>
+                <citation>Trel. 1921. A natural group of unusual black oaks. Proceedings of the American Philosophical Society. 60. USA.</citation>
+                <citation>R. Spellenberg, J. Bacon &amp;  D. Breedlove. 1995. A new species of Quercus (Fagaceae, sect. Lobatae, group Racemiflorae) from the Sierra Madre Occidental, México. Madroño. 42(1). USA.</citation>
+                <citation>Liebm. 1854. Om Egeslaegten i America. Oversight Kongelige danske Videnskabernes Selskabs Forhandlingar. (5 y 6). Alemania.</citation>
+                <citation>M. Martens &amp;  H. Galeotti. 1843. Enumeratio synoptica plantarum phanerogamicarum ab Henrico Galeotti in regionibus Mexicanis collectarum. Bulletin Acad.Roy. Sciences. 10(1). Bruselas.</citation>
+                <citation>Zavala-Chavez. 2000. A New Species of Red Oak (Quercus sec. lobatae) From Central Mexico. Journal of the International OAK society. (10). USA.</citation>
+                <citation>Benth. 1842. Plantas Hartwegianas imprimis Mexicanas. G. Pamplin, London.</citation>
+                <citation>A. DC. 1824-1873. Prodromus Systematis Naturalis Regni Vegetabilis. In: Alphonso de Candolle. 16(2). Victoris Masson, Paris, Francia.</citation>
+                <citation>Hook. &amp;  Arn. 1841. The Botany of Captain Beechey´s Voyage</citation>
+                <citation></citation>
+                <citation>The Botany of Captain Beechey´s VoyageThe Botany of Captain Beechey´s Voyage. In: Henry G. Bohn. Londres, Reino Unido.</citation>
+                <citation>C. H. Mull. 1954. Una nueva especie de Quercus de la Sierra Madre Occidental de Mexico. Anales del Instituto de Biología de la Universidad Nacional Autónoma de Mexico. Serie Botánica. 24(2). Instituto de Biología, UNAM. México, D. F.</citation>
+                <citation>Martínez. 1953. Una nueva especie de Quercus. Anales del Instituto de Biología de la Universidad Nacional Autónoma de Mexico. Serie Botánica. 24(1). Instituto de Biología, UNAM. Mexico, D. F.</citation>
+                <citation>C. H. Mull. 1936. Studies in the oaks of the mountains of northeastern Mexico. Journal of the Arnold Arboretum. 17. EUA.</citation>
+                <citation>C. H. Mull. 1937. Studies in Mexican and Central American Plants. The American Midland Naturalist. 18. The University Press. USA.</citation>
+                <citation>Schltdl. &amp;  Cham. 1830. Plantarum mexicanarum a cel. viris Schiede et Deppe collectarum recensio brevis. Linnaea. 5</citation>
+                <citation>M. L. Vázquez, S. Valencia &amp;  Nixon. 2004. Notes on red oaks (Quercus sect. Lobatae) in eastern Mexico, with description of a new species, Quercus hirtifolia. Brittonia. 56(2). New York Botanical Garden Press. Bronx. USA.</citation>
+                <citation>Spellenb. 1992. A new species of black oak (Quercus, subg. Erythrobalanus, Fagaceae) from the Sierra Madre Occidental, Mexico. American Journal of Botany. 79. USA.</citation>
+                <citation>Warburg. 1939. Contributions to the flora of Tropical América. Plantae Hintonianae: X. The Genus Quercus. Kew Bullitin. England.</citation>
+                <citation>C. H. Mull. 1936. New and noteworthy trees in Texas and México. Bulletin of the Torrey Club. 63. USA.</citation>
+                <citation>C. H. Mull. 1962. A new species of Quercus from Baja California, Mexico. Madroño. 16. USA.</citation>
+                <citation>Rydberg. 1901. The oaks of the Continental Divide North of Mexico. Bulletin of New York Botanical Garden. 2. USA.</citation>
+                <citation>Torrey. 1828. Some account of a collection of plants from the Rocky Mountains. Annals Lyceum of Natural History of New York. 2. USA.</citation>
+                <citation>Trel. 1923. ND. Publications of the Field Columbian Museum, Botanical Series. 5(77). USA.</citation>
+                <citation>Trel. 1930. The woody plants of Siguatepeque, Department Comayagua. Journal of the Arnold Arboretum. 11. USA.</citation>
+                <citation>Trel. 1938. ND. Field Mueseum of Natural History, Botanical Series. 17(4). USA.</citation>
+                <citation>Nixon &amp;  K.P. Steele. 1981. A new species of Quercus (Fagaceae) From Southern California. Madroño. 28(4). USA.</citation>
+                <citation>von Seemen &amp;  Loes. 1900. Beitrage zur Kenntnis der Flora von central-Amerika (einschliefslich Mexico) - II. Botanische Jahrbucher fur Systematik, Pflanzengeschichte und Pflanzengeographie. 29(1)</citation>
+                <citation>Torrey. 1848. Notes of a Military Reconnoissance from fort leavenworth in Missouri to San Diego in California including part of the Arkansas del Norte, and Gila Rivers. Thirtieth Congress. In: Emory, W. H. USA.</citation>
+                <citation>Small. 1901. Shrubs and trees of the souther United States. Bulletin of the Torrey Botanical Club. 28(6). USA.</citation>
+                <citation>A. Camus. 1935. Les Chênes Monographie dugenre Quercus. In: Paul Lechevalier. 2. Paris, Francia.</citation>
+                <citation>Trel. 1922. Trees and Shrubs of Mexico. Contribution from the United States National Herbarium. In: P. C. Standley. 23(2). Washington Government Printing office. USA.</citation>
+                <citation>Trel. 1915. Large-fruited American oaks. Proceedings of the American Philosophical Society. 54. USA.</citation>
+                <citation>Trel. 1940. Flora of the Aguan Valley and the Costal Regions. Field Mueseum of Natural History, Botanical Series. 9(4). USA.</citation>
+                <citation>Engelmann. 1880. Botany of California. Special Report California Geological Survey. In: Brewer, W. H. &amp;  S. Watson. 2 y 5(1). USA.</citation>
+                <citation>Goldman. 1916. Plant records of an expedition to Lower California. Contribution from the United States National Herbarium. In: P. C. Standley. 16. Washington Government Printing Office. USA.</citation>
+                <citation>C. H. Mull. 1942. The Central species of Quercus. Miscelaneus Publication. (477). Department of Agriculture. Bureau of Plant Industry. USA.</citation>
+                <citation>Wenzig. 1884. Die Eichenarten Amerika`s Neu bearbeitet. Jahrbuch des Koniglichen Botanischen Museums zu Berlin. 3</citation>
+                <citation>Sarg. 1895. Notes on North American oaks. Garden &amp;  Forest. 8. USA.</citation>
+                <citation>Torrey. 1859. Rept. on the U. S. and Mexican boundary survey. In: Emory, W. H. 2(1). USA.</citation>
+                <citation>Wooton &amp;  Standl. 1913. Descriptions preliminary to a report upon the flora of Nwe Mexico. Contribution from the United States National Herbarium. In: P. C. Standley. 16. Washington Government Printing Office. USA.</citation>
+                <citation>C. H. Mull. 1979. Phytologia. (42). USA.</citation>
+                <citation>Weatherby. 1910. Procedings American Academy of Arts and Sciences. 45. USA.</citation>
+                <citation>Camus. 1932. Quelques espéces nouvelles de Chénes. Bull. Mus. Hist. Natl. 2(4). Paris.</citation>
+                <citation>C. H. Mull. 1951. Contributions from the Texas Research Foundation, Botanical Studies. 1(40). USA.</citation>
+                <citation>Liebm. 1869. Chenes de l´Amerique tropicale. In: A. S. Oersted. Paris, Francia.</citation>
+                <citation>Torrey. 1853. Botany, in Sitgreaves, L. Report of an expedition down the Zuni and Colorado Rivers. USA.</citation>
+                <citation>Engelmann. 1876. About the oaks of the United States. Transactions Acad. Sci. St. Louis. 3. USA.</citation>
+                <citation>C. H. Mull. 1950. Contributions to the oak flora of Central America. Madroño. 10(5). USA.</citation>
+                <citation>Greene. 1889. Illustrations of West American oaks, chiefly after drawings by A. Kellogg. USA.</citation>
+                <citation>Cockerell. 1903. A new oak, Quercus Rydbergiana. Torreya. 3</citation>
+                <citation>von Seemen. 1904. Das von H. Pittier und A. Tonduz in Costa Rica gesammelte Quercus-Material. Bulletin Herbier Boissier. 4(2)</citation>
+                <citation>Martínez. 1963. Una especie nueva de Quercus. Anales del Instituto de Biología de la Universidad Nacional Autónoma de Mexico. Serie Botánica. 1 y 2(34). Instituto de Biología, UNAM. México.</citation>
+                <citation>Matuda. 1955. ND. Boletín de la Sociedad Botánica de México. 18(3). México.</citation>
+                <citation>Nixon. 1993. Infrageneric classification of Quercus (Fagaceae) and typification of sectional names. Annales des Sciences Forestieres. (50)</citation>
+                <citation>Buckley. 1883. Some new Texan plants. Bulletin of the Torrey Botanical Club. 10. USA.</citation>
+                <citation>Buckley. 1860. Description of several new species of plants. Proceedings of the Academy of Natural Sciences of Philadelphia. de 1860. USA.</citation>
+                <citation>Nuttall. 1848. Descriptions of plants collected by William Gambel. Journal of the Academy of Natural Sciences of Philadelphia. USA.</citation>
+                <citation>C. H. Mull. 1954. A new species of Quercus in Arizona. Madroño. 12. USA.</citation>
+                <citation>C. H. Mull. 1938. Further studies in southwestern oaks. The American Midland Naturalist. 19(3). The University Press. USA.</citation>
+                <citation>Trel. 1938. A contribution to the Flora of Honduras. Field Mueseum of Natural History, Botanical Series. In: Yuncker, T. G. 17. USA.</citation>
+                <citation>Trel. 1933. Five new oaks from Guatemala. Journal of the Washington Academy of Sciences. 23(1). USA.</citation>
+                <citation>Tucker &amp;  C. H. Mull. 1945. Additions to the oak flora of El Salvaddor. Madroño. 8(4). USA.</citation>
+                <citation>Standl. 1935. Botany of the Maya Area: Miscellaneus papers IV. New plants from the Yucatan Peninsula. Publications of the Carnegie Institution of Washington. 461(4). USA.</citation>
+                <citation>Martínez. 1954. Los encinos de México III. Anales del Instituto de Biología de la Universidad Nacional Autónoma de Mexico. Serie Botánica. 24(2). Instituto de Biología, UNAM. México.</citation>
+                <citation>Valencia-Ávalos, S. 2004. Diversidad del género Quercus (Fagaceae) en México. Bol. Soc. Bot. Méx. 75:33-53.</citation>
+                <citation>Martínez, M. 1994. Catálogo de nombres vulgares y científicos de las plantas mexicanas. Fondo de Cultura Económica de México. Compañía Editorial Continental. México D.F.</citation>
+                <citation>Ocegueda, S &amp;  J. Llorente-Bousquets (coords.). 2009. Catálogo taxonómico de especies de México. En: Capital natural de México, vol. I: Conocimiento actual de la biodiversidad. CONABIO. México</citation>
+                <citation>Villaseñor, J. L., E. Ortiz, L. Alvarado, M. Mora &amp;  G. Segura. 2013. Catálogo florístico taxonómico de los árboles de México. Informe final Proyecto JE012. Bases de datos SNIB-CONABIO. México, D. F.</citation>
+                <citation>Muñoz Zurita, R. 2012. Diccionario enciclopédico de la gastronomía mexicana. Larousse, México. 664 pp.</citation>
+                <citation>Espinosa, D. 2010. Recursos Biológicos de México: Base de datos. Informe de Estancia Sabática. CONABIO.</citation>
+                <citation>Judd, W.S., Campbell, C.S., Kellog E.A. &amp;  P.F. Stevens. 1999. Plant Systematics. A Phylogenetic Approach. Sinauer Associates, Inc. Publishers Sunderland, Massachusets U.S.A. 464 p.</citation>
+                <citation>Valencia, A. S., Nixon, K.C. &amp;  L.M. Kelly. 2011. Quercus delgadoana (Fagaceae), a New Species from the Sierra Madre Oriental, Mexico. Novon. 21(2): 274-277.</citation>
+                </bibliography>
+                <physical>
+                    <objectName>SNIB-JF136-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JF136/SNIB-JF136-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-JF136-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JF136/SNIB-JF136-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JF136-JF1361403F_corregida-ND</collectionIdentifier>
+                    <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>3</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

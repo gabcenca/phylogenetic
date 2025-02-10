@@ -12,27 +12,50 @@
 # --- Load libraries ---
 library(dplyr)
 library(readr)
+library(data.table)
 
+##Dividir dwc en 3 para guardarlo en github
 
 # --- Load tables ---
-recordsGbif <- read_delim("data/in/gbif_csv/gbif.csv", 
+recordsGbif_raw <- read_delim("data/in/gbif_dwc/occurrence.txt", 
                           delim = "\t", escape_double = FALSE, 
                           trim_ws = TRUE)
 
-recordsHerbario <- read_csv("data/in/herbariomex_dw/occurrences.csv")
+tercio <- round(nrow(recordsGbif_raw)/3)
 
-recordsBIEN <- read_csv("data/in/dataBIENmex_csv/dataBIENmex.csv")
+list_recordsGbif_raw <- list(recordsGbif_raw[1:tercio,],
+                             recordsGbif_raw[(tercio+1):(2*tercio),],
+                             recordsGbif_raw[(2*tercio+1):nrow(recordsGbif_raw),])
+
+lapply(list_recordsGbif_raw, dim)
+
+lapply(seq_along(list_recordsGbif_raw), function(x){write.csv(list_recordsGbif_raw[[x]],
+      file = paste0("data/in/gbif_dwc/division_occurrence/occurrence_",x,".csv"), row.names=F)})
+
+## Upload data frames 
+
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
+
+recordsBIEN_raw <- fread("data/in/dataBIENmex_csv/dataBIENmex.csv")
+
+
+# Load tables from gbif 
+files_list<- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=T)
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
 
 
 # --- Add a unique id to each value --- 
-recordsGbif <- recordsGbif %>%
-  mutate(valueID = paste0("GBIF_", row_number()))
+recordsGbif <- recordsGbif_raw %>%
+  mutate(id_interno = paste0("GBIF_", row_number()), taxonID=)
 
-recordsHerbario <- recordsHerbario %>%
-  mutate(valueID = paste0("Herb_", row_number()))
+recordsHerbario <- recordsHerbario_raw %>%
+  mutate(id_interno = paste0("Herb_", row_number()))
 
-recordsBIEN <- recordsBIEN %>%
-  mutate(valueID = paste0("BIEN_", row_number()))
+recordsBIEN <- recordsBIEN_raw %>%
+  mutate(id_interno = paste0("BIEN_", row_number()))
 
 
 # Convertir todas las columnas de recordsGbif a character
@@ -48,11 +71,19 @@ recordsBIEN <- recordsBIEN %>%
   mutate_all(as.character)
 
 #Juntar df de gbif y herbario 
-herbGbif <- bind_rows(recordsHerbario,recordsGbif)
-names(herbGbif)
+herbGbif_raw <- bind_rows(recordsHerbario,recordsGbif)
+names(herbGbif_raw)
+
+
+#For columns in herbario not in gbif columns
+antijoin_herbgbif <- recordsHerbario %>%
+  anti_join(recordsGbif, 
+            # Define equivalence in column names in both df
+            by = "scientificName")
+unique(antijoin2$scientificName)
 
 #Seleccionar las columnas de interes 
-herbGbif <- herbGbif %>%
+herbGbif <- herbGbif_raw %>%
   select("scientificName", "eventDate","year", 
          "month","day","occurrenceRemarks",
          "habitat", "stateProvince","county", "municipality","locality",

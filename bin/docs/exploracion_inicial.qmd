@@ -1,0 +1,436 @@
+---
+title: "Exploracion_inicial"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+
+---
+
+```{r}
+# --- Set wd ---
+setwd("C:/Users/danie/Desktop/phylogenetic")
+
+
+# --- Load libraries ---
+library(dplyr)
+library(readr)
+library(data.table)
+library(ggplot2)
+
+```
+
+- Subir datos crudos 
+
+```{r} 
+#| eval: false
+
+# Load tables from gbif 
+files_list <- list.files("data/in/gbif_dwc/division_occurrence/", pattern=".csv", full.names=TRUE)
+
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
+
+recordsHerbario_raw <- fread("data/in/herbariomex_dw/occurrences.csv")
+
+gbif_nombres_backbone <- fread("data/temp/backbone_gbif/gbif_nombres_backbone.csv")
+
+herb_nombres_backbone <- fread("data/temp/backbone_gbif/herb_final_backbone.csv")
+
+
+
+
+```
+
+
+
+-   Unir metadatos con la base de datos con los nombres corregidos
+
+```{r}
+# --- Generar un id interno para cada tabla
+recordsGbif_raw <- recordsGbif_raw %>%
+  mutate(id_interno = paste0("GBIF_", row_number()))
+
+recordsHerbario_raw <- recordsHerbario_raw %>%
+  mutate(id_interno = paste0("Herb_", row_number()))
+
+
+# --- Unir columnas del herbario con el herbario corregido 
+
+herb_corr_raw <- cbind(recordsHerbario_raw, herb_nombres_backbone)
+
+# --- Unir columnas de gbif con gbif corregido 
+
+gbif_corr_raw <- cbind(recordsGbif_raw, gbif_nombres_backbone)
+
+
+```
+
+-   Unir la tabla del herbario y el gbif
+
+```{r}
+#Agregar sufijo para que no haya columnas duplicadas
+names(herb_corr_raw) <- make.names(names(herb_corr_raw), unique = TRUE)
+names(gbif_corr_raw) <- make.names(names(gbif_corr_raw), unique = TRUE)
+
+herb_corr_raw <- herb_corr_raw %>%
+  mutate(across(everything(), as.character))
+
+gbif_corr_raw <- gbif_corr_raw %>%
+  mutate(across(everything(), as.character))
+
+# Unir las filas de los data frames
+gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
+
+
+```
+
+
+-Ver nombres que no coincidieron con ningun correctname
+```{r}
+sin_cn <-  gbif_herb_raw %>%
+  filter(is.na(correctname))  %>%  
+  filter(!duplicated(scientificName))
+
+table(sin_cn$scientificName)
+```
+
+Son 4000 registros en total, pero si se filtran los duplicados, son 14 distintos. Algunos son porque son hibridos, otro porque se queda en Quercus y otro en Quercus L.
+
+Hay que revisar los nombres duplicados, primero borrar las que no tienen coordenadas y borrar Quercus y Quercus L.  
+Guardar en un objeto nuevo las que no tienen coordenadas para poder salvar registros. 
+
+
+-   Seleccionar columnas de interés
+
+```{r}
+gbif_herb <- gbif_herb_raw %>%
+  select(correctname, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+```
+
+
+-   Contar duplicados
+
+    -   Coordenadas
+    
+```{r}
+#Eliminar registros sin coordenadas 
+gbif_herb_coor <- gbif_herb %>%
+  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
+
+# Identificar las filas duplicadas basadas en las coordenadas
+coor_duplicated <- gbif_herb_coor %>%
+  filter(duplicated(cbind(decimalLatitude, decimalLongitude)))
+
+```
+    
+    
+    -   Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
+```{r}
+corr_loc_name_dupli <-  gbif_herb_coor%>%
+  filter(duplicated(cbind(decimalLatitude, decimalLongitude, correctname, municipality) , fromLast = TRUE))
+
+```
+    
+    Estos son 19551 registros. 
+    
+    
+    -   Replicas del mismo individuo (coordenada, nombre de los colectores, fecha de colecta y especie)
+    
+```{r}
+colectors_date_species_replica <-  gbif_herb_coor%>%
+  filter(duplicated(cbind(decimalLatitude, decimalLongitude, recordedBy,eventDate,correctname) , fromLast = TRUE)) 
+
+```
+
+    Estos son 15137 registros. 
+
+
+
+- Eliminar duplicados 
+```{r}
+# --- Eliminar por coordenadas, nombre de la especie y localidad
+
+hgbif_no_duplicates <- gbif_herb_coor %>%
+  distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
+
+
+
+```
+
+Guardarlo en un csv
+
+
+
+```{r}
+write.csv(hgbif_no_duplicates, file = "data/out/hgbif_no_duplicates.csv")
+```
+- Ver cuantos NA hay 
+```{r}
+colSums(is.na(hgbif_no_duplicates))
+
+```
+
+    
+-   Extraer elevación
+
+```{r}
+
+#Inicia funcion
+library(elevatr)
+library(data.table)
+
+#Genera el df de elevacion
+
+# Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
+
+hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude)  %>%
+  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
+
+
+# Convertir a objeto sf
+
+library(sf)
+
+hgbif_no_duplicates_sf <- st_as_sf(hgbif_no_duplicates_coor,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+
+
+# Obtener elevación para cada punto en tu base de datos
+elev_data <- get_elev_point(hgbif_no_duplicates_sf, 
+                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
+                            z = 4)      # Nivel de zoom (determina la precisión)
+
+
+#guardar en un csv 
+write.csv(elev_data, "data/temp/elev_data.csv")
+
+
+#Generar el df con las coordenadas correctas y todas las columnas para agregar la columna de elevacion a cada registro
+hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude,everything())  %>%
+  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
+
+#Agregar columna de elevacion
+elev_data <- read.csv("data/temp/elev_data.csv", header=T)
+
+
+hgbif_no_duplicates_coor_completo$elevacion <- elev_data$elevation
+
+#Ver rango de elevacion que hay 
+range(hgbif_no_duplicates_coor_completo$elevacion)
+
+
+# Filtrar los datos para mantener solo las filas donde la elevación sea mayor o igual a cero
+hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates_coor_completo %>%
+  filter(elevacion >= 0)
+
+# Verifica el rango después de eliminar las elevaciones negativas
+range(hgbif_no_duplicates_coor_completo$elevacion)
+
+```
+
+-   Mapa general para ver errores (como puntos que caen el mar)
+
+```{r}
+library(maps)
+
+# Cargar mapa base de México
+mexico_map <- map_data("world", region = "Mexico")
+
+# Graficar
+mapa_general <- ggplot() +
+  geom_polygon(data = mexico_map, aes(x = long, y = lat, group = group), fill = "lightblue", color = "black") +
+  geom_point(data = hgbif_filtered, aes(x = decimalLongitude, y = decimalLatitude), color = "red", size = 3) +
+  theme_minimal() +
+  labs(title = "Mapa de Puntos", x = "Longitud", y = "Latitud")
+```
+Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/mapa_puntos.jpg", plot = mapa_general, type = "cairo", width = 8, height = 6, dpi = 300)
+
+- Filtrar los registros para 1950-2023
+```{r}
+hgbif_filtered_50 <- hgbif_filtered %>%
+  filter(year > 1950)
+```
+
+No es necesario borrar registros por tiempo. 
+
+- Borrar los puntos que caen en el mar 
+
+#No carga en el chunk
+hgbif_filt_10s <- read.csv("data/out/hgbif_filt_10s.csv", header=T)
+
+
+```{r}
+
+library(sf)
+library(rnaturalearth)
+library(ggspatial)
+
+# Obtener el mapa de México (o de los países) con rnaturalearth
+mexico_map <- ne_countries(scale = "small", returnclass = "sf", country = "Mexico")
+
+#hgbif_filt_10 <- read.csv("data/out/hgbif_filt_10s.csv")
+
+puntos_sf <- st_as_sf(hgbif_filt_10, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+
+# Ver si los puntos están dentro de los límites de los países
+puntos_mex <- st_intersects(puntos_sf, mexico_map, sparse = FALSE)
+
+# Filtrar los puntos que están dentro de los límites terrestres 
+puntos_terrestres <- puntos_sf[apply(puntos_mex, 1, any), ]
+
+# Identificar los puntos que están fuera de México (FALSE)
+puntos_fuera <- !apply(puntos_mex, 1, any)
+
+# Mostrar los puntos que están fuera de los límites de México
+puntos_fuera_df <- hgbif_filt_10[puntos_fuera, ]
+
+
+
+# Convertir de nuevo a data.frame para eliminar los puntos en el mar en el data frame original
+hgbif_filt_10s_terres<- as.data.frame(puntos_terrestres)
+
+# Mostrar los primeros registros del nuevo data frame
+head(hgbif_filt_10s_terres)
+
+
+mapa_terra_puntos <- ggplot() +
+  geom_sf(data = mexico_map, fill = "#8B864E", color = "black") +  # Mapa de México
+  geom_sf(data = puntos_terrestres, aes(geometry = geometry), color = "#A2CD5A", size = 3) +  # Puntos
+  annotation_north_arrow(location = "tr", which_north = "true",  # Ubicación del norte (tr = top-right)
+                         pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),  # Ajuste de distancia
+                         style = north_arrow_fancy_orienteering) +  # Estilo de flecha
+  theme_minimal() +
+  labs(title = "Mapa de Registros de Encinos en México (1950-2023)", x = "Longitud", y = "Latitud")
+
+```
+
+Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/mapa_puntos_terra.jpg", plot = mapa_terra_puntos, type = "cairo", width = 8, height = 6, dpi = 300)
+
+
+
+-   Tabla de registros por especie
+Hay 57 especies con menos de 10 registros.
+
+```{r}
+species_count <- hgbif_no_duplicates_coor_completo %>%
+  count(correctname, name = "total_registros")%>%
+  arrange(total_registros)  %>%
+  filter(!is.na(correctname)) 
+
+# Now filter the main data frame to only include species with more than 10 records
+hgbif_filtered <- hgbif_no_duplicates_coor_completo %>%
+  semi_join(species_count, by = "correctname")
+```
+
+write.csv(hgbif_filtered, "data/out/hgbif_filt_10s.csv")
+
+-   Histograma de fechas
+```{r}
+
+# Load lubridate if not already loaded
+library(lubridate)
+
+# Extract the year from eventDate
+hgbif_filtered <- hgbif_filtered %>%
+  mutate(year = year(ymd(eventDate)))
+
+# Crear un histograma por año
+hist_conteos <- ggplot(hgbif_filtered, aes(x = year)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "lightblue", alpha = 0.7) +
+  labs(title = "Histograma de Fechas de Colecta (Por Año)",
+       x = "Año de Colecta",
+       y = "Número de Registros") +
+  theme_minimal() +
+   scale_x_continuous(limits = c(1900, 2024),
+                       breaks = seq(1900, 2024, by = 10))
+```
+Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/hist_conteo_registros.jpg", plot = hist_conteos, type = "cairo", width = 8, height = 6, dpi = 300)
+
+
+
+-   Minímos y maximos de elevación por especie
+
+
+-   Obtener categoría de especie de la IUCN por especie, revisar tabla gbif 
+
+SIGUE SIN FUNCIONAR 
+
+
+```{r}
+#| echo: false
+
+# # Instalar los paquetes necesarios si no los tienes
+# install.packages(c("httr", "jsonlite"))
+
+# Cargar los paquetes
+library(httr)
+library(jsonlite)
+```
+
+```{r}
+# Clave de API de la IUCN (reemplaza "YOUR_IUCN_API_KEY" con tu clave de API)
+iucn_api_key <- "8a2sFdrnhH9eBjj1WKE9p46w3GaneBziqRx3"
+
+# Función para obtener la categoría de conservación de una especie
+get_iucn_status <- function(species_name) {
+  # URL para la consulta
+  url <- paste0("https://apiv3.iucnredlist.org/api/v3/species/", URLencode(species_name), "?token=", iucn_api_key)
+  
+  # Hacer la solicitud a la API
+  response <- GET(url)
+  
+  # Verificar si la solicitud fue exitosa
+  if (status_code(response) == 200) {
+    data <- fromJSON(content(response, "text"), flatten = TRUE)
+    
+    # Extraer la categoría de conservación si está disponible
+    if (length(data$result) > 0) {
+      return(data$result$category)
+    } else {
+      return(NA)  # Si no hay datos para la especie
+    }
+  } else {
+    warning("Error in request: ", status_code(response))
+    return(NA)
+  }
+}
+
+
+# Crear una nueva columna con la categoría de la IUCN
+species_count <- species_count %>%
+  mutate(iucn_category = sapply(correctname, get_iucn_status))
+
+
+```
+
+
+- Conteo por estado
+
+Se puede observar que los estados estan escritos distinto y se marcan como diferentes. Hay que corregir esto.
+
+```{r}
+conteo_estado <- table(hgbif_filtered_50$stateProvince) 
+
+barplot(conteo_estado,
+        main = "Conteo de Encinos por Estado",
+        ylab = "Número de registro de Encinos",
+        las = 2, # Orienta las etiquetas de los estados en el eje X
+        col = "lightblue", # Color de las barras
+        border = "blue")
+
+```
+
+
