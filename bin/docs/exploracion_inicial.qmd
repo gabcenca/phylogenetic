@@ -38,7 +38,7 @@ recordsHerbario_raw <- fread(here::here("data/in/herbariomex_dw/occurrences.csv"
 
 gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv"))
 
-herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_fiherb_nombres_backbone <- fread(here::here("data/in/backbone/herb_fiherb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
+herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
 
 
 
@@ -97,21 +97,22 @@ gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 ```
 
 
--Ver nombres que no coincidieron con ningun correctname
+-Ver nombres que no coincidieron con ningun correctname. 
+
+#TODO: Al final tenemos que decidir qué hacer con los registros que no existen en el correctname y si son especies. (Por ejemplo Q. tristis, Q. lanceolata)
+
 ```{r}
 sin_cn <-  gbif_herb_raw %>%
-  filter(is.na(correctname))  %>%  
-  filter(!duplicated(scientificName))
+  filter(is.na(correctname))
 
-table(sin_cn$scientificName)
+table(sin_cn$scientificName) 
 ```
 
-Son 4000 registros en total, pero si se filtran los duplicados, son 14 distintos. Algunos son porque son hibridos, otro porque se queda en Quercus y otro en Quercus L.
+Filtrar registros a nivel de genero
 
-Hay que revisar los nombres duplicados, primero borrar las que no tienen coordenadas y borrar Quercus y Quercus L.  
-Guardar en un objeto nuevo las que no tienen coordenadas para poder salvar registros. 
-
-
+```{r}
+gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus", "Quercus L."))
+```
 
 
 
@@ -121,24 +122,26 @@ Guardar en un objeto nuevo las que no tienen coordenadas para poder salvar regis
     
 ```{r}
 #Eliminar registros sin coordenadas 
-gbif_herb_coor <- gbif_herb %>%
+gbif_herb_coor <- gbif_herb_raw %>%
   filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
+```
 
+- Coordenadas duplicadas
+```{r}
 # Identificar las filas duplicadas basadas en las coordenadas
 coor_duplicated <- gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude)))
-
 ```
+
     
     
     -   Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
 ```{r}
-corr_loc_name_dupli <-  gbif_herb_coor%>%
+corr_loc_name_dupli <-  gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude, correctname, municipality) , fromLast = TRUE))
-
 ```
     
-    Estos son 19551 registros. 
+    Estos son 18411 registros. 
     
     
     -   Replicas del mismo individuo (coordenada, nombre de los colectores, fecha de colecta y especie)
@@ -149,36 +152,42 @@ colectors_date_species_replica <-  gbif_herb_coor%>%
 
 ```
 
-    Estos son 15137 registros. 
+    -   Estos son 14067 registros. 
 
 
 
 - Eliminar duplicados 
+
 ```{r}
 # --- Eliminar por coordenadas, nombre de la especie y localidad
 
 hgbif_no_duplicates <- gbif_herb_coor %>%
   distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
-
-
-
 ```
+
+Registros sin duplicados: 56,363
 
 Guardarlo en un csv
 
-
-
 ```{r}
-write.csv(hgbif_no_duplicates, file = "data/out/hgbif_no_duplicates.csv")
+write.csv(hgbif_no_duplicates, file = here::here("data/out/hgbif_no_duplicates.csv"))
 ```
+
+
+
 - Ver cuantos NA hay 
 ```{r}
 colSums(is.na(hgbif_no_duplicates))
 
+table(hgbif_no_duplicates[is.na(hgbif_no_duplicates$correctname),]$scientificName)
+
 ```
 
     
--   Extraer elevación
+-   Extraer elevación:
+
+elevatr: Por default los datos se extraen de AW3D30
+(INEGI CEM (Continuo de elevacion mexicana) 15m)[https://www.inegi.org.mx/app/geo2/elevacionesmex] 
 
 ```{r}
 
