@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="9a2dc5f6-feb1-4ee0-9e04-d83a5ca57bae"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/cwbaym</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-H305</alternateIdentifier>
+        <alternateIdentifier>http://ipttest.conabio.gob.mx/iptconabiotest/resource?r=SNIB-H305</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-H305</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-H305-Varios-archivos-XLS-ND</alternateIdentifier>
+        <alternateIdentifier>9a2dc5f6-feb1-4ee0-9e04-d83a5ca57bae</alternateIdentifier>
+        <title>Situación actual del búho manchado mexicano (Strix occidentalis lucida) y de los Strigiformes de la Reserva de la Biósfera La Michilía</title>
+        <creator>
+            <individualName>
+                <givenName>Alfredo</givenName>
+                <surName>Garza Herrera</surName>
+            </individualName>
+            <organizationName>Instituto de Ecología ACCentro Regional-Durango</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2024-04-11
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>Se estimó la población de los strigiformes de la Reserva de la Biosfera de La Michilía, ubicada al Sureste del estado de Durango. Se realizaron recorridos nocturnos y mediante grabaciones e imitaciones del canto de búhos en sitio se detectaron las especies. Las poblaciones se estimaron mediante el programa DISTANCE, basándose en la función de detectabilidad de los individuos observados o escuchados y se calculó la probabilidad promedio de detección al 95% de confianza. También se estimó la densidad cruda de Búho manchado dividiendo el número de búhos observados entre el área de estudio. Se mapearon las rutas de monitoreo y los territorios de Strix occidentalis. En cada sitio de reclamo de búhos se realizó un muestreo de vegetación por el método de vecino más cercano considerado las 4 especies de árboles cercanas al centro del sitio. También se midieron la pendiente, la inclinación y la altitud de todos los sitios. De esta información se determinó la densidad de árboles / ha, la riqueza específica, la cobertura foliar, las especies más comunes por área y el tipo de vegetación. Siete especies de búhos se registraron en La Michilía: Strix occidentalis, Búho virginianus, Glaucidium gnoma, Otus flammeolus, O. trichopsis, Tyto alba y Aegolius acaducus, de los cuales se estimaron sus poblaciones y se determinó el hábitat y la distribución. Dos especies más se registraron (Asio otus Kemmicotti), pero su observación fue tan esporádica que fue imposible determinar la ecología de las mismas. El búho manchado presentó mayores densidades de su población en el Cerro Blanco, en el rancho &#34;la Peña&#34; y en el rancho &#34;Las Margaritas&#34;. Quince territorios de Strix occidentalis se identificaron en La Michilía, obteniéndose una densidad cruda de 0.54 búhos/km2. La especie se distribuyó arriba de los 2330 msnm en hábitats con coberturas de 34 a 69%  y densidades de más de 27 árboles / ha y utilizó preferentemente bosques de latifoliadas, de coníferas y bosques mixtos de pino-encino. Búho virginianus se presentó en cualquier hábitat con densidades de regulares a altas, presentando las mayores densidades en las áreas deforestadas o se le encontró preferentemente en bosques mixtos abiertos y en matorrales de Garria ovata. Otus flammeolus tuvo densidades relativamente altas, lo cual permite definirla como una especie común que se distribuyó ampliamente a no más de 2645 msnm en cualquier tipo de vegetación. Otus trichopsis presentó densidades, siendo la especie más común en el área. Tyto alba presentó densidades reducidas y su distribución estuvo restringida a zonas perturbadas. Aegolius acadicus fue una especie extremadamente rara por sus reducidas densidades.</para>
+<para>Reino: 2
+Filo: 2
+Clase: 2
+Orden: 6
+Familia: 7
+Género: 12
+Subgénero: 4
+Especie: 38</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keyword>Aves</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=H&amp;Numero=305</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-H305</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: MEXICO (DURANGO, ZACATECAS)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-104.345</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-104.074</eastBoundingCoordinate>
+                    <northBoundingCoordinate>23.481</northBoundingCoordinate>
+                    <southBoundingCoordinate>23.25</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1996-04-18
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                1997-06-06
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Animalia, Plantae
+Filo: Chordata, Tracheophyta
+Clase: Aves, Equisetopsida
+Orden: Strigiformes, Pinales, Fagales, Ericales, Cupressales, Asparagales
+Familia: Strigidae, Pinaceae, Fagaceae, Ericaceae, Cupressaceae, Asparagaceae, Tytonidae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Animalia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Chordata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Aves</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Strigiformes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Pinales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Ericales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Cupressales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Asparagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Strigidae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Pinaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Ericaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Cupressaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Asparagaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Tytonidae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Strix</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Arctostaphylos</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Juniperus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Otus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Arbutus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Glaucidium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Bubo</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Agave</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Tyto</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Aegolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Quercus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Agave</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Strobus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Strix occidentalis</taxonRankValue>
+                    <commonName>búho manchado, búho manchado, búho moteado</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) teocote</taxonRankValue>
+                    <commonName>juncia, ocote, ocote blanco, ocote chino, ocote colorado, ocote negro, ocote pardo, ocote rojo, ocotl (Náhuatl), palo colorado, pino, pino cenizo, pino chino, pino colorado, pino escobetón, pino ocote, pino ocote chino, pino ortiguillo, pino prieto, pino real, pino rojo, pino rosillo, pino teocote, pithomlab (Huasteco), teocote, xolocotl (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) sideroxyla</taxonRankValue>
+                    <commonName>chaparro, encino, encino amarillo, encino blanco, encino colorado, encino laurelillo, encino manzano, encino prieto, encino roble, encino rojo, encino tecomate, palo colorado, palo prieto, palo rojo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Arctostaphylos pungens</taxonRankValue>
+                    <commonName>encino negro, frutilla, gayuba del país, hoja de guayuba, leño colorado, madroño, manzana, manzanilla, manzanillo, manzanita, nariz de perro, palo de pingüica, pingüica, pingüico, piniki (Purépecha), pinquicua (Tarasco), tepesquisúchil (Náhuatl), uhí (Guarijío), uwí (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) eduardi</taxonRankValue>
+                    <commonName>encino, encino blanco, encino colorado, encino laurel, encino laurelillo, encino manzano, encino negro, encino rojo, laurelillo, manzanillo, palo colorado, palo rojo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) leiophylla</taxonRankValue>
+                    <commonName>manzanita, ocote, ocote blanco, ocote chino, ocote negro, ocotl (Náhuatl), palo otomite, pino, pino blanco, pino calocote, pino chamaite, pino chamonque, pino chico, pino chino, pino coyote, pino negro, pino otomite, pino prieto, pino real, pino saguaco, sawá (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) laeta</taxonRankValue>
+                    <commonName>chaparro, encino, encino algodoncillo, encino blanco, encino chaparro, encino chino, encino colorado, encino prieto, encino rojo, palo blanco, palo chino, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) durifolia</taxonRankValue>
+                    <commonName>encino, encino colorado, encino laurelillo, palo colorado</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Juniperus deppeana</taxonRankValue>
+                    <commonName>aorí (Tarahumara), cedro, cedro blanco, cedro chino, cedro de incienso, ciprés, enebro, junípero, sabino, táscate</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) engelmannii</taxonRankValue>
+                    <commonName>ocote, ocote chino, pino, pino Arizona de hoja larga, pino apache, pino de barbas largas, pino engelmany, pino garabatillo, pino lacio, pino ocote, pino prieto, pino real, pino real de barbas, pino real de barbas largas</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) crassifolia</taxonRankValue>
+                    <commonName>bachté (Tsotsil), bochilté (Tsotsil), bochiv (Tsotsil), cantulán (Tsotsil), cucharilla, encino, encino blanco, encino colorado, encino hojasasco, encino pepitillo, encino prieto, encino roble, encino rojo, encino tecomate, encino tesmolillo, encino verde, hoja ancha, hoja de encino, hojarasca, jicarillo, quebracho, roble, roble blanco, yavnal jit&apos;e (Tsotsil)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) hartwegii</taxonRankValue>
+                    <commonName>bellota, chilillo, encinilla, encino, encino blanco, encino chino, encino negro, encino prieto, encino roble, encino roble amarillo, encino rojo, roble, roble prieto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus chihuahuana</taxonRankValue>
+                    <commonName>manzanita, ocote, pino, pino chamonque, pino chimonque, pino chino, pino de Chihuahua, pino negro, pino prieto, pino saguaco, sahuaca (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) lumholtzii</taxonRankValue>
+                    <commonName>huiyoco (Tarahumara), ocote, ocote colorado, ocote de la virgen, pino, pino albacarrote, pino amarillo, pino barba caída, pino chamaite, pino colorado, pino lacio, pino llorón, pino ocote, pino prieto, pino triste, sawá (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Otus trichopsis</taxonRankValue>
+                    <commonName>tecolote bigotudo, tecolote rítmico</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Arbutus xalapensis</taxonRankValue>
+                    <commonName>aile (Náhuatl), amazaquitl (Náhuatl), auako-uri (Huichol), b&apos; Tzajal outez (Tseltal), b&apos; Tzajal papatei (Tseltal), guayabillo, ja&apos;mal wamal (Tseltal), jarrito, jucay (Zoque), korúvasi (Tarahumara), laurel, lipa shulpá (Chontal de Oaxaca), madroño, madroño rojo, manzanita, manzanita china, nuzu-ndu (Zapoteco), nuzundu (Mixe), onté (Tsotsil), panan chén (Purépecha), panangsi (Purépecha), panán-gsuni (Tarasco), panángksi (Tarasco), tzajal zontez (Tseltal), urúbasi (Tarahumara), urúbishi (Tarahumara), ya-hatzii (Triqui), yaa yaana&apos; (Triqui)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) rugosa</taxonRankValue>
+                    <commonName>asta, avellana, avellano, bellota de encino, chaparro, encinillo, encino, encino asta, encino blanco, encino chino, encino colorado, encino cuero, encino de asta, encino de hasta, encino de miel, encino laurelillo, encino liso, encino manzanillo, encino negro, encino prieto, encino quiebra hacha, encino roble, encino rojo, gu-hó (Chinanteco), hojancha, hojarasca, laurelillo, palo blanco, palo colorado, quiebra hacha, roble, roble blanco, roble prieto, saucillo, t-nuya (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) depressipes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) durangensis</taxonRankValue>
+                    <commonName>ocote, pino, pino blanco, pino cenizo, pino colorado, pino coyote, pino de seis hojas, pino duranguensis, pino real, pino real de seis hojas, pino tarasco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Arbutus arizonica</taxonRankValue>
+                    <commonName>madroño, pananhsh (Purépecha)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) microphylla</taxonRankValue>
+                    <commonName>ahuacocoztli (Náhuatl), chamizo, encino, encino blanco, encino capulincillo, encino enano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Arbutus tessellata</taxonRankValue>
+                    <commonName>aile (Náhuatl), auako-uri (Huichol), eto pi da mi ha rao da fam-i (Tepehuano), madroño, madroño chino, madroño lanudo, madroño negro, madroño rojo, panaka (Purépecha), pananchen (Purépecha), panangsi (Purépecha), pananhsh (Purépecha), panán gsuni (Purépecha)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) arizonica</taxonRankValue>
+                    <commonName>encinillo, encino, encino azul, encino blanco, encino chaparro, encino manzano, flor de encino napaco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Juniperus durangensis</taxonRankValue>
+                    <commonName>cedro chino, enebro, táscate</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Glaucidium gnoma</taxonRankValue>
+                    <commonName>tecolotito serrano, tecolote serrano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bubo virginianus</taxonRankValue>
+                    <commonName>búho cornado americano, búho cornudo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) grisea</taxonRankValue>
+                    <commonName>encino, encino chino, palo chino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) scytophylla</taxonRankValue>
+                    <commonName>encino, encino blanco, encino colorado, encino prieto, encino rojo, encino rosillo, hoja blanca, palo colorado</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Otus flammeolus</taxonRankValue>
+                    <commonName>tecolote ojioscuro serrano, tecolote ojos oscuros</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Agave (Agave) durangensis</taxonRankValue>
+                    <commonName>maguey</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) conzattii</taxonRankValue>
+                    <commonName>cucharita, encino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) chihuahuensis</taxonRankValue>
+                    <commonName>bellota de encino, chaparro, encino, encino blanco, encino chino, encino miscalme, encino negro, encino roble, palo blanco, rojá (Tarahumara), sajavó (Guarijío)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) cembroides</taxonRankValue>
+                    <commonName>bishicuri (Tarahumara), ocote, pino, pino blanco, pino cembroides, pino loco, pino piñonero, pino piñón, pino-piñón, piñon prieto, piñonero, piñón</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Quercus (Quercus) potosina</taxonRankValue>
+                    <commonName>chaparro, encino, encino blanco, encino chaparro, quebracho</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Otus kennicottii</taxonRankValue>
+                    <commonName>tecolote, tecolote del oeste, tecolote occidental</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Tyto alba</taxonRankValue>
+                    <commonName>lechuza de campanario</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Aegolius acadicus</taxonRankValue>
+                    <commonName>tecolote abetero norteno, tecolote afilador, tecolote oyamelero norteño</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus cooperi</taxonRankValue>
+                    <commonName>pino, pino albacarrote, pino amarillo, pino blanco, pino chino, pino cooperi</commonName>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-H305-Varios archivos XLS-ND">
+                <title>Situación actual del búho manchado mexicano (Strix occidentalis lucida) y de los Strigiformes de la Reserva de la Biósfera La Michilía</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Alfredo</givenName>
+                    <surName>Garza Herrera</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>Se estimó la población de los strigiformes de la Reserva de la Biosfera de La Michilía, ubicada al Sureste del estado de Durango. Se realizaron recorridos nocturnos y mediante grabaciones e imitaciones del canto de búhos en sitio se detectaron las especies. Las poblaciones se estimaron mediante el programa DISTANCE, basándose en la función de detectabilidad de los individuos observados o escuchados y se calculó la probabilidad promedio de detección al 95% de confianza. También se estimó la densidad cruda de Búho manchado dividiendo el número de búhos observados entre el área de estudio. Se mapearon las rutas de monitoreo y los territorios de Strix occidentalis. En cada sitio de reclamo de búhos se realizó un muestreo de vegetación por el método de vecino más cercano considerado las 4 especies de árboles cercanas al centro del sitio. También se midieron la pendiente, la inclinación y la altitud de todos los sitios. De esta información se determinó la densidad de árboles / ha, la riqueza específica, la cobertura foliar, las especies más comunes por área y el tipo de vegetación. Siete especies de búhos se registraron en La Michilía: Strix occidentalis, Búho virginianus, Glaucidium gnoma, Otus flammeolus, O. trichopsis, Tyto alba y Aegolius acaducus, de los cuales se estimaron sus poblaciones y se determinó el hábitat y la distribución. Dos especies más se registraron (Asio otus Kemmicotti), pero su observación fue tan esporádica que fue imposible determinar la ecología de las mismas. El búho manchado presentó mayores densidades de su población en el Cerro Blanco, en el rancho &quot;la Peña&quot; y en el rancho &quot;Las Margaritas&quot;. Quince territorios de Strix occidentalis se identificaron en La Michilía, obteniéndose una densidad cruda de 0.54 búhos/km2. La especie se distribuyó arriba de los 2330 msnm en hábitats con coberturas de 34 a 69%  y densidades de más de 27 árboles / ha y utilizó preferentemente bosques de latifoliadas, de coníferas y bosques mixtos de pino-encino. Búho virginianus se presentó en cualquier hábitat con densidades de regulares a altas, presentando las mayores densidades en las áreas deforestadas o se le encontró preferentemente en bosques mixtos abiertos y en matorrales de Garria ovata. Otus flammeolus tuvo densidades relativamente altas, lo cual permite definirla como una especie común que se distribuyó ampliamente a no más de 2645 msnm en cualquier tipo de vegetación. Otus trichopsis presentó densidades, siendo la especie más común en el área. Tyto alba presentó densidades reducidas y su distribución estuvo restringida a zonas perturbadas. Aegolius acadicus fue una especie extremadamente rara por sus reducidas densidades.</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Aves
+Plantas
+búhos, lechuzas, tapacaminos
+con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
+con flores como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
+con flores como arándanos, árboles del chicle, argán, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, nueces de Brasil, ocotillos, zapotes
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2024-10-22T20:40:34Z</dateStamp>
+                <citation>Garza Herrera A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Situación actual del búho manchado mexicano (Strix occidentalis lucida) y de los Strigiformes de la Reserva de la Biósfera La Michilía. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/cwbaym accessed via GBIF.org on 2024-10-22.</citation>
+                <physical>
+                    <objectName>SNIB-H305-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/H305/SNIB-H305-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-H305-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/H305/SNIB-H305-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-H305-Varios archivos XLS-ND</collectionIdentifier>
+                    <collectionName>Colección Ornitológica;MZFC-AV;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-H305-Varios archivos XLS-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE</collectionName>
+                </collection>
+                <specimenPreservationMethod>MOUNTED</specimenPreservationMethod>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>3</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

@@ -1,0 +1,16 @@
+---
+title: "exp_climas_qu"
+format: html
+editor: visual
+---
+
+## Exploración climática 
+
+- Cargar librerias 
+
+```{r}
+library(terra)
+library(ggplot2)
+library(dplyr)
+```
+
