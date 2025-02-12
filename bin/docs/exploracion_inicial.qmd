@@ -9,10 +9,6 @@ knitr:
 ---
 
 ```{r}
-# --- Set wd ---
-#setwd("C:/Users/danie/Desktop/phylogenetic")
-
-
 # --- Load libraries ---
 library(dplyr)
 library(readr)
@@ -105,7 +101,7 @@ gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 sin_cn <-  gbif_herb_raw %>%
   filter(is.na(correctname))
 
-table(sin_cn$scientificName)
+table(sin_cn$scientificName) 
 ```
 
 Filtrar registros a nivel de genero 
@@ -117,29 +113,31 @@ gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quer
 
 -   Contar duplicados
 
-    -   Coordenadas
+-   Coordenadas
     
 ```{r}
 #Eliminar registros sin coordenadas 
 gbif_herb_coor <- gbif_herb_raw %>%
   filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
-
 ```
+
     
-    -Coordenadas duplicadas
+-Coordenadas duplicadas
     
 ```{r}
+
 # Identificar las filas duplicadas basadas en las coordenadas
+
 coor_duplicated <- gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude)))
+
 ```
   
     
     -   Coordenadas, nombre, localidad (puede haber errores de formato en la escritura de localidad)
 ```{r}
-corr_loc_name_dupli <-  gbif_herb_coor%>%
+corr_loc_name_dupli <-  gbif_herb_coor %>%
   filter(duplicated(cbind(decimalLatitude, decimalLongitude, correctname, municipality) , fromLast = TRUE))
-
 ```
     
     Estos son 18411 registros.
@@ -157,14 +155,12 @@ colectors_date_species_replica <-  gbif_herb_coor%>%
 
 
 - Eliminar duplicados 
+
 ```{r}
 # --- Eliminar por coordenadas, nombre de la especie y localidad
 
 hgbif_no_duplicates <- gbif_herb_coor %>%
   distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
-
-
-
 ```
 
 Registros sin duplicados: 56,363
@@ -184,10 +180,15 @@ table(hgbif_no_duplicates[is.na(hgbif_no_duplicates$correctname),]$scientificNam
 ```
 
     
--   Extraer elevación
+-   Extraer elevación:
 
-elevatr: Por default los datos se extraen de OpenTopography Global DEM
-INEGI CEM (Continuo de elevaciones mexicano) 15m[inegi.org.mx/app/geo2/elevacionesmex/]
+elevatr: Por default los datos se extraen de AW3D30
+(INEGI CEM (Continuo de elevacion mexicana) 15m)[https://www.inegi.org.mx/app/geo2/elevacionesmex] 
+Crear objeto con el archivo hgbif_no_duplicates.csv para no tener que correr el codigo de arriba
+```{r}
+hgbif_no_duplicates <- fread(here::here("data/out/hgbif_no_duplicates.csv"))
+```
+
 
 ```{r}
 
@@ -207,6 +208,8 @@ hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
   select(decimalLongitude, decimalLatitude)  %>%
   filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
 
+#Solo hay un registro que se elimina 
+
 
 # Convertir a objeto sf
 
@@ -218,13 +221,49 @@ hgbif_no_duplicates_sf <- st_as_sf(hgbif_no_duplicates_coor,coords = c("decimalL
 # Obtener elevación para cada punto en tu base de datos
 elev_data <- get_elev_point(hgbif_no_duplicates_sf, 
                             src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
-                            z = 4)      # Nivel de zoom (determina la precisión)
+                            z = 7)      # Nivel de zoom (determina la precisión) 7 parece ser 1 km (https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution)
 
 
 #guardar en un csv 
-write.csv(elev_data, "data/temp/elev_data.csv")
+write.csv(elev_data, here::here("data/in/elevation/elev_data.csv"))
+
+```
+
+```{r}
+##Extraer elevacion a partir del CEM de INEGI
+
+library(terra)
+library(sf)
+
+# Set file paths
+raster_path <- here::here("data/in/CEM/CEM_15m_ITRF08.tif")  # Path to the large TIFF file
+output_csv <- here::here("data/in/elevation/elevation_INEGI.csv")     # Output CSV file
+
+# Load the raster efficiently
+raster <- rast(raster_path)
 
 
+# Ensure CRS matches
+if (!st_crs(hgbif_no_duplicates_sf) == crs(raster)) {
+  points_sf <- st_transform(hgbif_no_duplicates_sf, crs(raster))
+}
+
+# Convert sf object to SpatVector for efficient extraction
+points_vect <- vect(points_sf)
+
+# Extract elevation values
+extracted_values <- terra::extract(raster, points_vect)
+
+# Merge extracted values with the original sf object
+points_sf$elevation <- extracted_values[, 2]  # Assuming first column is ID
+
+# Write to CSV
+st_drop_geometry(points_sf) |> 
+  write.csv(output_csv, row.names = FALSE)
+
+``` 
+
+```{r}
 #Generar el df con las coordenadas correctas y todas las columnas para agregar la columna de elevacion a cada registro
 hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
   mutate(
@@ -235,21 +274,31 @@ hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
   filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
 
 #Agregar columna de elevacion
-elev_data <- read.csv("data/temp/elev_data.csv", header=T)
+elev_data_elevatr <- fread(here::here("data/in/elevation/elev_data.csv"))
+elev_data_INEGI <- fread(here::here("data/in/elevation/elevation_INEGI.csv"))
 
+hgbif_no_duplicates_coor_completo$elevacion_elevatr <- elev_data_elevatr$elevation
+hgbif_no_duplicates_coor_completo$elevacion_INEGI <- elev_data_INEGI$elevation
 
-hgbif_no_duplicates_coor_completo$elevacion <- elev_data$elevation
+#guardar en un csv 
+write.csv(hgbif_no_duplicates_coor_completo, here::here("data/in/hgbif_no_duplicates_coor_completo.csv"))
+
 
 #Ver rango de elevacion que hay 
 range(hgbif_no_duplicates_coor_completo$elevacion)
 
 
 # Filtrar los datos para mantener solo las filas donde la elevación sea mayor o igual a cero
-hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates_coor_completo %>%
+hgbif_no_duplicates_elev1 <- hgbif_no_duplicates_coor_completo %>%
   filter(elevacion >= 0)
 
 # Verifica el rango después de eliminar las elevaciones negativas
-range(hgbif_no_duplicates_coor_completo$elevacion)
+range(hgbif_no_duplicates_elev1$elevacion)
+
+#Hay 100 registros que aparecen con elevaciones menores a 0
+
+hgbif_no_duplicates_elev0 <- hgbif_no_duplicates_coor_completo %>%
+  filter(elevacion < 0)
 
 ```
 
@@ -264,7 +313,7 @@ mexico_map <- map_data("world", region = "Mexico")
 # Graficar
 mapa_general <- ggplot() +
   geom_polygon(data = mexico_map, aes(x = long, y = lat, group = group), fill = "lightblue", color = "black") +
-  geom_point(data = hgbif_filtered, aes(x = decimalLongitude, y = decimalLatitude), color = "red", size = 3) +
+  geom_point(data = hgbif_no_duplicates_elev0, aes(x = decimalLongitude, y = decimalLatitude), color = "red", size = 3) +
   theme_minimal() +
   labs(title = "Mapa de Puntos", x = "Longitud", y = "Latitud")
 ```
