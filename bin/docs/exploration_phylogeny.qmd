@@ -1,0 +1,18 @@
+---
+title: "Exploracion datos correspondientes a la filogenia 2019"
+format: html
+---
+
+
+```{r}
+library(data.table)
+library(stringr)
+```
+
+
+```{r}
+data_morton <- fread("../../data/in/filogenia/Hipp2019_sample_metadata.csv")
+
+```
+
+
