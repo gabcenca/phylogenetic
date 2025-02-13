@@ -15,6 +15,7 @@ library(readr)
 library(data.table)
 library(ggplot2)
 library(here)
+library(sf)
 ```
 
 - Subir datos crudos 
@@ -302,7 +303,65 @@ hgbif_no_duplicates_elev0 <- hgbif_no_duplicates_coor_completo %>%
 
 ```
 
--   Mapa general para ver errores (como puntos que caen el mar)
+
+- Obtener estado y municipio por registro 
+```{r}
+#Subir las capas 
+hgbif_no_duplicates_coor_completo <- fread(here::here("data/in/hgbif_no_duplicates_coor_completo.csv"))
+
+mun <- st_read(here::here("data/in/mun22gw/mun22gw.shp"))
+
+# Select only the relevant columns from the sf objects
+mun2<- mun[, c("NOMGEO", "NOM_ENT", "geometry")]
+
+points_hgbif <- st_as_sf(hgbif_no_duplicates_coor_completo, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) 
+
+points_mun_state <- st_join(points_hgbif, mun2)
+
+coordinates <- st_coordinates(points_mun_state)
+
+points_mun_state <- cbind(points_mun_state, coordinates)
+
+hgbif_completo <- as.data.frame(points_mun_state) %>% 
+  select(-1, -2, -"stateProvince", -"county",-"municipality") 
+
+write.csv(hgbif_no_duplicates_coor_completo, here::here("data/in/hgbif_completo.csv"))
+
+```
+
+-   Tabla de registros por especie
+
+```{r}
+species_count <- hgbif_completo %>%
+  count(correctname, name = "total_registros")%>%
+  arrange(total_registros)  %>%
+  filter(!is.na(correctname))   #Hay 27 NAs
+
+```
+
+-   Histograma de fechas
+```{r}
+
+# Load lubridate if not already loaded
+library(lubridate)
+
+# Extract the year from eventDate
+hgbif_years <- hgbif_completo %>%
+  mutate(year = year(ymd(eventDate)))
+
+# Crear un histograma por año
+hist_conteos <- ggplot(hgbif_years, aes(x = year)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "lightblue", alpha = 0.7) +
+  labs(title = "Histograma de Fechas de Colecta (Por Año)",
+       x = "Año de Colecta",
+       y = "Número de Registros") +
+  theme_minimal() +
+   scale_x_continuous(limits = c(1827, 2024),
+                       breaks = seq(1827, 2024, by = 10))
+```
+
+
+-   Mapa general 
 
 ```{r}
 library(maps)
@@ -313,41 +372,45 @@ mexico_map <- map_data("world", region = "Mexico")
 # Graficar
 mapa_general <- ggplot() +
   geom_polygon(data = mexico_map, aes(x = long, y = lat, group = group), fill = "lightblue", color = "black") +
-  geom_point(data = hgbif_no_duplicates_elev0, aes(x = decimalLongitude, y = decimalLatitude), color = "red", size = 3) +
+  geom_point(data = hgbif_completo, 
+             aes(x = X, y = Y), 
+             color = "red", size = 3) +
   theme_minimal() +
   labs(title = "Mapa de Puntos", x = "Longitud", y = "Latitud")
 ```
-Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/mapa_puntos.jpg", plot = mapa_general, type = "cairo", width = 8, height = 6, dpi = 300)
 
-- Filtrar los registros para 1950-2023
+-Ver puntos que caen el mar 
 ```{r}
-hgbif_filtered_50 <- hgbif_filtered %>%
-  filter(year > 1950)
-```
-
-No es necesario borrar registros por tiempo. 
-
-- Borrar los puntos que caen en el mar 
-
-#No carga en el chunk
-hgbif_filt_10s <- read.csv("data/out/hgbif_filt_10s.csv", header=T)
-
-
-```{r}
-
-library(sf)
 library(rnaturalearth)
 library(ggspatial)
 
 # Obtener el mapa de México (o de los países) con rnaturalearth
 mexico_map <- ne_countries(scale = "small", returnclass = "sf", country = "Mexico")
 
-#hgbif_filt_10 <- read.csv("data/out/hgbif_filt_10s.csv")
+# Ver si los puntos están dentro de los límites de los países
+puntos_mex <- st_intersects(points_mun_state, mexico_map, sparse = FALSE)
 
-puntos_sf <- st_as_sf(hgbif_filt_10, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+puntos_terrestres <- puntos_sf[apply(puntos_mex, 1, any), ]
+
+# Identificar los puntos que están fuera de México (FALSE)
+puntos_fuera <- !apply(puntos_mex, 1, any)
+
+# Mostrar los puntos que están fuera de los límites de México
+puntos_fuera_df <- hgbif_completo[puntos_fuera, ]
+
+```
+
+
+```{r}
+library(rnaturalearth)
+library(ggspatial)
+
+# Obtener el mapa de México (o de los países) con rnaturalearth
+mexico_map <- ne_countries(scale = "small", returnclass = "sf", country = "Mexico")
+
 
 # Ver si los puntos están dentro de los límites de los países
-puntos_mex <- st_intersects(puntos_sf, mexico_map, sparse = FALSE)
+puntos_mex <- st_intersects(points_mun_state, mexico_map, sparse = FALSE)
 
 # Filtrar los puntos que están dentro de los límites terrestres 
 puntos_terrestres <- puntos_sf[apply(puntos_mex, 1, any), ]
@@ -356,142 +419,4 @@ puntos_terrestres <- puntos_sf[apply(puntos_mex, 1, any), ]
 puntos_fuera <- !apply(puntos_mex, 1, any)
 
 # Mostrar los puntos que están fuera de los límites de México
-puntos_fuera_df <- hgbif_filt_10[puntos_fuera, ]
-
-
-
-# Convertir de nuevo a data.frame para eliminar los puntos en el mar en el data frame original
-hgbif_filt_10s_terres<- as.data.frame(puntos_terrestres)
-
-# Mostrar los primeros registros del nuevo data frame
-head(hgbif_filt_10s_terres)
-
-
-mapa_terra_puntos <- ggplot() +
-  geom_sf(data = mexico_map, fill = "#8B864E", color = "black") +  # Mapa de México
-  geom_sf(data = puntos_terrestres, aes(geometry = geometry), color = "#A2CD5A", size = 3) +  # Puntos
-  annotation_north_arrow(location = "tr", which_north = "true",  # Ubicación del norte (tr = top-right)
-                         pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),  # Ajuste de distancia
-                         style = north_arrow_fancy_orienteering) +  # Estilo de flecha
-  theme_minimal() +
-  labs(title = "Mapa de Registros de Encinos en México (1950-2023)", x = "Longitud", y = "Latitud")
-
-```
-
-Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/mapa_puntos_terra.jpg", plot = mapa_terra_puntos, type = "cairo", width = 8, height = 6, dpi = 300)
-
-
-
--   Tabla de registros por especie
-Hay 57 especies con menos de 10 registros.
-
-```{r}
-species_count <- hgbif_no_duplicates_coor_completo %>%
-  count(correctname, name = "total_registros")%>%
-  arrange(total_registros)  %>%
-  filter(!is.na(correctname)) 
-
-# Now filter the main data frame to only include species with more than 10 records
-hgbif_filtered <- hgbif_no_duplicates_coor_completo %>%
-  semi_join(species_count, by = "correctname")
-```
-
-write.csv(hgbif_filtered, "data/out/hgbif_filt_10s.csv")
-
--   Histograma de fechas
-```{r}
-
-# Load lubridate if not already loaded
-library(lubridate)
-
-# Extract the year from eventDate
-hgbif_filtered <- hgbif_filtered %>%
-  mutate(year = year(ymd(eventDate)))
-
-# Crear un histograma por año
-hist_conteos <- ggplot(hgbif_filtered, aes(x = year)) +
-  geom_histogram(binwidth = 1, color = "black", fill = "lightblue", alpha = 0.7) +
-  labs(title = "Histograma de Fechas de Colecta (Por Año)",
-       x = "Año de Colecta",
-       y = "Número de Registros") +
-  theme_minimal() +
-   scale_x_continuous(limits = c(1900, 2024),
-                       breaks = seq(1900, 2024, by = 10))
-```
-Codigo para guardar ggplot: ggsave("D:/Base_datos/graficas finales/hist_conteo_registros.jpg", plot = hist_conteos, type = "cairo", width = 8, height = 6, dpi = 300)
-
-
-
--   Minímos y maximos de elevación por especie
-
-
--   Obtener categoría de especie de la IUCN por especie, revisar tabla gbif 
-
-SIGUE SIN FUNCIONAR 
-
-
-```{r}
-#| echo: false
-
-# # Instalar los paquetes necesarios si no los tienes
-# install.packages(c("httr", "jsonlite"))
-
-# Cargar los paquetes
-library(httr)
-library(jsonlite)
-```
-
-```{r}
-# Clave de API de la IUCN (reemplaza "YOUR_IUCN_API_KEY" con tu clave de API)
-iucn_api_key <- "8a2sFdrnhH9eBjj1WKE9p46w3GaneBziqRx3"
-
-# Función para obtener la categoría de conservación de una especie
-get_iucn_status <- function(species_name) {
-  # URL para la consulta
-  url <- paste0("https://apiv3.iucnredlist.org/api/v3/species/", URLencode(species_name), "?token=", iucn_api_key)
-  
-  # Hacer la solicitud a la API
-  response <- GET(url)
-  
-  # Verificar si la solicitud fue exitosa
-  if (status_code(response) == 200) {
-    data <- fromJSON(content(response, "text"), flatten = TRUE)
-    
-    # Extraer la categoría de conservación si está disponible
-    if (length(data$result) > 0) {
-      return(data$result$category)
-    } else {
-      return(NA)  # Si no hay datos para la especie
-    }
-  } else {
-    warning("Error in request: ", status_code(response))
-    return(NA)
-  }
-}
-
-
-# Crear una nueva columna con la categoría de la IUCN
-species_count <- species_count %>%
-  mutate(iucn_category = sapply(correctname, get_iucn_status))
-
-
-```
-
-
-- Conteo por estado
-
-Se puede observar que los estados estan escritos distinto y se marcan como diferentes. Hay que corregir esto.
-
-```{r}
-conteo_estado <- table(hgbif_filtered_50$stateProvince) 
-
-barplot(conteo_estado,
-        main = "Conteo de Encinos por Estado",
-        ylab = "Número de registro de Encinos",
-        las = 2, # Orienta las etiquetas de los estados en el eje X
-        col = "lightblue", # Color de las barras
-        border = "blue")
-
-```
-
-
+puntos_fuera_df <- hgbif_completo[puntos_fuera, ]
