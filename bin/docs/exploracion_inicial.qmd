@@ -329,6 +329,28 @@ write.csv(hgbif_no_duplicates_coor_completo, here::here("data/in/hgbif_completo.
 
 ```
 
+Union de metadatos de estado, municipio con el estatus de conservación de la IUCN. Obtuvimos el estatus de conservación utilizando el script `extract_IUCN.R`
+
+```{r}
+
+hgbif_completo <- fread(here::here("data/in/hgbif_completo.csv"))
+
+iucn <- fread(here::here("data/in/conservation_status/IUCN_per_species.csv"))
+
+# Revisar que los nombres coincidan 
+setdiff(hgbif_completo$correctname, iucn$correctname)
+setdiff(iucn$correctname, hgbif_completo$correctname)
+
+# Unir tablas
+hgbif_completo <- merge(hgbif_completo, iucn[,-2], by = "correctname")
+# Quitar columnas inecesarias
+hgbif_completo <- hgbif_completo[, !c("V1","V20","geometry", "elevacion")]
+
+fwrite(hgbif_completo, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
+
+```
+
+
 -   Tabla de registros por especie
 
 ```{r}
