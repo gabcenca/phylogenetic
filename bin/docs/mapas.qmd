@@ -91,36 +91,41 @@ ggsave(here::here("data/out/maps/densidad_registros_10km.png"), plot=plot_grid)
 -Mapa de riqueza 
 ```{r}
 
+#Reproject to count in km 
+mexico_map_ITRF <- st_transform(mexico_map, crs = 6372)
+
+#Reproject the points_hgbif so it can make the calculation 
+points_hgbif_ITRF <- st_transform(points_hgbif, st_crs(mexico_map_ITRF))
+
 # Spit the state area into a grid
 mex_grid <- mexico_map_ITRF %>%
-  st_make_grid(cellsize = c(100000, 100000))  # Grid with 75 km x 75 km cells
+  st_make_grid(cellsize = c(5000, 5000))  # Grid with 75 km x 75 km cells
 
+mex_grid_map <- st_intersection(mexico_map_ITRF, mex_grid) %>% 
+  st_as_sf() %>% 
+  mutate(grid_id = 1:n())
 
 #Count the points of each grid 
 richness_per_grid_box <- mex_grid_map %>%
-  st_join(points_hgbif_ITRF) %>% select(correctname,grid_id,V1) %>%
+  st_join(points_hgbif_ITRF) %>% 
+  select(correctname, grid_id) %>%
   group_by(grid_id) %>%
-  summarize(total = sum(!is.na(distinct(correctname))
+  summarize(species_richness = n_distinct(correctname, na.rm = TRUE))                    
+
+                        
+# Set value of 0 records to NA so we can graph it in a different color
+richness_per_grid_box$species_richness[richness_per_grid_box$species_richness == 0] <- NA
 
 
-#Set value of 0 records to NA so we can graph it in different color 
-richness_per_grid_box$total[richness_per_grid_box$total == 0] <- NA
+richness_plot <- ggplot() +
+  geom_sf(data = richness_per_grid_box, aes(fill = species_richness), color = "black") +
+  scale_fill_viridis_c(na.value = "gray", option = "mako") +
+  theme_minimal() +
+  labs(title = "Species Richness per Grid", fill = "Richness")
 
+# plot_grid
 
-richness_grid <- ggplot() +
-  #  geom_sf(data = mexico_map_ITRF, fill = "grey", color = NA, linewidth = 0.25) +
-    geom_sf(data = richness_per_grid_box, aes(fill = total), color = NA) +
-    scale_fill_viridis_c(
-        option = "mako", 
-        na.value = "grey",  # Set missing values to grey
-        guide = guide_colorbar(
-            title = "Riqueza",  # Legend title
-            barwidth = 3,  # Width of the legend bar
-            barheight = 3   # Height of the legend bar
-        )
-    ) +  # Closing parenthesis for scale_fill_viridis_c
-    coord_sf()
-
+ggsave(here::here("data/out/maps/riqueza_5km.png"), plot=richness_plot)
 
 ```
 
