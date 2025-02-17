@@ -38,7 +38,7 @@ mexico_map <- ne_countries(scale = "large", returnclass = "sf", country = "Mexic
 #Reproject to count in km 
 mexico_map_ITRF <- st_transform(mexico_map, crs = 6372)
 
-# Spit the state area into a 20x20 grid
+# Spit the state area into a grid
 mex_grid <- mexico_map_ITRF %>%
   st_make_grid(cellsize = c(1000, 1000))  # Grid with 75 km x 75 km cells
 
@@ -86,17 +86,25 @@ plot_grid <- ggplot() +
 
 ggsave(here::here("data/out/maps/densidad_registros_10km.png"), plot=plot_grid)
 ```
+
+
 -Mapa de riqueza 
 ```{r}
+
+# Spit the state area into a grid
+mex_grid <- mexico_map_ITRF %>%
+  st_make_grid(cellsize = c(100000, 100000))  # Grid with 75 km x 75 km cells
+
+
 #Count the points of each grid 
 richness_per_grid_box <- mex_grid_map %>%
   st_join(points_hgbif_ITRF) %>% select(correctname,grid_id,V1) %>%
-  group_by() %>%
-  summarize(total = sum(!is.na(correctname)))
+  group_by(grid_id) %>%
+  summarize(total = sum(!is.na(distinct(correctname))
 
 
 #Set value of 0 records to NA so we can graph it in different color 
-records_per_grid_box$total[records_per_grid_box$total == 0] <- NA
+richness_per_grid_box$total[richness_per_grid_box$total == 0] <- NA
 
 
 richness_grid <- ggplot() +
@@ -106,7 +114,7 @@ richness_grid <- ggplot() +
         option = "mako", 
         na.value = "grey",  # Set missing values to grey
         guide = guide_colorbar(
-            title = "Density of Records",  # Legend title
+            title = "Riqueza",  # Legend title
             barwidth = 3,  # Width of the legend bar
             barheight = 3   # Height of the legend bar
         )
