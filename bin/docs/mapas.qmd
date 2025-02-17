@@ -1,0 +1,119 @@
+---
+title: "mapas"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+
+---
+
+-Mapa de densidad de registros
+
+```{r}
+library(here)
+library(data.table)
+library(sf)
+library(rnaturalearth)
+library(ggplot2)
+library(dplyr)
+
+hgbif_completo <- fread(here::here("data/in/hgbif_completo.csv"))
+
+mun <- st_read(here::here("data/in/mun22gw/mun22gw.shp"))
+
+# curvas_nivel <- st_read(here::here("data/in/cni250kgw/cni250kgw.shp"))
+
+#Convertir el dataframe de records en un objeto de tipo sf
+points_hgbif <- st_as_sf(hgbif_completo, coords = c("X","Y"), crs = 4326) 
+
+# Obtener el mapa de México con rnaturalearth
+mexico_map <- ne_countries(scale = "large", returnclass = "sf", country = "Mexico")
+
+
+```
+
+
+```{r}
+#Reproject to count in km 
+mexico_map_ITRF <- st_transform(mexico_map, crs = 6372)
+
+# Spit the state area into a 20x20 grid
+mex_grid <- mexico_map_ITRF %>%
+  st_make_grid(cellsize = c(1000, 1000))  # Grid with 75 km x 75 km cells
+
+#Fix invalid geometries
+mexico_map_ITRF <- st_make_valid(mexico_map_ITRF)
+mex_grid <- st_make_valid(mex_grid)
+
+mex_grid_map <- st_intersection(mexico_map_ITRF, mex_grid) %>% 
+  st_as_sf() %>% 
+  mutate(grid_id = 1:n())
+
+# #Visualize the mexico map with the grid  
+# ggplot() +
+#   geom_sf(data = mex_grid_map) +
+#   theme_void()
+
+
+#Reproject the points_hgbif so it can make the calculation 
+points_hgbif_ITRF <- st_transform(points_hgbif, st_crs(mex_grid_map))
+
+#Count the points of each grid 
+records_per_grid_box <- mex_grid_map %>%
+  st_join(points_hgbif_ITRF) %>% select(grid_id,V1) %>%
+  group_by(grid_id) %>%
+  summarize(total = sum(!is.na(V1))) 
+
+#Set value of 0 records to NA so we can graph it in different color 
+records_per_grid_box$total[records_per_grid_box$total == 0] <- NA
+
+plot_grid <- ggplot() +
+  #  geom_sf(data = mexico_map_ITRF, fill = "grey", color = NA, linewidth = 0.25) +
+    geom_sf(data = records_per_grid_box, aes(fill = total), color = NA) +
+    scale_fill_viridis_c(
+        option = "mako", 
+        na.value = "grey",  # Set missing values to grey
+        guide = guide_colorbar(
+            title = "Density of Records",  # Legend title
+            barwidth = 3,  # Width of the legend bar
+            barheight = 3   # Height of the legend bar
+        )
+    ) +  # Closing parenthesis for scale_fill_viridis_c
+    coord_sf()  # Add coord_sf to the plot
+
+# plot_grid
+
+ggsave(here::here("data/out/maps/densidad_registros_10km.png"), plot=plot_grid)
+```
+-Mapa de riqueza 
+```{r}
+#Count the points of each grid 
+richness_per_grid_box <- mex_grid_map %>%
+  st_join(points_hgbif_ITRF) %>% select(correctname,grid_id,V1) %>%
+  group_by() %>%
+  summarize(total = sum(!is.na(correctname)))
+
+
+#Set value of 0 records to NA so we can graph it in different color 
+records_per_grid_box$total[records_per_grid_box$total == 0] <- NA
+
+
+richness_grid <- ggplot() +
+  #  geom_sf(data = mexico_map_ITRF, fill = "grey", color = NA, linewidth = 0.25) +
+    geom_sf(data = richness_per_grid_box, aes(fill = total), color = NA) +
+    scale_fill_viridis_c(
+        option = "mako", 
+        na.value = "grey",  # Set missing values to grey
+        guide = guide_colorbar(
+            title = "Density of Records",  # Legend title
+            barwidth = 3,  # Width of the legend bar
+            barheight = 3   # Height of the legend bar
+        )
+    ) +  # Closing parenthesis for scale_fill_viridis_c
+    coord_sf()
+
+
+```
+
+
