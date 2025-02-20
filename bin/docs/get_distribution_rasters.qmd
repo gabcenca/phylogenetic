@@ -118,7 +118,7 @@ get_distribution_raster <- function(base_raster, points){
   return(base_raster)
 }
 
-main <- function(species_sf_list, base_mx, output_path) {
+main <- function(species_sf_list, base_mx, output_path, resolution) {
   #' Main function to generate and save a raster stack of species presence/absence
   #' 
   #' @description Generates a raster stack indicating the presence (1) or absence (0) of multiple species using point records.
@@ -133,7 +133,7 @@ main <- function(species_sf_list, base_mx, output_path) {
   # Generate an empty list to store species rasters
   sp_list <- vector("list", length(species_sf_list))
   
-  base_mx <- get_base_raster(mexico_map,resolution = 0.5)
+  base_mx <- get_base_raster(mexico_map,resolution = resolution)
   
   # Loop through each species to generate presence/absence raster
   for (i in seq_along(species_sf_list)) {
@@ -154,6 +154,7 @@ main <- function(species_sf_list, base_mx, output_path) {
 
 stack <- main(species_sf_list = species_sf_list, 
               base_mx = mexico_map, 
+              resolution = 0.5,
               output_path = here::here("data/out/raster_species/ras_species_res_0.5.tif"))
 
 # Optional: Check if the function worked
