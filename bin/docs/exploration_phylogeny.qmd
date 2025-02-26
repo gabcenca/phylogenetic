@@ -7,12 +7,65 @@ format: html
 ```{r}
 library(data.table)
 library(stringr)
+library(ggplot2)
+library(tidyverse)
 ```
 
 
 ```{r}
 data_morton <- fread("../../data/in/filogenia/Hipp2019_sample_metadata.csv")
+geo_data <- fread("../../data/in/hgbif_completo_iucn.csv")
 
 ```
+
+Como primera aproximación vamos a utilizar el subconjunto de especies que sea comun entre los datos de la filogenia y los datos geográficos que descargamos. 
+
+
+```{r}
+#TODO: Revisar si los nombres en el correctname que no coinciden con los del morton realmnete no están en la filogenia 
+#TODO: Decidir si esta es la filogenia que vamos a utilizar
+
+common_morton <- data_morton[`Cleaned_NAMES-USE-THIS` %in% geo_data$correctname,]
+common_geo <- geo_data[correctname %in% common_morton$`Cleaned_NAMES-USE-THIS`]
+
+```
+
+### Tabla de especies comunes
+
+```{r}
+common_geo[,.N, by = correctname][order(-N), more_than_10 := N>10] %>% 
+  ggplot(aes(y = fct_reorder(correctname, N), x = N, fill = more_than_10))+
+  geom_col()+
+  labs(x = "Numero de registros", y = "Especies")+
+  theme_bw()
+
+```
+
+```{r}
+common_geo <- merge(common_geo,unique(common_morton[,.(`Cleaned_NAMES-USE-THIS`,section,clade,subgenus)]), by.x = "correctname", by.y="Cleaned_NAMES-USE-THIS",all.x = T)
+
+```
+
+## Arbol filogenetico
+
+```{r}
+library(ape)
+library(treeio)
+```
+
+Preguntas:
+
+1. ¿necesitamos una filogenia calibrada? ¿cuál es?
+
+
+```{r}
+tree <- read.tree("../../data/in/filogenia/tr.singletons.correlated.1.taxaGrepCrown.tre")
+```
+
+```{r}
+#TODO: Filtrar la filogenia para quedarnos con las especies comunes? 
+#TODO: Investigar cómo se calcula la diversidad filogenética.
+```
+
 
 
