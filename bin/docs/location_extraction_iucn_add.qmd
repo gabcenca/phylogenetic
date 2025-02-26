@@ -1,0 +1,66 @@
+---
+title: "location_extraction"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+This .qmd document extract the state and municipality for each one of the registers.
+
+Upload the data frame with the registers, coordinates and elevations and the layer that has the location information. In this case we use a shape file that contains all the municipalities from CONABIO (2022).
+
+```{r}
+#Subir las capas 
+hgbif_no_duplicates_coor_completo <- fread(here::here("data/in/hgbif_no_duplicates_coor_completo.csv"))
+
+mun <- st_read(here::here("data/in/mun22gw/mun22gw.shp"))
+
+```
+
+-Then we select the columns from the shape object of interest, in this case is the name of the municipality, the state and the geometry.
+```{r}
+# Select only the relevant columns from the sf objects
+mun2<- mun[, c("NOMGEO", "NOM_ENT", "geometry")]
+```
+
+-Then convert the data frame that has the registers into a sf object, so we can join this data frame with the mun22gw.shp.
+```{r}
+points_hgbif <- st_as_sf(hgbif_no_duplicates_coor_completo, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) 
+
+points_mun_state <- st_join(points_hgbif, mun2)
+
+coordinates <- st_coordinates(points_mun_state)
+
+points_mun_state <- cbind(points_mun_state, coordinates)
+
+hgbif_completo <- as.data.frame(points_mun_state) %>% 
+  select(-1, -2, -"stateProvince", -"county",-"municipality") 
+
+#Save it in a csv
+write.csv(hgbif_completo, here::here("data/in/hgbif_completo.csv"))
+
+```
+
+-Union of metadata from state and municipality with the IUCN conservation status. We obtained the conservation status using the script extract_IUCN.R.
+
+```{r}
+
+hgbif_completo <- fread(here::here("data/in/hgbif_completo.csv"))
+
+iucn <- fread(here::here("data/in/conservation_status/IUCN_per_species.csv"))
+
+#Check that the names are equal.
+setdiff(hgbif_completo$correctname, iucn$correctname)
+setdiff(iucn$correctname, hgbif_completo$correctname)
+
+# Join tables
+hgbif_completo <- merge(hgbif_completo, iucn[,-2], by = "correctname")
+
+# Remove unnecessary columns
+hgbif_completo <- hgbif_completo[, !c("V1","V20","geometry", "elevacion")]
+
+#Write in a csv
+fwrite(hgbif_completo, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
+```

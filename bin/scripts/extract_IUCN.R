@@ -24,18 +24,17 @@ library(stringr)
 
 data <- fread("data/in/hgbif_no_duplicates_coor_completo.csv")
 
-
 get_iucn <- function(genus = "Quercus", epithet){
 
 #' Extract IUCN conservation status category for a single species
 #' 
-#' @genus character vector for genus
-#' @species character vector for species epithet
+#' @param genus character vector for genus
+#' @param species character vector for species epithet
 #' 
 #' @description
 #' Extracts latest species assessment and from that the conservation category code 
 #' 
-#' @return character with conservaiton categroy 
+#' @return character with conservation category
   
   assessment <- list()
   try({

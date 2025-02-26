@@ -1,0 +1,98 @@
+---
+title: "Exploracion_inicial"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+Load libraries
+
+```{r}
+#| eval: false
+library(dplyr)
+library(readr)
+library(data.table)
+library(ggplot2)
+library(here)
+library(sf)
+```
+
+-   Load raw data from GBIF and Red de Herbarios Mexicanos records of oaks in Mexico. Also load the species name matching data frame that was generated with the backbone of gbif.
+
+```{r}
+#| eval: false
+
+#--- Load the GBIF data frame that previously was separated in three ---
+files_list <- list.files(here::here("data/in/gbif_dwc/division_occurrence"), pattern=".csv", full.names=TRUE)
+
+
+files <- lapply(files_list,fread)
+
+recordsGbif_raw <- do.call(rbind,files)
+
+# --- Load the Red de Herbarios Mexicanos data frame ---
+recordsHerbario_raw <- fread(here::here("data/in/herbariomex_dw/occurrences.csv"))
+
+# --- Load the species name matching data frame ---
+gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv"))
+
+herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
+
+```
+
+-Join the GBIF and Red de Herbarios Mexicanos dataframes with their species matching data frame.
+
+```{r}
+# --- Add a unique id to each value in the gbif and herbario data frames--- 
+recordsGbif_raw <- recordsGbif_raw %>%
+  mutate(id_interno = paste0("GBIF_", row_number()))
+
+recordsHerbario_raw <- recordsHerbario_raw %>%
+  mutate(id_interno = paste0("Herb_", row_number()))
+
+
+# --- Join them with their species matching data frame--- 
+
+herb_corr_raw <- cbind(recordsHerbario_raw, herb_nombres_backbone)
+gbif_corr_raw <- cbind(recordsGbif_raw, gbif_nombres_backbone)
+
+
+```
+
+-Join the GBIF and Red de Herbarios Mexicanos dataframes together. For this, it is necessary to add a suffix to each column. Also, it is necessary to make all the columns characters and select the columns of interest.
+
+```{r}
+#---Add a suffix to avoid duplicate columns--- 
+names(herb_corr_raw) <- make.names(names(herb_corr_raw), unique = TRUE)
+names(gbif_corr_raw) <- make.names(names(gbif_corr_raw), unique = TRUE)
+
+#---Make all columns character and select columns of interest for both data frames--- 
+herb_corr_raw <- herb_corr_raw %>%
+  mutate(across(everything(), as.character)) %>% 
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+
+gbif_corr_raw <- gbif_corr_raw %>%
+  mutate(across(everything(), as.character)) %>% 
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+
+#--- Join rows from both data frames ---
+gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
+
+```
+
+-Comparation between the names provided by GBIF and Red de Herbarios Mexicanos with the GBIF backbone.
+
+
+```{r}
+sin_cn <-  gbif_herb_raw %>%
+  filter(is.na(correctname))
+```
+
+-Then filter the records that have only genera.
+```{r}
+gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quercus L."))
+```
+
+-Proceed to coordinate_cleaning.qmd

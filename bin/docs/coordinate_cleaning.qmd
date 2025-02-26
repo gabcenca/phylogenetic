@@ -1,0 +1,28 @@
+---
+title: "coordinate_cleaning"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+-Delete all the registers that do not have coordinates, so later we can use them for the calculations.
+```{r}
+gbif_herb_coor <- gbif_herb_raw %>%
+  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
+```
+
+-Erase the duplicates of the registers that have the same coordinates, name of specie and location and save it in a csv.
+
+```{r}
+# --- Eliminar por coordenadas, nombre de la especie y localidad
+
+hgbif_no_duplicates <- gbif_herb_coor %>%
+  distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
+
+write.csv(hgbif_no_duplicates, file = here::here("data/out/hgbif_no_duplicates.csv"))
+
+```
+
+-Proceed to extract_elevation.qmd
