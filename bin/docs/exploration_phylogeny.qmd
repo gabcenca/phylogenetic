@@ -44,6 +44,7 @@ common_geo[,.N, by = correctname][order(-N), more_than_10 := N>10] %>%
 ```{r}
 common_geo <- merge(common_geo,unique(common_morton[,.(`Cleaned_NAMES-USE-THIS`,section,clade,subgenus)]), by.x = "correctname", by.y="Cleaned_NAMES-USE-THIS",all.x = T)
 
+fwrite(common_geo, here::here('data/out/common_geo.csv'), row.names = F)
 ```
 
 ## Arbol filogenetico
@@ -51,20 +52,24 @@ common_geo <- merge(common_geo,unique(common_morton[,.(`Cleaned_NAMES-USE-THIS`,
 ```{r}
 library(ape)
 library(treeio)
+library(rotl)
 ```
 
-Preguntas:
+La filogenia [Hipp et al., 2019](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.16162) con largos de rama medidos en millones de años se puede extraer del Proyecto [Open Tree of Life](https://tree.opentreeoflife.org/curator/study/view/ot_1957/?tab=home)
 
-1. ¿necesitamos una filogenia calibrada? ¿cuál es?
+### Opción 1. 
 
-
-```{r}
-tree <- read.tree("../../data/in/filogenia/tr.singletons.correlated.1.taxaGrepCrown.tre")
-```
+Descargar el subconjunto de la filogenia que corresponde a las especies de interés utilizando el paquete [`rotl`](https://cran.r-project.org/web/packages/rotl/readme/README.html).
 
 ```{r}
-#TODO: Filtrar la filogenia para quedarnos con las especies comunes? 
-#TODO: Investigar cómo se calcula la diversidad filogenética.
+taxa <- c(unique(common_geo$correctname))
+resolved_names <- tnrs_match_names(taxa)
+
+
+my_tree <- tol_induced_subtree(ott_ids = resolved_names$ott_id)
+plot(my_tree)
+
+
 ```
 
 
