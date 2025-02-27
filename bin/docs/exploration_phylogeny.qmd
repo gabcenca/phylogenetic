@@ -68,7 +68,7 @@ library(rotl)
 #' @return A modified phylogenetic tree with updated tip labels.
 #' @importFrom tibble as_tibble
 #' @importFrom stringr str_replace str_remove str_detect
-modify_tips <- function(tree, modify_label_fn = function(x) str_replace(str_remove(x, '_ott.*'), '_', ' ')) {
+modify_tips <- function(tree, modify_label_fn = function(x) str_remove(x, '_ott.*')) {
   
   metadata <- as_tibble(tree) %>% mutate(label = modify_label_fn(label))
   tree$tip.label <- metadata[which(str_detect(metadata$label, 'Quercus')),]$label
@@ -82,30 +82,13 @@ La filogenia [Hipp et al., 2019](https://nph.onlinelibrary.wiley.com/doi/10.1111
 
 ![Imagen tomada de la introducción al paquete [phyloraster](https://gabferreira.github.io/phyloraster/articles/phyloraster-vignette.html#references)](img/crop_tree_phyloraster.jpg)
 
-### Opción 1. 
-
-1. Descargar el subconjunto de la filogenia que corresponde a las especies de interés utilizando el paquete [`rotl`](https://cran.r-project.org/web/packages/rotl/readme/README.html). 
-
-2. Extraer el subconjunto de la filogenia que corresponde a esas especies. 
-
-```{r}
-taxa <- c(unique(common_geo$correctname))
-resolved_names <- tnrs_match_names(taxa)
-sub_tree <- tol_induced_subtree(ott_ids = resolved_names$ott_id)
-
-sub_tree <- modify_tips(sub_tree)
-
-```
-
-
-### Opción 2. 
 
 Descargar el árbol de los encinos completo. 
 
 ```{r}
 complete_tree <- read.tree(here::here('data/in/filogenia/OpenTreeOfLife_hipp2019.tre'))
 
-complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_remove_all(str_remove(x, '\\|.*'),"\\'"))
+complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_replace_all(str_remove_all(str_remove(x, '\\|.*'),"\\'"),' |-','_'))
 
 ```
 
@@ -113,5 +96,33 @@ complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_re
 
 ```{r}
 library(phyloraster)
+library(terra)
+```
+
+Cargar las distribuciones de las especies.
+```{r}
+dist <- rast(here::here('data/out/raster_species/ras_species_res_0.5.tif'))
+names(dist) <- str_replace_all(names(dist),' |-','_')
+rasters_to_use <- which(names(dist) %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
+
+sub_dist <- subset(dist, rasters_to_use)
+```
+
+REVISAR COMO SE HACE EL sub_tree
+```{r}
+# Revisar que los nombres de las especies estén en el orden que están en el árbol
+tips_to_drop <-  which(!complete_tree$tip.label %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
+sub_tree <- drop.tip(complete_tree,tips_to_drop)
+
+setdiff(sub_tree$tip.label,names(sub_dist))
+setdiff(names(sub_dist),sub_tree$tip.label)
+
+str_detect(names(sub_dist),'Quercus_cornelius')
+str_detect(sub_tree$tip.label,'Quercus_cornelius')
+# Reacomodar los datos
+dataprep <- phylo.pres(x = sub_dist, tree = sub_tree)
+
+pdr <- rast.pd(x = dataprep$x, dataprep$tree)
+plot(pdr$PD, main = "Phylogenetic diversity")
 ```
 
