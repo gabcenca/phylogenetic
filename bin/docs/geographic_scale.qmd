@@ -25,14 +25,17 @@ mexico <- st_read(here::here("data/in/cni250kgw/cni250kgw.shp"))
 
 
 #La capa de provincias tiene geometrias invalidas, por lo que se tienen que arreglar.
-st_is_valid(neotropic_provinces)
 neotropic_prov_valid <- st_make_valid(neotropic_provinces)
-st_is_valid(neotropic_prov_valid)
+mexico <- st_make_valid(mexico)
+
 
 #Cortar la capa de provincias para quedarnos solo con Mexico 
 
-provincias_mexico <- st_intersection(neotropic_prov_valid, mexico)
+bbox_mexico <- st_bbox(mexico)
+mex_neotropic_prov<- st_crop(neotropic_prov_valid, bbox_mexico)
 
+#Guardarla
+st_write(mex_neotropic_prov,(here::here("data/in/mexico_provinces_biogeo/mex_prov_biogeo.shp")))
 
 ```
 
@@ -48,14 +51,14 @@ provincias_mexico <- st_intersection(neotropic_prov_valid, mexico)
 grid_sizes_deg <- c(0.135, 0.225, 0.315, 0.405, 0.450)
 
 # Get bounding box of the region
-bbox <- st_bbox(biogeo_region)
+bbox_neotropic_prov <- st_bbox(mex_neotropic_prov)
 
 # Function to create a grid with a given degree size
 create_grid_deg <- function(degree_size) {
-  grid <- st_make_grid(biogeo_regions, cellsize = degree_size, square = TRUE)
+  grid <- st_make_grid(mex_neotropic_prov, cellsize = degree_size, square = TRUE)
   
   # Convert to sf object
-  grid_sf <- st_sf(geometry = st_sfc(grid, crs = st_crs(biogeo_regions)))
+  grid_sf <- st_sf(geometry = st_sfc(grid, crs = st_crs(mex_neotropic_prov)))
   
   return(grid_sf)
 }
@@ -65,6 +68,7 @@ grids <- lapply(grid_sizes_deg, create_grid_deg)
 
 # Name the list elements
 names(grids) <- paste0("grid_", grid_sizes_deg, "deg")
+
 ```
 
 Measure the proportion 
