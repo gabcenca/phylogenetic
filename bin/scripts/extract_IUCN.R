@@ -56,9 +56,14 @@ get_iucn <- function(genus = "Quercus", epithet){
   
   
   conservation_status_code <- rl_assessment(id)$red_list_category$code
+  locations <- rl_assessment(id)$locations
+  
+  
   print(conservation_status_code)
-  return(conservation_status_code)
+  return(data.table(code = conservation_status_code, locations = list(locations)))
 }
+
+get_iucn(epithet = "insignis")
 
 # Split correct name to extract species epithet
 data[, epithet := str_split_i(correctname, " ",2 )]
