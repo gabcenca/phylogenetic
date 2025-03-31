@@ -7,22 +7,88 @@ knitr:
     root.dir: "../../"
 ---
 
--Delete all the registers that do not have coordinates, so later we can use them for the calculations.
+Before this doc, you have to go to joint_tables.qmd.
+
+Upload the necessary libraries.
+
 ```{r}
-gbif_herb_coor <- gbif_herb_raw %>%
-  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude))
+library(data.table)
+library(dplyr)
+library(CoordinateCleaner)
+library(terra)
+library(here)
+library(dplyr)
+library(data.table)
+library(ggplot2)
 ```
 
--Erase the duplicates of the registers that have the same coordinates, name of specie and location and save it in a csv.
+
+Upload the data frame that has the gbif and the herbario information.
 
 ```{r}
-# --- Eliminar por coordenadas, nombre de la especie y localidad
+gbif_herb_raw <- fread(here::here("data/temp/gbif_herb_raw.csv"))
+```
 
-hgbif_no_duplicates <- gbif_herb_coor %>%
+
+-Delete all the registers that do not have coordinates and with valid coordinates
+```{r}
+hgbif_herb_coor <- gbif_herb_raw %>%
+  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude)) %>%
+    filter(decimalLongitude >= -180 & decimalLongitude <= 180,  
+           decimalLatitude >= -90 & decimalLatitude <= 90)      
+```
+
+-Erase the duplicates of the registers that have the same coordinates, name of specie and location.
+
+```{r}
+hgbif_no_duplicates <- hgbif_herb_coor %>%
   distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
+```
 
-write.csv(hgbif_no_duplicates, file = here::here("data/out/hgbif_no_duplicates.csv"))
+Eliminar datos de capitales, centroides, cordenadas en el mar o insituciones
+
+```{r}
+hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates, 
+                               lon = "decimalLongitude",
+                               lat = "decimalLatitude",
+                               species = "correctname", 
+                               value = "clean")
+```
+
+```{r}
+# Eliminar duplicados basados en longitud y latitud
+hgbif_clean<-cc_dupl(x = hgbif_no_duplicates_clean, 
+                    lon = "decimalLongitude",
+                    lat = "decimalLatitude",
+                    species = "correctname", 
+                    value = "clean")
+
 
 ```
+
+Delete the records of the species that doesn't fullfill the requirements 
+```{r}
+# Vector of species to remove
+species_to_remove <- c("Quercus ilex", "Quercus tardifolia", "Quercus buckleyi", 
+                       "Quercus geminata", "Quercus laurifolia", "Quercus augustini", 
+                       "Quercus petraea", "Quercus gilva", "Quercus breedloveana", 
+                       "Quercus robur", "Lithocarpus elegans", "Quercus alpescens", 
+                       "Quercus robusta", "Quercus suber", "Quercus douglasii", 
+                       "Lithocarpus korthalsii", "Quercus charcasana", "Lithocarpus corneus", 
+                       "Quercus cerris", "Quercus ganderi", "Quercus ellipsoidalis", 
+                       "Quercus alvordiana", "Quercus montana", "Quercus morehus", 
+                       "Quercus virginiana", "Quercus laevis", "Quercus copeyensis", 
+                       "Quercus nigra", "Quercus serrata")
+
+# Removing rows where species column matches any in species_to_remove
+hgbif_clean <- hgbif_clean %>%
+  filter(!(correctname %in% species_to_remove))
+
+write.csv(hgbif_clean, file = here::here("data/in/hgbif_clean.csv"))
+
+```
+
 
 -Proceed to extract_elevation.qmd
+
+

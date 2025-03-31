@@ -17,6 +17,7 @@ library(data.table)
 library(ggplot2)
 library(here)
 library(sf)
+library(here)
 ```
 
 -   Load raw data from GBIF and Red de Herbarios Mexicanos records of oaks in Mexico. Also load the species name matching data frame that was generated with the backbone of gbif.
@@ -71,28 +72,28 @@ names(gbif_corr_raw) <- make.names(names(gbif_corr_raw), unique = TRUE)
 #---Make all columns character and select columns of interest for both data frames--- 
 herb_corr_raw <- herb_corr_raw %>%
   mutate(across(everything(), as.character)) %>% 
-  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno,basisOfRecord)
 
 gbif_corr_raw <- gbif_corr_raw %>%
   mutate(across(everything(), as.character)) %>% 
-  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno)
+  select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno,basisOfRecord)
 
 #--- Join rows from both data frames ---
 gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
 
 ```
 
--Comparation between the names provided by GBIF and Red de Herbarios Mexicanos with the GBIF backbone.
-
-
+-Then filter the records that have only genera and the records that are reliable
 ```{r}
-sin_cn <-  gbif_herb_raw %>%
-  filter(is.na(correctname))
+gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quercus L.")) %>%
+  filter(basisOfRecord %in% c("HUMAN_OBSERVATION", "PRESERVED_SPECIMEN", "OBSERVATION","PreservedSpecimen","Observation","HumanObservation","Preserved Specimen","LivingSpecimen","Foto","Ejemplar herborizado"))
 ```
 
--Then filter the records that have only genera.
+Write csv
+
 ```{r}
-gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quercus L."))
+write.csv(gbif_herb_raw, here::here("data/temp/gbif_herb_raw.csv"))
 ```
+
 
 -Proceed to coordinate_cleaning.qmd

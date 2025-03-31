@@ -9,57 +9,26 @@ knitr:
 
 This .qmd documents obtains the elevation for each one of the registers. We use the raster called "Continuo de Elevacion Mexicano (CEM)" from INEGI. The resolution is 15 m x 15 m.
 
+First, upload the neccesary libraries.
+```{r}
+library(sf)
+library(data.table)
+library(here)
+library(terra)
+```
+
 
 -Upload the data frame with the registers.
 ```{r}
-hgbif_no_duplicates <- fread(here::here("data/out/hgbif_no_duplicates.csv"))
-```
+hgbif_clean <- fread(here::here("data/in/hgbif_clean.csv"))
 
+#Convert it into an sf object 
 
-
-```{r}
-
-#Inicia funcion
-library(elevatr)
-library(data.table)
-
-#Genera el df de elevacion
-
-# Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
-
-hgbif_no_duplicates_coor <- hgbif_no_duplicates %>%
-  mutate(
-    decimalLongitude = as.numeric(decimalLongitude),
-    decimalLatitude = as.numeric(decimalLatitude)
-  ) %>%
-  select(decimalLongitude, decimalLatitude)  %>%
-  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
-
-#Solo hay un registro que se elimina 
-
-
-# Convertir a objeto sf
-
-library(sf)
-
-hgbif_no_duplicates_sf <- st_as_sf(hgbif_no_duplicates_coor,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
-
-
-# Obtener elevación para cada punto en tu base de datos
-elev_data <- get_elev_point(hgbif_no_duplicates_sf, 
-                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
-                            z = 7)      # Nivel de zoom (determina la precisión) 7 parece ser 1 km (https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution)
-
-
-#guardar en un csv 
-write.csv(elev_data, here::here("data/in/elevation/elev_data.csv"))
+hgbif_clean_sf <- st_as_sf(hgbif_clean,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
 
 ```
 
 ```{r}
-#Upload the necessary libraries.
-library(terra)
-library(sf)
 
 # Set file paths
 raster_path <- here::here("data/in/CEM/CEM_15m_ITRF08.tif")  # Path to the large TIFF file
@@ -70,8 +39,8 @@ raster <- rast(raster_path)
 
 
 # Ensure CRS matches
-if (!st_crs(hgbif_no_duplicates_sf) == crs(raster)) {
-  points_sf <- st_transform(hgbif_no_duplicates_sf, crs(raster))
+if (!st_crs(hgbif_clean_sf) == crs(raster)) {
+  points_sf <- st_transform(hgbif_clean_sf, crs(raster))
 }
 
 # Convert sf object to SpatVector for efficient extraction
@@ -91,13 +60,12 @@ st_drop_geometry(points_sf) |>
 
 -Generate a data frame that has coordinates that can be mapped 
 ```{r}
-hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
+hgbif_clean_elev <- hgbif_clean %>%
   mutate(
     decimalLongitude = as.numeric(decimalLongitude),
     decimalLatitude = as.numeric(decimalLatitude)
   ) %>%
-  select(decimalLongitude, decimalLatitude,everything())  %>%
-  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
+  select(decimalLongitude, decimalLatitude,everything())
 ```
 
 -Add the elevation to the data frame we just created.
@@ -105,10 +73,10 @@ hgbif_no_duplicates_coor_completo <- hgbif_no_duplicates %>%
 #Agregar columna de elevacion
 elev_data_elevatr <- fread(here::here("data/in/elevation/elev_data.csv"))
 
-hgbif_no_duplicates_coor_completo$elevacion_elevatr <- elev_data_elevatr$elevation
+hgbif_clean_elev$elevacion_elevatr <- elev_data_elevatr$elevation
 
 #Save it in a csv archive
-write.csv(hgbif_no_duplicates_coor_completo, here::here("data/in/hgbif_no_duplicates_coor_completo.csv"))
+write.csv(hgbif_clean_elev, here::here("data/in/hgbif_clean_elev.csv"))
 
 ```
 
