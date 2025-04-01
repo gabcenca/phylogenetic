@@ -15,18 +15,49 @@ library(sf)
 library(data.table)
 library(here)
 library(terra)
+library(elevatr)
 ```
-
 
 -Upload the data frame with the registers.
 ```{r}
 hgbif_clean <- fread(here::here("data/in/hgbif_clean.csv"))
+```
+
+
+```{r}
+
+#Genera el df de elevacion
+
+# Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
+
+hgbif_clean_coords <- hgbif_clean %>%
+  select(-starts_with("V1")) %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude)  %>%
+  filter(decimalLongitude >= -180 & decimalLongitude <= 180, decimalLatitude >= -90 & decimalLatitude <= 90)
 
 #Convert it into an sf object 
 
 hgbif_clean_sf <- st_as_sf(hgbif_clean,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
 
 ```
+
+```{r}
+
+# Obtener elevación para cada punto en tu base de datos
+elev_data <- get_elev_point(hgbif_clean_sf, 
+                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
+                            z = 7)      # Nivel de zoom (determina la precisión) 7 parece ser 1 km (https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution)
+
+
+#guardar en un csv 
+write.csv(elev_data, here::here("data/in/elevation/elev_data.csv"))
+
+```
+
 
 ```{r}
 
@@ -61,6 +92,7 @@ st_drop_geometry(points_sf) |>
 -Generate a data frame that has coordinates that can be mapped 
 ```{r}
 hgbif_clean_elev <- hgbif_clean %>%
+  select(-starts_with("V1")) %>%
   mutate(
     decimalLongitude = as.numeric(decimalLongitude),
     decimalLatitude = as.numeric(decimalLatitude)
@@ -73,19 +105,23 @@ hgbif_clean_elev <- hgbif_clean %>%
 #Agregar columna de elevacion
 elev_data_elevatr <- fread(here::here("data/in/elevation/elev_data.csv"))
 
+elev_data_inegi <-
+  fread(here::here("data/in/elevation/elevation_INEGI.csv"))
+
 hgbif_clean_elev$elevacion_elevatr <- elev_data_elevatr$elevation
+
+#Add INEGI elevation 
+hgbif_clean_elev$elevacion_inegi <-
+  elev_data_inegi$elevation
+
+#Filter the registers were the elevation is equal or more than 0.
+hgbif_clean_elev3 <- hgbif_clean_elev %>%
+  filter(elevacion_inegi >= 0)
 
 #Save it in a csv archive
 write.csv(hgbif_clean_elev, here::here("data/in/hgbif_clean_elev.csv"))
 
 ```
 
--Filter the registers were the elevation is equal or more than 0.
-```{r}
-# Filtrar los datos para mantener solo las filas donde la elevación sea mayor o igual a cero
-hgbif_no_duplicates_elev1 <- hgbif_no_duplicates_coor_completo %>%
-  filter(elevacion >= 0)
-
-```
 
 -Proceed to location_extraction_iucn_add.qmd

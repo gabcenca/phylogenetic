@@ -13,7 +13,7 @@ Upload the data frame with the registers, coordinates and elevations and the lay
 
 ```{r}
 #Subir las capas 
-hgbif_no_duplicates_coor_completo <- fread(here::here("data/in/hgbif_no_duplicates_coor_completo.csv"))
+hgbif_clean_elev <- fread(here::here("data/in/hgbif_clean_elev.csv"))
 
 mun <- st_read(here::here("data/in/mun22gw/mun22gw.shp"))
 
@@ -27,7 +27,7 @@ mun2<- mun[, c("NOMGEO", "NOM_ENT", "geometry")]
 
 -Then convert the data frame that has the registers into a sf object, so we can join this data frame with the mun22gw.shp.
 ```{r}
-points_hgbif <- st_as_sf(hgbif_no_duplicates_coor_completo, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) 
+points_hgbif <- st_as_sf(hgbif_clean_elev, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) 
 
 points_mun_state <- st_join(points_hgbif, mun2)
 
@@ -39,7 +39,7 @@ hgbif_completo <- as.data.frame(points_mun_state) %>%
   select(-1, -2, -"stateProvince", -"county",-"municipality") 
 
 #Save it in a csv
-write.csv(hgbif_completo, here::here("data/in/hgbif_completo.csv"))
+write.csv(hgbif_completo, here::here("data/in/hgbif_elev_mun.csv"))
 
 ```
 

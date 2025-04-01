@@ -42,7 +42,8 @@ hgbif_herb_coor <- gbif_herb_raw %>%
 
 ```{r}
 hgbif_no_duplicates <- hgbif_herb_coor %>%
-  distinct(decimalLatitude, decimalLongitude, correctname, municipality, .keep_all = TRUE)
+  distinct(decimalLatitude, decimalLongitude, correctname, .keep_all = TRUE)
+
 ```
 
 Eliminar datos de capitales, centroides, cordenadas en el mar o insituciones
@@ -55,16 +56,6 @@ hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates,
                                value = "clean")
 ```
 
-```{r}
-# Eliminar duplicados basados en longitud y latitud
-hgbif_clean<-cc_dupl(x = hgbif_no_duplicates_clean, 
-                    lon = "decimalLongitude",
-                    lat = "decimalLatitude",
-                    species = "correctname", 
-                    value = "clean")
-
-
-```
 
 Delete the records of the species that doesn't fullfill the requirements 
 ```{r}

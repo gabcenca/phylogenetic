@@ -22,7 +22,7 @@ library(stringr)
 
 # --- Load Data ---
 
-data <- fread("data/in/hgbif_no_duplicates_coor_completo.csv")
+data <- fread("data/in/hgbif_elev_mun.csv")
 
 get_iucn <- function(genus = "Quercus", epithet){
 
