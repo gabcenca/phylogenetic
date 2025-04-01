@@ -1,5 +1,5 @@
 library(sf)
-library(dplyr)
+library(tidyverse)
 library(terra)
 library(here)
 library(data.table)
@@ -58,7 +58,7 @@ create_grid <- function(resolution, shapefile) {
 #' @import dplyr
 #' @importFrom tidyr drop_na
 #' @export
-count_grids <- function(grid_province, grouping_feature = "Provincias") {
+count_grids <- function(grid_province, grouping_feature = "JJM2017") {
   
   summary <- as.data.frame(grid_province) %>% 
     drop_na(.data[[grouping_feature]]) %>% 
@@ -96,7 +96,7 @@ names(summary_grids) <- paste0("grid_", grid_resolutions)
 
 summary_resolution <- do.call(rbind,summary_grids)
 
-plot_res <- ggplot(summary_resolution, aes(x = Provincias, y = n)) +
+plot_res <- ggplot(summary_resolution, aes(x = JJM2017, y = n)) +
   geom_col() +
   facet_wrap(~resolution) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
