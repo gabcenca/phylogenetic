@@ -116,11 +116,58 @@ for (grid_name in names(grids)) {
 
 
 #Intersect the records with the grids
-grid_045 <- st_read("data/out/sf_prov_grid/grid_0.45.shp")
+
+#Add an id for each square of the grid
+grid_045 <- st_read("data/out/sf_prov_grid/grid_0.45.shp") %>%
+  mutate(grid_id = row_number())
 
 hgbif <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
 hgbif_sf <- st_as_sf(hgbif, coords = c("X","Y"), crs = "WGS84")
 
 
-hgbif_grid <- st_intersection(grid_045,hgbif_sf)
+points_in_grid <- st_join(hgbif_sf, grid_045)
+
+# Calculate species richness per grid cell
+richness_counts <- points_in_grid %>%
+  st_drop_geometry() %>%
+  group_by(grid_id) %>%
+  summarize(
+    species_richness = n_distinct(correctname),
+    province = first(JJM2017)  # Assuming each grid cell has only one province
+  )
+
+# Join richness counts back to the grid spatial data to generate a sf with the grid_id, richness and province
+grid_with_richness <- grid_045 %>%
+  left_join(richness_counts, by = "grid_id") %>%
+  # Replace NA values with 0 for grid cells with no species
+  mutate(species_richness = ifelse(is.na(species_richness), 0, species_richness))
+
+
+# Ordenar los datos aleatoriamente
+set.seed(13235)
+
+grid_with_richness_df <- grid_with_richness_df %>%
+                              as.data.frame() %>%
+                              st_drop_geometry()
+
+
+grid_azar <- grid_with_richness_df[sample(1:nrow(grid_with_richness_df)), ] %>%
+  filter(species_richness > 0)
+
+provincia1 <- grid_azar %>%
+  filter(province == "Sierra Madre Occidental province")
+
+# Seleccionar progresivamente más registros
+
+countSp_in_N_records <- function(df, n, richness) {
+  richness_sum <- sum(df[1:n, get(richness)])
+  return(richness_sum)  
+}
+
+countSp_in_N_records(provincia1, 4, "species_richness")
+
+count <- sapply(seq(1:nrow(provincia1)),function(i){countSp_in_N_records(df = provincia1, n = i, 
+                                                   richness = "species_richness")})
+
+plot(count, type = "l")
 
