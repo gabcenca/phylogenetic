@@ -79,6 +79,7 @@ grids <- lapply(grid_resolutions, function(res) {
  }
 )
 
+#Make the summary of the presence of the provinces in each grid size
 summary_grids <- lapply(seq_along(grids), function(i) {
   
   summary <- count_grids(grids[[i]]) 
@@ -96,8 +97,30 @@ names(summary_grids) <- paste0("grid_", grid_resolutions)
 
 summary_resolution <- do.call(rbind,summary_grids)
 
+#Graphic the results
 plot_res <- ggplot(summary_resolution, aes(x = JJM2017, y = n)) +
   geom_col() +
   facet_wrap(~resolution) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
+#Save it
+ggsave("data/out/scale_analysis/scale_analysis.png",plot_res, 
+       width = 10, height = 8, dpi = 300)
+
+
+# Save each grid as a shapefile so we can work it later
+for (grid_name in names(grids)) {
+  st_write(grids[[grid_name]], paste0("data/out/shapefiles_provinces_grid/", 
+                                      grid_name, ".shp"), delete_layer = TRUE)
+}
+
+
+#Intersect the records with the grids
+grid_045 <- st_read("data/out/sf_prov_grid/grid_0.45.shp")
+
+hgbif <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
+hgbif_sf <- st_as_sf(hgbif, coords = c("X","Y"), crs = "WGS84")
+
+
+hgbif_grid <- st_intersection(grid_045,hgbif_sf)
+
