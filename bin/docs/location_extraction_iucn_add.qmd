@@ -69,6 +69,11 @@ hgbif_completo2 <- merge(hgbif_completo, iucn[,-2], by = "correctname")
 # Remove unnecessary columns
 hgbif_completo2 <- hgbif_completo[, !c("V1","V20","geometry", "elevacion")]
 
+hgbif_completo2_clean <- hgbif_completo2_clean %>%
+   filter(!is.na(X) & !is.na(Y)) %>%
+    filter(X >= -118 & X <= -87,  
+           Y >= 14 & Y <= 33) 
+  
 #Write in a csv
-fwrite(hgbif_completo, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
+fwrite(hgbif_completo2_clean, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
 ```

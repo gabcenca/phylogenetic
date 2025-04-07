@@ -46,7 +46,7 @@ hgbif_no_duplicates <- hgbif_herb_coor %>%
 
 ```
 
-Eliminar datos de capitales, centroides, cordenadas en el mar o insituciones
+Eliminar datos de capitales, centroides, cordenadas en el mar o instituciones
 
 ```{r}
 hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates, 
