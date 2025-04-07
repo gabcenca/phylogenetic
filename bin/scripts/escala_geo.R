@@ -417,11 +417,11 @@ g <- ggplot(resultado_final, aes(x = JJM2017, y = n_cuadros, fill = escala)) +
   labs(x = "Región Biogeográfica", y = "Número de Cuadros con Registros") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   facet_wrap(~escala, labeller = as_labeller(c(
-    "escala_1" = "0.45°",
-    "escala_2" = "0.5°",
-    "escala_3" = "0.6°",
-    "escala_4" = "0.7°",
-    "escala_5" = "0.8°"
+    "escala_1" = "0.135°",
+    "escala_2" = "0.225°",
+    "escala_3" = "0.315°",
+    "escala_4" = "0.405°",
+    "escala_5" = "0.45°"
   ))) +
   theme(legend.position = "none")  # Eliminar la leyenda
 
