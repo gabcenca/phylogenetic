@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "Título de tu tesis"
+  author: "Gabriela Centeno Cabada"
+  date: "2025"
+  chapters:
+    - index.qmd
+    - capitulos/introduccion.qmd
+    - capitulos/metodologia.qmd
+    - capitulos/resultados.qmd
+    - capitulos/discusion.qmd
+    - capitulos/conclusiones.qmd
+  appendices:
+    - capitulos/anexos.qmd
+    
+bibliography: references.bib
+
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    latex-engine: lualatex
+    mainfont: "Georgia"
+    fontsize: 11pt
+    geometry: margin=2.5cm
+    fig-cap-location: bottom
+  html: default
