@@ -55,7 +55,17 @@ write.csv(hgbif_completo, here::here("data/in/hgbif_elev_mun.csv"))
 
 ```{r}
 
-hgbif_completo <- fread(here::here("data/in/hgbif_elev_mun.csv"))
+hgbif_completo <- fread(here::here("data/in/hgbif_elev_mun.csv"), header = FALSE)
+
+# Remove unnecessary columns
+hgbif_completo <- hgbif_completo[, !c("V1","V18","V19")]
+
+encabezados <- fread(here::here("data/in/hgbif_elev_mun.csv"), nrows = 1) %>% 
+  .[, !c("V1","V18")] %>%
+  .[1,] %>%
+  as.character()
+
+colnames(hgbif_completo) <- encabezados
 
 iucn <- fread(here::here("data/in/conservation_status/IUCN_per_species.csv"))
 
@@ -66,14 +76,9 @@ setdiff(iucn$correctname, hgbif_completo$correctname)
 # Join tables
 hgbif_completo2 <- merge(hgbif_completo, iucn[,-2], by = "correctname")
 
-# Remove unnecessary columns
-hgbif_completo2 <- hgbif_completo[, !c("V1","V20","geometry", "elevacion")]
-
-hgbif_completo2_clean <- hgbif_completo2_clean %>%
-   filter(!is.na(X) & !is.na(Y)) %>%
-    filter(X >= -118 & X <= -87,  
-           Y >= 14 & Y <= 33) 
   
 #Write in a csv
-fwrite(hgbif_completo2_clean, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
+fwrite(hgbif_completo2, here::here("data/in/hgbif_completo_iucn.csv"), row.names = F)
+
+plot(hgbif_completo2$X, hgbif_completo2$Y)
 ```

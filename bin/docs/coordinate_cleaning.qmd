@@ -60,19 +60,36 @@ hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates,
 Delete the records of the species that doesn't fullfill the requirements 
 ```{r}
 # Vector of species to remove
-species_to_remove <- c("Quercus ilex", "Quercus tardifolia", "Quercus buckleyi", 
-                       "Quercus geminata", "Quercus laurifolia", "Quercus augustini", 
-                       "Quercus petraea", "Quercus gilva", "Quercus breedloveana", 
-                       "Quercus robur", "Lithocarpus elegans", "Quercus alpescens", 
-                       "Quercus robusta", "Quercus suber", "Quercus douglasii", 
-                       "Lithocarpus korthalsii", "Quercus charcasana", "Lithocarpus corneus", 
-                       "Quercus cerris", "Quercus ganderi", "Quercus ellipsoidalis", 
-                       "Quercus alvordiana", "Quercus montana", "Quercus morehus", 
-                       "Quercus virginiana", "Quercus laevis", "Quercus copeyensis", 
-                       "Quercus nigra", "Quercus serrata")
+species_to_remove <- c(
+  "Quercus chiapensis",
+  "Quercus acutangula",
+  "Quercus manzanillana",
+  "Quercus schultzei",
+  "Quercus obtusanthera",
+  "Quercus edwardsiae",
+  "Quercus juergensenii",
+  "Quercus vallicola",
+  "Quercus perseaefolia",
+  "Quercus magnifolia",
+  "Quercus augustini",
+  "Quercus supranitida",
+  "Quercus undulata",
+  "Quercus verde",
+  "Quercus ignaciensis",
+  "Quercus floccosa",
+  "Quercus bourgaei",
+  "Quercus alpescens",
+  "Quercus brenesii",
+  "Quercus chartacea",
+  "Quercus ghiesbreghtii",
+  "Quercus undata",
+  "Quercus rekonis",
+  "Quercus dysophylla",
+  "Quercus caudicans"
+)
 
 # Removing rows where species column matches any in species_to_remove
-hgbif_clean <- hgbif_clean %>%
+hgbif_clean <- hgbif_no_duplicates_clean %>%
   filter(!(correctname %in% species_to_remove))
 
 write.csv(hgbif_clean, file = here::here("data/in/hgbif_clean.csv"))

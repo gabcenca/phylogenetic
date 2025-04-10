@@ -4,136 +4,6 @@ library(here)
 library(data.table)
 library(ggplot2)
 
-# Read the biogeographic provinces of Mexico
-provinces <- st_read("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp")
-
-# Grid resolutions to create
-grid_resolutions <- c(0.135, 0.225, 0.315, 0.405, 0.450)
-
-
-#' Create a Spatial Grid Over a Shapefile
-#'
-#' This function generates a spatial grid of square polygons with a specified resolution and clips it to the provided shapefile.
-#'
-#' @param resolution A numeric value specifying the grid cell size in the same units as the shapefile's coordinate reference system.
-#' @param shapefile An `sf` object representing the geographic region over which the grid will be created.
-#'
-#' @return An `sf` object containing the grid polygons that intersect with the input shapefile.
-#'
-#' @examples
-#' library(sf)
-#' nc <- st_read(system.file("shape/nc.shp", package = "sf"))
-#' grid <- create_grid(0.5, nc)
-#'
-#' @import sf
-#' @importFrom dplyr %>%
-#' @export
-create_grid <- function(resolution, shapefile) {
-  grid_province <- shapefile %>% 
-    st_make_grid(cellsize = resolution, what = "polygons", square = TRUE) %>%
-    st_sf() %>%
-    st_intersection(shapefile) 
-  
-  return(grid_province)
-  
-  } 
-  
-#' Count Grids by a Grouping Feature
-#'
-#' This function counts the number of grid cells in `grid_province` that belong to each unique value of the specified `grouping_feature`.
-#'
-#' @param grid_province A data frame or tibble containing a column with the grouping feature (e.g., biogeographic regions).
-#' @param grouping_feature A string specifying the column name in `grid_province` used for grouping (default: `"Provincias"`).
-#'
-#' @return A data frame with two columns: 
-#'   - The grouping feature column (e.g., `"Provincias"`) with unique values.
-#'   - `n`: The count of grid cells for each unique value of the grouping feature.
-#'
-#' @examples
-#' grid_data <- data.frame(Provincias = c("Region1", "Region2", "Region1", NA, "Region2"))
-#' count_grids(grid_data, "Provincias")
-#'
-#' @import dplyr
-#' @importFrom tidyr drop_na
-#' @export
-count_grids <- function(grid_province, grouping_feature = "JJM2017") {
-  
-  summary <- as.data.frame(grid_province) %>% 
-    drop_na(.data[[grouping_feature]]) %>% 
-    group_by(.data[[grouping_feature]]) %>% 
-    summarise(n = n(), .groups = "drop")
-  
-  return(summary)
-  
-  }
-
-
-# Create grid for each resolution in grid_resolutions
-grids <- lapply(grid_resolutions, function(res) {
- 
- grid <- create_grid(res, provinces) 
- 
- return(grid)
- }
-)
-
-#Make the summary of the presence of the provinces in each grid size
-summary_grids <- lapply(seq_along(grids), function(i) {
-  
-  summary <- count_grids(grids[[i]]) 
-  
-  summary$resolution <- grid_resolutions[i]
-  
-  return(summary)
-}
-)
-
-
-# Rename list elements based on the resolution
-names(grids) <- paste0("grid_", grid_resolutions)
-names(summary_grids) <- paste0("grid_", grid_resolutions)
-
-summary_resolution <- do.call(rbind,summary_grids)
-
-# Asegurarse de que 'resolution' sea un factor (variable categórica)
-summary_resolution$resolution <- factor(summary_resolution$resolution)
-
-#Graphic the results
-plot_res <- ggplot(summary_resolution, aes(x = JJM2017, y = n, fill = resolution)) +
-  geom_col() +
-  facet_wrap(~resolution) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(legend.position = "none") + # Eliminar la leyenda 
-  labs(x = "Provincia Biogeográfica", y = "Número de Cuadros Totales") +
-  scale_x_discrete(labels = c(
-    "Baja Californian province" = "Baja California",
-    "Balsas Basin province" = "Cuenca del Balsas",
-    "Californian province" = "Californiana",
-    "Chiapas Highlands province" = "Altos de Chiapas",
-    "Chihuahuan Desert province" = "Desierto Chihuahuense",
-    "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
-    "Sierra Madre Occidental province" = "Sierra Madre Occidental",
-    "Sierra Madre Oriental province" = "Sierra Madre Oriental",
-    "Sierra Madre del Sur province" = "Sierra Madre del Sur",
-    "Sonoran province" = "Sonorense",
-    "Tamaulipas province" = "Tamaulipas",
-    "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
-    "Veracruzan province" = "Veracruzana",
-    "Yucatan Peninsula Province" = "Península de Yucatán"
-  ))
-  
-#Save it
-ggsave("data/out/scale_analysis/scale_analysis.png",plot_res, 
-       width = 10, height = 8, dpi = 300)
-
-
-# Save each grid as a shapefile so we can work it later
-for (grid_name in names(grids)) {
-  st_write(grids[[grid_name]], paste0("data/out/shapefiles_provinces_grid/", 
-                                      grid_name, ".shp"), delete_layer = TRUE)
-}
-
-
 # Curvas de acumulación de riqueza por provincia --------------------------
 
 # 1. Cargar funciones auxiliares (intersect_points_with_grid, calc_richness, run_richness_reps y plot_richness_accumulation)
@@ -271,7 +141,7 @@ plot_richness_accumulation <- function(grid_shp_path,
   if (!dir.exists(output_dir)) {
     stop("El directorio de salida no existe. Por favor créalo antes de correr la función.")
   }
-
+  
   if (is.null(plot_filename)) {
     grid_name <- tools::file_path_sans_ext(basename(grid_shp_path))
     plot_filename <- paste0("richness_accumulation_", grid_name, ".png")
@@ -374,89 +244,8 @@ run_batch_richness_plots <- function(grid_dir,
 run_batch_richness_plots(
   grid_dir = "data/out/sf_prov_grid",                # Carpeta con los .shp
   points_csv_path = "data/in/hgbif_completo_iucn.csv",  # Archivo CSV de puntos
-  n_reps = 5,                                        # Número de repeticiones
-  max_n = 2,                                         # Máximo de celdas por provincia
+  n_reps = 50,                                        # Número de repeticiones
   output_dir = "data/out/accum_provinces/"                                # Carpeta donde guardar .png
 )
 
 
-
-
-# Grafica de barras de cobertura -----------------------------------------
-
-# Definir las rutas de los shapefiles de las 5 escalas
-escalas <- list(
-  "escala_1" = "data/out/sf_prov_grid/grid_0.135.shp",
-  "escala_2" = "data/out/sf_prov_grid/grid_0.225.shp",
-  "escala_3" = "data/out/sf_prov_grid/grid_0.315.shp",
-  "escala_4" = "data/out/sf_prov_grid/grid_0.405.shp",
-  "escala_5" = "data/out/sf_prov_grid/grid_0.45.shp"
-)
-
-# Leer el CSV con los puntos (esto debe ser consistente para todas las escalas)
-puntos_csv <- "data/in/hgbif_completo_iucn.csv"
-
-# Lista para almacenar los resultados
-resultados <- list()
-
-# Iterar sobre cada escala
-for (escala_nombre in names(escalas)) {
-  # Cargar el shapefile de la escala
-  grid_shapefile <- escalas[[escala_nombre]]
-  
-  # Obtener la intersección entre los puntos y el grid de esta escala
-  intersect <- intersect_points_with_grid(grid_shapefile, puntos_csv)
-  
-  # Filtrar los registros válidos (sin NAs en correctname)
-  registros_validos <- intersect %>%
-    filter(!is.na(correctname)) %>%
-    as.data.frame()
-  
-  # Contar cuántos cuadros (grid_id) distintos hay por región biogeográfica (JJM2017)
-  conteo_cuadros <- registros_validos %>%
-    group_by(JJM2017) %>%
-    summarise(n_cuadros = n_distinct(grid_id))
-  
-  # Añadir una columna para la escala
-  conteo_cuadros$escala <- escala_nombre
-  
-  # Guardar los resultados para esta escala
-  resultados[[escala_nombre]] <- conteo_cuadros
-}
-
-# Unir todos los resultados en un solo data frame
-resultado_final <- bind_rows(resultados)
-
-# Graficar los resultados con ggplot
-g <- ggplot(resultado_final, aes(x = JJM2017, y = n_cuadros, fill = escala)) +
-  geom_col() +
-  labs(x = "Provincia Biogeográfica", y = "Número de Cuadros con Registros") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  facet_wrap(~escala, labeller = as_labeller(c(
-    "escala_1" = "0.135°",
-    "escala_2" = "0.225°",
-    "escala_3" = "0.315°",
-    "escala_4" = "0.405°",
-    "escala_5" = "0.45°"
-  ))) +
-  theme(legend.position = "none") + # Eliminar la leyenda
-  scale_x_discrete(labels = c(
-    "Baja Californian province" = "Baja California",
-    "Balsas Basin province" = "Cuenca del Balsas",
-    "Californian province" = "Californiana",
-    "Chiapas Highlands province" = "Altos de Chiapas",
-    "Chihuahuan Desert province" = "Desierto Chihuahuense",
-    "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
-    "Sierra Madre Occidental province" = "Sierra Madre Occidental",
-    "Sierra Madre Oriental province" = "Sierra Madre Oriental",
-    "Sierra Madre del Sur province" = "Sierra Madre del Sur",
-    "Sonoran province" = "Sonorense",
-    "Tamaulipas province" = "Tamaulipas",
-    "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
-    "Veracruzan province" = "Veracruzana",
-    "Yucatan Peninsula Province" = "Península de Yucatán"
-  ))
-
-#Save it
-ggsave("data/out/scale_analysis/scale_analysis2.png",g, 
-       width = 10, height = 8, dpi = 300)
