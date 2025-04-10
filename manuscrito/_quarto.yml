@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "titulo"
+  author: "Gabriela Centeno Cabada"
+  date: "4/8/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - metodologia.qmd
+    - resultados.qmd
+    - discusion.qmd
+    - conclusion.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

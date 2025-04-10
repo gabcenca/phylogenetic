@@ -152,10 +152,12 @@ main <- function(species_sf_list, base_mx, output_path, resolution) {
   return(stack)
 }
 
+for (i in c(0.135, 0.225, 0.315, 0.405, 0.450)) {
 stack <- main(species_sf_list = species_sf_list, 
               base_mx = mexico_map, 
-              resolution = 0.5,
-              output_path = here::here("data/out/raster_species/ras_species_res_0.5.tif"))
+              resolution = i,
+              output_path = here::here(file.path("data/out/raster_species",paste0("ras_species_res_",i,".tif"))))
+}
 
 # Optional: Check if the function worked
 # png("img/sp_dist_example.png")
