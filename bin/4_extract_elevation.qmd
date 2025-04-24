@@ -1,0 +1,126 @@
+---
+title: "extract_cleaning"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+This .qmd documents obtains the elevation for each one of the registers. We use the raster called "Continuo de Elevacion Mexicano (CEM)" from INEGI. The resolution is 15 m x 15 m.
+
+First, upload the neccesary libraries.
+```{r}
+library(sf)
+library(data.table)
+library(here)
+library(terra)
+library(elevatr)
+```
+
+-Upload the data frame with the registers.
+```{r}
+hgbif_clean <- fread(here::here("data/in/hgbif_clean.csv"))
+```
+
+
+```{r}
+
+#Genera el df de elevacion
+
+# Reordena las columnas de la tabla para que decimalLongitude sea la primera y decimalLatitude la segunda
+
+hgbif_clean_coords <- hgbif_clean %>%
+  select(-starts_with("V1")) %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude)  %>%
+
+#Convert it into an sf object 
+
+hgbif_clean_sf <- st_as_sf(hgbif_clean,coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+
+```
+
+```{r}
+
+# Obtener elevación para cada punto en tu base de datos
+elev_data <- get_elev_point(hgbif_clean_sf, 
+                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
+                            z = 7)      # Nivel de zoom (determina la precisión) 7 parece ser 1 km (https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution)
+
+
+#guardar en un csv 
+write.csv(elev_data, here::here("data/in/elevation/elev_data.csv"))
+
+```
+
+
+```{r}
+
+# Set file paths
+raster_path <- here::here("data/in/CEM/CEM_15m_ITRF08.tif")  # Path to the large TIFF file
+output_csv <- here::here("data/in/elevation/elevation_INEGI.csv")     # Output CSV file
+
+# Load the raster efficiently
+raster <- rast(raster_path)
+
+
+# Ensure CRS matches
+if (!st_crs(hgbif_clean_sf) == crs(raster)) {
+  points_sf <- st_transform(hgbif_clean_sf, crs(raster))
+}
+
+# Convert sf object to SpatVector for efficient extraction
+points_vect <- vect(points_sf)
+
+# Extract elevation values
+extracted_values <- terra::extract(raster, points_vect)
+
+# Merge extracted values with the original sf object
+points_sf$elevation <- extracted_values[, 2]  # Assuming first column is ID
+
+# Write to CSV
+st_drop_geometry(points_sf) |> 
+  write.csv(output_csv, row.names = FALSE)
+
+```
+
+-Generate a data frame that has coordinates that can be mapped 
+```{r}
+hgbif_clean_elev <- hgbif_clean %>%
+  select(-starts_with("V1")) %>%
+  mutate(
+    decimalLongitude = as.numeric(decimalLongitude),
+    decimalLatitude = as.numeric(decimalLatitude)
+  ) %>%
+  select(decimalLongitude, decimalLatitude,everything())
+```
+
+-Add the elevation to the data frame we just created.
+```{r}
+#Agregar columna de elevacion
+elev_data_elevatr <- fread(here::here("data/in/elevation/elev_data.csv"))
+
+elev_data_inegi <-
+  fread(here::here("data/in/elevation/elevation_INEGI.csv"))
+
+hgbif_clean_elev$elevacion_elevatr <- elev_data_elevatr$elevation
+
+#Add INEGI elevation 
+hgbif_clean_elev$elevacion_inegi <-
+  elev_data_inegi$elevation
+
+#Filter the registers were the elevation is equal or more than 0.
+hgbif_clean_elev3 <- hgbif_clean_elev %>%
+  filter(elevacion_inegi >= 0)
+
+#Save it in a csv archive
+write.csv(hgbif_clean_elev, here::here("data/in/hgbif_clean_elev.csv"))
+
+```
+
+
+-Proceed to location_extraction_iucn_add.qmd

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Métodos – titulo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./resultados.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-77205cbbef6a5b90ba72edc25dea2156.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./metodologia.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Métodos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">titulo</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">titulo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metodologia.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Métodos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resultados.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Resultados</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./discusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">discusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#datos-espaciales" id="toc-datos-espaciales" class="nav-link active" data-scroll-target="#datos-espaciales"><span class="header-section-number">3.1</span> Datos espaciales</a></li>
+  <li><a href="#evaluación-de-sesgo-de-muestreoescala" id="toc-evaluación-de-sesgo-de-muestreoescala" class="nav-link" data-scroll-target="#evaluación-de-sesgo-de-muestreoescala"><span class="header-section-number">3.2</span> Evaluación de sesgo de muestreo/escala</a></li>
+  <li><a href="#construcción-del-marco-filogenético" id="toc-construcción-del-marco-filogenético" class="nav-link" data-scroll-target="#construcción-del-marco-filogenético"><span class="header-section-number">3.3</span> Construcción del marco filogenético</a></li>
+  <li><a href="#índices-de-biodiversidad" id="toc-índices-de-biodiversidad" class="nav-link" data-scroll-target="#índices-de-biodiversidad"><span class="header-section-number">3.4</span> Índices de biodiversidad</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Métodos</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="datos-espaciales" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="datos-espaciales"><span class="header-section-number">3.1</span> Datos espaciales</h2>
+<ul>
+<li>Obtención de datos</li>
+</ul>
+<p>La base de datos georeferenciada de encinos se generó al integrar datos de Global Biodiversity Information Facility (GBIF) <span class="citation" data-cites="gbif2024">(<a href="#ref-gbif2024" role="doc-biblioref">GBIF.Org User, 2024</a>)</span> y de Red de Herbarios Mexicanos <span class="citation" data-cites="redherbarios2024">(<a href="#ref-redherbarios2024" role="doc-biblioref">Herbarios Mexicanos, 2024</a>)</span>. No se realizaron filtros temporales, por lo que la base integrada contiene registros de 1791 a 2024. Para el caso de GBIF, se filtraron los registros que no presentaran problemas geoespaciales, que tuvieran coordenadas, que pertenecieran a México y el formato de descarga fue Darwin Core. Para el caso de la Red de Herbarios, se indicó que se incluyeran sinónimos y que se tomarán todas las colecciones, en este caso, se tienen registros de los siguientes herbarios: HUAP, MICH, TEX, ARIZ, UASLP, NMC, UNAM, MABA, LL, GreaterGood, USON, UCR, ASU, SD, COLO, F, BRIT, DAV, VT, FLD, NCSC, CalBG, NY, IBUG, Harvard, MOR, Sonoran Atlas, BCMEX, DES, HCIB, HNT, TAES, SBBG, USF, UNM, SRSC, SEINet, ZAC, NO, UTEP, KANU, IPN, UAN, CHRB, PH, UT, CM, IND, CIAD, NMCR, TTC, UNISIERRA, OBI, BRY, GA, EIU, ASC, ASDM, LSU, BRU, PAUH, RHM, CHAPINGO, DMNS, WIS, SJSU, BAYLU, WLM, CLEMS, SAT, CINC, HJAAA-FCB, USU, MIL, NTSC, TENN, SJNM, HPC, OKLA, WVW, UA, UAS, FLAS, LEA, DBG, UCOL, SDSU, VSC, APSC, VCU, PAC, SHIP, LFCC, BALT, WILLI, HUDC, RM, QMEX, RHNM, UNLV, UVSC, MIN, KE, MISSA, UAC, CIBNOR, CS.</p>
+<ul>
+<li>Corrección taxonómica</li>
+</ul>
+<p>Para estandarizar y validar la nomenclatura taxonómica de las especies presentes en la base de datos, se utilizó el backbone taxonómico de GBIF. Para ello, se utilizó la API de GBIF mediante el paquete rgbif <span class="citation" data-cites="rgbif2017">(<a href="#ref-rgbif2017" role="doc-biblioref">Chamberlain &amp; Boettiger, 2017</a>)</span> en R v4.3.2 <span class="citation" data-cites="r2024">(<a href="#ref-r2024" role="doc-biblioref">Team, 2024</a>)</span>. Con la función name_backbone(), se obtuvo el nombre aceptado, estatus taxonómico (aceptado o sinónimo), nivel taxonómico y nivel de confianza de la coincidencia.</p>
+<p>Este procedimiento permitió homogeneizar los nombres científicos y detectar sinónimos o errores de nomenclatura, garantizando así la consistencia taxonómica en los análisis posteriores.</p>
+<ul>
+<li>Limpieza de datos</li>
+</ul>
+<p>Para la unión y limpieza de datos se utilizó R v.4.3.2 <span class="citation" data-cites="r2024">(<a href="#ref-r2024" role="doc-biblioref">Team, 2024</a>)</span> y el paquete tidyverse <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref">Wickham et al., 2019</a>)</span>, asi como para los subsiguientes procesos. <em>Se tomarón registros de observaciones humanas, especimenes preservados, especimenes vivos y ejemplares herborizado.</em> Se eliminaron registros que no se encontraran dentro de México y que estuvieran duplicados, es decir, que tuvieran las mismas coordenadas y nombre. Para la limpieza de coordenadas se utilizo la función clean_coordinates() del paquete CoordinateCleaner <span class="citation" data-cites="zizka209">(<a href="#ref-zizka209" role="doc-biblioref"><strong>zizka209?</strong></a>)</span>, el cual verifica si las coordenadas de los registros sean válidas, que no se encuentran dentro del radio de las capitales o cerca de los centroides del país, con misma latitud y longitud, cerca de museos e instituciones científicas, registros muy aislados respecto a los demás de la misma especie, puntos en el océano y con valor de (0,0).</p>
+<ul>
+<li>Criterios de aceptación de especies</li>
+</ul>
+<p>Por otra parte, se establecieron criterios para la inclusión de especies en los análisis. Se excluyeron aquellas que no son nativas. Las especies con más de 20 registros fueron conservadas. Aquellas con menos de 20 registros se mantuvieron únicamente si estaban incluidas en la filogenia a utilizar o si presentan una distribución restringida. Las especies con entre 10 y 20 registros, y que no eran de distribución restringida, fueron evaluadas en función de la representación espacial de su rango geográfico. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.</p>
+<ul>
+<li>Obtención de estatus de conservación según la IUCN</li>
+</ul>
+<p>Además se evaluó la categoría de cada especie dentro de la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza <span class="citation" data-cites="iucn2025">(<a href="#ref-iucn2025" role="doc-biblioref">IUCN, 2025</a>)</span>, con el paquete rredlist <span class="citation" data-cites="rredlist">(<a href="#ref-rredlist" role="doc-biblioref">Gearty &amp; Chamberlain, 2025</a>)</span>. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación. La función toma como entrada el epíteto específico de cada especie y consulta la API para obtener la evaluación más reciente disponible.</p>
+<ul>
+<li>Insumos geográficos</li>
+</ul>
+<p>Para la extracción de la elevación de cada registro se utilizaron los paquetes terra <span class="citation" data-cites="terra2024">(<a href="#ref-terra2024" role="doc-biblioref">Hijmans, 2024</a>)</span>, sf <span class="citation" data-cites="sf2024">Pebesma (<a href="#ref-sf2018" role="doc-biblioref">2018</a>)</span>, data.table <span class="citation" data-cites="dtable2024">(<a href="#ref-dtable2024" role="doc-biblioref">Barrett et al., 2024</a>)</span> y elevatr <span class="citation" data-cites="elevatr">(<a href="#ref-elevatr" role="doc-biblioref">Hollister et al., 2023</a>)</span>.</p>
+<p>Se obtuvieron dos elevaciones, la primera con el paquete elevatr, donde se definió una precisión de aproxidamente 1.2 km (<em>podriamos mejorarla, con z=15, que tiene una precision de 4.8m, o tal vez borrarla</em>); la segunda con el Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (<em>cita</em>). Asimismo, el municipio y estado para cada registro se obtuvo a través de un archivo tipo shape que contiene la división política municipal <span class="citation" data-cites="INEGI2022">(<a href="#ref-INEGI2022" role="doc-biblioref">Instituto Nacional de Estadística y Geografía (INEGI), 2022</a>)</span>.</p>
+<p>Para las provincias biogeográficas se tomo la clasificación hecha por Morrone et al. <span class="citation" data-cites="morrone2017">Morrone et al. (<a href="#ref-morrone2017shp" role="doc-biblioref">2022</a>)</span>, la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos <span class="citation" data-cites="morrone2017shp">(<a href="#ref-morrone2017shp" role="doc-biblioref">Morrone et al., 2022</a>)</span>.</p>
+</section>
+<section id="evaluación-de-sesgo-de-muestreoescala" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="evaluación-de-sesgo-de-muestreoescala"><span class="header-section-number">3.2</span> Evaluación de sesgo de muestreo/escala</h2>
+<ul>
+<li>Escalas consideradas</li>
+</ul>
+<p>Se evaluaron cinco escalas espaciales correspondientes a celdas de 15, 25, 35, 45 y 50 kilómetros de lado (Ver <span class="citation" data-cites="baldwinSpeciesRichnessEndemism2017">Baldwin et al. (<a href="#ref-baldwinSpeciesRichnessEndemism2017" role="doc-biblioref">2017</a>)</span>). Debido a que las capas utilizadas se encontraban en un sistema de coordenadas geográficas (EPSG:4326) con datum WGS84, estas dimensiones se expresaron en grados decimales. Bajo este sistema, 1° de latitud equivale aproximadamente a 111.32 km en cualquier punto del planeta. Sin embargo, la longitud de 1° de longitud varía en función de la latitud, disminuyendo conforme se avanza hacia los polos debido a la convergencia de los meridianos. En el caso de México, esta distancia va desde ~107 km en el sur (14°N) hasta ~93 km en el norte (33°N). Esta variación implica que las celdas generadas en grados decimales no tienen una extensión uniforme en kilómetros a lo largo del territorio nacional: son más anchas en el sur y más estrechas en el norte. La</p>
+<p><a href="#fig-1grado" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> ilustra esta variación, mostrando cómo se mantiene constante la longitud de 1° de latitud, mientras que la longitud de 1° de longitud disminuye con la latitud, por lo que las áreas cubiertas por cada celda difieren ligeramente en superficie real.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Latitudes para México</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>latitudes <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">14</span>, <span class="dv">33</span>, <span class="at">length.out =</span> <span class="dv">200</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>earth_radius_km <span class="ot">&lt;-</span> <span class="dv">6371</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>deg_to_rad <span class="ot">&lt;-</span> pi <span class="sc">/</span> <span class="dv">180</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular longitudes</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>length_lon_km <span class="ot">&lt;-</span> deg_to_rad <span class="sc">*</span> earth_radius_km <span class="sc">*</span> <span class="fu">cos</span>(latitudes <span class="sc">*</span> deg_to_rad)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>length_lat_km <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fl">111.32</span>, <span class="fu">length</span>(latitudes))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Data frame</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Latitud =</span> latitudes,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">1° de longitud</span><span class="st">`</span> <span class="ot">=</span> length_lon_km,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">1° de latitud</span><span class="st">`</span> <span class="ot">=</span> length_lat_km</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>df_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(df, <span class="at">id.vars =</span> <span class="st">"Latitud"</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_long, <span class="fu">aes</span>(<span class="at">x =</span> Latitud, <span class="at">y =</span> value, <span class="at">color =</span> variable, <span class="at">linetype =</span> variable)) <span class="sc">+</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"1° de longitud"</span> <span class="ot">=</span> <span class="st">"orange"</span>, <span class="st">"1° de latitud"</span> <span class="ot">=</span> <span class="st">"blue"</span>)) <span class="sc">+</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Variación de la distancia representada por 1° según latitud"</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Latitud (°N)"</span>, <span class="at">y =</span> <span class="st">"Distancia (km)"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Coordenada"</span>, <span class="at">linetype =</span> <span class="st">"Coordenada"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-1grado" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1grado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="metodologia_files/figure-html/fig-1grado-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1grado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Variación de la distancia representada por un grado según la latitud en México. La longitud de un grado de latitud se mantiene constante (~111.32 km), mientras que la de un grado de longitud disminuye con la latitud.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Representación de la heterogeneidad de las provincias biogeográficas por escala</li>
+</ul>
+<p>Para evaluar la representación espacial de cada provincia biogeográfica, se utilizó el shapefile generado por Morrone et al. <span class="citation" data-cites="morrone2017 morrone2017shp">(<a href="#ref-morrone2017" role="doc-biblioref">2017</a>, <a href="#ref-morrone2017shp" role="doc-biblioref">2022</a>)</span>. Se elaboraron gráficas de barras con el paquete ggplot2 <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham, 2016</a>)</span> para cada una de las escalas espaciales consideradas. En estas gráficas se muestra el número de cuadros que representan a cada provincia, tanto considerando todos los cuadros de la grilla, independientemente de la presencia de registros, como únicamente aquellos cuadros que contienen registros de especies.</p>
+<ul>
+<li>Curvas de rarefacción</li>
+</ul>
+<p>Adicionalmente, se generaron curvas de rarefacción acumulativa por provincia biogeográfica y por escala espacial con el fin de evaluar la intensidad de muestreo en relación con la riqueza de especies. Estas curvas permiten estimar el número de celdas necesarias para alcanzar una representación relativamente estable de la riqueza observada en cada región, bajo el supuesto de un muestreo aleatorio <span class="citation" data-cites="baldwinSpeciesRichnessEndemism2017">(<a href="#ref-baldwinSpeciesRichnessEndemism2017" role="doc-biblioref">Baldwin et al., 2017</a>)</span>.</p>
+<p>Para ello, se implementó un conjunto de funciones personalizadas en R que realizan los siguientes pasos: (1) intersección de los registros de especies con las celdas de cada grid, (2) muestreo aleatorio repetido de celdas dentro de cada provincia biogeográfica, (3) cálculo de la riqueza de especies para cada número acumulado de celdas y (4) graficación de las curvas promedio de acumulación a través de múltiples repeticiones (n = 50). Este procedimiento se aplicó a todos los grids disponibles, generando una curva de rarefacción para cada combinación de provincia y escala.</p>
+<ul>
+<li>Relación registros vs riqueza</li>
+</ul>
+<p>Para explorar la relación entre la riqueza de especies y el número de registros disponibles, se generaron curvas de acumulación a partir de la base de datos depurada. Primero, se ordenaron aleatoriamente los registros para evitar sesgos por el orden original de los datos. Luego, se contabilizó el número de especies únicas conforme se iban incorporando progresivamente más registros, tanto de manera secuencial como mediante muestreo aleatorio sin reemplazo. Para ello, se implementaron funciones personalizadas en R v.4.3.2 <span class="citation" data-cites="r2024">(<a href="#ref-r2024" role="doc-biblioref">Team, 2024</a>)</span> que permitieron calcular la riqueza acumulada (número de especies únicas) para cada número incremental de registros. Se graficaron ambas curvas —una basada en el orden original aleatorizado y otra mediante muestreo aleatorio en cada iteración— para comparar los patrones de acumulación de riqueza en función del esfuerzo de muestreo.</p>
+</section>
+<section id="construcción-del-marco-filogenético" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="construcción-del-marco-filogenético"><span class="header-section-number">3.3</span> Construcción del marco filogenético</h2>
+<p>Para aplicar el criterio de exclusión de especies descrito en el punto 1, así como para calcular la riqueza, endemismo ponderado de especies presentes en el árbol y estimar su diversidad filogenética, se utilizó un árbol filogenético global del género Quercus elaborado por Hipp et al. <span class="citation" data-cites="hippGenomicLandscapeGlobal2020">(<a href="#ref-hippGenomicLandscapeGlobal2020" role="doc-biblioref">2020</a>)</span>. Este árbol, calibrado en el tiempo y con longitudes de rama medidas en millones de años, fue generado a partir de datos RAD-seq de 632 individuos y se construyó mediante análisis de máxima verosimilitud. Para la datación, se aplicaron modelos relajados de reloj molecular con calibraciones fósiles, y se generó una versión del árbol con una sola muestra por especie.</p>
+<p>El árbol está disponible públicamente a través del repositorio del proyecto en GitHub <span class="citation" data-cites="hippAndrewhippGlobaloaks20192025">(<a href="#ref-hippAndrewhippGlobaloaks20192025" role="doc-biblioref">A. Hipp, 2025</a>)</span> y también forma parte del proyecto Open Tree of Life <span class="citation" data-cites="hinchliffSynthesisPhylogenyTaxonomy2015">(<a href="#ref-hinchliffSynthesisPhylogenyTaxonomy2015" role="doc-biblioref">Hinchliff et al., 2015</a>)</span>.</p>
+<p>Por otra parte, se empleó el paquete ape v5.8 <span class="citation" data-cites="ape2019">(<a href="#ref-ape2019" role="doc-biblioref">Paradis &amp; Schliep, 2019</a>)</span> para podar el árbol filogenético, eliminando las especies ausentes en la base de datos y conservando únicamente aquellas coincidentes.</p>
+</section>
+<section id="índices-de-biodiversidad" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="índices-de-biodiversidad"><span class="header-section-number">3.4</span> Índices de biodiversidad</h2>
+<p>Se calcularon 3 índices de biodiversidad: riqueza de especies, endemismo ponderado y diversidad filogénetica. Para calcularlos se utilizaron rasters de distribución de especies, los cuales fueron generado a partir de la base de datos, el árbol filogénetico de Hipp et al. <span class="citation" data-cites="hippGenomicLandscapeGlobal2020">(<a href="#ref-hippGenomicLandscapeGlobal2020" role="doc-biblioref">2020</a>)</span> y el paquete de R ‘Phyloraster’<span class="citation" data-cites="phyloraster2023">(<a href="#ref-phyloraster2023" role="doc-biblioref">Alves-Ferreira et al., 2023</a>)</span>. Estos índices se generaron para 5 escalas (15, 25, 35, 45, 50 km).</p>
+<p>La riqueza de especies se calculó con <a href="#eq-sr" class="quarto-xref">Equation&nbsp;<span>3.1</span></a>, donde <strong>Sc</strong> es el valor de presencia (1) o ausencia (0) de la especie, <strong>c</strong> y <strong>C</strong> el subconjunto de taxones que ocurren en una región determinada <span class="citation" data-cites="phyloraster2023">(<a href="#ref-phyloraster2023" role="doc-biblioref">Alves-Ferreira et al., 2023</a>)</span>.</p>
+<p><span id="eq-sr"><span class="math display">\[
+SR = \sum_{c \in C} S_c
+\tag{3.1}\]</span></span></p>
+<p>El endemismo ponderado evalúa el rango de cada especie a una región, en función de la proporción de su rango total que se encuentra dentro de dicha región, este es calculado a través de la <a href="#eq-we" class="quarto-xref">Equation&nbsp;<span>3.2</span></a>. Donde <strong>r</strong> es el rango local, <strong>Rc</strong> es el rango total, <strong>c</strong> y <strong>C</strong> representan el subconjunto de taxones que ocurren en una región determinada. En el caso de phyloraster, el cálculo se realiza con el área de las celdas, ya que en la mayoría de casos se trata a las celdas como si fueran del mismo tamaño <span class="citation" data-cites="phyloraster2023">(<a href="#ref-phyloraster2023" role="doc-biblioref">Alves-Ferreira et al., 2023</a>)</span>.</p>
+<p><span id="eq-we"><span class="math display">\[
+WE = \sum_{c \in C} \frac{r_C}{R_c}
+\tag{3.2}\]</span></span></p>
+<p>La diversidad filogenética de Faith <span class="citation" data-cites="faithConservationEvaluationPhylogenetic1992a">(<a href="#ref-faithConservationEvaluationPhylogenetic1992a" role="doc-biblioref">Faith, 1992</a>)</span> es calculada a través de la suma del largo de las ramas de todas las especies en una región dada, como se muestra en la ecuación <span class="citation" data-cites="eq:faith_pd">(<a href="#ref-eq:faith_pd" role="doc-biblioref"><strong>eq:faith_pd?</strong></a>)</span>. Donde <strong>Lc</strong> corresponde a la longitud de la rama de cada especie, así como <strong>c</strong> y <strong>C</strong> representan el conjunto de ramas que se encuentran en una región específica.</p>
+<p><span class="math display">\[
+PD = \sum_{\{c \in C\}} L_c
+\]</span> {eq:faith_pd}</p>
+<p><em>CANAPE (PENDIENTE)</em> <em>Regression models? (PENDIENTE)</em></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-phyloraster2023" class="csl-entry" role="listitem">
+Alves-Ferreira, G., Mota, F. M. M., Talora, D., Oliveira, C., Solé, M., &amp; Heming, N. M. (2023). Phyloraster: An r package to calculate measures of endemism and evolutionary diversity for rasters. <em>Ecography</em>, e06902. <a href="https://doi.org/10.1111/ecog.06902">https://doi.org/10.1111/ecog.06902</a>
+</div>
+<div id="ref-baldwinSpeciesRichnessEndemism2017" class="csl-entry" role="listitem">
+Baldwin, B. G., Thornhill, A. H., Freyman, W. A., Ackerly, D. D., Kling, M. M., Morueta-Holme, N., &amp; Mishler, B. D. (2017). Species richness and endemism in the native flora of <span>California</span>. <em>American Journal of Botany</em>, <em>104</em>(3), 487–501. <a href="https://doi.org/10.3732/ajb.1600326">https://doi.org/10.3732/ajb.1600326</a>
+</div>
+<div id="ref-dtable2024" class="csl-entry" role="listitem">
+Barrett, T., Dowle, M., Srinivasan, A., Gorecki, J., Chirico, M., Hocking, T., &amp; Schwendinger, B. (2024). <em>Data.table: Extension of ‘data.frame‘</em>. <a href="https://CRAN.R-project.org/package=data.table">https://CRAN.R-project.org/package=data.table</a>
+</div>
+<div id="ref-rgbif2017" class="csl-entry" role="listitem">
+Chamberlain, S., &amp; Boettiger, C. (2017). R python, and ruby clients for GBIF species occurrence data. <em>PeerJ PrePrints</em>. <a href="https://doi.org/10.7287/peerj.preprints.3304v1">https://doi.org/10.7287/peerj.preprints.3304v1</a>
+</div>
+<div id="ref-faithConservationEvaluationPhylogenetic1992a" class="csl-entry" role="listitem">
+Faith, D. P. (1992). Conservation evaluation and phylogenetic diversity. <em>Biological Conservation</em>, <em>61</em>(1), 1–10. <a href="https://doi.org/10.1016/0006-3207(92)91201-3">https://doi.org/10.1016/0006-3207(92)91201-3</a>
+</div>
+<div id="ref-gbif2024" class="csl-entry" role="listitem">
+GBIF.Org User. (2024). <em>Occurrence download</em>. The Global Biodiversity Information Facility. <a href="https://doi.org/10.15468/DL.HTNFWJ">https://doi.org/10.15468/DL.HTNFWJ</a>
+</div>
+<div id="ref-rredlist" class="csl-entry" role="listitem">
+Gearty, W., &amp; Chamberlain, S. (2025). <em>Rredlist: ’IUCN’ red list client</em>. <a href="https://doi.org/10.32614/CRAN.package.rredlist">https://doi.org/10.32614/CRAN.package.rredlist</a>
+</div>
+<div id="ref-redherbarios2024" class="csl-entry" role="listitem">
+Herbarios Mexicanos, R. de. (2024). <em>Biodiversity occurrence data published by: Red de herbarios mexicanos</em>. <a href="https://herbanwmex.net/portal" class="uri">https://herbanwmex.net/portal</a>.
+</div>
+<div id="ref-terra2024" class="csl-entry" role="listitem">
+Hijmans, R. J. (2024). <em>Terra: Spatial data analysis</em>. <a href="https://CRAN.R-project.org/package=terra">https://CRAN.R-project.org/package=terra</a>
+</div>
+<div id="ref-hinchliffSynthesisPhylogenyTaxonomy2015" class="csl-entry" role="listitem">
+Hinchliff, C. E., Smith, S. A., Allman, J. F., Burleigh, J. G., Chaudhary, R., Coghill, L. M., Crandall, K. A., Deng, J., Drew, B. T., Gazis, R., Gude, K., Hibbett, D. S., Katz, L. A., Laughinghouse, H. D., McTavish, E. J., Midford, P. E., Owen, C. L., Ree, R. H., Rees, J. A., … Cranston, K. A. (2015). Synthesis of phylogeny and taxonomy into a comprehensive tree of life. <em>Proceedings of the National Academy of Sciences</em>, <em>112</em>(41), 12764–12769. <a href="https://doi.org/10.1073/pnas.1423041112">https://doi.org/10.1073/pnas.1423041112</a>
+</div>
+<div id="ref-hippAndrewhippGlobaloaks20192025" class="csl-entry" role="listitem">
+Hipp, A. (2025). <em>Andrew-hipp/global-oaks-2019</em>.
+</div>
+<div id="ref-hippGenomicLandscapeGlobal2020" class="csl-entry" role="listitem">
+Hipp, A. L., Manos, P. S., Hahn, M., Avishai, M., Bodénès, C., Cavender-Bares, J., Crowl, A. A., Deng, M., Denk, T., Fitz-Gibbon, S., Gailing, O., González-Elizondo, M. S., González-Rodríguez, A., Grimm, G. W., Jiang, X.-L., Kremer, A., Lesur, I., McVay, J. D., Plomion, C., … Valencia-Avalos, S. (2020). Genomic landscape of the global oak phylogeny. <em>New Phytologist</em>, <em>226</em>(4), 1198–1212. <a href="https://doi.org/10.1111/nph.16162">https://doi.org/10.1111/nph.16162</a>
+</div>
+<div id="ref-elevatr" class="csl-entry" role="listitem">
+Hollister, J., Shah, T., Nowosad, J., Robitaille, A. L., Beck, M. W., &amp; Johnson, M. (2023). <em>Elevatr: Access elevation data from various APIs</em>. <a href="https://doi.org/10.5281/zenodo.8335450">https://doi.org/10.5281/zenodo.8335450</a>
+</div>
+<div id="ref-INEGI2022" class="csl-entry" role="listitem">
+Instituto Nacional de Estadística y Geografía (INEGI). (2022). <em>División política municipal, 1:250000. 2022</em>. Shapefile. Formato vectorial compuesto por 4 archivos (shp, shx, dbf, prj). <a href="http://geoportal.conabio.gob.mx/metadatos/doc/html/mun22gw.html">http://geoportal.conabio.gob.mx/metadatos/doc/html/mun22gw.html</a>
+</div>
+<div id="ref-iucn2025" class="csl-entry" role="listitem">
+IUCN. (2025). <em>The IUCN red list of threatened species. Version 2025-1</em>. <a href="https://www.iucnredlist.org" class="uri">https://www.iucnredlist.org</a>.
+</div>
+<div id="ref-morrone2017" class="csl-entry" role="listitem">
+Morrone, J. J., Escalante, T., &amp; Rodríguez-Tapia, G. (2017). Mexican biogeographic provinces 2017. <em>Zootaxa</em>, <em>4277</em>(2), 277–279.
+</div>
+<div id="ref-morrone2017shp" class="csl-entry" role="listitem">
+Morrone, J. J., Escalante, T., &amp; Rodríguez-Tapia, G. (2022). <em>Provincias biogeográficas mexicanas 2017</em>. <a href="http://geoportal.conabio.gob.mx/metadatos/doc/html/pbiogmx17gw.html" class="uri">http://geoportal.conabio.gob.mx/metadatos/doc/html/pbiogmx17gw.html</a>.
+</div>
+<div id="ref-ape2019" class="csl-entry" role="listitem">
+Paradis, E., &amp; Schliep, K. (2019). Ape 5.0: An environment for modern phylogenetics and evolutionary analyses in <span>R</span>. <em>Bioinformatics</em>, <em>35</em>, 526–528. <a href="https://doi.org/10.1093/bioinformatics/bty633">https://doi.org/10.1093/bioinformatics/bty633</a>
+</div>
+<div id="ref-sf2018" class="csl-entry" role="listitem">
+Pebesma, E. (2018). <span class="nocase">Simple Features for R: Standardized Support for Spatial Vector Data</span>. <em><span>The R Journal</span></em>, <em>10</em>(1), 439–446. <a href="https://doi.org/10.32614/RJ-2018-009">https://doi.org/10.32614/RJ-2018-009</a>
+</div>
+<div id="ref-r2024" class="csl-entry" role="listitem">
+Team, R. C. (2024). <em>R: A language and environment for statistical computing</em>. <a href="https://www.R-project.org">https://www.R-project.org</a>
+</div>
+<div id="ref-ggplot2" class="csl-entry" role="listitem">
+Wickham, H. (2016). <em>ggplot2: Elegant graphics for data analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>
+</div>
+<div id="ref-wickham2019" class="csl-entry" role="listitem">
+Wickham, H. et al. (2019). <em>Tidyverse: Easily install and load the ’tidyverse’ packages</em>. <a href="https://CRAN.R-project.org/package=tidyverse" class="uri">https://CRAN.R-project.org/package=tidyverse</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./resultados.html" class="pagination-link" aria-label="Resultados">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Resultados</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -13,15 +13,25 @@ book:
     - discusion.qmd
     - conclusion.qmd
 
-bibliography: references.bib
+bibliography:   
+  - references.bib
+  - zotero.bib
+  
+citation-style: apa
+
+crossref:
+  fig-prefix: "Figura"
 
 format:
-  html:
-    theme:
-      - cosmo
-      - brand
   pdf:
-    documentclass: scrreprt
+    number-sections: true
+    number-depth: 2
+    fig-caption: true
+    eqn-number: true
+  html:
+    number-sections: true
+    number-depth: 2
+    fig-caption: true
+    eqn-number: true
 
 editor: visual
-

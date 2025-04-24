@@ -1,0 +1,468 @@
+library(sf)
+library(tidyverse)
+library(here)
+library(data.table)
+library(ggplot2)
+
+# Read the biogeographic provinces of Mexico
+provinces <- st_read("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp")
+
+#15 km → ~0.135°
+#25 km → ~0.225°
+#35 km → ~0.315°
+#45 km → ~0.405°
+#50 km → ~0.450°
+
+# Grid resolutions to create
+grid_resolutions <- c(0.135, 0.225, 0.315, 0.405, 0.450)
+
+
+#' Create a Spatial Grid Over a Shapefile
+#'
+#' This function generates a spatial grid of square polygons with a specified resolution and clips it to the provided shapefile.
+#'
+#' @param resolution A numeric value specifying the grid cell size in the same units as the shapefile's coordinate reference system.
+#' @param shapefile An `sf` object representing the geographic region over which the grid will be created.
+#'
+#' @return An `sf` object containing the grid polygons that intersect with the input shapefile.
+#'
+#' @examples
+#' library(sf)
+#' nc <- st_read(system.file("shape/nc.shp", package = "sf"))
+#' grid <- create_grid(0.5, nc)
+#'
+#' @import sf
+#' @importFrom dplyr %>%
+#' @export
+create_grid <- function(resolution, shapefile) {
+  grid_province <- shapefile %>% 
+    st_make_grid(cellsize = resolution, what = "polygons", square = TRUE) %>%
+    st_sf() %>%
+    st_intersection(shapefile) 
+  
+  return(grid_province)
+  
+  } 
+  
+#' Count Grids by a Grouping Feature
+#'
+#' This function counts the number of grid cells in `grid_province` that belong to each unique value of the specified `grouping_feature`.
+#'
+#' @param grid_province A data frame or tibble containing a column with the grouping feature (e.g., biogeographic regions).
+#' @param grouping_feature A string specifying the column name in `grid_province` used for grouping (default: `"Provincias"`).
+#'
+#' @return A data frame with two columns: 
+#'   - The grouping feature column (e.g., `"Provincias"`) with unique values.
+#'   - `n`: The count of grid cells for each unique value of the grouping feature.
+#'
+#' @examples
+#' grid_data <- data.frame(Provincias = c("Region1", "Region2", "Region1", NA, "Region2"))
+#' count_grids(grid_data, "Provincias")
+#'
+#' @import dplyr
+#' @importFrom tidyr drop_na
+#' @export
+count_grids <- function(grid_province, grouping_feature = "JJM2017") {
+  
+  summary <- as.data.frame(grid_province) %>% 
+    drop_na(.data[[grouping_feature]]) %>% 
+    group_by(.data[[grouping_feature]]) %>% 
+    summarise(n = n(), .groups = "drop")
+  
+  return(summary)
+  
+  }
+
+
+# Create grid for each resolution in grid_resolutions
+grids <- lapply(grid_resolutions, function(res) {
+ 
+ grid <- create_grid(res, provinces) 
+ 
+ return(grid)
+ }
+)
+
+#Make the summary of the presence of the provinces in each grid size
+summary_grids <- lapply(seq_along(grids), function(i) {
+  
+  summary <- count_grids(grids[[i]]) 
+  
+  summary$resolution <- grid_resolutions[i]
+  
+  return(summary)
+}
+)
+
+
+# Rename list elements based on the resolution
+names(grids) <- paste0("grid_", grid_resolutions)
+names(summary_grids) <- paste0("grid_", grid_resolutions)
+
+summary_resolution <- do.call(rbind,summary_grids)
+
+# Asegurarse de que 'resolution' sea un factor (variable categórica)
+summary_resolution$resolution <- factor(summary_resolution$resolution)
+
+#Graphic the results
+plot_res <- ggplot(summary_resolution, aes(x = JJM2017, y = n, fill = resolution)) +
+  geom_col() +
+  facet_wrap(~resolution) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(legend.position = "none") + # Eliminar la leyenda 
+  labs(x = "Provincia Biogeográfica", y = "Número de Cuadros Totales") +
+  scale_x_discrete(labels = c(
+    "Baja Californian province" = "Baja California",
+    "Balsas Basin province" = "Cuenca del Balsas",
+    "Californian province" = "Californiana",
+    "Chiapas Highlands province" = "Altos de Chiapas",
+    "Chihuahuan Desert province" = "Desierto Chihuahuense",
+    "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
+    "Sierra Madre Occidental province" = "Sierra Madre Occidental",
+    "Sierra Madre Oriental province" = "Sierra Madre Oriental",
+    "Sierra Madre del Sur province" = "Sierra Madre del Sur",
+    "Sonoran province" = "Sonorense",
+    "Tamaulipas province" = "Tamaulipas",
+    "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
+    "Veracruzan province" = "Veracruzana",
+    "Yucatan Peninsula Province" = "Península de Yucatán"
+  ))
+  
+#Save it
+ggsave("data/out/scale_analysis/scale_analysis.png",plot_res, 
+       width = 10, height = 8, dpi = 300)
+
+
+# Save each grid as a shapefile so we can work it later
+for (grid_name in names(grids)) {
+  st_write(grids[[grid_name]], paste0("data/out/shapefiles_provinces_grid/", 
+                                      grid_name, ".shp"), delete_layer = TRUE)
+}
+
+
+# Curvas de acumulación de riqueza por provincia --------------------------
+
+# 1. Cargar funciones auxiliares (intersect_points_with_grid, calc_richness, run_richness_reps y plot_richness_accumulation)
+
+
+#' Intersects Points with Grid
+#'
+#' This function reads a grid shapefile and a CSV file containing point records, 
+#' and returns a new grid shapefile with the point records that fall inside each grid cell.
+#' 
+#' @param grid_shp_path Character. Path to the grid shapefile.
+#' @param points_csv_path Character. Path to the CSV file containing point records with coordinates X and Y.
+#' 
+#' @return A spatial data frame (sf) containing the grid with the points added to each grid cell.
+#' 
+#' @importFrom sf st_read st_as_sf st_join st_make_valid
+#' @importFrom data.table fread
+#' @importFrom dplyr mutate filter
+#' @export
+intersect_points_with_grid <- function(grid_shp_path, points_csv_path) {
+  library(sf)
+  library(data.table)
+  library(dplyr)
+  
+  grid <- st_read(grid_shp_path, quiet = TRUE) %>%
+    st_make_valid() %>% 
+    mutate(grid_id = row_number())
+  
+  points <- fread(points_csv_path) %>%
+    filter(!is.na(X) & !is.na(Y)) %>%
+    filter(X >= -118 & X <= -87, Y >= 14 & Y <= 33)
+  
+  points_sf <- st_as_sf(points, coords = c("X", "Y"), crs = 4326)
+  
+  points_in_grid <- st_join(grid, points_sf, join = st_contains)
+  
+  return(points_in_grid)
+}
+
+#' Calculates Species Richness
+#'
+#' This function calculates the species richness by randomly selecting a specified 
+#' number of grid cells within each province and counting the unique species in those cells.
+#'
+#' @param n Integer. The number of grid cells to randomly sample per province.
+#' @param df data.table. A data.table containing the columns 'JJM2017' (province identifier), 
+#'            'grid_id', and 'correctname' (species names).
+#'
+#' @return A data.table with three columns: JJM2017 (province identifier), riqueza (species richness), and n (number of grid cells).
+#' 
+#' @importFrom data.table .N .SD :=
+#' @export
+calc_richness <- function(n, df) {
+  print(paste('Calculating richness for', n, 'randomly sampled cells per province'))
+  
+  max_cells_per_province <- df[, .(max_cells = uniqueN(grid_id)), by = "JJM2017"]
+  valid_provinces <- max_cells_per_province[max_cells_per_province$max_cells >= n, JJM2017]
+  df <- df[JJM2017 %in% valid_provinces]
+  
+  randomRowSample <- df[, {
+    sampled_grid_ids <- sample(unique(grid_id), min(n, uniqueN(grid_id)))
+    .SD[grid_id %in% sampled_grid_ids]
+  }, by = "JJM2017"]
+  
+  result <- randomRowSample[, .(riqueza = uniqueN(correctname, na.rm = TRUE)), by = "JJM2017"]
+  result[, n := n]
+  
+  return(result)
+}
+
+#' Runs Species Richness Repetitions
+#'
+#' This function calculates species richness multiple times (repetitions) by randomly selecting grid cells.
+#' It then calculates the mean richness over the specified number of repetitions.
+#'
+#' @param n_reps Integer. The number of repetitions to run.
+#' @param df data.table. A data.table containing species records in the format of the output from 'intersect_points_with_grid'.
+#' @param max_n Integer. The maximum number of grid cells available to sample. If NULL, it will automatically use the maximum number of grid cells per province.
+#'
+#' @return A data.table with the species richness calculated for each repetition and the mean richness.
+#' 
+#' @importFrom data.table .SD
+#' @export
+run_richness_reps <- function(n_reps, df, max_n = NULL) {
+  max_cells <- df[, .(max = uniqueN(grid_id)), by = "JJM2017"]
+  
+  if (is.null(max_n)) {
+    max_n <- max(max_cells$max)
+  }
+  
+  summary_list <- lapply(seq_len(max_n), FUN = calc_richness, df = df)
+  richnessDT <- do.call(rbind, summary_list)[, .(JJM2017, n, riqueza1 = riqueza)]
+  
+  all_reps <- vector("list", n_reps)
+  all_reps[[1]] <- richnessDT
+  
+  for (i in 2:n_reps) {
+    print(paste("Repetition", i))
+    summary_list <- lapply(seq_len(max_n), FUN = calc_richness, df = df)
+    richnessDT <- do.call(rbind, summary_list)[, .(riqueza = riqueza)]
+    all_reps[[i]] <- richnessDT
+  }
+  
+  rarefaction <- do.call(cbind, all_reps)
+  setnames(rarefaction, c("JJM2017", "n", paste0("riqueza", 1:n_reps)))
+  rarefaction[, mean := rowMeans(.SD, na.rm = TRUE), .SDcols = paste0("riqueza", 1:n_reps)]
+  
+  return(rarefaction)
+}
+
+#' Plots Species Richness Accumulation
+#'
+#' This function generates and saves a richness accumulation curve based on the species richness calculated by the 'run_richness_reps' function.
+#' The curve shows how the species richness increases as more grid cells are sampled.
+#'
+#' @param grid_shp_path Character. Path to the grid shapefile.
+#' @param points_csv_path Character. Path to the CSV file containing point records.
+#' @param n_reps Integer. The number of repetitions for the richness calculation.
+#' @param max_n Integer. The maximum number of grid cells available to sample. If NULL, it will automatically use the maximum number of grid cells per province.
+#' @param output_dir Character. Path to the directory where the plot will be saved.
+#' @param plot_filename Character. The name of the output plot file. If NULL, the function generates a default name based on the grid file.
+#'
+#' @return A ggplot object representing the richness accumulation curve.
+#' 
+#' @importFrom ggplot2 ggplot geom_line labs ggsave theme_bw
+#' @importFrom tools file_path_sans_ext
+#' @export
+plot_richness_accumulation <- function(grid_shp_path, 
+                                       points_csv_path, 
+                                       n_reps = 10, 
+                                       max_n = NULL,
+                                       output_dir,
+                                       plot_filename = NULL) {
+  
+  if (!dir.exists(output_dir)) {
+    stop("El directorio de salida no existe. Por favor créalo antes de correr la función.")
+  }
+
+  if (is.null(plot_filename)) {
+    grid_name <- tools::file_path_sans_ext(basename(grid_shp_path))
+    plot_filename <- paste0("richness_accumulation_", grid_name, ".png")
+  }
+  
+  plot_path <- file.path(output_dir, plot_filename)
+  
+  message("Intersectando puntos con el grid...")
+  points_in_grid_sf <- intersect_points_with_grid(grid_shp_path, points_csv_path)
+  points_in_grid_dt <- as.data.table(points_in_grid_sf)
+  
+  if (!"JJM2017" %in% names(points_in_grid_dt)) {
+    stop("La columna 'JJM2017' no está presente en los datos.")
+  }
+  
+  message("Calculando riqueza acumulada...")
+  rarefaction <- run_richness_reps(n_reps = n_reps, df = points_in_grid_dt, max_n = max_n)
+  
+  message("Generando y guardando gráfica...")
+  g <- ggplot(data = rarefaction[, .(JJM2017, n, mean)], aes(x = n, y = mean, colour = JJM2017, group = JJM2017)) +
+    geom_line() +
+    theme_bw() +
+    labs(
+      x = "Número de celdas muestreadas",
+      y = "Riqueza media acumulada",
+      colour = "Provincia",
+      title = "Curva de rarefacción por provincia"
+    )
+  
+  ggsave(filename = plot_path, plot = g, width = 8, height = 6, dpi = 300)
+  
+  message("Gráfica guardada en: ", plot_path)
+  
+  return(g)
+}
+
+
+# 2. Cargar función para correr batch con varios shapefiles
+
+#' Run Batch Richness Plots for Multiple Shapefiles
+#'
+#' This function processes multiple shapefiles in a specified directory, performing species richness 
+#' accumulation analysis and generating plots for each grid. It iterates over all the shapefiles in the 
+#' provided directory, calling the `plot_richness_accumulation()` function for each one.
+#'
+#' @param grid_dir Character. Path to the directory containing grid shapefiles (.shp).
+#' @param points_csv_path Character. Path to the CSV file containing point records with coordinates (X, Y).
+#' @param n_reps Integer. The number of repetitions for the richness calculation. Default is 10.
+#' @param max_n Integer. The maximum number of grid cells available to sample. If NULL, it will automatically use the maximum number of grid cells per province.
+#' @param output_dir Character. Path to the directory where the plots will be saved.
+#'
+#' @return NULL. The function generates and saves a plot for each shapefile in the grid directory. 
+#'         The plots are saved in the specified output directory.
+#' 
+#' @details This function checks whether the input directories exist, then processes each shapefile 
+#'          by calling `plot_richness_accumulation()`. The results for each shapefile are saved in 
+#'          the output directory specified by the user. If any errors occur during processing, they 
+#'          are caught and logged, but the function continues with the next shapefile.
+#'
+#' @importFrom tools file_path_sans_ext
+#' @export
+run_batch_richness_plots <- function(grid_dir, 
+                                     points_csv_path, 
+                                     n_reps = 10, 
+                                     max_n = NULL, 
+                                     output_dir) {
+  
+  # Verifica que el directorio existe
+  if (!dir.exists(grid_dir)) stop("El directorio de grids no existe.")
+  if (!dir.exists(output_dir)) stop("El directorio de salida no existe.")
+  
+  # Lista todos los archivos .shp en el directorio
+  grid_files <- list.files(grid_dir, pattern = "\\.shp$", full.names = TRUE)
+  
+  if (length(grid_files) == 0) stop("No se encontraron archivos .shp en el directorio.")
+  
+  message("Ejecutando análisis para ", length(grid_files), " grids...")
+  
+  # Corre la función para cada grid
+  for (grid_shp in grid_files) {
+    message("\n➡ Procesando: ", basename(grid_shp))
+    
+    tryCatch({
+      plot_richness_accumulation(
+        grid_shp_path = grid_shp,
+        points_csv_path = points_csv_path,
+        n_reps = n_reps,
+        max_n = max_n,
+        output_dir = output_dir
+      )
+    }, error = function(e) {
+      message("Error procesando ", basename(grid_shp), ": ", e$message)
+    })
+  }
+  
+  message("\n Proceso completado.")
+}
+
+# 3. Ejecutar el análisis en batch
+run_batch_richness_plots(
+  grid_dir = "data/out/sf_prov_grid",                # Carpeta con los .shp
+  points_csv_path = "data/in/hgbif_completo_iucn.csv",  # Archivo CSV de puntos
+  n_reps = 5,                                        # Número de repeticiones
+  max_n = 2,                                         # Máximo de celdas por provincia
+  output_dir = "data/out/accum_provinces/"                                # Carpeta donde guardar .png
+)
+
+
+
+
+# Grafica de barras de cobertura -----------------------------------------
+
+# Definir las rutas de los shapefiles de las 5 escalas
+escalas <- list(
+  "escala_1" = "data/out/sf_prov_grid/grid_0.135.shp",
+  "escala_2" = "data/out/sf_prov_grid/grid_0.225.shp",
+  "escala_3" = "data/out/sf_prov_grid/grid_0.315.shp",
+  "escala_4" = "data/out/sf_prov_grid/grid_0.405.shp",
+  "escala_5" = "data/out/sf_prov_grid/grid_0.45.shp"
+)
+
+# Leer el CSV con los puntos (esto debe ser consistente para todas las escalas)
+puntos_csv <- "data/in/hgbif_completo_iucn.csv"
+
+# Lista para almacenar los resultados
+resultados <- list()
+
+# Iterar sobre cada escala
+for (escala_nombre in names(escalas)) {
+  # Cargar el shapefile de la escala
+  grid_shapefile <- escalas[[escala_nombre]]
+  
+  # Obtener la intersección entre los puntos y el grid de esta escala
+  intersect <- intersect_points_with_grid(grid_shapefile, puntos_csv)
+  
+  # Filtrar los registros válidos (sin NAs en correctname)
+  registros_validos <- intersect %>%
+    filter(!is.na(correctname)) %>%
+    as.data.frame()
+  
+  # Contar cuántos cuadros (grid_id) distintos hay por región biogeográfica (JJM2017)
+  conteo_cuadros <- registros_validos %>%
+    group_by(JJM2017) %>%
+    summarise(n_cuadros = n_distinct(grid_id))
+  
+  # Añadir una columna para la escala
+  conteo_cuadros$escala <- escala_nombre
+  
+  # Guardar los resultados para esta escala
+  resultados[[escala_nombre]] <- conteo_cuadros
+}
+
+# Unir todos los resultados en un solo data frame
+resultado_final <- bind_rows(resultados)
+
+# Graficar los resultados con ggplot
+g <- ggplot(resultado_final, aes(x = JJM2017, y = n_cuadros, fill = escala)) +
+  geom_col() +
+  labs(x = "Provincia Biogeográfica", y = "Número de Cuadros con Registros") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  facet_wrap(~escala, labeller = as_labeller(c(
+    "escala_1" = "0.135°",
+    "escala_2" = "0.225°",
+    "escala_3" = "0.315°",
+    "escala_4" = "0.405°",
+    "escala_5" = "0.45°"
+  ))) +
+  theme(legend.position = "none") + # Eliminar la leyenda
+  scale_x_discrete(labels = c(
+    "Baja Californian province" = "Baja California",
+    "Balsas Basin province" = "Cuenca del Balsas",
+    "Californian province" = "Californiana",
+    "Chiapas Highlands province" = "Altos de Chiapas",
+    "Chihuahuan Desert province" = "Desierto Chihuahuense",
+    "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
+    "Sierra Madre Occidental province" = "Sierra Madre Occidental",
+    "Sierra Madre Oriental province" = "Sierra Madre Oriental",
+    "Sierra Madre del Sur province" = "Sierra Madre del Sur",
+    "Sonoran province" = "Sonorense",
+    "Tamaulipas province" = "Tamaulipas",
+    "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
+    "Veracruzan province" = "Veracruzana",
+    "Yucatan Peninsula Province" = "Península de Yucatán"
+  ))
+
+#Save it
+ggsave("data/out/scale_analysis/scale_analysis2.png",g, 
+       width = 10, height = 8, dpi = 300)

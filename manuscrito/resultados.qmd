@@ -1,0 +1,203 @@
+---
+title: "Resultados"
+format: html
+---
+
+## Datos espaciales
+
+```{r include=FALSE}
+#| label: df_summary
+library(data.table)
+library(tidyverse)
+
+data <- fread("hgbif_completo_iucn.csv")
+
+data_summary <- data %>%
+  group_by(correctname) %>%
+  summarise(
+    n_registros = n(),
+    IUCN = unique(IUCN),
+    elev_min = min(elevacion_inegi, na.rm = TRUE),
+    elev_max = max(elevacion_inegi, na.rm = TRUE),
+    #seccion = first(section)
+  ) %>%
+  ungroup() %>%
+  arrange(by = n_registros)
+```
+
+La base de datos compuesta con los registros de encinos en México contiene 47586 observaciones únicas, representando a 186 especies. *Falta decir cuantos encinos de cada seccion*
+
+```{r}
+#| label: tab-data-summary-1
+#| echo: false
+#| tbl-cap: Resumen de los datos espaciales
+knitr::kable(data_summary)
+```
+
+
+## Evaluación de sesgo de muestreo/escala
+
+1. Representación de la heterogeneidad de las provincias biogeográficas por escala
+
+Las Figuras @fig-cuadrosRegion1 y @fig-cuadrosRegion2 muestran la representación de las provincias biogeográficas de México en las distintas escalas espaciales elegidas. En la Figura @fig-cuadrosRegion1 se presenta el número total de cuadros por provincia en cada escala, mientras que la Figura @fig-cuadrosRegion2 muestra el número de cuadros que contienen registros de especies.
+
+En ambas figuras, se observa una variación en la cantidad de cuadros por provincia y por escala. Algunas provincias, como el Eje Neovolcánico y la Sierra Madre del Sur, presentan consistentemente un mayor número de cuadros en comparación con otras regiones. En las escalas más finas (e.g., 0.135°), se observa un mayor número de cuadros en general, mientras que en escalas menos detalladas (e.g., 0.45°), el número de cuadros disminuye. Esta tendencia es consistente tanto para los cuadros totales como para los cuadros con registros.
+
+::: {layout-ncol="2"}
+![Representación de las provincias biogeográficas de México por escala](scale_analysis/scale_analysis.png){#fig-cuadrosRegion1}
+
+![Representación de las provincias biogeográficas de México por escala, tomando en cuenta solo los pixeles con registros](scale_analysis/scale_analysis2.png){#fig-cuadrosRegion2}
+:::
+
+@fig-cuadrosRegion1 *y* @fig-cuadrosRegion2 *. Muestran el conteo de píxeles por provincia biogeográfica. En la* @fig-cuadrosRegion1 *se presenta el número total de píxeles en cada provincia, sin considerar si contienen registros o no, mientras que en la* @fig-cuadrosRegion2 *se muestra únicamente los píxeles que contienen registros de especies.*
+
+2. Curvas de rarefacción 
+
+Las curvas de rarefacción acumulativa por provincia biogeográfica y por escala espacial muestran 
+
+::: {layout-nrow="3"}
+![Curva de rarefacción, escala 0.135](accum_provinces/richness_accumulation_grid_0.135.png){#fig-accum135}
+
+![Curva de rarefacción, escala 0.225](accum_provinces/richness_accumulation_grid_0.225.png){#fig-accum225}
+
+![Curva de rarefacción, escala 0.315](accum_provinces/richness_accumulation_grid_0.315.png){#fig-accum315}
+
+![Curva de rarefacción, escala 0.405](accum_provinces/richness_accumulation_grid_0.405.png){#fig-accum405}
+
+![Curva de rarefacción, escala 0.45](accum_provinces/richness_accumulation_grid_0.45.png){#fig-accum45}
+:::
+
+@fig-accum135 *a* @fig-accum45 *. Curvas de rarefacción por provincia biogeográfica y por escala.*
+
+3. Relación registros vs riqueza
+
+La curva de acumulación de riqueza de especies mostró una relación positiva y asintótica con el número de registros (@fig-accumrichness). Ambas curvas muestran un incremento rápido en el número de especies únicas al comienzo del muestreo, seguido de una desaceleración progresiva conforme se acumulan más registros. Este comportamiento indica que los primeros registros aportan muchas especies nuevas, pero a medida que se continúa el muestreo, la probabilidad de registrar especies adicionales disminuye.
+
+Las líneas de muestreos aleatorizados y del muestreo original varian relativamente poco, lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez. Por otra parte, a partir de aproximadamente 20,000 registros, tanto la curva azul como la nube de líneas negras comienzan a estabilizarse formando una asíntota, lo que sugiere que se ha muestreado una fracción considerable de la riqueza total potencial. 
+
+![](richness_accum_plot.png){#fig-accumrichness}
+
+@fig-accumrichness. La figura muestra la relación entre número de registros y riqueza de especies, la línea negra muestra el muestreo aleatorio en cada iteración y la azul, el orden original aleatorizado.
+
+## Árbol filogenético 
+
+```{r, include=FALSE}
+common <- fread("common_geo.csv")
+
+common_summary <- common %>%
+  group_by(correctname) %>%
+  summarise(
+    n_registros = n(),
+    IUCN = unique(IUCN),
+    elev_min = min(elevacion_inegi, na.rm = TRUE),
+    elev_max = max(elevacion_inegi, na.rm = TRUE),
+    #seccion = first(section)
+  ) %>%
+  ungroup() %>%
+  arrange(by = n_registros)
+
+```
+
+Como se puede observar en la siguiente tabla, entre el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y la base de datos de encinos, se tienen 87 especies en común, con un total de 40319 registros. 
+
+
+```{r}
+#| label: tab-tree-summary-1
+#| echo: false
+#| tbl-cap: Resumen de especies presentes en el árbol filogenético y la base de datos de encinos
+knitr::kable(common_summary)
+```
+
+
+
+## Índices de biodiversidad 
+
+La distribución espacial de la riqueza, endemismo ponderado y diversidad filogénetica presentan un patrón heterogéneo en todo México. La escala influye en la inferencia de estas tendencias, ya que se puede observar que a escalas más detalladas, la distinción de estos sitios es difusa. Al contrario de las escalas más gruesas, donde al haber más generalización, estos sitios se vuelven más visibles. 
+
+1. Riqueza general
+
+Según la escala, se pueden identificar diversos sitios de alta riqueza de especies. En el caso de la escala 0.135°, los sitios de alta riqueza se presentan al sur de Sinaloa en la Sierra Madre Occidental (SMOcc), gran parte de la Sierra Madre Oriental(SMOr), en los estados de Nuevo León, Tamaulipas y San Luis Potosí. De igual forma, hay sitios de alta riqueza en el sobrelape de la SMOr y el Eje Neovolcánico Transversal.
+
+
+*Mas bien habria que explicar como esta forma: The first one was Orizaba, located in the northern  portion of the SMS in the state of Veracruz, which concentrated  the highest spatial diversity (SR = 1450; WE = 390; PD = 40350;  WPE < 6250); the second was Sierra Juárez, in northern Oaxaca  (SR = 650; WE = 130; PD = 24000; WPE = 2400); and the third one  was Cerro Teotepec-Filo de Caballos, located in the central portion of the Sierra Sur of Guerrero (SR = 650; WE = 130; PD =24000;  WPE = 2400). *
+
+::: {layout-nrow="3"}
+![Riqueza a escala 0.135](richness_png/richness_png_0.135.png){#fig-escala0135}
+
+![Riqueza a escala 0.225](richness_png/richness_png_0.225.png){#fig-escala0225}
+
+![Riqueza a escala 0.315](richness_png/richness_png_0.315.png){#fig-escala0315}
+
+![Riqueza a escala 0.405](richness_png/richness_png_0.405.png){#fig-escala0405}
+
+![Riqueza a escala 0.450](richness_png/richness_png_0.45.png){#fig-escala0450}
+:::
+
+@fig-escala0135 *a* @fig-escala0450 *. Riqueza de especies de la base de datos con 186 especies en total para cada pixel de las distintas escalas.*
+
+
+2. Endemismo ponderado general
+
+::: {layout-nrow="3"}
+![Endemismo ponderado a escala 0.135](wendemism/wendemism_png_0.135.png){#fig-WE135}
+
+![Endemismo ponderado a escala 0.225](wendemism/wendemism_png_0.225.png){#fig-WE225}
+
+![Endemismo ponderado a escala 0.315](wendemism/wendemism_png_0.315.png){#fig-WE315}
+
+![Endemismo ponderado a escala 0.405](wendemism/wendemism_png_0.405.png){#fig-WE405}
+
+![Endemismo ponderado a escala 0.45](wendemism/wendemism_png_0.135.png){#fig-WE45}
+:::
+
+@fig-WE135 *a* @fig-WE45 *. Endemismo ponderado de la base de datos con 186 especies en total para cada pixel de las distintas escalas.*
+
+
+3. Diversidad filogénetica
+
+::: {layout-nrow="3"}
+![Diversidad filogénetica a escala 0.135](PD/PD_png_0.135.png){#fig-PD135}
+
+![Diversidad filogénetica a escala 0.225](PD/PD_png_0.225.png){#fig-PD225}
+
+![Diversidad filogénetica a escala 0.315](PD/PD_png_0.315.png){#fig-PD315}
+
+![Diversidad filogénetica a escala 0.405](PD/PD_png_0.405.png){#fig-PD405}
+
+![Diversidad filogénetica a escala 0.45](PD/PD_png_0.45.png){#fig-PD45}
+:::
+
+@fig-PD135 *a* @fig-PD45 *. Diversidad filogénetica para cada pixel de las distintas escalas. *
+
+
+4.Riqueza de especies de las especies compartidas entre la base de datos y el árbol filogénetico
+
+::: {layout-nrow="3"}
+![Riqueza de especies presentes en el árbol filogénetico a escala 0.135](richness_tree/richness_png_0.135.png){#fig-richTree135}
+
+![Riqueza de especies presentes en el árbol filogénetico a escala 0.225](richness_tree/richness_png_0.225.png){#fig-richTree225}
+
+![Riqueza de especies presentes en el árbol filogénetico a escala 0.315](richness_tree/richness_png_0.315.png){#fig-richTree315}
+
+![Riqueza de especies presentes en el árbol filogénetico a escala 0.405](richness_tree/richness_png_0.405.png){#fig-richTree405}
+
+![Riqueza de especies presentes en el árbol filogénetico a escala 0.45](richness_tree/richness_png_0.45.png){#fig-richTree45}
+:::
+
+@fig-richTree135 *a* @fig-richTree45 *. Riqueza de especies para cada pixel de las distintas escalas, solo tomando en cuenta las especies en común entre la base de datos y el árbol filogénetico. *
+
+5. Endemismo ponderado de las especies compartidas entre la base de datos y el árbol filogénetico
+
+::: {layout-nrow="3"}
+![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.135](WE_tree/wendemism_png_0.135.png){#fig-weTree135}
+
+![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.225](WE_tree/wendemism_png_0.225.png){#fig-weTree225}
+
+![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.315](WE_tree/wendemism_png_0.315.png){#fig-weTree315}
+
+![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.405](WE_tree/wendemism_png_0.405.png){#fig-weTree405}
+
+![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.45](WE_tree/wendemism_png_0.45.png){#fig-weTree45}
+:::
+
+@fig-weTree135 *a* @fig-weTree45 *. Endemismo ponderado para cada pixel de las distintas escalas, solo tomando en cuenta las especies en común entre la base de datos y el árbol filogénetico. *

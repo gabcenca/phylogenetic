@@ -1,0 +1,86 @@
+---
+title: "coordinate_cleaning"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+Before this doc, you have to go to joint_tables.qmd.
+
+Upload the necessary libraries.
+
+```{r}
+library(data.table)
+library(CoordinateCleaner)
+library(terra)
+library(here)
+library(tidyverse)
+library(data.table)
+library(ggplot2)
+```
+
+
+Upload the data frame that has the gbif and the herbario information.
+
+```{r}
+gbif_herb_raw <- fread(here::here("data/temp/gbif_herb_raw.csv"))
+```
+
+
+-Delete all the registers that do not have coordinates and with valid coordinates
+```{r}
+hgbif_herb_coor <- gbif_herb_raw %>%
+  filter(!is.na(decimalLatitude) & !is.na(decimalLongitude)) %>%
+    filter(decimalLongitude >= -118 & decimalLongitude <= -87,  
+           decimalLatitude >= 14 & decimalLatitude <= 33)      
+```
+
+-Erase the duplicates of the registers that have the same coordinates, name of specie and location.
+
+```{r}
+hgbif_no_duplicates <- hgbif_herb_coor %>%
+  distinct(decimalLatitude, decimalLongitude, correctname, .keep_all = TRUE)
+
+```
+
+Eliminar datos de capitales, centroides, cordenadas en el mar o instituciones
+
+```{r}
+hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates, 
+                               lon = "decimalLongitude",
+                               lat = "decimalLatitude",
+                               species = "correctname", 
+                               value = "clean")
+```
+
+
+Delete the records of the species that doesn't fullfill the requirements 
+```{r}
+# Vector of species to remove
+species_to_remove <- c( "Lithocarpus corneus", "Lithocarpus elegans", "Lithocarpus korthalsii", "Quercus acutangula", "Quercus alpescens", "Quercus alvordiana", "Quercus augustini",  "Quercus bourgaei", "Quercus brenesii", "Quercus buckleyi", "Quercus caudicans",
+  "Quercus cerris", "Quercus charcasana", "Quercus chartacea", "Quercus chiapensis",
+  "Quercus copeyensis", "Quercus douglasii", "Quercus dysophylla", "Quercus edwardsiae",
+  "Quercus ellipsoidalis", "Quercus floccosa", "Quercus ganderi", "Quercus geminata",
+  "Quercus ghiesbreghtii", "Quercus gilva", "Quercus ilex", "Quercus juergensenii",
+  "Quercus laevis", "Quercus laurifolia", "Quercus magnifolia", "Quercus manzanillana",
+  "Quercus melissae", "Quercus montana", "Quercus morehus", "Quercus nigra",
+  "Quercus obtusanthera", "Quercus perseaefolia", "Quercus petraea", "Quercus robur",
+  "Quercus robusta", "Quercus schultzei", "Quercus serrata", "Quercus suber",
+  "Quercus supranitida", "Quercus tardifolia", "Quercus undata", "Quercus undulata",
+  "Quercus vallicola", "Quercus verde", "Quercus virginiana", "Quercus aculcingensis"
+)
+
+# Removing rows where species column matches any in species_to_remove
+hgbif_clean <- hgbif_no_duplicates_clean %>%
+  filter(!(correctname %in% species_to_remove))
+
+write.csv(hgbif_clean, file = here::here("data/in/hgbif_clean.csv"))
+
+```
+
+
+-Proceed to extract_elevation.qmd
+
+
