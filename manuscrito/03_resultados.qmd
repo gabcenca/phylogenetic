@@ -24,10 +24,14 @@ data_summary <- data %>%
 
 La base de datos compuesta con los registros de encinos en México contiene 47586 observaciones únicas, representando a 186 especies. *Falta decir cuantos encinos de cada seccion*
 
+<!-- Creo que la tabla completa la podemos poner en un anexo -->
+
 ```{r}
 #| label: tab-data-summary-1
 #| echo: false
 #| tbl-cap: Resumen de los datos espaciales
+#| eval: false
+
 knitr::kable(data_summary)
 ```
 
@@ -36,9 +40,49 @@ knitr::kable(data_summary)
 
 1. Representación de la heterogeneidad de las provincias biogeográficas por escala
 
+<!-- Normalmente no se describen las figuras (eso se hace en el pie de figura). Normalmente se describe el resultado y se cita la figura en la que se puede ver. Por ejemplo: 
+
+Se observa una variación en la cantidad de cuadros por provincia y por escala [@fig-cuadrosRegion1; @fig-cuadrosRegion2].  
+
+-->
+
+<!-- En este apartado el chiste es describir qué tanto nos van a afectar los sesgos de muestreo en nuestras estimaciones. No creo que sea necesario describir todos los resultados con detalle sino más bien resumir los mensajes principales. Por lo tanto tenemos que averiguar cuáles son para cada sección de la evaluación del sesgo de muestreo:
+
+Representación de la heterogeneidad de las provincias biogeográficas por escala: 
+
+En esta parte tenemos que definir si las escalas nos van a permitir describir la variación dentro de las provincias biogeográficas. 
+
+Lo que yo veo es:
+1. En todas las escalas, todas las provincias están representadas por más de una celda. 
+2. Para las regiones biogeograficas pequeñas, la representación no cambia tanto en las escalas intermedias (hay que ver los numeros) pero como que me parece que por ejemplo en los Altos de Chiapas a partir de la escala 0.315 más o menos están representados por números similares de celdas.
+3. Para las regiones más grandes y con mas registros si parece haber diferencias (excepto en la de 0.405 y 0.45, ahi se parecen mucho )
+
+Hay que ver si estos patrones se repiten en los demás analisis, porque entonces a lo mejor solo nos conviene quedarnos con la 0.13, 0.225, ¿0.315? y la 0.45. 
+
+Relación registros vs riqueza
+
+Creo que vamos a sustituir la linea azul por el promedio de las aleatorizaciones porque no nos dice nada distinto la linea azul que actualmente tenemos. Sin embargo, la descripción es buena, con esta oración se resume el resultado. 
+
+La curva de acumulación de riqueza de especies mostró una asintóta con respecto al número de registros desde aprox. XX registros (@fig-accumrichness). Lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez.
+
+Curvas de rarefacción 
+
+1. Creeeeo que si hacemos un zoom en la grafica entre 0 y 500 celdas muestreadas la perspectiva de nuestras lineas va a cambiar y se van a ver más acostadas. Trata de guardar los dfs con los resultados con los que se generan las graficas para que podamos hacer pruebas. 
+
+2. En las escalas de celdas mas grandes las lineas se acuestan un poquito más que en las escalas pequeñas. 
+
+3. Hay algunas regiones biogeográficas en donde nuestras conclusiones tienen que ser tomadas con cuidado porque no sabemos si tenemos información suficiente como para considerar que conocemos la riqueza de las especies que habitan ahi. 
+ - Podemos argumentar lo que dice Baldwin 2017, que este análisis lo que hace es que toma aleatoriamente las celdas y calcula las especies y esto nos diria si esta bien muestreado si las especies están aleatoriamente distribuidas en el espacio y que además fueron muestreadas aleatoriamente. En nuestro caso no necesariamente se cumple ninguna entonces no necesariamente quiere decir que no estén bien muestreados. (sin embargo, hay que hacer las pruebas reduciendo el eje X de la grafica porque las magnitudes de las celdas son muy disparejas.)
+
+-->
+
+
+
 Las Figuras @fig-cuadrosRegion1 y @fig-cuadrosRegion2 muestran la representación de las provincias biogeográficas de México en las distintas escalas espaciales elegidas. En la Figura @fig-cuadrosRegion1 se presenta el número total de cuadros por provincia en cada escala, mientras que la Figura @fig-cuadrosRegion2 muestra el número de cuadros que contienen registros de especies.
 
 En ambas figuras, se observa una variación en la cantidad de cuadros por provincia y por escala. Algunas provincias, como el Eje Neovolcánico y la Sierra Madre del Sur, presentan consistentemente un mayor número de cuadros en comparación con otras regiones. En las escalas más finas (e.g., 0.135°), se observa un mayor número de cuadros en general, mientras que en escalas menos detalladas (e.g., 0.45°), el número de cuadros disminuye. Esta tendencia es consistente tanto para los cuadros totales como para los cuadros con registros.
+
+<!-- Recuerdame que veamos un dia como hacer figuras compuestas en R porque esta forma de acomodar las figuras funciona muy bien para los documentos html pero no sirve cuando cambias de formato a word o pdf (en pdf es como vas a terminar entregando tu tesis) -->
 
 ::: {layout-ncol="2"}
 ![Representación de las provincias biogeográficas de México por escala](img/scale_analysis/scale_analysis.png){#fig-cuadrosRegion1}
@@ -95,6 +139,8 @@ common_summary <- common %>%
 
 ```
 
+<!-- Esto lo podemos poner en la descripcion de los registros -->
+
 Como se puede observar en la siguiente tabla, entre el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y la base de datos de encinos, se tienen 87 especies en común, con un total de 40319 registros. 
 
 
@@ -102,6 +148,7 @@ Como se puede observar en la siguiente tabla, entre el árbol filogénetico de H
 #| label: tab-tree-summary-1
 #| echo: false
 #| tbl-cap: Resumen de especies presentes en el árbol filogenético y la base de datos de encinos
+#| eval: false
 knitr::kable(common_summary)
 ```
 
