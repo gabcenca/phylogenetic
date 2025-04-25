@@ -2,36 +2,84 @@ project:
   type: book
 
 book:
-  title: "titulo"
+  title: "Biogeografía de encinos de México" 
   author: "Gabriela Centeno Cabada"
   date: "4/8/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - metodologia.qmd
-    - resultados.qmd
-    - discusion.qmd
-    - conclusion.qmd
+    - 01_intro.qmd
+    - 02_metodologia.qmd
+    - 03_resultados.qmd
+    - 04_discusion.qmd
+    - 05_conclusion.qmd
+    - 06_references.qmd
+
+language: es.yml # Cambia todo lo que se añade de manera predeterminada a español (Figura, Anexo, etc.)
+lof: true # lista de figuras
+lot: true # lista de tablas
+
+crossref: 
+  appendix-title: "Anexo" # Cambiar el prefijo de los anexos a la palabra anexo
+  appendix-delim: "-"
 
 bibliography:   
-  - references.bib
-  - zotero.bib
+  - bib/references.bib
+  - bib/zotero.bib
   
-citation-style: apa
-
-crossref:
-  fig-prefix: "Figura"
+citation-style: estilo_citas.csl # Este es el estilo de citas que yo utilicé, creo que es el de APA pero lo puedes cambiar si necesitas
 
 format:
-  pdf:
-    number-sections: true
-    number-depth: 2
-    fig-caption: true
-    eqn-number: true
   html:
-    number-sections: true
-    number-depth: 2
-    fig-caption: true
-    eqn-number: true
+    theme: cosmo # Tema para el documento en html
+    execute: 
+      warning: false # evitar warnings de todos los chuncks 
+      echo: false # evitar que se muestre el código (si le pones echo: true en el chunk va a sobreescribir este comando)
+  docx: 
+    reference-doc: custom-reference.docx # Documento de estilos en Word por si la tienes que mandar a que te la corrijan (Hay que ajustar las figuras para que sean compatibles en word, html y pdf)
+    toc: true # Incluir tabla de contenido
+    toc-depth: 6 # Profundidad de las subsecciones de la tabla de contenido
+  titlepage-pdf: # Extension para poder incorporar una portada 
+    documentclass: scrbook
+    linestretch: 1.15 # Interlineado (texto en general)
+    fontsize: 12em # Tamaño de la fuente (texto en general)
+#    keep-tex: true
+    titlepage: tex/title.tex # Portada en latex (para modificar el texto de la portada busca las partes que quieras modificar en el archivo tex/title.tex)
+    include-in-header:
+      - tex/preamble.tex # Comandos para agregar opciones especiales de latex
+      - tex/packages.tex # no se si realmente esté haciendo algo. No es necesario para imprimir la portada.
+      # Ahora vamos a incluir paquetes necesarios para que quede bien en latex
+      - text: |
+          \pagestyle{fancy}
+          \fancyhf{}
+          \selectlanguage{spanish}
+          \usepackage{setspace}
+          \usepackage{float}
+          \floatplacement{table}{H}
+          \tolerance=1
+          \emergencystretch=\maxdimen
+          \hyphenpenalty=10000
+          \hbadness=10000
+          \captionsetup[figure]{labelformat=default, labelsep=space}
+          \captionsetup[table]{labelformat=default, labelsep=space}
+execute: 
+  warning: false
+  echo: false
 
-editor: visual
+
+  
+# crossref:
+#   fig-prefix: "Figura"
+# 
+# format:
+#   pdf:
+#     number-sections: true
+#     number-depth: 2
+#     fig-caption: true
+#     eqn-number: true
+#   html:
+#     number-sections: true
+#     number-depth: 2
+#     fig-caption: true
+#     eqn-number: true
+# 
+# editor: visual
