@@ -28,7 +28,10 @@ gbif_quercus_mex <- occ_download(
   format = "DWCA"
 )
 
+occ_download_meta(gbif_quercus_mex)
+
 #Then you will import the data
 records_gbif_dwc <- occ_download_get(gbif_quercus_mex, 
-                                     path = here::here("data/in/gbif_dwc/")) %>%
+                                     path = here::here("data/in/gbif_dwc/"),
+                                     overwrite = TRUE) %>%
   occ_download_import()
