@@ -22,7 +22,7 @@ library(stringr)
 
 # --- Load Data ---
 
-data <- fread("data/in/hgbif_elev_mun.csv")
+data <- fread(here::here("data/in/hgbif_elev_mun.csv"))
 
 get_iucn <- function(genus = "Quercus", epithet){
 
@@ -75,7 +75,7 @@ species <- species[!is.na(epithet)]
 status_list <- lapply(as.list(species$epithet), function(x){
   print(paste("Extracting: Quercus ",x))
   return(get_iucn(epithet = x))
-  Sys.sleep(2)
+  Sys.sleep(0.9)
 })
 
 # Convertir los valores nulos en NA
