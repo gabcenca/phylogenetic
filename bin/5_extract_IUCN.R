@@ -89,8 +89,11 @@ st_ls <- lapply(status_list, function(x){
   })
 
 # Add IUCN conservation status to species list
-species$IUCN <- unlist(st_ls)
+st_vec <- sapply(st_ls, function(x) {
+  if (is.data.frame(x)) x[[1]] else NA
+})
+
+species$IUCN <- st_vec
 
 # Save result
 fwrite(species, "data/in/conservation_status/IUCN_per_species.csv")
-
