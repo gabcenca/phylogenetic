@@ -141,7 +141,7 @@ herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.
 
 # --- Add a unique id to each value in the gbif and herbario data frames--- 
 recordsGbif_raw <- recordsGbif_raw %>%
-  mutate(id_interno = paste0("Registro_", row_number()))
+  mutate(id_interno = paste0("GBIF_", row_number()))
 
 recordsHerbario_raw <- recordsHerbario_raw %>%
   mutate(id_interno = paste0("Herb_", row_number()))

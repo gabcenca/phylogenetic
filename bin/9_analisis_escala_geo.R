@@ -4,14 +4,58 @@ library(here)
 library(data.table)
 library(ggplot2)
 
-# Read the biogeographic provinces of Mexico
-provinces <- st_read("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp")
-
 #15 km → ~0.135°
 #25 km → ~0.225°
 #35 km → ~0.315°
 #45 km → ~0.405°
 #50 km → ~0.450°
+
+#Debido a que las capas utilizadas se encontraban en un sistema de coordenadas geográficas (EPSG:4326) con datum WGS84, 
+# estas dimensiones se expresaron en grados decimales. Bajo este sistema, 1° de latitud equivale aproximadamente a 111.32 km 
+# en cualquier punto del planeta. Sin embargo, la longitud de 1° de longitud varía en función de la latitud, disminuyendo conforme 
+# se avanza hacia los polos debido a la convergencia de los meridianos. En el caso de México, esta distancia va desde 
+# \~107 km en el sur (14°N) hasta \~93 km en el norte (33°N). Esta variación implica que las celdas generadas en grados decimales 
+# no tienen una extensión uniforme en kilómetros a lo largo del territorio nacional: son más anchas en el sur y más estrechas en el norte.
+
+#La siguiente figura explica el siguiente punto, mostrando cómo se mantiene constante la longitud de 1° de latitud, mientras que la 
+#longitud de 1° de longitud disminuye con la latitud, por lo que las áreas cubiertas por cada celda difieren ligeramente en superficie real.
+
+library(ggplot2)
+library(reshape2)
+
+# Latitudes para México
+latitudes <- seq(14, 33, length.out = 200)
+earth_radius_km <- 6371
+deg_to_rad <- pi / 180
+
+# Calcular longitudes
+length_lon_km <- deg_to_rad * earth_radius_km * cos(latitudes * deg_to_rad)
+length_lat_km <- rep(111.32, length(latitudes))
+
+# Data frame
+df <- data.frame(
+  Latitud = latitudes,
+  `1° de longitud` = length_lon_km,
+  `1° de latitud` = length_lat_km
+)
+
+df_long <- melt(df, id.vars = "Latitud")
+
+# Plot
+ggplot(df_long, aes(x = Latitud, y = value, color = variable, linetype = variable)) +
+  geom_line(size = 1) +
+  scale_color_manual(values = c("1° de longitud" = "orange", "1° de latitud" = "blue")) +
+  labs(
+    title = "Variación de la distancia representada por 1° según latitud",
+    x = "Latitud (°N)", y = "Distancia (km)",
+    color = "Coordenada", linetype = "Coordenada"
+  ) +
+  theme_minimal(base_size = 14)
+
+
+# Read the biogeographic provinces of Mexico
+provinces <- st_read("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp")
+
 
 # Grid resolutions to create
 grid_resolutions <- c(0.135, 0.225, 0.315, 0.405, 0.450)

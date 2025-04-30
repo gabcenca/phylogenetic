@@ -53,6 +53,8 @@ hgbif_no_duplicates_clean <- clean_coordinates(x = hgbif_no_duplicates,
                                lat = "decimalLatitude",
                                species = "correctname", 
                                value = "clean")
+
+#Default tests Default = c("capitals", "centroids", "equal", "gbif", "institutions", "outliers", "seas", "zeros")
 ```
 
 

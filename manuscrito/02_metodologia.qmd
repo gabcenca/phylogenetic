@@ -4,115 +4,36 @@
 
 ### Obtención y depuración de datos
 
-La distribución de las especies fue inferida a partir de registros de presencia recopilados de bases de datos públicas Global Biodiversity Information Facility (GBIF) [@gbif2024] (https://doi.org/10.15468/dl.htnfwj) <!--  Falta poner el DOI de la descarga --> y de Red de Herbarios Mexicanos [@redherbarios2024]. Se consideraron todos los registros de encinos reportados para el territorio mexicano en un rango temporal 1791 a 2024 y que presentaran información de coordenadas geográficas. Para la Red de Herbarios, se consideraron registros de todas las colecciones disponibles, la lista completa de herbarios puede consultarse en el Material Suplementario 1.
+La distribución de las especies fue inferida a partir de registros de presencia recopilados de bases de datos públicas Global Biodiversity Information Facility (GBIF) [@gbif2024] (https://doi.org/10.15468/dl.bzhg67) <!--  Falta poner el DOI de la descarga --> y de Red de Herbarios Mexicanos [@redherbarios2024]. Se consideraron todos los registros de encinos reportados para el territorio mexicano en un rango temporal 1791 a 2024 y que presentaran información de coordenadas geográficas. Para la Red de Herbarios, se consideraron registros de todas las colecciones disponibles, la lista completa de herbarios puede consultarse en el Material Suplementario 1.
 
 La estandarización y validación de la nomenclatura taxonómica de las especies presentes en la base de datos, se realizó con base al backbone taxonómico de GBIF. Este procedimiento permitió homogeneizar los nombres científicos y detectar sinónimos o errores de nomenclatura, garantizando así la consistencia taxonómica en los análisis posteriores. Para ello, se utilizó la API de GBIF y el paquete `rgbif` [@rgbif2017] en R v4.3.2 [@r2024].
 
-
-Los registros fueron filtrados conservando observaciones humanas, especimenes preservados, especimenes vivos y ejemplares herborizados. Se eliminaron aquellos que no se encontraran dentro de México o estuvieran duplicados, considerando los últimos como aquellos con las mismas coordenadas e identificación taxonómica. Adicionalmente, se realizó una limpieza de coordenadas mediante la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka209], el cual verifica si las coordenadas de los registros son válidas <!-- ¿a qué te refieres con válidas? -->. Especificamente, revisa que no se encuentran dentro de un radio XX <!-- ¿qué radio? --> de las capitales o cerca <!-- ¿es el mismo radio? --> del centroides del país, con misma latitud y longitud <!-- ya se mencionó que se removieron duplicados -->, cerca de museos e instituciones científicas <!-- definir cerca  -->, registros muy aislados respecto a los demás de la misma especie <!-- definir -->, puntos en el océano y con valor de (0,0) <!-- esto ya se mencionó cuando definiste que estuvieran dentro del territorio mexicano -->. La limpieza y manipulación de datos fueron realizadas utilizando R v.4.3.2 [@r2024] y el paquete tidyverse [@wickham2019].
-
-<!-- Texto original: Para la unión y limpieza de datos se utilizó R v.4.3.2 [@r2024] y el paquete tidyverse [@wickham2019], asi como para los subsiguientes procesos. *Se tomarón registros de observaciones humanas, especimenes preservados, especimenes vivos y ejemplares herborizado.* Se eliminaron registros que no se encontraran dentro de México y que estuvieran duplicados, es decir, que tuvieran las mismas coordenadas y nombre. Para la limpieza de coordenadas se utilizo la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka209], el cual verifica si las coordenadas de los registros sean válidas, que no se encuentran dentro del radio de las capitales o cerca de los centroides del país, con misma latitud y longitud, cerca de museos e instituciones científicas, registros muy aislados respecto a los demás de la misma especie, puntos en el océano y con valor de (0,0). -->
-
-Los registros de XX especies fueron excluidas de análisis posteriores con base en los siguientes criteros. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas <!-- Tal vez conviene poner ejemplos de las principales fuentes que consultamos para determinar si son nativas o no -->. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si habían están incluidas en la filogenia <!-- cita de la filogenia --> o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. <!-- Las especies con entre 10 y 20 registros, y que no eran de distribución restringida, fueron evaluadas en función de la representación espacial de su rango geográfico. --> Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.
-
-<!-- Texto original: Por otra parte, se establecieron criterios para la inclusión de especies en los análisis. Se excluyeron aquellas que no son nativas. Las especies con más de 20 registros fueron conservadas. Aquellas con menos de 20 registros se mantuvieron únicamente si estaban incluidas en la filogenia a utilizar o si presentan una distribución restringida. Las especies con entre 10 y 20 registros, y que no eran de distribución restringida, fueron evaluadas en función de la representación espacial de su rango geográfico. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas. -->
-
-Por otro lado, el estatus de conservación de cada especie de acuerdo con la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza [@iucn2025] se recopiló mediante el paquete `rredlist` [@rredlist]. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación. <!-- No es necesario ser tan especifico: La función toma como entrada el epíteto específico de cada especie y consulta la API para obtener la evaluación más reciente disponible. -->~~Para la extracción de l~~. Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (*cita*), y una capa de división política del país [@INEGI2022]. Todo lo anterior se realizó utilizando los paquetes terra [@terra2024], sf [@sf2024, @sf2018], data.table [@dtable2024] y elevatr [@elevatr]. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. [-@morrone2017, @morrone2017shp], la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos [@morrone2017shp].
+Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Adicionalmente, se depuraron las coordenadas identificando registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la 
+la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka209], 
 
 
-<!-- Texto original: Se obtuvieron dos elevaciones, la primera con el paquete elevatr, donde se definió una precisión de aproxidamente 1.2 km (*podriamos mejorarla, con z=15, que tiene una precision de 4.8m, o tal vez borrarla*); la segunda con el Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (*cita*). Asimismo, el municipio y estado para cada registro se obtuvo a través de un archivo tipo shape que contiene la división política municipal [@INEGI2022]. 
+Los registros de XX especies fueron excluidas de análisis posteriores con base en los siguientes criterios. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas mediante la consulta de Plants of the World Online [-@POWO2025] y de Tropicos.org [@Tropicos2025]. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si están incluidas en la filogenia de Hipp et al. [-@hippGenomicLandscapeGlobal2020] o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.
 
-Para las provincias biogeográficas se tomo la clasificación hecha por Morrone et al. [-@morrone2017, @morrone2017shp], la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos [@morrone2017shp]. -->
+
+Por otro lado, el estatus de conservación de cada especie de acuerdo con la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza [@iucn2025] se recopiló mediante el paquete `rredlist` [@rredlist]. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación.
+
+Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (INEGI,2017), y una capa de división política del país [@INEGI2022]. Todo lo anterior se realizó utilizando los paquetes terra [@terra2024], sf [@sf2024, @sf2018], data.table [@dtable2024] y elevatr [@elevatr]. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. [-@morrone2017, @morrone2017shp], la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos [@morrone2017shp].
 
 
 ## Evaluación de sesgo de muestreo/escala
 
-Se evaluaron cinco escalas espaciales correspondientes a celdas de 15, 25, 35, 45 y 50 kilómetros de lado (Ver @baldwinSpeciesRichnessEndemism2017). Primero, se evaluó que las escalas de celda escogidas permitieran representar la heterogeneidad ambiental y topográfica de las provincias biogeográficas. Para esto se evaluó el número de celdas que representan cada region biogeografica considerando solo la extension de las provincias biogeográficas y considerando solo las celdas para las que se obtiuvieron registros de encinos.
+Se evaluaron cinco escalas espaciales correspondientes a celdas de 15, 25, 35, 45 y 50 kilómetros de lado (Ver @baldwinSpeciesRichnessEndemism2017) en cuanto a su representantación de la heterogeneidad ambiental y topográfica de las provincias biogeográficas. Para ello, se calculó el número de celdas que representan cada región biogeográfica considerando solo la extensión de las provincias biogeográficas y considerando solo las celdas para las que se obtuvieron registros de encinos. 
 
+Por otra parte, se evaluó la intensidad de muestreo en relación a la riqueza de especies mediante dos aproximaciones, la relación entre el número de registros con la cantidad de especies alcanzadas y a través de curvas de rarefacción de celdas con respecto a la riqueza por cada región biogeográfica, las cuales permiten estimar el número de celdas necesarias para alcanzar una representación relativamente estable[@baldwinSpeciesRichnessEndemism2017]. *Ver si esta descripcion de rarefacicon esta bien*
 
-<!-- Creo que las secciones de evaluación del sesgo de muestreo se pueden resumir en una sola. No es necesario poner exactamente como lo hicimos porque son procesos relativamente comunes. Tal vez es suficiente con describir brevemente qué es la rarefacción. 
-
-1) se evaluó que las escalas de celda escogidas permitieran representar la heterogeneidad ambiental y topográfica de las provincias biogeográficas
-2) se evaluó la intensidad de muestreo en relación con la riqueza de especies mediante dos aproximaciones: 
-  -  la relación entre el número de registros y la riqueza (riqueza vs registros)
-  - curvas de rarefacción de celdas con respecto a la riqueza por cada region biogeográfica -->
-
-
-
-<!-- Considero que esto lo podemos poner en el documento de quarto en el que hacemos estas evaluaciones:  Debido a que las capas utilizadas se encontraban en un sistema de coordenadas geográficas (EPSG:4326) con datum WGS84, estas dimensiones se expresaron en grados decimales. Bajo este sistema, 1° de latitud equivale aproximadamente a 111.32 km en cualquier punto del planeta. Sin embargo, la longitud de 1° de longitud varía en función de la latitud, disminuyendo conforme se avanza hacia los polos debido a la convergencia de los meridianos. En el caso de México, esta distancia va desde \~107 km en el sur (14°N) hasta \~93 km en el norte (33°N). Esta variación implica que las celdas generadas en grados decimales no tienen una extensión uniforme en kilómetros a lo largo del territorio nacional: son más anchas en el sur y más estrechas en el norte. La
-
-@fig-1grado ilustra esta variación, mostrando cómo se mantiene constante la longitud de 1° de latitud, mientras que la longitud de 1° de longitud disminuye con la latitud, por lo que las áreas cubiertas por cada celda difieren ligeramente en superficie real.
- -->
-
-
-<!-- Cambiar el codigo al documento de quarto -->
-
-```{r}
-#| fig-cap: "Variación de la distancia representada por un grado según la latitud en México. La longitud de un grado de latitud se mantiene constante (~111.32 km), mientras que la de un grado de longitud disminuye con la latitud."
-#| label: fig-1grado
-#| eval: false
-
-library(ggplot2)
-library(reshape2)
-
-# Latitudes para México
-latitudes <- seq(14, 33, length.out = 200)
-earth_radius_km <- 6371
-deg_to_rad <- pi / 180
-
-# Calcular longitudes
-length_lon_km <- deg_to_rad * earth_radius_km * cos(latitudes * deg_to_rad)
-length_lat_km <- rep(111.32, length(latitudes))
-
-# Data frame
-df <- data.frame(
-  Latitud = latitudes,
-  `1° de longitud` = length_lon_km,
-  `1° de latitud` = length_lat_km
-)
-
-df_long <- melt(df, id.vars = "Latitud")
-
-# Plot
-ggplot(df_long, aes(x = Latitud, y = value, color = variable, linetype = variable)) +
-  geom_line(size = 1) +
-  scale_color_manual(values = c("1° de longitud" = "orange", "1° de latitud" = "blue")) +
-  labs(
-    title = "Variación de la distancia representada por 1° según latitud",
-    x = "Latitud (°N)", y = "Distancia (km)",
-    color = "Coordenada", linetype = "Coordenada"
-  ) +
-  theme_minimal(base_size = 14)
-```
-
-
-<!-- 
-### Representación de la heterogeneidad de las provincias biogeográficas por escala
-
-Para evaluar la representación espacial de cada provincia biogeográfica, se utilizó el shapefile generado por Morrone et al. [-@morrone2017; @morrone2017shp]. Se elaboraron gráficas de barras con el paquete ggplot2 [@ggplot2] para cada una de las escalas espaciales consideradas. En estas gráficas se muestra el número de cuadros que representan a cada provincia, tanto considerando todos los cuadros de la grilla, independientemente de la presencia de registros, como únicamente aquellos cuadros que contienen registros de especies. -->
-
-
-<!-- Ver comentario general de como resumir estas secciones -->
-
-### Curvas de rarefacción
-
-Adicionalmente, se generaron curvas de rarefacción acumulativa por provincia biogeográfica y por escala espacial con el fin de evaluar la intensidad de muestreo en relación con la riqueza de especies. Estas curvas permiten estimar el número de celdas necesarias para alcanzar una representación relativamente estable de la riqueza observada en cada región, bajo el supuesto de un muestreo aleatorio [@baldwinSpeciesRichnessEndemism2017].
-
-<!-- Creo que no es necesario poner tantos detalles, se puede incluir en el documento de quarto del codigo: Para ello, se implementó un conjunto de funciones personalizadas en R que realizan los siguientes pasos: (1) intersección de los registros de especies con las celdas de cada grid, (2) muestreo aleatorio repetido de celdas dentro de cada provincia biogeográfica, (3) cálculo de la riqueza de especies para cada número acumulado de celdas y (4) graficación de las curvas promedio de acumulación a través de múltiples repeticiones (n = 50). Este procedimiento se aplicó a todos los grids disponibles, generando una curva de rarefacción para cada combinación de provincia y escala. -->
-
-### Relación registros vs riqueza
-
-Para explorar la relación entre la riqueza de especies y el número de registros disponibles, se generaron curvas de acumulación a partir de la base de datos depurada. Primero, se ordenaron aleatoriamente los registros para evitar sesgos por el orden original de los datos. Luego, se contabilizó el número de especies únicas conforme se iban incorporando progresivamente más registros, tanto de manera secuencial como mediante muestreo aleatorio sin reemplazo. Para ello, se implementaron funciones personalizadas en R v.4.3.2 [@r2024] que permitieron calcular la riqueza acumulada (número de especies únicas) para cada número incremental de registros. Se graficaron ambas curvas —una basada en el orden original aleatorizado y otra mediante muestreo aleatorio en cada iteración— para comparar los patrones de acumulación de riqueza en función del esfuerzo de muestreo.
 
 ## Construcción del marco filogenético
 
-<!-- Para aplicar el criterio de exclusión de especies descrito en el punto 1, así como para calcular la riqueza, endemismo ponderado de especies presentes en el árbol y estimar su diversidad filogenética, se utilizó -->
-
-Todas las estimaciones filogenéticas fueron realizadas con base en el árbol filogenético global del género Quercus elaborado por Hipp et al. [-@hippGenomicLandscapeGlobal2020]. Este árbol, calibrado en el tiempo y con longitudes de rama medidas en millones de años, fue generado a partir de datos RAD-seq de 632 individuos y se construyó mediante análisis de máxima verosimilitud. Para la datación, se aplicaron modelos relajados de reloj molecular con calibraciones fósiles, y se generó una versión del árbol con una sola muestra por especie. El árbol está disponible públicamente a través del repositorio del proyecto en GitHub [@hippAndrewhippGlobaloaks20192025] y también forma parte del proyecto Open Tree of Life [@hinchliffSynthesisPhylogenyTaxonomy2015]. Por otra parte, se empleó el paquete ape v5.8 [@ape2019] para podar el árbol filogenético, eliminando las especies ausentes en la base de datos y conservando únicamente aquellas coincidentes.
+Todas las estimaciones filogenéticas fueron realizadas con base en el árbol filogenético global del género Quercus elaborado por Hipp et al. [-@hippGenomicLandscapeGlobal2020]. Este árbol, calibrado en el tiempo y con longitudes de rama medidas en millones de años, fue generado a partir de datos RAD-seq de 632 individuos y se construyó mediante análisis de máxima verosimilitud. Para la datación, se aplicaron modelos relajados de reloj molecular con calibraciones fósiles, y se generó una versión del árbol con una sola muestra por especie. El árbol está disponible públicamente a través del repositorio del proyecto en GitHub [@hippAndrewhippGlobaloaks20192025] y también forma parte del proyecto Open Tree of Life [@hinchliffSynthesisPhylogenyTaxonomy2015]. Por otra parte, se "podó" el árbol filogenético, eliminando las especies ausentes en la base de datos y conservando únicamente aquellas coincidentes con el paquete `ape v5.8` [@ape2019] .
 
 ## Índices de biodiversidad
 
-Se calcularon 3 índices de biodiversidad: riqueza de especies, endemismo ponderado y diversidad filogénetica. Para calcularlos se utilizaron rasters de distribución de especies, los cuales fueron generados a partir de la base de datos, el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y el paquete de R ‘Phyloraster’[@phyloraster2023]. Estos índices se generaron para 5 escalas (15, 25, 35, 45, 50 km).
+Se calcularon 3 índices de biodiversidad: riqueza de especies, endemismo ponderado y diversidad filogénetica. Para ello, se utilizaron rasters de distribución de especies, los cuales fueron generados a partir de la base de datos, el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y el paquete `Phyloraster` [@phyloraster2023]. Estos índices se generaron para 5 escalas (15, 25, 35, 45, 50 km).
 
 La riqueza de especies se calculó con @eq-sr, donde **Sc** es el valor de presencia (1) o ausencia (0) de la especie, **c** y **C** el subconjunto de taxones que ocurren en una región determinada [@phyloraster2023].
 
@@ -120,7 +41,7 @@ $$
 SR = \sum_{c \in C} S_c
 $$ {#eq-sr}
 
-<!-- La definición no es muy clara... ¿El endemismo ponderado no es la proporción del rango geográfico de la especie representado por cada celda? (investigar). Además hay que citar el autor que lo propuso, además del paquete.-->
+<!-- La definición no es muy clara... ¿El endemismo ponderado no es la proporción del rango geográfico de la especie representado por cada celda? (investigar). Además hay que citar el autor que lo propuso, además del paquete.--> *falta esto de endemismo!!*
 
 El endemismo ponderado evalúa el rango de cada especie a una región, en función de la proporción de su rango total que se encuentra dentro de dicha región, este es calculado a través de la [@eq-we; @laffanRangeweightedMetricsSpecies2016]. Donde **r** es el rango local, **Rc** es el rango total, **c** y **C** representan el subconjunto de taxones que ocurren en una región determinada. En el caso de phyloraster, el cálculo se realiza con el área de las celdas, ya que en la mayoría de casos se trata a las celdas como si fueran del mismo tamaño [@phyloraster2023].
 
@@ -128,10 +49,10 @@ $$
 WE = \sum_{c \in C} \frac{r_C}{R_c}
 $$ {#eq-we}
 
-La diversidad filogenética de Faith [@faithConservationEvaluationPhylogenetic1992a] es calculada a través de la suma del largo de las ramas de todas las especies en una región dada, como se muestra en la ecuación @eq-faith_pd. Donde **Lc** corresponde a la longitud de la rama de cada especie, así como **c** y **C** representan el conjunto de ramas que se encuentran en una región específica.
+La diversidad filogenética de Faith [@faithConservationEvaluationPhylogenetic1992a] es calculada a través de la suma del largo de las ramas de todas las especies en una región dada, como se muestra en la ecuación @eq-faithpd. Donde **Lc** corresponde a la longitud de la rama de cada especie, así como **c** y **C** representan el conjunto de ramas que se encuentran en una región específica.
 
 $$
 PD = \sum_{\{c \in C\}} L_c
-$$ {#eq-faith_pd}
+$$ {#eq-faithpd}
 
 *CANAPE (PENDIENTE)* *Regression models? (PENDIENTE)*

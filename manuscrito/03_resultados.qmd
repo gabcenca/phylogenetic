@@ -40,6 +40,10 @@ knitr::kable(data_summary)
 
 1. Representación de la heterogeneidad de las provincias biogeográficas por escala
 
+
+
+
+
 <!-- Normalmente no se describen las figuras (eso se hace en el pie de figura). Normalmente se describe el resultado y se cita la figura en la que se puede ver. Por ejemplo: 
 
 Se observa una variación en la cantidad de cuadros por provincia y por escala [@fig-cuadrosRegion1; @fig-cuadrosRegion2].  
@@ -74,15 +78,6 @@ Curvas de rarefacción
 3. Hay algunas regiones biogeográficas en donde nuestras conclusiones tienen que ser tomadas con cuidado porque no sabemos si tenemos información suficiente como para considerar que conocemos la riqueza de las especies que habitan ahi. 
  - Podemos argumentar lo que dice Baldwin 2017, que este análisis lo que hace es que toma aleatoriamente las celdas y calcula las especies y esto nos diria si esta bien muestreado si las especies están aleatoriamente distribuidas en el espacio y que además fueron muestreadas aleatoriamente. En nuestro caso no necesariamente se cumple ninguna entonces no necesariamente quiere decir que no estén bien muestreados. (sin embargo, hay que hacer las pruebas reduciendo el eje X de la grafica porque las magnitudes de las celdas son muy disparejas.)
 
--->
-
-
-
-Las Figuras @fig-cuadrosRegion1 y @fig-cuadrosRegion2 muestran la representación de las provincias biogeográficas de México en las distintas escalas espaciales elegidas. En la Figura @fig-cuadrosRegion1 se presenta el número total de cuadros por provincia en cada escala, mientras que la Figura @fig-cuadrosRegion2 muestra el número de cuadros que contienen registros de especies.
-
-En ambas figuras, se observa una variación en la cantidad de cuadros por provincia y por escala. Algunas provincias, como el Eje Neovolcánico y la Sierra Madre del Sur, presentan consistentemente un mayor número de cuadros en comparación con otras regiones. En las escalas más finas (e.g., 0.135°), se observa un mayor número de cuadros en general, mientras que en escalas menos detalladas (e.g., 0.45°), el número de cuadros disminuye. Esta tendencia es consistente tanto para los cuadros totales como para los cuadros con registros.
-
-<!-- Recuerdame que veamos un dia como hacer figuras compuestas en R porque esta forma de acomodar las figuras funciona muy bien para los documentos html pero no sirve cuando cambias de formato a word o pdf (en pdf es como vas a terminar entregando tu tesis) -->
 
 ::: {layout-ncol="2"}
 ![Representación de las provincias biogeográficas de México por escala](img/scale_analysis/scale_analysis.png){#fig-cuadrosRegion1}
