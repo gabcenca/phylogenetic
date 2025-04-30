@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>El Colegio de la Frontera SurUnidad San Cristóbal de las CasasDepartamento de Conservación de la BiodiversidadGrupo Conservación y Restauración de Bosques</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Carretera Panamericana y Periférico Sur s/n</deliveryPoint>
                 <city>San Cristóbal de Las Casas</city>
                 <administrativeArea>Chiapas</administrativeArea>
                 <postalCode>29290</postalCode>
@@ -47,19 +46,19 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Mediante inventarios florísticos detallados, se determinará la estructura poblacional de tres especies de Gimnospermas del dosel (Pinus chiapensis, Pinus oocarpa var. ochoterenai y Podocarpus matudai) y de seis especies de Angiospermas del sotobosque (Magnolia sharpii, Nyssa sylvatica, Olmediella betschleriana, Persea americana, Persea schiedeana y Prunus rhamnoides), distribuidas en las montañas del Norte de Chiapas. La distribución y abundancia de las especies se relacionará con algunas variables ambientales (exposición, pendiente, altitud, luz, temperatura, humedad relativa, etc.) para reconocer los requerimientos de hábitat e identificar condiciones para la regeneración natural. Partimos de un conocimiento florístico considerable a nivel regional, pero carecemos de información detallada del estado de las poblaciones de numerosas especies arboreas. Este estudio intentará mediante un enfoque ecológico cuantitativo, establecer los antecedentes para un plan de recuperación de las poblaciones en sus hábitats naturales mediante prácticas de restauración. Se iniciará con la colecta masiva de semillas de estas epecies con el objetivo de establecer un banco de semillas para la obtención de sus plántulas que puedan usarse en experimentos de reintroducción en sitios aledaños a su área de distribución natural.</para>
-<para>Reino: 1
+            <para>Mediante inventarios florísticos detallados, se determinará la estructura poblacional de tres especies de Gimnospermas del dosel (Pinus chiapensis, Pinus oocarpa var. ochoterenai y Podocarpus matudai) y de seis especies de Angiospermas del sotobosque (Magnolia sharpii, Nyssa sylvatica, Olmediella betschleriana, Persea americana, Persea schiedeana y Prunus rhamnoides), distribuidas en las montañas del Norte de Chiapas. La distribución y abundancia de las especies se relacionará con algunas variables ambientales (exposición, pendiente, altitud, luz, temperatura, humedad relativa, etc.) para reconocer los requerimientos de hábitat e identificar condiciones para la regeneración natural. Partimos de un conocimiento florístico considerable a nivel regional, pero carecemos de información detallada del estado de las poblaciones de numerosas especies arboreas. Este estudio intentará mediante un enfoque ecológico cuantitativo, establecer los antecedentes para un plan de recuperación de las poblaciones en sus hábitats naturales mediante prácticas de restauración. Se iniciará con la colecta masiva de semillas de estas epecies con el objetivo de establecer un banco de semillas para la obtención de sus plántulas que puedan usarse en experimentos de reintroducción en sitios aledaños a su área de distribución natural.</para><para>Reino: 1
 Filo: 1
-Clase: 2
+Clase: 3
 Orden: 34
 Familia: 57
 Género: 89
 Subgénero: 5
-Especie: 111</para>
+Especie: 111
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -95,10 +94,10 @@ Especie: 111</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (CHIAPAS)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-92.935</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-92.875</eastBoundingCoordinate>
-                    <northBoundingCoordinate>17.239</northBoundingCoordinate>
-                    <southBoundingCoordinate>17.138</southBoundingCoordinate>
+                    <westBoundingCoordinate>-92.934722</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-92.875278</eastBoundingCoordinate>
+                    <northBoundingCoordinate>17.238889</northBoundingCoordinate>
+                    <southBoundingCoordinate>17.137778</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -116,7 +115,7 @@ Especie: 111</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Pinopsida
 Orden: Gentianales, Cornales, Fagales, Polypodiales, Arecales, Ericales, Cyatheales, Asterales, Rosales, Pinales, Sapindales, Lamiales, Myrtales, Laurales, Apiales, Dipsacales, Saxifragales, Fabales, Malpighiales, Malvales, Magnoliales, Crossosomatales, Araucariales, Aquifoliales, Solanales, Proteales, Chloranthales, Marattiales, Celastrales, Picramniales, Oxalidales, Cucurbitales, Piperales, Garryales
 Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphylacaceae, Primulaceae, Cyatheaceae, Asteraceae, Rosaceae, Pinaceae, Anacardiaceae, Verbenaceae, Melastomataceae, Lauraceae, Araliaceae, Adoxaceae, Altingiaceae, Styracaceae, Clethraceae, Monimiaceae, Fabaceae, Ericaceae, Salicaceae, Malvaceae, Magnoliaceae, Dicksoniaceae, Staphyleaceae, Myrtaceae, Podocarpaceae, Actinidiaceae, Rhamnaceae, Thymelaeaceae, Aquifoliaceae, Cornaceae, Clusiaceae, Solanaceae, Myricaceae, Sabiaceae, Sapindaceae, Chloranthaceae, Scrophulariaceae, Meliaceae, Oleaceae, Symplocaceae, Marattiaceae, Onagraceae, Rutaceae, Moraceae, Celastraceae, Picramniaceae, Betulaceae, Cunoniaceae, Coriariaceae, Urticaceae, Piperaceae, Garryaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -129,11 +128,15 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -948,11 +951,6 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Persea americana</taxonRankValue>
-                    <commonName>aguacate (Náhuatl), aguacate Atlixco, aguacate Chiapas, aguacate Hass , aguacate Puebla, aguacate Sinaloa, aguacate antillano, aguacate cimarrón, aguacate criollo, aguacate de mono, aguacate fuerte, aguacate guajillo, aguacate guatemalteco, aguacate mexicano, aguacate oloroso, aguacate regional, aguacate rincón, aguacatillo, aguacatillo blanco, ahoacacuáhuitl (Náhuatl), ahuacat (Náhuatl), basholobó (Cuicateco), cakuta (Tepehua), cic on (Tseltal), cucataj (Totonaco), cupanda (Tarasco), cuu t&apos; p&apos; (Mixe), cuu t&apos;p&apos; (Mixe), cuytuim (Popoloca), hoja de aguacate, kukutaj (Totonaco), laurel, lhpau (Totonaco), lhpuy (Totonaco), ohui (Zoque), oj (Huasteco), on (Maya), oon (Maya), pagua, pahua (Náhuatl), palo de aguacate, palta, s&apos;ö&apos;nü (Mazahua), shamal (Chontal de Oaxaca), tatsán (Otomí), tsi&apos;ngu&apos;t&apos;p (Mixe), tunuá (Popoloca), tutiti (Mixteco), tzani (Otomí), tzitzón (Tojolabal), uj (Huasteco), uuy (Huasteco), xijtscu&apos;t&apos;p&apos; (Mixe), yashusa (Zapoteco), yaujca (Cora), yaxhu (Zapoteco), yéuca-te (Huichol)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Oreopanax xalapensis</taxonRankValue>
                     <commonName>acubisi (Zoque), cinco hojas, jabnal (Tsotsil), macuilillo, mano de danta, mano de león, mano de tigre, masorquilla, mata palo, mazorca, mazorquilla, palmillo, palo de agua, paraguas, pata de gallo, texcuitl (Náhuatl)</commonName>
                 </taxonomicClassification>
@@ -960,6 +958,11 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Viburnum jucundum</taxonRankValue>
                     <commonName>tzotzilté (Tsotsil)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Persea americana</taxonRankValue>
+                    <commonName>aguacate (Náhuatl), aguacate Atlixco, aguacate Chiapas, aguacate Hass , aguacate Puebla, aguacate Sinaloa, aguacate antillano, aguacate cimarrón, aguacate criollo, aguacate de mono, aguacate fuerte, aguacate guajillo, aguacate guatemalteco, aguacate mexicano, aguacate oloroso, aguacate regional, aguacate rincón, aguacatillo, aguacatillo blanco, ahoacacuáhuitl (Náhuatl), ahuacat (Náhuatl), basholobó (Cuicateco), cakuta (Tepehua), cic on (Tseltal), cucataj (Totonaco), cupanda (Tarasco), cuu t&apos; p&apos; (Mixe), cuu t&apos;p&apos; (Mixe), cuytuim (Popoloca), hoja de aguacate, kukutaj (Totonaco), laurel, lhpau (Totonaco), lhpuy (Totonaco), ohui (Zoque), oj (Huasteco), on (Maya), oon (Maya), pagua, pahua (Náhuatl), palo de aguacate, palta, s&apos;ö&apos;nü (Mazahua), shamal (Chontal de Oaxaca), tatsán (Otomí), tsi&apos;ngu&apos;t&apos;p (Mixe), tunuá (Popoloca), tutiti (Mixteco), tzani (Otomí), tzitzón (Tojolabal), uj (Huasteco), uuy (Huasteco), xijtscu&apos;t&apos;p&apos; (Mixe), yashusa (Zapoteco), yaujca (Cora), yaxhu (Zapoteco), yéuca-te (Huichol)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1041,7 +1044,7 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Toxicodendron radicans</taxonRankValue>
-                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1179,7 +1182,7 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja americana</taxonRankValue>
-                    <commonName>hierba de la mosca, jacte (Huasteco), lengua de vaca, salvia real, tabaquillo, tepozan, tzelepat (Tseltal)</commonName>
+                    <commonName>hierba de la mosca, jacte (Huasteco), lengua de vaca, salvia real, tabaquillo, tepozán, tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1410,7 +1413,7 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1441,6 +1444,7 @@ Familia: Rubiaceae, Nyssaceae, Fagaceae, Dennstaedtiaceae, Arecaceae, Pentaphyla
                 <studyAreaDescription>
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Plantas
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acebos, yerba mate
@@ -1469,7 +1473,6 @@ con flores como palos de agua
 con flores como palos verdes
 con flores como pimientas
 con flores como plantas del aceite negro
-NO DISPONIBLE
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -1480,8 +1483,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:23Z</dateStamp>
-                <citation>Ramírez Marcial N, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Regeneración de especies arbóreas del bosque mesófilo en las montañas del norte de Chiapas. Version 1.16. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/z8pcle accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:35Z</dateStamp>
+                <citation>Ramírez Marcial N, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Regeneración de especies arbóreas del bosque mesófilo en las montañas del norte de Chiapas. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/z8pcle accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-L031-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1514,13 +1517,13 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-L031-L031_apendice36circulos-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>42</endRange>
+                        <endRange>6,029</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

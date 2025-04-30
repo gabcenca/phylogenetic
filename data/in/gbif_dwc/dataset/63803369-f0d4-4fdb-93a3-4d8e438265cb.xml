@@ -38,12 +38,11 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-02
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Se propone la construcción de una base de datos (en el Sistema de Información Biotica y de acuerdo al Anexo I de la Convocatoria GEFAgrobiodiversidad Mexicana 01), que incluya un mínimo de 800 registros y aproximadamente 150 especies de plantas cultivadas, fomentadas y/o toleradas presentes en los sistemas agrícolas tradicionales de los Tepehuanes del Sur, así como de sus parientes silvestres y otras plantas silvestres comestibles aprovechadas por esta etnia. El área de estudio, en la Sierra Madre Occidental, extremo sur del estado de Durango, se ha reconocido como un centro de endemismo y de diversidad vegetal alta e incluye parte de las RTP 57 y 59 (Guacamayita y Cueca del Río Jesús María). Este trabajo constituirá la primera documentación etnobotánica de la agricultura tradicional tepehuana y contribuirá a la sistematización de la información sobre poco más de 100 especies silvestres útiles (comestibles), resultado de trabajo de campo etnobotánico en el pasado y que se encuentra disponible en documentos inéditos y etiquetas de especímenes del Herbario CIIDIR</para>
-<para>Reino: 1
+            <para>Se propone la construcción de una base de datos (en el Sistema de Información Biotica y de acuerdo al Anexo I de la Convocatoria GEFAgrobiodiversidad Mexicana 01), que incluya un mínimo de 800 registros y aproximadamente 150 especies de plantas cultivadas, fomentadas y/o toleradas presentes en los sistemas agrícolas tradicionales de los Tepehuanes del Sur, así como de sus parientes silvestres y otras plantas silvestres comestibles aprovechadas por esta etnia. El área de estudio, en la Sierra Madre Occidental, extremo sur del estado de Durango, se ha reconocido como un centro de endemismo y de diversidad vegetal alta e incluye parte de las RTP 57 y 59 (Guacamayita y Cueca del Río Jesús María). Este trabajo constituirá la primera documentación etnobotánica de la agricultura tradicional tepehuana y contribuirá a la sistematización de la información sobre poco más de 100 especies silvestres útiles (comestibles), resultado de trabajo de campo etnobotánico en el pasado y que se encuentra disponible en documentos inéditos y etiquetas de especímenes del Herbario CIIDIR</para><para>Reino: 1
 Filo: 1
 Clase: 1
 Orden: 22
@@ -51,7 +50,8 @@ Familia: 37
 Género: 56
 Subgénero: 4
 Especie: 142
-Epitetoinfraespecifico: 21</para>
+Epitetoinfraespecifico: 21
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -87,10 +87,10 @@ Epitetoinfraespecifico: 21</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (DURANGO, JALISCO, SINALOA, ZACATECAS)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-106.563</westBoundingCoordinate>
+                    <westBoundingCoordinate>-106.56267</westBoundingCoordinate>
                     <eastBoundingCoordinate>-102.7</eastBoundingCoordinate>
-                    <northBoundingCoordinate>25.486</northBoundingCoordinate>
-                    <southBoundingCoordinate>21.133</southBoundingCoordinate>
+                    <northBoundingCoordinate>25.486389</northBoundingCoordinate>
+                    <southBoundingCoordinate>21.133492</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -108,7 +108,7 @@ Epitetoinfraespecifico: 21</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida
 Orden: Asparagales, Cucurbitales, Caryophyllales, Fabales, Solanales, Dipsacales, Malvales, Malpighiales, Oxalidales, Rosales, Dioscoreales, Fagales, Santalales, Asterales, Brassicales, Laurales, Poales, Myrtales, Sapindales, Lamiales, Apiales, Ericales
 Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amaranthaceae, Solanaceae, Begoniaceae, Caprifoliaceae, Portulacaceae, Malvaceae, Euphorbiaceae, Polygonaceae, Oxalidaceae, Rosaceae, Dioscoreaceae, Fagaceae, Olacaceae, Amaryllidaceae, Asteraceae, Brassicaceae, Lauraceae, Poaceae, Iridaceae, Chenopodiaceae, Moraceae, Myrtaceae, Anacardiaceae, Cannabaceae, Juglandaceae, Malpighiaceae, Verbenaceae, Apiaceae, Ericaceae, Lamiaceae, Sapotaceae, Rutaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -121,7 +121,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -611,6 +611,21 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phytolacca icosandra</taxonRankValue>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Agave (Agave) salmiana</taxonRankValue>
+                    <commonName>agave, agua miel, aguamiel, maguey, maguey aguamielero, maguey bronco, maguey cimarrón, maguey manso, maguey palmilla, maguey pinto, maguey pulquero, maguey verde, pulque</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Amaranthus hybridus</taxonRankValue>
+                    <commonName>amaranto, ba-llaa (Zapoteco), bledo, ca&apos;ara&apos;i (Cora), ca&apos;ca (Totonaco), cacalosúchil (Mixe), cani (Otomí), carricillo, ca&apos;ca (Totonaco), chacua (Tarasco), chú&apos;yaca (Tarahumara), je&apos;pal (Huasteco), ka (Maya), moco de pavo, quelite, quelite blanco, quelite bueno, quelite de cochino, quelite de marrano, quelite de puerco, quelite espinoso, quelite morado, quelite quintanil, quintonil, quintonil blanco, quintonil grande, quiye&apos;uxa (Huichol), quílitl (Náhuatl), saua-sacaca (Totonaco), saua-shalsoco (Totonaco), saua-shasoco (Totonaco), shacua (Tarasco), shitjá (Otomí), tsaua (Totonaco), ueiui (Guarijío), ueymi (Guarijío), xidha (Otomí)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opuntia ficus-indica</taxonRankValue>
                     <commonName>amarilla venadera, blanca, burrona, cactus, calabaza, chapeada, cristalina, fafayuco, heel cocsar yaa (Seri), heel cooxp (Seri), ixcaha (Otomí), manzana, nocheznopalli (Náhuatl), nochtli (Náhuatl), nopal, nopal blanco, nopal castilla, nopal de alfajayuca, nopal de alfajayucan, nopal de castilla, nopal de cerro, nopal de coyote, nopal de huerta, nopal de lengua, nopal de raíz, nopal espinudo, nopal guinda, nopal italiano, nopal manso, nopal oreja de elefante, nopal orejón, nopal pelón, nopal silvestre, nopal sin espinas, nopal xoconoxtle, nopalh (Náhuatl), nopalitos, nopalli (Náhuatl), nopalnocheztli (Náhuatl), papantón, picochulo, reina, soconochtli, tlalnopal (Náhuatl), tuna, tuna amarilla, tuna blanca, tuna colorada, tuna de Alfajayuca, tuna de alfajayucan, tuna de campo, tuna de castilla, tuna encarnada, tuna fina, tuna guinda, tuna lisa, tuna mansa, tuna roja mansa, tzaponochnopalli (Náhuatl), xoconoxtle blanco, zapotnochtli (Náhuatl)</commonName>
                 </taxonomicClassification>
@@ -626,21 +641,6 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Agave (Agave) salmiana</taxonRankValue>
-                    <commonName>agave, agua miel, aguamiel, maguey, maguey aguamielero, maguey bronco, maguey cimarrón, maguey manso, maguey palmilla, maguey pinto, maguey pulquero, maguey verde, pulque</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Amaranthus hybridus</taxonRankValue>
-                    <commonName>amaranto, ba-llaa (Zapoteco), bledo, ca&apos;ara&apos;i (Cora), ca&apos;ca (Totonaco), cacalosúchil (Mixe), cani (Otomí), carricillo, ca&apos;ca (Totonaco), chacua (Tarasco), chú&apos;yaca (Tarahumara), je&apos;pal (Huasteco), ka (Maya), moco de pavo, quelite, quelite blanco, quelite bueno, quelite de cochino, quelite de marrano, quelite de puerco, quelite espinoso, quelite morado, quelite quintanil, quintonil, quintonil blanco, quintonil grande, quiye&apos;uxa (Huichol), quílitl (Náhuatl), saua-sacaca (Totonaco), saua-shalsoco (Totonaco), saua-shasoco (Totonaco), shacua (Tarasco), shitjá (Otomí), tsaua (Totonaco), ueiui (Guarijío), ueymi (Guarijío), xidha (Otomí)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Capsicum annuum</taxonRankValue>
                     <commonName>a&apos;h&apos;max-ik (Maya), acxispin (Tepehua), aji, akgtsispin (Totonaco), bumi (Otomí), c&apos;auasi ts&apos;irápsi (Tarasco), cahuasa (Tarasco), cancol (Tepehuano del sur), cauas (Tarasco), cauasi turípiti (Tarasco), causi córata charápiti (Tarasco), ch&apos;uhuk-ik (Maya), chak-ik (Maya), chil (Náhuatl), chile, chile ancho, chile chiapas, chile de chocolate, chile de monte, chile de árbol, chile huachinango, chile max (Maya), chile morita, chile mulato, chile pico de paloma, chile piquín, chile poblano, chile serrano, chile siete caldos, chile tampiqueño, chile valenciano, chile verde, chilillo, chilpitza (Náhuatl), chiltepiquin, chiltipín, chipilín, co&apos;ocori (Mayo), coquee-quizil (Seri), corí (Tarahumara), coríqui (Tarahumara), cu&apos;ucuri (Cora), cucú-rite (Huichol), dya-ah (Mixteco), fúguñi (Otomí), gu&apos;ucuri (Cora), guiña (Zapoteco), guiña-shigandú (Zapoteco), i&apos;k (Maya), ich (Tseltal), itz (Huasteco), jonnigüi (Zoque), jonnihui (Zoque), juñi (Otomí), jónguñi (Otomí), lactzu-pi&apos;n (Totonaco), maax-ik (Maya), max (Maya), max-ik (Maya), nguisa (Otomí), pi&apos;n (Totonaco), pico de pájaro, pimiento morrón, pin (Totonaco), scumpi&apos;n&apos; (Totonaco), siete caldos, stac&apos;apin (Totonaco), stakna&apos; (Totonaco), tepenchile, tzacam-itz (Huasteco), yaax-ik (Maya), ñi (Otomí)</commonName>
                 </taxonomicClassification>
@@ -652,7 +652,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opuntia leucotricha</taxonRankValue>
-                    <commonName>duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal duraznillo, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
+                    <commonName>cambray, coyonoxtle, duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal de Durango, nopal duraznillo, nopal mantequilla, nopal tapón, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -741,7 +741,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opuntia durangensis</taxonRankValue>
-                    <commonName>nopal, nopal de Durango, nopal mantequilla, nopal tapón, tuna duraznillo, xoconostle</commonName>
+                    <commonName>cambray, coyonoxtle, duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal de Durango, nopal duraznillo, nopal mantequilla, nopal tapón, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -792,11 +792,6 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Amaranthus hypochondriacus</taxonRankValue>
-                    <commonName>alegría, amaranto, ba-llaa (Zapoteco), bledo, ca&apos;ara&apos;i (Cora), ca&apos;ca (Totonaco), cacalosúchil (Mixe), cani (Otomí), carricillo, chacua (Tarasco), chith (Huasteco), chía de chapata, chú&apos;yaca (Tarahumara), guaute, huajquilitl (Náhuatl), huaute, huautli (Náhuatl), ka (Maya), moco de pavo, quelite, quelite blanco, quelite de cochino, quelite de puerco, quelite de semilla chiquita (Náhuatl), quelite espinoso, quelite morado, quelite quintanil, quelite rojo, quintonil, quintonil rojo, quintonile morado, quiye&apos;uxa (Huichol), quílitl (Náhuatl), saua-sacaca (Totonaco), saua-shalsoco (Totonaco), shacua (Tarasco), shiim (Seri), shitjá (Otomí), tsaua (Totonaco), tzahua (Totonaco), ueiui (Guarijío), ueymi (Guarijío), zíim (shiim) (Seri)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Oxalis alpina</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -838,6 +833,11 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Vigna unguiculata</taxonRankValue>
                     <commonName>barroso, chícharo de vaca, frijol chipo, frijol de castilla, frijol pelón, frijol tripa de pollo, frijol tripa de tuza, ishpaluhua-saca (Totonaco), limoncillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Amaranthus hypochondriacus</taxonRankValue>
+                    <commonName>alegría, amaranto, ba-llaa (Zapoteco), bledo, ca&apos;ara&apos;i (Cora), ca&apos;ca (Totonaco), cacalosúchil (Mixe), cani (Otomí), carricillo, chacua (Tarasco), chith (Huasteco), chía de chapata, chú&apos;yaca (Tarahumara), guaute, huajquilitl (Náhuatl), huaute, huautli (Náhuatl), ka (Maya), moco de pavo, quelite, quelite blanco, quelite de cochino, quelite de puerco, quelite de semilla chiquita (Náhuatl), quelite espinoso, quelite morado, quelite quintanil, quelite rojo, quintonil, quintonil rojo, quintonile morado, quiye&apos;uxa (Huichol), quílitl (Náhuatl), saua-sacaca (Totonaco), saua-shalsoco (Totonaco), shacua (Tarasco), shiim (Seri), shitjá (Otomí), tsaua (Totonaco), tzahua (Totonaco), ueiui (Guarijío), ueymi (Guarijío), zíim (shiim) (Seri)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -997,7 +997,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus cotinifolia</taxonRankValue>
-                    <commonName>alamo, amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), árbol de leche</commonName>
+                    <commonName>amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), álamo, árbol de leche</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1058,7 +1058,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus crocata</taxonRankValue>
-                    <commonName>akkúun (Maya), amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora, álamo</commonName>
+                    <commonName>akkúun (Maya), alamo, amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1107,7 +1107,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia hispanica</taxonRankValue>
-                    <commonName>chaa (Zapoteco), chian (Náhuatl), chía, gueeza chaa (Zapoteco), queeza-chaa (Zapoteco), salvia</commonName>
+                    <commonName>chaa (Zapoteco), chian (Náhuatl), chía, chía de castilla, gueeza chaa (Zapoteco), queeza-chaa (Zapoteco), salvia</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1240,7 +1240,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1258,12 +1258,12 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
-                    <commonName>beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
+                    <taxonRankValue>Phaseolus grayanus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Phaseolus grayanus</taxonRankValue>
+                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
+                    <commonName>beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1383,7 +1383,7 @@ Familia: Asparagaceae, Cucurbitaceae, Cactaceae, Fabaceae, Phytolaccaceae, Amara
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1444,8 +1444,8 @@ con flores como muérdagos, sándalos</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:51Z</dateStamp>
-                <citation>González Elizondo M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Agrobiodiversidad de géneros selectos, parientes silvestres y quelites en un área de importancia biocultural en Durango. Version 1.1. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xgqff7 accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:31Z</dateStamp>
+                <citation>González Elizondo M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Agrobiodiversidad de géneros selectos, parientes silvestres y quelites en un área de importancia biocultural en Durango. Version 1.2. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xgqff7 accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-RG025-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1478,7 +1478,7 @@ con flores como muérdagos, sándalos</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-RG025-RG0252204F-NA</collectionIdentifier>
-                    <collectionName>Colección de Germoplasma;CNRG;Centro Nacional de Recursos Genéticos, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CNRG-INIFAP</collectionName>
+                    <collectionName>REVISADO;NO APLICA;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -1488,14 +1488,13 @@ con flores como muérdagos, sándalos</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-RG025-RG0252204F-NA</collectionIdentifier>
-                    <collectionName>REVISADO;NO APLICA;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                    <collectionName>Colección de Germoplasma;CNRG;Centro Nacional de Recursos Genéticos, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CNRG-INIFAP</collectionName>
                 </collection>
-                <specimenPreservationMethod>OTHER</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>7</endRange>
+                        <endRange>811</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

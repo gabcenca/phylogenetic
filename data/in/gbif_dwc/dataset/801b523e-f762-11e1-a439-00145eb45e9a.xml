@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Autónoma de ChihuahuaFacultad de Zootecnia y EcologíaDivisión de Posgrado e InvestigaciónDepartamento de Recursos Naturales y Ecología</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Km 1 Periférico Francisco R Almada</deliveryPoint>
                 <city>Chihuahua</city>
                 <administrativeArea>Chihuahua</administrativeArea>
                 <postalCode>31031</postalCode>
@@ -48,20 +47,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Debido a la poca información disponible de la vegetación de la Sierra Tarahumara, en lo que se conoce como Baja Tarahumara, se determinó la necesidad de generar la información florística para acrecentar el acervo botánico de México. No obstante que existen trabajos sobre plantas vasculares de la Alta Tarahumara, estos no arrojan información completa sobre las especies debido a la diferencia de clima que domina en las dos regiones, siendo una dominada por un bosque tropical caducifolio y la otra por bosques de pino-encinos. La Baja Tarahumara o Barrancas del Cobre ocupa una superficie de 126,653 hectáreas, ubicada geográficamente entre los 27º00&#39;00&#34;Lat. N.Y.107º45&#39;00&#34; Long. W. Se pretende hacer un inventario florístico de la zona, recolectando especies en forma sistematizada desde las regiones adyacentes de la Alta Tarahumara hasta la Baja Tarahumara. Los ejemplares de plantas recolectadas serán depositados en tres herbarios diferentes: Herbario de la Facultad de Zootecnia (CHIH) Universidad Autónoma de Chihuahua, Herbario de la Universidad Estatal de Nuevo México (NMC), Herbario Nacional (MEXU) y el Herbario del Instituto Politécnico Nacional (ENCB). Se enviará una base de datos a la CONABIO que consiste de un listado florístico.</para>
-<para>Reino: 1
+            <para>Debido a la poca información disponible de la vegetación de la Sierra Tarahumara, en lo que se conoce como Baja Tarahumara, se determinó la necesidad de generar la información florística para acrecentar el acervo botánico de México. No obstante que existen trabajos sobre plantas vasculares de la Alta Tarahumara, estos no arrojan información completa sobre las especies debido a la diferencia de clima que domina en las dos regiones, siendo una dominada por un bosque tropical caducifolio y la otra por bosques de pino-encinos. La Baja Tarahumara o Barrancas del Cobre ocupa una superficie de 126,653 hectáreas, ubicada geográficamente entre los 27º00&amp;#39;00&amp;#34;Lat. N.Y.107º45&amp;#39;00&amp;#34; Long. W. Se pretende hacer un inventario florístico de la zona, recolectando especies en forma sistematizada desde las regiones adyacentes de la Alta Tarahumara hasta la Baja Tarahumara. Los ejemplares de plantas recolectadas serán depositados en tres herbarios diferentes: Herbario de la Facultad de Zootecnia (CHIH) Universidad Autónoma de Chihuahua, Herbario de la Universidad Estatal de Nuevo México (NMC), Herbario Nacional (MEXU) y el Herbario del Instituto Politécnico Nacional (ENCB). Se enviará una base de datos a la CONABIO que consiste de un listado florístico.</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 4
 Orden: 44
 Familia: 106
 Género: 397
 Subgénero: 9
 Especie: 727
-Epitetoinfraespecifico: 31</para>
+Epitetoinfraespecifico: 31
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -97,10 +96,10 @@ Epitetoinfraespecifico: 31</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (CHIHUAHUA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-107.989</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-107.546</eastBoundingCoordinate>
+                    <westBoundingCoordinate>-107.988611</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-107.545556</eastBoundingCoordinate>
                     <northBoundingCoordinate>27.245</northBoundingCoordinate>
-                    <southBoundingCoordinate>26.898</southBoundingCoordinate>
+                    <southBoundingCoordinate>26.898056</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -118,7 +117,7 @@ Epitetoinfraespecifico: 31</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Pinopsida, Polypodiopsida, Lycopodiopsida
 Orden: Poales, Lamiales, Caryophyllales, Sapindales, Asterales, Fabales, Cucurbitales, Malvales, Ericales, Rosales, Saxifragales, Dipsacales, Solanales, Brassicales, Malpighiales, Zygophyllales, Boraginales, Santalales, Myrtales, Laurales, Cornales, Commelinales, Asparagales, Apiales, Fagales, Gentianales, Geraniales, Pinales, Polypodiales, Cupressales, Alismatales, Ranunculales, Selaginellales, Liliales, Celastrales, Garryales, Picramniales, Arecales, Proteales, Zingiberales, Aquifoliales, Vitales, Oxalidales, Magnoliales
 Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Asteraceae, Fabaceae, Cucurbitaceae, Poaceae, Malvaceae, Ericaceae, Bignoniaceae, Bromeliaceae, Rosaceae, Crassulaceae, Adoxaceae, Convolvulaceae, Brassicaceae, Hypericaceae, Euphorbiaceae, Zygophyllaceae, Campanulaceae, Plantaginaceae, Orobanchaceae, Talinaceae, Heliotropiaceae, Opiliaceae, Lythraceae, Lauraceae, Loasaceae, Cyperaceae, Acanthaceae, Cactaceae, Verbenaceae, Lamiaceae, Commelinaceae, Asparagaceae, Moraceae, Sapotaceae, Anacardiaceae, Amaranthaceae, Apiaceae, Caryophyllaceae, Solanaceae, Santalaceae, Fagaceae, Rutaceae, Nyctaginaceae, Apocynaceae, Fouquieriaceae, Juglandaceae, Malpighiaceae, Chenopodiaceae, Geraniaceae, Passifloraceae, Burseraceae, Betulaceae, Polemoniaceae, Hydrophyllaceae, Orchidaceae, Onagraceae, Araliaceae, Pinaceae, Cistaceae, Amaryllidaceae, Pteridaceae, Begoniaceae, Cupressaceae, Rubiaceae, Potamogetonaceae, Papaveraceae, Urticaceae, Salicaceae, Ebenaceae, Selaginellaceae, Cannabaceae, Rhamnaceae, Smilacaceae, Celastraceae, Polygalaceae, Martyniaceae, Phytolaccaceae, Myrtaceae, Hydrocharitaceae, Dryopteridaceae, Garryaceae, Caricaceae, Picramniaceae, Caprifoliaceae, Namaceae, Portulacaceae, Arecaceae, Gentianaceae, Cordiaceae, Plumbaginaceae, Platanaceae, Musaceae, Juncaginaceae, Hypoxidaceae, Aquifoliaceae, Meliaceae, Vitaceae, Ranunculaceae, Oxalidaceae, Boraginaceae, Magnoliaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -131,7 +130,11 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -2394,13 +2397,13 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
-                    <commonName>guamuchil, beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
+                    <taxonRankValue>Sicyos sinaloae</taxonRankValue>
+                    <commonName>akarheni (Tarasco), amole, ch&apos;uma te&apos;ch&apos;o (Tseltal), chayote, chayotillo, chayotillo silvestre, ximácol (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Sicyos sinaloae</taxonRankValue>
-                    <commonName>akarheni (Tarasco), amole, ch&apos;uma te&apos;ch&apos;o (Tseltal), chayote, chayotillo, chayotillo silvestre, ximácol (Náhuatl)</commonName>
+                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
+                    <commonName>guamuchil, beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2620,7 +2623,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Guazuma ulmifolia</taxonRankValue>
-                    <commonName>acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacima, guacimillo, guayacán, guácima prieta, guácimo, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
+                    <commonName>acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacimillo, guacimo, guayacán, guácima, guácima prieta, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2827,7 +2830,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2890,7 +2893,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Mascagnia macroptera</taxonRankValue>
-                    <commonName>anaraka (Tarahumara), aparicua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
+                    <commonName>anaraka (Tarahumara), apáricua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3252,7 +3255,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Delonix regia</taxonRankValue>
-                    <commonName>tabachín, acacia, chak lool (Maya), chak lool ché (Maya), espuela de caballero, flamboyán, flor de tabachín, framboyan, maaskab che&apos; (Maya), maskab che&apos; (Maya), tabachín, árbol de fuego, árbol del fuego</commonName>
+                    <commonName>tabachín, acacia, chak lool (Maya), chak lool ché (Maya), espuela de caballero, flamboyán, flor de tabachín, framboyán, maaskab che&apos; (Maya), maskab che&apos; (Maya), tabachín, árbol de fuego, árbol del fuego</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3295,6 +3298,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Helianthemum pringlei</taxonRankValue>
+                    <commonName>yerba de la gallina, yerba de la víbora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4063,6 +4067,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dalea cliffortiana</taxonRankValue>
+                    <commonName>hierba del zopilote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4112,7 +4117,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4495,7 +4500,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus cotinifolia</taxonRankValue>
-                    <commonName>gamuchin, alamo, amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), árbol de leche</commonName>
+                    <commonName>gamuchin, amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), álamo, árbol de leche</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4546,7 +4551,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Populus fremontii</taxonRankValue>
-                    <commonName>alamo cimarrón, itzohuo (Huasteco), olmo, olomte (Huasteco), volador, álamo</commonName>
+                    <commonName>alamo, alamo cimarrón, itzohuo (Huasteco), olmo, olomte (Huasteco), volador</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4734,7 +4739,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phoenix dactylifera</taxonRankValue>
-                    <commonName>datilera, dátil, palma, palma datilera, palma de dátiles</commonName>
+                    <commonName>datil, datilera, palma, palma datilera, palma de dátiles</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4815,7 +4820,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ceiba pentandra</taxonRankValue>
-                    <commonName>amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), unup (Huasteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida</commonName>
+                    <commonName>amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida, únup (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4830,11 +4835,6 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cyperus cuspidatus</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Lantana camara</taxonRankValue>
-                    <commonName>alfombrilla, alfombrilla hedionda, balsamillo, chancaca xiuitl (Náhuatl), chichiquelite (Zapoteco), cinco negritos, confite, confite negro, confitura, confiturilla, confiturilla amarilla, confiturilla blanca, flor de San Cayetano, frutilla, frutillo, gobernadora, granadilla, hierba amarga, hierba de cristo, hierba del becerro, hierba mora, ik&apos;ii-ha-xiu (Maya), ishlacastapu-mashtansics (Totonaco), ishlacastapu-mastapu-mashtanics (Totonaco), lantana, lantana morada, laurel, manzanita, mejorana, meshengua (Tarasco), mo&apos;ol peek (Maya), morita, negrito, negritos, ojo de pescado, ojo de ratón, orozus, orozuz, orégano, orégano de monte, orégano k&apos;aax (Español-Maya), orégano xiiw (Español-Maya), patelaxhuitz (Huasteco), peonía, peonía de jardines, peonía negra, pet-k&apos;in (Maya), petel-k&apos;in (Maya), riñonina, rosa blanca, salvia real, sapotillo, shalac pomixtli (Totonaco), siete colores, siete negritos, sonora, sonora roja, tomatillo, tres colores, uña de gato, venturosa, verbena, zapotillo, zarzamora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4897,6 +4897,11 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Stachys coccinea</taxonRankValue>
                     <commonName>mirto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lantana camara</taxonRankValue>
+                    <commonName>alfombrilla, alfombrilla hedionda, balsamillo, chancaca xiuitl (Náhuatl), chichiquelite (Zapoteco), cinco negritos, confite, confite negro, confitura, confiturilla, confiturilla amarilla, confiturilla blanca, flor de San Cayetano, frutilla, frutillo, gobernadora, granadilla, hierba amarga, hierba de cristo, hierba del becerro, hierba mora, ik&apos;ii-ha-xiu (Maya), ishlacastapu-mashtansics (Totonaco), ishlacastapu-mastapu-mashtanics (Totonaco), lantana, lantana morada, laurel, manzanita, mejorana, meshengua (Tarasco), mo&apos;ol peek (Maya), morita, negrito, negritos, ojo de pescado, ojo de ratón, orozus, orozuz, orégano, orégano de monte, orégano k&apos;aax (Español-Maya), orégano xiiw (Español-Maya), patelaxhuitz (Huasteco), peonía, peonía de jardines, peonía negra, pet-k&apos;in (Maya), petel-k&apos;in (Maya), riñonina, rosa blanca, salvia real, sapotillo, shalac pomixtli (Totonaco), siete colores, siete negritos, sonora, sonora roja, tomatillo, tres colores, uña de gato, venturosa, verbena, zapotillo, zarzamora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5035,7 +5040,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5111,7 +5116,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Randia echinocarpa</taxonRankValue>
-                    <commonName>papache, chacua (Tarasco), cirián chino, hosocola (Guarijío), josocola (Guarijío), kakwára (Tarahumara), shacua (Tarasco), tecoloche (Náhuatl)</commonName>
+                    <commonName>papache, chacua (Tarasco), cirián chino, grangeno chino, hosocola (Guarijío), josocola (Guarijío), kakwára (Tarahumara), shacua (Tarasco), tecoloche (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5160,11 +5165,6 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Psidium guajava</taxonRankValue>
-                    <commonName>a&apos;sihui&apos;t (Totonaco), al-pil-ca (Chontal de Oaxaca), bec (Maya), bek (Maya), bjui (Zapoteco), bui (Zapoteco), ca&apos;aru (Cora), chac-pichi (Maya), chak-pichí (Maya), chalxócotl (Náhuatl), chk-pichí (Maya), enandi (Tarasco), guayaba, guayaba de venado, guayaba dulce, guayaba manzana, guayaba perulera, guayabilla, guayabillo, guayabo, guayabo agrio, guayabo de venado, guayabo regional, guayacán, guáibasim (Mayo), julu&apos; (Maya), kolok (Maya), llasibit (Totonaco), mo&apos;eyi (Cuicateco), mo&apos;i (Cuicateco), pachi (Maya), pata (Tsotsil), pehui (Zapoteco), pichi (Maya), pichi&apos; (Maya), pichi-cuy (Maya), pichi-guayaba (Maya), picho, posh (Mixe), pox (Maya), quauhtzapotl (Náhuatl), sumbadán (Zoque), tchie-ini (Mazateco), tchie-tigua (Mazateco), vayeváxi-te (Huichol), xalxócotl (Náhuatl), xalácatl (Náhuatl), xapeni (Otomí), xaxucotl (Náhuatl), xoxococuabitl (Náhuatl), yaga-huii (Zapoteco), ñi-joh (Chinanteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dactyloctenium aegyptium</taxonRankValue>
                     <commonName>pata de cuervo, chimes su&apos;uk (Maya), chimes-suuk (Maya), grama, k&apos; an toop su&apos;uk (Maya), pasto, pasto pata de pollo, pata de cuervo, pata de pollo, zacate egipcio, zacate grama</commonName>
                 </taxonomicClassification>
@@ -5195,6 +5195,11 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Sporobolus poiretii</taxonRankValue>
                     <commonName>cola de ratón, liendrecillo manchado, liendrilla</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Psidium guajava</taxonRankValue>
+                    <commonName>a&apos;sihui&apos;t (Totonaco), al-pil-ca (Chontal de Oaxaca), bec (Maya), bek (Maya), bjui (Zapoteco), bui (Zapoteco), ca&apos;aru (Cora), chac-pichi (Maya), chak-pichí (Maya), chalxócotl (Náhuatl), chk-pichí (Maya), enandi (Tarasco), guayaba, guayaba de venado, guayaba dulce, guayaba manzana, guayaba perulera, guayabilla, guayabillo, guayabo, guayabo agrio, guayabo de venado, guayabo regional, guayacán, guáibasim (Mayo), julu&apos; (Maya), kolok (Maya), llasibit (Totonaco), mo&apos;eyi (Cuicateco), mo&apos;i (Cuicateco), pachi (Maya), pata (Tsotsil), pehui (Zapoteco), pichi (Maya), pichi&apos; (Maya), pichi-cuy (Maya), pichi-guayaba (Maya), picho, posh (Mixe), pox (Maya), quauhtzapotl (Náhuatl), sumbadán (Zoque), tchie-ini (Mazateco), tchie-tigua (Mazateco), vayeváxi-te (Huichol), xalxócotl (Náhuatl), xalácatl (Náhuatl), xapeni (Otomí), xaxucotl (Náhuatl), xoxococuabitl (Náhuatl), yaga-huii (Zapoteco), ñi-joh (Chinanteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5296,11 +5301,6 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Phaseolus vulgaris</taxonRankValue>
-                    <commonName>alubia, babi (Tepehuano del sur), bi-zaa (Zapoteco), bi-zaa-hui (Zapoteco), boju (Otomí), canastapu (Totonaco), chenec (Tseltal), cuaetl (Náhuatl), du-chi (Mixteco), duh-chi (Mixteco), ejote, et (Náhuatl), etl (Náhuatl), flor de frijol, frijol, frijol Chimalapa, frijol bayo, frijol cacahuate, frijol cacahuate bola, frijol de enredadera, frijol de mata, frijol higuerillo, frijol moro, frijol negro, frijol ojo de cabra, frijol ojo de liebre, frijol pinto, frijol pinto español, frijol pinto nacional, huay (Chinanteco), ju (Otomí), la-la-ne (Chontal de Oaxaca), la-ne (Chontal de Oaxaca), lucuútapu (Totonaco), ma-netí (Chinanteco), ma-né (Chinanteco), mume (Huichol), muni (Tarahumara), muníqui (Tarahumara), musorícori (Tarahumara), muúnim (Mayo), mújume (Cora), múme-te (Huichol), nu-ni (Cuicateco), pi-zaa (Zapoteco), sac (Zoque), shejc (Popoloca), shidijú (Otomí), shiixis-chéel (Seri), shuijc (Popoloca), stapu (Totonaco), tapsun (Tarasco), tatsani (Tarasco), tatsini (Tarasco), tatsuni-tulípti (Tarasco), tatzin (Tarasco), tun-nduti (Mixteco), tzanaco (Huasteco), tzanam (Huasteco), x-kolil-bul (Maya), xüjk (Mixe), yel (Náhuatl), yetl (Náhuatl), yetxintli (Náhuatl)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Desmodium angustifolium</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -5316,11 +5316,6 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Aristida adscensionis</taxonRankValue>
                     <commonName>pasto, tres barbas, zacate cola de zorra, zacate de agua, zacate de agua tres barbas</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Opuntia ficus-indica</taxonRankValue>
-                    <commonName>amarilla venadera, blanca, burrona, cactus, calabaza, chapeada, cristalina, fafayuco, heel cocsar yaa (Seri), heel cooxp (Seri), ixcaha (Otomí), manzana, nocheznopalli (Náhuatl), nochtli (Náhuatl), nopal, nopal blanco, nopal castilla, nopal de alfajayuca, nopal de alfajayucan, nopal de castilla, nopal de cerro, nopal de coyote, nopal de huerta, nopal de lengua, nopal de raíz, nopal espinudo, nopal guinda, nopal italiano, nopal manso, nopal oreja de elefante, nopal orejón, nopal pelón, nopal silvestre, nopal sin espinas, nopal xoconoxtle, nopalh (Náhuatl), nopalitos, nopalli (Náhuatl), nopalnocheztli (Náhuatl), papantón, picochulo, reina, soconochtli, tlalnopal (Náhuatl), tuna, tuna amarilla, tuna blanca, tuna colorada, tuna de Alfajayuca, tuna de alfajayucan, tuna de campo, tuna de castilla, tuna encarnada, tuna fina, tuna guinda, tuna lisa, tuna mansa, tuna roja mansa, tzaponochnopalli (Náhuatl), xoconoxtle blanco, zapotnochtli (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5344,6 +5339,16 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Escobedia longiflora</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus vulgaris</taxonRankValue>
+                    <commonName>alubia, babi (Tepehuano del sur), bi-zaa (Zapoteco), bi-zaa-hui (Zapoteco), boju (Otomí), canastapu (Totonaco), chenec (Tseltal), cuaetl (Náhuatl), du-chi (Mixteco), duh-chi (Mixteco), ejote, et (Náhuatl), etl (Náhuatl), flor de frijol, frijol, frijol Chimalapa, frijol bayo, frijol cacahuate, frijol cacahuate bola, frijol de enredadera, frijol de mata, frijol higuerillo, frijol moro, frijol negro, frijol ojo de cabra, frijol ojo de liebre, frijol pinto, frijol pinto español, frijol pinto nacional, huay (Chinanteco), ju (Otomí), la-la-ne (Chontal de Oaxaca), la-ne (Chontal de Oaxaca), lucuútapu (Totonaco), ma-netí (Chinanteco), ma-né (Chinanteco), mume (Huichol), muni (Tarahumara), muníqui (Tarahumara), musorícori (Tarahumara), muúnim (Mayo), mújume (Cora), múme-te (Huichol), nu-ni (Cuicateco), pi-zaa (Zapoteco), sac (Zoque), shejc (Popoloca), shidijú (Otomí), shiixis-chéel (Seri), shuijc (Popoloca), stapu (Totonaco), tapsun (Tarasco), tatsani (Tarasco), tatsini (Tarasco), tatsuni-tulípti (Tarasco), tatzin (Tarasco), tun-nduti (Mixteco), tzanaco (Huasteco), tzanam (Huasteco), x-kolil-bul (Maya), xüjk (Mixe), yel (Náhuatl), yetl (Náhuatl), yetxintli (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Opuntia ficus-indica</taxonRankValue>
+                    <commonName>amarilla venadera, blanca, burrona, cactus, calabaza, chapeada, cristalina, fafayuco, heel cocsar yaa (Seri), heel cooxp (Seri), ixcaha (Otomí), manzana, nocheznopalli (Náhuatl), nochtli (Náhuatl), nopal, nopal blanco, nopal castilla, nopal de alfajayuca, nopal de alfajayucan, nopal de castilla, nopal de cerro, nopal de coyote, nopal de huerta, nopal de lengua, nopal de raíz, nopal espinudo, nopal guinda, nopal italiano, nopal manso, nopal oreja de elefante, nopal orejón, nopal pelón, nopal silvestre, nopal sin espinas, nopal xoconoxtle, nopalh (Náhuatl), nopalitos, nopalli (Náhuatl), nopalnocheztli (Náhuatl), papantón, picochulo, reina, soconochtli, tlalnopal (Náhuatl), tuna, tuna amarilla, tuna blanca, tuna colorada, tuna de Alfajayuca, tuna de alfajayucan, tuna de campo, tuna de castilla, tuna encarnada, tuna fina, tuna guinda, tuna lisa, tuna mansa, tuna roja mansa, tzaponochnopalli (Náhuatl), xoconoxtle blanco, zapotnochtli (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5596,7 +5601,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Tabebuia chrysantha</taxonRankValue>
-                    <commonName>ahan-ché (Maya), ahauché (Maya), ajaw che&apos; (Maya), amapa, amapa amarilla, amapa colorada, amapa prieta, amapa rosa, amapa verde, guayacan, guayacán amarillo, hahau-ché (Maya), hahuuché (Maya), hokab (Maya), jajauche&apos; (Maya), k&apos;an lool (Maya), k&apos;an lool k&apos;aax (Maya), lombricillo, macuilis (Maya), makulis (Maya), mauche&apos; (Maya), palo fierro, pata de león, primavera, roble, roble serrano, verdecillo, x-ahau-ché (Maya), x-ahauché (Maya), xha-hua-ché (Maya)</commonName>
+                    <commonName>ahan-ché (Maya), ahauché (Maya), ajaw che&apos; (Maya), amapa, amapa amarilla, amapa colorada, amapa prieta, amapa rosa, amapa verde, guayacán, guayacán amarillo, hahau-ché (Maya), hahuuché (Maya), hokab (Maya), jajauche&apos; (Maya), k&apos;an lool (Maya), k&apos;an lool k&apos;aax (Maya), lombricillo, macuilis (Maya), makulis (Maya), mauche&apos; (Maya), palo fierro, pata de león, primavera, roble, roble serrano, verdecillo, x-ahau-ché (Maya), x-ahauché (Maya), xha-hua-ché (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5803,12 +5808,12 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Prosopis juliflora var. juliflora</taxonRankValue>
-                    <commonName>mezquite, algarroba, algarrobo, biia (Zapoteco), chak kaatsim (Maya), chácata (Tarasco), chúcata (Tarasco), eek&apos;kaatsim (Maya), espino, haas (Maya), haas utuh (Huasteco), huizache, hupala (Guarijío), háas (Seri), inda-a (Cuicateco), ju&apos;upa (Mayo), jú&apos;upa (Mayo), kaatsim (Maya), majé (Otomí), me-equite (Huichol), mejé (Otomí), mesquite, mezquite, mezquite amarillo, mezquite blanco, mezquite chino, mezquite colorado, mezquite dulce, mimisqui cuabitl (Náhuatl), mimisquitl (Náhuatl), mizquitl (Náhuatl), na&apos;chi&apos;che (Maya), t&apos;ahi (Otomí), tai (Otomí), taj (Maya), toji (Guarijío), tsirísicua (Tarasco), tzirisecua (Tarasco), tziritzecua (Tarasco), tzirizecua (Tarasco), t&apos;ahí (Otomí), uejoue (Tarahumara), utuh (Huasteco), uña de gato, ya&apos;ax eek&apos; (Maya), yaga-bü (Zapoteco)</commonName>
+                    <taxonRankValue>Parthenium tomentosum var. stramonium</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Parthenium tomentosum var. stramonium</taxonRankValue>
+                    <taxonRankValue>Prosopis juliflora var. juliflora</taxonRankValue>
+                    <commonName>mezquite, algarroba, algarrobo, biia (Zapoteco), chak kaatsim (Maya), chácata (Tarasco), chúcata (Tarasco), eek&apos;kaatsim (Maya), espino, haas (Maya), haas utuh (Huasteco), huizache, hupala (Guarijío), háas (Seri), inda-a (Cuicateco), ju&apos;upa (Mayo), jú&apos;upa (Mayo), kaatsim (Maya), majé (Otomí), me-equite (Huichol), mejé (Otomí), mesquite, mezquite, mezquite amarillo, mezquite blanco, mezquite chino, mezquite colorado, mezquite dulce, mimisqui cuabitl (Náhuatl), mimisquitl (Náhuatl), mízquitl (Náhuatl), na&apos;chi&apos;che (Maya), t&apos;ahi (Otomí), tai (Otomí), taj (Maya), toji (Guarijío), tsirísicua (Tarasco), tzirisecua (Tarasco), tziritzecua (Tarasco), tzirizecua (Tarasco), t&apos;ahí (Otomí), uejoue (Tarahumara), utuh (Huasteco), uña de gato, ya&apos;ax eek&apos; (Maya), yaga-bü (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -5854,7 +5859,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -5885,6 +5890,7 @@ Familia: Juncaceae, Phrymaceae, Scrophulariaceae, Polygonaceae, Sapindaceae, Ast
                 <studyAreaDescription>
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Plantas
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acebos, yerba mate
@@ -5925,7 +5931,6 @@ con flores como muérdagos, sándalos
 con flores como plantas del aceite negro
 con flores como uvas
 con flores: bambúes
-NO DISPONIBLE
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -5936,543 +5941,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:32Z</dateStamp>
-                <citation>Lebgue Keleng T, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Flora de las Barrancas del Cobre. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/lpogoy accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1022. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 102. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>F. Zavala C. 1989. IDENTIFICACION DE ENCINOS DE MEXICO. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHAPINGO. CHAPINGO, MEXICO.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 18. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg. 1996. THE OAKS OF LA FRONTERA AND ADJACENT REGIONS. 25. Tésis de No Aplica. NEW MEXICO STATE UNIVERSITY. LAS CRUCES, NM.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 106-108. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 107. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>A. Beetle. 1987. LAS GRAMINEAS DE MEXICO, VOL II. 293. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1983. LAS GRAMINEAS DE MEXICO, VOL I. 159. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 293-294. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 118. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>P. Fischer. 1989. 70 COMMON CACTI OF THE SOUTHWEST. 24. Tésis de No Aplica. SOUTHWEST PARKS AND MONUMENTS ASSOCIATION. TUCSON, ARIZONA.</citation>
-                <citation>M. Pizzetti. 1987. GUIA DE CACTUS. 219. Tésis de No Aplica. GRIJALBO. BARCELONA, ESPAÑA.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 1030. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 100. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 127. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>P. C. Standley. 9999. TREES AND SHRUBS OF MEXICO. VOL. 23. Part 1. Tésis de No Aplica. SMITHSONIAN PRESS. WASHINGTON DC.</citation>
-                <citation>P. C. Standley. 1922. TREES AND SHRUBS OF MEXICO. VOL. 23. Part 2. 206. Tésis de No Aplica. SMITHSONIAN PRESS. WASHINGTON DC.</citation>
-                <citation>P. C. Standley. 9999. TREES AND SHRUBS OF MEXICO. VOL. 23. Part 3. Tésis de No Aplica. SMITHSONIAN PRESS. WASHINGTON DC.</citation>
-                <citation>P. C. Standley. 9999. TREES AND SHRUBS OF MEXICO. VOL. 23. Part 4. Tésis de No Aplica. SMITHSONIAN PRESS. WASHINGTON DC.</citation>
-                <citation>P. C. Standley. 1926. TREES AND SHRUBS OF MEXICO. VOL. 23. Part 5. Tésis de No Aplica. SMITHSONIAN PRESS. WASHINGTON DC.</citation>
-                <citation>S. B. Jones. Jr. &amp;  A. E. Luchsinger. 1979. PLANT SYSTEMATICS. Tésis de No Aplica. McGraw-Hill Book Company. New York, NY.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 192. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>A. Garcia A. &amp;  M.S.Gonzalez E. 1998. PINACEAS DE DURANGO. 53. Tésis de No Aplica. INSTITUTO DE ECOLOGIA A.C. DURANGO, DGO.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 105. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>J. Henrickson &amp;  M.C. Johnston. 9999. A FLORA OF THE CHIHUAHUAN DESERT REGION. 370. Tésis de No Aplica.</citation>
-                <citation>E.L. Little Jr. &amp;  B. Honkala. 1977. TREES AND SHRUBS OF THE UNITED STATES: a bibliography for identificaction. 801. Tésis de No Aplica. Misc. Publ. No. 1336. Forest Service, U.S. Dept. of Agriculture, Washington, D.C. Washington, DC.</citation>
-                <citation>R. McVaugh. 1961. Euphorbiaceae Novae Novo-Galicianae. Brittonia. Nulo(13):145-205</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):190. New York, NY.</citation>
-                <citation>T. Steussy. 1972. Revision of the Genus Melampodium (Compositae:Heliantheae). Rhodora. Nulo(74):1-70</citation>
-                <citation>V.W. Steinmann. 1997. The Euphorbiaceae of Sonora, Mexico. Aliso. Nulo(16):1-71</citation>
-                <citation>R.C.Barneby. 1977. Dalea Imagines. Mem. NY. Bot. Gard. Nulo(27):125. Bot. Gard. NY.</citation>
-                <citation>T.F. Daniel. 1984. The Acanthaceae of the Southwestern United States. Desert Plants. 5:170</citation>
-                <citation>G.C. Tucker. 1994. Revision of the Mexican Species of Cyperus (Cyperaceae). Systematic Botany Monogr. 43:62</citation>
-                <citation>K.K. Lay. 1950. The American species of Triumfetta. Ann. Missouri Bot. Gard 37. Nulo(Nulo):385. Columbia, Missouri.</citation>
-                <citation>U.T. Waterfall. 1967. Physalis in Mexico, Central America and the West Indies. Rhodora 69. Nulo(Nulo):220</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1049. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1055. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1058-1059. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1080. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1092. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1109. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1131. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1139. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1150. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1152. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1188. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1249. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1276. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1278. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1286. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1313. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1318. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1320. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1322. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1327. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1332. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1335. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1349. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1351. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1366-1367. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1369. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1405. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1416. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 142. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1433. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 149-150. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1514. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1518. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1527. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1568. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1618. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 1666-1667. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 204. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 231. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 300. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 305. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 315. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 330-331. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 338. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 339. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 359. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 363. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 364. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 385. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 388. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 393-394. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 432. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 434. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 457-458. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 466. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 467. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 474. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 477. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 502. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 527. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 547. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 561. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 580. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 582. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 598. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 603. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 604. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 609. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 723. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 759. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 761. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 780-781. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 802. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 845. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 853-854. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 856. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 862. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 864. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 878. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 880. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 881. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 905. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 906. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 909. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 932. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 940. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 957. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>F. Shreve &amp;  I. Wiggins. 1964. VEGETATION AND FLORA OF THE SONORAN DESERT. 972. Tésis de No Aplica. STANFORD UNIVERSITY PRESS. STANFORD,CALIFORNIA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 104. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 104-106. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 118. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 121. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 121-123. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 127. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 135. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 137. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 140. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 142. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 150. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 152. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 157. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 159. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 160. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 161. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 166. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 178. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 185. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 187. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 191. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 193. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 198. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 209. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 216. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 219. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 221. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 225. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 227. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 231. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 237. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 244. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 249. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 251. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 251-252. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 267. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 271. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 275. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 284. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 305. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 395. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 41. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 417. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 46. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 46-58. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 56. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 58. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 64. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 67. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 69. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 72-73. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 73. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 76. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 79. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 82. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 84. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 90. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 93-94. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 96-97. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>T. Lebgue K. &amp;  A. Valerio V. 1991. GRAMINEAS DE CHIHUAHUA:manual para identificar. 99. Tésis de No Aplica. UNIVERSIDAD AUTONOMA DE CHIHUAHUA. CHIHUAHUA,CHIHUAHUA.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 19. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 20. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 21. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 24. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 26. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 28. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 29. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 30. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 31. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 32. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 33. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 34. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 35. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 36. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 37. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 38. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 40. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 41. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 42. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 43. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 44. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 45. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 46. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 48. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 49. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 50. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 51. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 52. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 53. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 54. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 55. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 56. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 57. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 59. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 267. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 268. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 269. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 270. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 271. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 272. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 273. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 274. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 276. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 278. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 280. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 281. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 282. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 283. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 284. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 286. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 289. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 293. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 294. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>R. Spellenberg, T. Lebgue K. &amp;  R. Diaz C. 1996. LISTADO FLORISTICO DE MEXICO: XIII a specimen-based, annotated checklist of the vascular plants of parque nacional &quot;cascada de basaseachi&quot; and adjacent areas, Chihuahua, Mexico. 62. Tésis de No Aplica. INSTITUTO DE BIOLOGIA, UNAM. MEXICO, DF.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 116-117. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 138-140. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 145-146. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 145-147. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 154-155. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 160-161. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 171-173. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 189-190. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 197-199. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 200-201. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 206-207. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 214. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 214,216. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 232. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 248. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 250-253. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 256-258. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 258-259. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 274-275. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 275-277. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 310-311. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 313-315. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 322-323. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 323-325. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 331. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 339-340. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 346-347. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 53-54. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 56-57. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 59-60. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 61-63. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 69-72. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 74-77. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 78-79. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 82-84. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 85. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 85-86. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 88. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>C. Mason Jr. &amp;  P. Mason. 1987. A HAND BOOK OF MEXICAN ROADSIDE FLORA. 96-99. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 110. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 111. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 116. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 120. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 122. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 125. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 129. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 130. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 134. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 23. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 32. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 36. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 38. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 41. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 60. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 65. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 67. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 71. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 74. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 75. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 76. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>H. E. Jaques. 1958. HOW TO KNOW THE ECONOMIC PLANTS. 77. Tésis de No Aplica. WM.C. BROWN COMPANY PUBLISHERS. DUBUQUE, IOWA.</citation>
-                <citation>A. Beetle. 1987. LAS GRAMINEAS DE MEXICO, VOL II. 298. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1987. LAS GRAMINEAS DE MEXICO, VOL II. 307. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1987. LAS GRAMINEAS DE MEXICO, VOL II. 94. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1987. LAS GRAMINEAS DE MEXICO, VOL II. 96. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1983. LAS GRAMINEAS DE MEXICO, VOL I. 173-174. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1983. LAS GRAMINEAS DE MEXICO, VOL I. 179. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 42. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 58. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 75. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 76.77. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1991. LAS GRAMINEAS DE MEXICO, VOL III. 95-96. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 128. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 138. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 184. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 191. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 194. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 55-57. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 62-63. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 77. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 79. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>A. Beetle. 1995. LAS GRAMINEAS DE MEXICO, VOL IV. 94. Tésis de No Aplica. COTECOCA. MANZANILLO.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 1114. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 1216. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 1559. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 452. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 455. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 537. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 592. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 596. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 674. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 681. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 76. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 769. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>D. Correll &amp;  M. Johnston. 1970. MANUAL OF THE VASCULAR PLANTS OF TEXAS. 908. Tésis de No Aplica. TEXAS RESEARCH FOUNDATION. RENNER, TEXAS.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 127. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 139. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 168. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 266. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 284. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 287. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 293. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 360. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 419. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 447. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 455. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 457-458. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 464. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 467. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 484. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 500-501. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 514. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 52. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 52-54. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 541-542. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 58. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 689. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 720. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 73. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 749. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 94-95. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 96. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 97. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 5: LEGUMINOSAE. 97-98. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 224. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 254. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 266. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 34-35. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 385. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 389-390. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 467. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 468. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 481. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 656. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 673-674. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 741. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 758. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>R. McVaugh. 1987. FLORA NOVO-GALICIANA. A DESCRIPTIVE ACCOUNT OF THE VASCULAR PLANTS OF WESTERN MEXICO. VOL. 12: COMPOSITAE. 824. Tésis de No Aplica. THE UNIVERSITY OF MICHIGAN PRESS. ANN ARBOR, MICHIGAN.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 194. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 195. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 196. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 198. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 203. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 204. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 205. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 207. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 208. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 209. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 210. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 214. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 217. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 219. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 223. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 225. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 226. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 227. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 228. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 236. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 238. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 240. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 246. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 247. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 248. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 250. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 251. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 254. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 256. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 257. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 260. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 261. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 264. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 265. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 266. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 295. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 298. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 306. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 310. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 313. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 319. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 321. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 323. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 325. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 327. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 328. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 330. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 331. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 333. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 335. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 337. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 339. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 343. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 344. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 345. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 346. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 349. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 352. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 353. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 356. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 357. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 363. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 364. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 365. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 366. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 367. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 368. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 369. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 374. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 375. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 377. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 378. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 379. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 383. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 386. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 392. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 395. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 397. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 398. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 400. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 407. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 408. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 413. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 414. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 416. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 417. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 420. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 421. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 426. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 427. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 429. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 430. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 432. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 433. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 435. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 437. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 439. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 442. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 443. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 445. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 448. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 451. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 457. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 458. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 460. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 462. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 465. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 466. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 467. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 472. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 474. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 476. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 479. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 489. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 490. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 495. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 504. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 507. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 509. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 510. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 511. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 512. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 513. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 515. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 521. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>P. S. Martin, D. Yetman, M. Fishbein, P. Jenkins, T.R. Van devender &amp;  R. K. Wilson. 1998. GENTRY RIO MAYO PLANTS: THE TROPICAL DECIDUOUS FOREST AND ENVIRONS OF NORTHWEST MEXICO. 69. Tésis de No Aplica. THE UNIVERSITY OF ARIZONA PRESS. TUCSON, ARIZONA.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 1051. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 1112. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 1124. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 128. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 134. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 160. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 185. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 204. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 280. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 49. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 497. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 503. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 574. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 709. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 727. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 768. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 78. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 87. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>R. McVaugh. 9999. FLORA NOVO-GALICIANA. A DESCRPTIVE ACCOUNT OF THE VASCULAR PLANTS. 912. Tésis de No Aplica. ANN ARBOR. MICHIGAN.</citation>
-                <citation>J. Henrickson &amp;  M.C. Johnston. 9999. A FLORA OF THE CHIHUAHUAN DESERT REGION. 377. Tésis de No Aplica.</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):202. New York, NY.</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):382. New York, NY.</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):383. New York, NY.</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):403. New York, NY.</citation>
-                <citation>P. Fryxel. 1988. Malvaceae. Systematic. Nulo(Nulo):52. New York, NY.</citation>
-                <citation>R.C.Barneby. 1977. Dalea Imagines. Mem. NY. Bot. Gard. Nulo(27):172. Bot. Gard. NY.</citation>
-                <citation>R.C.Barneby. 1977. Dalea Imagines. Mem. NY. Bot. Gard. Nulo(27):191. Bot. Gard. NY.</citation>
-                <citation>R.C.Barneby. 1977. Dalea Imagines. Mem. NY. Bot. Gard. Nulo(27):196. Bot. Gard. NY.</citation>
-                <citation>R.C.Barneby. 1977. Dalea Imagines. Mem. NY. Bot. Gard. Nulo(27):534. Bot. Gard. NY.</citation>
-                <citation>T.F. Daniel. 1984. The Acanthaceae of the Southwestern United States. Desert Plants. 5:179</citation>
-                <citation>U.T. Waterfall. 1967. Physalis in Mexico, Central America and the West Indies. Rhodora 69. Nulo(Nulo):327</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:53Z</dateStamp>
+                <citation>Lebgue Keleng T, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Flora de las Barrancas del Cobre. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/lpogoy accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-R102-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -6510,7 +5980,12 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R102-R102203F-ND</collectionIdentifier>
-                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                    <collectionName>Herbarium;ASDM;Arizona-Sonora Desert Museum;ASDM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R102-R102203F-ND</collectionIdentifier>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -6520,19 +5995,13 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R102-R102203F-ND</collectionIdentifier>
-                    <collectionName>Herbarium;ASDM;Arizona-Sonora Desert Museum;ASDM</collectionName>
+                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
                 </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R102-R102203F-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
-                </collection>
-                <specimenPreservationMethod>DRIED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>5</endRange>
+                        <endRange>897</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

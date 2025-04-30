@@ -118,11 +118,11 @@ xml:lang="en">
             <role>CURATOR</role>
         </associatedParty>
         <pubDate>
-                2023-06-19
+                2024-11-30
         </pubDate>
         <language>ENGLISH</language>
         <abstract>
-            The Marie-Victorin Herbarium (MT) is the second largest university herbarium in Quebec, and ranks fourth among all Canadian herbaria. It includes about 680,000&#43; vascular plants. Half of the material is Canadian, but representation is global. Recently, the WAT herbarium was acquired and is now incorporated within MT, though specimens are still to be cited with the WAT acronym. The MT and WAT datasets are individually shown in the dataset, though they all belong to MT. The current dataset includes the 164,000&#43; digitized specimens from the collection.
+            <para>The Marie-Victorin Herbarium (MT) is the second largest university herbarium in Quebec, and ranks fourth among all Canadian herbaria. It includes about 680,000&amp;#43; vascular plants. Half of the material is Canadian, but representation is global. Recently, the WAT herbarium was acquired and is now incorporated within MT, though specimens are still to be cited with the WAT acronym. The MT and WAT datasets are individually shown in the dataset, though they all belong to MT. The current dataset includes the 164,000&amp;#43; digitized specimens from the collection.</para>
         </abstract>
         <keywordSet>
             <keyword>MT</keyword>
@@ -148,6 +148,10 @@ xml:lang="en">
             <keyword>Specimen</keyword>
             <keyword>observation</keyword>
             <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
         </keywordSet>
         <intellectualRights>
             <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
@@ -324,8 +328,8 @@ Georeferences provided on labels are validated using online maps and GIS tools a
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:41:11Z</dateStamp>
-                <citation identifier="http://doi.org/10.5886/rzav8bu2">Brouillet L, Sinou C (2023). Marie-Victorin Herbarium (MT) - Plantes vasculaires. Version 14.12. Université de Montréal Biodiversity Centre. Occurrence dataset https://doi.org/10.5886/rzav8bu2 accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:54Z</dateStamp>
+                <citation identifier="http://doi.org/10.5886/rzav8bu2">Brouillet L, Sinou C (2024). Marie-Victorin Herbarium (MT) - Plantes vasculaires. Version 14.13. Université de Montréal Biodiversity Centre. Occurrence dataset https://doi.org/10.5886/rzav8bu2 accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>GBIF data portal</objectName>
                     <characterEncoding>UTF-8</characterEncoding>

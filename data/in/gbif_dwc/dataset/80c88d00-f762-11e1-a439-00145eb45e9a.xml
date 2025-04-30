@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de BiologíaDepartamento de Botánica</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -48,7 +47,7 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
@@ -57,16 +56,16 @@ El objetivo más importante de ésta colección es llegar a tener representadas 
 Sin embargo no solo queremos tener la mayoría de especies maderables representadas sino que también pretendemos estudiarlas por lo que otro de los objetivos que siempre es parte importante de nuestro trabajo es dar a conocer las características físicas y la estructura anatómica de todas las especies que se encuentren en ésta colección.
 Con el propósito de optimizar el funcionamiento de la colección con la que se cuenta actualmente e incrementar su acervo con nuevos ejemplares de madera, se proponen las siguientes actividades:
 a.- Elaboración de una base de datos que incluya tanto los datos de las tablillas de madera, así como los datos de la colección de preparaciones, procurando que ésta información ayude a agilizar el uso de nuestra colección.
-b.- Incrementar el acervo actual de la colección, realizando varias colectas en el estado de Morelos en áreas principalmente de Selva baja caducifolia o mediana subperennifolia.</para>
-<para>Reino: 1
+b.- Incrementar el acervo actual de la colección, realizando varias colectas en el estado de Morelos en áreas principalmente de Selva baja caducifolia o mediana subperennifolia.</para><para>Reino: 1
 Filo: 1
-Clase: 1
-Orden: 37
+Clase: 2
+Orden: 38
 Familia: 93
 Género: 280
 Subgénero: 5
-Especie: 550
-Epitetoinfraespecifico: 20</para>
+Especie: 547
+Epitetoinfraespecifico: 20
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -100,24 +99,57 @@ Epitetoinfraespecifico: 20</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: BAHAMAS
-País: BELICE (BELIZE)
+                <geographicDescription>País: AFRICA
+País: ANGOLA
+País: ARGENTINA (NEUQUEN, NO DISPONIBLE)
+País: AUSTRIA (NO DISPONIBLE, OSTERR)
+País: BAHAMAS
+País: BELICE
+País: BOLIVIA
+País: BRASIL (AMAZONAS, NO DISPONIBLE, PARA, SAO PAULO)
+País: CANADA
+País: CHECOSLOVAQUIA
+País: CHYPRE
 País: COLOMBIA
+País: COSTA DEL MARFIL
 País: COSTA RICA
 País: CUBA
-País: ESTADOS UNIDOS DE AMERICA (CALIFORNIA, FLORIDA, ILLINOIS, INDIANA, MISSISSIPPI, NEW YORK, OHIO, OREGON, SOUTH DAKOTA, TEXAS, WISCONSIN)
+País: ECUADOR
+País: ESPAÑA (AVILA, MADRID, NAVARRA, PONTEVEDRA)
+País: ESTADOS UNIDOS DE AMERICA (, ALASKA, CALIFORNIA, FLORIDA, ILLINOIS, INDIANA, MISSISSIPPI, NEW YORK, OHIO, OREGON, SOUTH DAKOTA, TEXAS, WISCONSIN)
+País: FILIPINAS
+País: FRANCIA (ITALIA, NO DISPONIBLE)
 País: GUATEMALA (ALTA VERAPAZ, PETEN)
+País: GUAYANA
+País: GUAYANA BRITANICA
+País: GUINEA
+País: HOLANDA (BUURSE, DELDEN, DEN HAAG, DOORN, ENSECHEDE, HARDENBERG, HELLENDOORN, KERKDRIEL, NO DISPONIBLE, PUTEEN, STEENWIJK, TIEL)
 País: HONDURAS
+País: INDIA
+País: INDONESIA
+País: ISRAEL
 País: JAMAICA
-País: MEXICO (BAJA CALIFORNIA, BAJA CALIFORNIA SUR, CAMPECHE, CHIAPAS, CHIHUAHUA, CIUDAD DE MEXICO, COAHUILA DE ZARAGOZA, DISTRITO FEDERAL, DURANGO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUERETARO, QUINTANA ROO, SAN LUIS POTOSI, TAMAULIPAS, VERACRUZ DE IGNACIO DE LA LLAVE, YUCATAN)
+País: JAPON
+País: MALASIA
+País: MEXICO (, BAJA CALIFORNIA, BAJA CALIFORNIA SUR, CAMPECHE, CHIAPAS, CHIHUAHUA, COAHUILA DE ZARAGOZA, DISTRITO FEDERAL, DURANGO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUERETARO, QUINTANA ROO, SAN LUIS POTOSI, SINALOA, TABASCO, TAMAULIPAS, VERACRUZ DE IGNACIO DE LA LLAVE, YUCATAN)
 País: NICARAGUA
+País: NIGERIA
+País: NO DISPONIBLE
+País: NUEVA ZELANDA
+País: PAPUA NUEVA GUINEA
+País: PARAGUAY
+País: PERU
 País: PUERTO RICO
-País: SANTA LUCIA</geographicDescription>
+País: SANTA LUCIA
+País: SRI LANKA
+País: SURINAM
+País: VENEZUELA
+País: ZAIRE</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-105.467</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-88.189</eastBoundingCoordinate>
-                    <northBoundingCoordinate>23.601</northBoundingCoordinate>
-                    <southBoundingCoordinate>16.383</southBoundingCoordinate>
+                    <westBoundingCoordinate>-105.467132</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-88.18865</eastBoundingCoordinate>
+                    <northBoundingCoordinate>23.601101</northBoundingCoordinate>
+                    <southBoundingCoordinate>16.383332</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -135,8 +167,8 @@ País: SANTA LUCIA</geographicDescription>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
-Orden: Fabales, Myrtales, Pinales, Cupressales, Laurales, Sapindales, Malpighiales, Lamiales, Ericales, Gentianales, Fagales, Rosales, Proteales, Garryales, Saxifragales, Cornales, Solanales, Boraginales, Malvales, Picramniales, Brassicales, Vitales, Apiales, Ranunculales, Metteniusales, Magnoliales, Dipsacales, Caryophyllales, Celastrales, Araucariales, Santalales, Chloranthales, Zygophyllales, Aquifoliales, Asterales, Oxalidales, Arecales
+Clase: Magnoliopsida, Pinopsida
+Orden: Fabales, Myrtales, Pinales, Cupressales, Laurales, Sapindales, Malpighiales, Lamiales, Ericales, Gentianales, Fagales, Rosales, Proteales, Garryales, Saxifragales, Cornales, Solanales, Boraginales, Malvales, Picramniales, Brassicales, Vitales, Apiales, Ranunculales, Metteniusales, Magnoliales, Dipsacales, Caryophyllales, Celastrales, Araucariales, Santalales, Chloranthales, Zygophyllales, Aquifoliales, Asterales, Oxalidales, Arecales, Cardiopteridales
 Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, Salicaceae, Bignoniaceae, Sapotaceae, Rubiaceae, Passifloraceae, Fagaceae, Betulaceae, Sapindaceae, Chrysobalanaceae, Ulmaceae, Rosaceae, Proteaceae, Meliaceae, Moraceae, Garryaceae, Ericaceae, Altingiaceae, Humiriaceae, Nyssaceae, Acanthaceae, Euphorbiaceae, Burseraceae, Juglandaceae, Solanaceae, Cordiaceae, Clethraceae, Platanaceae, Malvaceae, Picramniaceae, Combretaceae, Capparaceae, Verbenaceae, Vitaceae, Araliaceae, Menispermaceae, Cannabaceae, Apocynaceae, Convolvulaceae, Oleaceae, Scrophulariaceae, Rutaceae, Metteniusaceae, Annonaceae, Vochysiaceae, Clusiaceae, Lamiaceae, Styracaceae, Thymelaeaceae, Adoxaceae, Urticaceae, Heliotropiaceae, Onagraceae, Calophyllaceae, Papaveraceae, Polygonaceae, Simaroubaceae, Hernandiaceae, Erythroxylaceae, Rhamnaceae, Celastraceae, Podocarpaceae, Phyllanthaceae, Ebenaceae, Ehretiaceae, Magnoliaceae, Opiliaceae, Sabiaceae, Chloranthaceae, Zygophyllaceae, Aquifoliaceae, Malpighiaceae, Hypericaceae, Primulaceae, Asteraceae, Cornaceae, Casuarinaceae, Pentaphylacaceae, Berberidaceae, Bonnetiaceae, Caricaceae, Symplocaceae, Elaeocarpaceae, Arecaceae, Putranjivaceae, Violaceae, Myricaceae, Cardiopteridaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
                     <taxonRankName>Kingdom</taxonRankName>
@@ -148,7 +180,11 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -297,6 +333,10 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
                     <taxonRankValue>Arecales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Cardiopteridales</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
@@ -1800,11 +1840,11 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
-                    <taxonRankValue>Strobus</taxonRankValue>
+                    <taxonRankValue>Erythrina</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
-                    <taxonRankValue>Erythrina</taxonRankValue>
+                    <taxonRankValue>Strobus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
@@ -1981,11 +2021,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pinus reflexa</taxonRankValue>
-                    <commonName>hallarin, pino, pino huiyoco, pino nayar, pino torcido</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cydista potosina</taxonRankValue>
                     <commonName>tamani, ajillo, bejuco de tres lomos, bejuco tres lomo, k&apos;an lool (Maya), punal (Huasteco), x eek&apos; k&apos;i&apos;ixil (Maya), xkiik (Maya), xkis (Maya), éek&apos; k&apos;iix il (Maya)</commonName>
                 </taxonomicClassification>
@@ -1996,8 +2031,8 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Erythrina coralloides</taxonRankValue>
-                    <commonName>colorin, alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
+                    <taxonRankValue>Erythrina (Erythrina) coralloides</taxonRankValue>
+                    <commonName>colorin, alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, jutuku (Huasteco), lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pemoche (Huasteca), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2012,7 +2047,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Taxodium mucronatum</taxonRankValue>
-                    <commonName>cedro, ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
+                    <commonName>cedro, ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), yág-guizdóo (Zapoteco), yáguistóo (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2114,11 +2149,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Bursera simaruba</taxonRankValue>
-                    <commonName>palo mulato, cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Quercus (Quercus) laurina</taxonRankValue>
                     <commonName>encino, capulincillo, chilillo, chiquinib (Tsotsil), encinillo, encino, encino amarillo, encino blanco, encino capulincillo, encino chino, encino colorado, encino dorado, encino jarillo, encino laurel, encino laurelillo, encino liso, encino manzanillo, encino nechilahue, encino pepitillo, encino prieto, encino roble, encino rojo, encino xicalahua, escobillo, laurelillo, manzanillo, nanyamai (Zoque), peinecillo, roble</commonName>
                 </taxonomicClassification>
@@ -2131,6 +2161,11 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Acacia farnesiana</taxonRankValue>
                     <commonName>iondiro, acacia, aroma, aromática, arúmbari (Tarasco), bihi (Zapoteco), cascalote, coo-ca (Guarijío), cornezuelo, corteza curtidora, cuca (Guarijío), cucca (Mayo), espinillo, espino, espino blanco, espuela de gallo, flor de niño, huizache, huizache blanco, huizachillo, iai-do-no (Cuicateco), injerto de huizache, k&apos;ank&apos;ilis-ché (Maya), k&apos;ank&apos;ixché (Maya), k&apos;antilis (Maya), minza (Otomí), motitas, pedo de burro, subin (Maya), subinché (Maya), thuhaanom (Huasteco), thujanom (Huasteco), thujánum (Huasteco), tsurímbini (Tarasco), tsurúmbini (Tarasco), x-k&apos;antilis (Maya), xcantiris (Purépecha), xiri-xi (Huichol)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera simaruba</taxonRankValue>
+                    <commonName>palo mulato, cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2155,7 +2190,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cordia alliodora</taxonRankValue>
-                    <commonName>baria prieta, abib (Huasteco), aguardientillo, amapa, amapa blanca, amapa boba, amapa prieta, anacahuite, asta, bajon (Maya), bakal-ché (Maya), bakalche&apos; (Maya), bohum (Maya), bojom (Maya), bojum (Maya), bojón prieto, botoncillo, candelero, corcho negro, cueramo, galerillo, hma&apos; tá (Chinanteco), hormiguero, hormiguillo, hormiguillo blanco, huixtle (Huasteco), laurel, laurel blanco, pajarito, pajarito prieto, palo María, palo de hormiga, palo de hormigas, palo de rosa, palo de viga, palo prieto, prieto, rosadillo, solerilla, solerillo, solerito, sombrilla, suchil acahualero, suchil sabanero, tabaco, tusa-tioco (Mixteco), wiixte&apos; (Huasteco), wix te&apos; (Huasteco), xochicuahuitl (Náhuatl), yucjuya (Zoque)</commonName>
+                    <commonName>baria prieta, abib (Huasteco), aguardientillo, amapa, amapa blanca, amapa boba, amapa prieta, anacahuite, asta, bajon (Maya), bakal-ché (Maya), bakalche&apos; (Maya), bohum (Maya), bojom (Maya), bojum (Maya), bojón prieto, botoncillo, candelero, corcho negro, cueramo, galerillo, hma&apos; tá (Chinanteco), hormiguero, hormiguillo, hormiguillo blanco, huixtle (Huasteco), laurel, laurel blanco, pajarito, pajarito prieto, palo María, palo de hormiga, palo de hormigas, palo de rosa, palo de viga, palo prieto, prieto, rosadillo, solerilla, solerillo, solerito, sombrilla, suchil acahualero, suchil sabanero, tabaco, tusa-tioco (Mixteco), wiixte&apos; (Huasteco), wix te&apos; (Huasteco), xochicuáhuitl (Náhuatl), yucjuya (Zoque)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2199,11 +2234,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pouteria campechiana</taxonRankValue>
-                    <commonName>kanisté, a&apos;kacho&apos;ka (Totonaco), acamayo, atzapotlcuáhuitl (Náhuatl), atzápotl (Náhuatl), atzápotl-cuáhuitl (Náhuatl), cabeza de micoc, caca de niño, caimitillo, canishté (Ch&apos;ol), canizte (Maya), chak ya&apos; (Maya), chi&apos;kéej (Maya), costiczapotl (Náhuatl), costizapot (Náhuatl), cozticzápotl (Náhuatl), cucumú (Totonaco), cucunú (Totonaco), custiczapotl (Náhuatl), guacamayo, guayabito de tinta, guela-beche (Zapoteco), guela-bichi (Zapoteco), guela-guichi (Zapoteco), hu&apos;un (Mixe), huicumu (Tarasco), ja&apos;as che&apos; (Maya), ju&apos;u (Mixe), k&apos;aniste&apos; (Maya), k&apos;anixté (Maya), kanixte (Maya), kanizte (Maya), kan&apos;iste (Maya), lun-da-e (Chontal de Oaxaca), ma-chum (Chinanteco), mamey, mamey de Campeche, miguelito, no ci (Tseltal), ocotillo, oltzapotl (Náhuatl), rumua (Cora), sapotillo, ta&apos;pa (Totonaco), ta-ñi (Chinanteco), tapa (Totonaco), zapote amarillo, zapote blanco, zapote borracho, zapote cabello, zapote chango, zapote cimarrón, zapote de niño, zapote mante, zapote niño, zapote silvestre, zapotillo, zapotillo amarillo, zapotillo de montaña, zapotillo de niño, zubul (Maya)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Quercus cinerea</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2218,11 +2248,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Achras zapota</taxonRankValue>
-                    <commonName>zapote faisán, cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Lyonia jamaicensis</taxonRankValue>
                     <commonName>wild juniper</commonName>
                 </taxonomicClassification>
@@ -2230,6 +2255,16 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Eysenhardtia polystachya</taxonRankValue>
                     <commonName>cuate o palo dulce, coatl (Náhuatl), cuate, lanaé (Chontal de Oaxaca), palo azul, palo blanco, palo cuate, palo dulce, palo santo, rosilla, taray, tlapalezpatli (Náhuatl), ursa (Otomí), vara dulce, varaduz</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pouteria campechiana</taxonRankValue>
+                    <commonName>kanisté, a&apos;kacho&apos;ka (Totonaco), acamayo, atzapotlcuáhuitl (Náhuatl), atzápotl (Náhuatl), atzápotl-cuáhuitl (Náhuatl), cabeza de micoc, caca de niño, caimitillo, canishté (Ch&apos;ol), canizte (Maya), chak ya&apos; (Maya), chi&apos;kéej (Maya), costiczapotl (Náhuatl), costizapot (Náhuatl), cozticzápotl (Náhuatl), cucumú (Totonaco), cucunú (Totonaco), custiczapotl (Náhuatl), guacamayo, guayabito de tinta, guela-beche (Zapoteco), guela-bichi (Zapoteco), guela-guichi (Zapoteco), hu&apos;un (Mixe), huicumu (Tarasco), ja&apos;as che&apos; (Maya), ju&apos;u (Mixe), k&apos;aniste&apos; (Maya), k&apos;anixté (Maya), kanixte (Maya), kanizte (Maya), kan&apos;iste (Maya), lun-da-e (Chontal de Oaxaca), ma-chum (Chinanteco), mamey, mamey de Campeche, miguelito, no ci (Tseltal), ocotillo, oltzapotl (Náhuatl), rumua (Cora), sapotillo, ta&apos;pa (Totonaco), ta-ñi (Chinanteco), tapa (Totonaco), zapote amarillo, zapote blanco, zapote borracho, zapote cabello, zapote chango, zapote cimarrón, zapote de niño, zapote mante, zapote niño, zapote silvestre, zapotillo, zapotillo amarillo, zapotillo de montaña, zapotillo de niño, zubul (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Achras zapota</taxonRankValue>
+                    <commonName>zapote faisán, cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2351,7 +2386,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ceiba pentandra</taxonRankValue>
-                    <commonName>ceiba, amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), unup (Huasteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida</commonName>
+                    <commonName>ceiba, amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida, únup (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2499,7 +2534,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja americana</taxonRankValue>
-                    <commonName>hierba de la mosca, jacte (Huasteco), lengua de vaca, salvia real, tabaquillo, tepozan, tzelepat (Tseltal)</commonName>
+                    <commonName>hierba de la mosca, jacte (Huasteco), lengua de vaca, salvia real, tabaquillo, tepozán, tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2579,16 +2614,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Persea americana</taxonRankValue>
-                    <commonName>aguacatillo blanco, aguacate (Náhuatl), aguacate Atlixco, aguacate Chiapas, aguacate Hass , aguacate Puebla, aguacate Sinaloa, aguacate antillano, aguacate cimarrón, aguacate criollo, aguacate de mono, aguacate fuerte, aguacate guajillo, aguacate guatemalteco, aguacate mexicano, aguacate oloroso, aguacate regional, aguacate rincón, aguacatillo, aguacatillo blanco, ahoacacuáhuitl (Náhuatl), ahuacat (Náhuatl), basholobó (Cuicateco), cakuta (Tepehua), cic on (Tseltal), cucataj (Totonaco), cupanda (Tarasco), cuu t&apos; p&apos; (Mixe), cuu t&apos;p&apos; (Mixe), cuytuim (Popoloca), hoja de aguacate, kukutaj (Totonaco), laurel, lhpau (Totonaco), lhpuy (Totonaco), ohui (Zoque), oj (Huasteco), on (Maya), oon (Maya), pagua, pahua (Náhuatl), palo de aguacate, palta, s&apos;ö&apos;nü (Mazahua), shamal (Chontal de Oaxaca), tatsán (Otomí), tsi&apos;ngu&apos;t&apos;p (Mixe), tunuá (Popoloca), tutiti (Mixteco), tzani (Otomí), tzitzón (Tojolabal), uj (Huasteco), uuy (Huasteco), xijtscu&apos;t&apos;p&apos; (Mixe), yashusa (Zapoteco), yaujca (Cora), yaxhu (Zapoteco), yéuca-te (Huichol)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Lucuma heyderi</taxonRankValue>
-                    <commonName>avalo</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Quercus (Quercus) polymorpha</taxonRankValue>
                     <commonName>encinillo, encino, encino blanco, encino colorado, encino negro, encino prieto, encino roble, naranjillo, roble, shinil (Tojolabal)</commonName>
                 </taxonomicClassification>
@@ -2601,6 +2626,16 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pinus (Pinus) durangensis</taxonRankValue>
                     <commonName>abasbabi, ocote, pino, pino blanco, pino cenizo, pino colorado, pino coyote, pino de seis hojas, pino duranguensis, pino real, pino real de seis hojas, pino tarasco</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Persea americana</taxonRankValue>
+                    <commonName>aguacatillo blanco, aguacate (Náhuatl), aguacate Atlixco, aguacate Chiapas, aguacate Hass , aguacate Puebla, aguacate Sinaloa, aguacate antillano, aguacate cimarrón, aguacate criollo, aguacate de mono, aguacate fuerte, aguacate guajillo, aguacate guatemalteco, aguacate mexicano, aguacate oloroso, aguacate regional, aguacate rincón, aguacatillo, aguacatillo blanco, ahoacacuáhuitl (Náhuatl), ahuacat (Náhuatl), basholobó (Cuicateco), cakuta (Tepehua), cic on (Tseltal), cucataj (Totonaco), cupanda (Tarasco), cuu t&apos; p&apos; (Mixe), cuu t&apos;p&apos; (Mixe), cuytuim (Popoloca), hoja de aguacate, kukutaj (Totonaco), laurel, lhpau (Totonaco), lhpuy (Totonaco), ohui (Zoque), oj (Huasteco), on (Maya), oon (Maya), pagua, pahua (Náhuatl), palo de aguacate, palta, s&apos;ö&apos;nü (Mazahua), shamal (Chontal de Oaxaca), tatsán (Otomí), tsi&apos;ngu&apos;t&apos;p (Mixe), tunuá (Popoloca), tutiti (Mixteco), tzani (Otomí), tzitzón (Tojolabal), uj (Huasteco), uuy (Huasteco), xijtscu&apos;t&apos;p&apos; (Mixe), yashusa (Zapoteco), yaujca (Cora), yaxhu (Zapoteco), yéuca-te (Huichol)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lucuma heyderi</taxonRankValue>
+                    <commonName>avalo, a&apos;kacho&apos;ka (Totonaco), acamayo, atzapotlcuáhuitl (Náhuatl), atzápotl (Náhuatl), atzápotl-cuáhuitl (Náhuatl), cabeza de micoc, caca de niño, caimitillo, canishté (Ch&apos;ol), canizte (Maya), chak ya&apos; (Maya), chi&apos;kéej (Maya), costiczapotl (Náhuatl), costizapot (Náhuatl), cozticzápotl (Náhuatl), cucumú (Totonaco), cucunú (Totonaco), custiczapotl (Náhuatl), guacamayo, guayabito de tinta, guela-beche (Zapoteco), guela-bichi (Zapoteco), guela-guichi (Zapoteco), hu&apos;un (Mixe), huicumu (Tarasco), ja&apos;as che&apos; (Maya), ju&apos;u (Mixe), k&apos;aniste&apos; (Maya), k&apos;anixté (Maya), kanixte (Maya), kanizte (Maya), kan&apos;iste (Maya), lun-da-e (Chontal de Oaxaca), ma-chum (Chinanteco), mamey, mamey de Campeche, miguelito, no ci (Tseltal), ocotillo, oltzapotl (Náhuatl), rumua (Cora), sapotillo, ta&apos;pa (Totonaco), ta-ñi (Chinanteco), tapa (Totonaco), zapote amarillo, zapote blanco, zapote borracho, zapote cabello, zapote chango, zapote cimarrón, zapote de niño, zapote mante, zapote niño, zapote silvestre, zapotillo, zapotillo amarillo, zapotillo de montaña, zapotillo de niño, zubul (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2630,7 +2665,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pithecellobium flexicaule</taxonRankValue>
-                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya), ébano</commonName>
+                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), ebano, espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2837,13 +2872,13 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Gliricidia sepium</taxonRankValue>
-                    <commonName>piñon florido, San José, aga-le (Zapoteco), balche&apos;ke&apos; (Maya), balché ke (Maya), cacahuanal (Náhuatl), cacahuananche, cacahuanitzin (Náhuatl), cocoite, cocoito, cuacuite, cuchunuc (Zoque), flor de San José, flor de sol, frijolillo, guie-niiza (Zapoteco), guie-nizza (Zapoteco), ja&apos;abin (Maya), jelelte (Huasteco), k&apos; uchunuk (Maya), k&apos; uyutunk (Maya), k&apos;axab yuuk (Maya), lipa-ca-sui-la (Chontal de Oaxaca), ma-tau-mó (Chinanteco), madre cacao, madre de cacao, mata rata, mata ratón, matarrata, muiti (Otomí), palo de corral, palo de sol, palo negro, primavera, sak (Maya), sak ya&apos; aab (Maya), sak ya&apos;ab (Maya), sak ye&apos; eb (Maya), sak-yab (Maya), sakyab (Maya), sas yu&apos; ab ja&apos; abin (Maya), sayab (Maya), sayauiab (Maya), sayuiab (Maya), taxnikiwi (Totonaco), trebol, tunduti (Mixteco), ujcum (Tseltal), xab-yaab (Maya), xabyaab (Maya), xak-yaab (Maya), xk&apos; aan lool (Maya), yaga-le (Zapoteco)</commonName>
+                    <taxonRankValue>Mosquitoxylum jamaicense</taxonRankValue>
+                    <commonName>pajulté, cedrillo, ciruelillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Mosquitoxylum jamaicense</taxonRankValue>
-                    <commonName>pajulté, cedrillo, ciruelillo</commonName>
+                    <taxonRankValue>Gliricidia sepium</taxonRankValue>
+                    <commonName>piñon florido, San José, aga-le (Zapoteco), balche&apos;ke&apos; (Maya), balché ke (Maya), cacahuanal (Náhuatl), cacahuananche, cacahuanitzin (Náhuatl), cocoito, cocoíte, cuacuite, cuchunuc (Zoque), flor de San José, flor de sol, frijolillo, guie-niiza (Zapoteco), guie-nizza (Zapoteco), ja&apos;abin (Maya), jelelte (Huasteco), k&apos; uchunuk (Maya), k&apos; uyutunk (Maya), k&apos;axab yuuk (Maya), lipa-ca-sui-la (Chontal de Oaxaca), ma-tau-mó (Chinanteco), madre cacao, madre de cacao, mata rata, mata ratón, matarrata, muiti (Otomí), palo de corral, palo de sol, palo negro, primavera, sak (Maya), sak ya&apos; aab (Maya), sak ya&apos;ab (Maya), sak ye&apos; eb (Maya), sak-yab (Maya), sakyab (Maya), sas yu&apos; ab ja&apos; abin (Maya), sayab (Maya), sayauiab (Maya), sayuiab (Maya), taxnikiwi (Totonaco), trebol, tunduti (Mixteco), ujcum (Tseltal), xab-yaab (Maya), xabyaab (Maya), xak-yaab (Maya), xk&apos; aan lool (Maya), yaga-le (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2925,7 +2960,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Simarouba glauca</taxonRankValue>
-                    <commonName>pasa&apos;ak, aceituna, aceituno, aceituno negrito, gusano, negrito, pa&apos; sak che&apos; (Maya), pa-sak (Maya), palo gusano, papa&apos; ak (Maya), pasaak (Maya), pasak&apos; (Maya), pistache (Maya), rabo de lagarto blanco, x-pasak&apos;il (Maya), xpa&apos;sakil (Maya), xpaxakil (Maya), zapatero</commonName>
+                    <commonName>pasa&apos;ak, aceituna, aceituno, aceituno negrito, gusano, negrito, pa&apos; sak che&apos; (Maya), pa-sak (Maya), palo gusano, papa&apos; ak (Maya), pasaak (Maya), pasak&apos; (Maya), pistache, rabo de lagarto blanco, x-pasak&apos;il (Maya), xpa&apos;sakil (Maya), xpaxakil (Maya), zapatero</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3037,7 +3072,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ochroma lagopus</taxonRankValue>
-                    <commonName>balsa; lanero, cola de gato, corcho, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
+                    <commonName>balsa; lanero, balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3077,11 +3112,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Jacaranda caucana</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Psidium guajava</taxonRankValue>
-                    <commonName>guayaba, a&apos;sihui&apos;t (Totonaco), al-pil-ca (Chontal de Oaxaca), bec (Maya), bek (Maya), bjui (Zapoteco), bui (Zapoteco), ca&apos;aru (Cora), chac-pichi (Maya), chak-pichí (Maya), chalxócotl (Náhuatl), chk-pichí (Maya), enandi (Tarasco), guayaba, guayaba de venado, guayaba dulce, guayaba manzana, guayaba perulera, guayabilla, guayabillo, guayabo, guayabo agrio, guayabo de venado, guayabo regional, guayacán, guáibasim (Mayo), julu&apos; (Maya), kolok (Maya), llasibit (Totonaco), mo&apos;eyi (Cuicateco), mo&apos;i (Cuicateco), pachi (Maya), pata (Tsotsil), pehui (Zapoteco), pichi (Maya), pichi&apos; (Maya), pichi-cuy (Maya), pichi-guayaba (Maya), picho, posh (Mixe), pox (Maya), quauhtzapotl (Náhuatl), sumbadán (Zoque), tchie-ini (Mazateco), tchie-tigua (Mazateco), vayeváxi-te (Huichol), xalxócotl (Náhuatl), xalácatl (Náhuatl), xapeni (Otomí), xaxucotl (Náhuatl), xoxococuabitl (Náhuatl), yaga-huii (Zapoteco), ñi-joh (Chinanteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3130,6 +3160,11 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Quercus stellata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Psidium guajava</taxonRankValue>
+                    <commonName>guayaba, a&apos;sihui&apos;t (Totonaco), al-pil-ca (Chontal de Oaxaca), bec (Maya), bek (Maya), bjui (Zapoteco), bui (Zapoteco), ca&apos;aru (Cora), chac-pichi (Maya), chak-pichí (Maya), chalxócotl (Náhuatl), chk-pichí (Maya), enandi (Tarasco), guayaba, guayaba de venado, guayaba dulce, guayaba manzana, guayaba perulera, guayabilla, guayabillo, guayabo, guayabo agrio, guayabo de venado, guayabo regional, guayacán, guáibasim (Mayo), julu&apos; (Maya), kolok (Maya), llasibit (Totonaco), mo&apos;eyi (Cuicateco), mo&apos;i (Cuicateco), pachi (Maya), pata (Tsotsil), pehui (Zapoteco), pichi (Maya), pichi&apos; (Maya), pichi-cuy (Maya), pichi-guayaba (Maya), picho, posh (Mixe), pox (Maya), quauhtzapotl (Náhuatl), sumbadán (Zoque), tchie-ini (Mazateco), tchie-tigua (Mazateco), vayeváxi-te (Huichol), xalxócotl (Náhuatl), xalácatl (Náhuatl), xapeni (Otomí), xaxucotl (Náhuatl), xoxococuabitl (Náhuatl), yaga-huii (Zapoteco), ñi-joh (Chinanteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3257,7 +3292,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus yucatanensis</taxonRankValue>
-                    <commonName>amate, akkúun (Maya), amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora, álamo</commonName>
+                    <commonName>amate, akkúun (Maya), alamo, amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3296,11 +3331,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Bursera diversifolia</taxonRankValue>
-                    <commonName>copalillo; hoja menuda, capulillo, copal, copalillo</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Arbutus xalapensis</taxonRankValue>
                     <commonName>madroño, aile (Náhuatl), amazaquitl (Náhuatl), auako-uri (Huichol), b&apos; Tzajal outez (Tseltal), b&apos; Tzajal papatei (Tseltal), guayabillo, ja&apos;mal wamal (Tseltal), jarrito, jucay (Zoque), korúvasi (Tarahumara), laurel, lipa shulpá (Chontal de Oaxaca), madroño, madroño rojo, manzanita, manzanita china, nuzu-ndu (Zapoteco), nuzundu (Mixe), onté (Tsotsil), panan chén (Purépecha), panangsi (Purépecha), panán-gsuni (Tarasco), panángksi (Tarasco), tzajal zontez (Tseltal), urúbasi (Tarahumara), urúbishi (Tarahumara), ya-hatzii (Triqui), yaa yaana&apos; (Triqui)</commonName>
                 </taxonomicClassification>
@@ -3317,7 +3347,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>zapote, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>zapote, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3401,7 +3431,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Tabebuia chrysantha</taxonRankValue>
-                    <commonName>mapilla, ahan-ché (Maya), ahauché (Maya), ajaw che&apos; (Maya), amapa, amapa amarilla, amapa colorada, amapa prieta, amapa rosa, amapa verde, guayacan, guayacán amarillo, hahau-ché (Maya), hahuuché (Maya), hokab (Maya), jajauche&apos; (Maya), k&apos;an lool (Maya), k&apos;an lool k&apos;aax (Maya), lombricillo, macuilis (Maya), makulis (Maya), mauche&apos; (Maya), palo fierro, pata de león, primavera, roble, roble serrano, verdecillo, x-ahau-ché (Maya), x-ahauché (Maya), xha-hua-ché (Maya)</commonName>
+                    <commonName>mapilla, ahan-ché (Maya), ahauché (Maya), ajaw che&apos; (Maya), amapa, amapa amarilla, amapa colorada, amapa prieta, amapa rosa, amapa verde, guayacán, guayacán amarillo, hahau-ché (Maya), hahuuché (Maya), hokab (Maya), jajauche&apos; (Maya), k&apos;an lool (Maya), k&apos;an lool k&apos;aax (Maya), lombricillo, macuilis (Maya), makulis (Maya), mauche&apos; (Maya), palo fierro, pata de león, primavera, roble, roble serrano, verdecillo, x-ahau-ché (Maya), x-ahauché (Maya), xha-hua-ché (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3484,7 +3514,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Erythrina (Erythrina) americana</taxonRankValue>
-                    <commonName>colorin, alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
+                    <commonName>colorin, alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, jutuku (Huasteco), lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pemoche (Huasteca), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3856,7 +3886,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ochroma pyramidale</taxonRankValue>
-                    <commonName>pochote; pochotillo, balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), pata de liebre, pochote, árbol de algodón, árbol del algodón</commonName>
+                    <commonName>pochote; pochotillo, balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4186,7 +4216,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bursera copallifera</taxonRankValue>
-                    <commonName>c&apos;uajtsutacu (Tarasco), chucumbú, chucumpú, copal, copal blanco, copal chino, copal cimarrón, copal colorado, copal de penca, copal de santo, copal manso, copal santo, copalcuáhuitl (Náhuatl), copalcuáuitl (Náhuatl), copalillo, cuajiote (Náhuatl), cuajiote rojo (Náhuatl), mulato, ngendi (Otomí), ngidi (Otomí), palo mulato, tutzi (Otomí)</commonName>
+                    <commonName>c&apos;uájtsutacu (Tarasco), chucumbú, chucumpú, copal, copal blanco, copal chino, copal cimarrón, copal colorado, copal de penca, copal de santo, copal manso, copal santo, copalcuáhuitl (Náhuatl), copalcuáuitl (Náhuatl), copalillo, cuajiote (Náhuatl), cuajiote rojo (Náhuatl), mulato, ngendi (Otomí), ngidi (Otomí), palo mulato, tutzi (Otomí)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4196,7 +4226,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>tepuza, chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>tepuza, chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4244,11 +4274,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pouteria mammosa</taxonRankValue>
-                    <commonName>cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Nectandra sintenisii</taxonRankValue>
                     <commonName>laurel amarillo</commonName>
                 </taxonomicClassification>
@@ -4274,12 +4299,17 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pistacia mexicana</taxonRankValue>
-                    <commonName>achin, achín (Zoque), copal, copalillo, granadilla, palo mulato, pistache (Maya), ramón, soconautli (Náhuatl), yaga-gueij (Zapoteco), yaga-guela (Zapoteco), yaga-guie (Zapoteco), yaga-quie (Zapoteco)</commonName>
+                    <commonName>achin, achín (Zoque), copal, copalillo, granadilla, palo mulato, pistache, ramón, soconautli (Náhuatl), yaga-gueij (Zapoteco), yaga-guela (Zapoteco), yaga-guie (Zapoteco), yaga-quie (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ilex tolucana</taxonRankValue>
                     <commonName>aceituna, aceituna, aceitunillo, coralillo, limoncillo, mo-la-he (Chinanteco), palo prieto, tepezapote</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pouteria mammosa</taxonRankValue>
+                    <commonName>cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4310,11 +4340,6 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Drypetes brownii</taxonRankValue>
                     <commonName>jolube, chie-nita (Zapoteco), coquito, morgao negro, pimientillo</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Daphnopsis bonplandiana</taxonRankValue>
-                    <commonName>talismecate, cuero de toro, jonote, palo de nopo, pescador</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4471,7 +4496,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus cotinifolia</taxonRankValue>
-                    <commonName>amate, alamo, amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), árbol de leche</commonName>
+                    <commonName>amate, amate, amate (Náhuatl), amate amarillo, amate blanco, amate negro, amate prieto, amezquite (Náhuatl), camuchina (Tarasco), capulina, capulín, ceiba, ceibo (Maya), chipil, chuná (Tarahumara), cobó (Maya), coobó (Maya), higo, higuerilla, higuerón, hu&apos; un (Maya), hu&apos;un (Mixe), ju&apos; un (Maya), ju&apos; un ch&apos; iich&apos; (Maya), kipochit (Maya), koopo&apos; (Maya), koopo&apos; chit (Maya), koopp&apos; (Maya), kopo&apos; (Maya), kopochit (Maya), kopó (Maya), mata palo, matapalo, mutut (Tseltal), planta de hule, saiba güicha (Tarasco), uohtoli (Guarijío), uojtoli (Guarijío), xkoopo&apos; (Maya), álamo, árbol de leche</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4556,7 +4581,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Ochroma lagopus var. bicolor</taxonRankValue>
-                    <commonName>jopi, balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), pata de liebre, pochote, árbol de algodón, árbol del algodón</commonName>
+                    <commonName>jopi, balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4574,7 +4599,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Pinus (Pinus) contorta var. latifolia</taxonRankValue>
+                    <taxonRankValue>Pinus contorta var. latifolia</taxonRankValue>
                     <commonName>lodgepole pine</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -4606,7 +4631,7 @@ Familia: Fabaceae, Myrtaceae, Pinaceae, Cupressaceae, Lauraceae, Anacardiaceae, 
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -4649,7 +4674,7 @@ b.- Incrementar el acervo actual de la colección, realizando varias colectas en
                 <studyAreaDescription>
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Plantas
-
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acebos, yerba mate
@@ -4682,109 +4707,8 @@ con flores como muérdagos, sándalos
 con flores como palos de agua
 con flores como plantas del aceite negro
 con flores como uvas
-con flores, con semillas, con frutos como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africa
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
-con flores, con semillas, con frutos como acebos, yerba mate
-con flores, con semillas, con frutos como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
-con flores, con semillas, con frutos como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
-con flores, con semillas, con frutos como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
-con flores, con semillas, con frutos como agritos, tréboles
-con flores, con semillas, con frutos como aguacates, alcanforeros, canelas, laureles
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como amapolas, chicalotes
-con flores, con semillas, con frutos como anís, apios, cilantros, eneldos, ginseng, hiedras, perejil, zanahorias
-con flores, con semillas, con frutos como arándanos, árboles del chicle, argán, avellanas del Brasil, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, ocotillos, zapotes
-con flores, con semillas, con frutos como árboles amargos
-con flores, con semillas, con frutos como aretes, eucaliptos, flores de cepillo, granadas, guayabas
-con flores, con semillas, con frutos como arúgulas, berros, brócolis, coles, coliflores, kales, mastuerzos, moringas, mostazas, papayas, rábanos
-con flores, con semillas, con frutos como berenjena, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
-con flores, con semillas, con frutos como borrajas, heliotropos, nomeolvides, palomillas de tintes
-con flores, con semillas, con frutos como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como canelos, palo picante
-con flores, con semillas, con frutos como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
-con flores, con semillas, con frutos como cardos, madreselvas, saúcos
-con flores, con semillas, con frutos como chirimoyas, guanábanas, magnolias, nuez moscada
-con flores, con semillas, con frutos como cocoteros, dátiles, palmas, palmeras, palmitos
-con flores, con semillas, con frutos como gobernadoras, guayacanes
-con flores, con semillas, con frutos como hayas, lotos, ninfas, nueces de macadamia, robles australianos, sicomoros
-con flores, con semillas, con frutos como muérdagos, sándalos
-con flores, con semillas, con frutos como palos verdes
-con flores, con semillas, con frutos como pimientas
-con flores, con semillas, con frutos como plantas del aceite negro
-con flores, con semillas, con frutos como uvas
-con flores, con semillas, con frutos: mangles
 con flores: mangles
-Con flores; angiospermas
-Con flores; angiospermas (aceitunos; chaparro amargo; cuasia)
-Con flores; angiospermas (aguacates; canela; alcanfor; laurel)
-Con flores; angiospermas (alisos; abedules; avellanas)
-Con flores; angiospermas (amates; higos; brevas)
-Con flores; angiospermas (anonas; guanábanas; chirimoyas)
-Con flores; angiospermas (boj; buxus)
-Con flores; angiospermas (buckthorns)
-Con flores; angiospermas (café; gardenias; trompetillas; quinina; ipecacuana)
-Con flores; angiospermas (caobas)
-Con flores; angiospermas (capulincillos; palos de peine)
-Con flores; angiospermas (castaños)
-Con flores; angiospermas (castaños; huesillos; mayates; agualajos; jaboncillos; guayas)
-Con flores; angiospermas (ceibas; pochotes)
-Con flores; angiospermas (chicozapotes; chicle; aceite de Argán)
-Con flores; angiospermas (chilillos; barbas de chivo)
-Con flores; angiospermas (ciruelillos)
-Con flores; angiospermas (copales; cuajiotes)
-Con flores; angiospermas (cornus)
-Con flores; angiospermas (corpo; palo blanco; cozolmeca)
-Con flores; angiospermas (dalias; margaritas; girasoles; crisantemos; gerberas; flor de cempasúchil; cardos; senecios; manzanilla; lechugas; alcachofas; montanoa; cártamo)
-Con flores; angiospermas (encinos; robles)
-Con flores; angiospermas (flores de cepillo; peinetas, peines de mico, almendro)
-Con flores; angiospermas (hiedras; ginseng; aralias)
-Con flores; angiospermas (jacarandas; jícaras)
-Con flores; angiospermas (legumbres; frijoles; habas; chícharos; ejotes; garbanzos; lentejas; jícamas; cacahuates; tamarindos; mezquites; guajes)
-Con flores; angiospermas (liquidambar)
-Con flores; angiospermas (madroños; arándanos)
-Con flores; angiospermas (malvas; algodón; cacao; chocolate; jamaica; hibiscus; flor de manita)
-Con flores; angiospermas (mameyes)
-Con flores; angiospermas (mangles)
-Con flores; angiospermas (mangos; nuez de la India; pistaches; pirús; pirúl; che chén; marañón)
-Con flores; angiospermas (maples; arces)
-Con flores; angiospermas (moraditas; nomeolvides; cordias)
-Con flores; angiospermas (naranjas; limas; limones; toronjas; mandarinas; zapote blanco; ruda; flor de azahar)
-Con flores; angiospermas (nochebuena; ricino; caucho; mandioca; corona de cristo, chaya)
-Con flores; angiospermas (nogales; nuez de castilla; nuez pecana)
-Con flores; angiospermas (nuez de Brasil; nuez amazónica)
-Con flores; angiospermas (nuez moscada)
-Con flores; angiospermas (olivos; aceitunas; fresnos)
-Con flores; angiospermas (olmos)
-Con flores; angiospermas (ortigas; chichicastli)
-Con flores; angiospermas (palos de agua)
-Con flores; angiospermas (robles australianos; nuez de macadamia)
-Con flores; angiospermas (rosas; manzanas; peras; membrillos; duraznos; capulines; ciruelas; cerezas; fresas; almendras; zarzamoras; frambuesas; chabacanos; tejocotes)
-Con flores; angiospermas (sauces; álamos; ahuejotes)
-Con flores; angiospermas (saúcos)
-Con flores; angiospermas (sicomoros; hayas)
-Con flores; angiospermas (taray; cedro salado; tamariscus)
-Con flores; angiospermas (tomillo; menta; romero; yerbabuena; albahaca; orégano; chía; salvias)
-Con flores; angiospermas (venenillos; flores de mayo; plumerias)
-Con flores; angiospermas (violetas)
-Con flores; angiospermas (yerba mate)
-NO DISPONIBLE
-sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-Sin flores; gimnospermas coníferas
-Sin flores; gimnospermas coníferas (abetos)
-Sin flores; gimnospermas coníferas (alerces)
-Sin flores; gimnospermas coníferas (araucarias)
-Sin flores; gimnospermas coníferas (árbol de navidad; falso abeto)
-Sin flores; gimnospermas coníferas (cedros)
-Sin flores; gimnospermas coníferas (cipreses)
-Sin flores; gimnospermas coníferas (enebros; sabinas)
-Sin flores; gimnospermas coníferas (pinos)
-Sin flores; gimnospermas coníferas (tejos; granadillos; palmiras)
-Sin flores; gimnospermas coníferas (tujas; tuyas)</descriptorValue>
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
             </project>
@@ -4793,8 +4717,8 @@ Sin flores; gimnospermas coníferas (tujas; tuyas)</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:47Z</dateStamp>
-                <citation>Barajas Morales J, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Base de datos para la xiloteca del Instituto de Biología de la UNAM. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/czst1g accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:38Z</dateStamp>
+                <citation>Barajas Morales J, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Base de datos para la xiloteca del Instituto de Biología de la UNAM. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/czst1g accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-T004-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -4827,97 +4751,12 @@ Sin flores; gimnospermas coníferas (tujas; tuyas)</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Colección de Especies Forestales;HBw;Instituto de Investigaciones Forestales;IIF</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Colección de Maderas;CEDIMA;Departamento de Madera, Celulosa y Papel, Centro Universitario de Ciencias Exactas e Ingenierías, Universidad de Guadalajara;DMCyP-CUCEI-UDG</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Colección de Maderas;CMM;Compañía Maderera Maya;CMM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Harry Philip Brown Memorial Wood Collection;BWCw;College of Environmental Science and Forestry, State University of New York;ESF-SUNY</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario;EST;Escuela Técnica Superior de Ingenieros de Montes, Universidad Politécnica de Madrid;ETSI-UPM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario;CETI;Centro de Enseñanza Técnica Industrial;CETI</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario de Fitosanidad;CMPH;Colegio de Postgraduados, Campus Montecillo;CP</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario Nacional de México, Xiloteca;MEXUw;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Herbario Nacional Forestal Biól. Luciano Vela Gálvez;INIF;Campo Experimental Coyoacán, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CECOY-INIFAP</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Het Xylarium of Tervuren;Tw;Musée Royal de lAfrique Centrale;MRAC</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
                     <collectionName>Madison Collection;MADw;Center for Wood Anatomy Research, Forest Products Laboratory, Forest Service, United States Department of Agriculture;FPL-FS-USDA</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Reinbek-Hamburg Wood;RBHw;Johann Heinrich von Thünen Institut für Holzforschung, Bundesforschungsinstitut für Ländliche Räume, Wald und Fischerei;vTI</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Wood Colection;NO DISPONIBLE;Canadian Forest Service;CFS</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Wood Collection;Fw;Field Museum of Natural History;FMNH</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Xiloteca;Uw;Universiteit Utrecht;UU</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Xiloteca;GUAw;Centro Universitario de Ciencias Biológicas y Agropecuarias, Universidad de Guadalajara;CUCBA-UDG</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
-                    <collectionName>Xiloteca;INIREB;Instituto Nacional de Investigaciones sobre Recursos Bióticos;INIREB</collectionName>
+                    <collectionName>Colección de Especies Forestales;HBw;Instituto de Investigaciones Forestales;IIF</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -4927,14 +4766,98 @@ Sin flores; gimnospermas coníferas (tujas; tuyas)</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Colección de Maderas;CMM;Compañía Maderera Maya;CMM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Xiloteca;INIREB;Instituto Nacional de Investigaciones sobre Recursos Bióticos;INIREB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario Nacional Forestal Biól. Luciano Vela Gálvez;INIF;Campo Experimental Coyoacán, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CECOY-INIFAP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Harry Philip Brown Memorial Wood Collection;BWCw;College of Environmental Science and Forestry, State University of New York;ESF-SUNY</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario Nacional de México, Xiloteca;MEXUw;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Wood Collection;Fw;Field Museum of Natural History;FMNH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Colección de Maderas;CEDIMA;Departamento de Madera, Celulosa y Papel, Centro Universitario de Ciencias Exactas e Ingenierías, Universidad de Guadalajara;DMCyP-CUCEI-UDG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario de Fitosanidad;CMPH;Colegio de Postgraduados, Campus Montecillo;CP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario;CETI;Centro de Enseñanza Técnica Industrial;CETI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario;EST;Escuela Técnica Superior de Ingenieros de Montes, Universidad Politécnica de Madrid;ETSI-UPM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Reinbek-Hamburg Wood;RBHw;Johann Heinrich von Thünen Institut für Holzforschung, Bundesforschungsinstitut für Ländliche Räume, Wald und Fischerei;vTI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Xiloteca;GUAw;Centro Universitario de Ciencias Biológicas y Agropecuarias, Universidad de Guadalajara;CUCBA-UDG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Wood Colection;NO DISPONIBLE;Canadian Forest Service;CFS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
                     <collectionName>Xiloteca Dr. Calvino Mainieri;BCTw;Instituto de Pesquisas Tecnológicas do Estado de São Paulo S.A.;IPT</collectionName>
                 </collection>
-                <specimenPreservationMethod>OTHER</specimenPreservationMethod>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Het Xylarium of Tervuren;Tw;Musée Royal de lAfrique Centrale;MRAC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-T004-T004102F-ND</collectionIdentifier>
+                    <collectionName>Xiloteca;Uw;Universiteit Utrecht;UU</collectionName>
+                </collection>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>33</endRange>
+                        <endRange>952</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

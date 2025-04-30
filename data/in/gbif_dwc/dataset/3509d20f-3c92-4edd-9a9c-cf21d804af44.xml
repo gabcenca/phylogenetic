@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Universidad de SonoraDepartamento de Investigaciones Científicas y Tecnológicas</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Rosales y Niños Héroes s/n</deliveryPoint>
                 <city>Hermosillo</city>
                 <administrativeArea>Sonora</administrativeArea>
                 <postalCode>83000</postalCode>
@@ -47,22 +46,23 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>La flora de La Frontera (eco-región 12.1.1.1) en el norte de Sonora ha estado descuidada por los botánicos durante casi 100 años. La diversidad biológica de esta región es muy diversa, ya que refleja la zona de convergencia de los trópicos del Nuevo Mundo con la zona Templada del norte. Aquí confluyen comunidades bióticas importantes como el matorral y pastizal del Desierto Chihuahuense, los encinares y bosques de pino-encino de serranías aisladas en la Sierra Madre Occidental, los matorrales espinosos de pié de monte más norteños, y los corredores riparios de los ríos Cocóspera, Agua Prieta, Bavispe, Cajón Bonito, Fronteras, San Bernardino, y Moctezuma, la mayoría de ellos afluentes del gran Río Yaqui.
 
-Con este proyecto se pretende reunir la información sobre las colecciones de plantas más recientes para la región de La Frontera, y además se llevarán a cabo registros nuevos mediante la realización de un inventario florístico en el Rancho El Aribabi, Municipio de Imuris, Sonora, dentro de una zona representativa de la eco-región 12.1.1.1. Los ejemplares colectados en el proyecto serán procesados y depositados en el herbario USON, y algunos duplicados serán enviados, para su determinación por especialistas, a los herbarios ARIZ, ASU, CAS, IEB, IBUG, MEXU, MICH, MO, NMC, QMEX, TEX, US, entre otros. Utilizando el sistema de información BIÓTICA, se integrará una base de datos conteniendo 6000 registros curatoriales que representarán al menos 700 especies de plantas de la eco-región 12.1.1.1.</para>
-<para>Reino: 1
+Con este proyecto se pretende reunir la información sobre las colecciones de plantas más recientes para la región de La Frontera, y además se llevarán a cabo registros nuevos mediante la realización de un inventario florístico en el Rancho El Aribabi, Municipio de Imuris, Sonora, dentro de una zona representativa de la eco-región 12.1.1.1. Los ejemplares colectados en el proyecto serán procesados y depositados en el herbario USON, y algunos duplicados serán enviados, para su determinación por especialistas, a los herbarios ARIZ, ASU, CAS, IEB, IBUG, MEXU, MICH, MO, NMC, QMEX, TEX, US, entre otros. Utilizando el sistema de información BIÓTICA, se integrará una base de datos conteniendo 6000 registros curatoriales que representarán al menos 700 especies de plantas de la eco-región 12.1.1.1.
+</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 4
 Orden: 46
 Familia: 134
 Género: 650
 Subgénero: 14
-Especie: 1354
-Epitetoinfraespecifico: 280</para>
+Especie: 1352
+Epitetoinfraespecifico: 280
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -98,10 +98,10 @@ Epitetoinfraespecifico: 280</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (SONORA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-111.544</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-108.779</eastBoundingCoordinate>
-                    <northBoundingCoordinate>31.477</northBoundingCoordinate>
-                    <southBoundingCoordinate>29.457</southBoundingCoordinate>
+                    <westBoundingCoordinate>-111.544444</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-108.778611</eastBoundingCoordinate>
+                    <northBoundingCoordinate>31.476667</northBoundingCoordinate>
+                    <southBoundingCoordinate>29.457167</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -119,7 +119,7 @@ Epitetoinfraespecifico: 280</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Pinopsida, Lycopodiopsida
 Orden: Commelinales, Apiales, Myrtales, Poales, Brassicales, Solanales, Alismatales, Salviniales, Asterales, Asparagales, Lamiales, Rosales, Gentianales, Fabales, Malvales, Boraginales, Santalales, Proteales, Oxalidales, Caryophyllales, Cornales, Malpighiales, Ericales, Sapindales, Fagales, Liliales, Polypodiales, Saxifragales, Pinales, Cucurbitales, Geraniales, Ranunculales, Piperales, Selaginellales, Cupressales, Celastrales, Vitales, Dipsacales, Zygophyllales, Garryales, Crossosomatales, Ephedrales, Equisetales, Ophioglossales, Schizaeales, Arecales
 Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicaceae, Solanaceae, Araceae, Potamogetonaceae, Marsileaceae, Asteraceae, Araliaceae, Poaceae, Alismataceae, Iridaceae, Phrymaceae, Plantaginaceae, Moraceae, Oleaceae, Apocynaceae, Fabaceae, Malvaceae, Boraginaceae, Santalaceae, Platanaceae, Rubiaceae, Lamiaceae, Oxalidaceae, Rosaceae, Chenopodiaceae, Hydrangeaceae, Passifloraceae, Euphorbiaceae, Sapotaceae, Convolvulaceae, Polygalaceae, Montiaceae, Anacardiaceae, Salicaceae, Hydrophyllaceae, Verbenaceae, Primulaceae, Bixaceae, Acanthaceae, Asparagaceae, Fagaceae, Liliaceae, Urticaceae, Pteridaceae, Lythraceae, Loasaceae, Malpighiaceae, Saxifragaceae, Pinaceae, Polemoniaceae, Polygonaceae, Cucurbitaceae, Caryophyllaceae, Nyctaginaceae, Geraniaceae, Orobanchaceae, Rutaceae, Sapindaceae, Campanulaceae, Commelinaceae, Amaranthaceae, Cannabaceae, Namaceae, Ericaceae, Papaveraceae, Ranunculaceae, Aspleniaceae, Rhamnaceae, Juglandaceae, Cactaceae, Linaceae, Gentianaceae, Aristolochiaceae, Bromeliaceae, Selaginellaceae, Cupressaceae, Celastraceae, Vitaceae, Martyniaceae, Tamaricaceae, Adoxaceae, Scrophulariaceae, Violaceae, Portulacaceae, Juncaceae, Crassulaceae, Caprifoliaceae, Achatocarpaceae, Krameriaceae, Garryaceae, Crossosomataceae, Plumbaginaceae, Talinaceae, Bignoniaceae, Zygophyllaceae, Cleomaceae, Amaryllidaceae, Molluginaceae, Melanthiaceae, Saururaceae, Heliotropiaceae, Woodsiaceae, Ulmaceae, Simaroubaceae, Berberidaceae, Ephedraceae, Koeberliniaceae, Fouquieriaceae, Equisetaceae, Orchidaceae, Aizoaceae, Cystopteridaceae, Meliaceae, Phyllanthaceae, Asphodelaceae, Burseraceae, Menispermaceae, Petiveriaceae, Myrtaceae, Cordiaceae, Loranthaceae, Ophioglossaceae, Ehretiaceae, Anemiaceae, Polypodiaceae, Arecaceae, Hypericaceae, Dennstaedtiaceae, Begoniaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -132,11 +132,15 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -2504,10 +2508,6 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
-                    <taxonRankValue>Pseudotsuga</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Genus</taxonRankName>
                     <taxonRankValue>Tripsacum</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -3140,6 +3140,10 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pseudotsuga</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
                     <taxonRankValue>Psoralidium</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -3576,7 +3580,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3999,7 +4003,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Callaeum macropterum</taxonRankValue>
-                    <commonName>gallinita, anaraka (Tarahumara), aparicua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
+                    <commonName>gallinita, anaraka (Tarahumara), apáricua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4252,6 +4256,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Zinnia acerosa</taxonRankValue>
+                    <commonName>hierba del burro, parraleña</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4289,6 +4294,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gnaphalium sonorae</taxonRankValue>
+                    <commonName>gordolobo, manzanilla del río, rasorá (Tarahumara)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4430,7 +4436,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Populus fremontii</taxonRankValue>
-                    <commonName>álamo, alamo cimarrón, itzohuo (Huasteco), olmo, olomte (Huasteco), volador, álamo</commonName>
+                    <commonName>álamo, alamo, alamo cimarrón, itzohuo (Huasteco), olmo, olomte (Huasteco), volador</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4503,6 +4509,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Brickellia californica</taxonRankValue>
+                    <commonName>hierba de la vaca</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5089,6 +5096,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Setaria adhaerens</taxonRankValue>
+                    <commonName>cola de zorra pegajosa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5139,7 +5147,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hybanthus attenuatus</taxonRankValue>
-                    <commonName>quelite</commonName>
+                    <commonName>poshil hniquel huamal (Tseltal), quelite</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5907,7 +5915,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Rhus radicans</taxonRankValue>
-                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6191,11 +6199,6 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pseudotsuga mucronata</taxonRankValue>
-                    <commonName>pinabete</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Penstemon stenophyllus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -6228,11 +6231,6 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Allionia incarnata</taxonRankValue>
                     <commonName>garrapatilla, hierba de la hormiga, hierba de la mosca, hierba del golpe, hierba del hormiguero</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Acacia greggii</taxonRankValue>
-                    <commonName>gatuño, tepame, tésota, uña de gato</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6543,7 +6541,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Toxicodendron radicans</taxonRankValue>
-                    <commonName>hiedra, amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>hiedra, amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7982,7 +7980,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Symphyotrichum subulatum</taxonRankValue>
-                    <commonName>escobilla, escobillo, metezurra</commonName>
+                    <commonName>escobilla, escobillo, lechuga de monte, metezurra</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -8282,11 +8280,6 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Coursetia glandulosa</taxonRankValue>
                     <commonName>chipile, cojusamo (Guarijío), cousamo (Guarijío), palo dulce, palo fierro, tepechoco, zuzupe (Tarasco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Equisetum (Hippochaete) × ferrissii</taxonRankValue>
-                    <commonName>cola de caballo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -9048,6 +9041,11 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acacia greggii</taxonRankValue>
+                    <commonName>gatuño, tepame, tésota, uña de gato</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Wedelia greenmanii</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -9120,7 +9118,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pinus strobiformis</taxonRankValue>
+                    <taxonRankValue>Pinus (Strobus) strobiformis</taxonRankValue>
                     <commonName>pino chimonque, acahuite, acalocote, acamita, acanita, ayacahuite, huiyoco (Tarahumara), mateyó (Tarahumara), ocote blanco, ocote chino, pinabete, pino, pino acahite, pino ayacahuite, pino blanco, pino chimonque, pino huiyoco, pino nayar, pino real, pino triste, piñón, wiyó (Tarahumara)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -9379,6 +9377,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Xanthisma spinulosum</taxonRankValue>
+                    <commonName>hierba de la víbora, hierba del burro, árnica</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -9440,7 +9439,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Guazuma ulmifolia</taxonRankValue>
-                    <commonName>acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacima, guacimillo, guayacán, guácima prieta, guácimo, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
+                    <commonName>acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacimillo, guacimo, guayacán, guácima, guácima prieta, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -9641,6 +9640,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dyssodia porophyllum subsp. cancellata</taxonRankValue>
+                    <commonName>alcanfor, cardo santo del monte</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10184,7 +10184,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Thalictrum (Lecoyerium) fendleri var. wrightii</taxonRankValue>
+                    <taxonRankValue>Thalictrum fendleri var. wrightii</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10193,6 +10193,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Ruellia nudiflora var. glabrata</taxonRankValue>
+                    <commonName>berraco xiiw (Español-Maya), che&apos;su&apos;uk (Maya), cruz xiiw (Español-Maya), kabal xa&apos;an (Maya), kabal ya&apos;ax niik (Maya), pajkanul (Maya), xana mukuy (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10339,6 +10340,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Larrea divaricata subsp. tridentata</taxonRankValue>
+                    <commonName>gobernadora, hediondilla, huamis (Seri), háaxat (Seri), jediondilla</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10348,6 +10350,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Acer grandidentatum var. brachypterum</taxonRankValue>
+                    <commonName>palo de azúcar</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10600,6 +10603,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Fraxinus velutina var. glabrata</taxonRankValue>
+                    <commonName>fresno, uré (Tarahumara)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10662,6 +10666,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Machaeranthera pinnatifida var. gooddingii</taxonRankValue>
+                    <commonName>hierba de la víbora, hierba del burro, árnica</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10675,7 +10680,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Ipomoea arborescens var. glabrata</taxonRankValue>
-                    <commonName>casahuate enano, cazahuate blanco, lime-quipa-ca-tu-ue (Chontal de Oaxaca), palo blanco, palo bobo, pájaro bobo</commonName>
+                    <commonName>casahuate, casahuate blanco, cazahuate, cazahuate blanco, cuau-zahuatl (Náhuatl), cuauhzáhuatl (Náhuatl), flor de palo blanco, itate (Cuicateco), lipa-ca-tu-ue (Chontal de Oaxaca), néctar, palo blanco, palo bobo, palo cabra, palo de muerto, palo del muerto, palo santo, palo santo amarillo, pájaro bobo, sacamanteca, xegua (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10720,7 +10725,7 @@ Familia: Pontederiaceae, Apiaceae, Onagraceae, Typhaceae, Cyperaceae, Brassicace
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -10790,20 +10795,7 @@ con flores como palos verdes
 con flores como pimientas
 con flores como plantas del aceite negro
 con flores como uvas
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africa
-con flores, con semillas, con frutos como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como cereales, heno, juncos, pastos terrestres, piña, tules
-Con flores; angiospermas
-Con flores; angiospermas (campánulas; camote; ololiuqui)
-Con flores; angiospermas (coles; coliflores; brócolis; rábanos; berros; mostazas; arúgula; nabo; colinabo)
-Con flores; angiospermas (pastos terrestres; bambúes; carrizos; maíz; arroz; trigo; avena; centeno; cebada; sorgo; mijo; alpiste; caña de azúcar; zacates; cortaderia; navajitas; )
-Con flores; angiospermas (siempre vivas)
-Con flores; angiospermas (tepozán; verbasco)
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
@@ -10813,12 +10805,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:57Z</dateStamp>
-                <citation>Sánchez Escalante J, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Plantas de La Frontera (ecorregión 12.1.1.1), e inventario florístico del Rancho El Aribabi, municipio de Imuris, Sonora. Version 1.16. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/9jgqgg accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>NA. 7/septiembre/2001. Norma Oficial Mexicana NOM-059-ECOL-2001. DIARIO OFICIAL DE LA FEDERACION. México.</citation>
-                <citation>Arias, S., U. Guzmán, M. C. Mandujano, M. Soto y J. Golubov. 2005. Las especies mexicanas de cactáceas en riesgo de extinción. Una comparación entre los listados NOM-059-ECOL-2001 (México), La Lista Roja (UICN) y CITES. Cactáceas y suculentas mexicanas. 5(4). México. 101-125</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:41Z</dateStamp>
+                <citation>Sánchez Escalante J, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Plantas de La Frontera (ecorregión 12.1.1.1), e inventario florístico del Rancho El Aribabi, municipio de Imuris, Sonora. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/9jgqgg accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-GT011-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -10856,19 +10844,18 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-GT011-GT0111210F_Corregida-ND</collectionIdentifier>
-                    <collectionName>Herbarium;ARIZ;University of Arizona;UAZ</collectionName>
+                    <collectionName>Herbarium;MICH;University of Michigan;UM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-GT011-GT0111210F_Corregida-ND</collectionIdentifier>
-                    <collectionName>Herbarium;MICH;University of Michigan;UM</collectionName>
+                    <collectionName>Herbarium;ARIZ;University of Arizona;UAZ</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>2</endRange>
+                        <endRange>5,223</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

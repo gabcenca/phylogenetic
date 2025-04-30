@@ -21,7 +21,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de CienciasDepartamento de BiologíaLaboratorio de Biogeografía y Sinecología</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -49,20 +48,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>La región montañosa del sur de la Cuenca de México se enmarca dentro de un lugar  importante por ser el centro de la zona de transición entre las regiones Neártica y Neotropical. La gran diversidad de condiciones se ve reflejada en una alta diversidad alfa y beta. Esta conspicua diversidad ha hecho posible el establecimiento de asentamientos humanos por más de 10,000 años, entre los que destaca el imperio azteca. Durante el ultimo siglo, no obstante, se han rebasado los límites de aprovechamiento de los recursos naturales y esto ha provocado un empobrecimiento de la biodiversidad y su respectiva baja en la calidad de vida de los habitantes de la región. El presente estudio documenta la riqueza de flora (plantas vasculares) y fauna (vertebrados terrestres) registrada en la región; analiza la situación actual de las áreas protegidas y su entorno para fines de conservación y finalmente propone una estrategia de regionalización del territorio para fines de apoyo al plan de ordenamiento ecológico del área. Esto se realizó conjuntando en una base de datos todos los registros de los grupos mencionados. Se procedió a rescatar aquellos registros que permitieran su ubicación detallada en un mapa escala  i:50,000 y posteriormente se realizó trabajo de campo para completar y verificar la definición de unidades de alto valor ambiental. Los inventarios (tanto bibliográficos como producto del trabajo de campo) fueron analizados por métodos multivariados para identificar grupos de especies diagnosticas (endémicas y en peligro de extinción) así como su distribución. Finalmente se elaboró una regionalización del territorio con base en los análisis efectuados y con la ayuda de un sistema de información geográfica.</para>
-<para>Reino: 3
+            <para>La región montañosa del sur de la Cuenca de México se enmarca dentro de un lugar  importante por ser el centro de la zona de transición entre las regiones Neártica y Neotropical. La gran diversidad de condiciones se ve reflejada en una alta diversidad alfa y beta. Esta conspicua diversidad ha hecho posible el establecimiento de asentamientos humanos por más de 10,000 años, entre los que destaca el imperio azteca. Durante el ultimo siglo, no obstante, se han rebasado los límites de aprovechamiento de los recursos naturales y esto ha provocado un empobrecimiento de la biodiversidad y su respectiva baja en la calidad de vida de los habitantes de la región. El presente estudio documenta la riqueza de flora (plantas vasculares) y fauna (vertebrados terrestres) registrada en la región; analiza la situación actual de las áreas protegidas y su entorno para fines de conservación y finalmente propone una estrategia de regionalización del territorio para fines de apoyo al plan de ordenamiento ecológico del área. Esto se realizó conjuntando en una base de datos todos los registros de los grupos mencionados. Se procedió a rescatar aquellos registros que permitieran su ubicación detallada en un mapa escala  i:50,000 y posteriormente se realizó trabajo de campo para completar y verificar la definición de unidades de alto valor ambiental. Los inventarios (tanto bibliográficos como producto del trabajo de campo) fueron analizados por métodos multivariados para identificar grupos de especies diagnosticas (endémicas y en peligro de extinción) así como su distribución. Finalmente se elaboró una regionalización del territorio con base en los análisis efectuados y con la ayuda de un sistema de información geográfica.</para><para>Reino: 3
 Filo: 5
-Clase: 11
+Clase: 12
 Orden: 67
 Familia: 158
 Género: 402
 Subgénero: 7
 Especie: 623
-Epitetoinfraespecifico: 71</para>
+Epitetoinfraespecifico: 71
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -101,12 +100,12 @@ Epitetoinfraespecifico: 71</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (CIUDAD DE MEXICO, DISTRITO FEDERAL, MEXICO, MORELOS)</geographicDescription>
+                <geographicDescription>País: MEXICO (, DISTRITO FEDERAL, MEXICO, MORELOS)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-99.479</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-98.803</eastBoundingCoordinate>
-                    <northBoundingCoordinate>19.447</northBoundingCoordinate>
-                    <southBoundingCoordinate>18.683</southBoundingCoordinate>
+                    <westBoundingCoordinate>-99.478611</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-98.802508</eastBoundingCoordinate>
+                    <northBoundingCoordinate>19.447293</northBoundingCoordinate>
+                    <southBoundingCoordinate>18.682783</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -124,7 +123,7 @@ Epitetoinfraespecifico: 71</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae, Animalia, Fungi
 Filo: Tracheophyta, Chordata, Bryophyta, Ascomycota, Marchantiophyta
-Clase: Equisetopsida, Aves, Mammalia, Reptilia, Amphibia, Bryopsida, Polypodiopsida, Polytrichopsida, Lecanoromycetes, Lycopodiopsida, Marchantiopsida
+Clase: Magnoliopsida, Aves, Mammalia, Reptilia, Pinopsida, Amphibia, Bryopsida, Polypodiopsida, Polytrichopsida, Lecanoromycetes, Lycopodiopsida, Marchantiopsida
 Orden: Lamiales, Passeriformes, Rodentia, Poales, Carnivora, Squamata, Cupressales, Dipsacales, Fabales, Geraniales, Caryophyllales, Rosales, Fagales, Gentianales, Asterales, Caudata, Apiales, Lagomorpha, Myrtales, Piciformes, Saxifragales, Pottiales, Cucurbitales, Polypodiales, Solanales, Pinales, Galliformes, Strigiformes, Malpighiales, Oxalidales, Ericales, Commelinales, Chiroptera, Artiodactyla, Asparagales, Anura, Soricomorpha, Cornales, Apodiformes, Boraginales, Columbiformes, Polytrichales, Cingulata, Alismatales, Falconiformes, Brassicales, Liliales, Caprimulgiformes, Accipitriformes, Ranunculales, Peltigerales, Hypnales, Didelphimorphia, Lecanorales, Cuculiformes, Coraciiformes, Piperales, Selaginellales, Malvales, Bryales, Marchantiales, Trogoniformes, Zingiberales, Dicranales, Testudines, Hedwigiales, Cathartiformes
 Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Fringillidae, Poaceae, Cardinalidae, Turdidae, Mephitidae, Paridae, Phrynosomatidae, Canidae, Scincidae, Colubridae, Cupressaceae, Caprifoliaceae, Viperidae, Fabaceae, Geraniaceae, Parulidae, Caryophyllaceae, Rosaceae, Passerellidae, Betulaceae, Rubiaceae, Asteraceae, Natricidae, Icteriidae, Plethodontidae, Apiaceae, Leporidae, Onagraceae, Picidae, Felidae, Grossulariaceae, Phytolaccaceae, Troglodytidae, Pottiaceae, Tyrannidae, Cucurbitaceae, Aspleniaceae, Solanaceae, Pinaceae, Corvidae, Odontophoridae, Cricetidae, Strigidae, Salicaceae, Oxalidaceae, Ericaceae, Commelinaceae, Vespertilionidae, Dipsadidae, Cervidae, Campanulaceae, Furnariidae, Orobanchaceae, Teiidae, Pteridaceae, Asparagaceae, Hylidae, Montiaceae, Soricidae, Anguidae, Ambystomatidae, Mimidae, Cyperaceae, Loasaceae, Procyonidae, Vireonidae, Trochilidae, Amaryllidaceae, Fagaceae, Phyllostomidae, Ranidae, Boraginaceae, Hydrophyllaceae, Grallariidae, Orchidaceae, Columbidae, Chenopodiaceae, Polytrichaceae, Iguanidae, Dryopteridaceae, Dasypodidae, Gentianaceae, Potamogetonaceae, Woodsiaceae, Falconidae, Cactaceae, Helodermatidae, Brassicaceae, Melanthiaceae, Caprimulgidae, Accipitridae, Cystopteridaceae, Verbenaceae, Sittidae, Crassulaceae, Ranunculaceae, Resedaceae, Peltigeraceae, Thuidiaceae, Iridaceae, Urticaceae, Molossidae, Tityridae, Heteromyidae, Didelphidae, Polemoniaceae, Peucedramidae, Thraupidae, Acanthaceae, Parmeliaceae, Eleutherodactylidae, Hirundinidae, Cuculidae, Polypodiaceae, Momotidae, Sciuridae, Bombycillidae, Polygonaceae, Ptiliogonatidae, Passeridae, Anolidae, Piperaceae, Selaginellaceae, Martyniaceae, Typhaceae, Juncaceae, Cistaceae, Motacillidae, Hypericaceae, Bryaceae, Violaceae, Marchantiaceae, Trogonidae, Regulidae, Leptotyphlopidae, Mustelidae, Polygalaceae, Apodidae, Marantaceae, Dicranaceae, Hypnaceae, Scaphiopodidae, Kinosternidae, Hypoxidaceae, Oleaceae, Hedwigiaceae, Laniidae, Certhiidae, Cathartidae, Leucodontaceae, Cornaceae, Aegithalidae, Mormoopidae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -161,7 +160,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -174,6 +173,10 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Reptilia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -2751,6 +2754,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia elegans</taxonRankValue>
+                    <commonName>hierba del barretero, k&apos;anrrejna (Mazahua), mirto, mirto chico, mirto de monte, salvia roja</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2971,7 +2975,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3370,6 +3374,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia gesneriiflora</taxonRankValue>
+                    <commonName>chía, retama de monte</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3391,7 +3396,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja arvensis</taxonRankValue>
-                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, uitzacua (Tarasco)</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3605,6 +3610,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia fulgens</taxonRankValue>
+                    <commonName>mirto, salvia roja, ts&apos;imbarenzé (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3623,7 +3629,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Dasypus novemcinctus</taxonRankValue>
+                    <taxonRankValue>Dasypus mexicanus</taxonRankValue>
                     <commonName>armadillo, armadillo de nueve bandas, armadillo nueve bandas, ayotochtli (Yuto-nahua), mulita</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -3843,7 +3849,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hedeoma piperita</taxonRankValue>
-                    <commonName>Santo Domingo, tabaquillo</commonName>
+                    <commonName>Santo Domingo, hierba buena, tabaquillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3887,7 +3893,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4282,7 +4288,6 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Monotropa uniflora</taxonRankValue>
-                    <commonName>pipa de indio</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4800,7 +4805,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -4852,7 +4857,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5179,8 +5184,8 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Anoura geoffroyi</taxonRankValue>
-                    <commonName>chinaco, murciélago, murciélago rabón de Geoffroy, murciélago sin cola gris</commonName>
+                    <taxonRankValue>Anoura peruana</taxonRankValue>
+                    <commonName>chinaco, murciélago, murciélago sin cola gris</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5194,7 +5199,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Senecio prenanthoides</taxonRankValue>
+                    <taxonRankValue>Senecio prenantoides</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5984,7 +5989,7 @@ Familia: Scrophulariaceae, Plantaginaceae, Lamiaceae, Icteridae, Geomyidae, Frin
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -6022,12 +6027,14 @@ Plantas
 Reptiles
 águilas, halcones, zopilotes
 ajolotes, salamandras, tritones
+alondras, golondrinas
 ardillas, marmotas, perritos de la pradera
 armadillos, osos hormigueros, perezosos, tamanduas
+armiños, comadrejas, hurones, mangostas, nutrias, tejones
 berrendos, bisontes, borregos, cabras, camellos, ciervos, jabalies, pecaries, toros, vacas, venados
 bisbitas, capulineros, chinitos, estorninos, lavanderas
 boas, cobras, coralillos, culebras, pitones, serpientes, víboras
-búhos, lechuzas, tapacaminos
+búhos, lechuzas, tapacaminos, tecolotes
 cacomixtles, coatíes, mapaches, martuchas
 camaleones, geckos, iguanas, lagartijas, lagartos
 castores, ratones de abazones, ratones canguro, tuzas
@@ -6035,17 +6042,15 @@ chachalacas, codornices, gallinas, guajolotes, ñandúes, pavo reales, tinamúes
 charas, cuervos, urracas
 civetas, gatos, hienas, jaguares, leones, leopardos, linces, ocelotes, panteras, pumas, tigres
 colibríes, vencejos
-comadrejas, hurones, mangostas, nutrias, tejones
-comadrejas, hurones, nutrias, tejones
 como azulejos, cenzontles, cinclos, mirlos, mulatos, zorzales
 como batarás, hormigueros, trepatroncos
-como calandrias, tordos
+como calandrias, tordos, zanates
 como canarios, gorriones
 como carboneros, matracas, perlitas, saltaparedes
 como cardenales, rascadores, tangaras
 como carpinteros, coas, momotos, quetzales, tucanes
 como chipes
-como mosqueros
+como mosqueros, tiranos
 como saltarines, vireos
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
@@ -6079,18 +6084,13 @@ con flores como pimientas
 conejos, liebres
 correcaminos, cucus, palomas
 coyotes, lobos, perros, zorros
-culebras; serpientes
-culebrillas ciegas
-golondrinas, alondras
 hámsters, lemmis, ratas, ratones de campo, ratones urbanos
 líquenes
+marmosas, ratones runchos, tlacuaches, zarigüeyas
 mofetas, zorrillos
 murciélagos
 musarañas, topos
-musarañas; topos
 ranas, sapos
-ratas, ratones
-ratones marsupiales de los Andes, tlacuaches, zarigüeyas
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: antoceros, hepáticas, musgos
 sin flores: helechos y afines
@@ -6103,39 +6103,8 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:30Z</dateStamp>
-                <citation>Velázquez Montes J A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Análisis de la heterogeneidad ambiental y conectividad de las áreas naturales del sur del Valle de México. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xcdipw accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>Bribiesca-Luna, C. E. 1969. Hábitos alimenticios de algunas aves del Valle de Salazar, Edo. de México. Tesis de Licenciatura. Facultad de Ciencias, UNAM. México, D.F.</citation>
-                <citation>Bueno, A. y J. L. Juarez, C. 1981. Lista de especies de la Colección Ornitológica del Museo de Zoológía de la FES Zaragosa colectados en el Derrame Meridional de la sierra del chichinautzin. México, D.F.</citation>
-                <citation>Bueno, A. y J. L. Juarez, C. 1995. Lista de especies de la Colección Ornitológica del Museo de Zoológía de la FES Zaragosa colectados en el Derrame Meridional de la sierra del chichinautzin. México, D.F.</citation>
-                <citation>Cabrera, G. L. 1995. Ecología comparativa de dos comunidades de aves en un bosque templado del Ajusco Medio, D.F. Tesis de Licenciatura. Facultad de Ciencias, UNAM. México, D.F.</citation>
-                <citation>Castro-Franco, R. y M. G. Bustos-Zagal. 1992. Herpetofauna de la Zona de Reserva Ajusco-Chichinautzin Morelos México. Ciencia y Tecnología. 2. [2]. 67-70.</citation>
-                <citation>Ceballos, G. y Galindo, C. 1984. Mamíferos silvestres de la Cuenca de México. Limusa. México, D.F.</citation>
-                <citation>Cervantes, A. F., Martínez, J. 1992. Food habits of the Rabbit Romerolagus diazi (Leporidae) in Central Mexico. Journal of Mammalogy. 84. [73]. 830-834.</citation>
-                <citation>Cruz,  G. F. 1983. Estudio Ecológico Preliminar de las Aves del Noroeste del Edo de Morelos. Tesis de Licenciatura. Escuela de Ciencias Biologicas, UAEM. Cuernavaca, Mor.</citation>
-                <citation>Davis, W. B. y  H. M. Smith. 1953. Amphibians of de Mexican State of Morelos. Herpetologica. [8]. 144-149.</citation>
-                <citation>Davis, W. B. y  H. M. Smith. 1953. Aves y mamíferos del estado de Morelos. Revista de la Sociedad Mexicana Historia Natural. 1-4. [Tomo XIV]. México, D.F. 77-147.</citation>
-                <citation>Davis, W. B. y  H. M. Smith. 1953. Lizards and Turtles of the Mexican State of Morelos. Herpetologica. [9]. 100-109.</citation>
-                <citation>Davis, W. B. y  H. M. Smith. 1953. Snakes of the Mexican State of Morelos. Herpetologica. [8]. 133-143.</citation>
-                <citation>Davis, W. B. y  R.J. Russell. 1954. Mammals of the Mexican State of Morelos. Journal of Mammalogy. 1. [35]. 63-80.</citation>
-                <citation>Delgado, C. F. 1994. Estudio Avifaunistico de la región de Ocuilán de Arteaga Edo. México. Tesis de Licenciatura. ENEP, Iztacala. México, D.F.</citation>
-                <citation>García, L. J.; G. Gaviño de la Torre  y  M. Gurrola. 1991. Ocurrencia de nidos de aves en bosques templados del Edo. de Morelos, México. Ciencia y Tecnología. 2. [1].</citation>
-                <citation>Gaviño de la Torre, G. y F. Cruz, G. 1984. Épocas de la reproducción de algunas aves en el Edo. de Morelos, México. Anales del Instituto de Biología. Serie Zoología. 1. [55]. México, D.F. 243-270.</citation>
-                <citation>Ingles, L. G. 1958. Notas acerca de los Mamíferos Mexicanos. Anales del Instituto de Biología. Serie Zoología. [39]. 379-409.</citation>
-                <citation>Ingles, L. G. 1958. Notas acerca de los Mamíferos Mexicanos. Anales del Instituto de Biología. Serie Zoología. [39]. México, D.F. 379-409.</citation>
-                <citation>Martín, D. C. R. 1940. Nota acerca de algunos vertebrados de las Lagunas de Zempoala. Anales del Instituto de Biología. Serie Zoología. [11]. 741-743.</citation>
-                <citation>México, D.F.</citation>
-                <citation>Miller, et. al. 1993. En Threatened birds of the Americas.</citation>
-                <citation>Nocedal,  J. 1984. Estructura y Utilización del Follaje de la Comunidades de Pájaros en Bosques Templados del Valle de México. Acta Zoologica Mexicana. 6. México, D.F. 1-45.</citation>
-                <citation>Ramírez-Pulido, J. 1969. Contribución al estudio de los mamíferos del Parque Nacional &quot;Lagunas de Zempoala&quot;. Morelos. Anales del Instituto de Biología. Serie Zoología. [40]. México, D.F. 253-290.</citation>
-                <citation>Velázquez, M. A. y  F. J. Romero. (INEDITO) Análisis de la Heterogeneidad ambiental y conectividad de las areas naturales del sur del valle de México (B 144). México, D.F.</citation>
-                <citation>Wilson, R.G. y H. Ceballos-Lascurain. 1993. The Birds of Mexico City. BBC Priting and Graphics Ltd.</citation>
-                <citation>Lab. Biogeografía, UNAM. inédito.</citation>
-                <citation>Lab. de Fauna Silvestre, UAMX. inédito.</citation>
-                <citation>Velázquez A. y F.J. Romero. (INEDITO) Análisis de la Heterogeneidad ambiental y conectividad de las areas naturales del sur del valle de México (B 144).</citation>
-                <citation>Velázquez, M.A. 1993. Landscape ecology of Tláloc and Pelado Volcanoes, México. ITC. Netherlands. 1-70.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:29Z</dateStamp>
+                <citation>Velázquez Montes J A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Análisis de la heterogeneidad ambiental y conectividad de las áreas naturales del sur del Valle de México. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xcdipw accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-B144-Otros-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -6197,47 +6166,17 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección de Anfibios y Reptiles;CARUM;Centro de Investigaciones Biológicas, Universidad Autónoma del Estado de Morelos;CIB-UAEM</collectionName>
+                    <collectionName>NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección de Mamíferos;CMC;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección de Mamíferos;UAMI;Universidad Autónoma Metropolitana, Unidad Iztapalapa;UAMI</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Herpetológica;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Mastozoológica;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Nacional de Anfibios y Reptiles;CNAR;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Nacional de Aves;CNAV;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                    <collectionName>NO APLICA;NO APLICA;NO APLICA;NO APLICA</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -6247,12 +6186,27 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Ornitológica;MZFC-AV;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                    <collectionName>Colección Mastozoológica;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>Colección Ornitológica;FESZ-UNAM;Facultad de Estudios Superiores Zaragoza, Universidad Nacional Autónoma de México;FESZ-UNAM</collectionName>
+                    <collectionName>Colección Nacional de Aves;CNAV;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección Nacional de Anfibios y Reptiles;CNAR;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección de Anfibios y Reptiles;CARUM;Centro de Investigaciones Biológicas, Universidad Autónoma del Estado de Morelos;CIB-UAEM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -6262,13 +6216,40 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>NO APLICA</collectionName>
+                    <collectionName>Colección Ornitológica;FESZ-UNAM;Facultad de Estudios Superiores Zaragoza, Universidad Nacional Autónoma de México;FESZ-UNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
+                    <collectionName>Colección de Mamíferos;UAMI;Universidad Autónoma Metropolitana, Unidad Iztapalapa;UAMI</collectionName>
                 </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección Ornitológica;MZFC-AV;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección de Mamíferos;CMC;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección Herpetológica;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B144-B144701F-ND</collectionIdentifier>
+                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>2,315</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

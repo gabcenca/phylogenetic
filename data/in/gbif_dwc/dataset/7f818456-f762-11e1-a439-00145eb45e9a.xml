@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Autónoma de TamaulipasInstituto de Ecología Aplicada</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>División del Golfo # 356</deliveryPoint>
                 <city>Ciudad Victoria</city>
                 <administrativeArea>Tamaulipas</administrativeArea>
                 <postalCode>87019</postalCode>
@@ -48,20 +47,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>La Sierra de San Carlos  es un macizo montañosos de origen ígneo en el centro de Tamaulipas con 5 tipos de vegetación bien conservados y un alto nivel de diversidad y endemismo. La Sierra representa un sitio ideal para investigaciones sobre biodiversidad en un lapso de un año por su área  reducida. Asimismo, se pueden comparar colectas hechas hace 60 años con colectas actuales para detectar pérdida de especies. El mapeo exacto de especies permitirá detectar zonas de alto endemismo para su posible protección.</para>
-<para>Reino: 1
+            <para>La Sierra de San Carlos  es un macizo montañosos de origen ígneo en el centro de Tamaulipas con 5 tipos de vegetación bien conservados y un alto nivel de diversidad y endemismo. La Sierra representa un sitio ideal para investigaciones sobre biodiversidad en un lapso de un año por su área  reducida. Asimismo, se pueden comparar colectas hechas hace 60 años con colectas actuales para detectar pérdida de especies. El mapeo exacto de especies permitirá detectar zonas de alto endemismo para su posible protección.</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 5
 Orden: 42
 Familia: 114
 Género: 362
 Subgénero: 11
 Especie: 545
-Epitetoinfraespecifico: 30</para>
+Epitetoinfraespecifico: 30
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -97,10 +96,10 @@ Epitetoinfraespecifico: 30</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (TAMAULIPAS)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-99.158</westBoundingCoordinate>
+                    <westBoundingCoordinate>-99.158333</westBoundingCoordinate>
                     <eastBoundingCoordinate>-90.025</eastBoundingCoordinate>
-                    <northBoundingCoordinate>24.942</northBoundingCoordinate>
-                    <southBoundingCoordinate>23.308</southBoundingCoordinate>
+                    <northBoundingCoordinate>24.941667</northBoundingCoordinate>
+                    <southBoundingCoordinate>23.308333</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -118,7 +117,7 @@ Epitetoinfraespecifico: 30</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Pinopsida, Polypodiopsida, Lycopodiopsida, Cycadopsida
 Orden: Fagales, Commelinales, Brassicales, Poales, Gentianales, Sapindales, Lamiales, Caryophyllales, Asterales, Malpighiales, Rosales, Asparagales, Solanales, Fabales, Saxifragales, Malvales, Vitales, Ranunculales, Laurales, Ericales, Myrtales, Boraginales, Oxalidales, Dioscoreales, Pinales, Polypodiales, Liliales, Crossosomatales, Garryales, Piperales, Zygophyllales, Aquifoliales, Apiales, Selaginellales, Schizaeales, Cycadales, Alismatales, Dipsacales, Cornales, Geraniales, Cucurbitales, Proteales
 Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutaceae, Acanthaceae, Amaranthaceae, Asteraceae, Euphorbiaceae, Cannabaceae, Hypoxidaceae, Malpighiaceae, Poaceae, Phytolaccaceae, Solanaceae, Fabaceae, Convolvulaceae, Crassulaceae, Urticaceae, Malvaceae, Vitaceae, Ranunculaceae, Lauraceae, Cyperaceae, Juglandaceae, Asparagaceae, Lamiaceae, Cactaceae, Plantaginaceae, Orchidaceae, Rosaceae, Ebenaceae, Onagraceae, Polygalaceae, Berberidaceae, Heliotropiaceae, Anacardiaceae, Verbenaceae, Rubiaceae, Hydrophyllaceae, Sapindaceae, Caryophyllaceae, Oxalidaceae, Rhamnaceae, Petiveriaceae, Passifloraceae, Cordiaceae, Dioscoreaceae, Namaceae, Plumbaginaceae, Oleaceae, Polemoniaceae, Pinaceae, Polypodiaceae, Iridaceae, Salicaceae, Linaceae, Smilacaceae, Portulacaceae, Capparaceae, Staphyleaceae, Cleomaceae, Pteridaceae, Campanulaceae, Garryaceae, Piperaceae, Ehretiaceae, Zygophyllaceae, Boraginaceae, Orobanchaceae, Amaryllidaceae, Primulaceae, Juncaceae, Krameriaceae, Betulaceae, Nyctaginaceae, Aquifoliaceae, Apiaceae, Selaginellaceae, Lythraceae, Melanthiaceae, Schizaeaceae, Zamiaceae, Hypericaceae, Meliaceae, Hydrocharitaceae, Papaveraceae, Polygonaceae, Caprifoliaceae, Menispermaceae, Loasaceae, Geraniaceae, Aspleniaceae, Potamogetonaceae, Scrophulariaceae, Lacistemataceae, Begoniaceae, Simaroubaceae, Moraceae, Adoxaceae, Basellaceae, Phyllanthaceae, Ericaceae, Cucurbitaceae, Violaceae, Bixaceae, Talinaceae, Ulmaceae, Myrtaceae, Sapotaceae, Lentibulariaceae, Aristolochiaceae, Platanaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -131,7 +130,11 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -140,6 +143,10 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Lycopodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Cycadopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -2265,6 +2272,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gibasis karwinskyana</taxonRankValue>
+                    <commonName>hierba del pollo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2393,6 +2401,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dasylirion berlandieri</taxonRankValue>
+                    <commonName>sotol</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2457,7 +2466,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Mascagnia macroptera</taxonRankValue>
-                    <commonName>anaraka (Tarahumara), aparicua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
+                    <commonName>anaraka (Tarahumara), apáricua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2490,7 +2499,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Toxicodendron radicans</taxonRankValue>
-                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2571,7 +2580,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pistacia texana</taxonRankValue>
-                    <commonName>achín (Zoque), copal, copalillo, granadilla, palo mulato, pistache (Maya), ramón, soconautli (Náhuatl), yaga-gueij (Zapoteco), yaga-guela (Zapoteco), yaga-guie (Zapoteco), yaga-quie (Zapoteco)</commonName>
+                    <commonName>achín (Zoque), copal, copalillo, granadilla, palo mulato, pistache, ramón, soconautli (Náhuatl), yaga-gueij (Zapoteco), yaga-guela (Zapoteco), yaga-guie (Zapoteco), yaga-quie (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2826,7 +2835,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia ballotiflora</taxonRankValue>
-                    <commonName>Santa Isabel, engorda cabra, mejorana</commonName>
+                    <commonName>Santa Isabel, engorda cabra, mejorana, mejorana del país, orégano de burro, salvia azul</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2848,7 +2857,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Urvillea ulmacea</taxonRankValue>
-                    <commonName>ap&apos;ak (Maya), apaak (Maya), hiedra, k&apos;an sep aak&apos; (Maya), lot sak&apos; (Maya), pak aak&apos; (Maya)</commonName>
+                    <commonName>ap&apos;ak (Maya), apaak (Maya), cajita blanca, hiedra, k&apos;an sep aak&apos; (Maya), lot sak&apos; (Maya), pak aak&apos; (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3059,7 +3068,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Chloroleucon ebano</taxonRankValue>
-                    <commonName>acte (Huasteco), acté (Lacandón), ajcte (Huasteco), espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya), ébano</commonName>
+                    <commonName>acte (Huasteco), acté (Lacandón), ajcte (Huasteco), ebano, espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3277,7 +3286,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia coccinea</taxonRankValue>
-                    <commonName>chak lool (Maya), chak-tsits (Maya), hierba tinta, macancachauat (Totonaco), mirto, t&apos;uup k&apos;iini (Maya), ts&apos;unum-pak (Maya), ts&apos;unun-pak (Maya), tsab-tsits&apos; (Maya), tsab-xiu (Maya), tso&apos;ts xiiw (Maya), zuuk (Maya)</commonName>
+                    <commonName>albacar, chak lool (Maya), chak-tsits (Maya), hierba tinta, hut&apos;ut&apos; wits (Huasteco), macancachauat (Totonaco), makankachagua (Totonaco), mirto, mirto de monte, t&apos;uup k&apos;iini (Maya), tabaquillo, ts&apos;unum-pak (Maya), ts&apos;unun-pak (Maya), tsab-tsits&apos; (Maya), tsab-xiu (Maya), tso&apos;ts xiiw (Maya), tzail sabal (Tzeltal), tzotz ni&apos; wamal (Tzeltal), zuuk (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3419,12 +3428,12 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dioon edule</taxonRankValue>
-                    <commonName>cabeza de chamal, chama, chamal, cícada, espadaña, palma, palma de Dolores, palma de Teresita, palma de virgen, palma navaja, palma real, palmilla, palmita, quiotamal, tio tamal, tiotamal, tzamal (Huasteco)</commonName>
+                    <commonName>cabeza de chamal, chama, chamal, cicada, espadaña, palma, palma de Dolores, palma de Teresita, palma de virgen, palma navaja, palma real, palmilla, palmita, quiotamal, tio tamal, tiotamal, tzamal (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Erythrina (Erythrina) herbacea</taxonRankValue>
-                    <commonName>colorin, jutucú (Huasteco)</commonName>
+                    <commonName>colorín, jutucú (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3770,6 +3779,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Vauquelinia heterodon</taxonRankValue>
+                    <commonName>palo alto, palo prieto, palo verde, serrucho, árbol prieto</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3954,6 +3964,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Condalia ericoides</taxonRankValue>
+                    <commonName>abrojo, comida de cuervo, garambullo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4841,7 +4852,6 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Yucca treculeana var. succulenta</taxonRankValue>
-                    <commonName>dátil, palma ceniza, palma de San Juan, palma de dátiles, palma loca</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4869,7 +4879,7 @@ Familia: Fagaceae, Commelinaceae, Brassicaceae, Bromeliaceae, Apocynaceae, Rutac
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -4948,8 +4958,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:48Z</dateStamp>
-                <citation>Martínez y Díaz Salas M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Inventario florístico de la Sierra de San Carlos, Tamaulipas. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/j8ya5f accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:37Z</dateStamp>
+                <citation>Martínez y Díaz Salas M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Inventario florístico de la Sierra de San Carlos, Tamaulipas. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/j8ya5f accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-P024-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -4987,13 +4997,20 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-P024-P024502F-ND</collectionIdentifier>
-                    <collectionName>Herbarium;TEX;Department of Integrative Biology, College of Natural Sciences, University of Texas, Austin;CNS-UT</collectionName>
+                    <collectionName>Herbarium;MICH;University of Michigan;UM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-P024-P024502F-ND</collectionIdentifier>
-                    <collectionName>Herbarium;MICH;University of Michigan;UM</collectionName>
+                    <collectionName>Herbarium;TEX;Department of Integrative Biology, College of Natural Sciences, University of Texas, Austin;CNS-UT</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,399</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

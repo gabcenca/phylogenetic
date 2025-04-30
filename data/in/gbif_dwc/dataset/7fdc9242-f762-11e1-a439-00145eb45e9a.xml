@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de CienciasDepartamento de BiologíaMuseo de Zoología &quot;Alfonso L Herrera&quot;</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -48,7 +47,7 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
@@ -57,16 +56,17 @@ Los hábitat representativos son selva alta perennifolia, selva mediana, bosque 
 
 Las metas de este proyecto incluyen varias etapas. La primera se refiere a conformar una documentación completa de la distribución de vertebrados terrestres y mariposas de esta región considerando información ya existente.
 
-La información obtenida se incluirá en bases de datos relacionales con referencia geográfica. La base de datos de los Chimalapas que se entregará a la CONABIO, se elaborará de acuerdo al Instructivo que proporciona dicha Comisión y se estima que constará de 7075 especies (1300 registros) para mamíferos, 400-450 especies (5000 registros) de aves, 60-65 especies (400 registros) de reptiles y anfibios, 300-350 especies (800 registros de mariposas ropaloceras y 250 especies (1500 registros) de plantas.</para>
-<para>Reino: 2
+La información obtenida se incluirá en bases de datos relacionales con referencia geográfica. La base de datos de los Chimalapas que se entregará a la CONABIO, se elaborará de acuerdo al Instructivo que proporciona dicha Comisión y se estima que constará de 7075 especies (1300 registros) para mamíferos, 400-450 especies (5000 registros) de aves, 60-65 especies (400 registros) de reptiles y anfibios, 300-350 especies (800 registros de mariposas ropaloceras y 250 especies (1500 registros) de plantas.
+</para><para>Reino: 2
 Filo: 3
-Clase: 8
+Clase: 9
 Orden: 68
 Familia: 167
 Género: 528
 Subgénero: 5
 Especie: 432
-Epitetoinfraespecifico: 347</para>
+Epitetoinfraespecifico: 347
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -105,12 +105,13 @@ Epitetoinfraespecifico: 347</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (OAXACA)</geographicDescription>
+                <geographicDescription>País: 
+País: MEXICO (OAXACA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-94.723</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-94.042</eastBoundingCoordinate>
+                    <westBoundingCoordinate>-94.723333</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-94.041667</eastBoundingCoordinate>
                     <northBoundingCoordinate>17.125</northBoundingCoordinate>
-                    <southBoundingCoordinate>17.038</southBoundingCoordinate>
+                    <southBoundingCoordinate>17.037778</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -128,7 +129,7 @@ Epitetoinfraespecifico: 347</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Animalia, Plantae
 Filo: Arthropoda, Chordata, Tracheophyta
-Clase: Insecta, Aves, Reptilia, Amphibia, Mammalia, Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Insecta, Aves, Reptilia, Amphibia, Mammalia, Magnoliopsida, Polypodiopsida, Pinopsida, Lycopodiopsida
 Orden: Lepidoptera, Passeriformes, Tinamiformes, Cuculiformes, Ciconiiformes, Columbiformes, Apodiformes, Galliformes, Psittaciformes, Squamata, Anura, Pelecaniformes, Trogoniformes, Accipitriformes, Chiroptera, Falconiformes, Arecales, Piciformes, Asterales, Lamiales, Cucurbitales, Coraciiformes, Myrtales, Charadriiformes, Sapindales, Piperales, Alismatales, Fabales, Asparagales, Gentianales, Caryophyllales, Apiales, Solanales, Poales, Strigiformes, Podicipediformes, Cathartiformes, Picramniales, Polypodiales, Malpighiales, Didelphimorphia, Caudata, Suliformes, Vitales, Gruiformes, Malvales, Zingiberales, Gymnophiona, Fagales, Ericales, Caprimulgiformes, Pandanales, Carnivora, Anseriformes, Rosales, Testudines, Magnoliales, Nyctibiiformes, Commelinales, Laurales, Brassicales, Rodentia, Pinales, Lycopodiales, Hymenophyllales, Pilosa, Dilleniales, Liliales
 Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, Columbidae, Trochilidae, Cracidae, Psittacidae, Tyrannidae, Pieridae, Furnariidae, Anolidae, Cardinalidae, Eleutherodactylidae, Ardeidae, Papilionidae, Xenosauridae, Vireonidae, Dipsadidae, Scincidae, Troglodytidae, Viperidae, Trogonidae, Accipitridae, Mormoopidae, Icteridae, Falconidae, Iguanidae, Formicariidae, Onychorhynchidae, Bufonidae, Arecaceae, Ramphastidae, Picidae, Asteraceae, Acanthaceae, Pipridae, Cucurbitaceae, Alcedinidae, Momotidae, Apodidae, Melastomataceae, Colubridae, Thamnophilidae, Corvidae, Mimidae, Recurvirostridae, Phyllostomidae, Turdidae, Sapindaceae, Piperaceae, Araceae, Tityridae, Fabaceae, Orchidaceae, Hirundinidae, Rubiaceae, Molossidae, Phytolaccaceae, Odontophoridae, Phrynosomatidae, Araliaceae, Solanaceae, Corytophanidae, Bromeliaceae, Galbulidae, Strigidae, Podicipedidae, Emballonuridae, Begoniaceae, Leptodactylidae, Hylidae, Polioptilidae, Passerellidae, Cathartidae, Picramniaceae, Fringillidae, Ranidae, Iridaceae, Bombycillidae, Apocynaceae, Boidae, Dryopteridaceae, Euphorbiaceae, Didelphidae, Plethodontidae, Clusiaceae, Phalacrocoracidae, Aspleniaceae, Xantusiidae, Vitaceae, Aramidae, Pandionidae, Cyperaceae, Malvaceae, Marantaceae, Dermophiidae, Fagaceae, Ebenaceae, Lythraceae, Ericaceae, Zingiberaceae, Caprimulgidae, Cyclanthaceae, Lamiaceae, Procyonidae, Scolopacidae, Laridae, Cannaceae, Teiidae, Gesneriaceae, Anatidae, Charadriidae, Cotingidae, Diploglossidae, Heliconiaceae, Convolvulaceae, Sibynophiidae, Urticaceae, Costaceae, Rhamnaceae, Sittidae, Kinosternidae, Elapidae, Amaranthaceae, Pteridaceae, Cactaceae, Annonaceae, Icteriidae, Cannabaceae, Verbenaceae, Nyctibiidae, Violaceae, Haemodoraceae, Lauraceae, Amaryllidaceae, Polypodiaceae, Caricaceae, Pelecanidae, Heteromyidae, Malpighiaceae, Pinaceae, Riodinidae, Loganiaceae, Cricetidae, Tectariaceae, Centrolenidae, Commelinaceae, Lycopodiaceae, Anacardiaceae, Hymenophyllaceae, Lycaenidae, Plantaginaceae, Myrmecophagidae, Bignoniaceae, Dilleniaceae, Passeridae, Myrtaceae, Gekkonidae, Sapotaceae, Smilacaceae, Siparunaceae, Poaceae, Moraceae, Passifloraceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -173,11 +174,15 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -3512,8 +3517,8 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Anoura geoffroyi</taxonRankValue>
-                    <commonName>murciélago, chinaco, murciélago, murciélago rabón de Geoffroy, murciélago sin cola gris</commonName>
+                    <taxonRankValue>Anoura peruana</taxonRankValue>
+                    <commonName>murciélago, chinaco, murciélago, murciélago sin cola gris</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3799,6 +3804,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Clusia guatemalensis</taxonRankValue>
+                    <commonName>higo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4053,7 +4059,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Melanthera nivea</taxonRankValue>
-                    <commonName>canilla de mulita, ehtiil kelem (Huasteco), levisa xiiw (Español-Maya), mulito, pasto, pie mulito, sak sajum (Maya), sak sooj (Maya), sooj (Maya), soot&apos;kay (Maya), toplan xiiw (Maya), ts&apos;aan top&apos;an xiiw (Maya)</commonName>
+                    <commonName>botoncillo, canilla de mulita, ehtiil kelem (Huasteco), hierba ahuatosa, levisa xiiw (Español-Maya), mulito, pasto, pie mulito, rosita, sak sajum (Maya), sak sooj (Maya), sooj (Maya), soot&apos;kay (Maya), toplan xiiw (Maya), ts&apos;aan top&apos;an xiiw (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4276,7 +4282,6 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Piper phaeophyllum</taxonRankValue>
-                    <commonName>canutillo, cigarrillo, cordoncillo, tilticxalcuahuit (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4620,7 +4625,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Heliconia bihai</taxonRankValue>
-                    <commonName>cachete colorado, heliconia, pico de gorrión, platanillo</commonName>
+                    <commonName>cachete colorado, chamiqui (Totonaco), heliconia, liguapan, pico de gorrión, platanillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4824,6 +4829,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pavonia schiedeana</taxonRankValue>
+                    <commonName>cadillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4930,6 +4936,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Lindenia rivalis</taxonRankValue>
+                    <commonName>San Juan, tzitzap (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5369,6 +5376,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dendroica virens subsp. virens</taxonRankValue>
+                    <commonName>chipe dorso verde</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -5620,6 +5628,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Seiurus noveboracensis subsp. notabilis</taxonRankValue>
+                    <commonName>chipe charquero</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -5671,7 +5680,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Ceryle torquata subsp. torquata</taxonRankValue>
+                    <taxonRankValue>Ceryle torquatus subsp. torquata</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -5804,12 +5813,12 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Lycorea halia subsp. atergatis</taxonRankValue>
+                    <taxonRankValue>Hamelia patens var. glabra</taxonRankValue>
+                    <commonName>aretillo, añilillo, cacahuaxóchitl (Náhuatl), cacahuaxúchitl (Náhuatl), canela montés, carne de perro, cañutillo, chac-loc (Huasteco), chak took&apos; (Maya), chupamirto, coloradillo, coralillo, cordoncillo, coyolillo, coyolito, cruceta, estafiate, hierba cancerina, hierba del negro, hierba del pasmo, hierba del toro, hierba tinta, huevo de gato, k&apos;anal che&apos; (Maya), k&apos;anan (Maya), k&apos;anan xiiw (Maya), kanal k&apos;anan (Maya), kanan (Maya), kanan joolnaj iib (Maya), madura plátano (Huasteco), maravilla, mastanchuluc (Totonaco), muiti (Otomí), nixtamalillo, palo colorado, pie de pájaro, quelite, sangre de toro, silche&apos; (Maya), tres hojitas, trompetilla, tzacloc (Huasteco), vara prieta, viruela, xkaná-n (Maya), ya&apos;ax k&apos;anan (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Hamelia patens var. glabra</taxonRankValue>
-                    <commonName>aretillo, añilillo, cacahuaxóchitl (Náhuatl), cacahuaxúchitl (Náhuatl), canela montés, carne de perro, cañutillo, chac-loc (Huasteco), chak took&apos; (Maya), chupamirto, coloradillo, coralillo, cordoncillo, coyolillo, coyolito, cruceta, estafiate, hierba cancerina, hierba del negro, hierba del pasmo, hierba del toro, hierba tinta, huevo de gato, k&apos;anal che&apos; (Maya), k&apos;anan (Maya), k&apos;anan xiiw (Maya), kanal k&apos;anan (Maya), kanan (Maya), kanan joolnaj iib (Maya), madura plátano (Huasteco), maravilla, mastanchuluc (Totonaco), muiti (Otomí), nixtamalillo, palo colorado, pie de pájaro, quelite, sangre de toro, silche&apos; (Maya), tres hojitas, trompetilla, tzacloc (Huasteco), vara prieta, viruela, xkaná-n (Maya), ya&apos;ax k&apos;anan (Maya)</commonName>
+                    <taxonRankValue>Lycorea halia subsp. atergatis</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -6493,7 +6502,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Pareuptychia binocula subsp. metaleuca</taxonRankValue>
+                    <taxonRankValue>Pareuptychia bonocula subsp. metaleuca</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -6654,6 +6663,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Anas discors subsp. discors</taxonRankValue>
+                    <commonName>cerceta alas azules</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -6730,7 +6740,7 @@ Familia: Nymphalidae, Thraupidae, Tinamidae, Cuculidae, Parulidae, Ciconiidae, C
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -6780,12 +6790,11 @@ Plantas
 Reptiles
 águilas, halcones, zopilotes
 ajolotes, salamandras, tritones
-ardillas; marmotas; perritos llaneros
-armadillos
+alondras, golondrinas
 armadillos, osos hormigueros, perezosos, tamanduas
 bisbitas, capulineros, chinitos, estorninos, lavanderas
 boas, cobras, coralillos, culebras, pitones, serpientes, víboras
-búhos, lechuzas, tapacaminos
+búhos, lechuzas, tapacaminos, tecolotes
 cacatúas, cotorras, loros, pericos
 cacomixtles, coatíes, mapaches, martuchas
 camaleones, geckos, iguanas, lagartijas, lagartos
@@ -6798,7 +6807,7 @@ colibríes, vencejos
 como azulejos, cenzontles, cinclos, mirlos, mulatos, zorzales
 como batarás, hormigueros, trepatroncos
 como bobos, cormoranes, fragatas, pelícanos
-como calandrias, tordos
+como calandrias, tordos, zanates
 como canarios, gorriones
 como carboneros, matracas, perlitas, saltaparedes
 como cardenales, rascadores, tangaras
@@ -6806,8 +6815,9 @@ como carpinteros, coas, momotos, quetzales, tucanes
 como chipes
 como chorlos, playeros
 como gaviotas
-como mosqueros
+como mosqueros, tiranos
 como saltarines, vireos
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
@@ -6838,24 +6848,16 @@ con flores como palmas falsas
 con flores como pimientas
 con flores como uvas
 correcaminos, cucus, palomas
-felinos
-gamos; venados; renos; temazates
 gansos, patos
 gavias, zambullidores
-golondrinas, alondras
 grullas
 hámsters, lemmis, ratas, ratones de campo, ratones urbanos
 insectos: mariposas, orugas, polillas
+marmosas, ratones runchos, tlacuaches, zarigüeyas
 murciélagos
-NO DISPONIBLE
-pecaríes
 ranas, sapos
-ratas; ratones
-ratones marsupiales de los Andes, tlacuaches, zarigüeyas
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines
-tepezcuintles
-tlacuaches
 tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
@@ -6865,12 +6867,8 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:43Z</dateStamp>
-                <citation>Navarro Sigüenza A G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Inventario de la biodiversidad de vertebrados terrestres de los Chimalapas, Oaxaca. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/dmv5os accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>1789. SYS NAT 1(2) P 767</citation>
-                <citation>1859. PROC ZOOL SOC LONDON P.391</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:40Z</dateStamp>
+                <citation>Navarro Sigüenza A G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Inventario de la biodiversidad de vertebrados terrestres de los Chimalapas, Oaxaca. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/dmv5os accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-B002-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -6903,17 +6901,12 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
-                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
                     <collectionName>Colección Lepidopterológica;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
-                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -6923,14 +6916,30 @@ tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
+                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
+                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
                     <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-B002-B002905F-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
+                    <collectionName>NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED</specimenPreservationMethod>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>2,281</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

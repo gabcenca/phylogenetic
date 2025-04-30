@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Instituto de Ecología ACCentro Regional-Bajío</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Lázaro Cárdenas # 253</deliveryPoint>
                 <city>Pátzcuaro</city>
                 <administrativeArea>Michoacán</administrativeArea>
                 <postalCode>61600</postalCode>
@@ -47,22 +46,23 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>Una de las consecuencias del acelerado cambio climático (o calentamiento global) es el peligro que se cierne de la extinción de las especies de plantas y animales adaptados a vivir en las partes altas de muchos macizos montañosos de México.
 El Centro Regional del Bajío del Instituto de Ecología A. C. ha estado involucrado desde 1985 en la preparación de la Flora del Bajío y de regiones adyacentes (territorio que incluye los estados de Guanajuato, Querétaro y la parte norte del de Michoacán). En tal contexto y en virtud de la amenaza antes mencionada, se ha decidido iniciar la realización de un estudio intensivo dedicado a la inventarización de la flora vascular de las porciones superiores de algunas de las altas montañas ubicadas en esta área, con el particular propósito de detectar y ubicar ecológicamente las especies estrechamente endémicas, que son las más vulnerables.
-En esta primera fase del proyecto se solicita apoyo para el estudio de tres sectores seleccionados de Querétaro y uno de Michoacán. Dicha fase estará dedicada al inventario de las especies de las cimas montañosas, así como a la detección de los estrechos endemismos. En etapas posteriores, se planteará el estudio detallado de las poblaciones endémicas encontradas en el presente estudio, con el fin de monitorear los cambios climáticos que ocurran en los sitios de interés.</para>
-<para>Reino: 1
+En esta primera fase del proyecto se solicita apoyo para el estudio de tres sectores seleccionados de Querétaro y uno de Michoacán. Dicha fase estará dedicada al inventario de las especies de las cimas montañosas, así como a la detección de los estrechos endemismos. En etapas posteriores, se planteará el estudio detallado de las poblaciones endémicas encontradas en el presente estudio, con el fin de monitorear los cambios climáticos que ocurran en los sitios de interés.
+</para><para>Reino: 1
 Filo: 1
-Clase: 2
+Clase: 3
 Orden: 32
 Familia: 58
 Género: 158
 Subgénero: 9
 Especie: 282
-Epitetoinfraespecifico: 24</para>
+Epitetoinfraespecifico: 24
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -98,10 +98,10 @@ Epitetoinfraespecifico: 24</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (MICHOACAN DE OCAMPO, QUERETARO, QUERETARO DE ARTEAGA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-100.601</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-99.133</eastBoundingCoordinate>
-                    <northBoundingCoordinate>21.433</northBoundingCoordinate>
-                    <southBoundingCoordinate>19.8</southBoundingCoordinate>
+                    <westBoundingCoordinate>-100.600889</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-99.132722</eastBoundingCoordinate>
+                    <northBoundingCoordinate>21.433333</northBoundingCoordinate>
+                    <southBoundingCoordinate>19.799972</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -119,7 +119,7 @@ Epitetoinfraespecifico: 24</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Pinopsida
 Orden: Asterales, Dipsacales, Brassicales, Asparagales, Fabales, Caryophyllales, Geraniales, Malpighiales, Lamiales, Gentianales, Poales, Apiales, Commelinales, Ericales, Polypodiales, Saxifragales, Cupressales, Aquifoliales, Fagales, Laurales, Rosales, Pinales, Boraginales, Solanales, Ranunculales, Liliales, Oxalidales, Cornales, Myrtales, Garryales, Santalales, Malvales
 Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryophyllaceae, Geraniaceae, Euphorbiaceae, Orobanchaceae, Plantaginaceae, Rubiaceae, Lamiaceae, Juncaceae, Apiaceae, Commelinaceae, Ericaceae, Pteridaceae, Verbenaceae, Grossulariaceae, Crassulaceae, Cupressaceae, Aquifoliaceae, Fagaceae, Lauraceae, Rosaceae, Pinaceae, Namaceae, Solanaceae, Poaceae, Berberidaceae, Hydrophyllaceae, Campanulaceae, Iridaceae, Melanthiaceae, Cyperaceae, Oxalidaceae, Montiaceae, Rhamnaceae, Polypodiaceae, Hydrangeaceae, Dryopteridaceae, Salicaceae, Lentibulariaceae, Ranunculaceae, Gentianaceae, Amaryllidaceae, Aspleniaceae, Onagraceae, Orchidaceae, Woodsiaceae, Garryaceae, Scrophulariaceae, Urticaceae, Santalaceae, Hypoxidaceae, Polemoniaceae, Saxifragaceae, Cistaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -132,11 +132,15 @@ Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryo
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1174,6 +1178,7 @@ Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryo
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Valeriana subincisa</taxonRankValue>
+                    <commonName>nube de campo, uña de gato</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1229,6 +1234,7 @@ Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryo
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia helianthemifolia</taxonRankValue>
+                    <commonName>k&apos;anrrejna (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1686,6 +1692,7 @@ Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryo
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia schaffneri</taxonRankValue>
+                    <commonName>mirto, salvia roja, ts&apos;imbarenzé (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2531,7 +2538,7 @@ Familia: Asteraceae, Caprifoliaceae, Brassicaceae, Asparagaceae, Fabaceae, Caryo
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -2593,9 +2600,7 @@ con flores como geranios, malvones
 con flores como hortensias
 con flores como lirios acuáticos
 con flores como muérdagos, sándalos
-con flores, con semillas, con frutos como cardos, madreselvas, saúcos
 con flores: carnívoras, insectívoras
-Con flores; angiospermas (gentianas; flores del hielo)
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -2606,12 +2611,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:49Z</dateStamp>
-                <citation>Zamudio Ruiz S, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Flora vascular y endemismos de las partes altas de varios macizos montañosos de Querétaro y norte de Michoacán-1ra Fase. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/w04vrs accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>NA. 7/septiembre/2001. Norma Oficial Mexicana NOM-059-ECOL-2001. DIARIO OFICIAL DE LA FEDERACION. México.</citation>
-                <citation>Arias, S., U. Guzmán, M. C. Mandujano, M. Soto y J. Golubov. 2005. Las especies mexicanas de cactáceas en riesgo de extinción. Una comparación entre los listados NOM-059-ECOL-2001 (México), La Lista Roja (UICN) y CITES. Cactáceas y suculentas mexicanas. 5(4). México. 101-125</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:53Z</dateStamp>
+                <citation>Zamudio Ruiz S, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Flora vascular y endemismos de las partes altas de varios macizos montañosos de Querétaro y norte de Michoacán-1ra Fase. Version 1.19. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/w04vrs accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-JE011-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -2646,12 +2647,11 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-JE011-JE0111306F-ND</collectionIdentifier>
                     <collectionName>Herbario &apos;Graciela Calderón y Jerzy Rzedowski&apos;;IEB;Instituto de Ecología, A. C., Centro Regional del Bajío;INECOL</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>1</endRange>
+                        <endRange>650</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

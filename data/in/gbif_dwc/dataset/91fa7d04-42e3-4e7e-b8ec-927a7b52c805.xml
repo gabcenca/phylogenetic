@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de Estudios Superiores IztacalaDivisión de Investigación y PosgradoUnidad de Biotecnología y Prototipos</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av de los Barrios # 1</deliveryPoint>
                 <city>Tlalnepantla</city>
                 <administrativeArea>Estado de México</administrativeArea>
                 <postalCode>54090</postalCode>
@@ -46,19 +45,19 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-02
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Se reportan 23 especies del género Quercus para el estado de México, de éstas 10 pertenecen al subgénero Leucobalanus y 13 al Erythrobalanus. Son 15 especies endémicas de México, siete se distribuyen hasta Centroamérica y sólo una se encuentra en América del Norte. Los tipos de vegetación en que crecen son bosque mixto de Pinus-Quercus, bosque mesófilo de montaña, bosque tropical caducifolio, matorral xerófilo y pastizal; se distribuyen dentro de los 750 y 3500 msnm. La mayoría de las especies florecen de enero a junio y fructifican de junio a diciembre. Se presentan las descripciones de las especies con datos del tipo, sinónimos, nombres populares, usos, fenología, altitud, hábitat, distribución geográfica y dibujos de cada una de ellas. Se capturó la información de 1291 registros.</para>
-<para>Reino: 1
+            <para>Se reportan 23 especies del género Quercus para el estado de México, de éstas 10 pertenecen al subgénero Leucobalanus y 13 al Erythrobalanus. Son 15 especies endémicas de México, siete se distribuyen hasta Centroamérica y sólo una se encuentra en América del Norte. Los tipos de vegetación en que crecen son bosque mixto de Pinus-Quercus, bosque mesófilo de montaña, bosque tropical caducifolio, matorral xerófilo y pastizal; se distribuyen dentro de los 750 y 3500 msnm. La mayoría de las especies florecen de enero a junio y fructifican de junio a diciembre. Se presentan las descripciones de las especies con datos del tipo, sinónimos, nombres populares, usos, fenología, altitud, hábitat, distribución geográfica y dibujos de cada una de ellas. Se capturó la información de 1291 registros.</para><para>Reino: 1
 Filo: 1
 Clase: 1
 Orden: 1
 Familia: 1
 Género: 1
 Subgénero: 1
-Especie: 22</para>
+Especie: 22
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -92,12 +91,12 @@ Especie: 22</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (CIUDAD DE MEXICO, GUANAJUATO, HIDALGO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, PUEBLA, TLAXCALA)</geographicDescription>
+                <geographicDescription>País: MEXICO (MEXICO)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-101.836</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-98.558</eastBoundingCoordinate>
-                    <northBoundingCoordinate>20.517</northBoundingCoordinate>
-                    <southBoundingCoordinate>18.592</southBoundingCoordinate>
+                    <westBoundingCoordinate>-101.836031</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-98.557718</eastBoundingCoordinate>
+                    <northBoundingCoordinate>20.517273</northBoundingCoordinate>
+                    <southBoundingCoordinate>18.591667</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -115,7 +114,7 @@ Especie: 22</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida
 Orden: Fagales
 Familia: Fagaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -128,7 +127,7 @@ Familia: Fagaceae</generalTaxonomicCoverage>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -270,7 +269,7 @@ Familia: Fagaceae</generalTaxonomicCoverage>
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -311,26 +310,8 @@ con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estre
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:53Z</dateStamp>
-                <citation>Romero Rangel S, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Estudio taxonómico del género Quercus (Fagaceae) en el Estado de México. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/wdfbnn accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>Née. 1801. Descripciones de varias especies nuevas de encinos (Quercus de Linneo). Anales de Ciencias Naturales. 3(0):260-276. Madrid, España.</citation>
-                <citation>Warb. 1939. The genus Quercus &quot;Plantae Mexicanae Hintonianae&quot;. Kew Bulletin. 9(0):84-95. Inglaterra.</citation>
-                <citation>Trel. 1924. The American Oaks. Memoir. National Academy of Sciences. 20(0):1-255. Washington.</citation>
-                <citation>ND. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(0):35-35. Paris, Francia.</citation>
-                <citation>ND. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(23):26-26. Paris, Francia.</citation>
-                <citation>ND. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(28):32-32. Paris, Francia.</citation>
-                <citation>Bonpl. &amp;  Humb. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(29):34-34. Paris, Francia.</citation>
-                <citation>ND. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(32):37-37. Paris, Francia.</citation>
-                <citation>Bonpl. &amp;  Humb. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(35):40-40. Paris, Francia.</citation>
-                <citation>Bonpl. &amp;  Humb. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(38):44-44. Paris, Francia.</citation>
-                <citation>Bonpl. &amp;  Humb. 1809. Voyage de Humboldt et Bonpland. Pl. Equinoct. 2(43):49-49. Paris, Francia.</citation>
-                <citation>Liebm. 1854. Chense de l´ amerique tropicale. Iconographie des especies nouvelles ou peu connues. Oversigt  Forhandlinger Danske Videnskabernes Selskab. (0):80,30-179,30. Copenhague.</citation>
-                <citation>Trel. 1921. A Natural group of unusual black oaks. Proc. Amer. Philos. Soc. 0(60):32-32</citation>
-                <citation>Galeotti &amp;  Martens. 1843. Enumeratio synoptica plantarum phanerogamicarum ab Henrico Galeotti in regionibus mexicanis collectarum. Bull. Acad. Brux. 10(1):209-209</citation>
-                <citation>Galeotti &amp;  Martens. 1843. Enumeratio synoptica plantarum phanerogamicarum ab Herico Galeotti in regionibus mexicanis collectarum. Bull. Acad. Brux. 10(1):214-214</citation>
-                <citation>ND. 1839. Plantae Hartwegianae. (0):ND. London.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:52Z</dateStamp>
+                <citation>Romero Rangel S, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Estudio taxonómico del género Quercus (Fagaceae) en el Estado de México. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/wdfbnn accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-H323-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -368,7 +349,7 @@ con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estre
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H323-H323806F-ND</collectionIdentifier>
-                    <collectionName>Herbario Iztacala;IZTA;Facultad de Estudios Superiores Iztacala, Universidad Nacional Autónoma de México;FESI-UNAM</collectionName>
+                    <collectionName>Herbario-Hortorio;CHAPA;Colegio de Postgraduados, Campus Montecillo;CP</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -378,7 +359,7 @@ con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estre
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H323-H323806F-ND</collectionIdentifier>
-                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                    <collectionName>Herbario Iztacala;IZTA;Facultad de Estudios Superiores Iztacala, Universidad Nacional Autónoma de México;FESI-UNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -388,14 +369,13 @@ con flores como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estre
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H323-H323806F-ND</collectionIdentifier>
-                    <collectionName>Herbario-Hortorio;CHAPA;Colegio de Postgraduados, Campus Montecillo;CP</collectionName>
+                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>5</endRange>
+                        <endRange>1,163</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Instituto de Ecología ACDivisión de Vegetación y FloraDepartamento de Productos Forestales y Conservación de Bosques</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Apartado Postal 63</deliveryPoint>
                 <city>Xalapa</city>
                 <administrativeArea>Veracruz</administrativeArea>
                 <postalCode>91000</postalCode>
@@ -48,21 +47,22 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>Objetivo General: Formar un banco de datos que recopile la información bibliográfica existente a la fecha sobre las características de comportamiento de las especies de madera que crecen en el país y que han sido estudiadas en instituciones nacionales de investigación o de educación superior, y su sistematización en un formato magnético para su consulta, incluyendo manuales para usuarios. Las características que se incluirán serán: físicas, mecánicas en pequeñas probetas y en elementos de tamaño estructural, de durabilidad natural, de resistencia natural al ataque de agentes degradadores biológicos; de composición química y de trabajabilidad así como los datos de colecta y botánica
-correspondiente. El banco de datos incluirá datos sobre características tecnológicas de cuando menos 150 especies arbóreas maderables (pinos, encinos, angiospermas tropicales y de bosque mesófilo o de niebla).</para>
-<para>Reino: 1
+correspondiente. El banco de datos incluirá datos sobre características tecnológicas de cuando menos 150 especies arbóreas maderables (pinos, encinos, angiospermas tropicales y de bosque mesófilo o de niebla).
+</para><para>Reino: 1
 Filo: 1
-Clase: 1
+Clase: 2
 Orden: 23
-Familia: 57
-Género: 150
+Familia: 56
+Género: 149
 Subgénero: 4
-Especie: 278
-Epitetoinfraespecifico: 21</para>
+Especie: 276
+Epitetoinfraespecifico: 21
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -96,12 +96,12 @@ Epitetoinfraespecifico: 21</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (BAJA CALIFORNIA, CAMPECHE, CHIAPAS, CHIHUAHUA, CIUDAD DE MEXICO, COAHUILA DE ZARAGOZA, DISTRITO FEDERAL, DURANGO, GUANAJUATO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUINTANA ROO, SAN LUIS POTOSI, TABASCO, TAMAULIPAS, TLAXCALA, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
+                <geographicDescription>País: MEXICO (, BAJA CALIFORNIA, CAMPECHE, CHIAPAS, CHIHUAHUA, COAHUILA DE ZARAGOZA, DISTRITO FEDERAL, DURANGO, GUANAJUATO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUINTANA ROO, SAN LUIS POTOSI, TABASCO, TAMAULIPAS, TLAXCALA, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-115.282</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-91.18</eastBoundingCoordinate>
-                    <northBoundingCoordinate>31.081</northBoundingCoordinate>
-                    <southBoundingCoordinate>16.751</southBoundingCoordinate>
+                    <westBoundingCoordinate>-115.282187</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-90.80852</eastBoundingCoordinate>
+                    <northBoundingCoordinate>31.081207</northBoundingCoordinate>
+                    <southBoundingCoordinate>16.751392</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -119,9 +119,9 @@ Epitetoinfraespecifico: 21</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida, Pinopsida
 Orden: Malpighiales, Myrtales, Apiales, Malvales, Pinales, Fagales, Cupressales, Celastrales, Fabales, Rosales, Lamiales, Sapindales, Ericales, Gentianales, Magnoliales, Boraginales, Cornales, Proteales, Laurales, Saxifragales, Aquifoliales, Garryales, Caryophyllales
-Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cupressaceae, Celastraceae, Fabaceae, Ulmaceae, Oleaceae, Anacardiaceae, Pentaphylacaceae, Bixaceae, Bignoniaceae, Ericaceae, Euphorbiaceae, Sapotaceae, Meliaceae, Moraceae, Burseraceae, Rutaceae, Juglandaceae, Casuarinaceae, Rubiaceae, Acanthaceae, Magnoliaceae, Apocynaceae, Myrtaceae, Cordiaceae, Hypericaceae, Cornaceae, Vochysiaceae, Lamiaceae, Platanaceae, Urticaceae, Betulaceae, Rosaceae, Calophyllaceae, Proteaceae, Lauraceae, Cannabaceae, Hamamelidaceae, Altingiaceae, Malpighiaceae, Scrophulariaceae, Sapindaceae, Aquifoliaceae, Annonaceae, Simaroubaceae, Chrysobalanaceae, Styracaceae, Garryaceae, Clethraceae, Ebenaceae, Polygonaceae, Rhizophoraceae</generalTaxonomicCoverage>
+Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cupressaceae, Celastraceae, Fabaceae, Ulmaceae, Oleaceae, Anacardiaceae, Pentaphylacaceae, Bixaceae, Bignoniaceae, Ericaceae, Euphorbiaceae, Sapotaceae, Meliaceae, Moraceae, Burseraceae, Rutaceae, Juglandaceae, Casuarinaceae, Rubiaceae, Acanthaceae, Magnoliaceae, Apocynaceae, Myrtaceae, Cordiaceae, Hypericaceae, Cornaceae, Vochysiaceae, Lamiaceae, Platanaceae, Urticaceae, Betulaceae, Rosaceae, Calophyllaceae, Proteaceae, Lauraceae, Cannabaceae, Altingiaceae, Malpighiaceae, Scrophulariaceae, Sapindaceae, Aquifoliaceae, Annonaceae, Simaroubaceae, Chrysobalanaceae, Styracaceae, Garryaceae, Clethraceae, Ebenaceae, Polygonaceae, Rhizophoraceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
                     <taxonRankName>Kingdom</taxonRankName>
                     <taxonRankValue>Plantae</taxonRankValue>
@@ -132,7 +132,11 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -393,10 +397,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
                     <taxonRankValue>Cannabaceae</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Family</taxonRankName>
-                    <taxonRankValue>Hamamelidaceae</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
@@ -808,10 +808,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
-                    <taxonRankValue>Matudaea</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Genus</taxonRankName>
                     <taxonRankValue>Cupressus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -1082,13 +1078,8 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Dendropanax arboreus</taxonRankValue>
-                    <commonName>munimento; cac-chacáh; mano de danta; mano de león; palo de agua, amapola, buen amigo, cajeta, caracolillo, carne de pescado, chaca, cimarrón, copalillo, cucharo, frutilla, hoja fresca, hoja lisa, kapa kiwi (Totonaco), mak&apos; (Maya), mano de danta, mano de león, mano de oso, mano de sapo, multé (Huasteco), murciélago, nixtamalcuáhuitl (Náhuatl), nixtamalillo, olivo, palo blanco, palo cucharo, palo de agua, palo de danta, palo santo, palo verde, palo virgen, pingüico, ramón de caballo, sac-chacáh (Maya), sak chakaj (Maya), tabaquillo, tamalcuáhuitl (Náhuatl), tsiimin che&apos; (Maya), tun-daja (Mixteco), vainillo, verdecillo, vidrioso, zapotillo</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ceiba pentandra</taxonRankValue>
-                    <commonName>ceiba, amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), unup (Huasteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida</commonName>
+                    <commonName>ceiba, amapola blanca, bozai (Otomí), cabellos de ángel, ceiba, ceiba de lana, ceibo (Maya), ceibo clavelina, corcho, cuypíshtin (Popoloca), li-mis-gash-pupi (Chontal de Oaxaca), parota, piim (Maya), pishtin (Popoloca), pitón, pochota (Totonaco), pochote, pochotl (Náhuatl), puchuti (Totonaco), púchute (Totonaco), tunuum (Mixteco), xiloxochitl (Náhuatl), ya&apos; axche&apos; (Maya), ya&apos;ax che&apos; (Maya), ya&apos;axche (Maya), yaaxche (Maya), yaga-xeni (Zapoteco), yagaxeni (Zapoteco), yas te (Tseltal), yaxché (Maya), yaxté (Tojolabal), árbol de algodón, árbol de la vida, únup (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1107,13 +1098,18 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Dendropanax arboreus</taxonRankValue>
+                    <commonName>munimento; cac-chacáh; mano de danta; mano de león; palo de agua, amapola, buen amigo, cajeta, caracolillo, carne de pescado, chaca, cimarrón, copalillo, cucharo, frutilla, hoja fresca, hoja lisa, kapa kiwi (Totonaco), mak&apos; (Maya), mano de danta, mano de león, mano de oso, mano de sapo, multé (Huasteco), murciélago, nixtamalcuáhuitl (Náhuatl), nixtamalillo, olivo, palo blanco, palo cucharo, palo de agua, palo de danta, palo santo, palo verde, palo virgen, pingüico, ramón de caballo, sac-chacáh (Maya), sak chakaj (Maya), tabaquillo, tamalcuáhuitl (Náhuatl), tsiimin che&apos; (Maya), tun-daja (Mixteco), vainillo, verdecillo, vidrioso, zapotillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Terminalia amazonia</taxonRankValue>
                     <commonName>canshan, almendro, amarillo, canolté (Tseltal), canshán (Tseltal), canxan (Maya), carbonero, cortés amarillo, guayaba, guayabo, guayabo volador, k&apos; anzaan (Maya), k&apos;anzan (Maya), naranjo, palo amarillo, peinecillo, pucte (Maya), pucté (Lacandón), sombrerete, volador</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Taxodium mucronatum</taxonRankValue>
-                    <commonName>ahuehuete; sabino, ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
+                    <commonName>ahuehuete; sabino, ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), yág-guizdóo (Zapoteco), yáguistóo (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1257,6 +1253,11 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Zuelania guidonia</taxonRankValue>
+                    <commonName>trementino, aguacatillo, aiguané (Zoque), almendrillo, almendro, anona de llano, anonillo, atamte (Huasteco), campanillo, cascarillo, manzana, manzanilla, manzanillo, manzanita, manzano, nogalillo, palo de hule, palo de incienso, palo de paragüita, palo de volador, palo volador, rosadillo, sabak che&apos; (Maya), sacat&apos;kihui (Totonaco), ta&apos;may (Maya), tamay (Maya), tanay (Maya), tepecacao, thacamte (Huasteco), tololonche (Náhuatl), totolonche (Maya), trompito, volador, volantín, volatín, xtamay (Maya), zaktkiwi (Totonaco), zapote volador</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pouteria campechiana</taxonRankValue>
                     <commonName>kanisté, a&apos;kacho&apos;ka (Totonaco), acamayo, atzapotlcuáhuitl (Náhuatl), atzápotl (Náhuatl), atzápotl-cuáhuitl (Náhuatl), cabeza de micoc, caca de niño, caimitillo, canishté (Ch&apos;ol), canizte (Maya), chak ya&apos; (Maya), chi&apos;kéej (Maya), costiczapotl (Náhuatl), costizapot (Náhuatl), cozticzápotl (Náhuatl), cucumú (Totonaco), cucunú (Totonaco), custiczapotl (Náhuatl), guacamayo, guayabito de tinta, guela-beche (Zapoteco), guela-bichi (Zapoteco), guela-guichi (Zapoteco), hu&apos;un (Mixe), huicumu (Tarasco), ja&apos;as che&apos; (Maya), ju&apos;u (Mixe), k&apos;aniste&apos; (Maya), k&apos;anixté (Maya), kanixte (Maya), kanizte (Maya), kan&apos;iste (Maya), lun-da-e (Chontal de Oaxaca), ma-chum (Chinanteco), mamey, mamey de Campeche, miguelito, no ci (Tseltal), ocotillo, oltzapotl (Náhuatl), rumua (Cora), sapotillo, ta&apos;pa (Totonaco), ta-ñi (Chinanteco), tapa (Totonaco), zapote amarillo, zapote blanco, zapote borracho, zapote cabello, zapote chango, zapote cimarrón, zapote de niño, zapote mante, zapote niño, zapote silvestre, zapotillo, zapotillo amarillo, zapotillo de montaña, zapotillo de niño, zubul (Maya)</commonName>
                 </taxonomicClassification>
@@ -1264,11 +1265,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Spondias mombin</taxonRankValue>
                     <commonName>jobo, abalil k&apos;aax (Maya), axócotl (Náhuatl), catan (Tepehua), ciruela, ciruela agria, ciruela amarilla, ciruela campechana, ciruela colorada, ciruela de México, ciruela de monte, ciruela de venado, ciruela del país, ciruela roja, ciruela tabasqueña, ciruelas curtidas, ciruelo, ciruelo agrio, ciruelo de monte, ciruelo mango, ciruelo ojo, ciruelo rojo cimarrón, ciruelo silvestre, cuauhxocot (Náhuatl), huhub (Maya), jobillo, jovo, jujuub (Maya), k&apos;ank&apos;an-abal (Maya), k&apos;inil (Maya), k&apos;inim (Maya), k&apos;inin (Maya), kan-abal (Maya), maxpill (Mixe), mo-má (Chinanteco), mombín, mulato, poom (Maya), quínin (Huasteco), scatán (Totonaco), shipá (Totonaco), ska&apos;tan (Totonaco), xkinin-hobó (Maya), xobo (Huasteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Zuelania guidonia</taxonRankValue>
-                    <commonName>trementino, aguacatillo, aiguané (Zoque), almendrillo, almendro, anona de llano, anonillo, atamte (Huasteco), campanillo, cascarillo, manzana, manzanilla, manzanillo, manzanita, manzano, nogalillo, palo de hule, palo de incienso, palo de paragüita, palo de volador, palo volador, rosadillo, sabak che&apos; (Maya), sacat&apos;kihui (Totonaco), ta&apos;may (Maya), tamay (Maya), tanay (Maya), tepecacao, thacamte (Huasteco), tololonche (Náhuatl), totolonche (Maya), trompito, volador, volantín, volatín, xtamay (Maya), zaktkiwi (Totonaco), zapote volador</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1307,13 +1303,8 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Manilkara zapota</taxonRankValue>
-                    <commonName>chicozapote, cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>zapote blanco; cochitzápotl; iztgaczápotl; tzápotl; urata; sapote blanco; mango tarango; abache; matasano, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>zapote blanco; cochitzápotl; iztgaczápotl; tzápotl; urata; sapote blanco; mango tarango; abache; matasano, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1329,6 +1320,11 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Sickingia salvadorensis</taxonRankValue>
                     <commonName>chacahuante, cacahuate, caoba, chakte-kok (Maya), colorado, ehakté-kok (Maya), nazareno, nazareno rojo, palo colorado, palo de rosa, palo rojo, sabanté (Tseltal), sangre de perro, sicabanté (Tseltal)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Manilkara zapota</taxonRankValue>
+                    <commonName>chicozapote, cal-que-lidzi-na (Chontal de Oaxaca), chak ya&apos; (Maya), chapote, chaté (Tsotsil), chi&apos; kéej (Maya), chicle, chico, chico zapote, chicozapote, chicozapote de montaña, chiczápotl (Náhuatl), colorado, costic tzapot (Náhuatl), guela dau (Zapoteco), guela-chiña (Zapoteco), gueladao (Zapoteco), guenda-chiña (Zapoteco), guenda-dxina (Zapoteco), guindagiña (Zapoteco), itzaj-ya (Maya), jaas (Tsotsil), jeya (Popoloca), jiya (Zoque), licsujacat (Totonaco), látex de chicozapote, macshancabac (Popoloca), mo-ta (Chinanteco), nazareno, nu-yunna (Cuicateco), quela-china (Zapoteco), qui-li-dzi-na (Chontal de Oaxaca), sak-ya&apos; (Maya), sak-yab (Maya), sak-yá (Maya), sapotillo, scalu jaka (Totonaco), sheink (Mixe), shenc (Popoloca), ta-nich (Chinanteco), tiaca-ia (Cuicateco), tzabitatb (Huasteco), tzabitath (Huasteco), tzitli-zápotl (Náhuatl), xe&apos;enkll (Mixe), xicotzápotl (Náhuatl), ya&apos; (Maya), yaa (Maya), yaga-guelde (Zapoteco), yá (Maya), zapote, zapote blanco, zapote cabello, zapote campechano, zapote chico, zapote colorado, zapote de Campeche, zapote de abejas, zapote huevo de chivo, zapote mamey, zapotillo, zaya</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1493,7 +1489,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Metopium brownei</taxonRankValue>
-                    <commonName>chechém negro; palo de rosa, boox cheechem (Maya), box cheechem (Maya), boxcheché (Maya), chechem, chechem negro, chechen, cheechem (Maya), cheechem negro, flor de mayo, kabal&apos;chechem (Maya), kabal-chechen (Maya), madera de barco, palo de rosa</commonName>
+                    <commonName>chechém negro; palo de rosa, boox cheechem (Maya), box cheechem (Maya), boxcheché (Maya), chechem, chechem negro, chechén, cheechem (Maya), cheechem negro, flor de mayo, kabal&apos;chechem (Maya), kabal-chechen (Maya), madera de barco, palo de rosa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1562,11 +1558,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Cecropia obtusifolia</taxonRankValue>
-                    <commonName>guarumo; guarumbo; hormiguillo; chancarro; guarina; jarilla; palo de trompeta; trompetilla; trompeta (Sin, SLP); sarumo (Mich); lengind k&apos;axilxkóoch (maya); káxix, aceitillo, akowa (Totonaco), azcatcuahuit (Náhuatl), chupacté (Tseltal), guarumbo, gusano, hormigo, hormiguillo, hormigullo, hule, jarilla, k&apos;aaxil (Maya), k&apos;o&apos;och (Maya), k&apos;ooch (Maya), kochlé (Maya), koochlé (Maya), manita de león, palo de hule, palo de violín, pata de elefante, picón, shushanguji (Popoloca), trompeta, trompetilla, trompetillo, trompeto, tzulte (Huasteco), warum (Tseltal), ya-ba (Zapoteco), ya-dioo (Zapoteco), ya-va (Zapoteco), yaba (Zapoteco), yaga-gacho (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pinus (Pinus) herrerae</taxonRankValue>
                     <commonName>pino chino; pino trompillo; pino de ono chino de tres hojas; pino llanero; ocote, ocote, pino, pino chino</commonName>
                 </taxonomicClassification>
@@ -1587,8 +1578,13 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cecropia obtusifolia</taxonRankValue>
+                    <commonName>guarumo; guarumbo; hormiguillo; chancarro; guarina; jarilla; palo de trompeta; trompetilla; trompeta (Sin, SLP); sarumo (Mich); lengind k&apos;axilxkóoch (maya); káxix, aceitillo, akowa (Totonaco), azcatcuahuit (Náhuatl), chupacté (Tseltal), guarumbo, gusano, hormigo, hormiguillo, hormigullo, hule, jarilla, k&apos;aaxil (Maya), k&apos;o&apos;och (Maya), k&apos;ooch (Maya), kochlé (Maya), koochlé (Maya), manita de león, palo de hule, palo de violín, pata de elefante, picón, shushanguji (Popoloca), trompeta, trompetilla, trompetillo, trompeto, tzulte (Huasteco), warum (Tseltal), ya-ba (Zapoteco), ya-dioo (Zapoteco), ya-va (Zapoteco), yaba (Zapoteco), yaga-gacho (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cordia alliodora</taxonRankValue>
-                    <commonName>bojón, abib (Huasteco), aguardientillo, amapa, amapa blanca, amapa boba, amapa prieta, anacahuite, asta, bajon (Maya), bakal-ché (Maya), bakalche&apos; (Maya), bohum (Maya), bojom (Maya), bojum (Maya), bojón prieto, botoncillo, candelero, corcho negro, cueramo, galerillo, hma&apos; tá (Chinanteco), hormiguero, hormiguillo, hormiguillo blanco, huixtle (Huasteco), laurel, laurel blanco, pajarito, pajarito prieto, palo María, palo de hormiga, palo de hormigas, palo de rosa, palo de viga, palo prieto, prieto, rosadillo, solerilla, solerillo, solerito, sombrilla, suchil acahualero, suchil sabanero, tabaco, tusa-tioco (Mixteco), wiixte&apos; (Huasteco), wix te&apos; (Huasteco), xochicuahuitl (Náhuatl), yucjuya (Zoque)</commonName>
+                    <commonName>bojón, abib (Huasteco), aguardientillo, amapa, amapa blanca, amapa boba, amapa prieta, anacahuite, asta, bajon (Maya), bakal-ché (Maya), bakalche&apos; (Maya), bohum (Maya), bojom (Maya), bojum (Maya), bojón prieto, botoncillo, candelero, corcho negro, cueramo, galerillo, hma&apos; tá (Chinanteco), hormiguero, hormiguillo, hormiguillo blanco, huixtle (Huasteco), laurel, laurel blanco, pajarito, pajarito prieto, palo María, palo de hormiga, palo de hormigas, palo de rosa, palo de viga, palo prieto, prieto, rosadillo, solerilla, solerillo, solerito, sombrilla, suchil acahualero, suchil sabanero, tabaco, tusa-tioco (Mixteco), wiixte&apos; (Huasteco), wix te&apos; (Huasteco), xochicuáhuitl (Náhuatl), yucjuya (Zoque)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1758,7 +1754,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Delonix regia</taxonRankValue>
-                    <commonName>tabachín framboyán; árbol del fuego; chivato; flor de camarón; tabaquín; flamboyan; cacasúchit; chacaloxóchitl; chacamalxóchitl; flor de San Francisco; chamoi; flor de guacamaya; chak-sik-in; chinche malinche, acacia, chak lool (Maya), chak lool ché (Maya), espuela de caballero, flamboyán, flor de tabachín, framboyan, maaskab che&apos; (Maya), maskab che&apos; (Maya), tabachín, árbol de fuego, árbol del fuego</commonName>
+                    <commonName>tabachín framboyán; árbol del fuego; chivato; flor de camarón; tabaquín; flamboyan; cacasúchit; chacaloxóchitl; chacamalxóchitl; flor de San Francisco; chamoi; flor de guacamaya; chak-sik-in; chinche malinche, acacia, chak lool (Maya), chak lool ché (Maya), espuela de caballero, flamboyán, flor de tabachín, framboyán, maaskab che&apos; (Maya), maskab che&apos; (Maya), tabachín, árbol de fuego, árbol del fuego</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1769,11 +1765,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Eysenhardtia polystachya</taxonRankValue>
                     <commonName>palo cuate; palo dulce; rosilla; taray; vara dulce; cohuatli; cuatle; coatillo; lanae; otomí; urza; azteca; coatli; coatl; tlapahuastli, coatl (Náhuatl), cuate, lanaé (Chontal de Oaxaca), palo azul, palo blanco, palo cuate, palo dulce, palo santo, rosilla, taray, tlapalezpatli (Náhuatl), ursa (Otomí), vara dulce, varaduz</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Matudaea trinervia</taxonRankValue>
-                    <commonName>palo de barranca; quebracho; ajocoahuitl, guayabillo, naranjillo, quebracho, quiebra hacha</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1802,11 +1793,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Liquidambar macrophylla</taxonRankValue>
-                    <commonName>liquidambar; ocozote; bálsamo; estoraque; suchiate, alamillo, bito (Zapoteco), bálsamo, copal, copalillo, copalme, estrella, icob (Huasteco), ien-gau-o (Cuicateco), ingamo (Cuicateco), ko&apos;ma (Totonaco), ko&apos;ma&apos;liso-slu&apos;to&apos;nko&apos; (Totonaco), lamparilla, liquidámbar, mah-lá (Chinanteco), mol-lá (Chinanteco), molá (Chinanteco), naba (Ch&apos;ol), nabá, nijte-pijto (Zapoteco), nite-biito (Zapoteco), ocotzocuohuit (Náhuatl), ocozotl, pijto (Zapoteco), toshcui (Zoque), tzoté (Huasteco), xochicotcuáhuitl (Náhuatl), xochiocotzocuáhuitl (Náhuatl), xochiocotzol (Náhuatl), yaga-bito (Zapoteco), yaga-huille (Zapoteco), yaga-pito (Zapoteco), yaga-vido (Zapoteco), yagabizigui (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Byrsonima crassifolia</taxonRankValue>
                     <commonName>nance, arrayán, che (Maya), chi (Maya), chi&apos; (Maya), hui-zaa (Zapoteco), ma-mi-hña (Chinanteco), nance (Maya), nance agrio, nance amarillo, nanche, nanche agrio, nanche amarillo, nanche de perro, nanche del perro, nanche dulce, nanchi, nanci, nandzin (Zoque), nantzi zac-pah (Maya), nantzincuáhuitl (Náhuatl), nanzinxócotl (Náhuatl), níspero, palo de nanche, sak paj (Maya), sak-pah (Maya), sokonanx (Tepehua), tanzent (Totonaco), tush (Popoloca), u&apos;eo (Cuicateco), u-e (Cuicateco), ue-ne (Chontal de Oaxaca), xacpan (Maya), yaga-huizaa (Zapoteco), zapotillo amarillo, zxacpah (Maya)</commonName>
                 </taxonomicClassification>
@@ -1823,12 +1809,17 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Guazuma ulmifolia</taxonRankValue>
-                    <commonName>aquiché, acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacima, guacimillo, guayacán, guácima prieta, guácimo, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
+                    <commonName>aquiché, acashti (Totonaco), ajiya (Guarijío), ajya (Mayo), akeichta (Tepehua), akgexta (Totonaco), aquich (Huasteco), barrenillo, bellota de cuaulote, capulincillo, caulote (Náhuatl), chayote, cuahulote, cuajilote, cuaulote, cuaulote blanco, guacimillo, guacimo, guayacán, guácima, guácima prieta, guázumo, hierba del tapón, kabal pixoy (Maya), kabal-pishoy (Maya), kabal-pixoy (Maya), majagua de toro, nocuana-yana (Zapoteco), palote negro, pishoy (Maya), pixoy (Maya), poxoy (Maya), sac-pixoy (Maya), tapa culo, tzuyui (Tseltal), uiguic (Popoloca), yaco, yaco de venado, zam-mí (Chontal de Oaxaca)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pinus (Strobus) quadrifolia</taxonRankValue>
                     <commonName>pino piñonero; pino, pino, pino piñonero, piñonero, piñón, piñón bueno, piñón de California</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Liquidambar macrophylla</taxonRankValue>
+                    <commonName>liquidambar; ocozote; bálsamo; estoraque; suchiate, alamillo, bito (Zapoteco), bálsamo, copal, copalillo, copalme, estrella, icob (Huasteco), ien-gau-o (Cuicateco), ingamo (Cuicateco), ko&apos;ma (Totonaco), ko&apos;ma&apos;liso-slu&apos;to&apos;nko&apos; (Totonaco), lamparilla, liquidámbar, mah-lá (Chinanteco), mol-lá (Chinanteco), molá (Chinanteco), naba (Ch&apos;ol), nabá, nijte-pijto (Zapoteco), nite-biito (Zapoteco), ocotzocuohuit (Náhuatl), ocozotl, pijto (Zapoteco), toshcui (Zoque), tzoté (Huasteco), xochicotcuáhuitl (Náhuatl), xochiocotzocuáhuitl (Náhuatl), xochiocotzol (Náhuatl), yaga-bito (Zapoteco), yaga-huille (Zapoteco), yaga-pito (Zapoteco), yaga-vido (Zapoteco), yagabizigui (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1943,7 +1934,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Simarouba glauca</taxonRankValue>
-                    <commonName>pasa&apos;ak, aceituna, aceituno, aceituno negrito, gusano, negrito, pa&apos; sak che&apos; (Maya), pa-sak (Maya), palo gusano, papa&apos; ak (Maya), pasaak (Maya), pasak&apos; (Maya), pistache (Maya), rabo de lagarto blanco, x-pasak&apos;il (Maya), xpa&apos;sakil (Maya), xpaxakil (Maya), zapatero</commonName>
+                    <commonName>pasa&apos;ak, aceituna, aceituno, aceituno negrito, gusano, negrito, pa&apos; sak che&apos; (Maya), pa-sak (Maya), palo gusano, papa&apos; ak (Maya), pasaak (Maya), pasak&apos; (Maya), pistache, rabo de lagarto blanco, x-pasak&apos;il (Maya), xpa&apos;sakil (Maya), xpaxakil (Maya), zapatero</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1993,7 +1984,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pithecellobium flexicaule</taxonRankValue>
-                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya), ébano</commonName>
+                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), ebano, espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2053,7 +2044,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pithecellobium ebano</taxonRankValue>
-                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya), ébano</commonName>
+                    <commonName>ebano, acte (Huasteco), acté (Lacandón), ajcte (Huasteco), ebano, espinosa, kaante&apos; (Maya), mezquite, ya&apos;ax-k&apos; iik (Maya), ya&apos;ax-k&apos;iik (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2142,11 +2133,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Liquidambar styraciflua</taxonRankValue>
-                    <commonName>liquidambar, alamillo, bito (Zapoteco), bálsamo, copal, copalillo, copalme, estrella, icob (Huasteco), ien-gau-o (Cuicateco), ingamo (Cuicateco), ko&apos;ma (Totonaco), ko&apos;ma&apos;liso-slu&apos;to&apos;nko&apos; (Totonaco), lamparilla, liquidámbar, mah-lá (Chinanteco), mol-lá (Chinanteco), molá (Chinanteco), naba (Ch&apos;ol), nabá, nijte-pijto (Zapoteco), nite-biito (Zapoteco), ocotzocuohuit (Náhuatl), ocozotl, pijto (Zapoteco), toshcui (Zoque), tzoté (Huasteco), xochicotcuáhuitl (Náhuatl), xochiocotzocuáhuitl (Náhuatl), xochiocotzol (Náhuatl), yaga-bito (Zapoteco), yaga-huille (Zapoteco), yaga-pito (Zapoteco), yaga-vido (Zapoteco), yagabizigui (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dipholis salicifolia</taxonRankValue>
                     <commonName>zapote faisán; jocuma; almendro silvestre, capulín, chak ya&apos; (Maya), chakal ja&apos;as (Maya), chico zapote, palo prieto, sak-chum (Maya), sapotillo, ts&apos;iits&apos;il ya&apos; (Maya), tsits-yox (Maya), xak-chum (Maya), zapote, zapote borracho, zapote faisán, zapotillo, zapotillo latex</commonName>
                 </taxonomicClassification>
@@ -2154,6 +2140,11 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Quercus (Quercus) prinopsis</taxonRankValue>
                     <commonName>encino blanco, chaparro, encino, encino algodoncillo, encino blanco, encino chaparro, encino chino, encino colorado, encino prieto, encino rojo, palo blanco, palo chino, roble</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Liquidambar styraciflua</taxonRankValue>
+                    <commonName>liquidambar, alamillo, bito (Zapoteco), bálsamo, copal, copalillo, copalme, estrella, icob (Huasteco), ien-gau-o (Cuicateco), ingamo (Cuicateco), ko&apos;ma (Totonaco), ko&apos;ma&apos;liso-slu&apos;to&apos;nko&apos; (Totonaco), lamparilla, liquidámbar, mah-lá (Chinanteco), mol-lá (Chinanteco), molá (Chinanteco), naba (Ch&apos;ol), nabá, nijte-pijto (Zapoteco), nite-biito (Zapoteco), ocotzocuohuit (Náhuatl), ocozotl, pijto (Zapoteco), toshcui (Zoque), tzoté (Huasteco), xochicotcuáhuitl (Náhuatl), xochiocotzocuáhuitl (Náhuatl), xochiocotzol (Náhuatl), yaga-bito (Zapoteco), yaga-huille (Zapoteco), yaga-pito (Zapoteco), yaga-vido (Zapoteco), yagabizigui (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2222,11 +2213,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Conocarpus erectus</taxonRankValue>
-                    <commonName>mangle botoncillo; mangle negro; y mangle prieto; laurelillo y mangle; estachahuite; mangle cenizo; madre de sal; mangle; k&apos;aanche; k&apos;ank-ché; k&apos;anck-ank-che´; k&apos;an-chik&apos;-inche&apos;; x-kanche&apos;; pash-ch&apos;uhnul; xtabché; k&apos;ookte; tabh che&apos;; taab che&apos;y, botoncillo, gusano, k&apos; oopte&apos; (Maya), k&apos;aan ché (Maya), k&apos;an che&apos; (Maya), k&apos;an-chik&apos;-inche (Maya), k&apos;ank-ank-che (Maya), k&apos;ank-che&apos; (Maya), laurelillo, madre de sal, madre sal, mangle, mangle blanco, mangle botoncillo, mangle cenizo, mangle chino, mangle negro, mangle prieto, pasch-ch&apos; uhmul (Maya), pash-ch&apos;uhnul (Maya), saladillo, taab che&apos; (Maya), taab-che (Maya), tabché (Maya), x-kanché (Maya), x-tab-ché (Maya), xk&apos; aan che (Maya), xtabché (Maya)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Chiranthodendron pentadactylon</taxonRankValue>
                     <commonName>manita; leyucua; teyeque; li-mane-shmu; mapasúchil; camaco; camxóchitl; canague; mano de dragón; palo de mecate, gallinita, li-ma-ne-shmu (Chontal de Oaxaca), macpalxochicuahuitl (Náhuatl), majagua, manita, manita de león, mano de león, mora, palo de mecate, palo liso, árbol de las manitas</commonName>
                 </taxonomicClassification>
@@ -2239,6 +2225,11 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pinus (Strobus) ayacahuite</taxonRankValue>
                     <commonName>a&apos;cxua&apos;t (Totonaco), acahuite, acalocahuite, acalocote, acanita, ayacahuite, ayacahuite colorado, ayau-cuáhuitl (Náhuatl), calocote blanco, calocote colorado, nachurl&apos;i (Tarahumara), ocote, ocote blanco, ocote gretado, pinabete, pinabeto, pino, pino acahuite, pino ayacahuite, pino blanco, pino calocote, pino de azúcar, pino huiyoco, pino navideño, pino real, pino tabla, pino triste, pino vikingo, sacalacahuite, taj (Maya), wiyó (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Conocarpus erectus</taxonRankValue>
+                    <commonName>mangle botoncillo; mangle negro; y mangle prieto; laurelillo y mangle; estachahuite; mangle cenizo; madre de sal; mangle; k&apos;aanche; k&apos;ank-ché; k&apos;anck-ank-che´; k&apos;an-chik&apos;-inche&apos;; x-kanche&apos;; pash-ch&apos;uhnul; xtabché; k&apos;ookte; tabh che&apos;; taab che&apos;y, botoncillo, gusano, k&apos; oopte&apos; (Maya), k&apos;aan ché (Maya), k&apos;an che&apos; (Maya), k&apos;an-chik&apos;-inche (Maya), k&apos;ank-ank-che (Maya), k&apos;ank-che&apos; (Maya), laurelillo, madre de sal, madre sal, mangle, mangle blanco, mangle botoncillo, mangle cenizo, mangle chino, mangle negro, mangle prieto, pasch-ch&apos; uhmul (Maya), pash-ch&apos;uhnul (Maya), saladillo, taab che&apos; (Maya), taab-che (Maya), tabché (Maya), x-kanché (Maya), x-tab-ché (Maya), xk&apos; aan che (Maya), xtabché (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2268,7 +2259,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ochroma lagopus</taxonRankValue>
-                    <commonName>jobi, jubiguy, pomoy (Chis y Tab); jonote real, pepe balsa (Oax); pata de liebre, cola de gato (Ver); árbol del algodón (Chis); pomay (Tabasco); mo-ma-há, mo-hó (Oaxaca), cola de gato, corcho, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
+                    <commonName>jobi, jubiguy, pomoy (Chis y Tab); jonote real, pepe balsa (Oax); pata de liebre, cola de gato (Ver); árbol del algodón (Chis); pomay (Tabasco); mo-ma-há, mo-hó (Oaxaca), balsa, bat (Huasteco), cola de gato, corcho, guano, ha-ma (Chinanteco), jonote, jonote real, majagua, mo-hó (Chinanteco), mo-ma-ah (Chinanteco), moho (Chinanteco), palo de corcho, pata de liebre, pochote, x-k&apos;uyché (Maya), árbol de algodón, árbol del algodón</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2408,7 +2399,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pachira aquatica</taxonRankValue>
-                    <commonName>palo de agua, Santo Domingo, amapola, cabellos de angel, clavellina blanca, jícara, k&apos; uuy che&apos; (Maya), k&apos;uy che&apos; (Maya), kuy-ché (Maya), kuyché (Maya), litsokni (Totonaco), ma-toz-mán (Chinanteco), mo-li-taú (Chinanteco), or kan pa&apos; (Totonaco), palo de agua, pitón, quyche (Maya), soyate, xiloxóchitl grande o blanco (Náhuatl), xk&apos; uy che&apos; (Maya), zapote bobo, zapote de Santo Domingo, zapote de agua, zapote reventador, zapote reventón, zapotón</commonName>
+                    <commonName>palo de agua, Santo Domingo, amapola, cabellos de ángel, clavellina blanca, jícara, k&apos; uuy che&apos; (Maya), k&apos;uy che&apos; (Maya), kuy-ché (Maya), kuyché (Maya), litsokni (Totonaco), ma-toz-mán (Chinanteco), mo-li-taú (Chinanteco), or kan pa&apos; (Totonaco), palo de agua, pitón, quyche (Maya), soyate, xiloxóchitl grande o blanco (Náhuatl), xk&apos; uy che&apos; (Maya), zapote bobo, zapote de Santo Domingo, zapote de agua, zapote reventador, zapote reventón, zapotón</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2444,11 +2435,6 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Sideroxylon gaumeri</taxonRankValue>
                     <commonName>caracolillo, caracolillo, coralillo, ebano amarillo, sibinche&apos; (Maya), sibul (Maya), subul (Maya), ts&apos; ibulche&apos; (Maya), tsiimim che&apos; (Maya), tsiimin che&apos; (Maya), tsiminche&apos; (Maya)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pinus reflexa</taxonRankValue>
-                    <commonName>hallarín; pino huiyaco; pino nayar; pino saguaso; pinabete; pino blanco, pino, pino huiyoco, pino nayar, pino torcido</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2538,7 +2524,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Acer saccharum subsp. skutchii</taxonRankValue>
-                    <commonName>álamo o alamillo plateado (Tamps), álamo plateado</commonName>
+                    <commonName>álamo o alamillo plateado (Tamps), algodoncillo, álamo plateado</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -2547,7 +2533,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Pinus (Pinus) contorta var. latifolia</taxonRankValue>
+                    <taxonRankValue>Pinus contorta var. latifolia</taxonRankValue>
                     <commonName>pino</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2579,7 +2565,7 @@ Familia: Salicaceae, Combretaceae, Araliaceae, Malvaceae, Pinaceae, Fagaceae, Cu
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -2633,9 +2619,6 @@ con flores como echeverias, kalanchoes, liquidámbares, siempre vivas
 con flores como hayas, lotos, ninfas, nueces de macadamia, robles australianos, sicomoros
 con flores como hortensias
 con flores como plantas del aceite negro
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como borrajas, heliotropos, nomeolvides, palomillas de tintes
-con flores, con semillas, con frutos como chirimoyas, guanábanas, magnolias, nuez moscada
 con flores: mangles
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
                     </descriptor>
@@ -2646,134 +2629,8 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:37Z</dateStamp>
-                <citation>Bárcenas Pazos G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Banco de información sobre características tecnológicas de maderas mexicanas. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/z0ztcw accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>Acosta C., M.R,. 1964. Análisis químico y estudio de algunas de las características anatómicas de 23 especies de maderas. I.M.I.T. México, D.F.</citation>
-                <citation>Aguirre V., A. 1991. Caracterización tecnológica de la madera de cuatro especies tropicales del Edo. de Michoacán. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Alpuche G., T.A.; Castro A., E.R. 1991. Efectos de la humedad sobre la resistencia a compresión de maderas tropicales mexicanas. U.D.A.Y. Mérida, Yuc.</citation>
-                <citation>Alvarez M., R. J:. 1987. Anatomía y secado de la madera en árboles resinados y no resinados de Pinus Martínezii  Larsen. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Andrade C., A. 1990. Anatomía y secado de la madera de dos especies de madroño (Arbutus xalapensis y A.glandulosa) del Municipio de Morelia, Michoacán. México. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Arcia G., D.I. 1979. Anatomía y características físicas de la madera de tres encinos del Estado de México. Universidad Autónoma Chapingo. Edo. de Méx. 1-75.</citation>
-                <citation>Avalos R., M.A.; Martínez T., T. 1996. Análisis descriptivo de algunas características tecnológicas de la madera de Dendropanax arboreus de Campeche. Universidad Autónoma Chapingo. Edo. de Méx. 1-69.</citation>
-                <citation>Avila S., C.G. 1991. Secado en estufa de la madera aserrada de 2.54 cm de espesor de Q. acutifolia. Ciencia Forestal. 69(16). I.N.I.F.A.P. México, D.F. 93-106.</citation>
-                <citation>Bárcenas P., G. 1995. Caracterización tecnológica de veinte especies maderables de la Selva Lacandona. Madera y Bosques. 1(1). I.E. Xalapa, Ver. 9-38.</citation>
-                <citation>Bárcenas P., G.; Ortega E., F. 1994. Fichas tecnológicas de cuatro especies de madera del bosque mesofilo de montaña. Revista Forestal Latinoamericana. 13/93. I.F.L.A. Merida-Venezuela. 41-72.</citation>
-                <citation>Becerra M., J. 1977. Usos probables de la madera de dos encinos del estado de Durango. Ciencia Forestal. 5(2). I.N.I.F. México, D.F. 3-14.</citation>
-                <citation>Bejar M., G. 1982. Aserrio de la madera de encino. 62. I.N.I.F. México, D.F. 1-33.</citation>
-                <citation>Bravo G., L.R.; Fuentes T., F.J. 1993. Composición química y propiedades físico-mecánicas de algunas maderas mexicanas. I Congreso mexicano sobre recursos forestales. Memorias. Saltillo, Coah. 89.</citation>
-                <citation>Bucio S.,Y. H. 1993. Características anatómicas de la madera de cinco encinos del estado de Michoacán. 109. I.N.I.F.A.P. México, D.F. 50.</citation>
-                <citation>Candelario R., M.M. 1980. Estudio de la variación de algunas características físicas y mecánicas de la madera de Pinus ayacahuite var. veitchii y Pinus patula. Universidad Autónoma Chapingo. Edo. de Méx. 1-156.</citation>
-                <citation>Carmona V., T.F. 1979. Características histológicas de la madera de cuatro especies del bosque caducifolio de México. U.N.A.M. México, D.F. 169.</citation>
-                <citation>Castañeda H., R. 1986. Composición química de la madera de tres especies tropicales de Jalisco. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Cerón C., M;. 9999. Calificación, clasificación y obtención de valores de diseño de maderas tropicales mexicanas. Universidad Autónoma de Yucatán. Mérida, Yuc.</citation>
-                <citation>Cerriteño E., F.R. 1995. Propiedades físicas y mecánicas de la madera de Casuarina equisetifolia L. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Chargoy E., A.; Enríquez S., M.T. 1967. Determinación de las propiedades físico-mecánicas de la madera de Pinus pseudostrobus como material de construcción. S.D.N.-E.M.I. México, D.F.</citation>
-                <citation>Córdoba N., C. 1985. Uso tradicional de la madera en la región de Cosautlán de Carvajal Ver. Xalapa, Ver.</citation>
-                <citation>Corral L., M.G. 1981. Anatomía de la madera de siete especies del género Quercus. Boletín Técnico. 72. S.A.R.H. México, D.F. 1-55.</citation>
-                <citation>Corral L., M.G. 1985. Características anatómicas de la madera de once especies tropicales. 127. S.A.R.H. México, D.F. 68.</citation>
-                <citation>Cruz D., J.R. 1994. Estudio tecnológico de la madera de Pinus cooperi  Blanco, del Edo. de Durango. Universidad Autónoma Chapingo. Edo. de Méx. 1-80.</citation>
-                <citation>Cruz de L., J. 1995. Características anatómicas de 4 especies de encino del sur de Nuevo León. Memorias del III Seminario Nacional sobre utilización de encinos. Facultad de Ciencias Forestales U.A.N.L. Linares, N.L. 381-397.</citation>
-                <citation>Cruz De L., J.; Cuéllar C., M.A. 1993. Propiedades físicas de Disopyros texana Scheele en el matorral alto subinerme de Linares, N.L. I Congreso mexicano sobre recursos forestales. Memoria. Saltillo, Coah. 84.</citation>
-                <citation>Cruz de León, J. 1992. La madera del Pinus pseudostrobus Lindl. mexicano. &apos;Amatl. 3-4(6). Universidad de Guadalajara. Guadalajara, Jal. 13-17.</citation>
-                <citation>Dávalos S., R.; Echenique M., R.; Sánchez V., J. 1978. Características mecánicas de tres especies de pino del Cofre de Perote, Veracruz. Biótica. 1(3). INIREB. Xalapa, Ver.</citation>
-                <citation>Dávalos S., R.; G. Bárcenas P.; L. Quiroz S. 1986. Resistencia y Rigidez de la madera de pino (no publicado). Xalapa, Ver.</citation>
-                <citation>De la Paz P.O., C. 1974. Anatomía de la madera de cinco especies de encinos de Durango. Boletín Técnico. 43. I.N.I.F. México, D.F. 1-30.</citation>
-                <citation>De la Paz P.O., C. 1982. Estructura anatómica de cinco especies del género Quercus. Boletín Técnico. 88. S.A.R.H. México, D.F. 1-63.</citation>
-                <citation>De la Paz P.O., C. 1985. Características anatómicas de 7 especies del género Quercus. Boletín Técnico. 123. S.A.R.H. México, D.F.</citation>
-                <citation>De la Paz P.O., C. 9999. Características de cinco encinos de México. Boletín Técnico. 46. I.N.I.F. México, D.F. 1-43.</citation>
-                <citation>De la Paz P.O., C.; Carmona V., T.F.; Rogel G., M.A. 1980. Estudio anatómico de la madera de 43 especies tropicales. Boletín Técnico. 63. I.N.I.F. México, D.F. 1-277.</citation>
-                <citation>De la Paz P.O., C.; Corral L.,G. 1980. Estudio anatómico de la madera de once especies de angiospermas. Boletín Técnico. 64. I.N.I.F. México, D.F. 1-79.</citation>
-                <citation>De la Paz P.O., C.; Corral L.,G. 1982. Estudio anatómico de la madera de 26 especies de angiospermas de clima templado. 91. S.A.R.H. México, D.F. 126.</citation>
-                <citation>De la Paz P.O., C.; Olvera C., P. 1981. Anatomía de la madera de 16 especies de coníferas. 69. I.N.I.F. México, D.F. 111.</citation>
-                <citation>De la Paz P.O., C.; Robles G., F.; Simental S., A. 1979. Determinación de las características anatómicas y fisico-mecánicas de la madera de 4 especies de leguminosas. Boletín Técnico. 61. I.N.I.F. México, D.F. 1-34.</citation>
-                <citation>De la Paz P.O., C.; Salinas Q., R. 1977. Prueba rápida de laboratorio indicadora de resistencia a pudrición en dos especies de encinos. Ciencia Forestal. 6(2). I.N.I.F. México, D.F. 3-19.</citation>
-                <citation>De León M., A. J. 1997. Contribución al conocimiento tecnológico de la madera de Pseudotsuga menziesii Mirb.Franco del Edo. de Durango. Universidad Autónoma Chapingo. Edo. de Méx. 1-66.</citation>
-                <citation>Delgado F., E. 1980. Estudio analítico de los carbohidratos de cuatro especies de encino. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Echenique M., R.; Becerra M., J. 1981. Algunas características fisico-mecánicas de la madera de tres especies de la Cordillera Neovolcánica. Nota Técnica. 6. I.N.I.F. México, D.F. 6.</citation>
-                <citation>Echenique M., R.; F. Robles F.-V.; R. Dávalos S. 1980. Timber Grading (Mexico) Final Report to IDRC. Xalapa, Ver.</citation>
-                <citation>Echenique M., R.; R. Dávalos S.; F. Robles F.-V. 1984. Timber grading (Mexico) Phase II Final Report to IDRC. Xalapa, Ver.</citation>
-                <citation>Echenique M., R.; R. Dávalos S.; F. Robles F.-V. 1987. Timber grading (Mexico) Phase III Final Report to IDRC. Xalapa, Ver.</citation>
-                <citation>Echenique M., R.;Díaz G., V. 1969. Algunas características tecnológicas de la madera de once especies mexicanas. Boletín Técnico. 27. I.N.I.F. México, D.F. 1-61.</citation>
-                <citation>EITECMA. 1984. Informe de circulación restringida. Estudio xilotecnológico integral del Quercus laurina, Mesa de los cardos, Municipio de Villa Madero, Estado de Michoacán de Ocampo. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Escobedo H., R.E. 1996. Anatomía de la madera de cinco especies del municipio de Morelia. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Espinoza H., R. 1996. Propiedades físico-mecánicas y caracterización anatómica de la madera de Alnus acuminata glabrata H.B.K. (aile). U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Farfán V., E.G. 1988. Uso actual y perspectivas de dos especies del género Acacia en el Suroeste de Puebla. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Flamand R., J.L. 1964. Contracción lineal de Pinus montezumae Lamb. Nota Técnica. 5. I.N.I.F. México, D.F. 4.</citation>
-                <citation>Flores G., E. 1991. Características de maquinado y comparación de dos aleaciones de acero de las cuchillas en el cepillado en tres especies de encino del Edo. de Guanajuato. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Flores R., L.J. 1981. Anatomía de la madera de tres especies tropicales mexicanas. 24. I.N.I.F. México, D.F. 1-13.</citation>
-                <citation>Flores V., R. 1990. Características de maquinado de 4 especies maderables de encino del Estado de Puebla. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Fuentes L., M.E. 1990. Propiedades Físico mecánicas de cinco especies de encino (Quercus spp.) del estado de Puebla. Chapingo, Méx. 1-52.</citation>
-                <citation>García G., J.; González H., E. 1990. Contribución al conocimiento de dos especies de encino (Quercus glaucoides Mart. et Gal. y Q. castanea Neé) del suroeste de Puebla. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>García M., E. S. 1984. Variación del peso específico de siete especies de pino del Estado de Oaxaca. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>García M., M. 1996. Caracterización anatómica de las maderas de Populus deltoides Marshall (&quot;Alamillo&quot;), Jacaranda mimosiifolia D.Don(&quot;Jacaranda&quot;) y Delonix regia(Bojer)  Raf.(&quot;Tabachín Rojo&quot;). Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>García M., T. 1991. Estudio anatómico de tres especies para uso artesanal. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Gaytán A., R.P.;Gómez S., J.F. 1985. Pulpeo de dos maderas tropicales de rápido crecimiento. ATCP. 1(15). ATCP. México, D.F. 41-50.</citation>
-                <citation>Goche T., J. R. 1993. Estudio tecnológico de la madera de Quercus sideroxyla del Edo. de Durango. Universidad Autónoma Chapingo. Edo. de Méx. 1-63.</citation>
-                <citation>Gómez N., M.del S.; Echenique M., R.; Salinas Q., R. 1969. Indices de laboratorio sobre resistencia de la madera a la pudrición en once especies forestales mexicanas. Boletín Técnico. 31. I.N.I.F. México, D.F. 1-40.</citation>
-                <citation>González E., V.M. 1969. Determinación y comparación de algunas características tecnológicas de 3 especies de coníferas establecidas artificialmente en La Venta, D.F. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Guridi G., L.I. 1968. Anatomía de la madera de cinco especies tropicales de importancia económica. U.N.A.M. México, D.F.</citation>
-                <citation>Guzmán C., J. 1994. Tecnología de la madera y botánica económica del género Crataegus en San Miguel Tlaixpan, Texcoco, México. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Hernández T., M. 1994. Estudio comparativo de la madera juvenil y la madera madura en Pinus arizonica en la región de Guanacevi, Durango. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Herrera B., A. 1981. Avance en la determinación de las características de maquinado de cinco especies de encino que vegetan en México. Ciencia Forestal. 34(6). I.N.I.F. México, D,F. 45-63.</citation>
-                <citation>Herrera F., M.A,. 1992. Características físico-mecánicas de la madera de 15 especies del municipio de Morelia. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Herrera R., J.A.; Gómez N., M.S.; Barretero G.,E. 1980. Durabilidad natural de la madera de catorce especies forestales mexicanas. Boletín Técnico. 67. I.N.I.F. México, D.F. 1-21.</citation>
-                <citation>Herrera R., J.A.; Gómez N., M.S.; Herrera B., A. 1976. Durabilidad natural de la madera de especies forestales mexicanas. Boletín Técnico. 52. I.N.I.F. México, D.F. 1-23.</citation>
-                <citation>Herrera R., J.A.;Barretero G., J.E.; Herrera B., A. 1982. Zapatas de maderas mexicanas para el sistema de frenos del Metro. Boletín Técnico. 76. I.N.I.F. México, D.F. 1-59.</citation>
-                <citation>Herrera R., J.A.;Leal M., F.J.; Barretero G.,J.E. 1981. Zapatas de maderas mexicanas para el sistema de frenos del metro II. Coeficientes de fricción. Boletín Técnico. 68. I.N.I.F. México, D.F. 1-34.</citation>
-                <citation>Huerta C., J. 1978. Anatomía de la madera de 12 especies de coníferas mexicanas. Boletín Técnico. 51. I.N.I.F. México, D.F. 1-56.</citation>
-                <citation>Huerta C., J.; Becerra M., J. 1982. Anatomía macroscópica y algunas características físicas de diecisiete maderas tropicales mexicanas. Boletín Divulgativo. 46. I.N.I.F. México, D.F. 61.</citation>
-                <citation>Islas O., E. 1992. Evaluación de cinco especies de pino para la producción de pulpas termomecánicas blanqueadas. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Juárez M., M.A,. 1993. Estudio anatómico de la madera de tres especies del estado de Jalisco (Acacia schaffneri (S.Wats.)F.J.Hermann, Pithecellobium dulce (Roxb.)Benth y Spondias mombín L.). Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Linares H., A. 1990. Comparación de características anatómicas y de propiedades físicas de la madera de compresión y madera normal de Pinus montezumae Lamb. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Lomeli R., M.G. 1991. Determinación de la durabilidad natural de las maderas de árboles tropicales H.polyandra Baill.;E.cyclocarpum(Jacq)Griseb. y C.eleagnoides D.D. al ataque de los hongos xilofagos L.lepideus Fr. y L.sul. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>López C., H.J.P. 1990. Descripción anatómica de la madera de once angiospermas. U.V. FAC. BIOL. Xalapa, Ver.</citation>
-                <citation>López P., V. 1985. Secado al aire libre de madera aserrada de Pinus hartwegii Lind en Chapingo, Edo. de México. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Luna O., T,. 1983. Determinación de los índices de calidad de las pulpas de 29 maderas tropicales de Chiapas. U.N.A.M. México, D.F.</citation>
-                <citation>Machuca V., R. 1995. Estudio tecnológico de la madera de Quercus insignis de Huatusco, Veracruz, México. Universidad Autónoma Chapingo. Estado de Méx.</citation>
-                <citation>Madrigal H., L. 1990. Contribución al conocimiento de Quercus crassifolia Humb. &amp;  Bonpl., con énfasis en el Edo. de Veracruz. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Mancera V., O. 1956. Contribución al conocimiento de la anatomía microscópica de algunas especies de pinos mexicanos. S.A.G. México, D.F.</citation>
-                <citation>Martínez C., J.L.; Martínez-P. C., E;. 1996. Características de maquinado de 32 especies de madera. Madera y Bosques. 1(2). I.E. Xalapa, Ver. 45-62.</citation>
-                <citation>Martínez M., J.D. 1983. Ensayo de laboratorio sobre agresividad de hongos Xilofagos hacia maderas tropicales mexicanas. U.N.A.M. México, D.F.</citation>
-                <citation>Martínez-P. C., E.; Martínez C., J.L. 1996. Características de cepillado y lijado de 33 especies de madera. Madera y Bosques. 2(2). I.E. Xalapa, Ver. 11-28.</citation>
-                <citation>Merlin B., A. 1988. Uso actual y perspectivas del Populus tremuloides Michx. en el Edo. de Durango. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Montes R., E. 1991. Propiedades biológicas y fisico-tecnológicas de las maderas de Pinus leiophylla y Pinus douglasiana de México. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Morales G., M.R.; Monroy S., M. 1992. Secado al aire libre de madera aserrada de Pinus hartwegii Lindl. y Pinus montezumae Lamb. en Chapingo, México. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Moreno Z., F.; Martínez C., J.F. 1984. Estudio de trabajabilidad de cuatro especies de maderas mexicanas. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Negrete L.; J.L. 1970. Algunas características físicas y anatómicas de la madera de cuatro especies de encino (Quercus) del Edo. de Michoacán. Universidad Autónoma Chapingo. Edo. de Méx. 1-71.</citation>
-                <citation>Novelo G.; G. J. 1964. Posibles aplicaciones de la madera de cuatro especies tropicales con base en sus propiedades físicas y mecánicas. Universidad Autónoma Chapingo. Edo. de Méx,. 1-57.</citation>
-                <citation>Olvera C., L.P. 1981. Estudio anatómico de la madera de siete especies del género Pinus. 71. S.A.R.H. México, D.F. 52.</citation>
-                <citation>Olvera C., L.P. 1985. Descripción anatómica de la madera de siete especies del género Pinus. Boletín Técnico. 126. S.A.R.H. México, D.F.</citation>
-                <citation>Ordónez, V.;Bárcenas P., G.; Quiroz S.,A. 0. Boletín Técnico La Madera y su uso. Características físico-mecánicas de la madera de diez especies de San Pablo Macuiltianguis Oaxaca. 21. I.E. - U.A.M. -A. Xalapa, Ver.</citation>
-                <citation>Ortega E., F. 1984. Anatomía de la madera de seis especies de la selva alta Perennifolia. U.N.A.M. México, D.F.</citation>
-                <citation>Ortega S.V., J.E. 1952. Propiedades físicas y mecánicas de la madera de Abies religiosa (H.D.K.) Schl. et Cham y Pinus hartwegii Lindl. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Pérez M., F.J. 1988. Efectos del ablandamiento de trocería de Quercus spp para producción de chapa desenrollada. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Pérez R., J. 1965. Secuelas de secado para madera aserrada de Pinus montezumae Lamb. y Pinus ayacahuite var. veitchii. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Pérez T., I. 1994. Propiedades físico-mecánicas de la madera de Bucida buceras y Lysiloma bahamensis. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Quiñónes O., J.O. 1974. Características físicas y mecánicas de la madera de 5 especies mexicanas. Boletín Técnico. 42. I.N.I.F. México, D.F. 1-21.</citation>
-                <citation>Ramos M., J. R. 1993. Algunas características anatómicas y propiedades físicas de la madera de tres especies del Estado de Puebla. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Rebollar D.,S. 1977. La madera de Alnus firmifolia y sus usos. Ciencia Forestal. 8(2). I.N.I.F. México, D.F. 51-62.</citation>
-                <citation>Revuelta A., M.M.; Zamora M., J. 1990. Anatomía de la madera de seis especies de encinos (Quercus spp) del municipio de Morelia, Michoacán. México. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Reyes Ch., R.; Viveros R., N.; Pérez M., V. 1995. Resistencia natural de trece maderas mexicanas al ataque de termitas subterráneas. Madera y Bosques. 1(1). I.E. Xalapa, Ver. 39-48.</citation>
-                <citation>Rogel G., M.A. 1981. Estudio anatómico de la madera de seis especies tropicales. Escuela de Biología U.A.M. Cuernavaca, Mor.</citation>
-                <citation>Rogel G., M.A. 1982. Características anatómicas de la madera de siete especies tropicales. Boletín Técnico. 86. I.N.I.F. México, D.F. 1-55.</citation>
-                <citation>Romero A., C.; De la Paz P. O., C.; Corral L.,G. 1982. Características anatómicas y fisico-mecánicas de ocho especies de coníferas de Baja California Norte. Boletín Técnico. 57. I.N.I.F. México, D.F. 1-48.</citation>
-                <citation>Rutiaga Q., J.G. 1991. Determinación de la composición química de la madera de dos especies tropicales. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>S.A.R.H. 1982. Estudio promocional de 43 especies forestales tropicales mexicanas. I.N.I.F. México, D.F. 73.</citation>
-                <citation>Sanjuan D., R.; Huerta C., M.; Vargas R., J.J.; Munguia S., L. 1993. El guamuchil (Pithecellobium dulce) como materia prima en la obtención de pulpa para papel de escritura y corrugado. I Congreso mexicano sobre recursos forestales. memorias. Saltillo, Coah. 88.</citation>
-                <citation>Segura W., G.; J.L. Brunhuber M. 1982. Resistencia natural de 18 esoecies de maderas mexicanas contra el ataque de termitas de madera seca (Kalotermitidae, isóptera). México, D.F. 30.</citation>
-                <citation>Silva G., J.A.;Fuentes T., F.J.; Montes R.,E.;. 1995. Propiedades físico-mecánicas de la madera de Encino (Quercus castanea). Memorias del III Seminario Nacional sobre utilización de encinos. Facultad de Ciencias Forestales U.A.N.L. Linares, N.L. 504-514.</citation>
-                <citation>Sosa J., J. 1993. Carácterísticas anatómicas, propiedades físico-mecánicas y maquinado del mezquite (Prosopis laevigata) en Guanajuato. Universidad Autónoma Chapingo. Edo. de Méx.</citation>
-                <citation>Sotomayor C., J.R. 1980. Ocho características tecnológicas de la madera de diez especies tropicales de la Selva Lacandona. U.M.S.N.H. Morelia, Mich.</citation>
-                <citation>Tamarit U., J.C. 1994. Estudio tecnológico de la madera de Pinus arizonica Engelm, del Edo. de Durango. Universidad Autónoma Chapingo. Edo. de Méx. 1-78.</citation>
-                <citation>Tonacatl M., L. 1995. Caracterización tecnológica de la madera de Matudaea trinervia Lundell. (quebracho), del Estado de Puebla. Universidad Autónoma Chapingo. Edo. de Méx. 1-82.</citation>
-                <citation>Vázquez S., L. 1995. Efecto de tres preservadores en la resistencia contra Lyctus. III Seminario Nacional sobre Utilización de los encinos. Memorias. (II). U.A.N.L. Linares, N.L. 814-821.</citation>
-                <citation>Ventura C., R.L. 1992. Anatomía de la madera de ocho especies de árboles tropicales. U.J.A.T. Unidad Sierra. Villahermosa, Tab.</citation>
-                <citation>Vidrio M., E. 1995. Estudio de las características físicas y químicas del tepeguaje (Lysiloma acapulcensis) y su potencial como materia prima en la obtención de pulpa celulosica. Universidad de Guadalajara. Guadalajara, Jal.</citation>
-                <citation>Villalvazo N., J.; O. Faix. 1981. Caracterización analítica de las lignonas de 4 especies del género Quercus y sus posibilidades de aprovechamiento técnico. IMCyP Publicación No. 4. 4. Guadalajara, Jal. 2-7.</citation>
-                <citation>von Roth, W.; Rechy de v R., M.A. 1985. Informe de circulación restringida. Propiedades más importantes para la técnica de la construcción del Pinus durangensis M. Inst.para fis. y tec.mec. de la madera del centro fed. de inv. forestales. Hamburgo, Alemania.</citation>
-                <citation>Wolf,F.; Vogel, E. 1986. Características del carbón vegetal en algunas especies madereras del noroeste... Ciencia Forestal. 59(11). I.N.I.F. México, D.F. 181-189.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:53Z</dateStamp>
+                <citation>Bárcenas Pazos G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Banco de información sobre características tecnológicas de maderas mexicanas. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/z0ztcw accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-K015-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -2806,32 +2663,7 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Colección del Departamento de Madera, Celulosa y Papel;DMCyP;Departamento de Madera, Celulosa y Papel, Centro Universitario de Ciencias Exactas e Ingenierías, Universidad de Guadalajara;DMCyP-CUCEI-UDG</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario;HUMO;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario;UJAT;Universidad Juárez Autónoma de Tabasco;UJAT</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario;YUC;Centro de Investigación Científica de Yucatán, A. C.;CICY</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario;CFNL;Facultad de Ciencias Forestales, Universidad Autónoma de Nuevo León;FCF-UANL</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario;CHAP;Universidad Autónoma Chapingo;UACh</collectionName>
+                    <collectionName>Xiloteca Nacional;MEXFw;Campo Experimental Coyoacán, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CECOY-INIFAP</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -2841,22 +2673,7 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario Arturo Gómez-Pompa;XALU;Facultad de Biología, Universidad Veracruzana, Región Xalapa;FB-UV</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Herbario Nacional de México, Xiloteca;MEXUw;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE;ATCP;Asociación Mexicana de Tecnicos de las Industrias de la Celulosa y del Papel;ATCP</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Xiloteca;FITECMA;Facultad de Ingeniería en Tecnología de la Madera, Universidad Michoacana de San Nicolás de Hidalgo;FITECMA-UMSNH</collectionName>
+                    <collectionName>Herbario;CHAP;Universidad Autónoma Chapingo;UACh</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -2866,13 +2683,60 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Herbario Nacional de México, Xiloteca;MEXUw;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Herbario;CFNL;Facultad de Ciencias Forestales, Universidad Autónoma de Nuevo León;FCF-UANL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Herbario;YUC;Centro de Investigación Científica de Yucatán, A. C.;CICY</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Xiloteca;FITECMA;Facultad de Ingeniería en Tecnología de la Madera, Universidad Michoacana de San Nicolás de Hidalgo;FITECMA-UMSNH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Herbario;UJAT;Universidad Juárez Autónoma de Tabasco;UJAT</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Colección del Departamento de Madera, Celulosa y Papel;DMCyP;Departamento de Madera, Celulosa y Papel, Centro Universitario de Ciencias Exactas e Ingenierías, Universidad de Guadalajara;DMCyP-CUCEI-UDG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
                     <collectionName>Xiloteca Dr. Faustino Miranda;XALw;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
-                    <collectionName>Xiloteca Nacional;MEXFw;Campo Experimental Coyoacán, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CECOY-INIFAP</collectionName>
+                    <collectionName>Herbario Arturo Gómez-Pompa;XALU;Facultad de Biología, Universidad Veracruzana, Región Xalapa;FB-UV</collectionName>
                 </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;ATCP;Asociación Mexicana de Tecnicos de las Industrias de la Celulosa y del Papel;ATCP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-K015-K015803F-_modificadaEnlaces_CamposSinonSeparados</collectionIdentifier>
+                    <collectionName>Herbario;HUMO;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>616</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

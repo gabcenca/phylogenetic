@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Instituto Politécnico NacionalEscuela Nacional de Ciencias BiológicasDepartamento de BotánicaLaboratorio de Botánica Fanerogámica</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Apartado Postal 11-564</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>11410</postalCode>
@@ -47,20 +46,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Este proyecto tiene como objetivo el continuar con la computarización del Herbario de la Escuela Nacional de Ciencias Biológicas del Instituto Politécnico Nacional, como parte complementaria del plan general de instrumentación de la Red Mexicana de Información sobre Biodiversidad. Se pretende a largo plazo obtener una base de datos de toda la colección. Sin embargo, por la complejidad de la información y extensión de esta colección se proponen diferentes fases en el desarrollo de este proyecto. La primera comprende la computarización de la información existente en los ejemplares de herbario del Valle de México depositados en el Herbario (ENCB). La más completa colección de material herborizado de esta región se encuentra depositado en esta colección y sustenta la obra &#34;Flora fanerogámica del Valle de México&#34;, que sintetiza y describe la flora fanerogámica de la misma. Aproximadamente el Herbario (ENCB) cuenta con 45,000 ejemplares herborizados provenientes de esta región, los cuales en su mayoría se encuentran en buen estado curatorial y han sido estudiados por los autores y colaboradores de la obra. Las siguientes fases comprenderán la computarización de la información proveniente de otras regiones del país que están siendo activamente estudiadas por personal del Herbario (ENCB) tales como, la Sierra de Pachuca y la Cuenca del Balsas. Asimismo, se tiene planteado la computarización de ciertos grupos taxonómicos cuyos especialistas laboran en esta institución (Rhamnaceae, Solanaceae, Cucurbitaceae, Pteridofitas, etc.) o de otros taxones que puedan ser estudiados por especialistas no residentes en el Herbario (ENCB), a través de estancias o visitas al mismo. La selección de estos taxones y su priorización se encuentran en proceso. En esta primera fase de desarrollo del proyecto, la información será incorporada a una base de datos relacional denominada BIOTICA que fue desarrollada por la CONABIO. Se estima que la duración de esta fase será de ocho meses, al término del cual se hará una evaluación de los resultados obtenidos y de las metas alcanzadas, con el fin de hacer, si es el caso, los arreglos y modificaciones pertinentes.</para>
-<para>Reino: 1
+            <para>Este proyecto tiene como objetivo el continuar con la computarización del Herbario de la Escuela Nacional de Ciencias Biológicas del Instituto Politécnico Nacional, como parte complementaria del plan general de instrumentación de la Red Mexicana de Información sobre Biodiversidad. Se pretende a largo plazo obtener una base de datos de toda la colección. Sin embargo, por la complejidad de la información y extensión de esta colección se proponen diferentes fases en el desarrollo de este proyecto. La primera comprende la computarización de la información existente en los ejemplares de herbario del Valle de México depositados en el Herbario (ENCB). La más completa colección de material herborizado de esta región se encuentra depositado en esta colección y sustenta la obra &amp;#34;Flora fanerogámica del Valle de México&amp;#34;, que sintetiza y describe la flora fanerogámica de la misma. Aproximadamente el Herbario (ENCB) cuenta con 45,000 ejemplares herborizados provenientes de esta región, los cuales en su mayoría se encuentran en buen estado curatorial y han sido estudiados por los autores y colaboradores de la obra. Las siguientes fases comprenderán la computarización de la información proveniente de otras regiones del país que están siendo activamente estudiadas por personal del Herbario (ENCB) tales como, la Sierra de Pachuca y la Cuenca del Balsas. Asimismo, se tiene planteado la computarización de ciertos grupos taxonómicos cuyos especialistas laboran en esta institución (Rhamnaceae, Solanaceae, Cucurbitaceae, Pteridofitas, etc.) o de otros taxones que puedan ser estudiados por especialistas no residentes en el Herbario (ENCB), a través de estancias o visitas al mismo. La selección de estos taxones y su priorización se encuentran en proceso. En esta primera fase de desarrollo del proyecto, la información será incorporada a una base de datos relacional denominada BIOTICA que fue desarrollada por la CONABIO. Se estima que la duración de esta fase será de ocho meses, al término del cual se hará una evaluación de los resultados obtenidos y de las metas alcanzadas, con el fin de hacer, si es el caso, los arreglos y modificaciones pertinentes.</para><para>Reino: 1
 Filo: 1
-Clase: 1
+Clase: 2
 Orden: 41
 Familia: 130
 Género: 597
 Subgénero: 13
 Especie: 1700
-Epitetoinfraespecifico: 147</para>
+Epitetoinfraespecifico: 147
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -94,12 +93,12 @@ Epitetoinfraespecifico: 147</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (CIUDAD DE MEXICO, DISTRITO FEDERAL, HIDALGO, MEXICO, MORELOS, PUEBLA, SAN LUIS POTOSI, TLAXCALA)</geographicDescription>
+                <geographicDescription>País: MEXICO (, DISTRITO FEDERAL, HIDALGO, MEXICO, PUEBLA, TLAXCALA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-100.164</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-97.938</eastBoundingCoordinate>
-                    <northBoundingCoordinate>21.168</northBoundingCoordinate>
-                    <southBoundingCoordinate>18.902</southBoundingCoordinate>
+                    <westBoundingCoordinate>-100.164316</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-97.938486</eastBoundingCoordinate>
+                    <northBoundingCoordinate>21.1675</northBoundingCoordinate>
+                    <southBoundingCoordinate>18.902439</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,7 +116,7 @@ Epitetoinfraespecifico: 147</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida, Pinopsida
 Orden: Alismatales, Poales, Nymphaeales, Caryophyllales, Gentianales, Geraniales, Malpighiales, Asterales, Fabales, Lamiales, Brassicales, Malvales, Myrtales, Solanales, Apiales, Boraginales, Saxifragales, Commelinales, Fagales, Ranunculales, Asparagales, Rosales, Dipsacales, Pinales, Ericales, Vitales, Cupressales, Cucurbitales, Liliales, Dioscoreales, Sapindales, Piperales, Santalales, Cornales, Aquifoliales, Garryales, Zygophyllales, Oxalidales, Proteales, Celastrales, Laurales
 Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amaranthaceae, Rubiaceae, Geraniaceae, Euphorbiaceae, Asteraceae, Fabaceae, Lamiaceae, Brassicaceae, Phytolaccaceae, Malvaceae, Onagraceae, Solanaceae, Lythraceae, Apiaceae, Plantaginaceae, Boraginaceae, Juncaceae, Crassulaceae, Commelinaceae, Caryophyllaceae, Scrophulariaceae, Fagaceae, Berberidaceae, Cactaceae, Asparagaceae, Rhamnaceae, Hypoxidaceae, Namaceae, Caprifoliaceae, Orchidaceae, Pinaceae, Salicaceae, Rosaceae, Ranunculaceae, Orobanchaceae, Ericaceae, Iridaceae, Hydrocharitaceae, Adoxaceae, Bromeliaceae, Montiaceae, Convolvulaceae, Chenopodiaceae, Vitaceae, Polygonaceae, Nyctaginaceae, Calceolariaceae, Polygalaceae, Linaceae, Verbenaceae, Cupressaceae, Apocynaceae, Cucurbitaceae, Araceae, Violaceae, Gentianaceae, Smilacaceae, Cleomaceae, Talinaceae, Betulaceae, Clethraceae, Dioscoreaceae, Portulacaceae, Campanulaceae, Lentibulariaceae, Sapindaceae, Hydrophyllaceae, Piperaceae, Cistaceae, Passifloraceae, Santalaceae, Alismataceae, Primulaceae, Amaryllidaceae, Grossulariaceae, Loasaceae, Aquifoliaceae, Alstroemeriaceae, Papaveraceae, Symplocaceae, Plumbaginaceae, Resedaceae, Acanthaceae, Bignoniaceae, Garryaceae, Hypericaceae, Burseraceae, Oleaceae, Myrtaceae, Phrymaceae, Liliaceae, Krameriaceae, Oxalidaceae, Urticaceae, Sabiaceae, Aizoaceae, Eriocaulaceae, Heliotropiaceae, Polemoniaceae, Hydrangeaceae, Anacardiaceae, Loranthaceae, Moraceae, Cornaceae, Caricaceae, Haloragaceae, Malpighiaceae, Pontederiaceae, Coriariaceae, Juncaginaceae, Celastraceae, Martyniaceae, Lauraceae, Rutaceae, Araliaceae, Menyanthaceae, Melanthiaceae, Saxifragaceae, Fouquieriaceae, Begoniaceae, Asphodelaceae, Lennoaceae, Anacampserotaceae, Zygophyllaceae, Apodanthaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -130,7 +129,11 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -3358,7 +3361,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3371,7 +3374,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -3382,6 +3385,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia fulgens</taxonRankValue>
+                    <commonName>mirto, salvia roja, ts&apos;imbarenzé (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3450,6 +3454,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia elegans</taxonRankValue>
+                    <commonName>hierba del barretero, k&apos;anrrejna (Mazahua), mirto, mirto chico, mirto de monte, salvia roja</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3781,6 +3786,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Zexmenia aurea</taxonRankValue>
+                    <commonName>peonía, té de llano, árnica</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3850,6 +3856,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Picris echioides</taxonRankValue>
+                    <commonName>abrojo, lechuga de agua</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3923,6 +3930,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Aster subulatus</taxonRankValue>
+                    <commonName>escobilla, escobillo, lechuga de monte, metezurra</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4651,7 +4659,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja communis</taxonRankValue>
-                    <commonName>hierba del cáncer</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4777,6 +4785,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia gesneriiflora</taxonRankValue>
+                    <commonName>chía, retama de monte</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4813,7 +4822,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4941,7 +4950,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hedeoma piperita</taxonRankValue>
-                    <commonName>Santo Domingo, tabaquillo</commonName>
+                    <commonName>Santo Domingo, hierba buena, tabaquillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4997,7 +5006,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5898,7 +5907,6 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Monotropa uniflora</taxonRankValue>
-                    <commonName>pipa de indio</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5967,7 +5975,6 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Porophyllum tagetoides</taxonRankValue>
-                    <commonName>cola de coyote, cola de zorra, escobeta, escobetilla, hierba del venado, pápalo, pápalo-quilitl (Náhuatl), pápaloquilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6207,6 +6214,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Panicum miliaceum</taxonRankValue>
+                    <commonName>mijo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6615,7 +6623,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Calochortus barbatus</taxonRankValue>
-                    <commonName>gallito, lirio, mariposa</commonName>
+                    <commonName>gallito, gallitos, lirio, mariposa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6713,6 +6721,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gnaphalium sphacelatum</taxonRankValue>
+                    <commonName>canelillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6856,6 +6865,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia amarissima</taxonRankValue>
+                    <commonName>chia, chupona, mirto de campo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7046,7 +7056,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia hispanica</taxonRankValue>
-                    <commonName>chaa (Zapoteco), chian (Náhuatl), chía, gueeza chaa (Zapoteco), queeza-chaa (Zapoteco), salvia</commonName>
+                    <commonName>chaa (Zapoteco), chian (Náhuatl), chía, chía de castilla, gueeza chaa (Zapoteco), queeza-chaa (Zapoteco), salvia</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7301,7 +7311,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Taxodium mucronatum</taxonRankValue>
-                    <commonName>ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
+                    <commonName>ahoehuetl (Náhuatl), ahuéhuetl (Náhuatl), cedro, chuche (Huasteco), ciprés, hauoli (Guarijío), jahuolí (Guarijío), jauolí (Guarijío), matéoco (Tarahumara), penhamu (Tarasco), penjamu (Tarasco), quitsincui (Zoque), sabino, t-nuyucul (Mixteco), tnuyucu (Mixteco), ya&apos;ayitz (Zapoteco), yaga-chichicina (Zapoteco), yaga-guichi-ciña (Zapoteco), yaga-quichi (Zapoteco), yaga-quichiciña (Zapoteco), yagachicina (Zapoteco), yucun-datura (Zapoteco), yág-guizdóo (Zapoteco), yáguistóo (Zapoteco), árbol de Sta. María del tule, árbol del tule</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7598,7 +7608,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja arvensis</taxonRankValue>
-                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, uitzacua (Tarasco)</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7852,8 +7862,8 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Erythrina coralloides</taxonRankValue>
-                    <commonName>alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
+                    <taxonRankValue>Erythrina (Erythrina) coralloides</taxonRankValue>
+                    <commonName>alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, jutuku (Huasteco), lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pemoche (Huasteca), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -8181,6 +8191,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Achyropappus anthemoides</taxonRankValue>
+                    <commonName>contrapulgas</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -8593,7 +8604,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -8696,6 +8707,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia gracilis</taxonRankValue>
+                    <commonName>albaca de monte, tzajal buluk&apos; sat (Tzoltzil)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -8892,6 +8904,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pachycereus marginatus</taxonRankValue>
+                    <commonName>cardón órgano parado, chilayo, chimalayo (Mixteco), jarritos, malinche, ndíchi láya (Mixteco), ntaxinithjao (Popoloca), pitaya, pitayo, sahuaro, tnu laya (Mixteco), too dichi ninó (Mixteco), yag bidze (Zapoteco), órgano, órgano de zopilote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -9140,6 +9153,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia helianthemifolia</taxonRankValue>
+                    <commonName>k&apos;anrrejna (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -9972,7 +9986,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Rhus radicans</taxonRankValue>
-                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -10824,6 +10838,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Salvia mexicana var. minor</taxonRankValue>
+                    <commonName>cuasia, rosa morada, salvia, tacote, tlacote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -10855,6 +10870,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dalea bicolor var. bicolor</taxonRankValue>
+                    <commonName>engorda cabra, escoba, escobilla, hierba del chivo, limoncillo, ramón, romerillo, romero</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -11068,6 +11084,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Bidens odorata var. calcicola</taxonRankValue>
+                    <commonName>a-cocotli (Náhuatl), acahual, acahuale blanco, aceitilla, aceitillo, amor seco, chichik-xul (Maya), corrimiento, cruceta, hierba de la culebra, k&apos;an mul (Maya), k&apos;an tumbuub (Maya), k&apos;an-mul (Maya), matsa ch&apos;ich bu&apos;ul (Maya), matsab-kitam (Maya), mozote amarillo, mozote blanco, mulito, quelem (Huasteco), rosilla, té de milpa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -11307,6 +11324,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Hydrocotyle verticillata var. triradiata</taxonRankValue>
+                    <commonName>corona de santa, naab de tierra adentro (Español-Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -11403,7 +11421,7 @@ Familia: Potamogetonaceae, Cyperaceae, Nymphaeaceae, Typhaceae, Poaceae, Amarant
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -11485,26 +11503,8 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:25Z</dateStamp>
-                <citation>Fernández Nava R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Computarización del Herbario ENCB. Fase I (Base de datos de los ejemplares del Valle de México). Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/uxmws5 accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>ND. 1897. ND. CONTR. GRAY. HERB. 11(9999):299-300. E. U. A.</citation>
-                <citation>ND. 1897. ND. PROC. AMER. ACAD. SCI. 32(9999):295-9999. E. U. A.</citation>
-                <citation>ND. 1900. ND. PROC. AMER. ACAD. SCI. 35(9999):328-9999. E. U. A.</citation>
-                <citation>ND. 1982. ND. PHYTOLOGIA. 52(2):101-9999. E. U. A.</citation>
-                <citation>ND. 1985. ND. PHYTOLOGIA. 57(9999):275-278. E. U. A.</citation>
-                <citation>ND. 1837. ND. PRODROMUS SYSTEMATIS UNIVERSALIS REGNI VEGETABILIS. 6(9999):223-9999. E. U. A.</citation>
-                <citation>ND. 1973. ND. CACTACEAS Y SUCULENTAS DE MEXICO. 28(4):96-100. MEXICO.</citation>
-                <citation>ND. 1979. ND. ACTA CIENT. POTOS. 7(9999):311-9999. MEXICO.</citation>
-                <citation>ND. 1929. ND. CONTR. U. S. NAT. HERB. 28(1):36-37. E. U. A.</citation>
-                <citation>ND. 1897. ND. CONTR. U. S. NAT. HERB. 5(9999):141-9999. E. U. A.</citation>
-                <citation>ND. 1973. ND. CIENCIA. 28(2):57-58. MEXICO.</citation>
-                <citation>ND. 1987. ND. BOL. SOC. BOT. MEX. 47(9999):3-9999. MEXICO.</citation>
-                <citation>ND. 1984. ND. AN. INST. BIOL. MEX. SER BOT. 47(9999):123-9999. MEXICO.</citation>
-                <citation>ND. 1979. FLORA FANEROGAMICA DEL VALLE DE MEXICO. I(0):ND. C.E.C.S.A. MEXICO D. F.</citation>
-                <citation>ND. 1985. FLORA FANEROGAMICA DEL VALLE DE MEXICO. II(0):ND. ESCUELA NACIONAL DE CIENCIAS BIOLOGICAS E INSTITUT. MEXICO D. F.</citation>
-                <citation>ND. 1990. FLORA FANEROGAMICA DEL VALLE DE MEXICO. III(0):ND. INSTITUTO DE ECOLOGIA. MEXICO D. F.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:27Z</dateStamp>
+                <citation>Fernández Nava R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Computarización del Herbario ENCB. Fase I (Base de datos de los ejemplares del Valle de México). Version 1.19. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/uxmws5 accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-J114-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -11539,12 +11539,11 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                     <collectionIdentifier>SNIB-J114-J114805F-ND</collectionIdentifier>
                     <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>9</endRange>
+                        <endRange>33,883</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

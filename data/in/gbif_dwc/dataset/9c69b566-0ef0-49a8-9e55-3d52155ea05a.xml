@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Centro de Investigaciones Biológicas del Noroeste SCDivisión de Biología Terrestre</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Mar Bermejo # 195</deliveryPoint>
                 <city>La Paz</city>
                 <administrativeArea>Baja California Sur</administrativeArea>
                 <postalCode>23090</postalCode>
@@ -47,22 +46,23 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>La Región del Cabo de Baja California Sur es una importante área natural, la caracterizan su aislamiento geográfico y el estar ubicada bajo la línea del trópico, por lo que recibe influencia ambiental tanto del trópico seco como del Desierto Sonorense.  La superficie de la región se delimitó en 8,500 km2.
 La presencia de una importante elevación, la Sierra de La Laguna (hasta 2100 m) permite la existencia de diferentes comunidades vegetales en el gradiente altitudinal: el bosque de pino-encino, el bosque de encino, la selva baja caducifolia, el matorral sarcocaule, y las agrupaciones costeras.  El proyecto ha permitido profundizar en el conocimiento de su flora y vegetación.  En la actualidad, la flora  de esta región se ha establecido en 1088 taxa, de las cuales 16% son endémicos. 
-La base de datos entregada consistió de 1851 fichas.</para>
-<para>Reino: 1
+La base de datos entregada consistió de 1851 fichas.
+</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 4
 Orden: 42
 Familia: 128
 Género: 463
 Subgénero: 10
 Especie: 787
-Epitetoinfraespecifico: 142</para>
+Epitetoinfraespecifico: 142
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -96,11 +96,11 @@ Epitetoinfraespecifico: 142</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (BAJA CALIFORNIA SUR, ZACATECAS)</geographicDescription>
+                <geographicDescription>País: MEXICO (BAJA CALIFORNIA SUR)</geographicDescription>
                 <boundingCoordinates>
                     <westBoundingCoordinate>-112.275</westBoundingCoordinate>
                     <eastBoundingCoordinate>-100.925</eastBoundingCoordinate>
-                    <northBoundingCoordinate>26.342</northBoundingCoordinate>
+                    <northBoundingCoordinate>26.341667</northBoundingCoordinate>
                     <southBoundingCoordinate>22.275</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
@@ -119,7 +119,7 @@ Epitetoinfraespecifico: 142</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Lycopodiopsida, Pinopsida
 Orden: Asterales, Solanales, Sapindales, Fabales, Schizaeales, Caryophyllales, Poales, Malvales, Santalales, Rosales, Commelinales, Malpighiales, Polypodiales, Gentianales, Vitales, Ericales, Zygophyllales, Lamiales, Cucurbitales, Dipsacales, Myrtales, Boraginales, Brassicales, Asparagales, Fagales, Apiales, Saxifragales, Aquifoliales, Cornales, Selaginellales, Garryales, Alismatales, Oxalidales, Pinales, Ephedrales, Celastrales, Ranunculales, Piperales, Ceratophyllales, Geraniales, Arecales, Equisetales
 Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthaceae, Poaceae, Malvaceae, Campanulaceae, Loranthaceae, Cannabaceae, Commelinaceae, Euphorbiaceae, Pteridaceae, Typhaceae, Convolvulaceae, Rubiaceae, Vitaceae, Sapotaceae, Achatocarpaceae, Burseraceae, Zygophyllaceae, Verbenaceae, Santalaceae, Scrophulariaceae, Cucurbitaceae, Rhizophoraceae, Cactaceae, Caprifoliaceae, Rosaceae, Myrtaceae, Fouquieriaceae, Polygalaceae, Chenopodiaceae, Lamiaceae, Acanthaceae, Onagraceae, Boraginaceae, Cyperaceae, Moraceae, Malpighiaceae, Rhamnaceae, Brassicaceae, Namaceae, Ericaceae, Primulaceae, Cistaceae, Caryophyllaceae, Asparagaceae, Nyctaginaceae, Lythraceae, Orchidaceae, Resedaceae, Anacardiaceae, Iridaceae, Gentianaceae, Ehretiaceae, Heliotropiaceae, Simaroubaceae, Fagaceae, Passifloraceae, Schoepfiaceae, Simmondsiaceae, Hypericaceae, Stegnospermataceae, Apocynaceae, Apiaceae, Crassulaceae, Polygonaceae, Plantaginaceae, Portulacaceae, Aquifoliaceae, Violaceae, Capparaceae, Loasaceae, Orobanchaceae, Selaginellaceae, Bromeliaceae, Ebenaceae, Rutaceae, Caricaceae, Aizoaceae, Garryaceae, Polypodiaceae, Araliaceae, Potamogetonaceae, Oxalidaceae, Pinaceae, Ephedraceae, Krameriaceae, Dryopteridaceae, Urticaceae, Celastraceae, Amaryllidaceae, Ranunculaceae, Martyniaceae, Piperaceae, Salicaceae, Hydrophyllaceae, Aristolochiaceae, Begoniaceae, Ceratophyllaceae, Aspleniaceae, Petiveriaceae, Thymelaeaceae, Combretaceae, Bignoniaceae, Phyllanthaceae, Polemoniaceae, Zosteraceae, Geraniaceae, Arecaceae, Molluginaceae, Talinaceae, Plumbaginaceae, Cordiaceae, Cleomaceae, Bataceae, Bixaceae, Equisetaceae, Araceae, Phrymaceae, Hydrocharitaceae, Ruppiaceae, Grossulariaceae, Papaveraceae, Montiaceae, Phytolaccaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -132,7 +132,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -141,6 +141,10 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Lycopodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -3392,7 +3396,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens ferulifolia</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4594,7 +4598,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Mascagnia macroptera</taxonRankValue>
-                    <commonName>anaraka (Tarahumara), aparicua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
+                    <commonName>anaraka (Tarahumara), apáricua (Tarasco), bejuco prieto, doncella amarilla, gallinita, matanene</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4649,7 +4653,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bursera filicifolia</taxonRankValue>
-                    <commonName>copal, tacamaca (Náhuatl)</commonName>
+                    <commonName>copal, copalquín (Náhuatl), tacamaca (Náhuatl), torote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4846,7 +4850,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Ericameria diffusa</taxonRankValue>
+                    <taxonRankValue>Ericameria diffusum</taxonRankValue>
                     <commonName>romerillo amargo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -5048,7 +5052,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Porophyllum confertum</taxonRankValue>
-                    <commonName>hierba del venado</commonName>
+                    <commonName>hierba del venado, hestej (Guarijío), hierba del venado, jestej (Guarijío)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5067,7 +5071,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phoenix dactylifera</taxonRankValue>
-                    <commonName>palma datilera, datilera, dátil, palma, palma datilera, palma de dátiles</commonName>
+                    <commonName>palma datilera, datil, datilera, palma, palma datilera, palma de dátiles</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5295,6 +5299,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Setaria adhaerens</taxonRankValue>
+                    <commonName>cola de zorra pegajosa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5403,11 +5408,6 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
-                    <commonName>guamuchil, beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Perityle emoryi</taxonRankValue>
                     <commonName>manzanilla, manzanilla blanca</commonName>
                 </taxonomicClassification>
@@ -5442,6 +5442,11 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Manihot chlorosticta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pithecellobium dulce</taxonRankValue>
+                    <commonName>guamuchil, beb-guiche (Zapoteco), chucum blanco (Maya), chucúm blanco, cuamóchitl (Náhuatl), cuauhmochitl (Náhuatl), espino, espinoso, guaje, guamuche, guamúchil, guamúchil agarroso, guamúchil áspero, guámara (Cora), humo, jumu (Huasteco), kuamochitl (Náhuatl), lala-nempá (Cuicateco), liléka (Totonaco), ma-dju (Chinanteco), macachuni (Guarijío), maco&apos;ochiini (Mayo), mutúri-te (Huichol), nempá (Cuicateco), nocuana guiché (Zapoteco), nocuana-be-guiche (Zapoteco), palo dulce, pe-qui-che (Zapoteco), pe-quijche (Zapoteco), pi-quichi (Zapoteco), pili&apos; il (Maya), pinzán, sak chukum (Maya), suy che&apos; (Maya), ticuahndi (Mixteco), ts uy che&apos; (Maya), ts&apos; ib che&apos; (Maya), ts&apos; in che (Maya), ts&apos;iu che&apos; (Maya), ts&apos;uni&apos;che (Maya), tsiiw che&apos; (Maya), tucuy, umuh (Huasteco), umuw (Huasteco), umí (Cora), yaga-be-guiche (Zapoteco), yaga-bixihui (Zapoteco), yaga-pi-quicho (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5623,11 +5628,11 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hybanthus attenuatus</taxonRankValue>
-                    <commonName>quelite</commonName>
+                    <commonName>poshil hniquel huamal (Tseltal), quelite</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Eupatorium purpusi</taxonRankValue>
+                    <taxonRankValue>Eupatorium purpusii</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5762,7 +5767,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6937,6 +6942,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Perityle microglossa var. microglossa</taxonRankValue>
+                    <commonName>manzanilla, manzanilla bronca, manzanilla de burro, manzanillo de coyote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -7040,7 +7046,7 @@ Familia: Asteraceae, Solanaceae, Sapindaceae, Fabaceae, Anemiaceae, Amaranthacea
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -7116,25 +7122,9 @@ con flores como muérdagos, sándalos
 con flores como pimientas
 con flores como plantas del aceite negro
 con flores como uvas
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africa
-con flores, con semillas, con frutos como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
-con flores, con semillas, con frutos como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como cereales, heno, juncos, pastos terrestres, piña, tules
-con flores, con semillas, con frutos como cocoteros, dátiles, palmas, palmeras, palmitos
-con flores, con semillas, con frutos como gobernadoras, guayacanes
-con flores, con semillas, con frutos como uvas
 con flores: mangles
 con flores: pastos marinos
-Con flores; angiospermas (acantos; tinte natural muitle)
-Con flores; angiospermas (cactos; cactus; nopales; tunas; xoconostles; biznagas; peyote; acitrón; garambullos; saguaros)
-Con flores; angiospermas (nochebuena; ricino; caucho; mandioca; corona de cristo, chaya)
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, sin semillas, con esporas: antoceros, hepáticas, musgos
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
@@ -7144,8 +7134,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:27Z</dateStamp>
-                <citation>León de la Luz J L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Inventario florístico en Baja California Sur: Región del Cabo e Islas adyacentes. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/l8ahkz accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:29Z</dateStamp>
+                <citation>León de la Luz J L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Inventario florístico en Baja California Sur: Región del Cabo e Islas adyacentes. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/l8ahkz accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-P127-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -7178,6 +7168,11 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-P127-P127508F-con IdEjemplar</collectionIdentifier>
+                    <collectionName>Herbarium;CAS;California Academy of Sciences;CAS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-P127-P127508F-con IdEjemplar</collectionIdentifier>
                     <collectionName>Herbario;HCIB;Centro de Investigaciones Biológicas del Noroeste, S. C.;CIBNOR</collectionName>
                 </collection>
                 <collection>
@@ -7185,11 +7180,13 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-P127-P127508F-con IdEjemplar</collectionIdentifier>
                     <collectionName>Herbarium;SD;San Diego Natural History Museum;SDNHM</collectionName>
                 </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-P127-P127508F-con IdEjemplar</collectionIdentifier>
-                    <collectionName>Herbarium;CAS;California Academy of Sciences;CAS</collectionName>
-                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,560</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

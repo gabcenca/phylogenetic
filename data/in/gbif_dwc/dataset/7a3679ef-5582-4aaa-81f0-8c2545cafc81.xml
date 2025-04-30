@@ -22,6 +22,7 @@ xml:lang="en">
                 <country>FRANCE</country>
             </address>
             <electronicMailAddress>antoine.affouard@inria.fr</electronicMailAddress>
+            <userId directory="https://orcid.org/">0009-0007-0447-9230</userId>
         </creator>
         <creator>
             <individualName>
@@ -103,6 +104,7 @@ xml:lang="en">
                 <country>FRANCE</country>
             </address>
             <electronicMailAddress>mathias.chouet@cirad.fr</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-2936-2641</userId>
         </creator>
         <creator>
             <individualName>
@@ -118,6 +120,7 @@ xml:lang="en">
                 <country>FRANCE</country>
             </address>
             <electronicMailAddress>hugo.gresse@inria.fr</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0003-2720-6415</userId>
         </creator>
         <creator>
             <individualName>
@@ -150,6 +153,7 @@ xml:lang="en">
                 <country>FRANCE</country>
             </address>
             <electronicMailAddress>antoine.affouard@inria.fr</electronicMailAddress>
+            <userId directory="https://orcid.org/">0009-0007-0447-9230</userId>
         </metadataProvider>
         <associatedParty>
             <individualName>
@@ -165,16 +169,17 @@ xml:lang="en">
                 <country>FRANCE</country>
             </address>
             <electronicMailAddress>antoine.affouard@inria.fr</electronicMailAddress>
+            <userId directory="https://orcid.org/">0009-0007-0447-9230</userId>
             <role>PROGRAMMER</role>
         </associatedParty>
         <pubDate>
-                2023-02-08
+                2025-04-16
         </pubDate>
         <language>ENGLISH</language>
         <abstract>
-            Pl&#64;ntNet is a participatory botanical observation platform allowing to identify plants from photos (using deep learning) and to share the observations with the community. The platform has three main front-ends: Pl&#64;ntNet androïd (http://bit.ly/1K4D1eU), Pl&#64;ntNet iOS (http://apple.co/2cMtWgu) and Pl&#64;ntNet web (https://identify.plantnet.org/). Pl&#64;ntNet was founded in 2010 by a consortium of four French research organisms (CIRAD, Inria, INRAE and IRD) and is now open to other members. More information about Pl&#64;ntNet project can be found at https://plantnet.org/.  
+            <para>Pl&amp;#64;ntNet is a participatory botanical observation platform allowing to identify plants from photos (using deep learning) and to share the observations with the community. The platform has three main front-ends: Pl&amp;#64;ntNet androïd (http://bit.ly/1K4D1eU), Pl&amp;#64;ntNet iOS (http://apple.co/2cMtWgu) and Pl&amp;#64;ntNet web (https://identify.plantnet.org/). Pl&amp;#64;ntNet was founded in 2010 by a consortium of four French research organisms (CIRAD, Inria, INRAE and IRD) and is now open to other members. More information about Pl&amp;#64;ntNet project can be found at https://plantnet.org/.  
 
-The observations in this collection are the ones for which the authors agree to share the associated pictures under a creative common licence and for which the species name is considered as valid.
+The observations in this collection are the ones for which the authors agree to share the associated pictures under a creative common licence and for which the species name is considered as valid.</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -289,6 +294,7 @@ The observations in this collection are the ones for which the authors agree to 
                     <givenName>Antoine</givenName>
                     <surName>AFFOUARD</surName>
                     </individualName>
+            <userId directory="https://orcid.org/">0009-0007-0447-9230</userId>
                     <role>PROGRAMMER</role>
                 </personnel>
                 <personnel>
@@ -296,7 +302,7 @@ The observations in this collection are the ones for which the authors agree to 
                     <givenName>Alexis</givenName>
                     <surName>JOLY</surName>
                     </individualName>
-            <userId directory="http://orcid.org/">0000-0002-2161-9940</userId>
+            <userId directory="https://orcid.org/">0000-0002-2161-9940</userId>
                     <role>PRINCIPAL_INVESTIGATOR</role>
                 </personnel>
                 <personnel>
@@ -304,7 +310,7 @@ The observations in this collection are the ones for which the authors agree to 
                     <givenName>Pierre</givenName>
                     <surName>BONNET</surName>
                     </individualName>
-            <userId directory="http://orcid.org/">0000-0002-2828-4389</userId>
+            <userId directory="https://orcid.org/">0000-0002-2828-4389</userId>
                     <role>PRINCIPAL_INVESTIGATOR</role>
                 </personnel>
                 <abstract>
@@ -324,8 +330,8 @@ The observations in this collection are the ones for which the authors agree to 
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:30Z</dateStamp>
-                <citation>AFFOUARD A, JOLY A, LOMBARDO J, CHAMP J, GOEAU H, CHOUET M, GRESSE H, BONNET P (2023). Pl@ntNet observations. Version 1.8. Pl@ntNet. Occurrence dataset https://doi.org/10.15468/gtebaa accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:25Z</dateStamp>
+                <citation>AFFOUARD A, JOLY A, LOMBARDO J, CHAMP J, GOEAU H, CHOUET M, GRESSE H, BONNET P (2025). Pl@ntNet observations. Version 1.9. Pl@ntNet. Occurrence dataset https://doi.org/10.15468/gtebaa accessed via GBIF.org on 2025-04-29.</citation>
                 <bibliography>
                 <citation identifier="https://doi.org/10.1016/j.ecoinf.2013.07.006">Joly, A., Goëau, H., Bonnet, P., Bakić, V., Barbe, J., Selmi, S., ... &amp; Yahiaoui I., Carré J., Mouysset E., Molino J.-f., Boujemaa B., Barthélémy D., (2014). Interactive plant identification based on social image data. Ecological Informatics, 23, 22-34.</citation>
                 <citation identifier="https://doi.org/10.1007/s00530-015-0462-9">Joly, A., Bonnet, P., Goëau, H., Barbe, J., Selmi, S., Champ, J., Dufour-Kowalski, S., Affouard, A., Carré, J., Molino, J.-f., Boujemaa, N., &amp; Barthélémy D., (2016). A look inside the Pl@ntNet experience. Multimedia Systems, 22(6), 751-766.</citation>

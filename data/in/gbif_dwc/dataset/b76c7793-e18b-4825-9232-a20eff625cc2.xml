@@ -18,7 +18,6 @@ xml:lang="es">
             <organizationName>Asociación para la Conservación de Especies y Espacios Naturales Representativos de Baja California AC</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Aguapando No. 38</deliveryPoint>
                 <city>Ensenada</city>
                 <administrativeArea>Baja California</administrativeArea>
                 <postalCode>22810</postalCode>
@@ -46,23 +45,24 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>El presente proyecto tiene como objetivo principal el estudiar las diferentes especies de flora que se encuentran incluidas en los grupos de matorral costero y chaparral de la zona Mediterránea en Baja California. La problemática actual que enfrenta este tipo de vegetación es la deforestación ya que año con año se desmontan cerros y planicies para incrementar la superficie de uso agrícola y crecimiento urbano. 
 El proyecto aquí propuesto consistirá en realizar muestreos y recorridos por toda la zona Mediterránea donde se encuentran los grupos de vegetación ya señalados, recolectar ejemplares, toma de fotografías de alta resolución y coordenadas geográficas, incorporar a la base de datos BIOTICA todos los resultados obtenidos y depositar los ejemplares curados a la colección científica del herbario BCMEX. Antes de realizar cualquier colecta de ejemplares, personal capacitado acudirá al herbario ya mencionado a revisar que ejemplares necesitan ser repuestos o anexados a dicha colección, esto es con el fin de evitar recolecciones innecesarias.
 Como aportación o complemento de nuestra A.C al proyecto, proponemos iniciar un proyecto piloto de un banco de germoplasma de la vegetación que se muestreara, esto con el fin de conservar la genética de estos ejemplares que en la actualidad están propensos a desaparecer por la problemática ya señala en párrafos anteriores. 
-En el presente proyecto se decidió no meter al bosque de pinos que domina las crestas de Sierra de Juárez y Sierra San Pedro Mártir como objeto de este estudio, ya que consideremos que se han hecho los muestreos y recolectas necesarios para este tipo de vegetación.</para>
-<para>Reino: 1
+En el presente proyecto se decidió no meter al bosque de pinos que domina las crestas de Sierra de Juárez y Sierra San Pedro Mártir como objeto de este estudio, ya que consideremos que se han hecho los muestreos y recolectas necesarios para este tipo de vegetación.
+</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 4
 Orden: 38
 Familia: 93
 Género: 320
-Subgénero: 10
+Subgénero: 9
 Especie: 574
-Epitetoinfraespecifico: 24</para>
+Epitetoinfraespecifico: 24
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -98,10 +98,10 @@ Epitetoinfraespecifico: 24</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (BAJA CALIFORNIA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-116.888</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-115.578</eastBoundingCoordinate>
-                    <northBoundingCoordinate>32.545</northBoundingCoordinate>
-                    <southBoundingCoordinate>30.286</southBoundingCoordinate>
+                    <westBoundingCoordinate>-116.88785</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-115.577519</eastBoundingCoordinate>
+                    <northBoundingCoordinate>32.545472</northBoundingCoordinate>
+                    <southBoundingCoordinate>30.286419</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -119,7 +119,7 @@ Epitetoinfraespecifico: 24</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Lycopodiopsida, Polypodiopsida
+Clase: Magnoliopsida, Lycopodiopsida, Pinopsida, Polypodiopsida
 Orden: Malpighiales, Isoetales, Rosales, Pinales, Fabales, Caryophyllales, Gentianales, Poales, Santalales, Asterales, Saxifragales, Lamiales, Ericales, Fagales, Apiales, Cupressales, Ephedrales, Solanales, Brassicales, Asparagales, Boraginales, Alismatales, Sapindales, Ranunculales, Polypodiales, Malvales, Cucurbitales, Myrtales, Dipsacales, Cornales, Salviniales, Arecales, Liliales, Garryales, Ceratophyllales, Zygophyllales, Crossosomatales, Geraniales
 Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, Polygonaceae, Rubiaceae, Poaceae, Santalaceae, Asteraceae, Cyperaceae, Apocynaceae, Rosaceae, Grossulariaceae, Plantaginaceae, Polemoniaceae, Fagaceae, Montiaceae, Urticaceae, Scrophulariaceae, Apiaceae, Cupressaceae, Ephedraceae, Solanaceae, Crassulaceae, Brassicaceae, Chenopodiaceae, Asparagaceae, Salicaceae, Boraginaceae, Nyctaginaceae, Potamogetonaceae, Caryophyllaceae, Phrymaceae, Anacardiaceae, Hydrophyllaceae, Portulacaceae, Papaveraceae, Ranunculaceae, Ericaceae, Simmondsiaceae, Polypodiaceae, Malvaceae, Verbenaceae, Cucurbitaceae, Onagraceae, Caprifoliaceae, Amaryllidaceae, Orobanchaceae, Convolvulaceae, Aizoaceae, Rutaceae, Picrodendraceae, Loasaceae, Dryopteridaceae, Marsileaceae, Namaceae, Juncaceae, Woodsiaceae, Pteridaceae, Adoxaceae, Heliotropiaceae, Phyllanthaceae, Apodanthaceae, Lamiaceae, Saxifragaceae, Dennstaedtiaceae, Orchidaceae, Campanulaceae, Linaceae, Arecaceae, Liliaceae, Amaranthaceae, Violaceae, Zosteraceae, Garryaceae, Cleomaceae, Primulaceae, Ceratophyllaceae, Juncaginaceae, Araceae, Iridaceae, Lythraceae, Sapindaceae, Zygophyllaceae, Fouquieriaceae, Crossosomataceae, Elatinaceae, Berberidaceae, Lentibulariaceae, Geraniaceae, Gentianaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -132,11 +132,15 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Lycopodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -1972,10 +1976,6 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
-                    <taxonRankValue>Solanum</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Subgenus</taxonRankName>
                     <taxonRankValue>Agave</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2027,6 +2027,7 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Brickellia californica</taxonRankValue>
+                    <commonName>hierba de la vaca</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2465,7 +2466,7 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Lophocereus schottii</taxonRankValue>
-                    <commonName>barbón, cabeza de viejo, cabeza vieja, cardona, ce:mi (Yuto-nahua), cina, cinita, garambullo, garambuyo, hasahcápjö (Seri), hasahcápöj (Seri), hecho, hehe is quisil (Seri), hombre viejo, mochi, mojépe (Seri), muse, muso, musue (Mayo), muzue (Mayo), músaro (Yaqui), pitahaya barbona, pitaya barbona, senita, sina, sina barbona, siñita, temi (Mayo), tuna barbona, uu museo gobbunim borokame (Yaqui), viejo, zina</commonName>
+                    <commonName>barbón, cabeza de viejo, cabeza vieja, cardona, ce:mi (Yuto-nahua), cina, cinita, garambullo, garambuyo, hasahcápjö (Seri), hasahcápöj (Seri), hecho, hehe is quisil (Seri), hombre viejo, mochi, mojépe (Seri), muse, muso, musue (Mayo), muzue (Mayo), músaro (Yaqui), pitahaya barbona, pitaya barbona, senita, sina, sina barbona, sinita, temi (Mayo), tuna barbona, uu museo gobbunim borokame (Yaqui), viejo, zina</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3623,11 +3624,6 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Ricinus communis</taxonRankValue>
-                    <commonName>Kgapsnatkiwi (Totonaco), Kgaxtelenkget (Totonaco), acetexiuitl (Náhuatl), al-pai-ue (Chontal de Oaxaca), cashilandacui (Zoque), cashtilenque (Totonaco), degha (Otomí), guechi beyo (Zapoteco), hierba verde, higuera del diablo, higuerilla, higuerillo, jarilla, k&apos;o&apos;och (Maya), k&apos;ooch (Maya), k&apos;ooch le&apos; (Maya), kastalankajne (Totonaco), lechuguilla, ndosna (Otomí), nduchidzaha (Mixteco), pai-ue (Chontal de Oaxaca), palma cristi, quechi-peyo-castilla (Zapoteco), québe&apos;enogua (Mayo), ricino, sombrilla, thiquelá (Huasteco), tlapatl (Náhuatl), tsajtüma&apos;ant (Mixe), tzapálotl (Náhuatl), x-k&apos;ooch (Maya), x-koch (Maya), xöxapoitzi (Náhuatl), ya&apos;ax k&apos;ooch (Maya), yaga-bilape (Zapoteco), yaga-gueze-aho (Zapoteco), yaga-higo (Zapoteco), yaga-hiigo (Zapoteco), yaga-hijco (Zapoteco), éek lu&apos;um (Maya)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Artemisia dracunculus</taxonRankValue>
                     <commonName>estragon, tarragon</commonName>
                 </taxonomicClassification>
@@ -3677,6 +3673,11 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Acacia farnesiana</taxonRankValue>
                     <commonName>acacia, aroma, aromática, arúmbari (Tarasco), bihi (Zapoteco), cascalote, coo-ca (Guarijío), cornezuelo, corteza curtidora, cuca (Guarijío), cucca (Mayo), espinillo, espino, espino blanco, espuela de gallo, flor de niño, huizache, huizache blanco, huizachillo, iai-do-no (Cuicateco), injerto de huizache, k&apos;ank&apos;ilis-ché (Maya), k&apos;ank&apos;ixché (Maya), k&apos;antilis (Maya), minza (Otomí), motitas, pedo de burro, subin (Maya), subinché (Maya), thuhaanom (Huasteco), thujanom (Huasteco), thujánum (Huasteco), tsurímbini (Tarasco), tsurúmbini (Tarasco), x-k&apos;antilis (Maya), xcantiris (Purépecha), xiri-xi (Huichol)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ricinus communis</taxonRankValue>
+                    <commonName>Kgapsnatkiwi (Totonaco), Kgaxtelenkget (Totonaco), acetexiuitl (Náhuatl), al-pai-ue (Chontal de Oaxaca), cashilandacui (Zoque), cashtilenque (Totonaco), degha (Otomí), guechi beyo (Zapoteco), hierba verde, higuera del diablo, higuerilla, higuerillo, jarilla, k&apos;o&apos;och (Maya), k&apos;ooch (Maya), k&apos;ooch le&apos; (Maya), kastalankajne (Totonaco), lechuguilla, ndosna (Otomí), nduchidzaha (Mixteco), pai-ue (Chontal de Oaxaca), palma cristi, quechi-peyo-castilla (Zapoteco), québe&apos;enogua (Mayo), ricino, sombrilla, thiquelá (Huasteco), tlapatl (Náhuatl), tsajtüma&apos;ant (Mixe), tzapálotl (Náhuatl), x-k&apos;ooch (Maya), x-koch (Maya), xöxapoitzi (Náhuatl), ya&apos;ax k&apos;ooch (Maya), yaga-bilape (Zapoteco), yaga-gueze-aho (Zapoteco), yaga-higo (Zapoteco), yaga-hiigo (Zapoteco), yaga-hijco (Zapoteco), éek lu&apos;um (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4185,6 +4186,7 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Nolina palmeri</taxonRankValue>
+                    <commonName>amole, sotol</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4483,7 +4485,7 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Solanum (Solanum) xanti var. glabrescens</taxonRankValue>
+                    <taxonRankValue>Solanum xanti var. glabrescens</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4549,7 +4551,7 @@ Familia: Euphorbiaceae, Isoetaceae, Rhamnaceae, Pinaceae, Fabaceae, Cactaceae, P
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -4627,8 +4629,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:36Z</dateStamp>
-                <citation>Beauchamp M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Muestreos y recolectas de flora endémica y casi-endémica de matorral costero y chaparral de la zona mediterránea Baja California, México. Version 1.12. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/tvjyds accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:30Z</dateStamp>
+                <citation>Beauchamp M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Muestreos y recolectas de flora endémica y casi-endémica de matorral costero y chaparral de la zona mediterránea Baja California, México. Version 1.13. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/tvjyds accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-JF106-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -4663,12 +4665,11 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-JF106-JF1061508F-ND</collectionIdentifier>
                     <collectionName>Herbario;BCMEX;Facultad de Ciencias, Universidad Autónoma de Baja California;FC-UABC</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>11</endRange>
+                        <endRange>574</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

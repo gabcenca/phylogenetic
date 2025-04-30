@@ -16,7 +16,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de BiologíaJardín Botánico</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Cto. Zona Deportiva s/n</deliveryPoint>
                 <city>de México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -44,7 +43,7 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
@@ -56,15 +55,16 @@ La duración del proyecto se plantea para dos años, con lo que se pretende cubr
 Se apoyará: 
 1) Seguridad alimentaria al obtener ingresos económicos por la venta de estos productos; 
 2) Conservación in situ de los diferentes componentes de la Milpa Tarahumara; 
-3) Promoción de la conservación del sistema Milpa en diferentes foros, por medio de materiales audiovisuales.</para>
-<para>Reino: 1
+3) Promoción de la conservación del sistema Milpa en diferentes foros, por medio de materiales audiovisuales. 
+</para><para>Reino: 1
 Filo: 1
 Clase: 2
 Orden: 18
 Familia: 29
 Género: 71
 Subgénero: 3
-Especie: 83</para>
+Especie: 83
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -100,10 +100,10 @@ Especie: 83</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (CHIHUAHUA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-107.368</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-107.368</eastBoundingCoordinate>
-                    <northBoundingCoordinate>27.915</northBoundingCoordinate>
-                    <southBoundingCoordinate>27.915</southBoundingCoordinate>
+                    <westBoundingCoordinate>-107.368108</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-107.368108</eastBoundingCoordinate>
+                    <northBoundingCoordinate>27.914519</northBoundingCoordinate>
+                    <southBoundingCoordinate>27.914519</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -121,7 +121,7 @@ Especie: 83</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Magnoliopsida, Polypodiopsida
 Orden: Caryophyllales, Asterales, Geraniales, Gentianales, Apiales, Fabales, Commelinales, Poales, Malvales, Boraginales, Solanales, Lamiales, Myrtales, Brassicales, Oxalidales, Fagales, Equisetales, Asparagales
 Familia: Chenopodiaceae, Asteraceae, Geraniaceae, Gentianaceae, Apiaceae, Fabaceae, Commelinaceae, Cyperaceae, Caryophyllaceae, Cistaceae, Poaceae, Boraginaceae, Solanaceae, Plantaginaceae, Rubiaceae, Amaranthaceae, Onagraceae, Montiaceae, Brassicaceae, Campanulaceae, Oxalidaceae, Fagaceae, Verbenaceae, Apocynaceae, Equisetaceae, Convolvulaceae, Polygonaceae, Lamiaceae, Hypoxidaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -134,7 +134,7 @@ Familia: Chenopodiaceae, Asteraceae, Geraniaceae, Gentianaceae, Apiaceae, Fabace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -1052,7 +1052,7 @@ Familia: Chenopodiaceae, Asteraceae, Geraniaceae, Gentianaceae, Apiaceae, Fabace
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1117,8 +1117,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:26Z</dateStamp>
-                <citation>Bye Boettler R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Conservación de la agrobiodiversidad de la Milpa Tarahumara, Chihuahua. Version 1.8. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/fw6bnu accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:31Z</dateStamp>
+                <citation>Bye Boettler R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Conservación de la agrobiodiversidad de la Milpa Tarahumara, Chihuahua. Version 1.9. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/fw6bnu accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-NM003-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1157,7 +1157,7 @@ sin flores: helechos y afines</descriptorValue>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>3</endRange>
+                        <endRange>107</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

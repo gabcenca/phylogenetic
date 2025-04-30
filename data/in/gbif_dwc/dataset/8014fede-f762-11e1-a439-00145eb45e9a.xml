@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de CienciasDepartamento de BiologíaMuseo de Zoología &quot;Alfonso L Herrera&quot;</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -48,22 +47,22 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>El intenso trabajo de campo de un grupo de investigadores expertos en bótanica, zoología,
 geomorfología y ecología en el parque ecológico estatal de Omiltemi, dio como resultado el libro
-Historia natural del parque ecológico estatal de Omiltemi, Chilpancingo, Guerrero, México, que incluye entre otros datos, un inventario de la flora y la fauna de esta zona de reserva de enorme riqueza biológica y ecológica. Omiltemi, localizado a sólo 15 kilómetros de la ciudad de Chilpancingo, en el estado de Guerrero, en la Sierra Madre del Sur, es un sitio cuya importancia se reconoció desde el siglo XVIII. A partir de entonces, investigadores tanto nacionales como extranjeros han recorrido la zona, y es así que un buen número de ejemplares tipo de especies de plantas, insectos y vertebrados provienen de diversas colecciones de esta región. Como explican los autores de este libro, la importancia del parque radica no sólo en la biodiversidad que muestra en su extensión de alrededor de 3,000 hectáreas, sino en sus características geológicas y climáticas que, en conjunto, hacen de esta zona una región de gran interés científico.</para>
-<para>Reino: 3
+Historia natural del parque ecológico estatal de Omiltemi, Chilpancingo, Guerrero, México, que incluye entre otros datos, un inventario de la flora y la fauna de esta zona de reserva de enorme riqueza biológica y ecológica. Omiltemi, localizado a sólo 15 kilómetros de la ciudad de Chilpancingo, en el estado de Guerrero, en la Sierra Madre del Sur, es un sitio cuya importancia se reconoció desde el siglo XVIII. A partir de entonces, investigadores tanto nacionales como extranjeros han recorrido la zona, y es así que un buen número de ejemplares tipo de especies de plantas, insectos y vertebrados provienen de diversas colecciones de esta región. Como explican los autores de este libro, la importancia del parque radica no sólo en la biodiversidad que muestra en su extensión de alrededor de 3,000 hectáreas, sino en sus características geológicas y climáticas que, en conjunto, hacen de esta zona una región de gran interés científico.</para><para>Reino: 3
 Filo: 5
-Clase: 14
+Clase: 15
 Orden: 85
-Familia: 206
+Familia: 205
 Género: 559
 Subgénero: 13
 Especie: 681
-Epitetoinfraespecifico: 218</para>
+Epitetoinfraespecifico: 218
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -103,20 +102,20 @@ Epitetoinfraespecifico: 218</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (GUERRERO)</geographicDescription>
+                <geographicDescription>País: MEXICO</geographicDescription>
                 <boundingCoordinates>
                     <westBoundingCoordinate>-99.725</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-99.622</eastBoundingCoordinate>
-                    <northBoundingCoordinate>17.592</northBoundingCoordinate>
-                    <southBoundingCoordinate>17.508</southBoundingCoordinate>
+                    <eastBoundingCoordinate>-99.621668</eastBoundingCoordinate>
+                    <northBoundingCoordinate>17.591667</northBoundingCoordinate>
+                    <southBoundingCoordinate>17.508333</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae, Animalia, Fungi
 Filo: Tracheophyta, Chordata, Arthropoda, Basidiomycota, Ascomycota
-Clase: Equisetopsida, Aves, Mammalia, Insecta, Agaricomycetes, Reptilia, Amphibia, Pezizomycetes, Polypodiopsida, Leotiomycetes, Sordariomycetes, Lycopodiopsida, Tremellomycetes, Dacrymycetes
+Clase: Magnoliopsida, Aves, Mammalia, Insecta, Agaricomycetes, Reptilia, Amphibia, Pinopsida, Pezizomycetes, Polypodiopsida, Leotiomycetes, Sordariomycetes, Lycopodiopsida, Tremellomycetes, Dacrymycetes
 Orden: Fabales, Passeriformes, Rodentia, Lepidoptera, Rosales, Solanales, Agaricales, Russulales, Caprimulgiformes, Asterales, Asparagales, Squamata, Anura, Boletales, Ericales, Chiroptera, Pinales, Cantharellales, Siphonaptera, Apodiformes, Hymenochaetales, Boraginales, Pezizales, Gloeophyllales, Fagales, Apiales, Poales, Lamiales, Chloranthales, Hymenophyllales, Polypodiales, Polyporales, Leotiales, Sapindales, Lagomorpha, Artiodactyla, Cucurbitales, Laurales, Malpighiales, Ranunculales, Thelephorales, Malvales, Piperales, Soricomorpha, Gentianales, Gomphales, Crossosomatales, Diptera, Caudata, Liliales, Trogoniformes, Carnivora, Xylariales, Cornales, Galliformes, Accipitriformes, Myrtales, Hypocreales, Piciformes, Caryophyllales, Lycopodiales, Cupressales, Canellales, Selaginellales, Cyatheales, Equisetales, Strigiformes, Dipsacales, Cingulata, Tremellales, Cuculiformes, Auriculariales, Corticiales, Huerteales, Coraciiformes, Proteales, Columbiformes, Celastrales, Didelphimorphia, Santalales, Aquifoliales, Helotiales, Dacrymycetales, Sebacinales, Ophioglossales
-Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, Rhamnaceae, Solanaceae, Tricholomataceae, Riodinidae, Russulaceae, Caprimulgidae, Asteraceae, Asparagaceae, Anolidae, Orchidaceae, Eleutherodactylidae, Sciuridae, Nymphalidae, Sclerodermataceae, Tyrannidae, Clethraceae, Urticaceae, Anguidae, Phyllostomidae, Pinaceae, Scincidae, Clavulinaceae, Phrynosomatidae, Turdidae, Vireonidae, Ceratophyllidae, Trochilidae, Agaricaceae, Amanitaceae, Mimidae, Hymenochaetaceae, Primulaceae, Boraginaceae, Discinaceae, Gloeophyllaceae, Papilionidae, Viperidae, Fagaceae, Apiaceae, Poaceae, Lentibulariaceae, Cardinalidae, Mormoopidae, Natricidae, Chloranthaceae, Hymenophyllaceae, Ranidae, Betulaceae, Rosaceae, Dryopteridaceae, Polyporaceae, Cantharellaceae, Certhiidae, Leotiaceae, Boletaceae, Meliaceae, Leporidae, Lamiaceae, Suillaceae, Cervidae, Polypodiaceae, Thraupidae, Pentaphylacaceae, Ericaceae, Begoniaceae, Aegithalidae, Marasmiaceae, Dennstaedtiaceae, Lauraceae, Euphorbiaceae, Hylidae, Papaveraceae, Heteromyidae, Passerellidae, Bankeraceae, Araliaceae, Anacardiaceae, Malvaceae, Vespertilionidae, Actinidiaceae, Colubridae, Pteridaceae, Scaphiopodidae, Paxillaceae, Apodidae, Furnariidae, Salicaceae, Sapindaceae, Piperaceae, Pluteaceae, Albatrellaceae, Dipsadidae, Soricidae, Pulicidae, Rubiaceae, Gomphaceae, Bromeliaceae, Staphyleaceae, Rutaceae, Strophariaceae, Streblidae, Cortinariaceae, Corvidae, Bufonidae, Plethodontidae, Pleurotaceae, Alstroemeriaceae, Hydnangiaceae, Trogonidae, Fistulinaceae, Auriscalpiaceae, Canidae, Hystrichopsyllidae, Hypoxylaceae, Cornaceae, Odontophoridae, Meruliaceae, Accipitridae, Stereaceae, Gentianaceae, Mycenaceae, Tityridae, Onagraceae, Meripilaceae, Acanthaceae, Styracaceae, Regulidae, Cannabaceae, Ulmaceae, Mephitidae, Hypocreaceae, Picidae, Inocybaceae, Gesneriaceae, Incertae sedis, Amaranthaceae, Helvellaceae, Melastomataceae, Ramphastidae, Lycopodiaceae, Pyronemataceae, Grallariidae, Clavariaceae, Cupressaceae, Erethizontidae, Winteraceae, Icteridae, Selaginellaceae, Bondarzewiaceae, Sparassidaceae, Clusiaceae, Fringillidae, Blechnaceae, Burseraceae, Passifloraceae, Cyatheaceae, Equisetaceae, Physalacriaceae, Fomitopsidaceae, Strigidae, Adoxaceae, Heliotropiaceae, Dicksoniaceae, Dasypodidae, Tremellaceae, Apocynaceae, Cuculidae, Entolomataceae, Ctenophthalmidae, Hydnaceae, Corticiaceae, Dipentodontaceae, Cactaceae, Alcedinidae, Sabiaceae, Procyonidae, Myricaceae, Columbidae, Celastraceae, Didelphidae, Scrophulariaceae, Schoepfiaceae, Aquifoliaceae, Auriculariaceae, Loasaceae, Namaceae, Symplocaceae, Elapidae, Sarcosomataceae, Dacrymycetaceae, Sebacinaceae, Oleaceae, Felidae, Sarcoscyphaceae, Hygrophoraceae, Thelephoraceae, Molossidae, Serpulaceae, Ophioglossaceae, Hirundinidae</generalTaxonomicCoverage>
+Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, Rhamnaceae, Solanaceae, Tricholomataceae, Riodinidae, Russulaceae, Caprimulgidae, Asteraceae, Asparagaceae, Anolidae, Orchidaceae, Eleutherodactylidae, Sciuridae, Nymphalidae, Sclerodermataceae, Tyrannidae, Clethraceae, Urticaceae, Anguidae, Phyllostomidae, Pinaceae, Scincidae, Clavulinaceae, Phrynosomatidae, Turdidae, Vireonidae, Ceratophyllidae, Trochilidae, Agaricaceae, Amanitaceae, Mimidae, Hymenochaetaceae, Primulaceae, Boraginaceae, Discinaceae, Gloeophyllaceae, Papilionidae, Viperidae, Fagaceae, Apiaceae, Poaceae, Lentibulariaceae, Cardinalidae, Mormoopidae, Natricidae, Chloranthaceae, Hymenophyllaceae, Ranidae, Betulaceae, Rosaceae, Dryopteridaceae, Polyporaceae, Cantharellaceae, Certhiidae, Leotiaceae, Boletaceae, Meliaceae, Leporidae, Lamiaceae, Suillaceae, Cervidae, Polypodiaceae, Thraupidae, Pentaphylacaceae, Ericaceae, Begoniaceae, Aegithalidae, Marasmiaceae, Dennstaedtiaceae, Lauraceae, Euphorbiaceae, Hylidae, Papaveraceae, Heteromyidae, Passerellidae, Bankeraceae, Araliaceae, Anacardiaceae, Malvaceae, Vespertilionidae, Actinidiaceae, Colubridae, Pteridaceae, Scaphiopodidae, Paxillaceae, Apodidae, Furnariidae, Salicaceae, Sapindaceae, Piperaceae, Pluteaceae, Albatrellaceae, Dipsadidae, Soricidae, Pulicidae, Rubiaceae, Gomphaceae, Bromeliaceae, Staphyleaceae, Rutaceae, Strophariaceae, Streblidae, Cortinariaceae, Corvidae, Bufonidae, Plethodontidae, Pleurotaceae, Alstroemeriaceae, Hydnangiaceae, Trogonidae, Fistulinaceae, Auriscalpiaceae, Canidae, Ctenophthalmidae, Hypoxylaceae, Cornaceae, Odontophoridae, Meruliaceae, Accipitridae, Stereaceae, Gentianaceae, Mycenaceae, Tityridae, Onagraceae, Meripilaceae, Acanthaceae, Styracaceae, Regulidae, Cannabaceae, Ulmaceae, Mephitidae, Hypocreaceae, Picidae, Inocybaceae, Gesneriaceae, Incertae sedis, Amaranthaceae, Helvellaceae, Melastomataceae, Ramphastidae, Lycopodiaceae, Pyronemataceae, Grallariidae, Clavariaceae, Cupressaceae, Erethizontidae, Winteraceae, Icteridae, Selaginellaceae, Bondarzewiaceae, Sparassidaceae, Clusiaceae, Fringillidae, Blechnaceae, Burseraceae, Passifloraceae, Cyatheaceae, Equisetaceae, Physalacriaceae, Fomitopsidaceae, Strigidae, Adoxaceae, Heliotropiaceae, Dicksoniaceae, Dasypodidae, Tremellaceae, Apocynaceae, Cuculidae, Entolomataceae, Hydnaceae, Corticiaceae, Dipentodontaceae, Cactaceae, Alcedinidae, Sabiaceae, Procyonidae, Myricaceae, Columbidae, Celastraceae, Didelphidae, Scrophulariaceae, Schoepfiaceae, Aquifoliaceae, Auriculariaceae, Loasaceae, Namaceae, Symplocaceae, Elapidae, Sarcosomataceae, Dacrymycetaceae, Sebacinaceae, Oleaceae, Felidae, Sarcoscyphaceae, Hygrophoraceae, Thelephoraceae, Molossidae, Serpulaceae, Ophioglossaceae, Hirundinidae</generalTaxonomicCoverage>
                 <taxonomicClassification>
                     <taxonRankName>Kingdom</taxonRankName>
                     <taxonRankValue>Plantae</taxonRankValue>
@@ -151,7 +150,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -176,6 +175,10 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Amphibia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -1019,7 +1022,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
-                    <taxonRankValue>Hystrichopsyllidae</taxonRankValue>
+                    <taxonRankValue>Ctenophthalmidae</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
@@ -1240,10 +1243,6 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
                     <taxonRankValue>Entolomataceae</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Family</taxonRankName>
-                    <taxonRankValue>Ctenophthalmidae</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
@@ -3698,7 +3697,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Lactarius deliciosus</taxonRankValue>
-                    <commonName>Jiki Kjo (Otomí), catalina, chhó chhemí (Matlatzinca), chilillo, chilnanacate, chilpan, cjeii (Mazahua), cochinito, colorado, compañero del meco, duraznillo, enchilada, enchilado, enchilado anaranjado, enchilado blanco, enchilado de llano, enchilado de ocote, enchilado lechoso, hongo chilpán, hongo de lama, hongo de leche, hongo de leche naranja, hongo de oreja, hongo de tomate, hongo enchilado, hongo enchilado de ocote, hongo mole, hongo rubellón, k&apos;anchay (Tseltal), matlalitztle (Náhuatl), mole verde, ocotenanácatl, orejas anaranjadas, orejones, pericón de ocote, rubellón, tsajal k&apos;an chay (Tseltal), yaxal lu&apos; (Tseltal)</commonName>
+                    <commonName>Jiki Kjo (Otomí), catalina, chhó chhemí (Matlatzinca), chilillo, chilnanacate, chilpán, cjeii (Mazahua), cochinito, colorado, compañero del meco, duraznillo, enchilada, enchilado, enchilado anaranjado, enchilado blanco, enchilado de llano, enchilado de ocote, enchilado lechoso, hongo chilpán, hongo de lama, hongo de leche, hongo de leche naranja, hongo de oreja, hongo de tomate, hongo enchilado, hongo enchilado de ocote, hongo mole, hongo rubellón, k&apos;anchay (Tseltal), matlalitztle (Náhuatl), mole verde, ocotenanácatl, orejas anaranjadas, orejones, pericón de ocote, rubellón, tsajal k&apos;an chay (Tseltal), yaxal lu&apos; (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3761,11 +3760,6 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue></taxonRankValue>
-                    <commonName>alas chasqueantes, alas frotadoras, doble cabeza, falsa cabeza</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Empidonax hammondii</taxonRankValue>
                     <commonName>mosquero de Hammond, papamoscas de Hammond</commonName>
                 </taxonomicClassification>
@@ -3803,11 +3797,6 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Clitocybe gibba</taxonRankValue>
-                    <commonName>campanita, catrinas, chivito, cjeshiché&apos;e (Mazahua), clavito, corneta, corneta de pino, cornetita, corralito, hongo campanita, hongo corneta, hongo de encino, hongo de patita correosa, hongo de sombrilla, hongo de tejamanil, hongo oreja, hongo señorita, hongo tejamanilero, hongo trompeta, hualillo, izquilo (Náhuatl), izquilon (Náhuatl), kjo shite (Otomí), muñeca, oreja, oreja con patita, oreja de ratón, orejita, paragüitas, señorita, señorita amarilla, señorita blanca, señorita de oyamel, señorita de pino, señoritas, sombrerito, sosombrilli nanácatl (Náhuatl), tablero, tablero de ocote, tecajete, tejamanil de encino, tejamanilero, tejamanileros, tlagualxicti (Náhuatl), tlapitzalnanácatl (Náhuatl), tlaxamanitl (Náhuatl), totomoch (Náhuatl), trompa, trompetita, xi&apos;i kue&apos;e (Mixteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Amanita citrina</taxonRankValue>
                     <commonName>hongo trompeta</commonName>
                 </taxonomicClassification>
@@ -3827,6 +3816,11 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hymenochaete digitata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Clitocybe gibba</taxonRankValue>
+                    <commonName>campanita, catrinas, chivito, cjeshiché&apos;e (Mazahua), clavito, corneta, corneta de pino, cornetita, corralito, hongo campanita, hongo corneta, hongo de encino, hongo de patita correosa, hongo de sombrilla, hongo de tejamanil, hongo oreja, hongo señorita, hongo tejamanilero, hongo trompeta, hualillo, izquilo (Náhuatl), izquilon (Náhuatl), kjo shite (Otomí), muñeca, oreja, oreja con patita, oreja de ratón, orejita, paragüitas, señorita, señorita amarilla, señorita blanca, señorita de oyamel, señorita de pino, señoritas, sombrerito, sosombrilli nanácatl (Náhuatl), tablero, tablero de ocote, tecajete, tejamanil de encino, tejamanilero, tejamanileros, tlagualxicti (Náhuatl), tlapitzalnanácatl (Náhuatl), tlaxamanitl (Náhuatl), totomoch (Náhuatl), trompa, trompetita, xi&apos;i kue&apos;e (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4049,7 +4043,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hymenostephium microcephalum</taxonRankValue>
-                    <commonName>hierba acahualera</commonName>
+                    <commonName>hierba acahualera, mozote amarillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4095,7 +4089,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hymenostephium guatemalense</taxonRankValue>
-                    <commonName>mozote amarillo</commonName>
+                    <commonName>hierba acahualera, mozote amarillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4822,7 +4816,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Russula cyanoxantha</taxonRankValue>
-                    <commonName>Santiaguito, ardilla, chapiado, chhó chixi (Matlatzinca), duraznito, oyameles, pastelito, pastelito morado, payasito, santiaguero, trompa, tzajal checheb (Tsotsil), xi´i ya&apos;a (Mixteco)</commonName>
+                    <commonName>Santiaguero, Santiaguito, ardilla, chapiado, chhó chixi (Matlatzinca), duraznito, oyameles, pastelito, pastelito morado, payasito, trompa, tzajal checheb (Tsotsil), xi´i ya&apos;a (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4860,7 +4854,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Rhus radicans</taxonRankValue>
-                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechen, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
+                    <commonName>amté (Tojolabal), betz-tzaj (Huasteco), chechén, cuyelté (Tsotsil), dominguilla, fuego, hiedra, hiedra venenosa, hincha huevos, huembárecua (Tarasco), lachi-cobilla (Zapoteco), lachi-golilla (Zapoteco), mala mujer, mexie (Otomí), palo de viruela, yaga-beche-topa (Zapoteco), yaga-peche-topa (Zapoteco), yagalache (Zapoteco), zapote blanco</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5152,7 +5146,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -5902,11 +5896,6 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Boletus edulis</taxonRankValue>
-                    <commonName>baya retiii (Zapoteco), bonkos, cema, cemita, cepa, chipo de toro, clavo de yollami, corralito, coyote, esponja, esponjita, hongo cabeza negra, hongo cemita, hongo cemita rey, hongo cepa, hongo corralito, hongo de cema, hongo de ocochal, hongo de pan, hongo de panza, hongo de pino, hongo de plaza, hongo esponjita, hongo mazayel, hongo pambazo, hongo panadero, hongo panadero de encino, hongo pancita, hongo pancita blanca, hongo panza, hongo panza de buey, hongo poposito, hígado de ciervo, kethá (Otomí), kjo time (Otomí), mazayel, mey guiet xtil (Zapoteco), mey-dàc (Zapoteco), mey-guièt-xtîl (Zapoteco), pambaso, pambazo, panadero, panadero de encino, pancita, pancita blanca, pancita de lobo, pancita de vaca, pancitas, panza, panza de vaca, poposito, pékju (Otomí), selpanza, seta, tlacoyo, tonkos lu&apos; (Tseltal), x o&apos;j (Mam), xi´i taka ya´a (Mixteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Tagetes lunulata</taxonRankValue>
                     <commonName>cempaxochitl (Náhuatl), cinco llagas, cocozatona (Náhuatl), flor de cinco llagas, flor de muerto, yerba del muerto</commonName>
                 </taxonomicClassification>
@@ -5937,17 +5926,22 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Boletus edulis</taxonRankValue>
+                    <commonName>baya retiii (Zapoteco), bonkos, cema, cemita, cepa, chipo de toro, clavo de yollami, corralito, coyote, esponja, esponjita, hongo cabeza negra, hongo cemita, hongo cemita rey, hongo cepa, hongo corralito, hongo de cema, hongo de ocochal, hongo de pan, hongo de panza, hongo de pino, hongo de plaza, hongo esponjita, hongo mazayel, hongo pambazo, hongo panadero, hongo panadero de encino, hongo pancita, hongo pancita blanca, hongo panza, hongo panza de buey, hongo poposito, hígado de ciervo, kethá (Otomí), kjo time (Otomí), mazayel, mey guiet xtil (Zapoteco), mey-dàc (Zapoteco), mey-guièt-xtîl (Zapoteco), pambaso, pambazo, panadero, panadero de encino, pancita, pancita blanca, pancita de lobo, pancita de vaca, pancitas, panza, panza de vaca, poposito, pékju (Otomí), selpanza, seta, tlacoyo, tonkos lu&apos; (Tseltal), x o&apos;j (Mam), xi´i taka ya´a (Mixteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Hydnum repandum</taxonRankValue>
+                    <commonName>baya beritza (Zapoteco), be &apos;ya (Zapoteco), bedettsé (Zapoteco), bella beritsi (Zapoteco), beshia beretze (Zapoteco), bonkos, ch&apos;ix k&apos;an chay (Tseltal), ch&apos;ix mana yok (Tsotsil), ciervita, espinita, gusanito, hongo de palomita, hongo picoso, hongo trompeta, k&apos;an chay ch&apos;ix (Tsotsil), kanal cis mana (Tsotsil), lengua de gato, lengua de vaca, mey coliflor (Español-Zapoteco), mey-còlìflôr (Zapoteco), mey-diàg-bîch (Zapoteco), mey-gûzh (Zapoteco), mey-lúdz-mdzìn (Zapoteco), palomas, pata de borrego, sakil (Tseltal), sakil chejchew ul itak te&apos; (Tseltal), sakil lu&apos; (Tseltal), sakil tsotsil lu&apos; (Tseltal), slu&apos;il k&apos;aal te&apos; (Tseltal), xilhuananácatl (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opsiphanes boisduvallii</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Accipiter atricapillus</taxonRankValue>
                     <commonName>gavilán azor</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Hydnum repandum</taxonRankValue>
-                    <commonName>baya beritza (Zapoteco), be &apos;ya (Zapoteco), bedettsé (Zapoteco), bella beritsi (Zapoteco), beshia beretze (Zapoteco), bonkos, ch&apos;ix k&apos;an chay (Tseltal), ch&apos;ix mana yok (Tsotsil), ciervita, espinita, gusanito, hongo de palomita, hongo picoso, hongo trompeta, k&apos;an chay ch&apos;ix (Tsotsil), kanal cis mana (Tsotsil), lengua de gato, lengua de vaca, mey coliflor (Español-Zapoteco), mey-còlìflôr (Zapoteco), mey-diàg-bîch (Zapoteco), mey-gûzh (Zapoteco), mey-lúdz-mdzìn (Zapoteco), palomas, pata de borrego, sakil (Tseltal), sakil chejchew ul itak te&apos; (Tseltal), sakil lu&apos; (Tseltal), sakil tsotsil lu&apos; (Tseltal), slu&apos;il k&apos;aal te&apos; (Tseltal), xilhuananácatl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5980,6 +5974,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gnaphalium sphacelatum</taxonRankValue>
+                    <commonName>canelillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -7145,7 +7140,6 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Cryptotis goldmani subsp. goldmani</taxonRankValue>
-                    <commonName>musaraña, musaraña orejillas de Goldman, musaraña tropical de la Sierra Madre del Sur</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -7153,7 +7147,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Ctenophthalmus pseudagyrtes micropus</taxonRankValue>
+                    <taxonRankValue>Ctenophthalmus pseudagyrtes subsp. micropus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -7459,10 +7453,12 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Glaucidium gnoma subsp. gnoma</taxonRankValue>
+                    <commonName>tecolote serrano</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dasypus novemcinctus subsp. mexicanus</taxonRankValue>
+                    <commonName>armadillo, armadillo de nueve bandas, armadillo nueve bandas, ayotochtli (Yuto-nahua), mulita</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -7657,7 +7653,7 @@ Familia: Fabaceae, Parulidae, Cricetidae, Troglodytidae, Pieridae, Lycaenidae, R
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -7703,15 +7699,15 @@ Invertebrados
 Mamíferos
 Plantas
 Reptiles
-agallas, royas, tizones
 águilas, halcones, zopilotes
 agutíes, capibaras, cavias, chinchillas, coipos, pacas, puercoespines
 ajolotes, salamandras, tritones
+alondras, golondrinas
 ardillas, marmotas, perritos de la pradera
 armadillos, osos hormigueros, perezosos, tamanduas
 berrendos, bisontes, borregos, cabras, camellos, ciervos, jabalies, pecaries, toros, vacas, venados
 boas, cobras, coralillos, culebras, pitones, serpientes, víboras
-búhos, lechuzas, tapacaminos
+búhos, lechuzas, tapacaminos, tecolotes
 cacomixtles, coatíes, mapaches, martuchas
 camaleones, geckos, iguanas, lagartijas, lagartos
 castores, ratones de abazones, ratones canguro, tuzas
@@ -7721,14 +7717,15 @@ civetas, gatos, hienas, jaguares, leones, leopardos, linces, ocelotes, panteras,
 colibríes, vencejos
 como azulejos, cenzontles, cinclos, mirlos, mulatos, zorzales
 como batarás, hormigueros, trepatroncos
-como calandrias, tordos
+como calandrias, tordos, zanates
 como canarios, gorriones
 como carboneros, matracas, perlitas, saltaparedes
 como cardenales, rascadores, tangaras
 como carpinteros, coas, momotos, quetzales, tucanes
 como chipes
-como mosqueros
+como mosqueros, tiranos
 como saltarines, vireos
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acebos, yerba mate
@@ -7768,19 +7765,17 @@ coyotes, lobos, perros, zorros
 de copa
 falsas setas
 gelatinosos
-golondrinas, alondras
 hámsters, lemmis, ratas, ratones de campo, ratones urbanos
 insectos como moscas de la fruta, moscas domésticas, mosquitos, tábanos, zancudos
 insectos: mariposas, orugas, polillas
 insectos: pulgas
 líquenes
+marmosas, ratones runchos, tlacuaches, zarigüeyas
 micorrizas
 mofetas, zorrillos
 murciélagos
 musarañas, topos
-NO DISPONIBLE
 ranas, sapos
-ratones marsupiales de los Andes, tlacuaches, zarigüeyas
 setas
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
@@ -7792,8 +7787,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:26Z</dateStamp>
-                <citation>Flores Villela O, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Historia natural del parque ecológico estatal de Omiltemi, Chilpancingo, Guerrero, México. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bafcus accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:36Z</dateStamp>
+                <citation>Flores Villela O, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Historia natural del parque ecológico estatal de Omiltemi, Chilpancingo, Guerrero, México. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bafcus accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-A004-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -7826,27 +7821,7 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Colección de Siphonaptera;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Colección Entomológica;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Colección Lepidopterológica;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                    <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -7856,8 +7831,35 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
-                    <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                    <collectionName>Colección Mastozoológica;MZFC-M;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
                 </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
+                    <collectionName>Colección Lepidopterológica;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
+                    <collectionName>Colección Herpetológica;MZFC-HE;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
+                    <collectionName>Colección de Siphonaptera;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-A004-A0044012_IdEjemplar y nuevos campos-_IdEjemplar y nuevos campos</collectionIdentifier>
+                    <collectionName>Colección Entomológica;MZFC;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,344</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

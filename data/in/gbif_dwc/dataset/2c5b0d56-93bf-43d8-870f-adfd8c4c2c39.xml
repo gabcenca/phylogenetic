@@ -18,7 +18,6 @@ xml:lang="es">
             <organizationName>Grupo de Ecología y Conservación de Islas AC</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av López Mateos # 1590-3</deliveryPoint>
                 <city>Ensenada</city>
                 <administrativeArea>Baja California</administrativeArea>
                 <postalCode>22880</postalCode>
@@ -46,20 +45,22 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>La Isla Guadalupe es una de las islas más diversas del Pacífico mexicano, constituye el hábitat de numerosas especies de plantas endémicas, aves y mamíferos marinos; sin embargo, también es una de las islas más amenazadas debido al severo daño ambiental ocasionado por fauna introducida, principalmente cabras y gatos; y por aproximadamente 60 especies de plantas que han ido desplazado a las especies nativas. Esta isla representa una de las mayores oportunidades de conservación de los ecosistemas insulares del Pacífico; para lograr su restauración y conservación el proyecto considera cinco líneas de acción: realización de estudios de línea base; erradicación de la fauna introducida; rehabilitación y restauración de la cobertura vegetal; monitoreo constante; y ejecución de un programa de educación ambiental dirigida a la comunidad pesquera y a miembros de la Secretaria de Marina-Armada de México.</para>
-<para>Reino: 2
+            <para>La Isla Guadalupe es una de las islas más diversas del Pacífico mexicano, constituye el hábitat de numerosas especies de plantas endémicas, aves y mamíferos marinos; sin embargo, también es una de las islas más amenazadas debido al severo daño ambiental ocasionado por fauna introducida, principalmente cabras y gatos; y por aproximadamente 60 especies de plantas que han ido desplazado a las especies nativas. Esta isla representa una de las mayores oportunidades de conservación de los ecosistemas insulares del Pacífico; para lograr su restauración y conservación el proyecto considera cinco líneas de acción: realización de estudios de línea base; erradicación de la fauna introducida; rehabilitación y restauración de la cobertura vegetal; monitoreo constante; y ejecución de un programa de educación ambiental dirigida a la comunidad pesquera y a miembros de la Secretaria de Marina-Armada de México. 
+
+</para><para>Reino: 2
 Filo: 2
-Clase: 4
+Clase: 5
 Orden: 43
 Familia: 86
 Género: 169
 Subgénero: 4
 Especie: 205
-Epitetoinfraespecifico: 26</para>
+Epitetoinfraespecifico: 26
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -97,9 +98,9 @@ Epitetoinfraespecifico: 26</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (BAJA CALIFORNIA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-118.34</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-118.236</eastBoundingCoordinate>
-                    <northBoundingCoordinate>29.178</northBoundingCoordinate>
+                    <westBoundingCoordinate>-118.339528</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-118.236491</eastBoundingCoordinate>
+                    <northBoundingCoordinate>29.177599</northBoundingCoordinate>
                     <southBoundingCoordinate>28.883</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
@@ -118,7 +119,7 @@ Epitetoinfraespecifico: 26</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae, Animalia
 Filo: Tracheophyta, Chordata
-Clase: Equisetopsida, Aves, Mammalia, Polypodiopsida
+Clase: Pinopsida, Magnoliopsida, Aves, Mammalia, Polypodiopsida
 Orden: Pinales, Poales, Cupressales, Passeriformes, Caryophyllales, Columbiformes, Asterales, Artiodactyla, Carnivora, Procellariiformes, Brassicales, Geraniales, Asparagales, Fabales, Boraginales, Piciformes, Malvales, Strigiformes, Solanales, Lamiales, Charadriiformes, Rosales, Malpighiales, Apodiformes, Fagales, Ericales, Alismatales, Gentianales, Saxifragales, Ranunculales, Suliformes, Falconiformes, Arecales, Polypodiales, Sapindales, Pelecaniformes, Apiales, Myrtales, Crossosomatales, Coraciiformes, Podicipediformes, Anseriformes, Cucurbitales
 Familia: Pinaceae, Poaceae, Cupressaceae, Troglodytidae, Caryophyllaceae, Columbidae, Chenopodiaceae, Asteraceae, Bovidae, Cactaceae, Felidae, Diomedeidae, Passerellidae, Canidae, Brassicaceae, Campanulaceae, Polygonaceae, Geraniaceae, Asparagaceae, Fabaceae, Boraginaceae, Picidae, Malvaceae, Strigidae, Montiaceae, Fringillidae, Convolvulaceae, Lamiaceae, Scolopacidae, Sturnidae, Aizoaceae, Icteridae, Hydrobatidae, Urticaceae, Procellariidae, Euphorbiaceae, Hydrophyllaceae, Trochilidae, Solanaceae, Fagaceae, Polemoniaceae, Laridae, Zosteraceae, Rosaceae, Rubiaceae, Plantaginaceae, Crassulaceae, Papaveraceae, Nyctaginaceae, Phalacrocoracidae, Mimidae, Alcidae, Simmondsiaceae, Falconidae, Arecaceae, Pteridaceae, Rutaceae, Ranunculaceae, Resedaceae, Anacardiaceae, Primulaceae, Fregatidae, Ardeidae, Rhamnaceae, Tytonidae, Phrymaceae, Apiaceae, Orobanchaceae, Turdidae, Parulidae, Onagraceae, Saxifragaceae, Crossosomataceae, Alcedinidae, Podicipedidae, Passeridae, Cardinalidae, Tyrannidae, Sulidae, Scrophulariaceae, Anatidae, Frankeniaceae, Regulidae, Charadriidae, Cucurbitaceae, Sittidae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -139,7 +140,11 @@ Familia: Pinaceae, Poaceae, Cupressaceae, Troglodytidae, Caryophyllaceae, Columb
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -2417,7 +2422,7 @@ Familia: Pinaceae, Poaceae, Cupressaceae, Troglodytidae, Caryophyllaceae, Columb
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dendroica coronata subsp. hooveri</taxonRankValue>
-                    <commonName>Chipe de Rabadilla Amarilla</commonName>
+                    <commonName>Chipe de Rabadilla Amarilla, chipe coronado, chipe rabadilla amarilla</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -2443,7 +2448,7 @@ Familia: Pinaceae, Poaceae, Cupressaceae, Troglodytidae, Caryophyllaceae, Columb
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -2477,16 +2482,16 @@ Familia: Pinaceae, Poaceae, Cupressaceae, Troglodytidae, Caryophyllaceae, Columb
 Mamíferos
 Plantas
 águilas, halcones, zopilotes
-aves oceánicas
+albatros
 berrendos, bisontes, borregos, cabras, camellos, ciervos, jabalies, pecaries, toros, vacas, venados
 bisbitas, capulineros, chinitos, estorninos, lavanderas
-búhos, lechuzas, tapacaminos
+búhos, lechuzas, tapacaminos, tecolotes
 cigüeñas, flamencos, garzas
 civetas, gatos, hienas, jaguares, leones, leopardos, linces, ocelotes, panteras, pumas, tigres
 colibríes, vencejos
 como azulejos, cenzontles, cinclos, mirlos, mulatos, zorzales
 como bobos, cormoranes, fragatas, pelícanos
-como calandrias, tordos
+como calandrias, tordos, zanates
 como canarios, gorriones
 como carboneros, matracas, perlitas, saltaparedes
 como cardenales, rascadores, tangaras
@@ -2494,7 +2499,7 @@ como carpinteros, coas, momotos, quetzales, tucanes
 como chipes
 como chorlos, playeros
 como gaviotas
-como mosqueros
+como mosqueros, tiranos
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
@@ -2522,8 +2527,10 @@ con flores como palos verdes
 con flores: pastos marinos
 correcaminos, cucus, palomas
 coyotes, lobos, perros, zorros
+fardelas, fulmares, pardelas, priones
 gansos, patos
 gavias, zambullidores
+petreles de las tormentas o paiños septentrionales
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -2534,8 +2541,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:41:10Z</dateStamp>
-                <citation>Aguirre Muñoz A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Restauración y conservación de Isla Guadalupe. Version 1.12. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/ynzog6 accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:38Z</dateStamp>
+                <citation>Aguirre Muñoz A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Restauración y conservación de Isla Guadalupe. Version 1.13. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/ynzog6 accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-DQ013-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -2568,13 +2575,13 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-DQ013-Varios archivos XLS-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>588</endRange>
+                        <endRange>9,047</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

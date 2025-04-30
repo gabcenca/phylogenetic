@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de Investigaciones en Ecosistemas y Sustentabilidad</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Antigua Carretera a Pátzcuaro # 8701</deliveryPoint>
                 <city>Morelia</city>
                 <administrativeArea>Michoacán</administrativeArea>
                 <postalCode>58190</postalCode>
@@ -47,20 +46,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>La Reserva de la Biosfera Mariposa Monarca es uno de los sitios más famosos del mundo, ya que en ella se presenta el fenómeno migratorio y de hibernación de la mariposa monarca Danaus plexippus L. Lamentablemente, es también el escenario de complejos problemas económicos, sociales y políticos, cuyo principal resultado es un inadecuado manejo de los recursos naturales que contiene, lo que sin duda pone en peligro su viabilidad como área de conservación. Una información crítica para resolver lo anterior es cuantificar adecuadamente la composición y distribución de la flora que alberga. En general, los estudios florísticos implementados en la reserva no son representativos de su riqueza, ya que se han realizado básicamente en la Sierra de Chincua, además de que presentan diferentes niveles de rigurosidad taxonómica. El presente proyecto se propone elaborar una base de datos de la flora vascular de las áreas núcleo de la reserva, que contendrá un mínimo 5,000 registros, representando al menos 400 especies, 225 géneros y 83 familias. El proyecto depositará ejemplares botánicos en los herbarios IEB y MEXU (al menos 2,200 en cada uno de ellos). La base de datos contendrá al menos 500 imágenes con flores y/o frutos que representen todas las especies incluidas en la base de datos. Los resultados del proyecto generarán información fundamental para determinar con más precisión los patrones de distribución regional de las especies de la flora de la reserva y facilitará su determinación, lo que estará sustentado en un trabajo taxonómico altamente confiable.</para>
-<para>Reino: 1
+            <para>La Reserva de la Biosfera Mariposa Monarca es uno de los sitios más famosos del mundo, ya que en ella se presenta el fenómeno migratorio y de hibernación de la mariposa monarca Danaus plexippus L. Lamentablemente, es también el escenario de complejos problemas económicos, sociales y políticos, cuyo principal resultado es un inadecuado manejo de los recursos naturales que contiene, lo que sin duda pone en peligro su viabilidad como área de conservación. Una información crítica para resolver lo anterior es cuantificar adecuadamente la composición y distribución de la flora que alberga. En general, los estudios florísticos implementados en la reserva no son representativos de su riqueza, ya que se han realizado básicamente en la Sierra de Chincua, además de que presentan diferentes niveles de rigurosidad taxonómica. El presente proyecto se propone elaborar una base de datos de la flora vascular de las áreas núcleo de la reserva, que contendrá un mínimo 5,000 registros, representando al menos 400 especies, 225 géneros y 83 familias. El proyecto depositará ejemplares botánicos en los herbarios IEB y MEXU (al menos 2,200 en cada uno de ellos). La base de datos contendrá al menos 500 imágenes con flores y/o frutos que representen todas las especies incluidas en la base de datos. Los resultados del proyecto generarán información fundamental para determinar con más precisión los patrones de distribución regional de las especies de la flora de la reserva y facilitará su determinación, lo que estará sustentado en un trabajo taxonómico altamente confiable.</para><para>Reino: 1
 Filo: 1
-Clase: 2
+Clase: 3
 Orden: 35
 Familia: 100
 Género: 329
 Subgénero: 10
 Especie: 619
-Epitetoinfraespecifico: 37</para>
+Epitetoinfraespecifico: 37
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -96,10 +95,10 @@ Epitetoinfraespecifico: 37</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (MEXICO, MICHOACAN DE OCAMPO)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-100.327</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-100.114</eastBoundingCoordinate>
-                    <northBoundingCoordinate>19.995</northBoundingCoordinate>
-                    <southBoundingCoordinate>19.348</southBoundingCoordinate>
+                    <westBoundingCoordinate>-100.326944</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-100.114044</eastBoundingCoordinate>
+                    <northBoundingCoordinate>19.9948</northBoundingCoordinate>
+                    <southBoundingCoordinate>19.3481</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,9 +116,9 @@ Epitetoinfraespecifico: 37</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Pinopsida
 Orden: Geraniales, Ericales, Fabales, Poales, Asterales, Rosales, Lamiales, Fagales, Myrtales, Commelinales, Santalales, Apiales, Caryophyllales, Saxifragales, Boraginales, Oxalidales, Gentianales, Dipsacales, Liliales, Asparagales, Ranunculales, Polypodiales, Solanales, Malpighiales, Garryales, Celastrales, Malvales, Cupressales, Brassicales, Cucurbitales, Piperales, Ophioglossales, Pinales, Cornales, Dioscoreales
-Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Polygalaceae, Plantaginaceae, Lentibulariaceae, Lamiaceae, Fagaceae, Onagraceae, Commelinaceae, Loranthaceae, Araliaceae, Amaranthaceae, Crassulaceae, Apiaceae, Ericaceae, Hydrophyllaceae, Montiaceae, Oxalidaceae, Apocynaceae, Caprifoliaceae, Caryophyllaceae, Smilacaceae, Iridaceae, Rubiaceae, Cyperaceae, Ranunculaceae, Liliaceae, Lythraceae, Pteridaceae, Solanaceae, Verbenaceae, Rhamnaceae, Gentianaceae, Hypericaceae, Aspleniaceae, Passifloraceae, Bromeliaceae, Betulaceae, Melanthiaceae, Pentaphylacaceae, Orobanchaceae, Phytolaccaceae, Campanulaceae, Polygonaceae, Scrophulariaceae, Garryaceae, Melastomataceae, Cystopteridaceae, Boraginaceae, Phrymaceae, Santalaceae, Celastraceae, Orchidaceae, Dryopteridaceae, Cistaceae, Violaceae, Grossulariaceae, Hypoxidaceae, Oleaceae, Cupressaceae, Polypodiaceae, Salicaceae, Euphorbiaceae, Brassicaceae, Cucurbitaceae, Piperaceae, Begoniaceae, Malvaceae, Ophioglossaceae, Styracaceae, Papaveraceae, Adoxaceae, Athyriaceae, Thelypteridaceae, Namaceae, Pinaceae, Clethraceae, Convolvulaceae, Calceolariaceae, Asparagaceae, Saxifragaceae, Urticaceae, Linaceae, Primulaceae, Juncaceae, Dennstaedtiaceae, Cornaceae, Woodsiaceae, Actinidiaceae, Chenopodiaceae, Blechnaceae, Dioscoreaceae, Amaryllidaceae, Acanthaceae, Eriocaulaceae, Cactaceae</generalTaxonomicCoverage>
+Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Polygalaceae, Plantaginaceae, Lamiaceae, Fagaceae, Onagraceae, Commelinaceae, Loranthaceae, Araliaceae, Amaranthaceae, Crassulaceae, Apiaceae, Ericaceae, Hydrophyllaceae, Montiaceae, Oxalidaceae, Apocynaceae, Caprifoliaceae, Caryophyllaceae, Smilacaceae, Iridaceae, Rubiaceae, Cyperaceae, Ranunculaceae, Liliaceae, Lythraceae, Pteridaceae, Solanaceae, Verbenaceae, Rhamnaceae, Gentianaceae, Hypericaceae, Aspleniaceae, Passifloraceae, Bromeliaceae, Betulaceae, Melanthiaceae, Pentaphylacaceae, Orobanchaceae, Phytolaccaceae, Campanulaceae, Polygonaceae, Scrophulariaceae, Garryaceae, Melastomataceae, Cystopteridaceae, Boraginaceae, Phrymaceae, Santalaceae, Celastraceae, Orchidaceae, Dryopteridaceae, Cistaceae, Violaceae, Grossulariaceae, Hypoxidaceae, Oleaceae, Cupressaceae, Polypodiaceae, Salicaceae, Euphorbiaceae, Lentibulariaceae, Brassicaceae, Cucurbitaceae, Piperaceae, Begoniaceae, Malvaceae, Ophioglossaceae, Styracaceae, Papaveraceae, Adoxaceae, Athyriaceae, Thelypteridaceae, Namaceae, Pinaceae, Clethraceae, Convolvulaceae, Calceolariaceae, Asparagaceae, Saxifragaceae, Urticaceae, Linaceae, Primulaceae, Juncaceae, Dennstaedtiaceae, Cornaceae, Woodsiaceae, Actinidiaceae, Chenopodiaceae, Blechnaceae, Dioscoreaceae, Amaryllidaceae, Acanthaceae, Eriocaulaceae, Cactaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
                     <taxonRankName>Kingdom</taxonRankName>
                     <taxonRankValue>Plantae</taxonRankValue>
@@ -130,11 +129,15 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -307,10 +310,6 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
                     <taxonRankValue>Plantaginaceae</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Family</taxonRankName>
-                    <taxonRankValue>Lentibulariaceae</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
@@ -546,6 +545,10 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Lentibulariaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
                     <taxonRankValue>Brassicaceae</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -707,10 +710,6 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
                     <taxonRankValue>Plantago</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Genus</taxonRankName>
-                    <taxonRankValue>Pinguicula</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
@@ -1267,6 +1266,10 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
                     <taxonRankValue>Forestiera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pinguicula</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Genus</taxonRankName>
@@ -1994,10 +1997,6 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
-                    <taxonRankValue>Temnoceras</taxonRankValue>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Subgenus</taxonRankName>
                     <taxonRankValue>Quercus</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2011,6 +2010,10 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
                     <taxonRankValue>Euranunculus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Temnoceras</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Subgenus</taxonRankName>
@@ -2074,12 +2077,8 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Pinguicula (Temnoceras) moranensis</taxonRankValue>
-                    <commonName>oreja de ratón, violeta cimarrona, violeta de Barranca, violeta de campo, violeta de monte</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia helianthemifolia</taxonRankValue>
+                    <commonName>k&apos;anrrejna (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2168,6 +2167,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia fulgens</taxonRankValue>
+                    <commonName>mirto, salvia roja, ts&apos;imbarenzé (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2324,6 +2324,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia elegans</taxonRankValue>
+                    <commonName>hierba del barretero, k&apos;anrrejna (Mazahua), mirto, mirto chico, mirto de monte, salvia roja</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2478,7 +2479,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja arvensis</taxonRankValue>
-                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, uitzacua (Tarasco)</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2500,7 +2501,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2913,7 +2914,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2922,7 +2923,6 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Monotropa uniflora</taxonRankValue>
-                    <commonName>pipa de indio</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2963,6 +2963,11 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Forestiera phillyreoides</taxonRankValue>
                     <commonName>granjeno, mimbre, mora de tecumblate, pico de pájaro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinguicula (Temnoceras) moranensis</taxonRankValue>
+                    <commonName>oreja de ratón, violeta cimarrona, violeta de Barranca, violeta de campo, violeta de monte</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3298,6 +3303,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia gracilis</taxonRankValue>
+                    <commonName>albaca de monte, tzajal buluk&apos; sat (Tzoltzil)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3480,7 +3486,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -4163,6 +4169,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia amarissima</taxonRankValue>
+                    <commonName>chia, chupona, mirto de campo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4835,6 +4842,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Dalea bicolor var. bicolor</taxonRankValue>
+                    <commonName>engorda cabra, escoba, escobilla, hierba del chivo, limoncillo, ramón, romerillo, romero</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4847,6 +4855,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Salvia mexicana var. minor</taxonRankValue>
+                    <commonName>cuasia, rosa morada, salvia, tacote, tlacote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4860,7 +4869,6 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Sambucus nigra var. canadensis</taxonRankValue>
-                    <commonName>anshiquel (Tojolabal), azúmiatl (Náhuatl), bixhumi (Zapoteco), chijilté (Tseltal), coyapa (Zoque), flor de sauco, kondémbasi (Tarasco), nttxirza (Otomí), ocoquihuí (Zoque), saúco, shiksh (Maya), tokxihua&apos; (Totonaco), tongatsi (Otomí), toquiwa (Totonaco), tsolots-ché (Maya), tzirza (Otomí), xiicsh (Mixe), xomet (Náhuatl), xúmetl (Náhuatl), yaga-zulaque (Zapoteco), yah-cuio (Cuicateco), yutnucate (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4918,6 +4926,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Bidens odorata var. rosea</taxonRankValue>
+                    <commonName>acahual, k&apos;an mul (Maya), matsab ch&apos;ik bu&apos;ul (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -4963,7 +4972,7 @@ Familia: Geraniaceae, Polemoniaceae, Fabaceae, Poaceae, Asteraceae, Rosaceae, Po
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -5036,11 +5045,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:23Z</dateStamp>
-                <citation>Ibarra Manríquez G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Inventario florístico de la Reserva de la Biosfera Mariposa Monarca, México. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/rfdkyi accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>Cronquist, A. 1988. The evolution and clasification of flowering plants. New York Botanical Garden. Bronx, N. Y.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:42Z</dateStamp>
+                <citation>Ibarra Manríquez G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Inventario florístico de la Reserva de la Biosfera Mariposa Monarca, México. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/rfdkyi accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-BK013-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -5080,12 +5086,11 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-BK013-BK013610F-ND</collectionIdentifier>
                     <collectionName>REVISADO;NO APLICA;Centro de Investigaciones en Ecosistemas, Campus Morelia, Universidad Nacional Autónoma de México;CIEco-UNAM</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>4</endRange>
+                        <endRange>3,807</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

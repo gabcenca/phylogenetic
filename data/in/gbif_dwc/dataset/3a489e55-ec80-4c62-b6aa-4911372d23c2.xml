@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Instituto Politécnico NacionalCentro Interdisciplinario de Investigación para el Desarrollo Integral Regional-DurangoLaboratorio de Fauna Silvestre</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Zarco No 106</deliveryPoint>
                 <city>Cd Vicente Guerrero</city>
                 <administrativeArea>Durango</administrativeArea>
                 <country>MEXICO</country>
@@ -46,20 +45,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>El presente estudio tiene como objetivo establecer el inventario de los vertebrados terrestres de la Región Prioritaria de San Juan Camarones, Dgo. Como parte complementaria, se realizará un estudio de los artrópodos asociados a los mamíferos, ya que éstos pueden ser un vector de enfermedades que ataquen al hombre y a sus animales domésticos. El área por estudiar se localiza en la parte baja de una quebrada con una altitud de 600 m, con un gradiente de vegetación que va de bosque de pino a la vegetación tropical. El método de colecta será de acuerdo a las disciplinas de la mastozoología, herpetología y ornitología, se utilizarán trampas Sherman para ejemplares vivos, redes de nylon, pinzas especiales para reptiles, trampas y otro equipo que sea necesario, así como las técnicas que se emplean en el estudio de los invertebrados, en específico en ácaros. Los ejemplares se sacrificarán de manera humanitaria y se etiquetarán en forma individual en bolsas de plástico, para ser congelados para su posterior transportación al Laboratorio de Fauna Silvestre del Centro, también se escogerán algunos ejemplares para realizar la obtención de cariotipos in vivo, para su posterior preparación y se determinarán a nivel específico. También para cada ejemplar de mamífero se revisará para la recolección de los artrópodos asociados. La información generada se vaciará en una Base de Datos, así como los diarios de campo de los colectores. Por otra parte, de acuerdo a la Norma Ecológica NOM-059-ECOL-94 (SEDESOL, 1994) de las especies recolectadas se determinará su estatus, con la finalidad de tener un parámetro que nos pueda servir de base para proteger el área.</para>
-<para>Reino: 2
+            <para>El presente estudio tiene como objetivo establecer el inventario de los vertebrados terrestres de la Región Prioritaria de San Juan Camarones, Dgo. Como parte complementaria, se realizará un estudio de los artrópodos asociados a los mamíferos, ya que éstos pueden ser un vector de enfermedades que ataquen al hombre y a sus animales domésticos. El área por estudiar se localiza en la parte baja de una quebrada con una altitud de 600 m, con un gradiente de vegetación que va de bosque de pino a la vegetación tropical. El método de colecta será de acuerdo a las disciplinas de la mastozoología, herpetología y ornitología, se utilizarán trampas Sherman para ejemplares vivos, redes de nylon, pinzas especiales para reptiles, trampas y otro equipo que sea necesario, así como las técnicas que se emplean en el estudio de los invertebrados, en específico en ácaros. Los ejemplares se sacrificarán de manera humanitaria y se etiquetarán en forma individual en bolsas de plástico, para ser congelados para su posterior transportación al Laboratorio de Fauna Silvestre del Centro, también se escogerán algunos ejemplares para realizar la obtención de cariotipos in vivo, para su posterior preparación y se determinarán a nivel específico. También para cada ejemplar de mamífero se revisará para la recolección de los artrópodos asociados. La información generada se vaciará en una Base de Datos, así como los diarios de campo de los colectores. Por otra parte, de acuerdo a la Norma Ecológica NOM-059-ECOL-94 (SEDESOL, 1994) de las especies recolectadas se determinará su estatus, con la finalidad de tener un parámetro que nos pueda servir de base para proteger el área.</para><para>Reino: 2
 Filo: 2
-Clase: 5
+Clase: 6
 Orden: 33
 Familia: 75
 Género: 180
 Subgénero: 2
 Especie: 202
-Epitetoinfraespecifico: 47</para>
+Epitetoinfraespecifico: 47
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -97,12 +96,12 @@ Epitetoinfraespecifico: 47</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (DURANGO, SINALOA)</geographicDescription>
+                <geographicDescription>País: MEXICO (DURANGO)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-106.736</westBoundingCoordinate>
+                    <westBoundingCoordinate>-106.735778</westBoundingCoordinate>
                     <eastBoundingCoordinate>-104.975</eastBoundingCoordinate>
-                    <northBoundingCoordinate>25.309</northBoundingCoordinate>
-                    <southBoundingCoordinate>23.417</southBoundingCoordinate>
+                    <northBoundingCoordinate>25.309444</northBoundingCoordinate>
+                    <southBoundingCoordinate>23.417111</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -120,7 +119,7 @@ Epitetoinfraespecifico: 47</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Animalia, Plantae
 Filo: Chordata, Tracheophyta
-Clase: Mammalia, Aves, Equisetopsida, Reptilia, Amphibia
+Clase: Mammalia, Aves, Magnoliopsida, Reptilia, Amphibia, Pinopsida
 Orden: Rodentia, Passeriformes, Chiroptera, Malvales, Squamata, Asterales, Fabales, Anura, Charadriiformes, Accipitriformes, Poales, Apodiformes, Testudines, Rosales, Psittaciformes, Sapindales, Cathartiformes, Columbiformes, Lagomorpha, Carnivora, Caprimulgiformes, Gentianales, Myrtales, Lamiales, Falconiformes, Piciformes, Trogoniformes, Strigiformes, Pinales, Ranunculales, Galliformes, Didelphimorphia, Fagales
 Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvaceae, Phyllostomidae, Icteridae, Phrynosomatidae, Asteraceae, Fringillidae, Fabaceae, Vespertilionidae, Hylidae, Scolopacidae, Cardinalidae, Accipitridae, Iguanidae, Poaceae, Emballonuridae, Trochilidae, Ranidae, Kinosternidae, Moraceae, Corvidae, Sciuridae, Psittacidae, Turdidae, Bufonidae, Troglodytidae, Passerellidae, Mormoopidae, Anolidae, Burseraceae, Tyrannidae, Cathartidae, Sittidae, Columbidae, Leporidae, Procyonidae, Caprimulgidae, Natricidae, Teiidae, Felidae, Mimidae, Vireonidae, Apocynaceae, Myrtaceae, Regulidae, Colubridae, Verbenaceae, Falconidae, Rutaceae, Picidae, Trogonidae, Furnariidae, Strigidae, Apodidae, Lamiaceae, Thraupidae, Paridae, Pinaceae, Dipsadidae, Tytonidae, Papaveraceae, Mustelidae, Peucedramidae, Mephitidae, Hirundinidae, Aegithalidae, Phasianidae, Ptiliogonatidae, Didelphidae, Fagaceae, Bignoniaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -149,7 +148,7 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -158,6 +157,10 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Amphibia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1565,11 +1568,6 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Bursera simaruba</taxonRankValue>
-                    <commonName>cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Tyrannus verticalis</taxonRankValue>
                     <commonName>madrugador avispero, tirano pálido</commonName>
                 </taxonomicClassification>
@@ -1577,6 +1575,11 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Sceloporus magister</taxonRankValue>
                     <commonName>lagartija, cachorón, haasj (Seri), lagartija del desierto, lagartija escamosa de desierto, vejore del desierto</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera simaruba</taxonRankValue>
+                    <commonName>cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1802,13 +1805,13 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Plumeria rubra</taxonRankValue>
-                    <commonName>cacahuaxóchitl (Náhuatl), cacajoyó (Zoque), cacalaxochitl (Náhuatl), cacalosúchil (Mixe), cacaloxochitl (Náhuatl), cacaloxóchitl (Mixe), campechana, caxtaxanat (Totonaco), chak nikte&apos; (Maya), chak-nicté (Maya), chak-nikté (Maya), chak-sabak-nikté (Maya), chiquinjoyó (Zoque), corpus, cundá (Tarasco), flor blanca, flor de cal, flor de cuervo, flor de mayo, flor de monte, guia-bigoce (Zapoteco), guia-bixi-guii (Zapoteco), guia-chacha (Zapoteco), guiechacha (Zapoteco), guiecha&apos;chi&apos; (Zapoteco), güia-an (Zapoteco), huevo de toro, huiloicxitl (Náhuatl), kakaloxochitl (Náhuatl), kumpaap (Maya), lengua de toro, li-tie (Chinanteco), nicte chom (Maya), nicte choom (Maya), nicté (Maya), nikte&apos; ch&apos;om (Maya), nikté (Maya), nopinjoyo (Zoque), palo blanco, parandechicua (Tarasco), quie-chacha (Zapoteco), rosa blanca, rosal, sabaknikte&apos; (Maya), sabanikté (Maya), sach-nicté (Maya), sak nikte&apos; (Maya), sak-nichte&apos; (Maya), sak-nikté (Maya), sangre de toro, saugrán (Tepehuano del sur), tizalxóchitl (Náhuatl), tlapalticcacaloxochitl (Náhuatl), tlauhquecholxochitl (Náhuatl), uculhuitz (Huasteco)</commonName>
+                    <taxonRankValue>Acacia farnesiana</taxonRankValue>
+                    <commonName>mezquite, acacia, aroma, aromática, arúmbari (Tarasco), bihi (Zapoteco), cascalote, coo-ca (Guarijío), cornezuelo, corteza curtidora, cuca (Guarijío), cucca (Mayo), espinillo, espino, espino blanco, espuela de gallo, flor de niño, huizache, huizache blanco, huizachillo, iai-do-no (Cuicateco), injerto de huizache, k&apos;ank&apos;ilis-ché (Maya), k&apos;ank&apos;ixché (Maya), k&apos;antilis (Maya), minza (Otomí), motitas, pedo de burro, subin (Maya), subinché (Maya), thuhaanom (Huasteco), thujanom (Huasteco), thujánum (Huasteco), tsurímbini (Tarasco), tsurúmbini (Tarasco), x-k&apos;antilis (Maya), xcantiris (Purépecha), xiri-xi (Huichol)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Acacia farnesiana</taxonRankValue>
-                    <commonName>mezquite, acacia, aroma, aromática, arúmbari (Tarasco), bihi (Zapoteco), cascalote, coo-ca (Guarijío), cornezuelo, corteza curtidora, cuca (Guarijío), cucca (Mayo), espinillo, espino, espino blanco, espuela de gallo, flor de niño, huizache, huizache blanco, huizachillo, iai-do-no (Cuicateco), injerto de huizache, k&apos;ank&apos;ilis-ché (Maya), k&apos;ank&apos;ixché (Maya), k&apos;antilis (Maya), minza (Otomí), motitas, pedo de burro, subin (Maya), subinché (Maya), thuhaanom (Huasteco), thujanom (Huasteco), thujánum (Huasteco), tsurímbini (Tarasco), tsurúmbini (Tarasco), x-k&apos;antilis (Maya), xcantiris (Purépecha), xiri-xi (Huichol)</commonName>
+                    <taxonRankValue>Plumeria rubra</taxonRankValue>
+                    <commonName>cacahuaxóchitl (Náhuatl), cacajoyó (Zoque), cacalaxochitl (Náhuatl), cacalosúchil (Mixe), cacaloxochitl (Náhuatl), cacaloxóchitl (Mixe), campechana, caxtaxanat (Totonaco), chak nikte&apos; (Maya), chak-nicté (Maya), chak-nikté (Maya), chak-sabak-nikté (Maya), chiquinjoyó (Zoque), corpus, cundá (Tarasco), flor blanca, flor de cal, flor de cuervo, flor de mayo, flor de monte, guia-bigoce (Zapoteco), guia-bixi-guii (Zapoteco), guia-chacha (Zapoteco), guiechacha (Zapoteco), guiecha&apos;chi&apos; (Zapoteco), güia-an (Zapoteco), huevo de toro, huiloicxitl (Náhuatl), kakaloxochitl (Náhuatl), kumpaap (Maya), lengua de toro, li-tie (Chinanteco), nicte chom (Maya), nicte choom (Maya), nicté (Maya), nikte&apos; ch&apos;om (Maya), nikté (Maya), nopinjoyo (Zoque), palo blanco, parandechicua (Tarasco), quie-chacha (Zapoteco), rosa blanca, rosal, sabaknikte&apos; (Maya), sabanikté (Maya), sach-nicté (Maya), sak nikte&apos; (Maya), sak-nichte&apos; (Maya), sak-nikté (Maya), sangre de toro, saugrán (Tepehuano del sur), tizalxóchitl (Náhuatl), tlapalticcacaloxochitl (Náhuatl), tlauhquecholxochitl (Náhuatl), uculhuitz (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1838,12 +1841,12 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>zapote blanco, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>zapote blanco, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ficus goldmanii</taxonRankValue>
-                    <commonName>akkúun (Maya), amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora, álamo</commonName>
+                    <commonName>akkúun (Maya), alamo, amate, amate (Náhuatl), amate negro, amate prieto, ceiba, chile amate, gigante, higo, higo mono, higuerón, matapalo, mezquite, mora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2012,7 +2015,7 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Tyto alba</taxonRankValue>
+                    <taxonRankValue>Tyto furcata</taxonRankValue>
                     <commonName>lechuza, lechuza de campanario</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2519,7 +2522,7 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Lontra longicaudis subsp. annectens</taxonRankValue>
-                    <commonName>nutria</commonName>
+                    <commonName>nutria, bahurí (Yuto-nahua), nutria, nutria de río, nutria de río sudamericana, perro de agua, wahurí (Yuto-nahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -2569,7 +2572,7 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -2586,6 +2589,13 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 <title>Vertebrados terrestres de San Juan de Camarones, Durango</title>
                 <personnel>
                     <individualName>
+                    <givenName>Robert D</givenName>
+                    <surName>Bradley</surName>
+                    </individualName>
+                    <role>PRINCIPAL_INVESTIGATOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
                     <givenName>Jorge</givenName>
                     <surName>Nocedal Moreno</surName>
                     </individualName>
@@ -2600,13 +2610,6 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </personnel>
                 <personnel>
                     <individualName>
-                    <givenName>Ana Fabiola</givenName>
-                    <surName>Guzmán Camacho</surName>
-                    </individualName>
-                    <role>PRINCIPAL_INVESTIGATOR</role>
-                </personnel>
-                <personnel>
-                    <individualName>
                     <givenName>Raúl</givenName>
                     <surName>Muñiz Martínez</surName>
                     </individualName>
@@ -2614,8 +2617,8 @@ Familia: Cricetidae, Parulidae, Molossidae, Polioptilidae, Heteromyidae, Malvace
                 </personnel>
                 <personnel>
                     <individualName>
-                    <givenName>Robert D</givenName>
-                    <surName>Bradley</surName>
+                    <givenName>Ana Fabiola</givenName>
+                    <surName>Guzmán Camacho</surName>
                     </individualName>
                     <role>PRINCIPAL_INVESTIGATOR</role>
                 </personnel>
@@ -2633,11 +2636,13 @@ Mamíferos
 Plantas
 Reptiles
 águilas, halcones, zopilotes
+alondras, golondrinas
 ardillas, marmotas, perritos de la pradera
+armiños, comadrejas, hurones, mangostas, nutrias, tejones
 berrendos, bisontes, borregos, cabras, camellos, ciervos, jabalies, pecaries, toros, vacas, venados
 bisbitas, capulineros, chinitos, estorninos, lavanderas
 boas, cobras, coralillos, culebras, pitones, serpientes, víboras
-búhos, lechuzas, tapacaminos
+búhos, lechuzas, tapacaminos, tecolotes
 cacatúas, cotorras, loros, pericos
 cacomixtles, coatíes, mapaches, martuchas
 camaleones, geckos, iguanas, lagartijas, lagartos
@@ -2646,17 +2651,16 @@ chachalacas, codornices, gallinas, guajolotes, ñandúes, pavo reales, tinamúes
 charas, cuervos, urracas
 civetas, gatos, hienas, jaguares, leones, leopardos, linces, ocelotes, panteras, pumas, tigres
 colibríes, vencejos
-comadrejas, hurones, mangostas, nutrias, tejones
 como azulejos, cenzontles, cinclos, mirlos, mulatos, zorzales
 como batarás, hormigueros, trepatroncos
-como calandrias, tordos
+como calandrias, tordos, zanates
 como canarios, gorriones
 como carboneros, matracas, perlitas, saltaparedes
 como cardenales, rascadores, tangaras
 como carpinteros, coas, momotos, quetzales, tucanes
 como chipes
 como chorlos, playeros
-como mosqueros
+como mosqueros, tiranos
 como saltarines, vireos
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
@@ -2671,18 +2675,13 @@ con flores como café, flores de mayo, gardenias
 con flores como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
 conejos, liebres
 correcaminos, cucus, palomas
-golondrinas, alondras
 hámsters, lemmis, ratas, ratones de campo, ratones urbanos
+marmosas, ratones runchos, tlacuaches, zarigüeyas
 mofetas, zorrillos
 murciélagos
 ranas, sapos
-ratas canguro; ratones de abazones
-ratas, ratones
-ratas; ratones
-ratones marsupiales de los Andes, tlacuaches, zarigüeyas
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-tortugas dulceacuícolas, tortugas terrestres
-tuzas</descriptorValue>
+tortugas dulceacuícolas, tortugas terrestres</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
             </project>
@@ -2691,15 +2690,8 @@ tuzas</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:55Z</dateStamp>
-                <citation>Muñiz Martínez R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Vertebrados terrestres de San Juan de Camarones, Durango. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bwjcyy accessed via GBIF.org on 2024-10-22.</citation>
-                <bibliography>
-                <citation>JKJJR. 1964. Additional Records of Mammals from Durango, Mexico. Transactions of the Kansas Academy of Science. 67(3). U.S.A.</citation>
-                <citation>RWMC. 1970. Geographic variation and systematic status of mexican lyre snakes of the Trimorphodon tau group (Colubridae). LOS ANGELES COUNTY MUSEUM CONTRIBUTIONS IN SCIENCE. (179):1-43. U.S.A.</citation>
-                <citation>SMH. 1997. A new subspecies of the lizard Sceloporus scalaris (Reptilia: Sauria: Pjrynosomatidae) from the Sierra Madre Occidental of Mexico. THE SOUTHWESTERN NATURALIST. 42(3):290-301. U.S.A.</citation>
-                <citation>SYAN. 1962. Tree Squirrels (Sciurus colliaei Group) of Western Mexico. American Museum Novitates. (2093):1-13. American Museum of Natural History. U.S.A.</citation>
-                <citation>RHB &amp;  JKG. 9999. Mammals of the Mexican State of Durango. 29-153. Tésis de No Aplica. Publications of the Museum. Michigan State University.</citation>
-                </bibliography>
+                <dateStamp>2025-04-29T16:45:25Z</dateStamp>
+                <citation>Muñiz Martínez R, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Vertebrados terrestres de San Juan de Camarones, Durango. Version 1.19. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bwjcyy accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-R008-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -2732,6 +2724,41 @@ tuzas</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Colección de Mamíferos;CRD;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Colección Instituto de Ecología;IE;Instituto de Ecología, Universidad Nacional Autónoma de México;IE-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Colección de Aves;CRD;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Colección Paleontológica de Zoología;PCPINAH;Instituto Nacional de Antropología e Historia;INAH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Herbario &apos;Mtra. Graciela Calderón Díaz-Barriga y Dr. Jerzy Rzedowski Rotter&apos;;CIIDIR;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Mammalogy Collection;KUM;Biodiversity Institute and Natural History Museum, University of Kansas;KU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
+                    <collectionName>Mammals Collection;USNM;National Museum of Natural History, Smithsonian Institution;NMNH-SI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
                     <collectionName>Amphibians and Reptiles Collection;FMNH;Field Museum of Natural History;FMNH</collectionName>
                 </collection>
                 <collection>
@@ -2747,42 +2774,7 @@ tuzas</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Colección de Aves;CRD;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Colección de Mamíferos;CRD;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Colección Instituto de Ecología;IE;Instituto de Ecología, Universidad Nacional Autónoma de México;IE-UNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Colección Paleontológica de Zoología;PCPINAH;Instituto Nacional de Antropología e Historia;INAH</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Collection of Mammals;TTU;Texas Tech University;TTU</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Collection of Reptiles and Amphibians;LSUMZ;Museum of Natural Science, Louisiana State University;LSU</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
                     <collectionName>Ernest A. Liner Personal Collection (Herpetology);EALC;NO APLICA;NO APLICA</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Herbario &apos;Mtra. Graciela Calderón Díaz-Barriga y Dr. Jerzy Rzedowski Rotter&apos;;CIIDIR;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -2792,12 +2784,12 @@ tuzas</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Herpetology Collection;NHM;Natural History Museum, London;NHM</collectionName>
+                    <collectionName>Collection of Mammals;TTU;Texas Tech University;TTU</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Herpetology Collection;MCZ;Museum of Comparative Zoology, Harvard University;MCZ-HU</collectionName>
+                    <collectionName>Mammalogy Collection;AMNH;American Museum of Natural History;AMNH</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -2812,24 +2804,23 @@ tuzas</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Mammalogy Collection;AMNH;American Museum of Natural History;AMNH</collectionName>
+                    <collectionName>Herpetology Collection;MCZ;Museum of Comparative Zoology, Harvard University;MCZ-HU</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Mammalogy Collection;KUM;Biodiversity Institute and Natural History Museum, University of Kansas;KU</collectionName>
+                    <collectionName>Collection of Reptiles and Amphibians;LSUMZ;Museum of Natural Science, Louisiana State University;LSU</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-R008-R008202F-ND</collectionIdentifier>
-                    <collectionName>Mammals Collection;USNM;National Museum of Natural History, Smithsonian Institution;NMNH-SI</collectionName>
+                    <collectionName>Herpetology Collection;NHM;Natural History Museum, London;NHM</collectionName>
                 </collection>
-                <specimenPreservationMethod>ALCOHOL</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>6</endRange>
+                        <endRange>475</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

@@ -21,8 +21,8 @@ xml:lang="pt">
                 <administrativeArea>São Paulo</administrativeArea>
                 <country>BRAZIL</country>
             </address>
-            <phone>+55 11 5067-6089</phone>
-            <electronicMailAddress>mcmamede@gmail.com</electronicMailAddress>
+            <electronicMailAddress>mmamede@sp.gov.br</electronicMailAddress>
+            <onlineUrl>https://specieslink.net/col/1/</onlineUrl>
         </creator>
         <metadataProvider>
             <individualName>
@@ -37,8 +37,8 @@ xml:lang="pt">
                 <administrativeArea>São Paulo</administrativeArea>
                 <country>BRAZIL</country>
             </address>
-            <phone>+55 11 5067-6089</phone>
-            <electronicMailAddress>mcmamede@gmail.com</electronicMailAddress>
+            <electronicMailAddress>mmamede@sp.gov.br</electronicMailAddress>
+            <onlineUrl>https://specieslink.net/col/1/</onlineUrl>
         </metadataProvider>
         <associatedParty>
             <individualName>
@@ -47,23 +47,22 @@ xml:lang="pt">
             <organizationName>Centro de Referência em Informação Ambiental, CRIA</organizationName>
             <positionName>Network</positionName>
             <address>
-                <deliveryPoint>Av. Dr. Romeu Tórtima, 388</deliveryPoint>
+                <deliveryPoint>Rua João Carlos do Amaral, 500, casa 01</deliveryPoint>
                 <city>Campinas</city>
                 <administrativeArea>São Paulo</administrativeArea>
-                <postalCode>13084-791</postalCode>
+                <postalCode>13070-111</postalCode>
                 <country>BRAZIL</country>
             </address>
-            <phone>+55 19 3288-0466</phone>
-            <electronicMailAddress>splink@cria.org.br</electronicMailAddress>
-            <onlineUrl>http://splink.cria.org.br</onlineUrl>
+            <electronicMailAddress>helpdesk@cria.org.br</electronicMailAddress>
+            <onlineUrl>https://specieslink.net</onlineUrl>
             <role>CUSTODIAN_STEWARD</role>
         </associatedParty>
         <pubDate>
-                2024-09-06
+                2025-04-05
         </pubDate>
         <language>PORTUGUESE</language>
         <abstract>
-            O Herbário possui mais de 350.000 exsicatas documentando a flora brasileira, acondicionadas em armários especiais e a temperatura controlada. É o melhor documentário da biodiversidade da flora paulista com representantes de todos os grupos vegetais. O Herbário está entre os três maiores do Brasil, em número de exsicatas catalogadas e encontra-se em processo de informatização através do software Brahms.
+            <para>O Herbário possui mais de 350.000 exsicatas documentando a flora brasileira, acondicionadas em armários especiais e a temperatura controlada. É o melhor documentário da biodiversidade da flora paulista com representantes de todos os grupos vegetais. O Herbário está entre os três maiores do Brasil, em número de exsicatas catalogadas e encontra-se em processo de informatização através do software Brahms.</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -87,12 +86,7 @@ xml:lang="pt">
         </licensed>
         <distribution scope="document">
             <online>
-                <url function="information">http://splink.cria.org.br/manager/detail?resource=SP</url>
-            </online>
-        </distribution>
-        <distribution scope="document">
-            <online>
-                <url function="download">http://ipt1.cria.org.br/ipt/archive.do?r=sp_fanerogamas</url>
+                <url function="information">https://specieslink.net/col/1/</url>
             </online>
         </distribution>
         <distribution scope="document">
@@ -136,8 +130,8 @@ xml:lang="pt">
                 <administrativeArea>São Paulo</administrativeArea>
                 <country>BRAZIL</country>
             </address>
-            <phone>+55 11 5067-6089</phone>
-            <electronicMailAddress>mcmamede@gmail.com</electronicMailAddress>
+            <electronicMailAddress>mmamede@sp.gov.br</electronicMailAddress>
+            <onlineUrl>https://specieslink.net/col/1/</onlineUrl>
         </contact>
 
             <project >
@@ -166,8 +160,8 @@ xml:lang="pt">
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:25Z</dateStamp>
-                <citation identifier="  http://splink.cria.org.br/manager/detail?resource=SP">Cândida Henrique Mamede M (2024). SP - Herbário do Estado &quot;Maria Eneyda P. Kaufmann Fidalgo&quot; - Coleção de Fanerógamas. Version 1.111. Instituto de Botânica, São Paulo. Occurrence dataset https://doi.org/10.15468/axlcjr accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:32Z</dateStamp>
+                <citation identifier="https://specieslink.net/col/1/">Cândida Henrique Mamede M (2025). SP - Herbário do Estado &quot;Maria Eneyda P. Kaufmann Fidalgo&quot; - Coleção de Fanerógamas. Version 1.116. Instituto de Botânica, São Paulo. Occurrence dataset https://doi.org/10.15468/axlcjr accessed via GBIF.org on 2025-04-29.</citation>
                 <resourceLogoUrl>http://ipt1.cria.org.br/ipt/logo.do?r=sp_fanerogamas</resourceLogoUrl>
             </gbif>
         </metadata>

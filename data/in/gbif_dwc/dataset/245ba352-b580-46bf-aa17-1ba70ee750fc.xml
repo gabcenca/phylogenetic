@@ -18,7 +18,6 @@ xml:lang="es">
             <organizationName>Universidad de SonoraDepartamento de Investigaciones Científicas y Tecnológicas</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Rosales y Niños Héroes s/n</deliveryPoint>
                 <city>Hermosillo</city>
                 <administrativeArea>Sonora</administrativeArea>
                 <postalCode>83000</postalCode>
@@ -46,21 +45,22 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Las especies invasoras tienen características ecológicas y fisiológicas que permiten su alta capacidad de invasibilidad. El uso de nutrientes en los sistemas ecológicos en que se presentan se modifica en función de su estequiometría ecológica, aunque dichos estudios aún no se han efectuado. La homeostásis de las especies y de las comunidades, caracterizable utilizando la estequiometría ecológica, se considera que deberá ser menor en sistemas alterados por invasoras, debido a sus relaciones estequiométricas, productivas y de biodiversidad, por lo que existirá asociado a un gradiente de homeostásis un determinado grado de invasibilidad en la cubierta vegetal, lo que deberá ser posible relacionar utilizando métricas de fenología, NDVI y productividad detectadas mediante percepción remota. Los modelos generados utilizando homeostásis y percepción remota permitirán establecer propuestas de manejo basadas en características funcionales de las especies exóticas invasoras para las áreas prioritarias para la conservación estudiadas en la región Central de Sonora. El modelo será probado en particular para el caso del pasto buffel (Cenchrus ciliaris &#61; Pennisetum ciliare).
-Palabras clave: Estequiometría ecológica, homeostásis de la comunidad, invasibilidad, fenología, percepción remota, NDVI, productividad</para>
-<para>Reino: 1
+            <para>Las especies invasoras tienen características ecológicas y fisiológicas que permiten su alta capacidad de invasibilidad. El uso de nutrientes en los sistemas ecológicos en que se presentan se modifica en función de su estequiometría ecológica, aunque dichos estudios aún no se han efectuado. La homeostásis de las especies y de las comunidades, caracterizable utilizando la estequiometría ecológica, se considera que deberá ser menor en sistemas alterados por invasoras, debido a sus relaciones estequiométricas, productivas y de biodiversidad, por lo que existirá asociado a un gradiente de homeostásis un determinado grado de invasibilidad en la cubierta vegetal, lo que deberá ser posible relacionar utilizando métricas de fenología, NDVI y productividad detectadas mediante percepción remota. Los modelos generados utilizando homeostásis y percepción remota permitirán establecer propuestas de manejo basadas en características funcionales de las especies exóticas invasoras para las áreas prioritarias para la conservación estudiadas en la región Central de Sonora. El modelo será probado en particular para el caso del pasto buffel (Cenchrus ciliaris &amp;#61; Pennisetum ciliare).
+Palabras clave: Estequiometría ecológica, homeostásis de la comunidad, invasibilidad, fenología, percepción remota, NDVI, productividad
+</para><para>Reino: 1
 Filo: 1
 Clase: 1
 Orden: 15
 Familia: 26
 Género: 63
 Subgénero: 1
-Especie: 79
-Epitetoinfraespecifico: 3</para>
+Especie: 78
+Epitetoinfraespecifico: 3
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -96,10 +96,10 @@ Epitetoinfraespecifico: 3</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (SONORA)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-112.345</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-109.911</eastBoundingCoordinate>
-                    <northBoundingCoordinate>29.674</northBoundingCoordinate>
-                    <southBoundingCoordinate>28.591</southBoundingCoordinate>
+                    <westBoundingCoordinate>-112.344935</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-109.9109</eastBoundingCoordinate>
+                    <northBoundingCoordinate>29.674031</northBoundingCoordinate>
+                    <southBoundingCoordinate>28.590934</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,7 +117,7 @@ Epitetoinfraespecifico: 3</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida
 Orden: Solanales, Fabales, Malpighiales, Asterales, Caryophyllales, Poales, Ericales, Rosales, Zygophyllales, Fagales, Malvales, Sapindales, Gentianales, Lamiales, Brassicales
 Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatocarpaceae, Poaceae, Fouquieriaceae, Rhamnaceae, Amaranthaceae, Zygophyllaceae, Fagaceae, Malvaceae, Krameriaceae, Burseraceae, Polygonaceae, Cannabaceae, Rubiaceae, Lamiaceae, Resedaceae, Solanaceae, Sapindaceae, Capparaceae, Acanthaceae, Simmondsiaceae, Primulaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -130,7 +130,7 @@ Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatoc
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -617,7 +617,7 @@ Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatoc
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Lophocereus schottii</taxonRankValue>
-                    <commonName>barbón, cabeza de viejo, cabeza vieja, cardona, ce:mi (Yuto-nahua), cina, cinita, garambullo, garambuyo, hasahcápjö (Seri), hasahcápöj (Seri), hecho, hehe is quisil (Seri), hombre viejo, mochi, mojépe (Seri), muse, muso, musue (Mayo), muzue (Mayo), músaro (Yaqui), pitahaya barbona, pitaya barbona, senita, sina, sina barbona, siñita, temi (Mayo), tuna barbona, uu museo gobbunim borokame (Yaqui), viejo, zina</commonName>
+                    <commonName>barbón, cabeza de viejo, cabeza vieja, cardona, ce:mi (Yuto-nahua), cina, cinita, garambullo, garambuyo, hasahcápjö (Seri), hasahcápöj (Seri), hecho, hehe is quisil (Seri), hombre viejo, mochi, mojépe (Seri), muse, muso, musue (Mayo), muzue (Mayo), músaro (Yaqui), pitahaya barbona, pitaya barbona, senita, sina, sina barbona, sinita, temi (Mayo), tuna barbona, uu museo gobbunim borokame (Yaqui), viejo, zina</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -743,11 +743,6 @@ Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatoc
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bursera hindsiana</taxonRankValue>
                     <commonName>copal, copal blanco, torote, torote prieto</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Cercidium sonorae</taxonRankValue>
-                    <commonName>brea, palo verde</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -920,6 +915,7 @@ Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatoc
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Jacquinia pungens</taxonRankValue>
+                    <commonName>chak sik&apos;iix le&apos; (Maya), lengua de gallo, limoncillo, naranjillo, pico de gallo, ya&apos;ax k&apos;iix le&apos; che&apos; (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -954,7 +950,7 @@ Familia: Convolvulaceae, Fabaceae, Euphorbiaceae, Asteraceae, Cactaceae, Achatoc
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1009,8 +1005,8 @@ con flores como gobernadoras, guayacanes</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:52Z</dateStamp>
-                <citation>Castellanos Villegas A E, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Estequiometría ecológica y percepción remota para el análisis de la distribución espacial e invasibilidad de zacate Buffel (Cenchrus ciliaris), en zonas prioritarias del noroeste de México. Version 1.10. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/m4udyv accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:30Z</dateStamp>
+                <citation>Castellanos Villegas A E, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Estequiometría ecológica y percepción remota para el análisis de la distribución espacial e invasibilidad de zacate Buffel (Cenchrus ciliaris), en zonas prioritarias del noroeste de México. Version 1.11. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/m4udyv accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-LI005-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1050,12 +1046,11 @@ con flores como gobernadoras, guayacanes</descriptorValue>
                     <collectionIdentifier>SNIB-LI005-LI0051712F_2018.02.21-ND</collectionIdentifier>
                     <collectionName>NO APLICA;NO APLICA;División de Ciencias Biológicas y de la Salud, Departamento de Investigaciones Científicas y Tecnológicas, Universidad de Sonora;DCBS-DICTUS-USON</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>2</endRange>
+                        <endRange>362</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

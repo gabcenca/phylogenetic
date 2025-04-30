@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoFacultad de CienciasDepartamento de BiologíaHerbario FCME</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -48,20 +47,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Este proyecto tiene como objetivo la continuación de estudios taxonómicos y biogeográficos de la flora del bosque mesófilo de montaña de Hidalgo y la Sierra Madre Oriental. Se efectuaron estudios sobre su distribución, relaciones fitogeográficas, composición y taxones característicos, además de análisis comparativos entre las diferentes islas del archipiélago mexicano de bosque mesófilo. De estos bosques se obtuvo una lista florística constituida por 114 familias, 246 géneros y 346 especies de plantas vasculares. En este momento se encuentra en revisión el escrito que será sometido a una revista de excelencia mexicana para publicar los resultados obtenidos durante esta fase del proyecto.</para>
-<para>Reino: 1
+            <para>Este proyecto tiene como objetivo la continuación de estudios taxonómicos y biogeográficos de la flora del bosque mesófilo de montaña de Hidalgo y la Sierra Madre Oriental. Se efectuaron estudios sobre su distribución, relaciones fitogeográficas, composición y taxones característicos, además de análisis comparativos entre las diferentes islas del archipiélago mexicano de bosque mesófilo. De estos bosques se obtuvo una lista florística constituida por 114 familias, 246 géneros y 346 especies de plantas vasculares. En este momento se encuentra en revisión el escrito que será sometido a una revista de excelencia mexicana para publicar los resultados obtenidos durante esta fase del proyecto.</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 5
 Orden: 51
 Familia: 115
 Género: 244
 Subgénero: 11
 Especie: 306
-Epitetoinfraespecifico: 11</para>
+Epitetoinfraespecifico: 11
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -97,10 +96,10 @@ Epitetoinfraespecifico: 11</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (HIDALGO)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-98.782</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-98.566</eastBoundingCoordinate>
+                    <westBoundingCoordinate>-98.781944</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-98.565833</eastBoundingCoordinate>
                     <northBoundingCoordinate>20.825</northBoundingCoordinate>
-                    <southBoundingCoordinate>20.613</southBoundingCoordinate>
+                    <southBoundingCoordinate>20.6125</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -118,7 +117,7 @@ Epitetoinfraespecifico: 11</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Lycopodiopsida, Pinopsida, Cycadopsida
 Orden: Ericales, Polypodiales, Myrtales, Fagales, Solanales, Cornales, Rosales, Alismatales, Apiales, Dipsacales, Lamiales, Lycopodiales, Oxalidales, Sapindales, Picramniales, Gentianales, Saxifragales, Asterales, Dioscoreales, Malpighiales, Commelinales, Piperales, Celastrales, Malvales, Asparagales, Araucariales, Vitales, Fabales, Magnoliales, Liliales, Gleicheniales, Caryophyllales, Huerteales, Ranunculales, Proteales, Cyatheales, Poales, Santalales, Crossosomatales, Cucurbitales, Aquifoliales, Pinales, Psilotales, Ophioglossales, Austrobaileyales, Cycadales, Laurales, Cupressales, Equisetales, Arecales, Geraniales
 Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Solanaceae, Cornaceae, Hydrangeaceae, Ericaceae, Rosaceae, Araceae, Araliaceae, Lythraceae, Urticaceae, Adoxaceae, Lentibulariaceae, Melastomataceae, Lamiaceae, Lycopodiaceae, Oxalidaceae, Rutaceae, Betulaceae, Picramniaceae, Meliaceae, Rubiaceae, Saxifragaceae, Juglandaceae, Campanulaceae, Dioscoreaceae, Actinidiaceae, Apocynaceae, Euphorbiaceae, Orobanchaceae, Commelinaceae, Passifloraceae, Piperaceae, Celastraceae, Primulaceae, Malvaceae, Orchidaceae, Convolvulaceae, Verbenaceae, Podocarpaceae, Asteraceae, Vitaceae, Fabaceae, Magnoliaceae, Balsaminaceae, Smilacaceae, Rhamnaceae, Hypoxidaceae, Scrophulariaceae, Gleicheniaceae, Caryophyllaceae, Caprifoliaceae, Amaranthaceae, Pentaphylacaceae, Plantaginaceae, Dipentodontaceae, Pteridaceae, Gesneriaceae, Annonaceae, Cactaceae, Ranunculaceae, Myrtaceae, Crassulaceae, Cannabaceae, Platanaceae, Papaveraceae, Altingiaceae, Dicksoniaceae, Sapindaceae, Bromeliaceae, Polygalaceae, Asparagaceae, Plagiogyriaceae, Santalaceae, Acanthaceae, Staphyleaceae, Aspleniaceae, Cyperaceae, Polemoniaceae, Hypericaceae, Begoniaceae, Sapotaceae, Aquifoliaceae, Phytolaccaceae, Pinaceae, Poaceae, Styracaceae, Psilotaceae, Alstroemeriaceae, Sabiaceae, Polygonaceae, Berberidaceae, Ophioglossaceae, Cyatheaceae, Nyssaceae, Iridaceae, Schisandraceae, Saccolomataceae, Zamiaceae, Lauraceae, Cupressaceae, Elaeocarpaceae, Equisetaceae, Amaryllidaceae, Burmanniaceae, Moraceae, Apiaceae, Arecaceae, Myricaceae, Geraniaceae, Gentianaceae, Dennstaedtiaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -131,7 +130,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -140,6 +139,14 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Lycopodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Cycadopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1973,6 +1980,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia helianthemifolia</taxonRankValue>
+                    <commonName>k&apos;anrrejna (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2169,7 +2177,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2313,6 +2321,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia elegans</taxonRankValue>
+                    <commonName>hierba del barretero, k&apos;anrrejna (Mazahua), mirto, mirto chico, mirto de monte, salvia roja</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2421,7 +2430,6 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Vernonia deppeana</taxonRankValue>
-                    <commonName>Santa María, cihuapatli (Náhuatl), duraznillo, flor cuaresma, flor de borla, flor de cuaresma, gusanillo, hierba hermosa, hoja lisa, malacate, malacate blanco, palo aguanoso, quiebra machete, tabaquillo, tzitit (Tseltal), vara de San Miguel, vara prieta</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2478,7 +2486,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2566,11 +2574,6 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Piper auritum</taxonRankValue>
-                    <commonName>Santa María, acacoyotl (Náhuatl), acoyo, acoyo cimarrón, acuyo, acuyo cimarrón, acuyo xihuitl (Náhuatl), canutillo, cordoncillo, corrimiento, hierba anís, hierba santa, higuerilla, hoja de Santa María, hoja de acoyo, hoja de anís, hoja del cáncer, hoja santa, ibacó (Cuicateco), jeco (Guarijío), jínan (Totonaco), kankaputuwan (Totonaco), lacap-uxcue (Huasteco), lalustú (Chontal de Oaxaca), le-lus-tu (Chontal de Oaxaca), mak&apos;ulan (Maya), mecaxóchitl (Náhuatl), máakulan (Maya), necaxochitl (Náhuatl), palo de zanate, quelite, rama de queso, santilla de comer, tapa cántaro, uo (Maya), uó (Mixe), vavaji (Popoloca), woo (Maya), x-mak&apos;ulam (Maya), x-mak&apos;ulan (Maya), x-mak&apos;ulan (Maya), xalacuahuitl (Náhuatl), xalcuáhuitl (Náhuatl), xmaculán (Maya), yubandoo (Mixteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ilex discolor</taxonRankValue>
                     <commonName>naranjillo, palo de agua</commonName>
                 </taxonomicClassification>
@@ -2595,7 +2598,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca purpurascens</taxonRankValue>
-                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2613,6 +2616,11 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bouvardia xylosteoides</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Piper auritum</taxonRankValue>
+                    <commonName>Santa María, acacoyotl (Náhuatl), acoyo, acoyo cimarrón, acuyo, acuyo cimarrón, acuyo xihuitl (Náhuatl), canutillo, cordoncillo, corrimiento, hierba anís, hierba santa, higuerilla, hoja de Santa María, hoja de acoyo, hoja de anís, hoja del cáncer, hoja santa, ibacó (Cuicateco), jeco (Guarijío), jínan (Totonaco), kankaputuwan (Totonaco), lacap-uxcue (Huasteco), lalustú (Chontal de Oaxaca), le-lus-tu (Chontal de Oaxaca), mak&apos;ulan (Maya), mecaxóchitl (Náhuatl), máakulan (Maya), necaxochitl (Náhuatl), palo de zanate, quelite, rama de queso, santilla de comer, tapa cántaro, uo (Maya), uó (Mixe), vavaji (Popoloca), woo (Maya), x-mak&apos;ulam (Maya), x-mak&apos;ulan (Maya), x-mak&apos;ulan (Maya), xalacuahuitl (Náhuatl), xalcuáhuitl (Náhuatl), xmaculán (Maya), yubandoo (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2853,7 +2861,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Ceratozamia mexicana</taxonRankValue>
-                    <commonName>amenduai (Zoque), amendú (Zoque), costilla de león, cícada, palma imperial, piña del monte, tzalam-thipac (Huasteco)</commonName>
+                    <commonName>amenduai (Zoque), amendú (Zoque), costilla de león, cícada, kuni (Totonaco), palma imperial, piña del monte, tzalam-thipac (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3273,6 +3281,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Ageratum corymbosum f. euryphyllum</taxonRankValue>
+                    <commonName>bola de hilo, jícama, mano de gato, mota morada</commonName>
                 </taxonomicClassification>
             </taxonomicCoverage>
         </coverage>
@@ -3288,7 +3297,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -3319,6 +3328,7 @@ Familia: Clethraceae, Polypodiaceae, Dryopteridaceae, Onagraceae, Fagaceae, Sola
                 <studyAreaDescription>
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Plantas
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acebos, yerba mate
@@ -3357,24 +3367,7 @@ con flores como palos verdes
 con flores como pimientas
 con flores como plantas del aceite negro
 con flores como uvas
-con flores, con semillas, con frutos como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
-con flores, con semillas, con frutos como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
-con flores, con semillas, con frutos como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como amapolas, chicalotes
-con flores, con semillas, con frutos como arándanos, árboles del chicle, argán, avellanas del Brasil, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, ocotillos, zapotes
-con flores, con semillas, con frutos como aretes, eucaliptos, flores de cepillo, granadas, guayabas
-con flores, con semillas, con frutos como begonias, calabazas, chayotes, melones, pepinos, sandías
-con flores, con semillas, con frutos como berenjena, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
-con flores, con semillas, con frutos como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como cardos, madreselvas, saúcos
-con flores, con semillas, con frutos como echeverias, kalanchoes, liquidámbares, siempre vivas
-con flores, con semillas, con frutos como lirios acuáticos
-con flores, con semillas, con frutos como pimientas
-con flores, con semillas, con frutos como plantas del aceite negro
 con flores: carnívoras, insectívoras
-NO DISPONIBLE
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -3385,8 +3378,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:56Z</dateStamp>
-                <citation>Luna Vega M I, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Florística y biogeografía de algunos bosques mesófilos de la Huasteca Hidalguense: Fase II (Tlahuelompa y Eloxochitlán). Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/3eo82l accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:25Z</dateStamp>
+                <citation>Luna Vega M I, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Florística y biogeografía de algunos bosques mesófilos de la Huasteca Hidalguense: Fase II (Tlahuelompa y Eloxochitlán). Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/3eo82l accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-H102-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -3426,6 +3419,13 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-H102-H102707F-ND</collectionIdentifier>
                     <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>966</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

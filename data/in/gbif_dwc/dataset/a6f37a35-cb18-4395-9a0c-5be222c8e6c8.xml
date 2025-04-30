@@ -19,17 +19,29 @@ xml:lang="en">
         </metadataProvider>
         <associatedParty>
             <individualName>
-                <surName>Johnson, Matt</surName>
+                <givenName>Matt</givenName>
+                <surName>Johnson</surName>
             </individualName>
+            <positionName>Director</positionName>
             <electronicMailAddress>matt.johnson@ttu.edu</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-1958-6334</userId>
+            <role>CONTENT_PROVIDER</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Mara</givenName>
+                <surName>Hosaka</surName>
+            </individualName>
+            <positionName>Collections Manager</positionName>
+            <electronicMailAddress>mara.hosaka@ttu.edu</electronicMailAddress>
             <role>CONTENT_PROVIDER</role>
         </associatedParty>
         <pubDate>
-                2024-10-02
+                2025-04-02
         </pubDate>
         <language>ENGLISH</language>
         <abstract>
-            The E.L. Reed Herbarium was founded in 1925 as part of the Texas Technological College (TTC). Located on the roof of the Biology building, the herbarium was founded by Reed and R.A. Studhalter, who provided key collections from the South Plains and Panhandle region of Texas. In the 1970s, Burgess and Northington led the first vegetative survey of the newly founded Guadalupe Mountains National Park in Culberson County, Texas, and TTC houses their collections.
+            <para>The E.L. Reed Herbarium was founded in 1925 as part of the Texas Technological College (TTC). Located on the roof of the Biology building, the herbarium was founded by Reed and R.A. Studhalter, who provided key collections from the South Plains and Panhandle region of Texas. In the 1970s, Burgess and Northington led the first vegetative survey of the newly founded Guadalupe Mountains National Park in Culberson County, Texas, and TTC houses their collections.</para>
         </abstract>
         <intellectualRights>
             <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
@@ -49,6 +61,7 @@ xml:lang="en">
             <phone>806-834-5750</phone>
             <electronicMailAddress>matt.johnson@ttu.edu</electronicMailAddress>
             <onlineUrl>http://www.mossmatters.com/herbarium</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-1958-6334</userId>
         </contact>
 
     </dataset>
@@ -56,8 +69,8 @@ xml:lang="en">
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:53Z</dateStamp>
-                <citation>E.L. Reed Herbarium at Texas Tech University (TTC) (2024). Texas Tech University, E. L. Reed Herbarium. Occurrence dataset https://doi.org/10.15468/uyakmh accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:27Z</dateStamp>
+                <citation>E.L. Reed Herbarium at Texas Tech University (TTC) (2025). Texas Tech University, E. L. Reed Herbarium. Occurrence dataset https://doi.org/10.15468/uyakmh accessed via GBIF.org on 2025-04-29.</citation>
             </gbif>
         </metadata>
     </additionalMetadata>

@@ -5,17 +5,23 @@ packageId="f577c9f3-ae71-4278-b6bf-512ba1dfaa21"  system="http://gbif.org" scope
 xml:lang="en">
     <dataset>
         <alternateIdentifier>10.15468/rvjdu1</alternateIdentifier>
-        <title>Geneva Herbarium – General Collection (G)</title>
-        <associatedParty>
+        <title>General Herbarium – Cryptogamy &amp; Phanerogamy (CJBG-G) of Conservatoire et Jardin botaniques de Genève</title>
+        <creator>
             <individualName>
-                <surName>Raoul Palese</surName>
+                <surName>Conservatoire et Jardin botaniques de Genève</surName>
             </individualName>
-            <electronicMailAddress>raoul.palese@ville-ge.ch</electronicMailAddress>
-            <role>TECHNICAL_POINT_OF_CONTACT</role>
-        </associatedParty>
-        <language>en</language>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Technical Support</positionName>
+            <address>
+                <country>SWITZERLAND</country>
+            </address>
+        </creator>
+        <pubDate>
+                2025-04-10
+        </pubDate>
+        <language>ENGLISH</language>
         <abstract>
-            The General Collection of the Geneva Herbarium is estimated to contain 6 million specimens of plants (vascular plants, bryophytes and «algae»), fungi (Basidiomycetes, Ascomycetes, lichens), Oomycetes and Myxomycetes from around the world. The history of this collection began with the gift of the Haller filius herbarium in 1823. But it was with the arrival of the Benjamin Delessert herbarium collection in 1869 (300´000 specimens from across the world) that the Conservatoire botanique acquired its true international status. Subsequent collections have enriched the General Collection, whose growth continues by exchanges, gifts and acquisitions, and through collecting by the Institution’s botanists.
+            <para>The General Collection of the Geneva Herbarium is estimated to contain 6.35 million specimens of plants (vascular plants, bryophytes and «algae»), fungi (Basidiomycetes, Ascomycetes, lichens), Oomycetes and Myxomycetes from around the world. The history of this collection began with the gift of the Haller filius herbarium in 1823. But it was with the arrival of the Benjamin Delessert herbarium collection in 1869 (300´000 specimens from across the world) that the Conservatoire botanique acquired its true international status. Subsequent collections have enriched the General Collection, whose growth continues by exchanges, gifts and acquisitions, and through collecting by the Institution’s botanists.</para>
         </abstract>
         <intellectualRights>
             <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
@@ -27,14 +33,214 @@ xml:lang="en">
         </licensed>
         <distribution scope="document">
             <online>
-                <url function="information">http://www.ville-ge.ch/cjb/bd.php#catherb</url>
+                <url function="information">http://www.ville-ge.ch/cjb/</url>
             </online>
         </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://s3-a.zhw.cloud.switch.ch/dagi/files/fat_02zbEO9NEgUgsZ6UQbJd6W/AZYgfUZ_cuSuOsjlTfHBog.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=01920489b9ba71eca16e548d8336b551%2F20250410%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250410T161645Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6f61ec098bdc785b55575d6ea385768a513d218baed6683e3af72401a76c8b46</url>
+            </online>
+        </distribution>
+        <maintenance>
+            <description>
+                <para>n/a</para>
+            </description>
+            <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+        </maintenance>
         <contact>
             <individualName>
-                <surName>Laurent Gautier (Phanérogames), Philippe Clerc (Cryptogames)</surName>
+                <givenName>Martin</givenName>
+                <surName>Callmander</surName>
             </individualName>
-            <electronicMailAddress>herb-phanero.cjb@ville-ge.ch</electronicMailAddress>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>martin.callmander@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Cyrille</givenName>
+                <surName>Chatelain</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>cyrille.chatelain@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Andreas</givenName>
+                <surName>Ensslin</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>andreas.ensslin@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Nicolas</givenName>
+                <surName>Fumeaux</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Scientific assistant</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>nicolas.fumeaux@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Laurent</givenName>
+                <surName>Gautier</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>laurent.gautier@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Anouk</givenName>
+                <surName>Mentha</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Data Manager</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>anouk.mentha@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Louis</givenName>
+                <surName>Nusbaumer</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>louis.nusbaumer@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Mathieu</givenName>
+                <surName>Perret</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>mathieu.perret@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Michelle</givenName>
+                <surName>Price</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Head of Science, Head of Cryptogamy</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>michelle.price@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Nathalie</givenName>
+                <surName>Rasolofo</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Scientific assistant</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>nathalie.rasolofo@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Fred</givenName>
+                <surName>Stauffer</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator - Head of Phanerogamy</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>fred.stauffer@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Nicolas</givenName>
+                <surName>Wyler</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>nicolas.wyler@geneve.ch</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Juan Carlos</givenName>
+                <surName>Zamora</surName>
+            </individualName>
+            <organizationName>Conservatoire et Jardin botaniques de Genève</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                <deliveryPoint>Chemin de l&apos;Impératrice</deliveryPoint>
+                <city>Chambesy-GE</city>
+                <postalCode>CH-1292</postalCode>
+                <country>SWITZERLAND</country>
+            </address>
+            <electronicMailAddress>juan-carlos.zamora@geneve.ch</electronicMailAddress>
         </contact>
 
     </dataset>
@@ -42,9 +248,8 @@ xml:lang="en">
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:37Z</dateStamp>
-                <citation>Conservatoire et Jardin botaniques de la Ville de Genève - G. Geneva Herbarium – General Collection (G). Occurrence dataset https://doi.org/10.15468/rvjdu1 accessed via GBIF.org on 2024-10-22.</citation>
-                <resourceLogoUrl>http://data.gbif.ch/gbif-portal/institutions/23/logo</resourceLogoUrl>
+                <dateStamp>2025-04-29T16:45:54Z</dateStamp>
+                <citation>Conservatoire et Jardin botaniques de Genève (2025). General Herbarium – Cryptogamy &amp; Phanerogamy (CJBG-G) of Conservatoire et Jardin botaniques de Genève. SwissNatColl. Occurrence dataset https://doi.org/10.15468/rvjdu1 accessed via GBIF.org on 2025-04-29.</citation>
             </gbif>
         </metadata>
     </additionalMetadata>

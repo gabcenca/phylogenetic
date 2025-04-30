@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Universidad Autónoma de TamaulipasInstituto de Ecología Aplicada</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>División del Golfo # 356</deliveryPoint>
                 <city>Ciudad Victoria</city>
                 <administrativeArea>Tamaulipas</administrativeArea>
                 <postalCode>87019</postalCode>
@@ -47,20 +46,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Se hace una evaluación de cinco especies de cactáceas amenazadas para determinar el estado actual de las poblaciones, así como la distribución geográfica de las mismas. Las especies contempladas en este estudio son: Astrophytum asterias, Ariocarpus agavoides, Mammillaria carmenae, Turbinicarpus schmiedickeanus y Pelecyphora strobiliformis. Así mismo, se tiene como objetivos principales determinar la estructura de las poblaciones, analizar si existe una relación con posibles plantas nodrizas, así como la vegetación, suelo y clima presente en cada sitio evaluado. Otras actividades ha realizar son: determinar los porcentajes de germinación y viabilidad de las cinco especies aquí contempladas, así como los factores físicos y biológicos que influyen en el desarrollo y viabilidad de las poblaciones. La metodología empleada para este estudio consiste en transectos de 30 m por 2 m de ancho para evaluar densidad poblacional y tipo de vegetación.</para>
-<para>Reino: 1
+            <para>Se hace una evaluación de cinco especies de cactáceas amenazadas para determinar el estado actual de las poblaciones, así como la distribución geográfica de las mismas. Las especies contempladas en este estudio son: Astrophytum asterias, Ariocarpus agavoides, Mammillaria carmenae, Turbinicarpus schmiedickeanus y Pelecyphora strobiliformis. Así mismo, se tiene como objetivos principales determinar la estructura de las poblaciones, analizar si existe una relación con posibles plantas nodrizas, así como la vegetación, suelo y clima presente en cada sitio evaluado. Otras actividades ha realizar son: determinar los porcentajes de germinación y viabilidad de las cinco especies aquí contempladas, así como los factores físicos y biológicos que influyen en el desarrollo y viabilidad de las poblaciones. La metodología empleada para este estudio consiste en transectos de 30 m por 2 m de ancho para evaluar densidad poblacional y tipo de vegetación.</para><para>Reino: 1
 Filo: 1
-Clase: 1
+Clase: 3
 Orden: 17
 Familia: 21
 Género: 34
 Subgénero: 2
 Especie: 38
-Epitetoinfraespecifico: 1</para>
+Epitetoinfraespecifico: 1
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -96,10 +95,10 @@ Epitetoinfraespecifico: 1</para>
             <geographicCoverage>
                 <geographicDescription>País: MEXICO (TAMAULIPAS)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-99.872</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-99.003</eastBoundingCoordinate>
-                    <northBoundingCoordinate>24.663</northBoundingCoordinate>
-                    <southBoundingCoordinate>22.687</southBoundingCoordinate>
+                    <westBoundingCoordinate>-99.871667</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-99.002933</eastBoundingCoordinate>
+                    <northBoundingCoordinate>24.663167</northBoundingCoordinate>
+                    <southBoundingCoordinate>22.6869</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,7 +116,7 @@ Epitetoinfraespecifico: 1</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida, Cycadopsida, Pinopsida
 Orden: Asparagales, Sapindales, Fagales, Caryophyllales, Malpighiales, Poales, Fabales, Boraginales, Brassicales, Cycadales, Lamiales, Rosales, Celastrales, Ephedrales, Gentianales, Zygophyllales, Asterales
 Familia: Asparagaceae, Simaroubaceae, Fagaceae, Cactaceae, Euphorbiaceae, Bromeliaceae, Fabaceae, Namaceae, Poaceae, Koeberliniaceae, Zamiaceae, Nolinaceae, Scrophulariaceae, Cannabaceae, Celastraceae, Ephedraceae, Rubiaceae, Zygophyllaceae, Rutaceae, Rhamnaceae, Asteraceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -130,7 +129,15 @@ Familia: Asparagaceae, Simaroubaceae, Fagaceae, Cactaceae, Euphorbiaceae, Bromel
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Cycadopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -492,7 +499,7 @@ Familia: Asparagaceae, Simaroubaceae, Fagaceae, Cactaceae, Euphorbiaceae, Bromel
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dioon edule</taxonRankValue>
-                    <commonName>cabeza de chamal, chama, chamal, cícada, espadaña, palma, palma de Dolores, palma de Teresita, palma de virgen, palma navaja, palma real, palmilla, palmita, quiotamal, tio tamal, tiotamal, tzamal (Huasteco)</commonName>
+                    <commonName>cabeza de chamal, chama, chamal, cicada, espadaña, palma, palma de Dolores, palma de Teresita, palma de virgen, palma navaja, palma real, palmilla, palmita, quiotamal, tio tamal, tiotamal, tzamal (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -624,7 +631,7 @@ Familia: Asparagaceae, Simaroubaceae, Fagaceae, Cactaceae, Euphorbiaceae, Bromel
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -679,8 +686,8 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:52Z</dateStamp>
-                <citation>Martínez Ávalos J G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Determinación del estado actual de cinco especies de cactáceas amenazadas del estado de Tamaulipas, México. Version 1.16. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/9bhbje accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:50Z</dateStamp>
+                <citation>Martínez Ávalos J G, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Determinación del estado actual de cinco especies de cactáceas amenazadas del estado de Tamaulipas, México. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/9bhbje accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-H149-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -715,6 +722,13 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                     <collectionIdentifier>SNIB-H149-Varios archivos XLS-ND</collectionIdentifier>
                     <collectionName>REVISADO;NO APLICA;Instituto de Ecología Aplicada, Universidad Autónoma de Tamaulipas;IEA-UAT</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,455</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

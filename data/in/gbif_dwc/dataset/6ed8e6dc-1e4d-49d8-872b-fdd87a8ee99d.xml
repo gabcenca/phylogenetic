@@ -18,7 +18,6 @@ xml:lang="es">
             <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de BiologíaDepartamento de Botánica</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Universidad # 3000</deliveryPoint>
                 <city>México</city>
                 <administrativeArea>Distrito Federal</administrativeArea>
                 <postalCode>04510</postalCode>
@@ -46,22 +45,23 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>Se modelará la distribución potencial de al menos 200 especies distribuidas preferentemente en el bosque húmedo de montaña en México; entre ellas se incluirán especies de árboles, tanto incluidas en el Inventario Nacional Forestal como otras no consideradas en dicho inventario, asi como representantes de otras formas de crecimiento. Igualmente se incluirán especies tanto endémicas de México como especies de distribución más amplia en el continente. Con los modelos se generarán dos mapas de diversidad de especies, uno de ellos mostrando la distribución de la riqueza observada, con base en las especies modeladas y otro mostrando la distribución de la riqueza estimada, obtenida mediante un método de interpolación (Kriging) de la riqueza observada.
 
-Los resultados permitirán aportar información más detallada sobre la distribución conocida y potencial del BHM, evaluando los patrones de distribución de las especies creciendo predominantemente en dicho bioma (especies a modelar) y comparándolos con los mapas de distribución de este bioma propuestos hasta la fecha (CONABIO, INEGI, etc.).</para>
-<para>Reino: 1
+Los resultados permitirán aportar información más detallada sobre la distribución conocida y potencial del BHM, evaluando los patrones de distribución de las especies creciendo predominantemente en dicho bioma (especies a modelar) y comparándolos con los mapas de distribución de este bioma propuestos hasta la fecha (CONABIO, INEGI, etc.).
+</para><para>Reino: 1
 Filo: 1
-Clase: 2
+Clase: 4
 Orden: 13
 Familia: 17
 Género: 27
 Subgénero: 3
 Especie: 33
-Epitetoinfraespecifico: 2</para>
+Epitetoinfraespecifico: 2
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -95,12 +95,12 @@ Epitetoinfraespecifico: 2</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (CHIAPAS, GUERRERO, HIDALGO, JALISCO, MICHOACAN DE OCAMPO, OAXACA, PUEBLA, QUERETARO, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
+                <geographicDescription>País: MEXICO (CHIAPAS, COLIMA, DISTRITO FEDERAL, GUANAJUATO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUERETARO, SAN LUIS POTOSI, SINALOA, TAMAULIPAS, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-104.873</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-92.075</eastBoundingCoordinate>
-                    <northBoundingCoordinate>21.374</northBoundingCoordinate>
-                    <southBoundingCoordinate>15.079</southBoundingCoordinate>
+                    <westBoundingCoordinate>-104.873333</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-92.074722</eastBoundingCoordinate>
+                    <northBoundingCoordinate>21.374444</northBoundingCoordinate>
+                    <southBoundingCoordinate>15.079167</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -118,7 +118,7 @@ Epitetoinfraespecifico: 2</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Cycadopsida, Magnoliopsida, Pinopsida, Polypodiopsida
 Orden: Cycadales, Asterales, Fagales, Rosales, Laurales, Lamiales, Poales, Fabales, Solanales, Ericales, Gentianales, Pinales, Marattiales
 Familia: Zamiaceae, Asteraceae, Fagaceae, Rosaceae, Lauraceae, Lamiaceae, Poaceae, Fabaceae, Solanaceae, Pentaphylacaceae, Clethraceae, Orobanchaceae, Rubiaceae, Symplocaceae, Pinaceae, Marattiaceae, Primulaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -131,7 +131,15 @@ Familia: Zamiaceae, Asteraceae, Fagaceae, Rosaceae, Lauraceae, Lamiaceae, Poacea
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Cycadopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -538,7 +546,7 @@ Familia: Zamiaceae, Asteraceae, Fagaceae, Rosaceae, Lauraceae, Lamiaceae, Poacea
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -571,7 +579,6 @@ Los resultados permitirán aportar información más detallada sobre la distribu
                 <studyAreaDescription>
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Plantas
-
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como aguacates, alcanforeros, canelas, laureles
@@ -581,36 +588,8 @@ con flores como almendras, amates, capulines, cerezas, chabacanos, ciruelas, dur
 con flores como arándanos, árboles del chicle, argán, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, nueces de Brasil, ocotillos, zapotes
 con flores como berenjenas, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
 con flores como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
-con flores, con semillas, con frutos como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
-con flores, con semillas, con frutos como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
-con flores, con semillas, con frutos como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
-con flores, con semillas, con frutos como agritos, tréboles
-con flores, con semillas, con frutos como aguacates, alcanforeros, canelas, laureles
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como amapolas, chicalotes
-con flores, con semillas, con frutos como anís, apios, cilantros, eneldos, ginseng, hiedras, perejil, zanahorias
-con flores, con semillas, con frutos como arándanos, árboles del chicle, argán, avellanas del Brasil, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, ocotillos, zapotes
-con flores, con semillas, con frutos como aretes, eucaliptos, flores de cepillo, granadas, guayabas
-con flores, con semillas, con frutos como berenjena, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
-con flores, con semillas, con frutos como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
-con flores, con semillas, con frutos como chirimoyas, guanábanas, magnolias, nuez moscada
-con flores, con semillas, con frutos como cocoteros, dátiles, palmas, palmeras, palmitos
-con flores, con semillas, con frutos como hayas, lotos, ninfas, nueces de macadamia, robles australianos, sicomoros
-con flores, con semillas, con frutos como hortensias
-con flores, con semillas, con frutos como lirios acuáticos
-con flores, con semillas, con frutos como palos verdes
-con flores, con semillas, con frutos como pimientas
-con flores, con semillas, con frutos: bambúes
 con flores: bambúes
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, sin semillas, con esporas: helechos y afines
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
@@ -620,8 +599,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:30Z</dateStamp>
-                <citation>Villaseñor Ríos J L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Modelación de la riqueza y distribución potencial del bosque húmedo de montaña. Version 1.10. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/6tx9pr accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:38Z</dateStamp>
+                <citation>Villaseñor Ríos J L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Modelación de la riqueza y distribución potencial del bosque húmedo de montaña. Version 1.11. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/6tx9pr accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-JM013-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -654,17 +633,7 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbario;OAX;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Oaxaca, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbario;HUMO;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbario &apos;Graciela Calderón y Jerzy Rzedowski&apos;;IEB;Instituto de Ecología, A. C., Centro Regional del Bajío;INECOL</collectionName>
+                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -674,17 +643,22 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
+                    <collectionName>Herbario &apos;Graciela Calderón y Jerzy Rzedowski&apos;;IEB;Instituto de Ecología, A. C., Centro Regional del Bajío;INECOL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
+                    <collectionName>Herbario;HUMO;Centro de Investigación en Biodiversidad y Conservación, Universidad Autónoma del Estado de Morelos;CIByC-UAEM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
+                    <collectionName>Herbarium;KSC;Kansas State University;KSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
                     <collectionName>Herbario Luz María Villarreal de Puga;IBUG;Centro Universitario de Ciencias Biológicas y Agropecuarias, Universidad de Guadalajara;CUCBA-UDG</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
-                </collection>
-                <collection>
-                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
-                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbarium;MO;Missouri Botanical Garden;MOBOT</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -694,13 +668,18 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
-                    <collectionName>Herbarium;KSC;Kansas State University;KSU</collectionName>
+                    <collectionName>Herbario;OAX;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Oaxaca, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM013-JM0131411F_SIB2017.08.18-ND</collectionIdentifier>
+                    <collectionName>Herbarium;MO;Missouri Botanical Garden;MOBOT</collectionName>
                 </collection>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>1</endRange>
+                        <endRange>49</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

@@ -20,7 +20,6 @@ xml:lang="es">
             <organizationName>Instituto Politécnico NacionalCentro Interdisciplinario de Investigación para el Desarrollo Integral Regional-DurangoDepartamento de Botánica</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Sigma s/n</deliveryPoint>
                 <city>Durango</city>
                 <administrativeArea>Durango</administrativeArea>
                 <postalCode>34220</postalCode>
@@ -47,20 +46,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-02
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>El objetivo de este proyecto fue conformar un banco de información sobre la flora de dos áreas protegidas en el estado de Durango: Reserva de la Biosfera La Michilía y Parque El Tecuán. La vegetación de dichas áreas se puede considerar como representativa y se extiende a través de millones de hectáreas de la Sierra Madre Occidental entre los 2000 y los 3000 m de altitud, por lo que su conocimiento es de vital importancia para la planeación del óptimo manejo y preservación de los bosques templados del noroeste de México. Dicho banco de información permitirá determinar cuáles y cuántas especies, de aquellas conocidas hasta ahora como raras o en peligro de extinción en el estado se localizan en áreas protegidas, y por lo tanto constituye una base firme sobre la cual proponer para su protección nuevas áreas, quizás mas ricas florísticamente. Entre los resultados logrados se cuentan: 1) una base de datos que incluye 3259 registros de colectas botánicas en ambas áreas; el material se encuentra depositado en el herbario CIIDIR en la ciudad de Durango; 2) se hicieron adiciones a la flora de la Reserva La Michilía, incrementándose el número de especies registradas a 919 (de 770 registradas por González et al. 1993); 3) para la flora del Parque El Tecuán se obtuvo un primer inventario en el que se registran 245 especies; 4) se describe la composición y estado actual de la vegetación del Parque El Tecuán, y se cartografiaron las unidades de vegetación; y 5) se registraron por primera vez para Durango seis especies, dos géneros y una familia.</para>
-<para>Reino: 1
+            <para>El objetivo de este proyecto fue conformar un banco de información sobre la flora de dos áreas protegidas en el estado de Durango: Reserva de la Biosfera La Michilía y Parque El Tecuán. La vegetación de dichas áreas se puede considerar como representativa y se extiende a través de millones de hectáreas de la Sierra Madre Occidental entre los 2000 y los 3000 m de altitud, por lo que su conocimiento es de vital importancia para la planeación del óptimo manejo y preservación de los bosques templados del noroeste de México. Dicho banco de información permitirá determinar cuáles y cuántas especies, de aquellas conocidas hasta ahora como raras o en peligro de extinción en el estado se localizan en áreas protegidas, y por lo tanto constituye una base firme sobre la cual proponer para su protección nuevas áreas, quizás mas ricas florísticamente. Entre los resultados logrados se cuentan: 1) una base de datos que incluye 3259 registros de colectas botánicas en ambas áreas; el material se encuentra depositado en el herbario CIIDIR en la ciudad de Durango; 2) se hicieron adiciones a la flora de la Reserva La Michilía, incrementándose el número de especies registradas a 919 (de 770 registradas por González et al. 1993); 3) para la flora del Parque El Tecuán se obtuvo un primer inventario en el que se registran 245 especies; 4) se describe la composición y estado actual de la vegetación del Parque El Tecuán, y se cartografiaron las unidades de vegetación; y 5) se registraron por primera vez para Durango seis especies, dos géneros y una familia.</para><para>Reino: 1
 Filo: 1
-Clase: 3
+Clase: 4
 Orden: 39
 Familia: 101
 Género: 395
 Subgénero: 14
 Especie: 926
-Epitetoinfraespecifico: 78</para>
+Epitetoinfraespecifico: 78
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -94,12 +93,12 @@ Epitetoinfraespecifico: 78</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (DURANGO, ZACATECAS)</geographicDescription>
+                <geographicDescription>País: MEXICO (DURANGO)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-105.508</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-104.008</eastBoundingCoordinate>
-                    <northBoundingCoordinate>23.911</northBoundingCoordinate>
-                    <southBoundingCoordinate>23.008</southBoundingCoordinate>
+                    <westBoundingCoordinate>-105.508333</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-104.008333</eastBoundingCoordinate>
+                    <northBoundingCoordinate>23.911111</northBoundingCoordinate>
+                    <southBoundingCoordinate>23.008333</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,7 +116,7 @@ Epitetoinfraespecifico: 78</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida, Lycopodiopsida
+Clase: Magnoliopsida, Pinopsida, Polypodiopsida, Lycopodiopsida
 Orden: Alismatales, Fabales, Caryophyllales, Lamiales, Fagales, Rosales, Asterales, Ericales, Asparagales, Solanales, Ranunculales, Pinales, Poales, Malvales, Geraniales, Malpighiales, Apiales, Gentianales, Myrtales, Commelinales, Saxifragales, Brassicales, Cornales, Liliales, Polypodiales, Dipsacales, Salviniales, Santalales, Boraginales, Oxalidales, Cupressales, Piperales, Garryales, Equisetales, Cucurbitales, Sapindales, Dioscoreales, Vitales, Lycopodiales
 Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchaceae, Rosaceae, Asteraceae, Ericaceae, Orchidaceae, Solanaceae, Caryophyllaceae, Polygonaceae, Ranunculaceae, Pinaceae, Cyperaceae, Malvaceae, Poaceae, Geraniaceae, Polemoniaceae, Euphorbiaceae, Cactaceae, Campanulaceae, Eriocaulaceae, Plumbaginaceae, Asparagaceae, Apiaceae, Juncaceae, Rubiaceae, Apocynaceae, Polygalaceae, Hypoxidaceae, Rhamnaceae, Convolvulaceae, Onagraceae, Talinaceae, Commelinaceae, Plantaginaceae, Crassulaceae, Brassicaceae, Loasaceae, Verbenaceae, Melanthiaceae, Gentianaceae, Iridaceae, Cistaceae, Polypodiaceae, Caprifoliaceae, Xyridaceae, Saxifragaceae, Violaceae, Bromeliaceae, Liliaceae, Marsileaceae, Linaceae, Santalaceae, Boraginaceae, Menyanthaceae, Cornaceae, Amaryllidaceae, Betulaceae, Oxalidaceae, Cupressaceae, Pteridaceae, Acanthaceae, Linderniaceae, Malpighiaceae, Dennstaedtiaceae, Phrymaceae, Piperaceae, Nyctaginaceae, Garryaceae, Hypericaceae, Lythraceae, Equisetaceae, Scrophulariaceae, Begoniaceae, Oleaceae, Burseraceae, Pontederiaceae, Salicaceae, Cucurbitaceae, Primulaceae, Dioscoreaceae, Dryopteridaceae, Grossulariaceae, Phytolaccaceae, Chenopodiaceae, Sapindaceae, Haloragaceae, Vitaceae, Lentibulariaceae, Woodsiaceae, Bignoniaceae, Potamogetonaceae, Aspleniaceae, Asphodelaceae, Anacardiaceae, Papaveraceae, Portulacaceae, Lycopodiaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -130,7 +129,11 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
@@ -2537,6 +2540,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gnaphalium sphacelatum</taxonRankValue>
+                    <commonName>canelillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2681,6 +2685,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Dalea cliffortiana</taxonRankValue>
+                    <commonName>hierba del zopilote</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2689,7 +2694,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opuntia durangensis</taxonRankValue>
-                    <commonName>nopal, nopal, nopal de Durango, nopal mantequilla, nopal tapón, tuna duraznillo, xoconostle</commonName>
+                    <commonName>nopal, cambray, coyonoxtle, duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal de Durango, nopal duraznillo, nopal mantequilla, nopal tapón, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2707,6 +2712,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Aster subulatus</taxonRankValue>
+                    <commonName>escobilla, escobillo, lechuga de monte, metezurra</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2829,7 +2835,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens ferulifolia</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2878,7 +2884,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Helianthemum pringlei</taxonRankValue>
-                    <commonName>hierba de la vibora</commonName>
+                    <commonName>hierba de la vibora, yerba de la gallina, yerba de la víbora</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3104,7 +3110,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Calochortus barbatus</taxonRankValue>
-                    <commonName>gallito, lirio, mariposa</commonName>
+                    <commonName>gallito, gallitos, lirio, mariposa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3130,7 +3136,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -4185,7 +4191,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4770,7 +4776,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Opuntia leucotricha</taxonRankValue>
-                    <commonName>nopal, duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal duraznillo, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
+                    <commonName>nopal, cambray, coyonoxtle, duraznillo, duraznillo acardonado, duraznillo blanco, duraznillo canecho, duraznillo colorado, duraznillo rojo, nopal, nopal chaveño, nopal colorado, nopal de Durango, nopal duraznillo, nopal mantequilla, nopal tapón, tocahuiztli (Náhuatl), tuna duraznillo, xoconostle, xoconostle colorado</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4948,6 +4954,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Zexmenia aurea</taxonRankValue>
+                    <commonName>peonía, té de llano, árnica</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -4966,7 +4973,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Phytolacca icosandra</taxonRankValue>
-                    <commonName>cóngora, amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yiwa-chí-na (Mixteco)</commonName>
+                    <commonName>cóngora, amole, amolxihuitl (Náhuatl), barbachina, bonde&apos; (Tlapaneco), carricillo, conegera, congora, conguerama (Tarasco), conguerami (Tarasco), conguerani (Purépecha), coral, cónguera, higuerilla, jabonera, jiolla (Otomí), jucshca (Totonaco), lavaropa, mazorquilla, mazorquita, mo-hog-tau (Chinanteco), mo-tau (Chinanteco), mora, nemole-pi-aa (Zapoteco), quelite, quelite de amor, quelite de cerro, quelite de toro, sicamole, t&apos;eel koox (Maya), tarasca, tarasca de negros, telkok (Maya), tepequilit (Náhuatl), tonojoso, varbachina, x-tel-kox (Maya), yima-chí-na (Mixteco), yiwa-chí-na (Mixteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5019,7 +5026,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -5610,8 +5617,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Koanophyllon solidaginifolia</taxonRankValue>
-                    <commonName>caballito</commonName>
+                    <taxonRankValue>Koanophyllon solidaginifolium</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6010,7 +6016,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja communis</taxonRankValue>
-                    <commonName>hierba del cáncer</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -6780,7 +6786,7 @@ Familia: Alismataceae, Fabaceae, Amaranthaceae, Lamiaceae, Fagaceae, Orobanchace
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -6856,8 +6862,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:55Z</dateStamp>
-                <citation>González Elizondo M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Florística de áreas protegidas en el estado de Durango. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/ddvomu accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:29Z</dateStamp>
+                <citation>González Elizondo M, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Florística de áreas protegidas en el estado de Durango. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/ddvomu accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-H100-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -6895,12 +6901,12 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H100-H100708F-ND</collectionIdentifier>
-                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
+                    <collectionName>NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H100-H100708F-ND</collectionIdentifier>
-                    <collectionName>Herbario Metropolitano;UAMIZ;Universidad Autónoma Metropolitana, Unidad Iztapalapa;UAMI</collectionName>
+                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
@@ -6910,8 +6916,15 @@ sin flores: helechos y afines</descriptorValue>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-H100-H100708F-ND</collectionIdentifier>
-                    <collectionName>NO DISPONIBLE</collectionName>
+                    <collectionName>Herbario Metropolitano;UAMIZ;Universidad Autónoma Metropolitana, Unidad Iztapalapa;UAMI</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>3,107</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

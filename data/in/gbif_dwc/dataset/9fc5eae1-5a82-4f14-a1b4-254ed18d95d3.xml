@@ -19,7 +19,6 @@ xml:lang="es">
             <organizationName>Universidad Autónoma de CampecheCentro de Investigaciones Históricas y Sociales</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Av Agustín Melgar s/n</deliveryPoint>
                 <city>Campeche</city>
                 <administrativeArea>Campeche</administrativeArea>
                 <postalCode>24030</postalCode>
@@ -47,21 +46,21 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>Las zonas tropicales favorecidas por las precipitaciones presentan una riqueza de especies vegetales, entre las que podemos encontrar: ornamentales, maderables, comestibles, medicinales, etc., ante ambiciones humanas se han visto amenazada, saqueadas y actualmente seriamente restringidas por la ganadería y agricultura extensiva conformando reelictos en cañadas, serranías rocosas y medios inundables.
 Los inventarios florísticos cobran importancia para la ciencia, el gobierno y el pueblo en general para percatarnos con que especies contamos, base para propuestas de las reservas ecológicas.
-Las planicies en las zonas tropicales son de interés por la presencia de ecotonías favoreciendo la presencia de especies de transición, siempre resultado de interés botánico y por excelencia lugares ganaderos y agrícolas así resulte una lucha por espacio.</para>
-<para>Reino: 1
+Las planicies en las zonas tropicales son de interés por la presencia de ecotonías favoreciendo la presencia de especies de transición, siempre resultado de interés botánico y por excelencia lugares ganaderos y agrícolas así resulte una lucha por espacio.</para><para>Reino: 1
 Filo: 1
-Clase: 2
+Clase: 3
 Orden: 31
 Familia: 55
 Género: 125
 Subgénero: 4
-Especie: 158</para>
+Especie: 157
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -100,7 +99,7 @@ Especie: 158</para>
                     <westBoundingCoordinate>-92.5</westBoundingCoordinate>
                     <eastBoundingCoordinate>-91.775</eastBoundingCoordinate>
                     <northBoundingCoordinate>17.85</northBoundingCoordinate>
-                    <southBoundingCoordinate>17.711</southBoundingCoordinate>
+                    <southBoundingCoordinate>17.711111</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -118,7 +117,7 @@ Especie: 158</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida, Polypodiopsida
+Clase: Magnoliopsida, Polypodiopsida, Cycadopsida
 Orden: Boraginales, Gentianales, Malpighiales, Poales, Malvales, Asterales, Fabales, Santalales, Commelinales, Ericales, Caryophyllales, Rosales, Myrtales, Alismatales, Asparagales, Polypodiales, Sapindales, Lamiales, Dilleniales, Brassicales, Cycadales, Salviniales, Solanales, Cucurbitales, Schizaeales, Oxalidales, Fagales, Zingiberales, Laurales, Ranunculales, Arecales
 Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asteraceae, Fabaceae, Santalaceae, Commelinaceae, Primulaceae, Polygonaceae, Rhamnaceae, Passifloraceae, Cyperaceae, Melastomataceae, Alismataceae, Orchidaceae, Polypodiaceae, Euphorbiaceae, Sapindaceae, Bignoniaceae, Lythraceae, Dilleniaceae, Cleomaceae, Muntingiaceae, Zamiaceae, Apocynaceae, Salviniaceae, Solanaceae, Convolvulaceae, Verbenaceae, Caricaceae, Cucurbitaceae, Violaceae, Portulacaceae, Xyridaceae, Amaryllidaceae, Lygodiaceae, Amaranthaceae, Oxalidaceae, Fagaceae, Anacardiaceae, Onagraceae, Lamiaceae, Salicaceae, Marantaceae, Araceae, Phyllanthaceae, Cordiaceae, Lauraceae, Menispermaceae, Hydroleaceae, Nephrolepidaceae, Acanthaceae, Arecaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -131,11 +130,15 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
                     <taxonRankValue>Polypodiopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Cycadopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1073,7 +1076,7 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Melanthera aspera</taxonRankValue>
-                    <commonName>botoncillo, canilla de mulita, hierba ahuatosa, rosita</commonName>
+                    <commonName>botoncillo, canilla de mulita, ehtiil kelem (Huasteco), hierba ahuatosa, levisa xiiw (Español-Maya), mulito, pasto, pie mulito, rosita, sak sajum (Maya), sak sooj (Maya), sooj (Maya), soot&apos;kay (Maya), toplan xiiw (Maya), ts&apos;aan top&apos;an xiiw (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1282,7 +1285,7 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Erythrina (Erythrina) americana</taxonRankValue>
-                    <commonName>alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
+                    <commonName>alcaparra, chak-mol-ché (Maya), chotzá (Otomí), colorín, colorín grande, coralina, cosquelite, demti (Otomí), espino, jutuku (Huasteco), lak&apos;tanga (Totonaco), lakatila&apos; (Totonaco), lakatilo (Totonaco), li-pa-shcua (Chontal de Oaxaca), ma-ja-ñu (Chinanteco), madre cacao, mote, parencsuni (Tarasco), pemoche (Huasteca), pichojo, piich (Maya), pitillo, te&apos;batai (Otomí), tlalni (Totonaco), tsejch (Mixe), tzinacancuáhuitl (Náhuatl), tzompancuáhuitl (Náhuatl), tzompantli (Náhuatl), tzompömitl (Náhuatl), xoyo (Maya), zompantli (Náhuatl), zumpantle (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1469,16 +1472,6 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Heliotropium angiospermum</taxonRankValue>
-                    <commonName>alacrancillo, arete, codzne max (Maya), cola de alacrán, cola de escorpión, cola de gato, cola de mico, cola de mono, colar de alacrán, hierba de chatilla, hierba de fuego, hierba del alacrán, hierba del negro, hierba del sapo, ix tasuk (Tepehua), ix tlajak mextun (Totonaco), juche&apos; (Maya), kot&apos;s-ne-maax (Maya), lee maxi (Maya), macapura (Guarijío), me&apos;ex nuk xiib (Maya), ne ma&apos;ax (Maya), ne&apos; maax (Maya), ne&apos; miij (Maya), ne&apos; sinan (Maya), ne&apos;miis (Maya), ne-maax (Maya), ne-mis (Maya), nej ma&apos;ax (Maya), nej maax (Maya), nejmaax (Maya), nemaax (Maya), nemax (Maya), njma&apos;ax (Maya), rabanico, rabo de mico, taseuyu-túan (Totonaco), uña de gato, wew tdiniy (Huasteco), x nemaax (Maya), xneej maax (Maya), xnej maax (Maya), xnemax (Maya), xtáulun (Maya)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Spondias mombin</taxonRankValue>
-                    <commonName>abalil k&apos;aax (Maya), axócotl (Náhuatl), catan (Tepehua), ciruela, ciruela agria, ciruela amarilla, ciruela campechana, ciruela colorada, ciruela de México, ciruela de monte, ciruela de venado, ciruela del país, ciruela roja, ciruela tabasqueña, ciruelas curtidas, ciruelo, ciruelo agrio, ciruelo de monte, ciruelo mango, ciruelo ojo, ciruelo rojo cimarrón, ciruelo silvestre, cuauhxocot (Náhuatl), huhub (Maya), jobillo, jovo, jujuub (Maya), k&apos;ank&apos;an-abal (Maya), k&apos;inil (Maya), k&apos;inim (Maya), k&apos;inin (Maya), kan-abal (Maya), maxpill (Mixe), mo-má (Chinanteco), mombín, mulato, poom (Maya), quínin (Huasteco), scatán (Totonaco), shipá (Totonaco), ska&apos;tan (Totonaco), xkinin-hobó (Maya), xobo (Huasteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Paullinia pinnata</taxonRankValue>
                     <commonName>barbasco, bejuco de siete corazones, bejuco vaquero, bejuquillo, chéen aak&apos; (Maya), costilla de vaca, sakan aak&apos; (Maya), salat-xiu (Maya), siete corazones</commonName>
                 </taxonomicClassification>
@@ -1490,6 +1483,16 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Inga punctata</taxonRankValue>
                     <commonName>acotope, cal-oni (Totonaco), caom (Totonaco), chalahuite blanco, chalahuite de cerro, chalahuite negro, chelele (Tseltal), coajinicuil de rayo, jinicuil (Maya), saskakalakalam (Totonaco), tepexalahuit (Náhuatl), tzelele (Lacandón), vaina, vainilla, vainillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Heliotropium angiospermum</taxonRankValue>
+                    <commonName>alacrancillo, arete, codzne max (Maya), cola de alacrán, cola de escorpión, cola de gato, cola de mico, cola de mono, colar de alacrán, hierba de chatilla, hierba de fuego, hierba del alacrán, hierba del negro, hierba del sapo, ix tasuk (Tepehua), ix tlajak mextun (Totonaco), juche&apos; (Maya), kot&apos;s-ne-maax (Maya), lee maxi (Maya), macapura (Guarijío), me&apos;ex nuk xiib (Maya), ne ma&apos;ax (Maya), ne&apos; maax (Maya), ne&apos; miij (Maya), ne&apos; sinan (Maya), ne&apos;miis (Maya), ne-maax (Maya), ne-mis (Maya), nej ma&apos;ax (Maya), nej maax (Maya), nejmaax (Maya), nemaax (Maya), nemax (Maya), njma&apos;ax (Maya), rabanico, rabo de mico, taseuyu-túan (Totonaco), uña de gato, wew tdiniy (Huasteco), x nemaax (Maya), xneej maax (Maya), xnej maax (Maya), xnemax (Maya), xtáulun (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Spondias mombin</taxonRankValue>
+                    <commonName>abalil k&apos;aax (Maya), axócotl (Náhuatl), catan (Tepehua), ciruela, ciruela agria, ciruela amarilla, ciruela campechana, ciruela colorada, ciruela de México, ciruela de monte, ciruela de venado, ciruela del país, ciruela roja, ciruela tabasqueña, ciruelas curtidas, ciruelo, ciruelo agrio, ciruelo de monte, ciruelo mango, ciruelo ojo, ciruelo rojo cimarrón, ciruelo silvestre, cuauhxocot (Náhuatl), huhub (Maya), jobillo, jovo, jujuub (Maya), k&apos;ank&apos;an-abal (Maya), k&apos;inil (Maya), k&apos;inim (Maya), k&apos;inin (Maya), kan-abal (Maya), maxpill (Mixe), mo-má (Chinanteco), mombín, mulato, poom (Maya), quínin (Huasteco), scatán (Totonaco), shipá (Totonaco), ska&apos;tan (Totonaco), xkinin-hobó (Maya), xobo (Huasteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1528,7 +1531,7 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cornutia grandifolia</taxonRankValue>
-                    <commonName>bastón de vieja, cauhuiteconi (Náhuatl), lat-ché (Maya), lengua de vaca, loob che&apos; (Maya), naranjillo, palo de hormiga, palo gusano, tabaquillo cimarrón, tzultesnuk (Maya), xoolte&apos; xnuuk (Maya)</commonName>
+                    <commonName>bastón de vieja, cauhuiteconi (Náhuatl), lat-ché (Maya), lengua de vaca, loob che&apos; (Maya), naranjillo, palo de hormiga, palo gusano, tabaquillo cimarrón, tzultesnuk (Maya), xóolte&apos; xnuuk (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1598,11 +1601,6 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cuscuta (Grammica) americana</taxonRankValue>
                     <commonName>cuaan (Mixteco), cuerda de violín, cuscuta, k&apos;an-le-kay (Maya), tiripo (Tarasco), tripa de Judas, zacatlascale (Náhuatl)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Sagittaria lancifolia</taxonRankValue>
-                    <commonName>cola de lagarto, cola de pato, lirio</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1768,7 +1766,7 @@ Familia: Heliotropiaceae, Rubiaceae, Malpighiaceae, Poaceae, Malvaceae, Asterace
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1828,34 +1826,6 @@ con flores como cocoteros, dátiles, palmas, palmeras, palmitos
 con flores como lirios acuáticos
 con flores como manzanas de los elefantes
 con flores como muérdagos, sándalos
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africa
-con flores, con semillas, con frutos como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
-con flores, con semillas, con frutos como achiotes, algodón, baobabs, cacao, ceibas, flor de Jamaica, flor de manita, jonote, malvas, pochotes
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como alcatraces, anturios, cunas de Moisés, filodendros, hojas elegantes, lentejas de agua
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como almendras, amates, capulines, cerezas, chabacanos, ciruelas, duraznos, frambuesas, fresas, higos, manzanas, marihuana, matapalos, membrillos, peras, rosas, zarzamoras
-con flores, con semillas, con frutos como amapolas, chicalotes
-con flores, con semillas, con frutos como anís, apios, cilantros, eneldos, ginseng, hiedras, perejil, zanahorias
-con flores, con semillas, con frutos como arándanos, árboles del chicle, argán, avellanas del Brasil, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, ocotillos, zapotes
-con flores, con semillas, con frutos como aretes, eucaliptos, flores de cepillo, granadas, guayabas
-con flores, con semillas, con frutos como arúgulas, berros, brócolis, coles, coliflores, kales, mastuerzos, moringas, mostazas, papayas, rábanos
-con flores, con semillas, con frutos como aves del paraíso, cañas de indias, cúrcumas, jengibres, plátanos
-con flores, con semillas, con frutos como barbascos, camotes ñame
-con flores, con semillas, con frutos como begonias, calabazas, chayotes, melones, pepinos, sandías
-con flores, con semillas, con frutos como berenjena, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
-con flores, con semillas, con frutos como café, flores de mayo, gardenias
-con flores, con semillas, con frutos como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
-con flores, con semillas, con frutos como cereales, heno, juncos, pastos terrestres, piña, tules
-con flores, con semillas, con frutos como cocoteros, dátiles, palmas, palmeras, palmitos
-con flores, con semillas, con frutos como gobernadoras, guayacanes
-con flores, con semillas, con frutos como lirios acuáticos
-con flores, con semillas, con frutos como muérdagos, sándalos
-con flores, con semillas, con frutos como pimientas
-con flores, con semillas, con frutos como uvas
-con flores, con semillas, con frutos: carnívoras, insectívoras
-con flores, con semillas, con frutos: nenúfares
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
 sin flores: helechos y afines</descriptorValue>
                     </descriptor>
@@ -1866,8 +1836,8 @@ sin flores: helechos y afines</descriptorValue>
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:21Z</dateStamp>
-                <citation>Gutiérrez Báez C, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). La vegetación y flora de las Lagunas de Catazajá-Emiliano Zapata. Version 1.17. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xdnj12 accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:31Z</dateStamp>
+                <citation>Gutiérrez Báez C, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). La vegetación y flora de las Lagunas de Catazajá-Emiliano Zapata. Version 1.18. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/xdnj12 accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-R038-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1902,6 +1872,13 @@ sin flores: helechos y afines</descriptorValue>
                     <collectionIdentifier>SNIB-R038-R038912F-ND</collectionIdentifier>
                     <collectionName>Herbario Etnobotánico;UCAM;Centro de Investigaciones Históricas y Sociales, Universidad Autónoma de Campeche;CIHS-UAC</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>228</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>

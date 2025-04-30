@@ -85,17 +85,6 @@ xml:lang="en">
         </metadataProvider>
         <associatedParty>
             <individualName>
-                <givenName>Laura</givenName>
-                <surName>Russell</surName>
-            </individualName>
-            <organizationName>VertNet</organizationName>
-            <positionName>Programmer</positionName>
-            <electronicMailAddress>larussell@vertnet.org</electronicMailAddress>
-            <onlineUrl>http://www.vertnet.org</onlineUrl>
-            <role>PROGRAMMER</role>
-        </associatedParty>
-        <associatedParty>
-            <individualName>
                 <givenName>David</givenName>
                 <surName>Bloom</surName>
             </individualName>
@@ -103,16 +92,6 @@ xml:lang="en">
             <positionName>Coordinator</positionName>
             <electronicMailAddress>dbloom@vertnet.org</electronicMailAddress>
             <onlineUrl>http://www.vertnet.org</onlineUrl>
-            <role>PROGRAMMER</role>
-        </associatedParty>
-        <associatedParty>
-            <individualName>
-                <givenName>John</givenName>
-                <surName>Wieczorek</surName>
-            </individualName>
-            <organizationName>Museum of Vertebrate Zoology at UC Berkeley</organizationName>
-            <positionName>Information Architect</positionName>
-            <electronicMailAddress>tuco@berkeley.edu</electronicMailAddress>
             <role>PROGRAMMER</role>
         </associatedParty>
         <associatedParty>
@@ -127,11 +106,11 @@ xml:lang="en">
             <role>POINT_OF_CONTACT</role>
         </associatedParty>
         <pubDate>
-                2024-10-02
+                2025-04-02
         </pubDate>
         <language>ENGLISH</language>
         <abstract>
-            The Herbarium contains well over 82,000 catalogued plant specimens. Overall geographic content of the Herbarium is approximately as follows: Texas, 24%; New Mexico, 22%; other USA, 32%; Mexico, 7%; other world, 15%. Herbarium materials at UTEP that are of special interest include an extensive representation of the floras of the desert mountain ranges of southern New Mexico and western Texas partially from a thorough floral survey and inventory across an east-west transect running from the Guadalupe/Davis Mountains of Texas to the Chiricahua Mountains of Arizona; voucher samples of specimens from which nectar samples were collected for the nectar chemistry research of C. E. Freeman and W. H. Reid; a seed collection, representing more than 800 species of mostly Southwestern taxa with individual samples mounted on slides and cross-indexed to their source sheets in the main herbarium collection; a cryptogamic collection in excess of 650 specimens, predominately lichens and mosses from various areas in southwestern North America, with significant collections of local specimens used for baseline data in studies by R. D. Worthington and his students on air pollution effects in the El Paso/Ciudad Juarez area; a synoptic collection from White Sands National Monument, representing survey work performed by W. H. Reid during the early 1970&#39;s.
+            <para>The Herbarium contains well over 82,000 catalogued plant specimens. Overall geographic content of the Herbarium is approximately as follows: Texas, 24%; New Mexico, 22%; other USA, 32%; Mexico, 7%; other world, 15%. Herbarium materials at UTEP that are of special interest include an extensive representation of the floras of the desert mountain ranges of southern New Mexico and western Texas partially from a thorough floral survey and inventory across an east-west transect running from the Guadalupe/Davis Mountains of Texas to the Chiricahua Mountains of Arizona; voucher samples of specimens from which nectar samples were collected for the nectar chemistry research of C. E. Freeman and W. H. Reid; a seed collection, representing more than 800 species of mostly Southwestern taxa with individual samples mounted on slides and cross-indexed to their source sheets in the main herbarium collection; a cryptogamic collection in excess of 650 specimens, predominately lichens and mosses from various areas in southwestern North America, with significant collections of local specimens used for baseline data in studies by R. D. Worthington and his students on air pollution effects in the El Paso/Ciudad Juarez area; a synoptic collection from White Sands National Monument, representing survey work performed by W. H. Reid during the early 1970&amp;#39;s.</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -160,7 +139,7 @@ xml:lang="en">
         </distribution>
         <distribution scope="document">
             <online>
-                <url function="download">http://ipt.vertnet.org:8080/ipt/archive.do?r=utep_herb</url>
+                <url function="download">https://ipt.vertnet.org/archive.do?r=utep_herb</url>
             </online>
         </distribution>
         <coverage>
@@ -245,8 +224,8 @@ xml:lang="en">
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:51Z</dateStamp>
-                <citation>Mayfield-Meyer T, Zhuang V (2024). UTEP Plants (Arctos). Version 5.96. University of Texas at El Paso Biodiversity Collections. Occurrence dataset https://doi.org/10.15468/yhb6ky accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:32Z</dateStamp>
+                <citation>Mayfield-Meyer T, Zhuang V (2025). UTEP Plants (Arctos). Version 5.101. University of Texas at El Paso Biodiversity Collections. Occurrence dataset https://doi.org/10.15468/yhb6ky accessed via GBIF.org on 2025-04-29.</citation>
             </gbif>
         </metadata>
     </additionalMetadata>

@@ -16,7 +16,6 @@ xml:lang="es">
             <organizationName>Instituto de Ecología AC</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Carretera antigua a Coatepec # 351</deliveryPoint>
                 <city>Xalapa</city>
                 <administrativeArea>Veracruz</administrativeArea>
                 <postalCode>91070</postalCode>
@@ -44,22 +43,23 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
             <para>El manejo de abejas nativas o meliponicultura es una actividad importante en diferentes regiones de México. Este trabajo parte de la importancia que guarda el estudio de esta actividad como práctica tradicional con importancia biocultural. En particular, la región Totonaca que incluye diferentes municipios de Puebla y Veracruz, guarda especial importancia a este respecto, ya que el manejo de abejas nativas es una práctica extendida en la que se aprovecha una gran diversidad de abejas que se benefician de diferentes ecosistemas. Su estudio abre la oportunidad para entender aspectos sobre el manejo de abejas nativas y su relación con los paisajes , incluyendo su respuesta a las tendencias actuales de cambios en los sistemas productivos. 
 
 En el presente trabajo planteamos realizar investigación sobre el manejo de abejas nativas (meliponinos) en relación a los paisajes en Atzalan, Veracruz. Esto se desarrollará al generar y sistematizar información sobre: 1) sistemas de crianza de abejas nativas y usos que se le da a los productos de la colmena, así como su papel en el sistema de actividades de las familias, para conocer la importancia de la actividad en la zona y generar un registro de este importante legado biocultural; 2). la caracterización de la configuración del paisaje del municipio de Atzalan y su cambio en el tiempo desde 1990, para entender los procesos de cambio en el uso del suelo y cobertura vegetal y caracterizar los paisajes donde se practica la meliponicultura, así como los retos que esta enfrenta; 3) describir la flora néctar-polinífera y su fenología reproductiva en los paisajes donde se realiza la meliponicultura, lo que nos permitirá conocer la relación de la producción de miel con los paisajes en los que se practica la actividad, así como con la flora nativa presente en los remanentes de vegetación natural y en los diferentes sistemas productivos; y 4) identificar las características fisicoquímicas y organolépticas, así como la producción de mieles en paisajes seleccionados del municipio, lo que nos permitirá entender la contribución en cuanto a cantidad (producción) y calidad (características organolépticas y fisicoquímicas) de los paisajes en donde se ubican los meliponarios. 
-El resultado de la investigación propuesta permitirá fortalecer los sistemas de manejo de las diferentes especies de meliponinos que son aprovechadas, pues se generará información sobre la relación que guardan diferentes paisajes y sus elementos con la producción de miel y otros productos de la colmena. Lo anterior fortalecerá el conocimiento para proponer una meliponicultura en estrecha relación con actividades de conservación, tanto de abejas como de flora nativa.</para>
-<para>Reino: 2
+El resultado de la investigación propuesta permitirá fortalecer los sistemas de manejo de las diferentes especies de meliponinos que son aprovechadas, pues se generará información sobre la relación que guardan diferentes paisajes y sus elementos con la producción de miel y otros productos de la colmena. Lo anterior fortalecerá el conocimiento para proponer una meliponicultura en estrecha relación con actividades de conservación, tanto de abejas como de flora nativa. 
+</para><para>Reino: 2
 Filo: 2
-Clase: 2
+Clase: 3
 Orden: 30
 Familia: 54
 Género: 118
 Subgénero: 3
-Especie: 137</para>
+Especie: 137
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -94,12 +94,12 @@ Especie: 137</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (PUEBLA, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
+                <geographicDescription>País: MEXICO (VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-97.986</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-96.986</eastBoundingCoordinate>
-                    <northBoundingCoordinate>19.995</northBoundingCoordinate>
-                    <southBoundingCoordinate>19.82</southBoundingCoordinate>
+                    <westBoundingCoordinate>-97.986083</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-96.986083</eastBoundingCoordinate>
+                    <northBoundingCoordinate>19.994833</northBoundingCoordinate>
+                    <southBoundingCoordinate>19.81975</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -117,7 +117,7 @@ Especie: 137</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Animalia, Plantae
 Filo: Arthropoda, Tracheophyta
-Clase: Insecta, Equisetopsida
+Clase: Insecta, Magnoliopsida, Pinopsida
 Orden: Hymenoptera, Huerteales, Asterales, Malpighiales, Myrtales, Sapindales, Gentianales, Rosales, Lamiales, Laurales, Ericales, Fabales, Santalales, Malvales, Dipsacales, Caryophyllales, Apiales, Pinales, Crossosomatales, Celastrales, Solanales, Ranunculales, Vitales, Saxifragales, Brassicales, Magnoliales, Arecales, Fagales, Metteniusales, Boraginales
 Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, Sapindaceae, Apocynaceae, Cannabaceae, Rubiaceae, Lamiaceae, Lauraceae, Actinidiaceae, Fabaceae, Loranthaceae, Primulaceae, Anacardiaceae, Rosaceae, Urticaceae, Myrtaceae, Malvaceae, Moraceae, Rutaceae, Malpighiaceae, Sapotaceae, Adoxaceae, Amaranthaceae, Meliaceae, Araliaceae, Pinaceae, Salicaceae, Burseraceae, Staphyleaceae, Celastraceae, Solanaceae, Marcgraviaceae, Papaveraceae, Vitaceae, Scrophulariaceae, Verbenaceae, Ulmaceae, Altingiaceae, Caricaceae, Magnoliaceae, Arecaceae, Clethraceae, Fagaceae, Bignoniaceae, Rhamnaceae, Metteniusaceae, Menispermaceae, Ranunculaceae, Acanthaceae, Lythraceae, Heliotropiaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -142,7 +142,11 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1051,12 +1055,12 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Viguiera cordata</taxonRankValue>
-                    <commonName>acahual cimarrón, acahual cimarrón, acahual macho, mozote amarillo</commonName>
+                    <commonName>acahual cimarrón, acahual cimarrón, acahual macho, hierba acahualera, mozote amarillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Cornutia pyramidata</taxonRankValue>
-                    <commonName>flor morada, tepozán, tepozán, tepozán grande, bastón de vieja, cauhuiteconi (Náhuatl), lat-ché (Maya), lengua de vaca, loob che&apos; (Maya), naranjillo, palo de hormiga, palo gusano, tabaquillo cimarrón, tzultesnuk (Maya), xoolte&apos; xnuuk (Maya)</commonName>
+                    <commonName>flor morada, tepozán, tepozán, tepozán grande, bastón de vieja, cauhuiteconi (Náhuatl), lat-ché (Maya), lengua de vaca, loob che&apos; (Maya), naranjillo, palo de hormiga, palo gusano, tabaquillo cimarrón, tzultesnuk (Maya), xóolte&apos; xnuuk (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1279,11 +1283,6 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Bursera simaruba</taxonRankValue>
-                    <commonName>chaca, chaca hembra, cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Eugenia capuli</taxonRankValue>
                     <commonName>capulín zorrillo, aca-lasni (Totonaco), akalastni (Totonaco), arrayán, calarni (Totonaco), capulincillo, capulín, capulín agarroso, capulín corona, capulín de mayo, capulín de zorrillo, clavo, escobilla, escobillo, frutilla, guayabilla, guayabillo, guayabillo cimarrón, ishlacastápu tamacni (Totonaco), kalasknek (Totonaco), lilh&apos;palh&apos;na (Totonaco), mapicil (Náhuatl), mote, negritos, peh te (Náhuatl), pejte (Huasteco), pimientilla, piste (Huasteco), romerillo, tekowit (Náhuatl), tzajal chijt (Tseltal), vainilla, yagalán (Zapoteco)</commonName>
                 </taxonomicClassification>
@@ -1296,6 +1295,11 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Conostegia xalapensis</taxonRankValue>
                     <commonName>tesgua, tesgua rosa, teshuilla, capulincillo, capulín, capulín agarroso, capulín de cotorro, capulín de monte, capulín de nigua, capulín de potrero, capulín de sabana, chicabté (Huasteco), cinco negritos, frutilla, frutillo, garambullo, granadillo, hierba del coyote, hoja ceniza, hojalatillo, hojalatillo blanco, ishlacastapu-mashtansics (Totonaco), limoncillo, madroño, mora, morita, mujut (Totonaco), nigua capolín, pasita, peonía, teshua capolin (Náhuatl), xococ-cuáhuitl (Náhuatl), zarzaparrilla</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bursera simaruba</taxonRankValue>
+                    <commonName>chaca, chaca hembra, cacho de toro, cha-kah (Maya), chaca, chaca o chacah (Maya), chacaj (Tojolabal), chacaj o chakaj (Tojolabal), chachah (Maya), chakah (Maya), chakaj (Maya), chico huiste, chicohuiste, chocogüite, chocohuite, cohuite (Náhuatl), copal, copalillo, cuajiote (Náhuatl), huk&apos; up (Maya), huk&apos;up (Maya), jiote (Náhuatl), jiote colorado (Náhuatl), jobillo, lon-sha-la-ec (Chontal de Oaxaca), mulato, palo chino, palo colorado, palo culebro, palo jiote, palo jito, palo liso, palo mulato, palo retinto, papelillo, piocha, quiote, songolica o zongolica (Náhuatl), suchicopal (Náhuatl), ta&apos;sun (Totonaco), tacamaca (Náhuatl), thi-un (Chinanteco), torote, torote colorado, tusun (Totonaco), tzaca (Huasteco), yaga-guito (Zapoteco), yala-guito (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1320,7 +1324,7 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Gliricidia sepium</taxonRankValue>
-                    <commonName>cocuite, San José, aga-le (Zapoteco), balche&apos;ke&apos; (Maya), balché ke (Maya), cacahuanal (Náhuatl), cacahuananche, cacahuanitzin (Náhuatl), cocoite, cocoito, cuacuite, cuchunuc (Zoque), flor de San José, flor de sol, frijolillo, guie-niiza (Zapoteco), guie-nizza (Zapoteco), ja&apos;abin (Maya), jelelte (Huasteco), k&apos; uchunuk (Maya), k&apos; uyutunk (Maya), k&apos;axab yuuk (Maya), lipa-ca-sui-la (Chontal de Oaxaca), ma-tau-mó (Chinanteco), madre cacao, madre de cacao, mata rata, mata ratón, matarrata, muiti (Otomí), palo de corral, palo de sol, palo negro, primavera, sak (Maya), sak ya&apos; aab (Maya), sak ya&apos;ab (Maya), sak ye&apos; eb (Maya), sak-yab (Maya), sakyab (Maya), sas yu&apos; ab ja&apos; abin (Maya), sayab (Maya), sayauiab (Maya), sayuiab (Maya), taxnikiwi (Totonaco), trebol, tunduti (Mixteco), ujcum (Tseltal), xab-yaab (Maya), xabyaab (Maya), xak-yaab (Maya), xk&apos; aan lool (Maya), yaga-le (Zapoteco)</commonName>
+                    <commonName>cocuite, San José, aga-le (Zapoteco), balche&apos;ke&apos; (Maya), balché ke (Maya), cacahuanal (Náhuatl), cacahuananche, cacahuanitzin (Náhuatl), cocoito, cocoíte, cuacuite, cuchunuc (Zoque), flor de San José, flor de sol, frijolillo, guie-niiza (Zapoteco), guie-nizza (Zapoteco), ja&apos;abin (Maya), jelelte (Huasteco), k&apos; uchunuk (Maya), k&apos; uyutunk (Maya), k&apos;axab yuuk (Maya), lipa-ca-sui-la (Chontal de Oaxaca), ma-tau-mó (Chinanteco), madre cacao, madre de cacao, mata rata, mata ratón, matarrata, muiti (Otomí), palo de corral, palo de sol, palo negro, primavera, sak (Maya), sak ya&apos; aab (Maya), sak ya&apos;ab (Maya), sak ye&apos; eb (Maya), sak-yab (Maya), sakyab (Maya), sas yu&apos; ab ja&apos; abin (Maya), sayab (Maya), sayauiab (Maya), sayuiab (Maya), taxnikiwi (Totonaco), trebol, tunduti (Mixteco), ujcum (Tseltal), xab-yaab (Maya), xabyaab (Maya), xak-yaab (Maya), xk&apos; aan lool (Maya), yaga-le (Zapoteco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1350,7 +1354,7 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Pluchea symphytifolia</taxonRankValue>
-                    <commonName>duraznillo, duraznillo, calabacillo, Santa María, cola de faisán, hierba amarga, hierba de Santa María, jeguite de sabañón (Náhuatl), k&apos;anan (Maya), lengua de vaca, molulo (Tarasco), oreja de burro, rabo de faisán, rabo de lagarto, tabaco cimarrón, tabajo cimarrón, tenehiate (Náhuatl), ya&apos;ax chulkeej (Maya), ya&apos;ax-ta (Maya), árnica</commonName>
+                    <commonName>duraznillo, duraznillo, calabacillo, Santa María, arnica, cola de faisán, hierba amarga, hierba de Santa María, jeguite de sabañón (Náhuatl), k&apos;anan (Maya), lengua de vaca, molulo (Tarasco), oreja de burro, rabo de faisán, rabo de lagarto, tabaco cimarrón, tabajo cimarrón, tenehiate (Náhuatl), ya&apos;ax chulkeej (Maya), ya&apos;ax-ta (Maya)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1439,7 +1443,7 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Casimiroa edulis</taxonRankValue>
-                    <commonName>zapote blanco, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzápotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
+                    <commonName>zapote blanco, aajaté (Tojolabal), chapote, cochitzápotl (Náhuatl), guia (Zapoteco), hoja de zapote blanco, istöc (Náhuatl), istöctzapotl (Náhuatl), izapot (Náhuatl), iztaczápotl (Náhuatl), ma-yon-jih (Chinanteco), scu&apos;cu&apos;lu-jaca (Totonaco), scuculu&apos;jac (Totonaco), se-ney (Chinanteco), tzapotl (Náhuatl), uauata (Tarasco), urata (Tarasco), uruata-urapite (Tarasco), xizetua (Popoloca), yaga-gui (Zapoteco), yaga-guia (Zapoteco), zapote, zapote amarillo, zapote blanco, zapote borracho, zapote dormilón, zapotillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -1657,7 +1661,7 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -1674,6 +1678,13 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                 <title>Manejo de abejas nativas y la dinámica de cambio de cobertura de suelo del municipio de Atzalan, Veracruz</title>
                 <personnel>
                     <individualName>
+                    <givenName>Rémy Benoit Marie</givenName>
+                    <surName>Vandame</surName>
+                    </individualName>
+                    <role>PRINCIPAL_INVESTIGATOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
                     <givenName>Rogel</givenName>
                     <surName>Villanueva Gutiérrez</surName>
                     </individualName>
@@ -1685,13 +1696,6 @@ Familia: Apidae, Dipentodontaceae, Asteraceae, Euphorbiaceae, Melastomataceae, S
                     <surName>Porter Bolland</surName>
                     </individualName>
                     <role>CONTENT_PROVIDER</role>
-                </personnel>
-                <personnel>
-                    <individualName>
-                    <givenName>Rémy Benoit Marie</givenName>
-                    <surName>Vandame</surName>
-                    </individualName>
-                    <role>PRINCIPAL_INVESTIGATOR</role>
                 </personnel>
                 <abstract>
                     <para>El manejo de abejas nativas o meliponicultura es una actividad importante en diferentes regiones de México. Este trabajo parte de la importancia que guarda el estudio de esta actividad como práctica tradicional con importancia biocultural. En particular, la región Totonaca que incluye diferentes municipios de Puebla y Veracruz, guarda especial importancia a este respecto, ya que el manejo de abejas nativas es una práctica extendida en la que se aprovecha una gran diversidad de abejas que se benefician de diferentes ecosistemas. Su estudio abre la oportunidad para entender aspectos sobre el manejo de abejas nativas y su relación con los paisajes , incluyendo su respuesta a las tendencias actuales de cambios en los sistemas productivos. 
@@ -1706,6 +1710,7 @@ El resultado de la investigación propuesta permitirá fortalecer los sistemas d
                     <descriptor name="generic" citableClassificationSystem="false">
                         <descriptorValue>Invertebrados
 Plantas
+con flores
 con flores como abedules, avellanas, encinos, hayas, nueces de castilla, nueces pecanas, pino de los bobos, robles
 con flores como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africanas
 con flores como acelgas, amarantos, betabeles, biznagas, bugambilias, claveles, epazotes, espinacas, huauhzontles, jojobas, nopales, quelites, quinoas, saguaros, trigos serracenos, tunas, verdolagas, xoconostles
@@ -1733,7 +1738,6 @@ con flores como palos verdes
 con flores como plantas del aceite negro
 con flores como uvas
 insectos como abejas, abejorros, avispas, hormigas
-NO DISPONIBLE
 sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
@@ -1743,8 +1747,8 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:49Z</dateStamp>
-                <citation>Porter Bolland L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Manejo de abejas nativas y la dinámica de cambio de cobertura de suelo del municipio de Atzalan, Veracruz. Version 1.9. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bkkcrv accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:42Z</dateStamp>
+                <citation>Porter Bolland L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Manejo de abejas nativas y la dinámica de cambio de cobertura de suelo del municipio de Atzalan, Veracruz. Version 1.10. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/bkkcrv accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-NE010-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -1777,19 +1781,18 @@ sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-NE010-NE0101901F_SIB2019.10.15-ND</collectionIdentifier>
-                    <collectionName>Herbario;XAL;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
+                    <collectionName>REVISADO;NO APLICA;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
                 </collection>
                 <collection>
                     <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
                     <collectionIdentifier>SNIB-NE010-NE0101901F_SIB2019.10.15-ND</collectionIdentifier>
-                    <collectionName>REVISADO;NO APLICA;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
+                    <collectionName>Herbario;XAL;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
                 </collection>
-                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
                 <jgtiCuratorialUnit>
                     <jgtiUnitType>Ejemplar</jgtiUnitType>
                     <jgtiUnitRange>
                         <beginRange>1</beginRange>
-                        <endRange>2</endRange>
+                        <endRange>426</endRange>
                     </jgtiUnitRange>
                 </jgtiCuratorialUnit>
             </gbif>

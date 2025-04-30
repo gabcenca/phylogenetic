@@ -18,7 +18,33 @@ library(ggplot2)
 library(here)
 library(sf)
 library(here)
+library(rgbif)
+
 ```
+
+-We divide the occurrences data of GBIF in three parts, because that way the archives can be upload to git because of the size. 
+
+
+```{r}
+ # --- Load table ---
+recordsGbif_raw <- read_delim(here::here("data/in/gbif_dwc/occurrence.txt"), 
+                           delim = "\t", escape_double = FALSE, 
+                           trim_ws = TRUE)
+ 
+tercio <- round(nrow(recordsGbif_raw)/3)
+ 
+list_recordsGbif_raw <- list(recordsGbif_raw[1:tercio,],
+                              recordsGbif_raw[(tercio+1):(2*tercio),],
+                              recordsGbif_raw[(2*tercio+1):nrow(recordsGbif_raw),])
+ 
+lapply(list_recordsGbif_raw, dim)
+ 
+lapply(seq_along(list_recordsGbif_raw), function(x){write.csv(list_recordsGbif_raw[[x]],
+       file = paste0(here::here("data/in/gbif_dwc/division_occurrence/occurrence_"),x,".csv"), row.names=F)})
+```
+
+
+
 
 -   Load raw data from GBIF and Red de Herbarios Mexicanos records of oaks in Mexico. Also load the species name matching data frame that was generated with the backbone of gbif.
 
@@ -42,31 +68,47 @@ recordsHerbario_raw <- fread(here::here("data/in/herbariomex_dw/occurrences.csv"
 -Compare the names from gbif and Red de Herbarios Mexicanos with the backbone of gbif, so we can know which are synonyms and which are not.
 
 ```{r}
-library(rgbif)
-library(readr)
-library(dplyr)
 
 
-# Función para consultar cada nombre en el backbone de GBIF
-match_species <- function(name) {
+match_species <- function(name, index = NULL, total = NULL) {
+  if (!is.null(index) && !is.null(total)) {
+    cat(sprintf("Procesando %d de %d: %s\n", index, total, name))
+  } else {
+    cat(sprintf("Procesando: %s\n", name))
+  }
+  
   result <- name_backbone(name = name)
   
   if (is.null(result)) {
-    # Si no encuentra resultado, devuelve NA
     return(data.frame(verbatim_name = name, usageKey = NA, canonicalName = NA, status = NA, confidence = NA))
   } else {
-    # Si encuentra, devuelve los datos como data.frame
     result_df <- as.data.frame(result)
-    result_df$verbatim_name <- name  # Guarda el nombre original
+    result_df$verbatim_name <- name
     return(result_df)
   }
 }
 
-# Aplicar la función a las dos bases de datos
+scientific_names_gbif <- recordsGbif_raw %>% pull(scientificName)
+total_gbif_names <- length(scientific_names_gbif)
+
+backbone_gbif <- lapply(seq_along(scientific_names_gbif), function(i) {
+  match_species(scientific_names_gbif[i], index = i, total = total_gbif_names)
+}) %>% bind_rows()
+
+
+scientific_names_herb <- recordsHerbario_raw %>% pull(scientificName)
+total_herb_names <- length(scientific_names_herb)
+
+backbone_gbif <- lapply(seq_along(scientific_names_herb), function(i) {
+  match_species(scientific_names_herb[i], index = i, total = total_herb_names)
+}) %>% bind_rows()
+
+
 backbone_gbif <- recordsGbif_raw %>%
   pull(scientificName) %>%                      # Extrae solo la columna species
   lapply(match_species) %>%              # Aplica la función a cada nombre
   bind_rows()                            # Combina los resultados
+
 
 backbone_herb <- recordsHerbario_raw %>%
   pull(scientificName) %>%                      
@@ -81,7 +123,9 @@ write_csv(backbone_gbif,
 write_csv(backbone_herb, 
           here::here("data/in/backbone/herb_final_backbone.csv"))
 
+
 ```
+
 
 
 
@@ -97,7 +141,7 @@ herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.
 
 # --- Add a unique id to each value in the gbif and herbario data frames--- 
 recordsGbif_raw <- recordsGbif_raw %>%
-  mutate(id_interno = paste0("GBIF_", row_number()))
+  mutate(id_interno = paste0("Registro_", row_number()))
 
 recordsHerbario_raw <- recordsHerbario_raw %>%
   mutate(id_interno = paste0("Herb_", row_number()))

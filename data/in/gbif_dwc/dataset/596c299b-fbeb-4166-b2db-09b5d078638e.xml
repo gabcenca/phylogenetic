@@ -18,9 +18,8 @@ xml:lang="es">
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</organizationName>
             <positionName>Responsable</positionName>
             <address>
-                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903</deliveryPoint>
-                <city>CDMX, alcaldía Tlalpan</city>
-                <administrativeArea>CDMX</administrativeArea>
+                <city>CDMX</city>
+                <administrativeArea>Ciudad de México</administrativeArea>
                 <postalCode>14010</postalCode>
                 <country>MEXICO</country>
             </address>
@@ -46,20 +45,20 @@ xml:lang="es">
             <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
         </metadataProvider>
         <pubDate>
-                2024-04-11
+                2025-04-01
         </pubDate>
         <language>SPANISH</language>
         <abstract>
-            <para>Base de datos con 1291 registros de ejemplares colectados por E.K. Balls en 1938. Cuenta con información de 61 nombres de familias de gimnospermas y angiospermas en los estados de Morelos, Puebla, México, Tlaxcala, Veracruz y D.F Información fue donada la Dra. Lourdes Rico del Herbario Kew, Royal Botanic Gardens. Kew, Inglaterra.</para>
-<para>Reino: 1
+            <para>Base de datos con 1291 registros de ejemplares colectados por E.K. Balls en 1938. Cuenta con información de 61 nombres de familias de gimnospermas y angiospermas en los estados de Morelos, Puebla, México, Tlaxcala, Veracruz y D.F Información fue donada la Dra. Lourdes Rico del Herbario Kew, Royal Botanic Gardens. Kew, Inglaterra.</para><para>Reino: 1
 Filo: 1
-Clase: 1
+Clase: 2
 Orden: 27
 Familia: 55
 Género: 234
 Subgénero: 6
 Especie: 538
-Epitetoinfraespecifico: 52</para>
+Epitetoinfraespecifico: 51
+</para>
         </abstract>
         <keywordSet>
             <keyword>Occurrence</keyword>
@@ -93,12 +92,12 @@ Epitetoinfraespecifico: 52</para>
         </distribution>
         <coverage>
             <geographicCoverage>
-                <geographicDescription>País: MEXICO (DISTRITO FEDERAL, MEXICO, MORELOS, PUEBLA, TLAXCALA, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
+                <geographicDescription>País: MEXICO (, DISTRITO FEDERAL, MEXICO, MORELOS, PUEBLA, TLAXCALA, VERACRUZ DE IGNACIO DE LA LLAVE)</geographicDescription>
                 <boundingCoordinates>
-                    <westBoundingCoordinate>-97.1</westBoundingCoordinate>
-                    <eastBoundingCoordinate>-96.935</eastBoundingCoordinate>
-                    <northBoundingCoordinate>19.637</northBoundingCoordinate>
-                    <southBoundingCoordinate>19.588</southBoundingCoordinate>
+                    <westBoundingCoordinate>-97.16732</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-96.934999</eastBoundingCoordinate>
+                    <northBoundingCoordinate>19.637072</northBoundingCoordinate>
+                    <southBoundingCoordinate>19.494445</southBoundingCoordinate>
                 </boundingCoordinates>
             </geographicCoverage>
             <temporalCoverage>
@@ -116,7 +115,7 @@ Epitetoinfraespecifico: 52</para>
             <taxonomicCoverage>
                 <generalTaxonomicCoverage>Reino: Plantae
 Filo: Tracheophyta
-Clase: Equisetopsida
+Clase: Magnoliopsida, Pinopsida
 Orden: Saxifragales, Poales, Lamiales, Malpighiales, Rosales, Asterales, Caryophyllales, Brassicales, Fabales, Cucurbitales, Myrtales, Ericales, Solanales, Santalales, Geraniales, Gentianales, Commelinales, Apiales, Asparagales, Fagales, Malvales, Boraginales, Cupressales, Oxalidales, Dipsacales, Pinales, Ranunculales
 Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asteraceae, Caryophyllaceae, Brassicaceae, Fabaceae, Scrophulariaceae, Verbenaceae, Begoniaceae, Onagraceae, Ericaceae, Convolvulaceae, Loranthaceae, Geraniaceae, Gentianaceae, Bignoniaceae, Cyperaceae, Commelinaceae, Solanaceae, Apocynaceae, Apiaceae, Amaryllidaceae, Orobanchaceae, Salicaceae, Iridaceae, Fagaceae, Lamiaceae, Urticaceae, Cistaceae, Campanulaceae, Hypericaceae, Amaranthaceae, Betulaceae, Asparagaceae, Rubiaceae, Melastomataceae, Araliaceae, Boraginaceae, Violaceae, Cupressaceae, Oxalidaceae, Lentibulariaceae, Malvaceae, Caprifoliaceae, Hydrophyllaceae, Polygonaceae, Pinaceae, Adoxaceae, Bromeliaceae, Berberidaceae, Lythraceae, Calceolariaceae</generalTaxonomicCoverage>
                 <taxonomicClassification>
@@ -129,7 +128,11 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Class</taxonRankName>
-                    <taxonRankValue>Equisetopsida</taxonRankValue>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Order</taxonRankName>
@@ -1897,7 +1900,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
-                    <taxonRankValue>Salvia polystachya</taxonRankValue>
+                    <taxonRankValue>Salvia polystachia</taxonRankValue>
                     <commonName>cenicilla, chía, romerillo, salvia de Guadalajara, saponaria</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
@@ -2178,7 +2181,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Buddleja cordata</taxonRankValue>
-                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozana, tepozán, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
+                    <commonName>chkapungut (Totonaco), lengua de toro, lengua de vaca, marrubio, palo de zorro prieto, tepozan, tepozana, tepozán blanco, tepuza (Tarasco), tzelepat (Tseltal)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2483,6 +2486,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia elegans</taxonRankValue>
+                    <commonName>hierba del barretero, k&apos;anrrejna (Mazahua), mirto, mirto chico, mirto de monte, salvia roja</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2740,7 +2744,6 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Monotropa uniflora</taxonRankValue>
-                    <commonName>pipa de indio</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -2822,6 +2825,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia cardinalis</taxonRankValue>
+                    <commonName>mirto, salvia roja, ts&apos;imbarenzé (Mazahua)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3046,7 +3050,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Bidens aurea</taxonRankValue>
-                    <commonName>aceitillo, mozote amarillo, te negro, té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
+                    <commonName>aceitillo, mozote amarillo, te negro, tzijtzim wamal (Tzeltal), té de castilla, té de milpa, xiuh-elo-quilitl (Náhuatl)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3111,7 +3115,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Hedeoma piperita</taxonRankValue>
-                    <commonName>Santo Domingo, tabaquillo</commonName>
+                    <commonName>Santo Domingo, hierba buena, tabaquillo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3198,7 +3202,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Castilleja communis</taxonRankValue>
-                    <commonName>hierba del cáncer</commonName>
+                    <commonName>cabezona, chongo de uárhi (Tarasco), cola de borrego, coral, cresta de gallo, enchilada, enchiladitas, flor de milpa, garañona, hierba del cáncer, rosilla, uitzacua (Tarasco)</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3280,6 +3284,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
                     <taxonRankValue>Salvia amarissima</taxonRankValue>
+                    <commonName>chia, chupona, mirto de campo</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Species</taxonRankName>
@@ -3942,6 +3947,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Bidens pilosa var. bimucronata</taxonRankValue>
+                    <commonName>a-cocotli (Náhuatl), acahual, acahuale blanco, aceitilla, aceitillo, amor seco, chichik-xul (Maya), corrimiento, cruceta, hierba de la culebra, k&apos;an mul (Maya), k&apos;an tumbuub (Maya), k&apos;an-mul (Maya), matsa ch&apos;ich bu&apos;ul (Maya), matsab-kitam (Maya), mozote amarillo, mozote blanco, mulito, quelem (Huasteco), rosilla, té de milpa</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -3963,6 +3969,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Ageratum corymbosum f. euryphyllum</taxonRankValue>
+                    <commonName>bola de hilo, jícama, mano de gato, mota morada</commonName>
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
@@ -3995,11 +4002,6 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 </taxonomicClassification>
                 <taxonomicClassification>
                     <taxonRankName>Infraspecific Name</taxonRankName>
-                    <taxonRankValue>Juniperus monticola f. orizabensis</taxonRankValue>
-                    <commonName>savino, cedro, cedro blanco, cedro colorado, ciprés, enebro, enebro azul, sabino</commonName>
-                </taxonomicClassification>
-                <taxonomicClassification>
-                    <taxonRankName>Infraspecific Name</taxonRankName>
                     <taxonRankValue>Salvia microphylla var. neurepia</taxonRankValue>
                     <commonName>bandera mexicana, diente de acamaya, ix tasalak (Tepehua), mirto, mirto chico, pabellón mexicano, salve real larga, salvia del monte, toronjil, toronjil de mayo</commonName>
                 </taxonomicClassification>
@@ -4029,7 +4031,7 @@ Familia: Crassulaceae, Poaceae, Plantaginaceae, Euphorbiaceae, Rosaceae, Asterac
                 <surName>Ramos Rivera</surName>
             </individualName>
             <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
-            <positionName>Dirección General de Sistemas</positionName>
+            <positionName>Directora General de Sistemas</positionName>
             <address>
                 <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
                 <city>México</city>
@@ -4085,18 +4087,8 @@ con flores como echeverias, kalanchoes, liquidámbares, siempre vivas
 con flores como geranios, malvones
 con flores como lirios acuáticos
 con flores como muérdagos, sándalos
-con flores, con semillas, con frutos como acantos, aceitunas, ajonjolís, albahacas, chías, fresnos, hierbabuenas, jacarandas, jazmines, mejoranas, mentas, olivos, oréganos, romeros, salvias, tepozanes, tomillos, toronjiles, violetas africa
-con flores, con semillas, con frutos como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
-con flores, con semillas, con frutos como ahuejotes, álamos, árboles del caucho, coca, flores de la pasión, granadas chinas, lino, mandioca, maracuyás, nanches, nochebuena, ricino, sauces, semillas de linaza, violetas
-con flores, con semillas, con frutos como alcachofas, campanitas, cempasúchil, crisantemos, dalias, estrellas de agua, gerberas, girasoles, lechugas, manzanilla, margaritas, senecios
-con flores, con semillas, con frutos como alfalfas, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, jícamas, lentejas, mezquites, tamarindos
-con flores, con semillas, con frutos como arándanos, árboles del chicle, argán, avellanas del Brasil, azáleas, belenes, camelias, chicozapotes, ébanos, karités, kiwis, madroños, mameyes, ocotillos, zapotes
-con flores, con semillas, con frutos como berenjena, camotes, chiles, floripondios, jitomates, papas, petunias, pimientos, tabacos, toloaches, tomates
-con flores, con semillas, con frutos como caobas, copales, limas, limones, naranjas, mandarinas, mangos, maples, nueces de la India, pirúles, pistaches, rudas, toronjas, zapotes blancos
-con flores, con semillas, con frutos como cereales, heno, juncos, pastos terrestres, piña, tules
 con flores: carnívoras, insectívoras
-sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas
-sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
                     </descriptor>
                 </studyAreaDescription>
             </project>
@@ -4105,8 +4097,8 @@ sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, 
     <additionalMetadata>
         <metadata>
             <gbif>
-                <dateStamp>2024-10-22T20:40:37Z</dateStamp>
-                <citation>Rico Arce M D L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Colecciones históricas de México: E.K. Balls (1938). Donación del Herbario Kew. Version 1.11. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/sccpbf accessed via GBIF.org on 2024-10-22.</citation>
+                <dateStamp>2025-04-29T16:45:52Z</dateStamp>
+                <citation>Rico Arce M D L, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Colecciones históricas de México: E.K. Balls (1938). Donación del Herbario Kew. Version 1.12. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/sccpbf accessed via GBIF.org on 2025-04-29.</citation>
                 <physical>
                     <objectName>SNIB-Z009-CSV.zip</objectName>
                     <characterEncoding>UTF-8</characterEncoding>
@@ -4141,6 +4133,13 @@ sin flores, con semillas, sin frutos como abetos, araucarias, cedros, cícadas, 
                     <collectionIdentifier>SNIB-Z009-Z009-Z01018063_SIB_2018.07.19-ND</collectionIdentifier>
                     <collectionName>Kew Herbarium;K;Royal Botanic Gardens, Kew;RBG</collectionName>
                 </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,061</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
             </gbif>
         </metadata>
     </additionalMetadata>
