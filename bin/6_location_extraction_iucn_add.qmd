@@ -47,11 +47,18 @@ hgbif_completo <- as.data.frame(points_mun_state) %>%
   select(-1, -2, -"stateProvince", -"county",-"municipality") 
 
 #Save it in a csv
-write.csv(hgbif_completo, here::here("data/in/hgbif_elev_mun.csv"))
+write.csv(hgbif_completo[,-16], here::here("data/in/hgbif_elev_mun.csv"), row.names = FALSE)
 
 ```
 
--Union of metadata from state and municipality with the IUCN conservation status. We obtained the conservation status using the script extract_IUCN.R.
+Now, execute the script 5_extract_IUCN.R that extracts the conservation status by the IUCN for each species. 
+
+```{r}
+source(here::here("bin/5_extract_IUCN.R"))
+```
+
+
+Union of metadata from state and municipality with the IUCN conservation status that we obtained in the last step.
 
 ```{r}
 

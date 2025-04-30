@@ -63,7 +63,6 @@ get_iucn <- function(genus = "Quercus", epithet){
   return(data.table(code = conservation_status_code, locations = list(locations)))
 }
 
-get_iucn(epithet = "insignis")
 
 # Split correct name to extract species epithet
 data[, epithet := str_split_i(correctname, " ",2 )]
@@ -71,13 +70,12 @@ data[, epithet := str_split_i(correctname, " ",2 )]
 # Get unique species names 
 species <- unique(data[,.(correctname,epithet)])
 species <- species[!is.na(epithet)]
-species <- species[epithet != "candicans"]
 
 # Apply get_iucn to each species name.
 status_list <- lapply(as.list(species$epithet), function(x){
   print(paste("Extracting: Quercus ",x))
   return(get_iucn(epithet = x))
-  Sys.sleep(0.9)
+  Sys.sleep(2)
 })
 
 # Convertir los valores nulos en NA

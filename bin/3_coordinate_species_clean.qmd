@@ -80,7 +80,9 @@ hgbif_clean <- hgbif_no_duplicates_clean %>%
 
 write.csv(hgbif_clean, file = here::here("data/in/hgbif_clean.csv"))
 
-data_summary <- hgbif_clean %>%
+
+##Tabla para ver generalidades
+data_summary_no_duplicates_clean <- hgbif_no_duplicates_clean %>%
   group_by(correctname) %>%
   summarise(
     n_registros = n(),

@@ -161,14 +161,14 @@ gbif_corr_raw <- gbif_corr_raw %>%
   select(scientificName, canonicalName, correctname, rank, decimalLatitude, decimalLongitude, stateProvince, county, municipality,locality, eventDate, year, month, recordedBy, id_interno,basisOfRecord)
 
 #--- Join rows from both data frames ---
-gbif_herb_raw <- bind_rows(herb_corr_raw, gbif_corr_raw)
+gbif_herb_raw_all_observations <- bind_rows(herb_corr_raw, gbif_corr_raw)
 
 ```
 
 -Then filter the records that have only genera and the records that are reliable
 ```{r}
-gbif_herb_raw <- gbif_herb_raw %>% filter(!scientificName %in% c("Quercus","Quercus L.")) %>%
-  filter(basisOfRecord %in% c("HUMAN_OBSERVATION", "PRESERVED_SPECIMEN", "OBSERVATION","PreservedSpecimen","Observation","HumanObservation","Preserved Specimen","LivingSpecimen","Foto","Ejemplar herborizado"))
+gbif_herb_raw <- gbif_herb_raw_all_observations %>% filter(!scientificName %in% c("Quercus","Quercus L.")) %>%
+  filter(!basisOfRecord %in% c("MATERIAL_SAMPLE", "MATERIAL_CITATION" ,"FOSSIL_SPECIMEN"))
 ```
 
 Write csv
