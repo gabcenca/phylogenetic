@@ -71,7 +71,7 @@ species_to_remove <- c( "Lithocarpus corneus", "Lithocarpus elegans", "Lithocarp
   "Quercus obtusanthera", "Quercus perseaefolia", "Quercus petraea", "Quercus robur",
   "Quercus robusta", "Quercus schultzei", "Quercus serrata", "Quercus suber",
   "Quercus supranitida", "Quercus tardifolia", "Quercus undata", "Quercus undulata",
-  "Quercus vallicola", "Quercus verde", "Quercus virginiana", "Quercus aculcingensis"
+  "Quercus vallicola", "Quercus verde", "Quercus virginiana", "Quercus aculcingensis", "Roldana Candicans"
 )
 
 # Removing rows where species column matches any in species_to_remove
@@ -79,6 +79,18 @@ hgbif_clean <- hgbif_no_duplicates_clean %>%
   filter(!(correctname %in% species_to_remove))
 
 write.csv(hgbif_clean, file = here::here("data/in/hgbif_clean.csv"))
+
+data_summary <- hgbif_clean %>%
+  group_by(correctname) %>%
+  summarise(
+    n_registros = n(),
+    # IUCN = unique(IUCN),
+    # elev_min = min(elevacion_inegi, na.rm = TRUE),
+    # elev_max = max(elevacion_inegi, na.rm = TRUE),
+    #seccion = first(section)
+  ) %>%
+  ungroup() %>%
+  arrange(by = n_registros)
 
 ```
 

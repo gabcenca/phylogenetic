@@ -99,21 +99,9 @@ backbone_gbif <- lapply(seq_along(scientific_names_gbif), function(i) {
 scientific_names_herb <- recordsHerbario_raw %>% pull(scientificName)
 total_herb_names <- length(scientific_names_herb)
 
-backbone_gbif <- lapply(seq_along(scientific_names_herb), function(i) {
+backbone_herb <- lapply(seq_along(scientific_names_herb), function(i) {
   match_species(scientific_names_herb[i], index = i, total = total_herb_names)
 }) %>% bind_rows()
-
-
-backbone_gbif <- recordsGbif_raw %>%
-  pull(scientificName) %>%                      # Extrae solo la columna species
-  lapply(match_species) %>%              # Aplica la función a cada nombre
-  bind_rows()                            # Combina los resultados
-
-
-backbone_herb <- recordsHerbario_raw %>%
-  pull(scientificName) %>%                      
-  lapply(match_species) %>%              
-  bind_rows()  
 
 
 # Save it
@@ -128,15 +116,16 @@ write_csv(backbone_herb,
 
 
 
-
 -Join the GBIF and Red de Herbarios Mexicanos dataframes with their species matching data frame.
 
 ```{r}
 
 # --- Load the species name matching data frame ---
-gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv"))
+gbif_nombres_backbone <- fread(here::here("data/in/backbone/gbif_nombres_backbone.csv")) %>%
+  rename(correctname = species)
 
-herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv"))
+herb_nombres_backbone <- fread(here::here("data/in/backbone/herb_final_backbone.csv")) %>%
+  rename(correctname = species)
 
 
 # --- Add a unique id to each value in the gbif and herbario data frames--- 

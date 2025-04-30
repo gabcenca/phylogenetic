@@ -36,7 +36,7 @@ hgbif_clean_coords <- hgbif_clean %>%
     decimalLongitude = as.numeric(decimalLongitude),
     decimalLatitude = as.numeric(decimalLatitude)
   ) %>%
-  select(decimalLongitude, decimalLatitude)  %>%
+  select(decimalLongitude, decimalLatitude)
 
 #Convert it into an sf object 
 
@@ -44,18 +44,6 @@ hgbif_clean_sf <- st_as_sf(hgbif_clean,coords = c("decimalLongitude", "decimalLa
 
 ```
 
-```{r}
-
-# Obtener elevación para cada punto en tu base de datos
-elev_data <- get_elev_point(hgbif_clean_sf, 
-                            src = "aws", # Usa Amazon Web Services como fuente de datos de elevación
-                            z = 7)      # Nivel de zoom (determina la precisión) 7 parece ser 1 km (https://github.com/tilezen/joerd/blob/master/docs/data-sources.md#what-is-the-ground-resolution)
-
-
-#guardar en un csv 
-write.csv(elev_data, here::here("data/in/elevation/elev_data.csv"))
-
-```
 
 
 ```{r}
@@ -102,12 +90,8 @@ hgbif_clean_elev <- hgbif_clean %>%
 -Add the elevation to the data frame we just created.
 ```{r}
 #Agregar columna de elevacion
-elev_data_elevatr <- fread(here::here("data/in/elevation/elev_data.csv"))
-
 elev_data_inegi <-
   fread(here::here("data/in/elevation/elevation_INEGI.csv"))
-
-hgbif_clean_elev$elevacion_elevatr <- elev_data_elevatr$elevation
 
 #Add INEGI elevation 
 hgbif_clean_elev$elevacion_inegi <-
