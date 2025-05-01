@@ -34,7 +34,7 @@ library(tidyverse)
 -   Enter the stack of rasters of the absence/presence of the 177 species we made previously. Then calculate the richness with function rast.sr, finally plot it.
 
 ```{r}
-file_list <- list.files(here::here("data/out/raster_species/"), full.names = TRUE, pattern = ".tif")
+file_list <- list.files(here::here("data/out/raster_species/"), full.names = TRUE, pattern = ".tif$")
 ```
 
 ##Richness Calculation
@@ -55,8 +55,6 @@ plot(richness[[3]], main = "Species richness")
 *With the next functions we are going to save all the rasters and images generated*
 
 ```{r}
-#| eval: false 
-
 #' Save a raster object to file
 #'
 #' This function saves a raster object to the specified file path using the `writeRaster` function.
@@ -152,8 +150,8 @@ lapply(seq_along(wendemism), function(x){
 *Here we upload the df of the tree and the records data frame*
 
 ```{r}
-data_morton <- fread("../../data/in/filogenia/Hipp2019_sample_metadata.csv")
-geo_data <- fread("../../data/in/hgbif_completo_iucn.csv")
+data_morton <- fread(here::here("data/in/filogenia/Hipp2019_sample_metadata.csv"))
+geo_data <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
 ```
 
 Now, we view the similarities and the differencies between the two.

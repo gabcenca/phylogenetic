@@ -62,17 +62,7 @@ Union of metadata from state and municipality with the IUCN conservation status 
 
 ```{r}
 
-hgbif_completo <- fread(here::here("data/in/hgbif_elev_mun.csv"), header = FALSE)
-
-# Remove unnecessary columns
-hgbif_completo <- hgbif_completo[, !c("V1","V18","V19")]
-
-encabezados <- fread(here::here("data/in/hgbif_elev_mun.csv"), nrows = 1) %>% 
-  .[, !c("V1","V18")] %>%
-  .[1,] %>%
-  as.character()
-
-colnames(hgbif_completo) <- encabezados
+hgbif_completo <- fread(here::here("data/in/hgbif_elev_mun.csv"))
 
 iucn <- fread(here::here("data/in/conservation_status/IUCN_per_species.csv"))
 
