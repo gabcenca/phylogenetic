@@ -114,6 +114,110 @@ run_richness_reps <- function(n_reps, df, max_n = NULL) {
   return(rarefaction)
 }
 
+#' Plots Species Richness Accumulation Optimized
+#'
+#' This function generates and saves a richness accumulation curve based on the species richness calculated.
+#'
+#' @param grid_shp_path Character. Path to the grid shapefile.
+#' @param points_csv_path Character. Path to the CSV file containing point records.
+#' @param n_reps Integer. The number of repetitions for the richness calculation.
+#' @param max_n Integer. The maximum number of grid cells available to sample. If NULL, it will automatically use the maximum number of grid cells per province.
+#' @param output_dir Character. Path to the directory where the plot will be saved.
+#' @param plot_filename Character. The name of the output plot file. If NULL, the function generates a default name based on the grid file.
+#'
+#' @return A ggplot object representing the richness accumulation curve.
+#' 
+#' @export
+plot_richness_accumulation_optimized <- function(grid_shp_path, 
+                                       points_csv_path, 
+                                       n_reps = 10, 
+                                       max_n = NULL,
+                                       output_dir,
+                                       plot_filename = NULL) {
+  
+  if (!dir.exists(output_dir)) {
+    dir.create(output_dir, recursive = TRUE)
+    message("Created output directory: ", output_dir)
+  }
+  
+  if (is.null(plot_filename)) {
+    grid_name <- file_path_sans_ext(basename(grid_shp_path))
+    plot_filename <- paste0("richness_accumulation_", grid_name, ".png")
+  }
+  
+  plot_path <- file.path(output_dir, plot_filename)
+  
+  # Check if results already exist to avoid reprocessing
+  results_path <- file.path(
+    output_dir, 
+    paste0("rarefaction_data_", file_path_sans_ext(basename(grid_shp_path)), ".rds")
+  )
+  
+  if (file.exists(results_path)) {
+    message("Loading cached rarefaction results...")
+    rarefaction <- readRDS(results_path)
+  } else {
+    message("Intersecting points with grid...")
+    points_in_grid_dt <- intersect_points_with_grid(grid_shp_path, points_csv_path)
+    
+    if (!"JJM2017" %in% names(points_in_grid_dt)) {
+      stop("Column 'JJM2017' not found in the data.")
+    }
+    
+    message("Calculating accumulated richness...")
+    rarefaction <- run_richness_reps(n_reps = n_reps, df = points_in_grid_dt, max_n = max_n)
+    
+    
+    # Also save as CSV for easy access
+    csv_path <- file.path(output_dir, paste0("rarefaction_data_", file_path_sans_ext(basename(grid_shp_path)), ".csv"))
+    fwrite(rarefaction, csv_path)
+  }
+  
+  message("Generating and saving plot...")
+  # Use simplified data for plotting
+  plot_data <- rarefaction[, .(JJM2017, n, mean)]
+  
+  # Use a better color palette for distinguishing provinces
+  num_provinces <- uniqueN(plot_data$JJM2017)
+  
+  if (num_provinces <= 8) {
+    color_palette <- "Dark2"
+  } else {
+    color_palette <- "Set1"
+  }
+  
+  g <- ggplot(data = plot_data, aes(x = n, y = mean, colour = JJM2017, group = JJM2017)) +
+    geom_line(linewidth = 1) +
+    theme_bw() +
+    theme(
+      legend.position = "right",
+      panel.grid.minor = element_blank(),
+      text = element_text(size = 12),
+      axis.title = element_text(size = 14)
+    ) +
+    scale_color_brewer(palette = color_palette, guide = guide_legend(ncol = 1)) +
+    labs(
+      x = "Número de celdas muestreadas",
+      y = "Riqueza media acumulada",
+      colour = "Provincia",
+      title = "Curva de rarefacción por provincia",
+      subtitle = paste("Basado en", n_reps, "repeticiones")
+    )
+  
+  # Save plot as PNG
+  ggsave(filename = plot_path, plot = g, width = 8, height = 6, dpi = 300)
+  
+  # Save rarefaction data frame
+  data_path <- file.path(output_dir, paste0(file_path_sans_ext(plot_filename), "_data.csv"))
+  fwrite(rarefaction, data_path)
+  
+  message("Plot saved at: ", plot_path)
+  message("Rarefaction data saved at: ", data_path)
+  
+  return(g)
+}
+
+
 #' Plots Species Richness Accumulation
 #'
 #' This function generates and saves a richness accumulation curve based on the species richness calculated by the 'run_richness_reps' function.
@@ -225,7 +329,7 @@ run_batch_richness_plots <- function(grid_dir,
     message("\n➡ Procesando: ", basename(grid_shp))
     
     tryCatch({
-      plot_richness_accumulation(
+      plot_richness_accumulation_optimized(
         grid_shp_path = grid_shp,
         points_csv_path = points_csv_path,
         n_reps = n_reps,
