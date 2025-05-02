@@ -16,7 +16,7 @@ library(here)
 
 
 # Cargar los datos
-hgbif_clean <- fread("hgbif_completo_iucn.csv")
+hgbif_clean <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
 
 # Ordenar los datos aleatoriamente
 set.seed(13235)

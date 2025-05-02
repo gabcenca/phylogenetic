@@ -20,104 +20,16 @@ data_summary <- data %>%
   ) %>%
   ungroup() %>%
   arrange(by = n_registros)
-```
 
-La base de datos compuesta con los registros de encinos en México contiene 47586 observaciones únicas, representando a 186 especies. *Falta decir cuantos encinos de cada seccion*
+data_summary_iucn <- data %>%
+  group_by(IUCN) %>%
+  summarise(
+    n_registros = n(),
+  ) %>%
+  ungroup() %>%
+  arrange(by = n_registros)
 
-<!-- Creo que la tabla completa la podemos poner en un anexo -->
-
-```{r}
-#| label: tab-data-summary-1
-#| echo: false
-#| tbl-cap: Resumen de los datos espaciales
-#| eval: false
-
-knitr::kable(data_summary)
-```
-
-
-## Evaluación de sesgo de muestreo/escala
-
-1. Representación de la heterogeneidad de las provincias biogeográficas por escala
-
-
-
-
-
-<!-- Normalmente no se describen las figuras (eso se hace en el pie de figura). Normalmente se describe el resultado y se cita la figura en la que se puede ver. Por ejemplo: 
-
-Se observa una variación en la cantidad de cuadros por provincia y por escala [@fig-cuadrosRegion1; @fig-cuadrosRegion2].  
-
--->
-
-<!-- En este apartado el chiste es describir qué tanto nos van a afectar los sesgos de muestreo en nuestras estimaciones. No creo que sea necesario describir todos los resultados con detalle sino más bien resumir los mensajes principales. Por lo tanto tenemos que averiguar cuáles son para cada sección de la evaluación del sesgo de muestreo:
-
-Representación de la heterogeneidad de las provincias biogeográficas por escala: 
-
-En esta parte tenemos que definir si las escalas nos van a permitir describir la variación dentro de las provincias biogeográficas. 
-
-Lo que yo veo es:
-1. En todas las escalas, todas las provincias están representadas por más de una celda. 
-2. Para las regiones biogeograficas pequeñas, la representación no cambia tanto en las escalas intermedias (hay que ver los numeros) pero como que me parece que por ejemplo en los Altos de Chiapas a partir de la escala 0.315 más o menos están representados por números similares de celdas.
-3. Para las regiones más grandes y con mas registros si parece haber diferencias (excepto en la de 0.405 y 0.45, ahi se parecen mucho )
-
-Hay que ver si estos patrones se repiten en los demás analisis, porque entonces a lo mejor solo nos conviene quedarnos con la 0.13, 0.225, ¿0.315? y la 0.45. 
-
-Relación registros vs riqueza
-
-Creo que vamos a sustituir la linea azul por el promedio de las aleatorizaciones porque no nos dice nada distinto la linea azul que actualmente tenemos. Sin embargo, la descripción es buena, con esta oración se resume el resultado. 
-
-La curva de acumulación de riqueza de especies mostró una asintóta con respecto al número de registros desde aprox. XX registros (@fig-accumrichness). Lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez.
-
-Curvas de rarefacción 
-
-1. Creeeeo que si hacemos un zoom en la grafica entre 0 y 500 celdas muestreadas la perspectiva de nuestras lineas va a cambiar y se van a ver más acostadas. Trata de guardar los dfs con los resultados con los que se generan las graficas para que podamos hacer pruebas. 
-
-2. En las escalas de celdas mas grandes las lineas se acuestan un poquito más que en las escalas pequeñas. 
-
-3. Hay algunas regiones biogeográficas en donde nuestras conclusiones tienen que ser tomadas con cuidado porque no sabemos si tenemos información suficiente como para considerar que conocemos la riqueza de las especies que habitan ahi. 
- - Podemos argumentar lo que dice Baldwin 2017, que este análisis lo que hace es que toma aleatoriamente las celdas y calcula las especies y esto nos diria si esta bien muestreado si las especies están aleatoriamente distribuidas en el espacio y que además fueron muestreadas aleatoriamente. En nuestro caso no necesariamente se cumple ninguna entonces no necesariamente quiere decir que no estén bien muestreados. (sin embargo, hay que hacer las pruebas reduciendo el eje X de la grafica porque las magnitudes de las celdas son muy disparejas.)
-
-
-::: {layout-ncol="2"}
-![Representación de las provincias biogeográficas de México por escala](img/scale_analysis/scale_analysis.png){#fig-cuadrosRegion1}
-
-![Representación de las provincias biogeográficas de México por escala, tomando en cuenta solo los pixeles con registros](img/scale_analysis/scale_analysis2.png){#fig-cuadrosRegion2}
-:::
-
-@fig-cuadrosRegion1 *y* @fig-cuadrosRegion2 *. Muestran el conteo de píxeles por provincia biogeográfica. En la* @fig-cuadrosRegion1 *se presenta el número total de píxeles en cada provincia, sin considerar si contienen registros o no, mientras que en la* @fig-cuadrosRegion2 *se muestra únicamente los píxeles que contienen registros de especies.*
-
-2. Curvas de rarefacción 
-
-Las curvas de rarefacción acumulativa por provincia biogeográfica y por escala espacial muestran 
-
-::: {layout-nrow="3"}
-![Curva de rarefacción, escala 0.135](img/accum_provinces/richness_accumulation_grid_0.135.png){#fig-accum135}
-
-![Curva de rarefacción, escala 0.225](img/accum_provinces/richness_accumulation_grid_0.225.png){#fig-accum225}
-
-![Curva de rarefacción, escala 0.315](img/accum_provinces/richness_accumulation_grid_0.315.png){#fig-accum315}
-
-![Curva de rarefacción, escala 0.405](img/accum_provinces/richness_accumulation_grid_0.405.png){#fig-accum405}
-
-![Curva de rarefacción, escala 0.45](img/accum_provinces/richness_accumulation_grid_0.45.png){#fig-accum45}
-:::
-
-@fig-accum135 *a* @fig-accum45 *. Curvas de rarefacción por provincia biogeográfica y por escala.*
-
-3. Relación registros vs riqueza
-
-La curva de acumulación de riqueza de especies mostró una relación positiva y asintótica con el número de registros (@fig-accumrichness). Ambas curvas muestran un incremento rápido en el número de especies únicas al comienzo del muestreo, seguido de una desaceleración progresiva conforme se acumulan más registros. Este comportamiento indica que los primeros registros aportan muchas especies nuevas, pero a medida que se continúa el muestreo, la probabilidad de registrar especies adicionales disminuye.
-
-Las líneas de muestreos aleatorizados y del muestreo original varian relativamente poco, lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez. Por otra parte, a partir de aproximadamente 20,000 registros, tanto la curva azul como la nube de líneas negras comienzan a estabilizarse formando una asíntota, lo que sugiere que se ha muestreado una fracción considerable de la riqueza total potencial. 
-
-![](img/richness_accum_plot.png){#fig-accumrichness}
-
-@fig-accumrichness. La figura muestra la relación entre número de registros y riqueza de especies, la línea negra muestra el muestreo aleatorio en cada iteración y la azul, el orden original aleatorizado.
-
-## Árbol filogenético 
-
-```{r, include=FALSE}
+#especies en el arbol y base de datos
 common <- fread("csvs/common_geo.csv")
 
 common_summary <- common %>%
@@ -134,109 +46,129 @@ common_summary <- common %>%
 
 ```
 
-<!-- Esto lo podemos poner en la descripcion de los registros -->
+La base de datos compuesta con los registros de encinos en México contiene 52,877 observaciones únicas, representando a 164 especies. 
 
-Como se puede observar en la siguiente tabla, entre el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y la base de datos de encinos, se tienen 87 especies en común, con un total de 40319 registros. 
-
+Por otra parte, se identificaron 87 especies en común entre el árbol filogenético de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y la base de datos de encinos, las cuales suman un total de 44,295 registros.
 
 ```{r}
-#| label: tab-tree-summary-1
+#| label: tab-data-summary-1
 #| echo: false
-#| tbl-cap: Resumen de especies presentes en el árbol filogenético y la base de datos de encinos
+#| tbl-cap: Resumen de los datos espaciales
 #| eval: false
-knitr::kable(common_summary)
+
+knitr::kable(data_summary)
 ```
 
 
+## Evaluación de sesgo de muestreo/escala
+
+1. Representación de la heterogeneidad de las provincias biogeográficas por escala
+
+En todas las escalas, las provincias biogeográficas están representadas por más de una celda. En el caso de las regiones con un área menor, como los Altos de Chiapas o la Sonorense, el número de celdas se mantiene relativamente constante a partir de una resolución cercana a 0.315°.
+
+Por el contrario, en las provincias más extensas y con mayor número de registros, como la de Sierra Madre Oriental o el Desierto Chihuahuense, se observan diferencias más marcadas entre escalas, aunque en resoluciones de 0.405° y 0.45° los patrones de representación son bastante similares.
+
+
+::: {layout-ncol="2"}
+![Representación de las provincias biogeográficas de México por escala](images/scale_analysis.png){#fig-cuadrosRegion1}
+
+![Representación de las provincias biogeográficas de México por escala, tomando en cuenta solo los pixeles con registros](images/scale_analysis2.png){#fig-cuadrosRegion2}
+:::
+
+@fig-cuadrosRegion1 *y* @fig-cuadrosRegion2 *. Muestran el conteo de píxeles por provincia biogeográfica. En la* @fig-cuadrosRegion1 *se presenta el número total de píxeles en cada provincia, sin considerar si contienen registros o no, mientras que en la* @fig-cuadrosRegion2 *se muestra únicamente los píxeles que contienen registros de especies.*
+
+
+2. Relación registros vs riqueza
+
+
+La curva de acumulación de riqueza de especies mostró una asintota con respecto al número de registros  aproxidamente desde 5000 registros (@fig-accumrichness). Lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez.
+
+:::
+
+![](images/richness_accum_plot.png){#fig-accumrichness}
+
+:::
+
+@fig-accumrichness. Se muestra la relación entre número de registros y riqueza de especies, la línea negra muestra el muestreo aleatorio en cada iteración y la azul, el orden original aleatorizado.
+
+
+3. Curvas de rarefacción
+
+
+::: 
+![Curva de rarefacción](images/accum_prov/all_acum.png){#fig-accum}
+:::
+
+@fig-accum *. Curvas de rarefacción por provincia biogeográfica y por escala.*
 
 ## Índices de biodiversidad 
 
-La distribución espacial de la riqueza, endemismo ponderado y diversidad filogénetica presentan un patrón heterogéneo en todo México. La escala influye en la inferencia de estas tendencias, ya que se puede observar que a escalas más detalladas, la distinción de estos sitios es difusa. Al contrario de las escalas más gruesas, donde al haber más generalización, estos sitios se vuelven más visibles. 
+1. Riqueza
 
-1. Riqueza general
-
-Según la escala, se pueden identificar diversos sitios de alta riqueza de especies. En el caso de la escala 0.135°, los sitios de alta riqueza se presentan al sur de Sinaloa en la Sierra Madre Occidental (SMOcc), gran parte de la Sierra Madre Oriental(SMOr), en los estados de Nuevo León, Tamaulipas y San Luis Potosí. De igual forma, hay sitios de alta riqueza en el sobrelape de la SMOr y el Eje Neovolcánico Transversal.
+Desde las escalas más finas (0.135° y 0.225°), se observa la presencia de áreas con alta riqueza en la Sierra Madre Oriental (SOr), el Eje Volcánico Transmexicano (EVT) y la Sierra Madre del Sur (SMS). Este mismo patrón se observa en escalas más gruesas (0.315°, 0.405° y 0.45°), pero no se observan diferencias significativas entre ellas. 
 
 
-*Mas bien habria que explicar como esta forma: The first one was Orizaba, located in the northern  portion of the SMS in the state of Veracruz, which concentrated  the highest spatial diversity (SR = 1450; WE = 390; PD = 40350;  WPE < 6250); the second was Sierra Juárez, in northern Oaxaca  (SR = 650; WE = 130; PD = 24000; WPE = 2400); and the third one  was Cerro Teotepec-Filo de Caballos, located in the central portion of the Sierra Sur of Guerrero (SR = 650; WE = 130; PD =24000;  WPE = 2400). *
+::: 
 
-::: {layout-nrow="3"}
-![Riqueza a escala 0.135](img/richness_png/richness_png_0.135.png){#fig-escala0135}
+![Riqueza de especies](images/all_maps/rich_scales.png){#fig-rich}
 
-![Riqueza a escala 0.225](img/richness_png/richness_png_0.225.png){#fig-escala0225}
-
-![Riqueza a escala 0.315](img/richness_png/richness_png_0.315.png){#fig-escala0315}
-
-![Riqueza a escala 0.405](img/richness_png/richness_png_0.405.png){#fig-escala0405}
-
-![Riqueza a escala 0.450](img/richness_png/richness_png_0.45.png){#fig-escala0450}
 :::
 
-@fig-escala0135 *a* @fig-escala0450 *. Riqueza de especies de la base de datos con 186 especies en total para cada pixel de las distintas escalas.*
+@fig-rich *. Riqueza de especiespara cada pixel de las distintas escalas.*
 
 
-2. Endemismo ponderado general
+2. Endemismo ponderado 
 
-::: {layout-nrow="3"}
-![Endemismo ponderado a escala 0.135](img/wendemism/wendemism_png_0.135.png){#fig-WE135}
+En las escalas más finas (0.135° y 0.225°), no es posible distinguir con claridad la presencia de zonas con valores medios o altos. A partir de la escala de 0.315°, comienzan a identificarse áreas con valores relativamente elevados, especialmente en la provincia Californiana, así como en regiones de Baja California y del EVT. Este patrón se vuelve más evidente conforme se incrementa el tamaño de celda, siendo más claro en las escalas más gruesas (0.405° y 0.45°), estas ultimas dos escalas son relativamente similares.
 
-![Endemismo ponderado a escala 0.225](img/wendemism/wendemism_png_0.225.png){#fig-WE225}
 
-![Endemismo ponderado a escala 0.315](img/wendemism/wendemism_png_0.315.png){#fig-WE315}
+::: 
 
-![Endemismo ponderado a escala 0.405](img/wendemism/wendemism_png_0.405.png){#fig-WE405}
+![Endemismo ponderado](images/all_maps/wendemism_scales.png){#fig-we}
 
-![Endemismo ponderado a escala 0.45](img/wendemism/wendemism_png_0.135.png){#fig-WE45}
 :::
 
-@fig-WE135 *a* @fig-WE45 *. Endemismo ponderado de la base de datos con 186 especies en total para cada pixel de las distintas escalas.*
+@fig-we *. Endemismo ponderado para cada pixel de las distintas escalas.*
 
 
 3. Diversidad filogénetica
 
-::: {layout-nrow="3"}
-![Diversidad filogénetica a escala 0.135](img/PD/PD_png_0.135.png){#fig-PD135}
+A una escala muy fina (0.135°), no se distinguen patrones evidentes a simple vista. Estos comienzan a ser perceptibles a partir de la escala de 0.225°, pero es en la escala de 0.315° donde se observa con mayor claridad que la Sierra Madre Occidental (SOcc), la Sierra Madre del Sur (SMS), la Sierra Madre Oriental (SMOr) y el Eje Volcánico Transmexicano (EVT) presentan valores altos de diversidad filogenética.
 
-![Diversidad filogénetica a escala 0.225](img/PD/PD_png_0.225.png){#fig-PD225}
+::: 
 
-![Diversidad filogénetica a escala 0.315](img/PD/PD_png_0.315.png){#fig-PD315}
+![PD](images/all_maps/rich_scales_tree.png){#fig-pd}
 
-![Diversidad filogénetica a escala 0.405](img/PD/PD_png_0.405.png){#fig-PD405}
-
-![Diversidad filogénetica a escala 0.45](img/PD/PD_png_0.45.png){#fig-PD45}
 :::
 
-@fig-PD135 *a* @fig-PD45 *. Diversidad filogénetica para cada pixel de las distintas escalas. *
+@fig-pd *. Diversidad filogénetica para cada pixel de las distintas escalas, esta varió entre 0 y 400, reflejando diferencias en la cantidad de historia evolutiva representada por las especies presentes en cada celda. *
 
 
 4.Riqueza de especies de las especies compartidas entre la base de datos y el árbol filogénetico
 
-::: {layout-nrow="3"}
-![Riqueza de especies presentes en el árbol filogénetico a escala 0.135](img/richness_tree/richness_png_0.135.png){#fig-richTree135}
+En este caso, a partir de la escala de 0.225°, se distinguen con mayor claridad las celdas con mayor riqueza en comparación con aquellas que no la presentan. A partir de la escala de 0.315°, se observa que los valores más altos se concentran en sitios dentro de la SMS, la SMOr y el EVT. En las escalas más gruesas (0.405° y 0.45°), el patrón se mantiene sin cambios significativos respecto a lo observado previamente.
 
-![Riqueza de especies presentes en el árbol filogénetico a escala 0.225](img/richness_tree/richness_png_0.225.png){#fig-richTree225}
+Cabe destacar que, al considerar únicamente las especies incluidas en el árbol filogenético, los patrones de alta riqueza se vuelven aún más evidentes, especialmente en el EVT y la SMS.
 
-![Riqueza de especies presentes en el árbol filogénetico a escala 0.315](img/richness_tree/richness_png_0.315.png){#fig-richTree315}
-
-![Riqueza de especies presentes en el árbol filogénetico a escala 0.405](img/richness_tree/richness_png_0.405.png){#fig-richTree405}
-
-![Riqueza de especies presentes en el árbol filogénetico a escala 0.45](img/richness_tree/richness_png_0.45.png){#fig-richTree45}
 :::
 
-@fig-richTree135 *a* @fig-richTree45 *. Riqueza de especies para cada pixel de las distintas escalas, solo tomando en cuenta las especies en común entre la base de datos y el árbol filogénetico. *
+![Riqueza de especies del árbol](images/all_maps/rich_scales_tree.png){#fig-richTree}
+
+:::
+
+
+
+@fig-richTree *. Riqueza de especies por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético. *
 
 5. Endemismo ponderado de las especies compartidas entre la base de datos y el árbol filogénetico
 
-::: {layout-nrow="3"}
-![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.135](img/WE_tree/wendemism_png_0.135.png){#fig-weTree135}
+Al igual que en el endemismo ponderado tomando en cuenta todas las especies, las escalas más finas (0.135° y 0.225°), no proporcionan información sobre posibles sitios con valores altos de endemismo ponderado. Es a partir de la escala de 0.315° donde la provincia Californiana y la de Baja California muestran valores elevados, no se ven patrones distintos en las escalas de 0.315°, 0.405° y 0.45°.
 
-![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.225](img/WE_tree/wendemism_png_0.225.png){#fig-weTree225}
 
-![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.315](img/WE_tree/wendemism_png_0.315.png){#fig-weTree315}
+::: 
 
-![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.405](img/WE_tree/wendemism_png_0.405.png){#fig-weTree405}
+![Endemismo ponderado arbol](images/all_maps/wendemism_scales_tree.png){#fig-weTree}
 
-![Endemismo ponderado de especies presentes en el árbol filogénetico a escala 0.45](img/WE_tree/wendemism_png_0.45.png){#fig-weTree45}
 :::
 
-@fig-weTree135 *a* @fig-weTree45 *. Endemismo ponderado para cada pixel de las distintas escalas, solo tomando en cuenta las especies en común entre la base de datos y el árbol filogénetico. *
+@fig-weTree *. Endemismo ponderado por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético. *

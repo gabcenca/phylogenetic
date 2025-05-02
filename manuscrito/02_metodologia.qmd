@@ -8,12 +8,11 @@ La distribución de las especies fue inferida a partir de registros de presencia
 
 La estandarización y validación de la nomenclatura taxonómica de las especies presentes en la base de datos, se realizó con base al backbone taxonómico de GBIF. Este procedimiento permitió homogeneizar los nombres científicos y detectar sinónimos o errores de nomenclatura, garantizando así la consistencia taxonómica en los análisis posteriores. Para ello, se utilizó la API de GBIF y el paquete `rgbif` [@rgbif2017] en R v4.3.2 [@r2024].
 
-Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Adicionalmente, se depuraron las coordenadas identificando registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la 
+Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Se eliminaron registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la 
 la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka209], 
 
 
-Los registros de XX especies fueron excluidas de análisis posteriores con base en los siguientes criterios. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas mediante la consulta de Plants of the World Online [-@POWO2025] y de Tropicos.org [@Tropicos2025]. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si están incluidas en la filogenia de Hipp et al. [-@hippGenomicLandscapeGlobal2020] o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.
-
+Los registros de 51 especies fueron excluidas de análisis posteriores con base en los siguientes criterios. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas mediante la consulta de Plants of the World Online [-@POWO2025] y de Tropicos.org [@Tropicos2025]. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si están incluidas en la filogenia de Hipp et al. [-@hippGenomicLandscapeGlobal2020] o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.
 
 Por otro lado, el estatus de conservación de cada especie de acuerdo con la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza [@iucn2025] se recopiló mediante el paquete `rredlist` [@rredlist]. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación.
 
@@ -24,8 +23,7 @@ Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvie
 
 Se evaluaron cinco escalas espaciales correspondientes a celdas de 15, 25, 35, 45 y 50 kilómetros de lado (Ver @baldwinSpeciesRichnessEndemism2017) en cuanto a su representantación de la heterogeneidad ambiental y topográfica de las provincias biogeográficas. Para ello, se calculó el número de celdas que representan cada región biogeográfica considerando solo la extensión de las provincias biogeográficas y considerando solo las celdas para las que se obtuvieron registros de encinos. 
 
-Por otra parte, se evaluó la intensidad de muestreo en relación a la riqueza de especies mediante dos aproximaciones, la relación entre el número de registros con la cantidad de especies alcanzadas y a través de curvas de rarefacción de celdas con respecto a la riqueza por cada región biogeográfica, las cuales permiten estimar el número de celdas necesarias para alcanzar una representación relativamente estable[@baldwinSpeciesRichnessEndemism2017]. *Ver si esta descripcion de rarefacicon esta bien*
-
+Por otra parte, se evaluó la intensidad de muestreo en relación a la riqueza de especies mediante dos aproximaciones, la relación entre el número de registros con la cantidad de especies alcanzadas y a través de curvas de rarefacción de celdas con respecto a la riqueza por cada región biogeográfica, las cuales permiten estimar el número de celdas necesarias para alcanzar una representación relativamente estable[@baldwinSpeciesRichnessEndemism2017]. 
 
 ## Construcción del marco filogenético
 
@@ -35,19 +33,19 @@ Todas las estimaciones filogenéticas fueron realizadas con base en el árbol fi
 
 Se calcularon 3 índices de biodiversidad: riqueza de especies, endemismo ponderado y diversidad filogénetica. Para ello, se utilizaron rasters de distribución de especies, los cuales fueron generados a partir de la base de datos, el árbol filogénetico de Hipp et al. [-@hippGenomicLandscapeGlobal2020] y el paquete `Phyloraster` [@phyloraster2023]. Estos índices se generaron para 5 escalas (15, 25, 35, 45, 50 km).
 
-La riqueza de especies se calculó con @eq-sr, donde **Sc** es el valor de presencia (1) o ausencia (0) de la especie, **c** y **C** el subconjunto de taxones que ocurren en una región determinada [@phyloraster2023].
+La riqueza de especies, que es la suma de los taxones presentes en un área dada [@laffanRangeweightedMetricsSpecies2016], se calculó con @eq-sr, donde **Sc** es el valor de presencia (1) o ausencia (0) de la especie, **c** y **C** el subconjunto de taxones que ocurren en una región determinada [@phyloraster2023].
 
 $$
 SR = \sum_{c \in C} S_c
 $$ {#eq-sr}
 
-<!-- La definición no es muy clara... ¿El endemismo ponderado no es la proporción del rango geográfico de la especie representado por cada celda? (investigar). Además hay que citar el autor que lo propuso, además del paquete.--> *falta esto de endemismo!!*
 
-El endemismo ponderado evalúa el rango de cada especie a una región, en función de la proporción de su rango total que se encuentra dentro de dicha región, este es calculado a través de la [@eq-we; @laffanRangeweightedMetricsSpecies2016]. Donde **r** es el rango local, **Rc** es el rango total, **c** y **C** representan el subconjunto de taxones que ocurren en una región determinada. En el caso de phyloraster, el cálculo se realiza con el área de las celdas, ya que en la mayoría de casos se trata a las celdas como si fueran del mismo tamaño [@phyloraster2023].
+El endemismo ponderado cuantifica el grado de restricción geográfica de las especies presentes en una región, ponderando cada especie según la proporción de su rango de distribución global que ocurre dentro de una región dada [@laffanRangeweightedMetricsSpecies2016]. Este es calculado a través de la [@eq-we; @laffanRangeweightedMetricsSpecies2016]. Donde **r** representa el rango local, **Rc** es el rango total, **c** y **C** representan el subconjunto de taxones que ocurren en una región determinada, para ello, se hizo uso del paquete `Phyloraster` [@phyloraster2023]. 
 
 $$
 WE = \sum_{c \in C} \frac{r_C}{R_c}
 $$ {#eq-we}
+
 
 La diversidad filogenética de Faith [@faithConservationEvaluationPhylogenetic1992a] es calculada a través de la suma del largo de las ramas de todas las especies en una región dada, como se muestra en la ecuación @eq-faithpd. Donde **Lc** corresponde a la longitud de la rama de cada especie, así como **c** y **C** representan el conjunto de ramas que se encuentran en una región específica.
 
