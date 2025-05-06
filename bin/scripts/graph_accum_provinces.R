@@ -349,7 +349,7 @@ run_batch_richness_plots(
   grid_dir = "data/out/sf_prov_grid",                # Carpeta con los .shp
   points_csv_path = "data/in/hgbif_completo_iucn.csv",  # Archivo CSV de puntos
   n_reps = 50,                                        # Número de repeticiones
-  output_dir = "data/out/accum_provinces/"                                # Carpeta donde guardar .png
+  output_dir = "data/out/accum_provinces/50_reps"                                # Carpeta donde guardar .png
 )
 
 
