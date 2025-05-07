@@ -59,6 +59,10 @@ intersect_points_with_grid <- function(grid_shp_path, points_csv_path) {
 calc_richness <- function(n, df) {
   print(paste('Calculating richness for', n, 'randomly sampled cells per province'))
   
+  if(!is.data.table(df)){
+    df <- as.data.table(df)
+  }
+  
   max_cells_per_province <- df[, .(max_cells = uniqueN(grid_id)), by = "JJM2017"]
   valid_provinces <- max_cells_per_province[max_cells_per_province$max_cells >= n, JJM2017]
   df <- df[JJM2017 %in% valid_provinces]
@@ -87,7 +91,7 @@ calc_richness <- function(n, df) {
 #' 
 #' @importFrom data.table .SD
 #' @export
-run_richness_reps <- function(n_reps, df, max_n = NULL) {
+run_richness_reps <- function(n_reps, df, max_n = NULL, output_file_path = NULL) {
   max_cells <- df[, .(max = uniqueN(grid_id)), by = "JJM2017"]
   
   if (is.null(max_n)) {
@@ -100,6 +104,10 @@ run_richness_reps <- function(n_reps, df, max_n = NULL) {
   all_reps <- vector("list", n_reps)
   all_reps[[1]] <- richnessDT
   
+  if (n_reps < 2) {
+    stop("Se necesitan al menos dos repeticiones para calcular el promedio.")
+  }
+  
   for (i in 2:n_reps) {
     print(paste("Repetition", i))
     summary_list <- lapply(seq_len(max_n), FUN = calc_richness, df = df)
@@ -110,6 +118,13 @@ run_richness_reps <- function(n_reps, df, max_n = NULL) {
   rarefaction <- do.call(cbind, all_reps)
   setnames(rarefaction, c("JJM2017", "n", paste0("riqueza", 1:n_reps)))
   rarefaction[, mean := rowMeans(.SD, na.rm = TRUE), .SDcols = paste0("riqueza", 1:n_reps)]
+  
+  
+  
+  if(!is.null(output_file_path)){
+    fwrite(file = output_file_path, rarefaction, row.names = F)
+  }
+
   
   return(rarefaction)
 }
@@ -145,6 +160,7 @@ plot_richness_accumulation <- function(grid_shp_path,
   if (is.null(plot_filename)) {
     grid_name <- tools::file_path_sans_ext(basename(grid_shp_path))
     plot_filename <- paste0("richness_accumulation_", grid_name, ".png")
+    csv_filename <- paste0("richness_accumulation_", grid_name, ".csv")
   }
   
   plot_path <- file.path(output_dir, plot_filename)
@@ -158,7 +174,8 @@ plot_richness_accumulation <- function(grid_shp_path,
   }
   
   message("Calculando riqueza acumulada...")
-  rarefaction <- run_richness_reps(n_reps = n_reps, df = points_in_grid_dt, max_n = max_n)
+  rarefaction <- run_richness_reps(n_reps = n_reps, df = points_in_grid_dt, max_n = max_n, 
+                                   output_file_path = file.path(output_dir, csv_filename))
   
   message("Generando y guardando gráfica...")
   g <- ggplot(data = rarefaction[, .(JJM2017, n, mean)], aes(x = n, y = mean, colour = JJM2017, group = JJM2017)) +
@@ -175,7 +192,6 @@ plot_richness_accumulation <- function(grid_shp_path,
   
   message("Gráfica guardada en: ", plot_path)
   
-  return(g)
 }
 
 
@@ -245,7 +261,8 @@ run_batch_richness_plots(
   grid_dir = "data/out/sf_prov_grid",                # Carpeta con los .shp
   points_csv_path = "data/in/hgbif_completo_iucn.csv",  # Archivo CSV de puntos
   n_reps = 50,                                        # Número de repeticiones
-  output_dir = "data/out/accum_provinces/"                                # Carpeta donde guardar .png
-)
+  output_dir = "data/out/accum_provinces/" ,                               # Carpeta donde guardar .png
+  max_n = NULL 
+  )
 
 
