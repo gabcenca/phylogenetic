@@ -140,7 +140,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02_metodologia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Métodología</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodología</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -223,56 +223,51 @@ div.csl-indent {
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-cuadrosRegion1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cuadrosRegion1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/scale_analysis.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cuadrosRegion1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.1: Representación de las provincias biogeográficas de México por escala
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/scale_analysis.png" class="img-fluid figure-img"></p>
+<figcaption>Muestra el número total de píxeles en cada provincia, sin considerar si contienen registros o no.</figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-cuadrosRegion2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cuadrosRegion2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/scale_analysis2.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cuadrosRegion2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.2: Representación de las provincias biogeográficas de México por escala, tomando en cuenta solo los pixeles con registros
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/scale_analysis2.png" class="img-fluid figure-img"></p>
+<figcaption>Muestra únicamente los píxeles que contienen registros de especies.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<p><a href="#fig-cuadrosRegion1" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> <em>y</em> <a href="#fig-cuadrosRegion2" class="quarto-xref">Figura&nbsp;<span>3.2</span></a> <em>. Muestran el conteo de píxeles por provincia biogeográfica. En la</em> <a href="#fig-cuadrosRegion1" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> <em>se presenta el número total de píxeles en cada provincia, sin considerar si contienen registros o no, mientras que en la</em> <a href="#fig-cuadrosRegion2" class="quarto-xref">Figura&nbsp;<span>3.2</span></a> <em>se muestra únicamente los píxeles que contienen registros de especies.</em></p>
+<p>: <span class="quarto-unresolved-ref">?fig-cuadrosRegion</span> <em>Conteo de píxeles por provincia biogeográfica.</em> La imagen izquierda presenta el número total de píxeles en cada provincia, sin considerar si contienen registros o no, mientras que la imagen derecha muestra únicamente los píxeles que contienen registros de especies.</p>
 <ol start="2" type="1">
 <li>Relación registros vs riqueza</li>
 </ol>
-<p>La curva de acumulación de riqueza de especies mostró una asintota con respecto al número de registros aproxidamente desde 5000 registros (1). Lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez.</p>
-<p>:::</p>
+<p>La curva de acumulación de riqueza de especies mostró una asintota con respecto al número de registros, aproximadamente desde 5000 registros (<a href="#fig-accumrichness" class="quarto-xref">Figura&nbsp;<span>3.1</span></a>). Lo que sugiere que la estimación de la riqueza de especies no depende del orden de los registros, lo cual refuerza su validez.</p>
 <div id="fig-accumrichness" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-accumrichness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/richness_accum_plot.png" id="fig-accumrichness" class="img-fluid figure-img">
+<img src="images/richness_accum_plot.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-accumrichness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.3
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-accumrichness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.1: Se muestra la relación entre número de registros y riqueza de especies, la línea negra muestra el muestreo aleatorio en cada iteración y la azul, el orden original aleatorizado.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<ol class="example" type="1">
-<li>Se muestra la relación entre número de registros y riqueza de especies, la línea negra muestra el muestreo aleatorio en cada iteración y la azul, el orden original aleatorizado.</li>
-</ol>
 <ol start="3" type="1">
 <li>Curvas de rarefacción</li>
 </ol>
-<p>::: <img src="images/accum_prov/all_acum.png" id="fig-accum" class="img-fluid" alt="Curva de rarefacción"> :::</p>
-<p><span class="quarto-unresolved-ref">?fig-accum</span> <em>. Curvas de rarefacción por provincia biogeográfica y por escala.</em></p>
+<div id="fig-accum" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-accum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/accum_prov/all_graphs.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-accum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.2: Curvas de rarefacción por provincia biogeográfica y por escala.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="índices-de-biodiversidad" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="índices-de-biodiversidad"><span class="header-section-number">3.3</span> Índices de biodiversidad</h2>
@@ -280,83 +275,71 @@ Figura&nbsp;3.3
 <li>Riqueza</li>
 </ol>
 <p>Desde las escalas más finas (0.135° y 0.225°), se observa la presencia de áreas con alta riqueza en la Sierra Madre Oriental (SOr), el Eje Volcánico Transmexicano (EVT) y la Sierra Madre del Sur (SMS). Este mismo patrón se observa en escalas más gruesas (0.315°, 0.405° y 0.45°), pero no se observan diferencias significativas entre ellas.</p>
-<p>:::</p>
 <div id="fig-rich" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-rich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/all_maps/rich_scales.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.4: Riqueza de especies
+Figura&nbsp;3.3: Riqueza de especies para cada pixel de las distintas escalas.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<p><a href="#fig-rich" class="quarto-xref">Figura&nbsp;<span>3.4</span></a> <em>. Riqueza de especiespara cada pixel de las distintas escalas.</em></p>
 <ol start="2" type="1">
 <li>Endemismo ponderado</li>
 </ol>
-<p>En las escalas más finas (0.135° y 0.225°), no es posible distinguir con claridad la presencia de zonas con valores medios o altos. A partir de la escala de 0.315°, comienzan a identificarse áreas con valores relativamente elevados, especialmente en la provincia Californiana, así como en regiones de Baja California y del EVT. Este patrón se vuelve más evidente conforme se incrementa el tamaño de celda, siendo más claro en las escalas más gruesas (0.405° y 0.45°), estas ultimas dos escalas son relativamente similares.</p>
-<p>:::</p>
+<p>En las escalas más finas (0.135° y 0.225°), no se distingue la presencia de zonas con valores medios o altos. A partir de la escala de 0.315°, comienzan a identificarse áreas con valores relativamente elevados, especialmente en la provincia Californiana, así como en regiones de Baja California y del EVT. Este patrón se vuelve más evidente conforme se incrementa el tamaño de celda, siendo más claro en las escalas más gruesas (0.405° y 0.45°), siendo estas ultimas relativamente similares.</p>
 <div id="fig-we" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-we-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/all_maps/wendemism_scales.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-we-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.5: Endemismo ponderado
+Figura&nbsp;3.4: Endemismo ponderado para cada pixel de las distintas escalas.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<p><a href="#fig-we" class="quarto-xref">Figura&nbsp;<span>3.5</span></a> <em>. Endemismo ponderado para cada pixel de las distintas escalas.</em></p>
 <ol start="3" type="1">
 <li>Diversidad filogénetica</li>
 </ol>
-<p>A una escala muy fina (0.135°), no se distinguen patrones evidentes a simple vista. Estos comienzan a ser perceptibles a partir de la escala de 0.225°, pero es en la escala de 0.315° donde se observa con mayor claridad que la Sierra Madre Occidental (SOcc), la Sierra Madre del Sur (SMS), la Sierra Madre Oriental (SMOr) y el Eje Volcánico Transmexicano (EVT) presentan valores altos de diversidad filogenética.</p>
-<p>:::</p>
+<p>A una escala muy fina (0.135°), los patrones de diversidad filogenética no son evidentes. Estos comienzan a delinearse a partir de la escala de 0.225°, pero es en la escala de 0.315° donde se aprecian con mayor claridad. En esta última, se destacan por sus altos valores de diversidad filogenética la Sierra Madre Occidental (SOcc), la Sierra Madre del Sur (SMS), la Sierra Madre Oriental (SMOr) y el Eje Volcánico Transmexicano (EVT).</p>
 <div id="fig-pd" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/all_maps/rich_scales_tree.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.6: PD
+Figura&nbsp;3.5: Diversidad filogénetica para cada pixel de las distintas escalas, esta varió entre 0 y 400, reflejando diferencias en la cantidad de historia evolutiva representada por las especies presentes en cada celda.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<p><a href="#fig-pd" class="quarto-xref">Figura&nbsp;<span>3.6</span></a> <em>. Diversidad filogénetica para cada pixel de las distintas escalas, esta varió entre 0 y 400, reflejando diferencias en la cantidad de historia evolutiva representada por las especies presentes en cada celda. </em></p>
 <p>4.Riqueza de especies de las especies compartidas entre la base de datos y el árbol filogénetico</p>
-<p>:::</p>
+<p>En este caso, a partir de la escala de 0.225°, se distinguen con mayor claridad las celdas con mayor riqueza en comparación con aquellas que no la presentan. A partir de la escala de 0.315°, se observa que los valores más altos se concentran en sitios dentro de la SMS, la SMOr y el EVT. En las escalas más gruesas (0.405° y 0.45°), el patrón se mantiene sin cambios significativos respecto a lo observado previamente.</p>
+<p>Cabe destacar que, al considerar únicamente las especies incluidas en el árbol filogenético, los patrones de alta riqueza se vuelven aún más evidentes, especialmente en el EVT y la SMS.</p>
 <div id="fig-richTree" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-richTree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/all_maps/rich_scales_tree.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-richTree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.7: Riqueza de especies del árbol
+Figura&nbsp;3.6: Riqueza de especies por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<p><a href="#fig-richTree" class="quarto-xref">Figura&nbsp;<span>3.7</span></a> <em>. Riqueza de especies por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético. </em></p>
 <ol start="5" type="1">
 <li>Endemismo ponderado de las especies compartidas entre la base de datos y el árbol filogénetico</li>
 </ol>
-<p>:::</p>
+<p>Al igual que en el endemismo ponderado tomando en cuenta todas las especies, las escalas más finas (0.135° y 0.225°), no proporcionan información sobre posibles sitios con valores altos de endemismo ponderado. Es a partir de la escala de 0.315° donde la provincia Californiana y la de Baja California muestran valores elevados. Por otra parte, no se observan patrones distintos en las escalas de 0.315°, 0.405° y 0.45°.</p>
 <div id="fig-weTree" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-weTree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/all_maps/wendemism_scales_tree.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weTree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.8: Endemismo ponderado arbol
+Figura&nbsp;3.7: Endemismo ponderado por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético.
 </figcaption>
 </figure>
 </div>
-<p>:::</p>
-<p><a href="#fig-weTree" class="quarto-xref">Figura&nbsp;<span>3.8</span></a> <em>. Endemismo ponderado por píxel en cada escala, considerando únicamente las especies compartidas entre la base de datos y el árbol filogenético. </em></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
@@ -786,8 +769,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02_metodologia.html" class="pagination-link" aria-label="Métodología">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Métodología</span></span>
+      <a href="./02_metodologia.html" class="pagination-link" aria-label="Metodología">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodología</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

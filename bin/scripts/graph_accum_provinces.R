@@ -264,5 +264,60 @@ run_batch_richness_plots(
   output_dir = "data/out/accum_provinces/" ,                               # Carpeta donde guardar .png
   max_n = NULL 
   )
+# Hacer las graficas de todas las escalas
 
 
+grid_045 <- fread(input = "data/out/accum_provinces/richness_accumulation_grid_0.45.csv")
+grid_135 <- fread(input = "data/out/accum_provinces/richness_accumulation_grid_0.135.csv")
+grid_225 <- fread(input = "data/out/accum_provinces/richness_accumulation_grid_0.225.csv")
+grid_405 <- fread(input = "data/out/accum_provinces/richness_accumulation_grid_0.405.csv")
+grid_315 <- fread(input = "data/out/accum_provinces/richness_accumulation_grid_0.225.csv")
+
+grid_045$escala <- "0.45"
+grid_135$escala  <- "0.135"
+grid_225$escala   <- "0.225"
+grid_405$escala   <- "0.405"
+grid_315$escala   <- "0.315"
+
+# Si ya están en data.table, rbindlist es ideal
+todo <- rbindlist(list(grid_045, grid_135, grid_225, grid_405, grid_315))
+
+
+
+g <- ggplot(data = todo, aes(x = n, y = mean, colour = JJM2017, group = JJM2017)) +
+  geom_line() +
+  theme_bw() +
+  labs(
+    x = "Número de celdas muestreadas",
+    y = "Riqueza media acumulada",
+    colour = "Provincia",
+    title = "Curva de rarefacción por provincia") +
+  scale_colour_manual(
+    values = scales::hue_pal()(length(unique(grid_045$JJM2017))), # o define tus propios colores
+    labels = c(
+      "Baja Californian province" = "Baja California",
+      "Balsas Basin province" = "Cuenca del Balsas",
+      "Californian province" = "Californiana",
+      "Chiapas Highlands province" = "Altos de Chiapas",
+      "Chihuahuan Desert province" = "Desierto Chihuahuense",
+      "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
+      "Sierra Madre Occidental province" = "Sierra Madre Occidental",
+      "Sierra Madre Oriental province" = "Sierra Madre Oriental",
+      "Sierra Madre del Sur province" = "Sierra Madre del Sur",
+      "Sonoran province" = "Sonorense",
+      "Tamaulipas province" = "Tamaulipas",
+      "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
+      "Veracruzan province" = "Veracruzana",
+      "Yucatan Peninsula Province" = "Península de Yucatán"
+    )
+  ) +
+  facet_wrap(~ escala, scales = "free_x")
+
+ggsave(filename = "data/out/accum_provinces/all_graphs.png", plot = g, width = 15, height = 8, dpi = 300)
+
+
+#Tomar menos celdas
+g2 <- g + coord_cartesian(xlim = c(0, 30))
+g2
+
+ggsave(filename = "data/out/accum_provinces/all_graphs_30celdas.png", plot = g2, width = 15, height = 8, dpi = 300)

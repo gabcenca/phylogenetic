@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Métodología – Biogeografía de encinos de México</title>
+<title>2&nbsp; Metodología – Biogeografía de encinos de México</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,7 +129,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_metodologia.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Métodología</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_metodologia.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodología</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -169,7 +169,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02_metodologia.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Métodología</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodología</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -221,7 +221,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Métodología</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodología</span></h1>
 </div>
 
 
@@ -244,10 +244,10 @@ window.Quarto = {
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="obtención-y-depuración-de-datos"><span class="header-section-number">2.1.1</span> Obtención y depuración de datos</h3>
 <p>La distribución de las especies fue inferida a partir de registros de presencia recopilados de bases de datos públicas Global Biodiversity Information Facility (GBIF) <span class="citation" data-cites="gbif2024">(<a href="06_references.html#ref-gbif2024" role="doc-biblioref">GBIF 2024</a>)</span> (https://doi.org/10.15468/dl.bzhg67) <!--  Falta poner el DOI de la descarga --> y de Red de Herbarios Mexicanos <span class="citation" data-cites="redherbarios2024">(<a href="06_references.html#ref-redherbarios2024" role="doc-biblioref">Herbarios Mexicanos 2024</a>)</span>. Se consideraron todos los registros de encinos reportados para el territorio mexicano en un rango temporal 1791 a 2024 y que presentaran información de coordenadas geográficas. Para la Red de Herbarios, se consideraron registros de todas las colecciones disponibles, la lista completa de herbarios puede consultarse en el Material Suplementario 1.</p>
 <p>La estandarización y validación de la nomenclatura taxonómica de las especies presentes en la base de datos, se realizó con base al backbone taxonómico de GBIF. Este procedimiento permitió homogeneizar los nombres científicos y detectar sinónimos o errores de nomenclatura, garantizando así la consistencia taxonómica en los análisis posteriores. Para ello, se utilizó la API de GBIF y el paquete <code>rgbif</code> <span class="citation" data-cites="rgbif2017">(<a href="06_references.html#ref-rgbif2017" role="doc-biblioref">Chamberlain and Boettiger 2017</a>)</span> en R v4.3.2 <span class="citation" data-cites="r2024">(<a href="06_references.html#ref-r2024" role="doc-biblioref">Team 2024</a>)</span>.</p>
-<p>Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Se eliminaron registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la la función <code>clean_coordinates()</code> del paquete CoordinateCleaner <span class="citation" data-cites="zizka209">(<a href="06_references.html#ref-zizka209" role="doc-biblioref"><strong>zizka209?</strong></a>)</span>,</p>
+<p>Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Se eliminaron registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la la función <code>clean_coordinates()</code> del paquete CoordinateCleaner <span class="citation" data-cites="zizka2019">(<a href="06_references.html#ref-zizka2019" role="doc-biblioref">Zizka <em>et al.</em> 2019</a>)</span>,</p>
 <p>Los registros de 51 especies fueron excluidas de análisis posteriores con base en los siguientes criterios. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas mediante la consulta de Plants of the World Online <span class="citation" data-cites="POWO2025">(<a href="06_references.html#ref-POWO2025" role="doc-biblioref">2025</a>)</span> y de Tropicos.org <span class="citation" data-cites="Tropicos2025">(<a href="06_references.html#ref-Tropicos2025" role="doc-biblioref">Missouri Botanical Garden 2025</a>)</span>. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si están incluidas en la filogenia de Hipp et al. <span class="citation" data-cites="hippGenomicLandscapeGlobal2020">(<a href="06_references.html#ref-hippGenomicLandscapeGlobal2020" role="doc-biblioref">2020</a>)</span> o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.</p>
 <p>Por otro lado, el estatus de conservación de cada especie de acuerdo con la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza <span class="citation" data-cites="iucn2025">(<a href="06_references.html#ref-iucn2025" role="doc-biblioref">IUCN 2025</a>)</span> se recopiló mediante el paquete <code>rredlist</code> <span class="citation" data-cites="rredlist">(<a href="06_references.html#ref-rredlist" role="doc-biblioref">Gearty and Chamberlain 2025</a>)</span>. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación.</p>
-<p>Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (INEGI,2017), y una capa de división política del país <span class="citation" data-cites="INEGI2022">(<a href="06_references.html#ref-INEGI2022" role="doc-biblioref">Instituto Nacional de Estadística y Geografía (INEGI) 2022</a>)</span>. Todo lo anterior se realizó utilizando los paquetes terra <span class="citation" data-cites="terra2024">(<a href="06_references.html#ref-terra2024" role="doc-biblioref">Hijmans 2024</a>)</span>, sf <span class="citation" data-cites="sf2024">Pebesma (<a href="06_references.html#ref-sf2018" role="doc-biblioref">2018</a>)</span>, data.table <span class="citation" data-cites="dtable2024">(<a href="06_references.html#ref-dtable2024" role="doc-biblioref">Barrett <em>et al.</em> 2024</a>)</span> y elevatr <span class="citation" data-cites="elevatr">(<a href="06_references.html#ref-elevatr" role="doc-biblioref">Hollister <em>et al.</em> 2023</a>)</span>. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. <span class="citation" data-cites="morrone2017">Morrone <em>et al.</em> (<a href="06_references.html#ref-morrone2017shp" role="doc-biblioref">2022</a>)</span>, la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos <span class="citation" data-cites="morrone2017shp">(<a href="06_references.html#ref-morrone2017shp" role="doc-biblioref">Morrone <em>et al.</em> 2022</a>)</span>.</p>
+<p>Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (INEGI,2017), y una capa de división política del país <span class="citation" data-cites="INEGI2022">(<a href="06_references.html#ref-INEGI2022" role="doc-biblioref">Instituto Nacional de Estadística y Geografía (INEGI) 2022</a>)</span>. Todo lo anterior se realizó utilizando los paquetes terra <span class="citation" data-cites="terra2024">(<a href="06_references.html#ref-terra2024" role="doc-biblioref">Hijmans 2024</a>)</span>, sf <span class="citation" data-cites="sf2023">Pebesma (<a href="06_references.html#ref-sf2018" role="doc-biblioref">2018</a>)</span>, data.table <span class="citation" data-cites="dtable2024">(<a href="06_references.html#ref-dtable2024" role="doc-biblioref">Barrett <em>et al.</em> 2024</a>)</span> y elevatr <span class="citation" data-cites="elevatr">(<a href="06_references.html#ref-elevatr" role="doc-biblioref">Hollister <em>et al.</em> 2023</a>)</span>. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. <span class="citation" data-cites="morrone2017">Morrone <em>et al.</em> (<a href="06_references.html#ref-morrone2017shp" role="doc-biblioref">2022</a>)</span>, la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos <span class="citation" data-cites="morrone2017shp">(<a href="06_references.html#ref-morrone2017shp" role="doc-biblioref">Morrone <em>et al.</em> 2022</a>)</span>.</p>
 </section>
 </section>
 <section id="evaluación-de-sesgo-de-muestreoescala" class="level2" data-number="2.2">
@@ -341,11 +341,17 @@ Paradis, E. and Schliep, K. 2019: <span>“Ape 5.0: An environment for modern ph
 <div id="ref-sf2018" class="csl-entry" role="listitem">
 Pebesma, E. 2018: <span>“<span class="nocase">Simple Features for R: Standardized Support for Spatial Vector Data</span>.”</span> <em><span>The R Journal</span></em> 10 (1): 439–446. https://doi.org/<a href="https://doi.org/10.32614/RJ-2018-009">10.32614/RJ-2018-009</a>.
 </div>
+<div id="ref-sf2023" class="csl-entry" role="listitem">
+Pebesma, E. and Bivand, R. 2023: <em><a href="https://doi.org/10.1201/9780429459016"><span class="nocase">Spatial Data Science: With applications in R</span></a></em>. <span>Chapman and Hall/CRC</span>.
+</div>
 <div id="ref-POWO2025" class="csl-entry" role="listitem">
 POWO 2025: <span>“<a href="https://powo.science.kew.org/"><span class="nocase">Plants of the World Online</span></a>.”</span>
 </div>
 <div id="ref-r2024" class="csl-entry" role="listitem">
 Team, R. C. 2024: <span>“<a href="https://www.R-project.org">R: A language and environment for statistical computing</a>.”</span>
+</div>
+<div id="ref-zizka2019" class="csl-entry" role="listitem">
+Zizka, A.; Silvestro, D.; Andermann, T.; Azevedo, J.; Duarte Ritter, C.; Edler, D.; … Antonelli, A. 2019: <span>“CoordinateCleaner: Standardized cleaning of occurrence records from biological collection databases.”</span> <em>Methods in Ecology and Evolution</em> 10 (5): 744–751. https://doi.org/<a href="https://doi.org/10.1111/2041-210X.13152">10.1111/2041-210X.13152</a>.
 </div>
 </div>
 </section>

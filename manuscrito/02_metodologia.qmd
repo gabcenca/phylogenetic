@@ -1,4 +1,4 @@
-# Métodología
+# Metodología
 
 ## Datos espaciales
 
@@ -9,14 +9,14 @@ La distribución de las especies fue inferida a partir de registros de presencia
 La estandarización y validación de la nomenclatura taxonómica de las especies presentes en la base de datos, se realizó con base al backbone taxonómico de GBIF. Este procedimiento permitió homogeneizar los nombres científicos y detectar sinónimos o errores de nomenclatura, garantizando así la consistencia taxonómica en los análisis posteriores. Para ello, se utilizó la API de GBIF y el paquete `rgbif` [@rgbif2017] en R v4.3.2 [@r2024].
 
 Los registros fueron filtrados para conservar únicamente observaciones humanas, especímenes preservados, especímenes vivos y ejemplares herborizados. Se eliminaron registros duplicados, definidos como aquellos que comparten las mismas coordenadas geográficas y la misma identificación taxonómica. Además, se depuraron las coordenadas para asegurar su validez. Se eliminaron registros que se encontraran dentro de un radio de 10 km de la capital, a un radio de 1 km del centroide del país, a un radio de 0.1 km de instituciones de biodiversidad y registros aislados igual o más de 1000 km respecto a los demás de la misma especie mediante la 
-la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka209], 
+la función `clean_coordinates()` del paquete CoordinateCleaner [@zizka2019], 
 
 
 Los registros de 51 especies fueron excluidas de análisis posteriores con base en los siguientes criterios. En primer lugar, mediante una búsqueda bibliográfica manual se determinó su origen y se excluyeron aquellas que no son nativas mediante la consulta de Plants of the World Online [-@POWO2025] y de Tropicos.org [@Tropicos2025]. Adicionalmente, las especies con menos de 20 registros fueron conservadas únicamente si están incluidas en la filogenia de Hipp et al. [-@hippGenomicLandscapeGlobal2020] o si la baja representación de registros se debe a que presentan una distribución restringida pero su rango geográfico está adecuadamente representado. Finalmente, las especies con menos de 10 registros y sin distribución restringida fueron eliminadas.
 
 Por otro lado, el estatus de conservación de cada especie de acuerdo con la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza [@iucn2025] se recopiló mediante el paquete `rredlist` [@rredlist]. Para ello, se utilizó una función personalizada que automatiza el proceso de extracción de la categoría de conservación.
 
-Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (INEGI,2017), y una capa de división política del país [@INEGI2022]. Todo lo anterior se realizó utilizando los paquetes terra [@terra2024], sf [@sf2024, @sf2018], data.table [@dtable2024] y elevatr [@elevatr]. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. [-@morrone2017, @morrone2017shp], la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos [@morrone2017shp].
+Adicionalmente, la elevación, municipio y el estado de cada registro se obtuvieron del Continuo de Elevacion Mexicano (CEM) de INEGI, el cual tiene una resolución de 15 m (INEGI,2017), y una capa de división política del país [@INEGI2022]. Todo lo anterior se realizó utilizando los paquetes terra [@terra2024], sf [@sf2023, @sf2018], data.table [@dtable2024] y elevatr [@elevatr]. Finalmente, los registros fueron agrupados en provincias biogeográficas tomando como referencia la clasificación hecha por Morrone et al. [-@morrone2017, @morrone2017shp], la cual clasifica a México en 14 provincias con base a ecorregiones, las cuales combinan criterios climáticos, geológicos y bióticos [@morrone2017shp].
 
 
 ## Evaluación de sesgo de muestreo/escala

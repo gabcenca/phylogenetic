@@ -13,72 +13,75 @@ library(tidyverse)
 library(ggplot2)
 library(data.table)
 library(here)
-
+library(dplyr)
 
 # Cargar los datos
 hgbif_clean <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
 
-# Ordenar los datos aleatoriamente
-set.seed(13235)
+orden <- hgbif_clean[,.(correctname)]
 
-hgbif_azar <- hgbif_clean[sample(1:nrow(hgbif_clean), nrow(hgbif_clean), replace = FALSE)]
+#Hacer 100 columnas con ordenes distintos de los registros, se indica el numero de fila de cada orden
+#Para hacer una curva de acumulación por cada orden
+for (i in 2:101) {
+  orden[,paste('orden_',i)] <- sample(1:nrow(orden), nrow(hgbif_clean), replace = FALSE)
+}
 
 
-
-# Seleccionar progresivamente más registros
-
+#' Count Unique Groups in the First N Records
+#'
+#' This function counts how many unique values there are in a specified grouping column
+#' within the first \code{n} rows of a data table.
+#'
+#' @param df A \code{data.table}. The input data from which the first \code{n} rows will be considered.
+#' @param n An \code{integer}. The number of top rows from the data table to consider.
+#' @param groupping_column A \code{character} string. The name of the column by which to group the records.
+#'
+#' @return An \code{integer} indicating the number of unique groups (e.g., species) found in the top \code{n} records.
+#'
+#' @examples
+#' library(data.table)
+#' dt <- data.table(species = rep(c("sp1", "sp2", "sp3"), times = c(5, 3, 2)))
+#' countSp_in_N_records(dt, 5, "species")
+#'
+#' @export
 countSp_in_N_records <- function(df, n, groupping_column) {
   records_by_sp <- df[1:n, .N , by = c(groupping_column)]
   return(nrow(records_by_sp))
 }
 
-countSp_in_N_records(hgbif_azar, 2, "correctname")
-count <- sapply(seq(1:1000),function(i){countSp_in_N_records(df = hgbif_azar, n = i, 
-                                                             groupping_column = "correctname")})
 
-plot(count, type = "l")
+#Generate a loop that iterate in the columns of the orders the function countSp_in_N_records. This is to 
+#finish with a data table where the columns represent the accumulation curves of each order.
 
+repetitions_count <- list()
 
-# Seleccionamos con reemplazamiento progresivamente más registros
-countSp_in_N_records_replace <- function(df, n, groupping_column) {
-  records_by_sp <- df[sample(1:nrow(df), n, replace = FALSE), .N , by = c(groupping_column)]
-  return(nrow(records_by_sp))
+for(i in 2:101){
+  
+  #seleccionar columna i y convertirla a vector, la cual tiene el orden de las filas
+  orden_filas <- c(select(orden, all_of(i))) 
+  
+  #ordenar la columna de correctname por el orden indicado por i
+  df <- orden[order(orden_filas),.(correctname)] 
+  
+  #Ejecutando la funcion para contar el numero de especies respecto a n registros dados por las interacciones de 1:1000
+  count <- sapply(seq(1:30000), function(i){countSp_in_N_records(df = df, n = i,
+                                                                groupping_column = "correctname")})
+  
+  repetitions_count[[paste0('rep',i-1)]] <- count #guardar el conteo en un elemento de la lista
+  
 }
 
-count2 <- sapply(seq(1:1000),function(i){countSp_in_N_records_replace(df = hgbif_azar, n = i, 
-                                                                      groupping_column = "correctname")})
+long_repetitions_count <- as.data.frame(repetitions_count) 
+long_repetitions_count$rep_mean <- rowMeans(long_repetitions_count)
 
-plot(count2, type = "l")
+long_repetitions_count <- long_repetitions_count %>% 
+  rownames_to_column('row_id') %>%
+  pivot_longer(cols = starts_with('rep'),names_to = 'rep', values_to = 'richness') 
 
-#Unir las dos funciones que acabamos de hacer
-# Seleccionar progresivamente más registros
-countSp_in_N_records <- function(df, n, groupping_column, sample = FALSE) {  
+ggplot(data = long_repetitions_count,
+       aes(x = as.numeric(row_id), y=richness, group = rep))+
+       geom_line(alpha = 0.1, color = 'darkgray') +
+       geom_line(data = filter(long_repetitions_count, rep == 'rep_mean'),
+                 aes(x = as.numeric(row_id), y=richness, group = rep), linewidth = 1, color = 'red') +
+  theme_bw()
   
-  if (sample) {
-    records_by_sp <- df[sample(1:nrow(df),n,replace = FALSE), .N , by = c(groupping_column)]
-  } else {
-    records_by_sp <- df[1:n, .N , by = c(groupping_column)]
-  }
-  
-  return(nrow(records_by_sp))
-}
-
-richness_accum <- sapply(seq(1:nrow(hgbif_azar)),function(i){
-  print(i)
-  countSp_in_N_records(df = hgbif_azar, n = i, groupping_column = "correctname")})
-
-
-richness_accum_random <- sapply(seq(1:nrow(hgbif_azar)),function(i){
-  print(i)
-  countSp_in_N_records(df = hgbif_azar, n = i, groupping_column = "correctname", sample = TRUE)})
-
-
-plot(richness_accum_random, type = 'l')
-lines(richness_accum, col = "blue",lwd = 3)
-
-png("richness_accum_plot.png", width = 800, height = 600)  # Abrir dispositivo gráfico PNG
-
-plot(richness_accum_random, type = 'l', xlab = "Número de registros", ylab = "Riqueza de especies")
-lines(richness_accum, col = "blue", lwd = 3)
-
-dev.off()  # Cerrar el dispositivo y guardar la imagen
