@@ -1,0 +1,177 @@
+#NEXUS
+[R-package APE, Mon Nov  3 02:12:47 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 82;
+	TAXLABELS
+		Quercus_chrysolepis
+		Quercus_tomentella
+		Quercus_palmeri
+		Quercus_cedrosensis
+		Quercus_oleoides
+		Quercus_brandegeei
+		Quercus_fusiformis
+		Quercus_dumosa
+		Quercus_cornelius_mulleri
+		Quercus_berberidifolia
+		Quercus_muehlenbergii
+		Quercus_vaseyana
+		Quercus_pungens
+		Quercus_polymorpha
+		Quercus_mohriana
+		Quercus_laceyi
+		Quercus_turbinella
+		Quercus_ajoensis
+		Quercus_toumeyi
+		Quercus_striatula
+		Quercus_grisea
+		Quercus_engelmannii
+		Quercus_oblongifolia
+		Quercus_rugosa
+		Quercus_greggii
+		Quercus_diversifolia
+		Quercus_obtusata
+		Quercus_potosina
+		Quercus_peduncularis
+		Quercus_chihuahuensis
+		Quercus_deserticola
+		Quercus_glaucoides
+		Quercus_resinosa
+		Quercus_magnoliifolia
+		Quercus_subspathulata
+		Quercus_segoviensis
+		Quercus_purulhana
+		Quercus_glaucescens
+		Quercus_lancifolia
+		Quercus_insignis
+		Quercus_corrugata
+		Quercus_glabrescens
+		Quercus_martinezii
+		Quercus_germana
+		Quercus_sinuata
+		Quercus_crassifolia
+		Quercus_mcvaughii
+		Quercus_scytophylla
+		Quercus_hypoleucoides
+		Quercus_sideroxyla
+		Quercus_jonesii
+		Quercus_emoryi
+		Quercus_durifolia
+		Quercus_radiata
+		Quercus_calophylla
+		Quercus_fulva
+		Quercus_viminea
+		Quercus_eduardi
+		Quercus_crassipes
+		Quercus_castanea
+		Quercus_acutifolia
+		Quercus_grahamii
+		Quercus_cortesii
+		Quercus_benthamii
+		Quercus_delgadoana
+		Quercus_sapotifolia
+		Quercus_iltisii
+		Quercus_crispifolia
+		Quercus_elliptica
+		Quercus_uxoris
+		Quercus_aristata
+		Quercus_planipocula
+		Quercus_laurina
+		Quercus_pinnativenulosa
+		Quercus_sartorii
+		Quercus_mexicana
+		Quercus_affinis
+		Quercus_gravesii
+		Quercus_canbyi
+		Quercus_wislizeni
+		Quercus_agrifolia
+		Quercus_kelloggii
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Quercus_chrysolepis,
+		2	Quercus_tomentella,
+		3	Quercus_palmeri,
+		4	Quercus_cedrosensis,
+		5	Quercus_oleoides,
+		6	Quercus_brandegeei,
+		7	Quercus_fusiformis,
+		8	Quercus_dumosa,
+		9	Quercus_cornelius_mulleri,
+		10	Quercus_berberidifolia,
+		11	Quercus_muehlenbergii,
+		12	Quercus_vaseyana,
+		13	Quercus_pungens,
+		14	Quercus_polymorpha,
+		15	Quercus_mohriana,
+		16	Quercus_laceyi,
+		17	Quercus_turbinella,
+		18	Quercus_ajoensis,
+		19	Quercus_toumeyi,
+		20	Quercus_striatula,
+		21	Quercus_grisea,
+		22	Quercus_engelmannii,
+		23	Quercus_oblongifolia,
+		24	Quercus_rugosa,
+		25	Quercus_greggii,
+		26	Quercus_diversifolia,
+		27	Quercus_obtusata,
+		28	Quercus_potosina,
+		29	Quercus_peduncularis,
+		30	Quercus_chihuahuensis,
+		31	Quercus_deserticola,
+		32	Quercus_glaucoides,
+		33	Quercus_resinosa,
+		34	Quercus_magnoliifolia,
+		35	Quercus_subspathulata,
+		36	Quercus_segoviensis,
+		37	Quercus_purulhana,
+		38	Quercus_glaucescens,
+		39	Quercus_lancifolia,
+		40	Quercus_insignis,
+		41	Quercus_corrugata,
+		42	Quercus_glabrescens,
+		43	Quercus_martinezii,
+		44	Quercus_germana,
+		45	Quercus_sinuata,
+		46	Quercus_crassifolia,
+		47	Quercus_mcvaughii,
+		48	Quercus_scytophylla,
+		49	Quercus_hypoleucoides,
+		50	Quercus_sideroxyla,
+		51	Quercus_jonesii,
+		52	Quercus_emoryi,
+		53	Quercus_durifolia,
+		54	Quercus_radiata,
+		55	Quercus_calophylla,
+		56	Quercus_fulva,
+		57	Quercus_viminea,
+		58	Quercus_eduardi,
+		59	Quercus_crassipes,
+		60	Quercus_castanea,
+		61	Quercus_acutifolia,
+		62	Quercus_grahamii,
+		63	Quercus_cortesii,
+		64	Quercus_benthamii,
+		65	Quercus_delgadoana,
+		66	Quercus_sapotifolia,
+		67	Quercus_iltisii,
+		68	Quercus_crispifolia,
+		69	Quercus_elliptica,
+		70	Quercus_uxoris,
+		71	Quercus_aristata,
+		72	Quercus_planipocula,
+		73	Quercus_laurina,
+		74	Quercus_pinnativenulosa,
+		75	Quercus_sartorii,
+		76	Quercus_mexicana,
+		77	Quercus_affinis,
+		78	Quercus_gravesii,
+		79	Quercus_canbyi,
+		80	Quercus_wislizeni,
+		81	Quercus_agrifolia,
+		82	Quercus_kelloggii
+	;
+	TREE * UNTITLED = [&R] (((((1:6.285356,2:6.285356):6.708996,3:12.994352):12.81032,4:25.804672):25.49688,((5:31.437015,(6:15.737841,7:15.737841):15.699174):15.262231,(((8:9.006363,9:9.006363):8.986107,10:17.99247):27.00753,(11:36.007124,(((((12:2.965375,13:2.965375):2.809224,(14:3.384822,15:3.384822):2.389776):2.271385,16:8.045984):7.968897,((((((((17:1.782132,18:1.782132):0.468263,19:2.250395):0.431538,(20:2.213548,21:2.213548):0.468385):0.528156,(22:2.405256,23:2.405256):0.804833):0.779748,((24:1.923393,25:1.923393):0.639406,26:2.562799):1.427038):2.290648,((((27:1.737453,28:1.737453):1.035342,29:2.772795):0.523209,30:3.296004):1.153091,(31:3.127534,32:3.127534):1.32156):1.831389):1.756179,((((33:1.445482,34:1.445482):0.739556,35:2.185038):1.102552,(36:0.924837,37:0.924837):2.362752):0.943141,38:4.23073):3.805933):3.919283,(((39:3.725631,(40:3.230637,41:3.230637):0.494994):2.259176,(42:3.247886,43:3.247886):2.736921):3.027047,44:9.011855):2.944091):4.058934):7.978289,45:23.99317):12.013954):8.992876):1.699246):4.602305):2.782907,(((((((((((46:1.831049,47:1.831049):0.494036,((48:1.662593,49:1.662593):0.304609,50:1.967202):0.357882):0.462055,(((51:1.737458,52:1.737458):0.359941,53:2.097399):0.377785,54:2.475184):0.311956):0.504778,((55:1.940554,56:1.940554):0.762091,57:2.702644):0.589273):1.197567,58:4.489484):4.48346,((59:3.261861,60:3.26186):2.574812,(61:3.405201,62:3.405201):2.431471):3.136272):3.011769,(((63:2.679896,64:2.679896):3.350206,(65:3.186564,66:3.186564):2.843539):2.88817,(((((67:1.559384,68:1.559384):0.515691,69:2.075075):0.457947,70:2.533022):0.777843,71:3.310864):1.134227,72:4.445092):4.473181):3.066441):2.967105,((73:3.931427,74:3.931427):3.540551,75:7.471978):7.479841):3.000331,(76:8.98796,77:8.98796):8.964189):8.972423,(78:13.466777,79:13.466777):13.457795):20.945428,((80:15.929791,81:15.929792):8.030487,82:23.960279):23.909721):6.214458);
+END;

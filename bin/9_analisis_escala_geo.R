@@ -480,33 +480,71 @@ resultado_final <- bind_rows(resultados)
 # Graficar los resultados con ggplot
 g <- ggplot(resultado_final, aes(x = JJM2017, y = n_cuadros, fill = escala)) +
   geom_col() +
-  labs(x = "Provincia Biogeográfica", y = "Número de Cuadros con Registros") +
+  labs(x = "Biogeographic province", y = "Number of cells with records") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   facet_wrap(~escala, labeller = as_labeller(c(
-    "escala_1" = "0.135°",
-    "escala_2" = "0.225°",
-    "escala_3" = "0.315°",
-    "escala_4" = "0.405°",
-    "escala_5" = "0.45°"
+    "escala_1" = "15 km",
+    "escala_2" = "25 km",
+    "escala_3" = "35 km",
+    "escala_4" = "45 km",
+    "escala_5" = "50 km"
   ))) +
-  theme(legend.position = "none") + # Eliminar la leyenda
-  scale_x_discrete(labels = c(
-    "Baja Californian province" = "Baja California",
-    "Balsas Basin province" = "Cuenca del Balsas",
-    "Californian province" = "Californiana",
-    "Chiapas Highlands province" = "Altos de Chiapas",
-    "Chihuahuan Desert province" = "Desierto Chihuahuense",
-    "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
-    "Sierra Madre Occidental province" = "Sierra Madre Occidental",
-    "Sierra Madre Oriental province" = "Sierra Madre Oriental",
-    "Sierra Madre del Sur province" = "Sierra Madre del Sur",
-    "Sonoran province" = "Sonorense",
-    "Tamaulipas province" = "Tamaulipas",
-    "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
-    "Veracruzan province" = "Veracruzana",
-    "Yucatan Peninsula Province" = "Península de Yucatán"
-  ))
+  theme(
+    legend.position = "none",     
+    axis.title = element_text(size = 18),     # Títulos de los ejes
+   axis.text = element_text(size = 16),      # Etiquetas de los ejes
+   strip.text = element_text(size = 14)
+   )
+
+# +  Eliminar la leyenda
+  # scale_x_discrete(labels = c(
+  #   "Baja Californian province" = "Baja California",
+  #   "Balsas Basin province" = "Cuenca del Balsas",
+  #   "Californian province" = "Californiana",
+  #   "Chiapas Highlands province" = "Altos de Chiapas",
+  #   "Chihuahuan Desert province" = "Desierto Chihuahuense",
+  #   "Pacific Lowlands province" = "Tierras Bajas del Pacífico",
+  #   "Sierra Madre Occidental province" = "Sierra Madre Occidental",
+  #   "Sierra Madre Oriental province" = "Sierra Madre Oriental",
+  #   "Sierra Madre del Sur province" = "Sierra Madre del Sur",
+  #   "Sonoran province" = "Sonorense",
+  #   "Tamaulipas province" = "Tamaulipas",
+  #   "Transmexican Volcanic Belt province" = "Eje Volcánico Transmexicano",
+  #   "Veracruzan province" = "Veracruzana",
+  #   "Yucatan Peninsula Province" = "Península de Yucatán"
+  # ))
 
 #Save it
-ggsave("data/out/scale_analysis/scale_analysis2.png",g, 
-       width = 10, height = 8, dpi = 300)
+ggsave("data/out/scale_analysis/scale_analysis_english.png",g, 
+       width = 22, height = 8, dpi = 300)
+
+
+
+
+
+
+
+
+
+
+# Ejemplo con una de tus escalas, puedes iterar después
+grid_shapefile <- "data/out/sf_prov_grid/grid_0.315.shp"
+puntos_csv <- "data/in/hgbif_completo_iucn.csv"
+
+# Intersección de puntos y grid
+intersect <- intersect_points_with_grid(grid_shapefile, puntos_csv)
+
+# Filtrar registros válidos (sin NA en el nombre de la especie)
+registros_validos <- intersect %>%
+  filter(!is.na(correctname)) %>%
+  as.data.table()
+
+# Calcular riqueza por celda
+tabla_riqueza <- registros_validos[, .(
+  region_biogeo = unique(JJM2017),
+  riqueza = uniqueN(correctname, na.rm = TRUE)
+), by = grid_id]
+
+# Ver tabla
+head(tabla_riqueza)
+

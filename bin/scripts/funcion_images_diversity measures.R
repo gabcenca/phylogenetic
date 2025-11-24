@@ -137,3 +137,158 @@ plot5 <- ggplot() +
 
 ggsave(here::here("data/out/all_maps/wendemism_scales_tree.png"), plot5, width =35 , height = 30, units = 'cm')
 
+#Plot 1 escala todas las medidas 
+library(ggplot2)
+library(patchwork)
+
+# Filtrar por cada medida
+plot_rich_315 <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & measure == "richness",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Riqueza") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Riqueza de especies, escala 0.315°", x = "", y = "")
+
+plot_endemismo315 <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & measure == "wendemism",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Endemismo ponderado") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Endemismo ponderado, escala 0.315°", x = "", y = "")
+
+plot_rich_0315tree <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "richness",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Riqueza") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Riqueza de especies presentes en el árbol, escala 0.315°", x = "", y = "")
+
+plot_endemismo315tree <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "wendemism",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Endemismo ponderado") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Endemismo ponderado de especies presentes en el árbol, escala 0.315°", x = "", y = "")
+
+plot_pd <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "PD",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Diversidad filogenética") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Diversidad filogenética, escala 0.315°", x = "", y = "")
+
+
+# Calcular los límites conjuntos de ambos datasets
+max_val <- max(long_rast_df[scale == "0.315" & measure == "richness", ]$value, na.rm = TRUE)
+min_val <- min(long_rast_df[scale == "0.315" & measure == "richness", ]$value, na.rm = TRUE)
+
+# Combinarlos
+
+
+#Mapas para la presentacion del morton 
+
+# calcular el rango de valores de riqueza para ambas capas
+rango_rich <- range(long_rast_df[scale == "0.315" & measure == "richness", value],
+                    long_rast_df[scale == "0.315" & spSet == TRUE & measure == "richness", value],
+                    na.rm = TRUE)
+
+plot_rich_315 <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & measure == "richness",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Riqueza", limits = rango_rich) +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Riqueza de especies", x = "", y = "")
+
+plot_rich_0315tree <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "richness",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "Riqueza", limits = rango_rich) +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Riqueza para las especies compartidas entre el árbol filogenético y la base de datos", x = "", y = "")
+
+
+
+library(patchwork)
+g <- plot_rich_315 + plot_rich_0315tree
+
+ggsave("data/out/all_maps/scale_315/richness_315.png", g, 
+       width =35 , height = 15, units = 'cm')
+
+#Guardalas por separado para la tesis
+ggsave("data/out/all_maps/scale_315/richness_315_not_tree.png", plot_rich_315, 
+       width =35 , height = 15, units = 'cm')
+ggsave("data/out/all_maps/scale_315/richness_315_tree.png", plot_rich_0315tree, 
+       width =35 , height = 15, units = 'cm')
+
+##ENDEMISMO
+# Calcular los límites conjuntos de ambos datasets
+max_val <- max(long_rast_df[scale == "0.315" & measure == "wendemism", ]$value, na.rm = TRUE)
+min_val <- min(long_rast_df[scale == "0.315" & measure == "wendemism", ]$value, na.rm = TRUE)
+
+
+plot_endemismo315 <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & measure == "wendemism",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(option = "plasma", name = "Endemismo ponderado", limits = c(min_val, max_val),trans = "sqrt") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Endemismo ponderado", x = "", y = "")
+
+plot_endemismo315tree <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "wendemism",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(option = "plasma", name = "Endemismo ponderado", limits = c(min_val, max_val),trans = "sqrt") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Endemismo ponderado para las especies compartidas entre el árbol filogenético y la base de datos", x = "", y = "")
+
+library(patchwork)
+g <- plot_endemismo315 | plot_endemismo315tree
+
+#Guardalas por separado para la tesis
+ggsave("data/out/all_maps/scale_315/we_315_not_tree_sqrt.png", plot_endemismo315, 
+       width =35 , height = 15, units = 'cm')
+ggsave("data/out/all_maps/scale_315/we_315_tree_sqrt.png", plot_endemismo315tree, 
+       width =35 , height = 15, units = 'cm')
+
+
+ggsave("data/out/all_maps/scale_315/WE_315.png", g, 
+       width =35 , height = 15, units = 'cm')
+
+plot_pd <- ggplot() +
+  geom_sf(data = mexico_map, fill = NA, color = "black") +
+  geom_raster(data = long_rast_df[scale == "0.315" & spSet == 'TRUE' & measure == "PD",],
+              aes(x = x, y = y, fill = value)) +
+  coord_sf(xlim = c(-120, -85), ylim = c(14, 33)) +
+  scale_fill_viridis_c(name = "PD") +
+  theme_bw() +
+  theme(axis.text = element_blank(), axis.ticks = element_blank()) +
+  labs(title = "Diversidad filogenética", x = "", y = "")
+
+ggsave("data/out/all_maps/scale_315/PD_315_espanol.png", plot_pd, 
+       width =25 , height = 15, units = 'cm')

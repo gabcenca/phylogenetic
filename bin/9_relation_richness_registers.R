@@ -71,6 +71,7 @@ for(i in 2:101){
   
 }
 
+
 long_repetitions_count <- as.data.frame(repetitions_count) 
 long_repetitions_count$rep_mean <- rowMeans(long_repetitions_count)
 
@@ -78,10 +79,22 @@ long_repetitions_count <- long_repetitions_count %>%
   rownames_to_column('row_id') %>%
   pivot_longer(cols = starts_with('rep'),names_to = 'rep', values_to = 'richness') 
 
-ggplot(data = long_repetitions_count,
+repetitions_count <- fread(here::here("data/out/richness_rarefaction/df_rarefaction.csv"))
+long_repetitions_count <- as.data.frame(repetitions_count) 
+
+
+g <- ggplot(data = long_repetitions_count,
        aes(x = as.numeric(row_id), y=richness, group = rep))+
-       geom_line(alpha = 0.1, color = 'darkgray') +
        geom_line(data = filter(long_repetitions_count, rep == 'rep_mean'),
-                 aes(x = as.numeric(row_id), y=richness, group = rep), linewidth = 1, color = 'red') +
-  theme_bw()
+                 aes(x = as.numeric(row_id), y=richness, group = rep), linewidth = 1, color = '#53868B') +
+  labs(x = "Registros", y = "Riqueza acumulada de especies") +
+  theme_bw() +
+  theme(
+    legend.position = "none",     
+    axis.title = element_text(size = 18),     # Títulos de los ejes
+    axis.text = element_text(size = 16)      # Etiquetas de los ejes
+  )
   
+#Save it
+ggsave("data/out/richness_rarefaction/rarefaction_spanish.png",g, 
+       width = 12, height = 8, dpi = 300)

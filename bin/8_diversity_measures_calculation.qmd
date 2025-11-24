@@ -165,6 +165,8 @@ common_geo <- geo_data[correctname %in% common_morton$`Cleaned_NAMES-USE-THIS`]
 
 diff<- setdiff(unique(data_morton$`Cleaned_NAMES-USE-THIS`),unique(geo_data$correctname))
 
+
+unique(common_geo$correctname)
 ```
 
 Existen 87 especies en común entre la filogenia y la base de datos de gbif/herbario.
@@ -241,6 +243,8 @@ complete_tree <- read.tree(here::here('data/in/filogenia/OpenTreeOfLife_hipp2019
 
 
 complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_replace_all(str_remove_all(str_remove(x, '\\|.*'),"\\'"),' |-','_'))
+
+
 
 ```
 
@@ -385,5 +389,42 @@ lapply(seq_along(wendemism_tree), function(x){
 
 
 
+```
+
+
+## Calculate standard effective size (SES)
+```{r}
+
+ras <- rast(here::here("data/out/raster_species/species_tree/ras_species_res_0.5.tif"))
+
+
+# Standard analysis
+
+#tabla con especies ordenadas
+dataprep <- phylo.pres(x = sub_dist[[3]], tree = sub_tree)
+
+  #el raster del calculo
+pdr[[i]] <- rast.pd(x = dataprep[[i]]$x, dataprep[[i]]$tree)
+
+library(SESraster)
+
+pd_ses_sim5 <- rast.pd.ses(x = dataprep$x, 
+                            edge.path = dataprep$edge.path,
+                          branch.length = dataprep$branch.lenght,
+                          aleats = 10,
+                          random = "tip") 
+
+p <-plot(pd_ses_sim5)
+
+# Conservative analysis
+pd_ses_sim9 <- rast.pd.ses(x = species_raster,
+                            tree = oak_tree,
+                            aleats = 999,
+                            spat_alg = "bootspat_ff")   # SIM9
+
+# Compare results
+# If both show similar patterns → strong evidence
+# If only SIM5 significant → moderate evidence (depends on preserved spatial structure)
+# If neither significant → patterns don't differ from null expectations
 ```
 
