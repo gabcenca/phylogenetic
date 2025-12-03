@@ -1,21 +1,3 @@
----
-title: "SES_calculation"
-author: "Gabriela Centeno y Sofía Zorrilla"
-format: html
-eval: false
-knitr:
-  opts_knit:
-    root.dir: "../../"
----
-
-*This .qmd document calculates the SES for PD and WE.*
-
-
-##Libraries
-
--   Load the necessary libraries
-
-```{r}
 library(phyloraster)
 library(terra)
 library(ape)
@@ -27,29 +9,14 @@ library(stringr)
 library(ggplot2)
 library(tidyverse)
 library(SESraster)
-```
 
-##Stack of Rasters
-
--   Enter the stack of rasters of the absence/presence of the 177 species we made previously. 
-
-```{r}
 file_list <- list.files(here::here("data/out/raster_species/"), full.names = TRUE, pattern = ".tif$")
 
 files <- lapply(file_list, terra::rast)
 
-```
-
-*Here we upload the df of the tree and the records data frame*
-
-```{r}
 data_morton <- fread(here::here("data/in/filogenia/Hipp2019_sample_metadata.csv"))
 geo_data <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
-```
 
-Now, we view the similarities and the differencies between the two.
-
-```{r}
 #TODO: Revisar si los nombres en el correctname que no coinciden con los del morton realmnete no están en la filogenia 
 #TODO: Decidir si esta es la filogenia que vamos a utilizar
 
@@ -58,28 +25,11 @@ common_geo <- geo_data[correctname %in% common_morton$`Cleaned_NAMES-USE-THIS`]
 
 diff<- setdiff(unique(data_morton$`Cleaned_NAMES-USE-THIS`),unique(geo_data$correctname))
 
-
-unique(common_geo$correctname)
-```
-
-Existen 87 especies en común entre la filogenia y la base de datos de gbif/herbario.
-
-Now we save all the records in the gbif/herbario data frame that are present in the tree.
-```{r}
 common_geo <- merge(common_geo,unique(common_morton[,.(`Cleaned_NAMES-USE-THIS`,section,clade,subgenus)]), by.x = "correctname", by.y="Cleaned_NAMES-USE-THIS",all.x = T)
 
 fwrite(common_geo, here::here('data/out/common_geo.csv'), row.names = F)
-```
 
 
-## Phylogenetic tree
-
-### Clean names of the tree
-
-
-The next function allows you to replace characters at the tips of the tree.
-
-```{r}
 library(ape)
 library(treeio)
 library(rotl)
@@ -106,42 +56,21 @@ modify_tips <- function(tree, modify_label_fn = function(x) str_remove(x, '_ott.
   return(tree)
 }
 
-```
-
-
-El arbol en crudo muestra etiquetas para cada especie. Como se muestra en el siguiente ejemplo: Quercus chrysolepis\|USA\|CA\|CA-DAV-MH20\|QUE000293'
-
-Para este caso, no se utilizaran las etiquetas. Por lo que se utiliza la función modify_tips para eliminar las etiquetas y eliminar los espacios, por lo que el ejemplo quedaría de la siguiente manera: Quercus_chrysolepis
-
-```{r}
 complete_tree <- read.tree(here::here('data/in/filogenia/OpenTreeOfLife_hipp2019.tre'))
 
 
 complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_replace_all(str_remove_all(str_remove(x, '\\|.*'),"\\'"),' |-','_'))
 
-```
-
-Cargar las distribuciones de las especies.
-
-Hacer un subset de los rasters que si se encuentran en el arbol (87).
-
-```{r}
-#files = rasters de distribucion por cada escala
-
 sub_dist <- list()
 
 for(i in seq_along(files)) {
-
-names(files[[i]]) <- str_replace_all(names(files[[i]]),' |-','_')
-rasters_to_use <- which(names(files[[i]]) %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
-
-sub_dist[[i]] <- subset(files[[i]], rasters_to_use)
-
+  
+  names(files[[i]]) <- str_replace_all(names(files[[i]]),' |-','_')
+  rasters_to_use <- which(names(files[[i]]) %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
+  
+  sub_dist[[i]] <- subset(files[[i]], rasters_to_use)
+  
 }
-```
-
-```{r}
-# Revisar que los nombres de las especies estén en el orden que están en el árbol
 
 #Toma las puntas del arbol y busca las que no se encuentran en la base de datos, es decir, y con el sub_tree se eliminan
 tips_to_drop <-  which(!complete_tree$tip.label %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
@@ -158,16 +87,13 @@ pdr <- list()
 for(i in seq_along(sub_dist)) {
   
   #tabla con especies ordenadas
-dataprep[[i]] <- phylo.pres(x = sub_dist[[i]], tree = sub_tree)
-
+  dataprep[[i]] <- phylo.pres(x = sub_dist[[i]], tree = sub_tree)
+  
   #el raster del calculo
-pdr[[i]] <- rast.pd(x = dataprep[[i]]$x, dataprep[[i]]$tree)
-
+  pdr[[i]] <- rast.pd(x = dataprep[[i]]$x, dataprep[[i]]$tree)
+  
 }
-```
 
-## Calculate standard effective size (SES)
-```{r}
 x <- sub_dist[[3]]
 tree <- sub_tree
 
@@ -192,11 +118,12 @@ dev.off()
 
 
 
-t <- rast.we.ses(x, aleats = 2)
+t <- rast.we.ses(x, aleats = 999)
 
-png("ses_we.png", width = 1200, height = 800)
+# GUARDA inmediatamente para no perderlo
+writeRaster(t, here::here("data/out/SES/WE_SES.tif"), overwrite = TRUE)
+
+
+png(here::here("data/out/SES/we_ses.tif"), width = 1200, height = 800)
 plot(t)
 dev.off()
-
-```
-
