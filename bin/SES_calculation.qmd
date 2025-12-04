@@ -11,7 +11,7 @@ knitr:
 *This .qmd document calculates the SES for PD and WE.*
 
 
-##Libraries
+## Libraries
 
 -   Load the necessary libraries
 
@@ -29,7 +29,7 @@ library(tidyverse)
 library(SESraster)
 ```
 
-##Stack of Rasters
+## Stack of Rasters
 
 -   Enter the stack of rasters of the absence/presence of the 177 species we made previously. 
 
@@ -47,7 +47,7 @@ data_morton <- fread(here::here("data/in/filogenia/Hipp2019_sample_metadata.csv"
 geo_data <- fread(here::here("data/in/hgbif_completo_iucn.csv"))
 ```
 
-Now, we view the similarities and the differencies between the two.
+Now, we view the similarities and the differences between the two.
 
 ```{r}
 #TODO: Revisar si los nombres en el correctname que no coinciden con los del morton realmnete no están en la filogenia 
@@ -168,14 +168,14 @@ pdr[[i]] <- rast.pd(x = dataprep[[i]]$x, dataprep[[i]]$tree)
 
 ## Calculate standard effective size (SES)
 ```{r}
-x <- sub_dist[[3]]
-tree <- sub_tree
+x <- sub_dist[[3]] # Este objeto guarda el rasterstack de distribuciones de especies con la escala de 35km de lado para cada celda
+tree <- sub_tree # Guarda el arbol filogenético filtrado para que coincida con las especies comunes entre nuestra tabla de presencias y la filogenia
 
 # Genera la tabla ordenada
 data <- phylo.pres(x, tree)
 
 
-# Calcula SES
+# Calcula SES para PD
 tiempo <- system.time({
 t <- rast.pd.ses(data$x, 
                  edge.path = data$edge.path,
@@ -189,9 +189,10 @@ print(tiempo)
 #     user   system  elapsed 
 # 1076.109   11.529 1086.029 
 
-# Guarda también un respaldo seguro
+# Guarda también un respaldo del objeto de R
 saveRDS(t, here::here("data/out/SES/PD_SES_999aleats.rds"))
 
+# Raster stack con los resultados 
 pd_ses <- rast(here::here("data/out/SES/PD_SES_999aleats.tif"))
 
 png(here::here("data/out/SES/ses_pd.png"), width = 1200, height = 800)
@@ -200,7 +201,7 @@ dev.off()
 
 ### WE
 
-# Calcula SES
+# Calcula SES para WE
 tiempo <- system.time({
 t <- rast.we.ses(data$x, 
                  aleats = 999,
@@ -215,6 +216,7 @@ print(tiempo)
 # Guarda también un respaldo seguro
 saveRDS(t, here::here("data/out/SES/WE_SES_999aleats.rds"))
 
+# Raster stack con los resultados 
 we_ses <- rast(here::here("data/out/SES/WE_SES_999aleats.tif"))
 
 
@@ -224,46 +226,38 @@ dev.off()
 
 ```
 
+Resultados de SES para PD considerando la significancia
+
 ```{r}
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(viridis)
 
-pd_ses$SES.PD
 
-# Get Mexico boundaries
+# Shape con las provincias biogeográficas de Mexico
 mexico <- st_read(here::here("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp"))
 
 # Get Mexico's bounding box for raster creation
 bbox <- st_bbox(mexico)
 
-# Create a sample raster using terra (temperature gradient as example)
-# You can replace this with your own raster data
-r <- rast(nrows = 100, ncols = 100,
-          xmin = bbox["xmin"], xmax = bbox["xmax"],
-          ymin = bbox["ymin"], ymax = bbox["ymax"])
 
-
-
-# Convert the entire stack to a dataframe at once
+# Convert the entire stack (resultados pd.ses) to a dataframe at once
 raster_df <- as.data.frame(pd_ses, xy = TRUE)
 raster_df <- raster_df[!is.na(raster_df$SES.PD),]
-
-
-
 
 # Create the plot
 plot_ses <- raster_df %>% 
   filter(SES.PD != 0) %>% 
+  # Para saber que valores son significativos nos fijamos si el SES es positivo o negativo. Cuando es positivo, entonces el valor de p que nos interesa es el p_lower que representa la proporción de veces en que el valor observado fue más chico (que probabilidad hay de que por azar nos aparezca un numero mas grande que el observado). Lo contrario para cuando SES.PD es negativo, nos fijamos en el p_upper.
   mutate(pval = ifelse(SES.PD > 0, p_lower.PD,ifelse(SES.PD < 0, p_upper.PD,NA))) %>% 
 ggplot() +
-  # Plot raster layer
-  
   # Add Mexico state boundaries
   geom_sf(data = mexico, fill = NA, color = "#8B8989", linewidth = 0.2) +
+  # Plot raster layer
   geom_raster(aes(x = x, y = y, fill = SES.PD,alpha = pval < 0.05 )) +
   # Color scale
   scale_fill_viridis(option = "viridis", name = "SES") +
+  # Alpha scale - valores no significativos mucha transparencia, valores significativos nada de transparencia
   scale_alpha_manual(values = c(0.2,1), guide = FALSE)+
   # Labels and theme
   labs(title = "SES Diversidad filogenética",
@@ -281,9 +275,26 @@ ggplot() +
 ggsave(here::here("data/out/SES/PD_biogeographicRegions_SES_signif.png"), plot_ses, width = 20, height = 20, units = "cm", bg = "white")
 ```
 
+
+### ¿Cómo se ven los árboles filogenéticos de valores de SES altos (positivos y negativos)?
+
+La hipótesis que teníamos es que en los sitios en los que encontraramos valores de PD mayores a lo esperado por la riqueza (SES positivo) encontraríamos un mayor número de ramas largas o una combinación de ramas largas con ramas cortas. En cambio en los sitios con menor PD de lo esperado por la riqueza encontraríamos ramas cortas. La idea es revisar algunos ejemplos de celdas con valores altos y bajos de SES para ver como se ven los árboles de las especies que están presentes en esas celdas.
+
 ```{r}
 library(ape)
 
+#TODO: Modificar la función para que coloree todas las líneas que conectan a las especies hasta su ancestro común (no solo las ramas terminales), que es realmente lo que se debe de estar sumando en el PD
+
+#' Funcion para graficar el arbol filogenetico y resaltar en rojo ramas específicas
+#' @param tree Arbol filogenético completo
+#' @param highlight_color color para resaltar las ramas
+#' @param default_color color del arbol en general
+#' @param edge_width grosor de las líneas en el arbol
+#' @param plot_subset graficar adicionalmente solo el subconjunto que se resaltó
+#' @param main titulo del gráfico
+#' @param verbose mensajes durante la ejecución 
+#' @param cex tamaño de fuente de las etiquetas del arbol
+#' 
 plot_highlighted_tree <- function(tree, species_to_keep, 
                                    highlight_color = "red",
                                    default_color = "black",
@@ -342,41 +353,40 @@ plot_highlighted_tree <- function(tree, species_to_keep,
   ))
 }
 
+
+#' Grafica de mapa para ubicar valores específicos de SES
+#'
+#' @param mexico_sf shape de mexico
+#' @param pd_data df con la información de SES.PD
+#' @param highlight_color Color de las celdas a resaltar (por ejemplo celdas con SES > 4)
+#'
+#' @returns Mapa con celdas resaltadas
+#' @export
+#'
+#' @examples
 plot_ses_map <- function(mexico_sf, 
                          pd_data,
-                         x_label = "Longitud",
-                         y_label = "Latitud",
-                         border_color = "#8B8989",
-                         border_width = 0.2,
-                         highlight_color = "black",
-                         viridis_option = "viridis",
-                         legend_name = "SES",
-                         alpha_values = c(0.2, 1)) {
+                         highlight_color = "black") {
   
   ggplot() +
     # Add Mexico state boundaries
-    geom_sf(data = mexico_sf, fill = NA, color = border_color, 
-            linewidth = border_width) +
+    geom_sf(data = mexico_sf, fill = NA, color = "#8B8989", 
+            linewidth = 0.2) +
     # Add high PD cells
     geom_tile(data = pd_data, aes(x = x, y = y), fill = highlight_color) +
     # Color scale
-    scale_fill_viridis(option = viridis_option, name = legend_name) +
     scale_alpha_manual(values = alpha_values, guide = "none") +
     # Labels and theme
-    labs(x = x_label,
-         y = y_label,
-         alpha = "") +
     theme_minimal() +
-    theme(
-      plot.title = element_text(size = 16, face = "bold"),
-      plot.subtitle = element_text(size = 12),
-      legend.position = "right"
-    ) +
     coord_sf()
 }
 
 ```
 
+
+**Valores altos positivos de SES**
+
+Encontramos que efectivamente tienen más ramas largas y además estas ramas largas ocurren en ambas secciones.
 
 ```{r}
 
@@ -398,6 +408,10 @@ plot_highlighted_tree(tree, species_to_keep, cex = 0.5)
 title(main = "Ejemplo de celdas con SES altos (>4), significativos", line = 0.5)
 dev.off()
 ```
+
+**Valores altos negativos de SES**
+
+En estos sitios al parecer hay muchas especies (puede ser engañoso porque también hay muchas más celdas selecciondadas que en el caso anterior). Todas son de ramas cortas. Sin embargo, también están distribuidas en ambas secciones. Lo que estaría interesante ver es cómo se ven los árboles de regiones que no aparecieron como significativos.
 
 ```{r}
 
