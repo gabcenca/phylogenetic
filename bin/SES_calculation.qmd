@@ -228,6 +228,7 @@ dev.off()
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(viridis)
+library(sf)
 
 pd_ses$SES.PD
 
@@ -425,4 +426,199 @@ plot_highlighted_tree(tree, species_to_keep, main = "Ejemplo de celdas con SES b
 
 
 
+########## ENDEMISMO ######
+```{r}
 
+we_ses$SES.WE
+
+# Get Mexico boundaries
+mexico <- st_read(here::here("data/in/biogeo_provinces/all_bio_regions/pbiogmx17gw.shp"))
+
+# Get Mexico's bounding box for raster creation
+bbox <- st_bbox(mexico)
+
+# Create a sample raster using terra (temperature gradient as example)
+# You can replace this with your own raster data
+r <- rast(nrows = 100, ncols = 100,
+          xmin = bbox["xmin"], xmax = bbox["xmax"],
+          ymin = bbox["ymin"], ymax = bbox["ymax"])
+
+
+
+# Convert the entire stack to a dataframe at once
+raster_df <- as.data.frame(we_ses, xy = TRUE)
+raster_df <- raster_df[!is.na(raster_df$SES.WE),]
+
+
+
+
+# Create the plot
+plot_ses <- raster_df %>% 
+  filter(SES.WE != 0) %>% 
+  mutate(pval = ifelse(SES.WE > 0, p_lower.WE,ifelse(SES.WE < 0, p_upper.WE,NA))) %>% 
+ggplot() +
+  # Plot raster layer
+  
+  # Add Mexico state boundaries
+  geom_sf(data = mexico, fill = NA, color = "#8B8989", linewidth = 0.2) +
+  geom_raster(aes(x = x, y = y, fill = SES.WE,alpha = pval < 0.05 )) +
+  # Color scale
+  scale_fill_viridis(option = "viridis", name = "SES") +
+  scale_alpha_manual(values = c(0.2,1), guide = FALSE)+
+  # Labels and theme
+  labs(title = "SES Endemismo Ponderado",
+       caption = "Tamaños de efecto de WE, colores fríos(cálidos) representan\nsitios con menor(mayor) PD que lo esperado por la hipotesis nula.\nLas celdas con transparencia representan sitios no significativos.",
+       x = "Longitud",
+       y = "Latitud", alpha = "") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    plot.subtitle = element_text(size = 12),
+    legend.position = "right"
+  ) +
+  coord_sf()
+
+ggsave(here::here("data/out/SES/WE_biogeographicRegions_SES_signif.png"), plot_ses, width = 20, height = 20, units = "cm", bg = "white")
+```
+
+```{r}
+library(ape)
+
+plot_highlighted_tree <- function(tree, species_to_keep, 
+                                   highlight_color = "red",
+                                   default_color = "black",
+                                   edge_width = 2,
+                                   plot_subset = FALSE,
+                                   main = NULL,
+                                   verbose = TRUE,
+                                  cex = NULL) {
+  
+  # Find species that are actually in the tree
+  species_in_tree <- species_to_keep[species_to_keep %in% tree$tip.label]
+  species_missing <- species_to_keep[!species_to_keep %in% tree$tip.label]
+  
+  # Print warning if species are missing
+  if (length(species_missing) > 0 && verbose) {
+    warning(paste("The following species are not in the tree and will be skipped:\n",
+                  paste(species_missing, collapse = ", ")))
+  }
+  
+  # Check if we have any valid species
+  if (length(species_in_tree) == 0) {
+    stop("None of the specified species are in the tree!")
+  }
+  
+  # Subset the tree with only valid species
+  tree_subset <- keep.tip(tree, species_in_tree)
+  
+  # Plot subset tree if requested
+  if (plot_subset) {
+    plot(tree_subset, main = "Subset Tree")
+  }
+  
+  # Initialize all edges with default color
+  edge_colors <- rep(default_color, nrow(tree$edge))
+  
+  # Get node numbers for tips in the subset
+  tips_to_highlight <- which(tree$tip.label %in% species_in_tree)
+  
+  # Color edges that lead directly to highlighted tips
+  for (i in 1:nrow(tree$edge)) {
+    # Check if this edge leads to one of our tips
+    if (tree$edge[i, 2] %in% tips_to_highlight) {
+      edge_colors[i] <- highlight_color
+    }
+  }
+  
+  # Plot the full tree with colored branches
+  plot(tree, edge.color = edge_colors, edge.width = edge_width,
+       main = main, cex = cex)
+  
+  # Return the subset tree and info (invisible)
+  invisible(list(
+    tree_subset = tree_subset,
+    species_found = species_in_tree,
+    species_missing = species_missing
+  ))
+}
+
+plot_ses_map <- function(mexico_sf, 
+                         we_data,
+                         x_label = "Longitud",
+                         y_label = "Latitud",
+                         border_color = "#8B8989",
+                         border_width = 0.2,
+                         highlight_color = "black",
+                         viridis_option = "viridis",
+                         legend_name = "SES",
+                         alpha_values = c(0.2, 1)) {
+  
+  ggplot() +
+    # Add Mexico state boundaries
+    geom_sf(data = mexico_sf, fill = NA, color = border_color, 
+            linewidth = border_width) +
+    # Add high PD cells
+    geom_tile(data = we_data, aes(x = x, y = y), fill = highlight_color) +
+    # Color scale
+    scale_fill_viridis(option = viridis_option, name = legend_name) +
+    scale_alpha_manual(values = alpha_values, guide = "none") +
+    # Labels and theme
+    labs(x = x_label,
+         y = y_label,
+         alpha = "") +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(size = 16, face = "bold"),
+      plot.subtitle = element_text(size = 12),
+      legend.position = "right"
+    ) +
+    coord_sf()
+}
+
+```
+
+
+```{r}
+
+high_WE <- raster_df[raster_df$SES.WE > 12,]
+
+highSESmap <- plot_ses_map(we_data = high_WE, mexico_sf = mexico)
+
+raster_species <- as.data.frame(x, xy = TRUE)
+species_high_WE <- raster_species[rownames(high_WE),]
+species_high_WE <- colSums(species_high_WE[,-c(1,2)]) > 0
+
+# Extract species names from your dataframe
+species_to_keep <- names(species_high_WE[species_high_WE])
+
+# Dave pdf
+pdf(here::here("data/out/SES/highWE_values.pdf"), width = 10, height = 8)
+print(highSESmap)
+plot_highlighted_tree(tree, species_to_keep, cex = 0.5)
+title(main = "Ejemplo de celdas con SES altos (>12), significativos", line = 0.5)
+dev.off()
+```
+
+```{r}
+
+low_WE <- raster_df[raster_df$SES.WE < 0,]
+
+lowSESmap <- plot_ses_map(we_data = low_WE, mexico_sf = mexico)
+
+raster_species <- as.data.frame(x, xy = TRUE)
+species_low_WE <- raster_species[rownames(low_WE),]
+species_low_WE <- colSums(species_low_WE[,-c(1,2)]) > 0
+
+# Extract species names from your dataframe
+species_to_keep <- names(species_low_WE[species_low_WE])
+
+# Dave pdf
+pdf(here::here("data/out/SES/lowWE_0_values.pdf"), width = 10, height = 8)
+print(lowSESmap)
+plot_highlighted_tree(tree, species_to_keep, cex = 0.5)
+title(main = "Ejemplo de celdas con SES bajos (< 0), significativos", line = 0.5)
+dev.off()
+
+plot_highlighted_tree(tree, species_to_keep, main = "Ejemplo de celdas con SES bajos, significativos")
+
+```

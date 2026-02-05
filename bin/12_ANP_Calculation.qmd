@@ -1,0 +1,254 @@
+---
+title: "12_ANP_calculation"
+author: "Gabriela Centeno y Sofía Zorrilla"
+format: html
+editor: visual
+knitr:
+  opts_knit:
+    root.dir: "../../"
+---
+
+This .qmd allows to calculate the proportion of diversity measures inside a natural protected area.
+
+1.  Load libraries
+
+```{r}
+library(terra)
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+
+2.  Load shapes
+
+```{r}
+# diversity rasters (35 km grid)
+r_richness <- rast(here::here("data/out/richness_tif/richness_tif_0.315.tif"))
+r_pd <- rast(here::here("data/out/PD_tif/PD_tif_0.315.tif"))
+r_we <- rast(here::here("data/out/wendemism_tif/wendemism_tif_0.315.tif"))
+r_ses <- rast(here::here("data/out/SES/PD_SES_999aleats.tif"))
+
+# Natural protected areas
+anp <- st_read(here::here("data/in/ANP_JUNIO_2025/232_ANP-ITRF08_04072025.shp")) 
+anp <- st_make_valid(anp)
+
+#Equal the CRS 
+st_crs(r_richness)
+st_crs(anp)
+crs_raster <- crs(r_richness)
+anp <- st_transform(anp, crs = crs_raster)
+
+
+```
+
+3.  Standarize categories
+
+```{r}
+anp$CAT <- factor(anp$CAT_MANEJO,
+                  levels = c("RB", "PN", "MN", "APRN", "APFF", "SANT"))
+
+```
+
+4.  Make rasters to polygons
+
+```{r}
+grid <- as.polygons(r_richness, dissolve = FALSE)
+grid <- st_as_sf(grid)
+grid <- st_make_valid(grid)
+grid$cell_id <- 1:nrow(grid)
+
+grid$cell_id <- 1:nrow(grid) #join data later
+```
+
+5.  Spatial intersection: assign ANP category to each cell
+
+```{r}
+inter <- st_intersection(
+  grid,
+  anp %>% select(CAT)
+)
+
+# Calculate overlap area per cell/category
+inter$overlap_area <- st_area(inter)
+
+# Keep the ANP category with the largest overlap for each grid cell
+inter_clean <- inter %>%
+  group_by(cell_id) %>%
+  slice_max(overlap_area, n = 1) %>%
+  ungroup()
+
+grid <- grid %>%
+  left_join(st_drop_geometry(inter_clean), by = "cell_id")
+
+grid$CAT <- factor(grid$CAT,
+                   levels = c(levels(grid$CAT), "Unprotected"))
+grid$CAT[is.na(grid$CAT)] <- "Unprotected"
+
+
+
+```
+
+6.  Extract raster values to polygons
+
+```{r}
+grid$richness <- terra::extract(r_richness, terra::vect(grid))[,2]
+grid$pd       <- terra::extract(r_pd,       terra::vect(grid))[,2]
+grid$we       <- terra::extract(r_we,       terra::vect(grid))[,2]
+grid$ses      <- terra::extract(r_ses,      terra::vect(grid))[,2]
+
+```
+
+7.  long format
+
+```{r}
+df <- grid %>%
+  st_drop_geometry() %>%
+  select(cell_id, CAT, richness, pd, ses,we) %>%
+  pivot_longer(cols = c(richness, pd, ses,we),
+               names_to = "metric",
+               values_to = "value")
+
+df$metric <- factor(df$metric,
+levels = c("ses", "pd", "richness","we"), 
+labels = c("SES", "Phylogenetic diversity", "Species richness", "Weighted Endemism"))
+
+```
+
+8.  function to make the graphic
+
+```{r}
+plot_violin <- function(metric_name){
+  ggplot(df %>% filter(metric == metric_name),
+         aes(x = CAT, y = value)) +
+    geom_violin(fill = "salmon", alpha = 0.4) +
+    geom_boxplot(width = 0.15, fill = "grey80") +
+    theme_bw(base_size = 14) +
+    xlab("") +
+    ylab(metric_name) +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      panel.grid = element_blank()
+    )
+}
+```
+
+9.  graphic
+
+```{r}
+p1 <- plot_violin("SES")
+p2 <- plot_violin("Phylogenetic diversity")
+p3 <- plot_violin("Species richness")
+p4 <- plot_violin("Weighted endemism")
+
+p1
+p2
+p3
+p4
+
+library(patchwork)
+(p1 / p2 / p3 / p4)
+
+```
+
+Proporción de diversidad dentro vs fuera de ANP 
+```{r}
+# Inside vs outside ANP
+grid$inside_anp <- ifelse(grid$CAT == "Unprotected", "Outside", "Inside")
+
+# ---- Species richness ----
+sr_inside <- sum(grid$richness[grid$inside_anp == "Inside"], na.rm = TRUE)
+sr_total  <- sum(grid$richness, na.rm = TRUE)
+sr_prop   <- sr_inside / sr_total
+
+# ---- Phylogenetic diversity ----
+pd_inside <- sum(grid$pd[grid$inside_anp == "Inside"], na.rm = TRUE)
+pd_total  <- sum(grid$pd, na.rm = TRUE)
+pd_prop   <- pd_inside / pd_total
+
+# ---- Weighted endemism ----
+we_inside <- sum(grid$we[grid$inside_anp == "Inside"], na.rm = TRUE)
+we_total  <- sum(grid$we, na.rm = TRUE)
+we_prop   <- we_inside / we_total
+
+data.frame(
+  Metric = c("Species richness", "Phylogenetic diversity", "Weighted endemism"),
+  Proportion_inside_ANP = c(sr_prop, pd_prop, we_prop)
+)
+
+```
+Especies que NO caen dentro de ninguna ANP
+```{r}
+r_spp <- rast(here::here("data/out/raster_species/ras_species_res_0.315.tif"))
+
+# Raster plantilla (usa el de especies)
+template <- r_spp[[1]]
+
+# Crear campo binario Inside / Outside
+grid$inside_anp_bin <- ifelse(grid$CAT == "Unprotected", 0, 1)
+
+# Rasterizar las celdas
+r_inside <- rasterize(
+  vect(grid),
+  template,
+  field = "inside_anp_bin"
+)
+
+# Verificación rápida
+table(values(r_inside), useNA = "ifany")
+
+# Presencia de especies dentro de ANP
+r_spp_inside <- r_spp * r_inside
+
+# Suma de presencia por especie
+spp_sum_inside <- global(r_spp_inside, sum, na.rm = TRUE)
+
+# Vector lógico: especies no protegidas
+unprotected_species <- spp_sum_inside$sum == 0
+
+# Número de especies no representadas
+n_unprotected_species <- sum(unprotected_species)
+
+n_unprotected_species
+
+species_names <- names(r_spp)
+
+unprotected_list <- species_names[unprotected_species]
+unprotected_list
+
+data.frame(
+  Status = c("Protected", "Not protected"),
+  Species = c(
+    sum(!unprotected_species),
+    sum(unprotected_species)
+  )
+)
+
+```
+Diversidad por ANP
+```{r}
+anp_div <- grid |>
+  filter(CAT != "Unprotected") |>
+  group_by(CAT) |>
+  summarise(
+    PD = sum(pd, na.rm = TRUE),
+    SR = sum(richness, na.rm = TRUE),
+    WE = sum(we, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    PD_prop = PD / pd_total,
+    SR_prop = SR / sr_total
+  )
+
+# ANP con mayor y menor PD
+anp_div |>
+  arrange(desc(PD)) |>
+  slice(1)
+
+anp_div |>
+  arrange(PD) |>
+  slice(1)
+
+```
+
