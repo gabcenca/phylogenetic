@@ -53,24 +53,76 @@ fwrite(common_geo, here::here('data/out/common_geo.csv'), row.names = F)
 library(ape)
 library(treeio)
 library(rotl)
+
+## --- Functions --- ##
+
+#' Modify Tip Labels of a Phylogenetic Tree
+#'
+#' This function modifies the tip labels of a phylogenetic tree based on a user-defined string transformation function.
+#' By default, it removes substrings matching '_ott.*' and replaces underscores with spaces.
+#'
+#' @param tree A phylogenetic tree (likely of class `phylo`) containing tip labels.
+#' @param modify_label_fn A function that takes a character vector of labels and returns a modified character vector.
+#' The default function removes '_ott.*' and replaces underscores with spaces.
+#'
+#' @return A modified phylogenetic tree with updated tip labels.
+#' @importFrom tibble as_tibble
+#' @importFrom stringr str_replace str_remove str_detect
+modify_tips <- function(tree, modify_label_fn = function(x) str_remove(x, '_ott.*')) {
+  
+  metadata <- as_tibble(tree) %>% mutate(label = modify_label_fn(label))
+  tree$tip.label <- metadata[which(str_detect(metadata$label, 'Quercus')),]$label
+  
+  return(tree)
+}
+
 ```
 
-La filogenia [Hipp et al., 2019](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.16162) con largos de rama medidos en millones de años se puede extraer del Proyecto [Open Tree of Life](https://tree.opentreeoflife.org/curator/study/view/ot_1957/?tab=home)
+La filogenia [Hipp et al., 2019](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.16162) con largos de rama medidos en millones de años se puede extraer del Proyecto [Open Tree of Life](https://tree.opentreeoflife.org/curator/study/view/ot_1957/?tab=home). El paquete de `phyloraster` tiene dos opciones para calcular la diversidad filogenética. El primero es sumando los largos de rama de un subconjunto de la filogenia y el segundo es conservando los largos de rama pertenecientes a otros grupos no incluidos. 
 
-### Opción 1. 
+![Imagen tomada de la introducción al paquete [phyloraster](https://gabferreira.github.io/phyloraster/articles/phyloraster-vignette.html#references)](img/crop_tree_phyloraster.jpg)
 
-Descargar el subconjunto de la filogenia que corresponde a las especies de interés utilizando el paquete [`rotl`](https://cran.r-project.org/web/packages/rotl/readme/README.html).
+
+Descargar el árbol de los encinos completo. 
 
 ```{r}
-taxa <- c(unique(common_geo$correctname))
-resolved_names <- tnrs_match_names(taxa)
+complete_tree <- read.tree(here::here('data/in/filogenia/OpenTreeOfLife_hipp2019.tre'))
 
-
-my_tree <- tol_induced_subtree(ott_ids = resolved_names$ott_id)
-plot(my_tree)
-
+complete_tree <- modify_tips(complete_tree, modify_label_fn = function(x) str_replace_all(str_remove_all(str_remove(x, '\\|.*'),"\\'"),' |-','_'))
 
 ```
 
+## Calcular diversidad filogenetica 
 
+```{r}
+library(phyloraster)
+library(terra)
+```
+
+Cargar las distribuciones de las especies.
+```{r}
+dist <- rast(here::here('data/out/raster_species/ras_species_res_0.5.tif'))
+names(dist) <- str_replace_all(names(dist),' |-','_')
+rasters_to_use <- which(names(dist) %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
+
+sub_dist <- subset(dist, rasters_to_use)
+```
+
+REVISAR COMO SE HACE EL sub_tree
+```{r}
+# Revisar que los nombres de las especies estén en el orden que están en el árbol
+tips_to_drop <-  which(!complete_tree$tip.label %in% str_replace_all(unique(common_geo$correctname),' |-','_'))
+sub_tree <- drop.tip(complete_tree,tips_to_drop)
+
+setdiff(sub_tree$tip.label,names(sub_dist))
+setdiff(names(sub_dist),sub_tree$tip.label)
+
+str_detect(names(sub_dist),'Quercus_cornelius')
+str_detect(sub_tree$tip.label,'Quercus_cornelius')
+# Reacomodar los datos
+dataprep <- phylo.pres(x = sub_dist, tree = sub_tree)
+
+pdr <- rast.pd(x = dataprep$x, dataprep$tree)
+plot(pdr$PD, main = "Phylogenetic diversity")
+```
 
