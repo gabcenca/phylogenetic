@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to map cells with highest oak richness (≥35) in Mexico
+Script to map cells with lowest weighted endemism (<0.2) in Mexico
 with biogeographic provinces overlay
 """
 
@@ -15,26 +15,26 @@ from matplotlib import patheffects
 # ==============================================================================
 # CONFIGURATION - Update these paths to your files
 # ==============================================================================
-RASTER_PATH = r"D:\oak_project\data\richness_tif_0.315.tif"
+RASTER_PATH = r"D:\oak_project\data\wendemism_tif_0.315.tif"  # UPDATE TO YOUR ENDEMISM RASTER
 SHAPEFILE_PATH = r"D:\oak_project\data\pbiogmx17gw.shp"
-RICHNESS_THRESHOLD = 29
-OUTPUT_FILE = r"D:\oak_project\outputs\oak_richness_map.png"
+ENDEMISM_THRESHOLD = 0.01
+OUTPUT_FILE = r"D:\oak_project\outputs\oak_low_endemism_map.png"
 
 # ==============================================================================
 # LOAD DATA
 # ==============================================================================
 print("Loading raster data...")
 with rasterio.open(RASTER_PATH) as src:
-    richness = src.read(1)  # Read first band
+    endemism = src.read(1)  # Read first band
     transform = src.transform
     crs = src.crs
     nodata = src.nodata
     
     # Handle nodata values
     if nodata is not None:
-        richness_masked = np.ma.masked_equal(richness, nodata)
+        endemism_masked = np.ma.masked_equal(endemism, nodata)
     else:
-        richness_masked = np.ma.masked_invalid(richness)
+        endemism_masked = np.ma.masked_invalid(endemism)
 
 print("Loading biogeographic provinces...")
 provinces = gpd.read_file(SHAPEFILE_PATH)
@@ -45,17 +45,17 @@ if provinces.crs != crs:
     provinces = provinces.to_crs(crs)
 
 # ==============================================================================
-# IDENTIFY HIGH RICHNESS CELLS
+# IDENTIFY HIGH ENDEMISM CELLS
 # ==============================================================================
-print(f"Finding cells with richness >= {RICHNESS_THRESHOLD}...")
-high_richness_mask = richness_masked >= RICHNESS_THRESHOLD
+print(f"Finding cells with weighted endemism < {ENDEMISM_THRESHOLD} (excluding 0)...")
+high_endemism_mask = (endemism_masked < ENDEMISM_THRESHOLD) & (endemism_masked > 0)
 
-# Get row, col indices of high richness cells
-rows, cols = np.where(high_richness_mask)
-print(f"Found {len(rows)} cells with richness >= {RICHNESS_THRESHOLD}")
+# Get row, col indices of high endemism cells
+rows, cols = np.where(high_endemism_mask)
+print(f"Found {len(rows)} cells with weighted endemism < {ENDEMISM_THRESHOLD} (excluding 0)")
 
-# Get the actual richness values for these cells
-richness_values = richness[rows, cols]
+# Get the actual endemism values for these cells
+endemism_values = endemism[rows, cols]
 
 # Convert pixel coordinates to geographic coordinates (cell centers)
 coords = []
@@ -70,11 +70,11 @@ for row, col in zip(rows, cols):
 print("Creating map...")
 fig, ax = plt.subplots(figsize=(14, 10))
 
-# Highlight only the high richness cells (background removed)
-high_richness_raster = np.ma.masked_where(~high_richness_mask, richness_masked)
-im = show(high_richness_raster, transform=transform, ax=ax, 
-          cmap='RdYlGn', alpha=0.8, vmin=RICHNESS_THRESHOLD, 
-          vmax=np.nanmax(richness_masked))
+# Highlight only the high endemism cells (background removed)
+high_endemism_raster = np.ma.masked_where(~high_endemism_mask, endemism_masked)
+im = show(high_endemism_raster, transform=transform, ax=ax, 
+          cmap='YlOrRd', alpha=0.8, vmin=np.nanmin(endemism_masked), 
+          vmax=ENDEMISM_THRESHOLD)
 
 # Plot biogeographic provinces
 provinces.plot(ax=ax, facecolor='none', edgecolor='black', linewidth=1.5, 
@@ -88,23 +88,23 @@ for idx, row in provinces.iterrows():
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
                          edgecolor='gray', alpha=0.7))
 
-# Add cell value labels for high richness cells
+# Add cell value labels for high endemism cells
 print("Adding value labels...")
-for (x, y), value in zip(coords, richness_values):
+for (x, y), value in zip(coords, endemism_values):
     # Create text with white outline for better visibility
-    text = ax.text(x, y, f'{int(value)}', 
+    text = ax.text(x, y, f'{value:.2f}', 
                    ha='center', va='center',
                    fontsize=8, fontweight='bold', color='darkred')
     text.set_path_effects([patheffects.withStroke(linewidth=2, foreground='white')])
 
 # Add colorbar
 cbar = plt.colorbar(im.images[0], ax=ax, shrink=0.6, pad=0.02)
-cbar.set_label('Oak Species Richness', rotation=270, labelpad=20, fontsize=12)
+cbar.set_label('Weighted Endemism Index', rotation=270, labelpad=20, fontsize=12)
 
 # Formatting
 ax.set_xlabel('Longitude', fontsize=11)
 ax.set_ylabel('Latitude', fontsize=11)
-ax.set_title(f'Oak Species Richness in Mexico (Richness ≥ {RICHNESS_THRESHOLD})\n' + 
+ax.set_title(f'Oak Low Weighted Endemism Areas in Mexico (0 < Index < {ENDEMISM_THRESHOLD})\n' + 
              'with Biogeographic Provinces', fontsize=14, fontweight='bold', pad=15)
 
 # Add grid
@@ -131,10 +131,10 @@ print("Done!")
 print(f"\n{'='*60}")
 print("SUMMARY STATISTICS")
 print(f"{'='*60}")
-print(f"Total cells with richness >= {RICHNESS_THRESHOLD}: {len(rows)}")
-print(f"Maximum richness value: {np.nanmax(richness_values):.0f}")
-print(f"Minimum richness value (in filtered cells): {np.nanmin(richness_values):.0f}")
-print(f"Mean richness (in filtered cells): {np.nanmean(richness_values):.1f}")
+print(f"Total cells with weighted endemism < {ENDEMISM_THRESHOLD} (excluding 0): {len(rows)}")
+print(f"Maximum endemism value: {np.nanmax(endemism_values):.3f}")
+print(f"Minimum endemism value (in filtered cells): {np.nanmin(endemism_values):.3f}")
+print(f"Mean endemism (in filtered cells): {np.nanmean(endemism_values):.3f}")
 print(f"{'='*60}\n")
 
 plt.show()

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to map cells with highest oak richness (≥35) in Mexico
+Script to map cells with low phylogenetic diversity (0 < PD < 138) in Mexico
 with biogeographic provinces overlay
 """
 
@@ -15,26 +15,26 @@ from matplotlib import patheffects
 # ==============================================================================
 # CONFIGURATION - Update these paths to your files
 # ==============================================================================
-RASTER_PATH = r"D:\oak_project\data\richness_tif_0.315.tif"
+RASTER_PATH = r"D:\oak_project\data\PD_tif_0.315.tif"  
 SHAPEFILE_PATH = r"D:\oak_project\data\pbiogmx17gw.shp"
-RICHNESS_THRESHOLD = 35
-OUTPUT_FILE = r"D:\oak_project\outputs\oak_richness_map.png"
+PD_THRESHOLD = 60  # Phylogenetic diversity threshold
+OUTPUT_FILE = r"D:\oak_project\outputs\oak_low_phylodiversity_map.png"
 
 # ==============================================================================
 # LOAD DATA
 # ==============================================================================
 print("Loading raster data...")
 with rasterio.open(RASTER_PATH) as src:
-    richness = src.read(1)  # Read first band
+    phylodiversity = src.read(1)  # Read first band
     transform = src.transform
     crs = src.crs
     nodata = src.nodata
     
     # Handle nodata values
     if nodata is not None:
-        richness_masked = np.ma.masked_equal(richness, nodata)
+        phylodiversity_masked = np.ma.masked_equal(phylodiversity, nodata)
     else:
-        richness_masked = np.ma.masked_invalid(richness)
+        phylodiversity_masked = np.ma.masked_invalid(phylodiversity)
 
 print("Loading biogeographic provinces...")
 provinces = gpd.read_file(SHAPEFILE_PATH)
@@ -45,17 +45,17 @@ if provinces.crs != crs:
     provinces = provinces.to_crs(crs)
 
 # ==============================================================================
-# IDENTIFY HIGH RICHNESS CELLS
+# IDENTIFY LOW PHYLOGENETIC DIVERSITY CELLS
 # ==============================================================================
-print(f"Finding cells with richness >= {RICHNESS_THRESHOLD}...")
-high_richness_mask = richness_masked >= RICHNESS_THRESHOLD
+print(f"Finding cells with phylogenetic diversity > 0 and < {PD_THRESHOLD}...")
+low_pd_mask = (phylodiversity_masked > 0) & (phylodiversity_masked < PD_THRESHOLD)
 
-# Get row, col indices of high richness cells
-rows, cols = np.where(high_richness_mask)
-print(f"Found {len(rows)} cells with richness >= {RICHNESS_THRESHOLD}")
+# Get row, col indices of low PD cells
+rows, cols = np.where(low_pd_mask)
+print(f"Found {len(rows)} cells with phylogenetic diversity > 0 and < {PD_THRESHOLD}")
 
-# Get the actual richness values for these cells
-richness_values = richness[rows, cols]
+# Get the actual phylodiversity values for these cells
+pd_values = phylodiversity[rows, cols]
 
 # Convert pixel coordinates to geographic coordinates (cell centers)
 coords = []
@@ -70,40 +70,41 @@ for row, col in zip(rows, cols):
 print("Creating map...")
 fig, ax = plt.subplots(figsize=(14, 10))
 
-# Highlight only the high richness cells (background removed)
-print(provinces.columns)
-high_richness_raster = np.ma.masked_where(~high_richness_mask, richness_masked)
-im = show(high_richness_raster, transform=transform, ax=ax, 
-          cmap='RdYlGn', alpha=0.8, vmin=RICHNESS_THRESHOLD, 
-          vmax=np.nanmax(richness_masked))
+# Highlight only the low phylogenetic diversity cells
+low_pd_raster = np.ma.masked_where(~low_pd_mask, phylodiversity_masked)
+im = show(low_pd_raster, transform=transform, ax=ax, 
+          cmap='YlOrRd', alpha=0.8, vmin=0, 
+          vmax=PD_THRESHOLD)
 
 # Plot biogeographic provinces
 provinces.plot(ax=ax, facecolor='none', edgecolor='black', linewidth=1.5, 
                linestyle='--', alpha=0.7)
 
-# Optional: Add province labels (comment out if too cluttered)
-# for idx, row in provinces.iterrows():
-#     centroid = row.geometry.centroid
-#     ax.annotate(text=row['NAME'], xy=(centroid.x, centroid.y),
-#                 ha='center', fontsize=7, style='italic', alpha=0.6)
+# Add province labels
+for idx, row in provinces.iterrows():
+    centroid = row.geometry.centroid
+    ax.annotate(text=row['JJM2017'], xy=(centroid.x, centroid.y),
+                ha='center', fontsize=8, style='italic', alpha=0.7,
+                bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
+                         edgecolor='gray', alpha=0.7))
 
-# Add cell value labels for high richness cells
+# Add cell value labels for low PD cells
 print("Adding value labels...")
-for (x, y), value in zip(coords, richness_values):
+for (x, y), value in zip(coords, pd_values):
     # Create text with white outline for better visibility
-    text = ax.text(x, y, f'{int(value)}', 
+    text = ax.text(x, y, f'{value:.0f}', 
                    ha='center', va='center',
                    fontsize=8, fontweight='bold', color='darkred')
     text.set_path_effects([patheffects.withStroke(linewidth=2, foreground='white')])
 
 # Add colorbar
 cbar = plt.colorbar(im.images[0], ax=ax, shrink=0.6, pad=0.02)
-cbar.set_label('Oak Species Richness', rotation=270, labelpad=20, fontsize=12)
+cbar.set_label('Phylogenetic Diversity Index', rotation=270, labelpad=20, fontsize=12)
 
 # Formatting
 ax.set_xlabel('Longitude', fontsize=11)
 ax.set_ylabel('Latitude', fontsize=11)
-ax.set_title(f'Oak Species Richness Hotspots in Mexico (Richness ≥ {RICHNESS_THRESHOLD})\n' + 
+ax.set_title(f'Oak Low Phylogenetic Diversity Areas in Mexico (0 < Index < {PD_THRESHOLD})\n' + 
              'with Biogeographic Provinces', fontsize=14, fontweight='bold', pad=15)
 
 # Add grid
@@ -130,10 +131,10 @@ print("Done!")
 print(f"\n{'='*60}")
 print("SUMMARY STATISTICS")
 print(f"{'='*60}")
-print(f"Total cells with richness >= {RICHNESS_THRESHOLD}: {len(rows)}")
-print(f"Maximum richness value: {np.nanmax(richness_values):.0f}")
-print(f"Minimum richness value (in filtered cells): {np.nanmin(richness_values):.0f}")
-print(f"Mean richness (in filtered cells): {np.nanmean(richness_values):.1f}")
+print(f"Total cells with phylogenetic diversity > 0 and < {PD_THRESHOLD}: {len(rows)}")
+print(f"Maximum PD value (in filtered cells): {np.nanmax(pd_values):.1f}")
+print(f"Minimum PD value (in filtered cells): {np.nanmin(pd_values):.1f}")
+print(f"Mean PD (in filtered cells): {np.nanmean(pd_values):.1f}")
 print(f"{'='*60}\n")
 
 plt.show()
