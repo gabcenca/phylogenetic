@@ -176,6 +176,14 @@ data.frame(
   Proportion_inside_ANP = c(sr_prop, pd_prop, we_prop)
 )
 
+# --- línea base de área (proporción de celdas dentro de ANP) ----
+valid          <- !is.na(grid$richness)              # celdas con dato (área muestreada)
+n_cells_total  <- sum(valid)
+n_cells_inside <- sum(valid & grid$inside_anp == "Inside")
+area_prop      <- n_cells_inside / n_cells_total
+area_prop
+
+
 ```
 Especies que NO caen dentro de ninguna ANP
 ```{r}
@@ -223,6 +231,13 @@ data.frame(
     sum(unprotected_species)
   )
 )
+
+# ---- porcentaje de especies con solapamiento en ANP ----
+n_total_species <- length(species_names)
+n_protected     <- sum(!unprotected_species)
+prop_species    <- n_protected / n_total_species
+c(total = n_total_species, protegidas = n_protected, prop = round(prop_species, 3))
+
 
 ```
 Diversidad por ANP
