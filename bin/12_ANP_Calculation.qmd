@@ -151,28 +151,81 @@ library(patchwork)
 
 ```
 
-Proporción de diversidad dentro vs fuera de ANP 
+10. Phylogenetic tree, total PD and species presences
+
+The species richness of each ANP category is the number of distinct species present in its cells. For the phylogenetic diversity, 100% of PD is the sum of the branch lengths of the whole tree we are using (`sub_tree`, built exactly as in `8_diversity_measures_calculation.qmd`). The PD of each ANP category is the sum of the branch lengths of the small tree formed by the species present in that category (i.e., an artificial cell that pools all its species).
+
+```{r}
+library(ape)
+library(stringr)
+library(data.table)
+
+# Árbol de Hipp et al. (2019), mismo procesamiento de etiquetas que en
+# 8_diversity_measures_calculation.qmd
+complete_tree <- read.tree(here::here("data/in/filogenia/OpenTreeOfLife_hipp2019.tre"))
+complete_tree$tip.label <- str_replace_all(
+  str_remove_all(str_remove(complete_tree$tip.label, "\\|.*"), "\\'"),
+  " |-", "_")
+
+# Especies en común entre la filogenia y la base de datos (87 spp)
+common_geo <- fread(here::here("data/out/common_geo.csv"))
+common_spp <- str_replace_all(unique(common_geo$correctname), " |-", "_")
+
+# Podar el árbol a las especies en común (quedan 85 spp con distribución;
+# Q. depressipes y Q. gambelii no están en el árbol)
+tips_to_drop <- which(!complete_tree$tip.label %in% common_spp)
+sub_tree <- drop.tip(complete_tree, tips_to_drop)
+
+# 100% de PD = suma de los largos de rama de TODO el árbol utilizado
+pd_total_tree <- sum(sub_tree$edge.length)
+pd_total_tree
+
+# Presencia/ausencia de las 164 especies por celda
+r_spp <- rast(here::here("data/out/raster_species/ras_species_res_0.315.tif"))
+names(r_spp) <- str_replace_all(names(r_spp), " |-", "_")
+
+pres <- terra::extract(r_spp, terra::vect(grid))
+pres$ID <- NULL
+
+# Especies presentes en un conjunto de celdas
+species_in_cells <- function(cells){
+  sub <- pres[cells, , drop = FALSE]
+  names(sub)[colSums(sub == 1, na.rm = TRUE) > 0]
+}
+
+# PD del "árbol pequeño" que forman las especies de un conjunto de celdas
+pd_in_cells <- function(cells){
+  spp <- intersect(species_in_cells(cells), sub_tree$tip.label)
+  if(length(spp) < 2) return(NA_real_)
+  sum(keep.tip(sub_tree, spp)$edge.length)
+}
+
+```
+
+Proporción de diversidad dentro vs fuera de ANP
 ```{r}
 # Inside vs outside ANP
 grid$inside_anp <- ifelse(grid$CAT == "Unprotected", "Outside", "Inside")
+cells_inside <- which(grid$inside_anp == "Inside")
 
-# ---- Species richness ----
-sr_inside <- sum(grid$richness[grid$inside_anp == "Inside"], na.rm = TRUE)
-sr_total  <- sum(grid$richness, na.rm = TRUE)
+# ---- Species richness: número de especies distintas dentro de ANP ----
+sr_inside <- length(species_in_cells(cells_inside))
+sr_total  <- nlyr(r_spp)          # 164 especies
 sr_prop   <- sr_inside / sr_total
 
-# ---- Phylogenetic diversity ----
-pd_inside <- sum(grid$pd[grid$inside_anp == "Inside"], na.rm = TRUE)
-pd_total  <- sum(grid$pd, na.rm = TRUE)
-pd_prop   <- pd_inside / pd_total
+# ---- Phylogenetic diversity: ramas del árbol dentro de ANP vs árbol completo ----
+pd_inside <- pd_in_cells(cells_inside)
+pd_prop   <- pd_inside / pd_total_tree
 
-# ---- Weighted endemism ----
+# ---- Weighted endemism (sin cambios) ----
 we_inside <- sum(grid$we[grid$inside_anp == "Inside"], na.rm = TRUE)
 we_total  <- sum(grid$we, na.rm = TRUE)
 we_prop   <- we_inside / we_total
 
 data.frame(
-  Metric = c("Species richness", "Phylogenetic diversity", "Weighted endemism"),
+  Metric     = c("Species richness", "Phylogenetic diversity", "Weighted endemism"),
+  Inside_ANP = c(sr_inside, pd_inside, we_inside),
+  Total      = c(sr_total, pd_total_tree, we_total),
   Proportion_inside_ANP = c(sr_prop, pd_prop, we_prop)
 )
 
@@ -187,7 +240,7 @@ area_prop
 ```
 Especies que NO caen dentro de ninguna ANP
 ```{r}
-r_spp <- rast(here::here("data/out/raster_species/ras_species_res_0.315.tif"))
+# r_spp ya se cargó en el punto 10 (con los nombres normalizados)
 
 # Raster plantilla (usa el de especies)
 template <- r_spp[[1]]
@@ -241,20 +294,27 @@ c(total = n_total_species, protegidas = n_protected, prop = round(prop_species, 
 
 ```
 Diversidad por ANP
+
+Para cada categoría de manejo: SR = número de especies distintas presentes en sus celdas; PD = suma de los largos de rama del árbol pequeño que forman esas especies (celda artificial que agrupa todas las especies de la categoría); PD_prop = PD / suma de ramas del árbol completo utilizado. No se espera que ninguna categoría llegue al 100%.
+
 ```{r}
-anp_div <- grid |>
-  filter(CAT != "Unprotected") |>
-  group_by(CAT) |>
-  summarise(
-    PD = sum(pd, na.rm = TRUE),
-    SR = sum(richness, na.rm = TRUE),
-    WE = sum(we, na.rm = TRUE),
-    .groups = "drop"
-  ) |>
-  mutate(
-    PD_prop = PD / pd_total,
-    SR_prop = SR / sr_total
+cats <- c("RB", "PN", "MN", "APRN", "APFF", "SANT")
+
+anp_div <- lapply(cats, function(cat){
+  cells <- which(grid$CAT == cat)
+  spp   <- species_in_cells(cells)
+  pd    <- pd_in_cells(cells)
+  data.frame(
+    CAT      = cat,
+    n_celdas = length(cells),
+    SR       = length(spp),               # especies distintas en la categoría
+    SR_prop  = length(spp) / sr_total,
+    PD       = pd,                        # suma de ramas del árbol pequeño
+    PD_prop  = pd / pd_total_tree
   )
+}) |> bind_rows()
+
+anp_div
 
 # ANP con mayor y menor PD
 anp_div |>
@@ -262,6 +322,12 @@ anp_div |>
   slice(1)
 
 anp_div |>
+  arrange(PD) |>
+  slice(1)
+
+```
+
+
   arrange(PD) |>
   slice(1)
 
